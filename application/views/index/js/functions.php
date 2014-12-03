@@ -48,6 +48,7 @@ function paginacionEmp(limit){
 	});
 }
 // slider nav 
+	// hacer la cosa desde el crm
 	function slide(point){
 		$(".sliderNew").animate({
 		    opacity: 0.50,
