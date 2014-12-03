@@ -114,12 +114,85 @@
 
 */
 
+
 iframe[name="f3d7c73d9c"]{
 	width: 100% !important;
 }
 
+@media(min-width:768px) and (max-width: 993px){
+	#openHouseBlock h2{
+		font-size: 1em !important;
+	}
+	#openHouseBlock p {
+		font-size: 0.65em !important;
+	}
+}
 
+@media(min-width:993px) and (max-width: 1199px){
 
+	/*los iconos de los cuadritos*/
+	.imgBlockDescription > i{
+		font-size: 1.4em !important;
+	}
+	/*los titulos*/
+	#openHouseBlock h2{
+		font-size: 1.25em !important;
+	}
+	#sheetBlock h2 {
+		font-size: 1.25em !important;
+	}
+	/*la letra pequeña*/
+	#openHouseBlock p {
+		font-size: 0.75em !important;
+	}
+	#sheetBlock p {
+		font-size: 0.75em !important;
+	}
+}
+
+@media(min-width:1200px) and (max-width: 1500px){
+
+	/*los iconos de los cuadritos*/
+	.imgBlockDescription > i{
+		font-size: 1.4em !important;
+	}
+	/*los titulos*/
+	#openHouseBlock h2{
+		font-size: 1.35em !important;
+	}
+	#sheetBlock h2 {
+		font-size: 1.35em !important;
+	}
+	/*la letra pequeña*/
+	#openHouseBlock p {
+		font-size: 0.8em !important;
+	}
+	#sheetBlock p {
+		font-size: 0.8em !important;
+	}
+}
+
+@media(min-width:1501px) and (max-width: 1999px){
+
+	/*los iconos de los cuadritos*/
+	.imgBlockDescription > i{
+		font-size: 1.5em !important;
+	}
+	/*los titulos*/
+	#openHouseBlock h2{
+		font-size: 1.65em !important;
+	}
+	#sheetBlock h2 {
+		font-size: 1.65em !important;
+	}
+	/*la letra pequeña*/
+	#openHouseBlock p {
+		font-size: 0.85em !important;
+	}
+	#sheetBlock p {
+		font-size: 0.85em !important;
+	}
+}
 
 
 @media(max-width:767px){
