@@ -1,6 +1,3 @@
-a:hover{
-	text-decoration: none;
-}
 .punto{
 	color: #d2d1d1;
 }
