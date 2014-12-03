@@ -42,7 +42,7 @@ class Calendarm extends Padrem
 					   <img src='".$img."' class='imgfull row'>
                     </div>
 					<h2>".$casa->nombreVivienda."</h2>
-					<i class='fa fa-map-marker icon'></i> <h3>".$casa->cityTown."</h3>
+					<i class='fa fa-map-marker icon'></i> <h3>&nbsp;".$casa->cityTown."</h3>
 				</div>
 				<div class=' col-xs-12 col-sm-6 col-md-6 col-lg-6 descriptionsection'>
 					<div class='col-xs-12 descript'>
@@ -51,13 +51,13 @@ class Calendarm extends Padrem
 							".$casa->description."
 						</p>
 					</div>
-					<div class='col-xs-12'>
+					<div class='col-xs-12' style='text-align:justify'>
 						<h4 class='price'>$".$casa->listPrice." |</h4><h4 class='descr'>SQ FT:".$casa->sq." ft2 |</h4><h4 class='descr'>BED: ".$casa->rooms." |</h4><h4 class='descr'>BATH: ".$casa->bathroom."</h4>
 					</div>
 				</div>
 				<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3'>
 					<div class='horario col-xs-12' >
-						<i class='fa fa-calendar icon'></i>
+						<i class='fa fa-calendar icono'></i>
 						<h3>DATE: ".$value->startDate."</h3>
 						<h3>TIME: ".$value->age_hora_inicio." - ".$value->age_hora_fin." </h3>
 					</div>
