@@ -35,6 +35,7 @@
 		?>
 </head>
 <body>	
+aaaaaaaaaaaaaa
 <div class="container-fluid"> <!-- ahorita tiene container fluid por el tonto slider -->
 		<?php $this->load->view("parts/header.php") ?>
 		<div class="row container-fluid sliderNew">
