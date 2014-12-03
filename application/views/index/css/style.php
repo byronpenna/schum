@@ -1,3 +1,6 @@
+a:hover{
+	text-decoration: none;
+}
 .dataTeam h3 {
 	font-size: 0.6em;
 }
