@@ -90,7 +90,8 @@
 		margin-bottom: 2%;
 	}
 	.photosection h2{
-		font-size: 0.8em;
+		font-size: 0.7em;
+		margin-left: -5px;
 	}
 	.icono{
 		font-size: 1em;
@@ -98,29 +99,43 @@
 	.photosection h3{
 		font-size: 0.6em;
 		margin-top: 0px !important;
+		margin-left: -5px;
 	}
 	.descriptionsection h2{
-		font-size: 1.5em;
+		font-size: 1em;
+		margin-top: 10px;
+		margin-bottom: 0px;
 	}
 	.descriptionsection p{
-		font-size: 0.8em;
-		margin-bottom: 5%;
+		font-size: 0.7em;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 	.horario h3{
 		font-size: 0.6em;
 	}
 	.icon{
-		font-size: 1em;
+		font-size: 0.6em;
+		margin-left: -5px;
 	}
-	.price{
-		font-size: 1.3em;
+	.price {
+    	font-size: 0.8em;
+
 	}
-	.descr{
-		font-size: 0.7em;
-		margin-left: 1%;
+	.pric{
+		padding-left: 0px;
+	}
+	
+	.descr {
+	    font-size: 0.5em;
+	    margin-left: 1%;
 	}
 	.horario{
 	margin-top: 10%;
+	}
+	.horario h3{
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 	.imgfull{
 		width: 130%;
@@ -128,6 +143,10 @@
 	.calendar {
 	    height: relative;
 	    margin-bottom: 0%;
+	}
+	.descript {
+    	padding-left: 0px;
+    	height: 6.5em;
 	}
 }
 
@@ -145,7 +164,7 @@
 		font-size: 1em;
 	}
 	.icono{
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	.photosection h3{
 		font-size: 0.8em;
@@ -205,8 +224,8 @@
 	}
 }
 @media(min-width:1300px){
-	.imgfull{
-		width: 125%;
+	.imgfull {
+	    width: 115%;
 	}
 	.photosection h3{
 		font-size: 1em;
@@ -218,7 +237,7 @@
 		font-size: 0.95em;
 	}
 	.descript {
-		height: 15em;
+		height: 10em;
 	}
 }
 @media(min-width:1400px){
@@ -261,36 +280,6 @@
 		margin-top: 0px !important;
 	}
 }
-@media(min-width:1600px){
-	.descr {
-		font-size: 1.2em;
-	}
-	.price {
-		font-size: 2.4em;
-	}
-	.horario h3 {
-		font-size: 1.2em;
-	}
-}
-@media(min-width:1700px){
-	.imgfull{
-		width: 115%;
-	}
-	.descriptionsection p {
-		font-size: 1.5em;
-	}
-	.titulo h2 {
-		font-size: 2.5em;
-	}
-	.descriptionsection p {
-		margin-bottom: 10%;
-	}
-}
-@media(min-width:1900px){
-	.horario h3 {
-		font-size: 1.5em;
-	}
-}
 
 @media(min-width:1500px){
 	.price {
@@ -309,6 +298,40 @@
 			font-size: 1.2em;
 	}
 }
+@media(min-width:1600px){
+	.descr {
+		font-size: 1.2em;
+	}
+	.price {
+		font-size: 2.4em;
+	}
+	.horario h3 {
+		font-size: 1.2em;
+	}
+}
+@media(min-width:1700px){
+	.imgfull{
+		width: 110%;
+	}
+	.descriptionsection p {
+		font-size: 1.5em;
+	}
+	.titulo h2 {
+		font-size: 2.5em;
+	}
+	.descriptionsection p {
+		margin-bottom: 10%;
+	}
+}
+@media(min-width:1900px){
+	.horario h3 {
+		font-size: 1.5em;
+	}
+	.descript {
+		height: 13.5em;
+	}
+}
+
 @media(min-width:2000px){
 	.calendar{
 		margin-top: 5%;
@@ -320,7 +343,7 @@
 		font-size: 4em;
 	}
 	.photosection h2{
-		font-size: 2em;
+		font-size: 1.7em;
 	}
 	.icono{
 		font-size: 2em;
@@ -329,28 +352,28 @@
 		font-size: 0.9em;
 	}
 	.descriptionsection h2{
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.descriptionsection p{
 		font-size: 1.5em;
 	}
 	.horario h3{
-		font-size: 2em;
+		font-size: 1.3em;
 	}
 	.icon{
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.price{
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.descr{
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 	.imgfull{
 		width: 110%;
 	}
 	.descript{
-		height: 19em;
+		height: 15em;
 	}
 }
 @media(min-width:2000px){

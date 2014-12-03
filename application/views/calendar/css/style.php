@@ -6,11 +6,18 @@ html,body{
 	color: #314782;
 	font-family: 'proximaNovaBold';
 	text-transform: uppercase;
+	margin-top: 4%;
+	margin-bottom: 0px;
+
 }
 .photosection h3{
+	margin-top: 0px;
 	color: #999999;
 	font-family: 'proximaNovaSemiBold';
 	display: inline-block !important;
+}
+.icon{
+	color: #314782;
 }
 .icono{
 	display: inline-block !important;
@@ -38,7 +45,7 @@ html,body{
 .titulo h2{
 	margin-top: 7%;
 	margin-bottom: 3%;
-	padding-left: 0px;
+	margin-left: -15px;
 	color: #be0000;
 	font-family: 'proximaNovaBold';
 }
@@ -48,6 +55,10 @@ html,body{
 	background: url('http://deercoder.com/shum/img/elements/fondo_calendar.png');
 	color: #fff;
 	text-align: center;
+}
+.horario h3{
+	color: #fff;
+	font-family: 'proximaNovaSemiBold';
 }
 .descriptionsection{
 	position: relative;
@@ -68,4 +79,10 @@ h4{
 }
 .calendar{
 	padding-left: 0px !important;
+}
+.price{
+	font-family: "proximaNovaSemiBold";
+}
+.descr{
+	font-family: "proximaNovaSemiBold";
 }
