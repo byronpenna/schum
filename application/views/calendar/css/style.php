@@ -1,3 +1,6 @@
+div.imgfull{
+   margin-left: -15px !important;
+}
 html,body{
 	height: 100%;
 	margin: 0px; 

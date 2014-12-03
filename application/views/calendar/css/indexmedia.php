@@ -1,3 +1,20 @@
+div.imgfull{
+  max-width: 200%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+div.imgfull img {
+  display: block;
+  max-width: none !important;
+}
+img.imgfull{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
 .sliderNew{
 	min-height: 300px;
 }

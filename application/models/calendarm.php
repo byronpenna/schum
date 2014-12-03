@@ -38,7 +38,9 @@ class Calendarm extends Padrem
 		$div = "
 			<div class='col-xs-12 col-sm-10 col-sm-offset-1  col-md-9 col-sx-10 col-lg-9 calendar'>
 				<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 photosection'>
-					<img src='".$img."' class='imgfull row'>
+                    <div class='imgfull'>
+					   <img src='".$img."' class='imgfull row'>
+                    </div>
 					<h2>".$casa->nombreVivienda."</h2>
 					<i class='fa fa-map-marker icon'></i> <h3>".$casa->cityTown."</h3>
 				</div>
@@ -46,7 +48,6 @@ class Calendarm extends Padrem
 					<div class='col-xs-12 descript'>
 						<h2>Description</h2>
 						<p>
-							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices a metus vel efficitur. Fusce rhoncus sapien nec nibh congue, ut ornare nulla accumsan. Pellentesque ut tempor justo.-->
 							".$casa->description."
 						</p>
 					</div>
