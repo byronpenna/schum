@@ -118,15 +118,7 @@
 iframe[name="f3d7c73d9c"]{
 	width: 100% !important;
 }
-@media(min-width:1300px) and (max-width: 1400px){
-	/*body{
-		background-color: green;
-	}*/
-	iframe[name="f3d7c73d9c"]{
-	width: 100% !important;
-	height: 10px;
-}
-}
+
 @media(min-width:768px) and (max-width: 993px){
 	#openHouseBlock h2{
 		font-size: 1em !important;
