@@ -1,9 +1,3 @@
-.barraprice{
-    text-align:justify;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    
-}
 div.imgfull{
    margin-left: -15px !important;
 }
