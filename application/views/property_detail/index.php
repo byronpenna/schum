@@ -295,7 +295,9 @@ tu
 						<div class="row container-fluid agent paddingNull">
 							<div class="col-lg-5 col-sm-6 col-md-5 paddingNull">
 								<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
-									<img class="imgFull" src=<?php echo "'".$empleado->rutaImg."'"; ?> />		
+                                    <div class="imgfull">
+									   <img class="imgfull" src=<?php echo "'".$empleado->rutaImg."'"; ?> />
+                                    </div>
 								</a>
 							</div>
 							<div class="col-lg-7 col-sm-6 col-md-7 contactAgentText">
@@ -316,13 +318,9 @@ tu
 										</p>	
 									</div>
 								</div>
-								<div class="row readMore">
-									<div class="col-lg-7 col-sm-7 col-md-7">
-										<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
-											<button class="readmore">Read more</button>
-										</a>
-									</div>
-								</div>
+									<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
+										<button class="readmore">Read more</button>
+									</a>
 							</div>
 						</div>
 					</div>
@@ -336,8 +334,8 @@ tu
 						</div>
                         <div class="col-sm-12 col-lg-12 col-sx-12 col-md-12 fbbox">
                         <iframe name="f151cbc7a8" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="http://www.facebook.com/v2.0/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df884d3298%26domain%3Ddeercoder.com%26origin%3Dhttp%253A%252F%252Fdeercoder.com%252Ff32eecd288%26relation%3Dparent.parent&amp;color_scheme=light&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2FSchumacherRealty&amp;locale=en_US&amp;sdk=joey&amp;show_border=true&amp;show_faces=true&amp;stream=false" class="face col-sm-12 col-lg-12 col-sx-12 col-md-12"></iframe>
-                        <div class="facebookcool">
-                        	<a href="https://www.facebook.com/SchumacherRealty" target="_blanck"a><i class="fa fa-facebook-square"></i></a>
+                        <div class="facebookcool" style="margin-top: 12px">
+                        	<a href="https://www.facebook.com/SchumacherRealty"  target="_blanck"a><i class="fa fa-facebook-square"></i></a>
                         	<p class="texto"></p>
                         </div>
 						  <!-- <div class="fb-like-box" data-href="https://www.facebook.com/SchumacherRealty" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div> -->
