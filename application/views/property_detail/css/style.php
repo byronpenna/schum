@@ -1,3 +1,9 @@
+.readmore{
+	margin-bottom: 5%;
+}
+.descript{
+	word-break: break-all;
+}
 a:hover{
 	text-decoration: none;
 }

@@ -1,3 +1,22 @@
+.direccion {
+	word-break:break-all;
+	-moz-word-break:break-all;
+	-webkit-word-break:break-all;
+}
+.dataContent {
+	word-break:break-all;
+	-moz-word-break:break-all;
+	-webkit-word-break:break-all;
+}
+.botonChulo {
+	width: 60%;
+}
+.viewListingSection button {
+	font-size: 1.7em !important;
+}
+a:hover{
+	text-decoration: none;
+}
 /* revancha menu bootrap */ 
 	.navbar{
 		margin-bottom: 13%;
@@ -56,9 +75,8 @@
 		color: white;
 		height: auto;
 		font-family: 'proximaNovaBlack';
-		font-weight: bold;
 		text-transform: uppercase;
-		letter-spacing: 3px;
+		letter-spacing: 0px;
 		border-radius: 0;
 	}
 	.contact div{
