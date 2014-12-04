@@ -99,6 +99,18 @@ img.imgfull{
 	}
 }
 @media(min-width:768px){
+    .calendar {
+        display: table;
+        height: 100%;
+    }
+
+    .calendar .between {
+        display: table-row;
+    }
+
+    .calendar .child {
+        display: table-cell;
+    }
 	.calendar{
 		margin-top: 5%;
 	}
@@ -155,7 +167,7 @@ img.imgfull{
 		margin-bottom: 0px;
 	}
 	.imgfull{
-		width: 130%;
+		width: 120%;
 	}
 	.calendar {
 	    height: relative;
@@ -163,7 +175,7 @@ img.imgfull{
 	}
 	.descript {
     	padding-left: 0px;
-    	height: 6.5em;
+    
 	}
 }
 
@@ -211,7 +223,7 @@ img.imgfull{
 	margin-top: 10%;
 	}
 	.imgfull{
-		width: 130%;
+		width: 125%;
 	}
 }
 @media(min-width:1100px){
@@ -228,7 +240,7 @@ img.imgfull{
 }
 @media(min-width:1200px){
 	.imgfull{
-		width: 125%;
+		width: 120%;
 	}
 	.photosection h3{
 		font-size: 1em;
@@ -237,7 +249,6 @@ img.imgfull{
 		font-size: 1.2em;
 	}
 	.descript{
-		height: 13em;
 	}
 }
 @media(min-width:1300px){
@@ -254,12 +265,11 @@ img.imgfull{
 		font-size: 0.95em;
 	}
 	.descript {
-		height: 10em;
 	}
 }
 @media(min-width:1400px){
 	.imgfull{
-		width: 120%;
+		width: 115%;
 	}
 	.descriptionsection h2{
 		font-size: 1.7em;
@@ -306,7 +316,6 @@ img.imgfull{
 			font-size: 1.2em;
 	}
 	.descript{
-			height: 18em;
 	}
 	.photosection h2 {
 		font-size: 1.7em;
@@ -345,7 +354,6 @@ img.imgfull{
 		font-size: 1.5em;
 	}
 	.descript {
-		height: 13.5em;
 	}
 }
 
@@ -387,10 +395,9 @@ img.imgfull{
 		font-size: 1.2em;
 	}
 	.imgfull{
-		width: 110%;
+		width: 105%;
 	}
 	.descript{
-		height: 15em;
 	}
 }
 @media(min-width:2000px){
@@ -408,7 +415,6 @@ img.imgfull{
 			font-size: 2em;
 	}
 	.descript{
-			height: 23em;
 	}
 	.photosection h2 {
 		font-size: 2.5em;
@@ -425,7 +431,6 @@ img.imgfull{
 			font-size: 2em;
 	}
 	.descript{
-			height: 24em;
 	}
 	.photosection h2 {
 		font-size: 2.5em;
@@ -466,7 +471,6 @@ img.imgfull{
 			font-size: 2em;
 	}
 	.descript{
-			height: 25em;
 	}
 	.photosection h2 {
 		font-size: 2.5em;
