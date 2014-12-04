@@ -1,5 +1,6 @@
 .des{
     margin-bottom: 15px !important;
+    padding-right: -15px !important;
 }
 .barraprice{
     text-align:justify;

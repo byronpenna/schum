@@ -141,7 +141,7 @@
 								?>
 								<div class="row container-fluid dataOtherSay">
 									<div class="col-md-5 col-lg-3">
-										<button class="form-control">
+										<button class="form-control botonChulo">
 											MORE TESTIMONIALS	
 										</button>	
 									</div>

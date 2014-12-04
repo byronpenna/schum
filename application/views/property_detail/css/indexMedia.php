@@ -875,14 +875,14 @@ iframe[name="f3d7c73d9c"]{
 			margin-top: 3%;
 		}
 		.contactAgentText p{
-			font-size: 1em;
+			font-size: 1.8em;
 		}
 		/*read more*/
 		.contactAgentText > .row:nth-child(5){
 			margin-top: 3%;
 		}
         .readmore{
-            font-size: 1em;
+            font-size: 1.4em;
             width: 100px;
         }
 
@@ -952,6 +952,7 @@ iframe[name="f3d7c73d9c"]{
 		}
         .fbbox iframe{
             width: 500px;
+            height: 500px;
         }
 
 	/*Calculator*/
