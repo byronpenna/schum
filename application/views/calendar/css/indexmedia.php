@@ -179,7 +179,11 @@ img.imgfull{
 	}
 }
 
-
+@media(min-width:900px){
+    .price{
+        font-size: 1em;
+    }
+}
 
 @media(min-width:1000px){
 	.calendar{
@@ -213,7 +217,7 @@ img.imgfull{
 		font-size: 1em;
 	}
 	.price{
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 	.descr{
 		font-size: 0.7em;
@@ -231,10 +235,10 @@ img.imgfull{
 		margin-bottom: 15%;
 	}
 	.price{
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	.descr{
-		font-size: 0.8em;
+		font-size: 0.7em;
 		margin-left: 1%;
 	}
 }
@@ -250,6 +254,9 @@ img.imgfull{
 	}
 	.descript{
 	}
+    .price {
+        font-size: 1.2em;
+    }
 }
 @media(min-width:1300px){
 	.imgfull {
@@ -287,10 +294,8 @@ img.imgfull{
 		font-size: 1.2em;
 		margin-top: 0px !important;
 	}
-}
-@media(min-width:1400px){
 	.price{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.descr{
 		font-size: 0.8em;
@@ -310,10 +315,10 @@ img.imgfull{
 
 @media(min-width:1500px){
 	.price {
-			font-size: 2.4em;
+			font-size: 1.5em;
 	}
 	.descr {
-			font-size: 1.2em;
+			font-size: 0.8em;
 	}
 	.descript{
 	}
@@ -326,13 +331,13 @@ img.imgfull{
 }
 @media(min-width:1600px){
 	.descr {
-		font-size: 1.2em;
+		font-size: 0.9em;
 	}
 	.price {
-		font-size: 2.4em;
+		font-size: 1.6em;
 	}
 	.horario h3 {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 }
 @media(min-width:1700px){
@@ -409,10 +414,10 @@ img.imgfull{
 
 @media(min-width:2300px){
 	.price {
-			font-size: 4em;
+			font-size: 2.2em;
 	}
 	.descr {
-			font-size: 2em;
+			font-size: 1.3em;
 	}
 	.descript{
 	}
@@ -425,10 +430,10 @@ img.imgfull{
 }
 @media(min-width:2500px){
 	.price {
-			font-size: 4em;
+			font-size: 2.2em;
 	}
 	.descr {
-			font-size: 2em;
+			font-size: 1.5em;
 	}
 	.descript{
 	}
@@ -465,10 +470,10 @@ img.imgfull{
 }
 @media(min-width:2700px){
 	.price {
-			font-size: 4em;
+			font-size: 3em;
 	}
 	.descr {
-			font-size: 2em;
+			font-size: 1.6em;
 	}
 	.descript{
 	}
