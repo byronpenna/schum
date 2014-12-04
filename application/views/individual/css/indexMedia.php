@@ -1,3 +1,79 @@
+@media(min-width:300px) and (max-width:767px){
+	/*botones estandarisados como en el psd*/
+	.dataOtherSay button {
+		font-size: 0.8em !important;
+	}
+	.botonChulo {
+	width: 40%;
+	}
+	.viewListingSection button {
+		font-size: 1.0em !important;
+		padding: 6%;
+	}
+}
+@media(min-width:768px) and (max-width:991px){
+	/*botones estandarisados como en el psd*/
+	.dataOtherSay button {
+		font-size: 0.8em !important;
+	}
+	.botonChulo {
+	width: 40%;
+	}
+	.viewListingSection button {
+		font-size: 1.0em !important;
+		padding: 6%;
+	}
+}
+@media(min-width:992px) and (max-width:1099px){
+	/*botones estandarisados como en el psd*/
+	.dataOtherSay button {
+		font-size: 0.8em !important;
+	}
+	.botonChulo {
+	width: 70%;
+	}
+	.viewListingSection button {
+		font-size: 1.0em !important;
+		padding: 6%;
+	}
+}
+@media(min-width:1100px) and (max-width:1499px){
+	/*botones estandarisados como en el psd*/
+	.dataOtherSay button {
+		font-size: 0.8em !important;
+	}
+	.botonChulo {
+	width: 70%;
+	}
+	.viewListingSection button {
+		font-size: 1.1em !important;
+		padding: 6%;
+	}
+}
+@media(min-width:1500px) and (max-width:1999px){
+	/*botones estandarisados como en el psd*/
+	.dataOtherSay button {
+		font-size: 0.9em !important;
+	}
+	.botonChulo {
+	width: 78%;
+	}
+	.viewListingSection button {
+		font-size: 1.2em !important;
+	}
+}
+@media(min-width:2000px) and (max-width:2500px){
+	/*botones estandarisados como en el psd*/
+	.dataOtherSay button {
+		font-size: 1.0em !important;
+	}
+	.botonChulo {
+	width: 65%;
+	}
+	.viewListingSection button {
+		font-size: 1.5em !important;
+	}
+}
 @media(min-width:250px) and (max-width:299px){
 	body{
 		/*background: yellow;*/
@@ -138,36 +214,42 @@
 }
 @media(min-width:992px) and (max-width:1199px){
 	body{
-		/*background: yellow;*/
-	}
+		/*background: pink;*/
+	}	
 	/* contact */ 
 		.iconDescripcionPersona{
-			font-size: 2em;
+			font-size: 1.6em;
 			margin-right: 3%;
 		}
 		.containerIdioma{
 			margin-top: -10%;
 		}
 		.containerIdioma h2{
-			font-size: 1em;
+			font-size: 1.3em;
 		}
-	/* lado left */ 
-		.viewListingSection button{
-			font-size: 0.7em;
-		}
-	/* lado right */ 
-		.descriptionIndividual h3{
-			font-size: 1em;
-		}
-		.dataContent p{
-			font-size: 2em;
-		}
-		.dataOtherSay p{
-			font-size: 1.5em;
-		}
-		.dataOtherSay button{
-			font-size: 1em;
-		}
+	.descriptionIndividual h3{
+		font-size: 1em;
+	}
+	.idiomas h2{
+		font-size: 1em;
+	}
+	.viewListingSection button{
+		font-size: 0.8em;
+		padding-top: 6%;
+		padding-bottom: 6%;
+	}
+	.individualTarjeta{
+		padding-right:3%;
+	}
+	.dataContent p{
+		font-size: 1.3em;
+	}
+	.dataOtherSay p{
+		font-size: 1em;
+	}
+	.dataOtherSay button{
+		font-size: 0.8em;
+	}
 }
 @media(min-width:1200px){
 	body{
