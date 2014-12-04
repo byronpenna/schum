@@ -42,8 +42,11 @@ function paginacionEmp(limit){
 		type: 	"POST",
 		success: function(data){
 			console.log("la data es: ",limit);
-			console.log("nice",data);
-			$(".cuadritosEmpleadoSection").empty().append(data);
+			// console.log("nice",data);
+			if(data != ""){
+				$(".cuadritosEmpleadoSection").empty().append(data);	
+			}
+			
 		}
 	});
 }
