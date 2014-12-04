@@ -1,3 +1,6 @@
+.textoEmpleado p {
+	word-break:break-all;
+}
 /* revancha menu bootrap */ 
 	.navbar{
 		margin-bottom: 13%;
