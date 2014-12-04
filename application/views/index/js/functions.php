@@ -41,7 +41,7 @@ function paginacionEmp(limit){
 		url: 	<?php echo "'".site_url('welcome/getEmpPagination')."'" ?>,
 		type: 	"POST",
 		success: function(data){
-			// console.log("la data es: ",limit);
+			console.log("la data es: ",limit);
 			console.log("nice",data);
 			$(".cuadritosEmpleadoSection").empty().append(data);
 		}

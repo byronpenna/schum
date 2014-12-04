@@ -76,8 +76,8 @@ class Indexm  extends Padrem
 				return $divNews;
 		}
 	// empleados 
-		function getCuadritosEmpleados(){
-			$empleado = $this->getEmpleados();
+		function getCuadritosEmpleados($l1=0,$l2=4){
+			$empleado = $this->getEmpleados($l1,$l2);
 			$cuadrito = "";
 			// for ($i=0; $i < 2; $i++) { 
 				foreach ($empleado as $key => $value) {
@@ -121,10 +121,10 @@ class Indexm  extends Padrem
 			// }
 			return $cuadrito;
 		}
-		function getEmpleados(){
+		function getEmpleados($l1=0,$l2=4){
 			// vars 
 				// $sql = "call shum_getEmpleados()";
-				$sql = "SELECT * FROM shum_tb_emp_nominaemp LIMIT 0,4";
+				$sql = "SELECT * FROM shum_tb_emp_nominaemp LIMIT $l1,$l2";
 			// do it 
 				$this->db->trans_start();
 					$query = $this->db->query($sql);

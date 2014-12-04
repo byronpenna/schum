@@ -337,11 +337,11 @@
 						<h2 class="titleOurTeam">Meet Our Team</h2>
 					</div>
 					<div class="col-lg-offset-6 col-lg-2 text-right navEmpSection">
-						<img id="leftArrowTeem" class='navEmpleados' src=<?php echo "'".base_url("img/elements/ourteam/navLeft.png")."'"; ?> />
-						<img id="rightArrowTeem" class='navEmpleados' src=<?php echo "'".base_url("img/elements/ourteam/navRight.png")."'"; ?> />
+						<img id="leftArrowTeem" direccion='0' class='navEmpleados' src=<?php echo "'".base_url("img/elements/ourteam/navLeft.png")."'"; ?> />
+						<img id="rightArrowTeem" direccion='1' class='navEmpleados' src=<?php echo "'".base_url("img/elements/ourteam/navRight.png")."'"; ?> />
 					</div>
 				</div>
-				<div class="row container-fluid">
+				<div class="row container-fluid cuadritosEmpleadoSection">
 					<?php 
 						echo $cuadritoEmpleado;
 					?>
