@@ -113,71 +113,98 @@
 }
 
 */
-@media(min-width:1100px) and (max-width: 1199px){
-	/*body {
-		background-color: orange;
-	}*/
+@media(min-width:300px) and (max-width: 999px){
+	.fbbox iframe{
+		display: none;
+	}
+	.facebookcool {
+		display: block;
+	}
+	}
+@media(min-width:1000px) and (max-width: 1099px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	.arreglosChulos {
 		margin-left: 17%;
 	}
 	.fbbox iframe{
-		height: 100%;
-		margin-left: -30%;
-		margin-top: -77%;
+		height: 260px;
+		margin-left: -36%;
+		margin-top: -18%;
+		transform:scale(0.75,0.75);
+		-moz-transform:scale(0.75,0.75);
+		-webkit-transform:scale(0.75,0.75);
+}
+}
+@media(min-width:1100px) and (max-width: 1199px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		height: 260px;
+		margin-left: -28%;
+		margin-top: -13%;
 		transform:scale(0.75,0.75);
 		-moz-transform:scale(0.75,0.75);
 		-webkit-transform:scale(0.75,0.75);
 }
 }
 @media(min-width:1200px) and (max-width: 1299px){
-	/*body {
-		background-color: orange;
-	}*/
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	.arreglosChulos {
 		margin-left: 17%;
 	}
 	.fbbox iframe{
-		height: 100%;
-		margin-left: -30%;
-		margin-top: -77%;
+		height: 260px;
+		margin-left: -24%;
+		margin-top: -13%;
 		transform:scale(0.75,0.75);
 		-moz-transform:scale(0.75,0.75);
 		-webkit-transform:scale(0.75,0.75);
 }
 }
+
 @media(min-width:1300px) and (max-width: 1399px){
-	/*body {
-		background-color: orange;
-	}*/
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	.arreglosChulos {
 		margin-left: 17%;
 	}
 	.fbbox iframe{
-		height: 100%;
-		margin-left: -25%;
-		margin-top: -70%;
-		transform:scale(0.75,0.75);
-		-moz-transform:scale(0.75,0.75);
-		-webkit-transform:scale(0.75,0.75);
-}
-}
-@media(min-width:1300px) and (max-width: 1399px){
-	/*body {
-		background-color: orange;
-	}*/
-	.arreglosChulos {
-		margin-left: 17%;
-	}
-	.fbbox iframe{
-		height: 100%;
-		margin-left: -25%;
-		margin-top: -70%;
+		height: 260px;
+		margin-left: -20%;
+		margin-top: -13%;
 		transform:scale(0.75,0.75);
 		-moz-transform:scale(0.75,0.75);
 		-webkit-transform:scale(0.75,0.75);
 }
 }
 @media(min-width:1400px) and (max-width: 1599px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	/*body {
 		background-color: orange;
 	}*/
@@ -190,6 +217,12 @@
 }
 }
 @media(min-width:1600px) and (max-width: 1799px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	/*body {
 		background-color: orange;
 	}*/
@@ -202,6 +235,12 @@
 }
 }
 @media(min-width:1800px) and (max-width: 1999px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	/*body {
 		background-color: orange;
 	}*/
@@ -214,6 +253,12 @@
 }
 }
 @media(min-width:2000px) and (max-width: 2199px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	/*body {
 		background-color: orange;
 	}*/
@@ -229,6 +274,12 @@
 }
 }
 @media(min-width:2200px) and (max-width: 2399px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	/*body {
 		background-color: orange;
 	}*/
@@ -244,6 +295,12 @@
 }
 }
 @media(min-width:2400px) and (max-width: 2599px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	/*body {
 		background-color: yellow;
 	}*/
@@ -259,6 +316,12 @@
 }
 }
 @media(min-width:2600px) and (max-width: 2699px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	/*body {
 		background-color: orange;
 	}*/
@@ -274,6 +337,12 @@
 }
 }
 @media(min-width:2700px){
+	.fbbox iframe{
+		display: block;
+	}
+	.facebookcool {
+		display: none;
+	}
 	/*body {
 		background-color: green;
 	}*/

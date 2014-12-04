@@ -1,4 +1,18 @@
-
+.fbbox iframe{
+	display: none;
+}
+.fa-facebook-square {
+	font-size: 5em;
+	color: white;
+	
+}
+.facebookcool {
+	padding-top: 20%;
+	text-align: center;
+	background-color: #425F9C;
+	width: 100%;
+	height: 150px;
+}
 .readmore{
 	margin-bottom: 5%;
 }
