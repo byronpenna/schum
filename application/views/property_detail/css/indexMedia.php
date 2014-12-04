@@ -120,6 +120,9 @@
 	.facebookcool {
 		display: block;
 	}
+	.arreglosChulos {
+		margin-left: 13%;
+	}
 	}
 @media(min-width:1000px) and (max-width: 1099px){
 	.fbbox iframe{

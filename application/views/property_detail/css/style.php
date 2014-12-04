@@ -23,11 +23,12 @@ img.imgfull{
 	
 }
 .facebookcool {
-	padding-top: 20%;
+	margin-top: 25%;
+	padding: 8%;
 	text-align: center;
 	background-color: #425F9C;
-	width: 100%;
-	height: 150px;
+	width: 60%;
+	border-radius: 20px;
 }
 .readmore{
 	margin-bottom: 5%;
