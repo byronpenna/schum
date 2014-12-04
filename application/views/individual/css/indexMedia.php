@@ -43,7 +43,7 @@
 		font-size: 0.8em !important;
 	}
 	.botonChulo {
-	width: 70%;
+	width: 80%;
 	}
 	.viewListingSection button {
 		font-size: 1.1em !important;

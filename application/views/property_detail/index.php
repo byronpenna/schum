@@ -1,4 +1,4 @@
-
+tu
 <!DOCTYPE html>
 <html>
 <head>
@@ -331,7 +331,7 @@
 				?>
 					<div class="col-sm-6 col-xs-12 col-md-3" id='facebook_area'>
 						<!-- Plugin de facebook -->
-						<div class="row titulo">
+						<div class="row titulo arreglosChulos">
 							<h2>LIKE US ON FACEBOOK</h2>
 						</div>
                         <div class="col-sm-12 col-lg-12 col-sx-12 col-md-12 fbbox">

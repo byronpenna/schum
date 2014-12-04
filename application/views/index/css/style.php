@@ -40,9 +40,9 @@ a:hover{
 	display: none !important;
 }
 #leftarrow:hover {
-	content: url(<?php echo "'".base_url("img/elements/news_to_market/navLeft2.png")."'"; ?>);
-	-moz-content: url(<?php echo "'".base_url("img/elements/news_to_market/navLeft2.png")."'"; ?>);
-	-webkit-content: url(<?php echo "'".base_url("img/elements/news_to_market/navLeft2.png")."'"; ?>);
+	content: url(<?php echo "'".base_url("img/elements/news_to_market/navLeft2.png")."'"; ?>) !important;
+	-moz-content: url(<?php echo "'".base_url("img/elements/news_to_market/navLeft2.png")."'"; ?>) !important;
+	-webkit-content: url(<?php echo "'".base_url("img/elements/news_to_market/navLeft2.png")."'"; ?>) !important;
 }
 #rightarrow:hover {
 	content: url(<?php echo "'".base_url("img/elements/news_to_market/navRight2.png")."'"; ?>);

@@ -113,8 +113,181 @@
 }
 
 */
-
-
+@media(min-width:1100px) and (max-width: 1199px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		height: 100%;
+		margin-left: -30%;
+		margin-top: -77%;
+		transform:scale(0.75,0.75);
+		-moz-transform:scale(0.75,0.75);
+		-webkit-transform:scale(0.75,0.75);
+}
+}
+@media(min-width:1200px) and (max-width: 1299px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		height: 100%;
+		margin-left: -30%;
+		margin-top: -77%;
+		transform:scale(0.75,0.75);
+		-moz-transform:scale(0.75,0.75);
+		-webkit-transform:scale(0.75,0.75);
+}
+}
+@media(min-width:1300px) and (max-width: 1399px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		height: 100%;
+		margin-left: -25%;
+		margin-top: -70%;
+		transform:scale(0.75,0.75);
+		-moz-transform:scale(0.75,0.75);
+		-webkit-transform:scale(0.75,0.75);
+}
+}
+@media(min-width:1300px) and (max-width: 1399px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		height: 100%;
+		margin-left: -25%;
+		margin-top: -70%;
+		transform:scale(0.75,0.75);
+		-moz-transform:scale(0.75,0.75);
+		-webkit-transform:scale(0.75,0.75);
+}
+}
+@media(min-width:1400px) and (max-width: 1599px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		margin-left: 10%;
+		margin-top: 6%;
+}
+}
+@media(min-width:1600px) and (max-width: 1799px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		margin-left: 10%;
+		margin-top: 6%;
+}
+}
+@media(min-width:1800px) and (max-width: 1999px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		margin-left: 10%;
+		margin-top: 6%;
+}
+}
+@media(min-width:2000px) and (max-width: 2199px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 17%;
+	}
+	.fbbox iframe{
+		margin-left: 20%;
+		margin-top: 16%;
+		transform:scale(1.15,1.15);
+		-moz-transform:scale(1.15,1.15);
+		-webkit-transform:scale(1.15,1.15);
+}
+}
+@media(min-width:2200px) and (max-width: 2399px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 13%;
+	}
+	.fbbox iframe{
+		margin-left: 20%;
+		margin-top: 19%;
+		transform:scale(1.25,1.25);
+		-moz-transform:scale(1.25,1.25);
+		-webkit-transform:scale(1.25,1.25);
+}
+}
+@media(min-width:2400px) and (max-width: 2599px){
+	/*body {
+		background-color: yellow;
+	}*/
+	.arreglosChulos {
+		margin-left: 13%;
+	}
+	.fbbox iframe{
+		margin-left: 29%;
+		margin-top: 29%;
+		transform:scale(1.45,1.45);
+		-moz-transform:scale(1.45,1.45);
+		-webkit-transform:scale(1.45,1.45);
+}
+}
+@media(min-width:2600px) and (max-width: 2699px){
+	/*body {
+		background-color: orange;
+	}*/
+	.arreglosChulos {
+		margin-left: 13%;
+	}
+	.fbbox iframe{
+		margin-left: 29%;
+		margin-top: 30%;
+		transform:scale(1.5,1.5);
+		-moz-transform:scale(1.5,1.5);
+		-webkit-transform:scale(1.5,1.5);
+}
+}
+@media(min-width:2700px){
+	/*body {
+		background-color: green;
+	}*/
+	.arreglosChulos {
+		margin-left: 8%;
+	}
+	.fbbox iframe{
+		margin-left: 22%;
+		margin-top: 27%;
+		transform:scale(1.5,1.5);
+		-moz-transform:scale(1.5,1.5);
+		-webkit-transform:scale(1.5,1.5);
+}
+}
 iframe[name="f3d7c73d9c"]{
 	width: 100% !important;
 }
