@@ -1,3 +1,6 @@
+a:hover{
+	text-decoration: none;
+}
 /* revancha menu bootrap */ 
 	.navbar{
 		margin-bottom: 13%;
