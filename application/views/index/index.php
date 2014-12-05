@@ -1,5 +1,6 @@
 <?php 
 	$datos["opMenu"] = 0;
+	// print_r($slider);
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,7 +38,7 @@
 <body>	
 <div class="container-fluid"> <!-- ahorita tiene container fluid por el tonto slider -->
 		<?php $this->load->view("parts/header.php") ?>
-		<div class="row container-fluid sliderNew">
+		<div class="row container-fluid sliderNew" style=<?php echo "'background:url(".$slider->first.");'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
 			<div class="row container-fluid">	
 				<div class="row container-fluid paddingNull navSliderSection">
@@ -123,7 +124,12 @@
 										</a>
 										
 									</div> -->
-									<div class="pointCuadro" id='fb'>
+									
+									<?php
+									echo $slider->div;
+									?>
+
+									<!-- <div class="pointCuadro" id='fb'>
 										<div class="circle-text circle-slider pointIMG activePoint" other='img1'>
 											<div>
 											</div>
@@ -146,7 +152,8 @@
 											<div>
 											</div>
 										</div>
-									</div>
+									</div> -->
+
 									<!-- <div class="col-md-2">
 										<img class='imgFull pointIMG activePoint' other='img1' src=<?php echo "'".base_url("img/slider/activeControl.png")."'"; ?> >	
 									</div>
@@ -337,11 +344,11 @@
 						<h2 class="titleOurTeam">Meet Our Team</h2>
 					</div>
 					<div class="col-lg-offset-6 col-lg-2 text-right navEmpSection">
-						<img id="leftArrowTeem" class='navEmpleados' src=<?php echo "'".base_url("img/elements/ourteam/navLeft.png")."'"; ?> />
-						<img id="rightArrowTeem" class='navEmpleados' src=<?php echo "'".base_url("img/elements/ourteam/navRight.png")."'"; ?> />
+						<img id="leftArrowTeem" direccion='0' class='navEmpleados' src=<?php echo "'".base_url("img/elements/ourteam/navLeft.png")."'"; ?> />
+						<img id="rightArrowTeem" direccion='1' class='navEmpleados' src=<?php echo "'".base_url("img/elements/ourteam/navRight.png")."'"; ?> />
 					</div>
 				</div>
-				<div class="row container-fluid">
+				<div class="row container-fluid cuadritosEmpleadoSection">
 					<?php 
 						echo $cuadritoEmpleado;
 					?>

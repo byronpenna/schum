@@ -100,6 +100,7 @@ class Welcome extends Padre {
 				$listings 					= $indexModel->getCountListing();
 			// news to the market
 				$newsToMarket 				= $indexModel->getNewsToTheMarket();
+				$slider 					= $indexModel->getPointSlider();
 			$data 		= array(
 				'ubicacion' 		=> $ubicacion,
 				'homeData' 			=> $this->homeData,
@@ -108,7 +109,8 @@ class Welcome extends Padre {
 				'cuadritoEmpleado' 	=> $indexModel->getCuadritosEmpleados(),
 				'newsToMarket' 		=> $newsToMarket,
 				'searchOp' 			=> $this->searchBarOp,
-				'cnListing' 		=> $listings[0]->cnListing
+				'cnListing' 		=> $listings[0]->cnListing,
+				'slider'			=> $slider
 			);
 		// views 
 			$this->load->view('index/index.php',$data);

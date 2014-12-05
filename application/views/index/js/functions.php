@@ -41,9 +41,12 @@ function paginacionEmp(limit){
 		url: 	<?php echo "'".site_url('welcome/getEmpPagination')."'" ?>,
 		type: 	"POST",
 		success: function(data){
-			// console.log("la data es: ",limit);
-			console.log("nice",data);
-			$(".cuadritosEmpleadoSection").empty().append(data);
+			console.log("la data es: ",limit);
+			// console.log("nice",data);
+			if(data != ""){
+				$(".cuadritosEmpleadoSection").empty().append(data);	
+			}
+			
 		}
 	});
 }
@@ -128,6 +131,7 @@ function paginacionEmp(limit){
 	function startSlider(){
 		// vars 
 			arrImg 			= timerSlider();
+			console.log("el arreglo de imageines es:",arrImg);
 			atrImgActual	= $(".activePoint").attr("other");
 			indexActual 	= arrImg.indexOf(atrImgActual);
 			nElementos 		= arrImg.length;
@@ -139,7 +143,8 @@ function paginacionEmp(limit){
 				newIndex = 0;
 			}
 			
-			img = BaseUrlImg+"/img/"+arrImg[indexActual]+".png";
+			// img = BaseUrlImg+"/img/"+arrImg[indexActual]+".png";
+			img = arrImg[indexActual];
 			setNewActivePoint(newIndex,BaseUrlImg);
 			
 
