@@ -1,3 +1,7 @@
+.des{
+    margin-bottom: 15px !important;
+    padding-right: -15px !important;
+}
 .barraprice{
     text-align:justify;
     padding-left: 0px !important;
@@ -7,9 +11,9 @@
 div.imgfull{
    margin-left: -15px !important;
 }
-html,body{
-	height: 100%;
-	margin: 0px; 
+html, body{
+	height:100vh !important;
+	margin:0px; 
 }
 .photosection h2{
 	color: #314782;
@@ -61,7 +65,7 @@ html,body{
 .horario{
 	padding: 10%;
 	/* background: #ba0000; */
-	background: url('http://deercoder.com/shum/img/elements/fondo_calendar.png');
+	background: url('http://deercoder.com/shum/img/elements/fondo_calendar.png') !important;
 	color: #fff;
 	text-align: center;
 }
@@ -94,4 +98,9 @@ h4{
 }
 .descr{
 	font-family: "proximaNovaSemiBold";
+}
+.des{
+    position: absolute !important;
+    bottom: 0;
+    margin-left: -15px !important;
 }

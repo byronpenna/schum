@@ -51,7 +51,7 @@ class Calendarm extends Padrem
 							".$casa->description."
 						</p>
 					</div>
-					<div class='col-xs-12' style='text-align:justify'>
+					<div class='col-xs-12 des' style='text-align:justify'>
 						<h4 class='price'>$".$casa->listPrice." |</h4><h4 class='descr'>SQ FT:".$casa->sq." ft2 |</h4><h4 class='descr'>BED: ".$casa->rooms." |</h4><h4 class='descr'>BATH: ".$casa->bathroom."</h4>
 					</div>
 				</div>

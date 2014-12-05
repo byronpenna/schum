@@ -1,4 +1,46 @@
 
+div.imgfull{
+  max-height: 200%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+div.imgfull img {
+  display: block;
+  max-width: none !important;
+}
+img.imgfull{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.fbbox iframe{
+	display: none;
+}
+.fa-facebook-square {
+	font-size: 5em;
+	color: white;
+	
+}
+.facebookcool {
+	margin-top: 26%;
+	padding: 10px;
+	text-align: center;
+	background-color: #425F9C;
+	width: 90px;
+	border-radius: 20px;
+}
+.conteFB {
+	display: none;
+}
+.textoFB {
+	color:#425F9C;
+	font-family: ProximaNova;
+	font-size: 2em;
+	font-weight: thin;
+}
 .readmore{
 	margin-bottom: 5%;
 }
@@ -263,4 +305,15 @@ label{
     border: none;
     color: #fff;
     background-color: #be0000;
+}
+.bot{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.butto{
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: center;
+    
 }

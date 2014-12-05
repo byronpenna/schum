@@ -99,6 +99,18 @@ img.imgfull{
 	}
 }
 @media(min-width:768px){
+    .calendar {
+        display: table;
+        height: 100%;
+    }
+
+    .calendar .between {
+        display: table-row;
+    }
+
+    .calendar .child {
+        display: table-cell;
+    }
 	.calendar{
 		margin-top: 5%;
 	}
@@ -155,7 +167,7 @@ img.imgfull{
 		margin-bottom: 0px;
 	}
 	.imgfull{
-		width: 130%;
+		width: 120%;
 	}
 	.calendar {
 	    height: relative;
@@ -163,11 +175,15 @@ img.imgfull{
 	}
 	.descript {
     	padding-left: 0px;
-    	height: 6.5em;
+    
 	}
 }
 
-
+@media(min-width:900px){
+    .price{
+        font-size: 1em;
+    }
+}
 
 @media(min-width:1000px){
 	.calendar{
@@ -201,7 +217,7 @@ img.imgfull{
 		font-size: 1em;
 	}
 	.price{
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 	.descr{
 		font-size: 0.7em;
@@ -211,7 +227,7 @@ img.imgfull{
 	margin-top: 10%;
 	}
 	.imgfull{
-		width: 130%;
+		width: 125%;
 	}
 }
 @media(min-width:1100px){
@@ -219,16 +235,16 @@ img.imgfull{
 		margin-bottom: 15%;
 	}
 	.price{
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	.descr{
-		font-size: 0.8em;
+		font-size: 0.7em;
 		margin-left: 1%;
 	}
 }
 @media(min-width:1200px){
 	.imgfull{
-		width: 125%;
+		width: 120%;
 	}
 	.photosection h3{
 		font-size: 1em;
@@ -237,8 +253,10 @@ img.imgfull{
 		font-size: 1.2em;
 	}
 	.descript{
-		height: 13em;
 	}
+    .price {
+        font-size: 1.2em;
+    }
 }
 @media(min-width:1300px){
 	.imgfull {
@@ -254,12 +272,11 @@ img.imgfull{
 		font-size: 0.95em;
 	}
 	.descript {
-		height: 10em;
 	}
 }
 @media(min-width:1400px){
 	.imgfull{
-		width: 120%;
+		width: 115%;
 	}
 	.descriptionsection h2{
 		font-size: 1.7em;
@@ -277,10 +294,8 @@ img.imgfull{
 		font-size: 1.2em;
 		margin-top: 0px !important;
 	}
-}
-@media(min-width:1400px){
 	.price{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.descr{
 		font-size: 0.8em;
@@ -300,13 +315,12 @@ img.imgfull{
 
 @media(min-width:1500px){
 	.price {
-			font-size: 2.4em;
+			font-size: 1.5em;
 	}
 	.descr {
-			font-size: 1.2em;
+			font-size: 0.8em;
 	}
 	.descript{
-			height: 18em;
 	}
 	.photosection h2 {
 		font-size: 1.7em;
@@ -317,13 +331,13 @@ img.imgfull{
 }
 @media(min-width:1600px){
 	.descr {
-		font-size: 1.2em;
+		font-size: 0.9em;
 	}
 	.price {
-		font-size: 2.4em;
+		font-size: 1.6em;
 	}
 	.horario h3 {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 }
 @media(min-width:1700px){
@@ -345,7 +359,6 @@ img.imgfull{
 		font-size: 1.5em;
 	}
 	.descript {
-		height: 13.5em;
 	}
 }
 
@@ -387,10 +400,9 @@ img.imgfull{
 		font-size: 1.2em;
 	}
 	.imgfull{
-		width: 110%;
+		width: 105%;
 	}
 	.descript{
-		height: 15em;
 	}
 }
 @media(min-width:2000px){
@@ -402,13 +414,12 @@ img.imgfull{
 
 @media(min-width:2300px){
 	.price {
-			font-size: 4em;
+			font-size: 2.2em;
 	}
 	.descr {
-			font-size: 2em;
+			font-size: 1.3em;
 	}
 	.descript{
-			height: 23em;
 	}
 	.photosection h2 {
 		font-size: 2.5em;
@@ -419,13 +430,12 @@ img.imgfull{
 }
 @media(min-width:2500px){
 	.price {
-			font-size: 4em;
+			font-size: 2.2em;
 	}
 	.descr {
-			font-size: 2em;
+			font-size: 1.5em;
 	}
 	.descript{
-			height: 24em;
 	}
 	.photosection h2 {
 		font-size: 2.5em;
@@ -460,13 +470,12 @@ img.imgfull{
 }
 @media(min-width:2700px){
 	.price {
-			font-size: 4em;
+			font-size: 3em;
 	}
 	.descr {
-			font-size: 2em;
+			font-size: 1.6em;
 	}
 	.descript{
-			height: 25em;
 	}
 	.photosection h2 {
 		font-size: 2.5em;
