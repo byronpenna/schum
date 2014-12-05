@@ -265,6 +265,39 @@ class Indexm  extends Padrem
 			return $cb;	
 		}
 	// social networks
+		function getPointSlider(){
+			$slider 	= $this->getSlider();
+			$retorno 	= new stdClass();
+			$div 	= '';
+			$active = "activePoint";
+			foreach ($slider as $key => $value) {
+				if(!$key == 0){
+					$active = "";
+				}
+				$div .= "
+					<div class='pointCuadro' id='fb'>
+						<div class='circle-text circle-slider pointIMG activePoint' other='".$value->rutaImg."'>
+							<div>
+							</div>
+						</div>
+					</div>
+				";
+			}
+			$retorno->div 	= $div;
+			$retorno->first = $slider[0]->rutaImg;
+			return $retorno;
+		}
+		function getSlider(){
+			$sql = "SELECT rutaImg,doc_nombre FROM shum_tb_home_slider ORDER BY doc_fecha_creacion DESC LIMIT 0,4";
+			$this->db->trans_start();
+				$query = $this->db->query($sql);
+			$this->db->trans_complete();
+			$retorno = $query->result();
+			foreach ($retorno as $key => $value) {
+				$retorno[$key]->rutaImg = $this->getImgSrc($value->rutaImg);
+			}
+			return $retorno;
+		}
 		function getHomeData(){
 			// vars 
 				$sql = "CALL shum_getHome();";

@@ -131,6 +131,7 @@ function paginacionEmp(limit){
 	function startSlider(){
 		// vars 
 			arrImg 			= timerSlider();
+			console.log("el arreglo de imageines es:",arrImg);
 			atrImgActual	= $(".activePoint").attr("other");
 			indexActual 	= arrImg.indexOf(atrImgActual);
 			nElementos 		= arrImg.length;
@@ -142,7 +143,8 @@ function paginacionEmp(limit){
 				newIndex = 0;
 			}
 			
-			img = BaseUrlImg+"/img/"+arrImg[indexActual]+".png";
+			// img = BaseUrlImg+"/img/"+arrImg[indexActual]+".png";
+			img = arrImg[indexActual];
 			setNewActivePoint(newIndex,BaseUrlImg);
 			
 
