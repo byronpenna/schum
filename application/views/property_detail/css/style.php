@@ -39,7 +39,8 @@ img.imgfull{
 	color:#425F9C;
 	font-family: ProximaNova;
 	font-size: 2em;
-	font-weight: thin;
+	margin-left: 85%;
+	margin-top: -52%;
 }
 .readmore{
 	margin-bottom: 5%;
