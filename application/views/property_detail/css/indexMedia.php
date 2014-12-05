@@ -868,9 +868,11 @@ iframe[name="f3d7c73d9c"]{
 		.calculadora button, input{
 			font-size: 1em !important;
 		}
+/*
 		.butto{
 			width: 6em;
 		}
+*/
 }
 @media(min-width:1130px){
     .boxSummary label{
@@ -1100,9 +1102,11 @@ iframe[name="f3d7c73d9c"]{
 		.calculadora button, input{
 			font-size: 1em !important;
 		}
+/*
 		.butto{
 			width: 6em;
 		}
+*/
 }
 
 @media(min-width:1700px){
@@ -1234,9 +1238,11 @@ iframe[name="f3d7c73d9c"]{
 		.calculadora button, input{
 			font-size: 1em !important;
 		}
+/*
 		.butto{
 			width: 6em;
 		}
+*/
 }
 
 @media(min-width:2000px){
@@ -1484,9 +1490,11 @@ iframe[name="f3d7c73d9c"]{
 			font-size: 1.5em !important;
 
 		}
+/*
 		.butto{
 			width: 6 !important;
 		}
+*/
 }
 @media(min-width:2400px){
 	body{
