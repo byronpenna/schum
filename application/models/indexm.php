@@ -88,7 +88,7 @@ class Indexm  extends Padrem
 						<a class='aEmpleadoLink' href='".site_url("individual/index/".$value->idEmpleado."")."'>
 							<div class='row  boxOurTeam'>
 								<div class='row'>
-									<div class='col-lg-6 col-md-12 alignTop paddingNull green'>
+									<div class='col-lg-6 col-md-12 alignTop paddingNull'>
 										<img class='imgTeam imgFull' src='".$img."' >	
 									</div>
 									<div class='col-lg-6 col-md-12 alignTop container-fluid dataTeam'>
