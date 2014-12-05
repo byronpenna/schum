@@ -14,6 +14,18 @@ class Padre extends CI_Controller
 			$this->homeData 	= $indexModel->getHome();
 			
 	}
+	public function getSearchBar(){
+		// load 
+			$this->load->model("indexm");
+		// models
+			$searchBar 					= new stdClass();
+			$indexModel 				= new Indexm();
+		// search bar
+			$searchBar->propertyType 	= $indexModel->getCbSearchBar(3);
+			$searchBar->minBedRoom 		= $indexModel->getCbSearchBar(2);
+			$searchBar->minBath 		= $indexModel->getCbSearchBar(1);
+		return $searchBar;	
+	}
 	function getSearchVar(){
 		$retorno = new stdClass();
 		$retorno->minSf = "

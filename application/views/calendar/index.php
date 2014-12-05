@@ -62,7 +62,7 @@
 					</div>
 				</div>
 				<div class="row container-fluid searchBar">
-					<div id='divSearch' class="col-md-10 col-sm-10">
+					<div id='divSearch' class="col-md-10 col-sm-10 searchBarBackground">
 						<div class="col-md-2 col-sm-2 inputPropertySearch">
 							<select name='propertyType' class="form-control MiSelectChulo" >
 								<option value='-1'>Property Type</option>
@@ -107,7 +107,7 @@
 						</div>
 					</div>
 					<div class="col-md-2 col-sm-2 inputPropertySearch">
-						<button class="form-control btnSearchNow contorno">
+						<button class="form-control btnSearchNow searchButton contorno">
 							<i class="fa fa-search lupita"><div></div></i><b class="serchi">Search Now</b>
 						</button>
 					</div>

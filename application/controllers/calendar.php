@@ -25,10 +25,13 @@ class Calendar extends Padre
 			$this->load->model("calendarm");
 		// vars 
 			$calendarModel 	= new Calendarm();
+			$searchBar 		= $this->getSearchBar();
 			$openHouse 		= $calendarModel->getDivOpenHouse($idHome);
 			$data = array(
 				'homeData' 		=> $this->homeData,
-				"divOpenHouse"	=> $openHouse
+				"divOpenHouse"	=> $openHouse,
+				"searchBar"		=> $searchBar,
+				"searchOp"		=> $this->searchBarOp
 			);
 		$this->load->view("calendar/index.php",$data);
 	}
