@@ -25,12 +25,21 @@ img.imgfull{
 	
 }
 .facebookcool {
-	margin-top: 25%;
-	padding: 8%;
+	margin-top: 26%;
+	padding: 10px;
 	text-align: center;
 	background-color: #425F9C;
-	width: 60%;
+	width: 90px;
 	border-radius: 20px;
+}
+.conteFB {
+	display: none;
+}
+.textoFB {
+	color:#425F9C;
+	font-family: ProximaNova;
+	font-size: 2em;
+	font-weight: thin;
 }
 .readmore{
 	margin-bottom: 5%;

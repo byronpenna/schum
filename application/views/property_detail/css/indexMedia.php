@@ -1,3 +1,28 @@
+@media(min-width:992px) and (max-width: 999px){
+		.fbbox iframe{
+			display: none;
+		}
+		.conteFB {
+			display: block;
+		}
+		.arreglosChulos {
+			margin-left: 13%;
+		}
+		.fa-facebook-square {
+			font-size: 5em;
+			color: white;
+	
+		}
+		.facebookcool {
+			margin-top: 26%;
+			margin-left: 100%;
+			padding: 10px;
+			text-align: center;
+			background-color: #425F9C;
+			width: 90px;
+			border-radius: 20px;
+		}
+	}
 @media(min-width:300px) and (max-width: 999px){
 	.fbbox iframe{
 		display: none;
