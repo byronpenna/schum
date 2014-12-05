@@ -1,3 +1,4 @@
+
 div.imgfull{
   max-height: 200%;
   overflow: hidden;
@@ -5,6 +6,7 @@ div.imgfull{
   padding: 0;
   position: relative;
 }
+
 div.imgfull img {
   display: block;
   max-width: none !important;
@@ -294,4 +296,15 @@ label{
     border: none;
     color: #fff;
     background-color: #be0000;
+}
+.bot{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.butto{
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: center;
+    
 }
