@@ -15,7 +15,7 @@
 		}
 		.facebookcool {
 			margin-top: 26%;
-			margin-left: 100%;
+			margin-left: 5%;
 			padding: 10px;
 			text-align: center;
 			background-color: #425F9C;
@@ -23,6 +23,234 @@
 			border-radius: 20px;
 		}
 	}
+@media(min-width:900px) and (max-width: 991px){
+	.fbbox iframe{
+			display: none;
+		}
+		.conteFB {
+			display: block;
+		}
+		.arreglosChulos {
+			margin-left: 13%;
+		}
+		.fa-facebook-square {
+			font-size: 5em;
+			color: white;
+	
+		}
+		.facebookcool {
+			margin-top: 12%;
+			margin-left: 3%;
+			padding: 10px;
+			text-align: center;
+			background-color: #425F9C;
+			width: 90px;
+			border-radius: 20px;
+		}
+		.textoFB {
+		color:#425F9C;
+		font-family: ProximaNova;
+		font-size: 2em;
+		margin-left: 39%;
+		margin-top: -22%;
+		}
+}
+@media(min-width:800px) and (max-width: 899px){
+.fbbox iframe{
+			display: none;
+		}
+		.conteFB {
+			display: block;
+		}
+		.arreglosChulos {
+			margin-left: 13%;
+		}
+		.fa-facebook-square {
+			font-size: 5em;
+			color: white;
+	
+		}
+		.facebookcool {
+		margin-top: 12%;
+		margin-left: 3%;
+		padding: 2px;
+		text-align: center;
+		background-color: #425F9C;
+		width: 72px;
+		border-radius: 20px;	
+		}
+		.textoFB {
+		color: #425F9C;
+		font-family: ProximaNova;
+		font-size: 1.8em;
+		margin-left: 35%;
+		margin-top: -22%;
+		}	
+}
+@media(min-width:768px) and (max-width: 799px){
+.fbbox iframe{
+			display: none;
+		}
+		.conteFB {
+			display: block;
+		}
+		.arreglosChulos {
+			margin-left: 13%;
+		}
+		.fa-facebook-square {
+			font-size: 5em;
+			color: white;
+	
+		}
+		.facebookcool {
+		margin-top: 12%;
+		margin-left: 3%;
+		padding: 2px;
+		text-align: center;
+		background-color: #425F9C;
+		width: 72px;
+		border-radius: 20px;	
+		}
+		.textoFB {
+		color: #425F9C;
+		font-family: ProximaNova;
+		font-size: 1.8em;
+		margin-left: 35%;
+		margin-top: -22%;
+		}	
+}
+@media(min-width:700px) and (max-width: 767px){
+.fbbox iframe{
+			display: none;
+		}
+		.conteFB {
+			display: block;
+		}
+		.arreglosChulos {
+			margin-left: 13%;
+		}
+		.fa-facebook-square {
+			font-size: 5em;
+			color: white;
+	
+		}
+		.facebookcool {
+		margin-top: 3%;
+		margin-left: 17%;
+		padding: 2px;
+		text-align: center;
+		background-color: #425F9C;
+		width: 72px;
+		border-radius: 20px;
+		margin-bottom: 11%;	
+		}
+		.textoFB {
+		color: #425F9C;
+		font-family: ProximaNova;
+		font-size: 1.8em;
+		margin-left: 35%;
+		margin-top: -22%;
+		}	
+}
+@media(min-width:600px) and (max-width: 699px){
+.fbbox iframe{
+			display: none;
+		}
+		.conteFB {
+			display: block;
+		}
+		.arreglosChulos {
+			margin-left: 13%;
+		}
+		.fa-facebook-square {
+			font-size: 5em;
+			color: white;
+	
+		}
+		.facebookcool {
+		margin-top: 3%;
+		margin-left: 14%;
+		padding: 2px;
+		text-align: center;
+		background-color: #425F9C;
+		width: 72px;
+		border-radius: 20px;
+		margin-bottom: 8%;
+		}
+		.textoFB {
+		color: #425F9C;
+		font-family: ProximaNova;
+		font-size: 1.8em;
+		margin-left: 35%;
+		margin-top: -22%;
+		}	
+}
+@media(min-width:500px) and (max-width: 599px){
+.fbbox iframe{
+			display: none;
+		}
+		.conteFB {
+			display: block;
+		}
+		.arreglosChulos {
+			margin-left: 13%;
+		}
+		.fa-facebook-square {
+			font-size: 3em;
+			color: white;
+	
+		}
+		.facebookcool {
+		margin-top: 3%;
+		margin-left: 14%;
+		padding: 2px;
+		text-align: center;
+		background-color: #425F9C;
+		width: 54px;
+		border-radius: 13px;
+		margin-bottom: 11%;
+		}
+		.textoFB {
+		color: #425F9C;
+		font-family: ProximaNova;
+		font-size: 1.5em;
+		margin-left: 35%;
+		margin-top: -22%;
+		}	
+}
+@media(min-width:400px) and (max-width: 499px){
+.fbbox iframe{
+			display: none;
+		}
+		.conteFB {
+			display: block;
+		}
+		.arreglosChulos {
+			margin-left: 13%;
+		}
+		.fa-facebook-square {
+			font-size: 3em;
+			color: white;
+	
+		}
+		.facebookcool {
+		margin-top: 6%;
+		margin-left: -2%;
+		padding: 2px;
+		text-align: center;
+		background-color: #425F9C;
+		width: 54px;
+		border-radius: 13px;
+		margin-bottom: 5%;
+		}
+		.textoFB {
+		color: #425F9C;
+		font-family: ProximaNova;
+		font-size: 1.5em;
+		margin-left: 27%;
+		margin-top: -22%;
+		}	
+}	
 @media(min-width:300px) and (max-width: 999px){
 	.fbbox iframe{
 		display: none;
