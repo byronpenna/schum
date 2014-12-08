@@ -80,7 +80,8 @@ label{
 		background: url(<?php echo $imgSlider; ?>);
 		background-repeat: none;
 		background-position: center;
-		background-size: 100%;
+		background-size: 50%;
+		background-repeat: no-repeat;
 	}
 	.control:hover{
 		cursor: pointer;
