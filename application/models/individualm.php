@@ -64,9 +64,17 @@ class Individualm extends Padrem
 				$query->free_result();
 				$query->next_result();	
 			$this->db->trans_complete();
-			$retorno[1] 				= $this->getIdiomas($retorno[1]);
+			$retorno[1] 				= $this->getNewIdiomas($retorno[0][0]->idioma);// $retorno[1]
 			$retorno[0][0]->rutaImg 	= $this->getImgSrc($retorno[0][0]->rutaImg);
 		return $retorno;
+	}
+	function getNewIdiomas($idiomas){
+		$idioma = "<div class='containerIdioma'>";
+		$idiomas = explode(",",$idiomas);
+		foreach ($idiomas as $key => $value) {
+			$idioma .= "<h2>".$value."</h2>";
+		}
+		return $idioma;
 	}
 	function getIdiomas($idiomas){
 		$idioma = "<div class='containerIdioma'>";
