@@ -31,9 +31,7 @@
 			  				paginacion(limits);
 			  			});
 			  		// empleados 
-
 			  			$(document).on("click",".navEmpleados",function(){
-			  				console.log("entro");
 			  				limits = getLimits($(this),$("#txtl1emp"),$("#txtl2emp"));
 			  				paginacionEmp(limits);
 			  			});

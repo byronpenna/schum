@@ -11,8 +11,8 @@ function getLimits(nav,selector1,selector2){
 	}
 	limits.l1 = l1;
 	limits.l2 = l2;
-	selector1.val(l1);
-	selector2.val(l2);
+	// selector1.val(l1);
+	// selector2.val(l2);
 	return limits;
 }
 
@@ -44,6 +44,8 @@ function paginacionEmp(limit){
 			console.log("la data es: ",limit);
 			// console.log("nice",data);
 			if(data != ""){
+				$("#txtl1").val(limit.l1);
+	  			$("#txtl2").val(limit.l2);	
 				$(".cuadritosEmpleadoSection").empty().append(data);	
 			}
 			
@@ -131,7 +133,6 @@ function paginacionEmp(limit){
 	function startSlider(){
 		// vars 
 			arrImg 			= timerSlider();
-			console.log("el arreglo de imageines es:",arrImg);
 			atrImgActual	= $(".activePoint").attr("other");
 			indexActual 	= arrImg.indexOf(atrImgActual);
 			nElementos 		= arrImg.length;

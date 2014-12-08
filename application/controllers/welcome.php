@@ -72,13 +72,13 @@ class Welcome extends Padre {
 			$cuadritosCasa = $indexModel->getCasasForMapSection();
 
 	}
-	public function getCuadritosEmpleados(){
+	public function getCuadritosEmpleados($l1=0,$l2=4){
 		// load
 			$this->load->model("indexm");
 		// vars 
 			$indexModel = new Indexm();
 		// do it 
-			$cuadritoEmpleado = $indexModel->getCuadritosEmpleados();
+			$cuadritoEmpleado = $indexModel->getCuadritosEmpleados($l1,$l2);
 		return $cuadritoEmpleado;
 	}
 	public function index()

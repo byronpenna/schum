@@ -11,7 +11,7 @@ class Ourteamm extends CI_Model
 			$this->load->model("indexm");		
 		// vars 
 			$indexModel = new Indexm();
-			$empleados = $indexModel->getEmpleados();
+			$empleados = $indexModel->getEmpleados(-1,-1);
 			$cuadritos = "";	
 		// do it 
 		foreach ($empleados as $key => $value) {
