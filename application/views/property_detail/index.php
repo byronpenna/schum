@@ -52,7 +52,7 @@
 <body>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<div class="row container-fluid sliderNew" style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 100%;'" ?> >
+		<div class="row container-fluid sliderNew" style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
 		
