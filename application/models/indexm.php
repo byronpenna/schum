@@ -94,7 +94,7 @@ class Indexm  extends Padrem
 									<div class='col-lg-6 col-md-12 alignTop container-fluid dataTeam'>
 										<h2 class='nombreEmpTeam'> ".$value->nombre."</h2>
 										<h3> ".$value->posicion." </h3>
-										<p> Having been born in Russian and having spent many years living in Germany</p>
+										<p>".$value->shortDescription."</p>
 									</div>
 								</div>
 								<div class='row rowContactoTeam'>

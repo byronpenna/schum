@@ -361,7 +361,7 @@
 				<div class="col-md-6 col-lg-6">
 					<a href=<?php echo "'".$homeData->home_buyer."'" ?> target="_blank" >
 						<div class="col-lg-12 boxBuySell " >
-							<div class="row" id='boxBuySell0'>
+							<div class="row" id='boxBuySell0' style="background:red">
 								<h2 class="textBuySellerBox text-center">Home buyers</h2>
 							</div>
 						</div>
@@ -370,7 +370,7 @@
 				<div class="col-md-6 col-lg-6">
 					<a href=<?php echo "'".$homeData->homeSeller."'" ?> target="_blank" >
 						<div class="col-lg-12 boxBuySell">
-							<div class="row" id='boxBuySell2'>
+							<div class="row" id='boxBuySell2' style="background:green" >
 								<h2 class="textBuySellerBox text-center">Home sellers</h2>
 							</div>
 						</div>	
