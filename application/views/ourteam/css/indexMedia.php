@@ -347,6 +347,12 @@
        
 }
 @media(min-width:992px) and (max-width:1100px){
+    .descripcionEmpleado h2 {
+			font-size: 1.3em;
+		}
+.descripcionEmpleado h3{
+			font-size: 1.0em;
+		}
 	/* Test */
 		body{
 			/*background: yellow;*/
@@ -372,9 +378,7 @@
 		.empleadoIcon{
 			font-size: 1.7em;
 		}
-		.descripcionEmpleado h2{
-			font-size: 1.4em;
-		}
+		
 		.accionEmpleado button{
 			font-size: 0.8em;
             padding: 3% 1%;
@@ -385,9 +389,7 @@
         .empleadoIcon {
         padding: 0px;    
         }
-        .descripcionEmpleado h3{
-			font-size: 1.2em;
-		}
+        
         .fa-list{
         font-size: 1.3em;
         }
@@ -441,6 +443,12 @@
 	
 }
 @media(min-width:1101px) and (max-width:1189px){
+    .descripcionEmpleado h2 {
+			font-size: 1.4em;
+		}
+.descripcionEmpleado h3{
+			font-size: 1.2em;
+		}
 	/* Test */
 		body{
 			/*background: yellow;*/
@@ -466,9 +474,7 @@
 			font-size: 1.7em;
             margin-left: 2%;
 		}
-		.descripcionEmpleado h2{
-			font-size: 1.6em;
-		}
+		
 		
 		.accionEmpleado button{
 			font-size: 0.8em;
@@ -480,9 +486,7 @@
         .empleadoIcon {
         padding: 0px;    
         }
-        .descripcionEmpleado h3{
-			font-size: 1.3em;
-		}
+       
         .fa-list{
         font-size: 1.3em;
         }
@@ -532,6 +536,12 @@
         }
 }
 @media(min-width:1190px) and (max-width:1299px){
+    .descripcionEmpleado h2 {
+			font-size: 1.5em;
+		}
+.descripcionEmpleado h3{
+			font-size: 1.3em;
+		}
         /* test */
 	   body{
 		/*background: pink;*/
@@ -546,9 +556,7 @@
 		.iconEmpleadoSection{
 			margin-top: 6%;
 		}
-       .descripcionEmpleado h2{
-			font-size: 1.7em;
-		}
+       
         .empleadoIcon {
         padding: 0px;    
         }
@@ -580,9 +588,7 @@
 			font-size: 1.7em;
             margin-left: 2%;
 		}
-		.descripcionEmpleado h2{
-			font-size: 1.6em;
-		}
+		
 		
 		.accionEmpleado button{
 			font-size: 0.9em;
@@ -647,6 +653,12 @@
         }
 }
 @media(min-width:1300px) and (max-width:1399px){
+    .descripcionEmpleado h2 {
+			font-size: 1.6em;
+		}
+.descripcionEmpleado h3{
+			font-size: 1.4em;
+		}
 	/* Test */
 		body{
 			/*background: yellow;*/
@@ -671,9 +683,7 @@
 		.empleadoIcon{
 			font-size: 1.7em;
 		}
-		.descripcionEmpleado h2{
-			font-size: 1.8em;
-		}
+		
 		
 		.accionEmpleado button{
 			font-size: 0.9em;
@@ -685,9 +695,7 @@
         .empleadoIcon {
         padding: 0px;    
         }
-        .descripcionEmpleado h3{
-			font-size: 1.6em;
-		}
+        
         .fa-list{
         font-size: 1.3em;
         }
@@ -737,6 +745,12 @@
 }
 @media(min-width:1400px) and (max-width:1499px){
 	/* Test */
+        .descripcionEmpleado h2 {
+			font-size: 1.7em;
+		}
+.descripcionEmpleado h3{
+			font-size: 1.5em;
+		}
 		body{
 			/*background: yellow;*/
 		}
@@ -760,9 +774,7 @@
 		.empleadoIcon{
 			font-size: 1.7em;
 		}
-		.descripcionEmpleado h2{
-			font-size: 2.0em;
-		}
+		
 		
 		.accionEmpleado button{
 			font-size: 0.9em;
@@ -774,9 +786,6 @@
         .empleadoIcon {
         padding: 0px;    
         }
-        .descripcionEmpleado h3{
-			font-size: 1.8em;
-		}
         .fa-list{
         font-size: 1.3em;
         }
@@ -847,7 +856,7 @@
 			font-size: 1.7em;
 		}
 		.descripcionEmpleado h2{
-			font-size: 2.0em;
+			font-size: 1.8em;
 		}
 		
 		.accionEmpleado button{
@@ -858,7 +867,7 @@
         padding: 0px;    
         }
         .descripcionEmpleado h3{
-			font-size: 1.8em;
+			font-size: 1.55em;
 		}
         .fa-list{
         font-size: 1.3em;
@@ -909,6 +918,9 @@
        
 }
 @media(min-width:1700px) and (max-width:1999px){
+        .descripcionEmpleado h3 {
+            font-size: 1.6em;   
+        }
 	   .ourTeamDescription p{
         font-size: 1.4em;
         }
@@ -922,9 +934,6 @@
 		.iconEmpleadoSection{
 			margin-top: 6%;
 		}
-		.descripcionEmpleado h2{
-			font-size: 2em;
-		}
 		.accionEmpleado button{
 			font-size: 1.1em;
             padding: 3% 1%;
@@ -933,7 +942,7 @@
         font-size: 1.1em;    
         }
         .descripcionEmpleado h2{
-			font-size: 2.4em;
+			font-size: 2.1em;
 		}
         .empleadoIcon {
         padding: 0px;    
