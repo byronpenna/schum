@@ -41,8 +41,8 @@ function changeImage(url){
 		"background-repeat"		: "none",
 		"background-position" 	:"50% 50%",
 		"background-position" 	:"50% 50%\9 !important",
-		"background-size"		: "100%",
-		"background-size" 		: "cover",
+		"background-size"		: "50%",
+		"background-size" 		: "50%",
 	});
 } 
 function initSlider(){
