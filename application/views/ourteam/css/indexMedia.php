@@ -918,6 +918,7 @@
        
 }
 @media(min-width:1700px) and (max-width:1999px){
+
         .descripcionEmpleado h3 {
             font-size: 1.6em;   
         }
@@ -988,6 +989,7 @@
     
 }
 @media(min-width:2000px) and (max-width:2449px){
+    
 	body{
 		background: white;
 	}	
@@ -1054,6 +1056,7 @@
 
 }
 @media(min-width:2000px) and (max-width:2152px){
+        
         .empleadoIcon {
         width: 95px;
         }
@@ -1148,6 +1151,7 @@
 			
 }
 @media(min-width:2700px){
+        
     body {
         background-color: white; /*purpura*/ 
     }
