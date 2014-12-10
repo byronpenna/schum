@@ -229,12 +229,12 @@
 				<div class="row container-fluid">
 					<a href=<?php echo "'".site_url("calendar/general")."'" ?> >
 						<div class="row container-fluid paddingNull">
-							<h2 class="text-center titleVideoSection titleOpenHouse">Open House Calendar</h2>	
+							<h2 class="text-center titleVideoSection titleOpenHouse">CHECK OUT OUR OPEN HOUSES THIS WEEKEND</h2>	
 						</div>
 						<div class="row schedule ">
 							<img class="img-responsive imgCenter imgSchedule" src=<?php echo "'".base_url("img/elements/lateral_video/calendario.png")."'"; ?> >
 							<h4 class="text-center">CHECK OUT OUR</h4>
-							<h4 class="text-center">OPEN HOUSE THIS WEEKEND</h4>
+							<h4 class="text-center">OPEN HOUSES THIS WEEKEND</h4>
 						</div>	
 					</a>
 				</div>

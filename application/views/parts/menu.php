@@ -26,7 +26,7 @@
                        <a <?php echo "class='".$menu[1]."' href='".site_url("listings")."'" ?> class="dropdown-toggle" data-toggle="dropdown">Listings <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="liSubMenu">
-                                <a href=<?php echo "'".site_url("listings/getMostRecent")."'" ?> >Most recent</a>
+                                <a href=<?php echo "'".site_url("listings/getMostRecent")."'" ?> >Active Listings</a>
                             </li>
                             <li class="divider"></li>
                             <li><a href=<?php echo "'".site_url("listings/getFinishedListings")."'" ?> >Finished listings</a></li>
@@ -35,20 +35,11 @@
                     <li class="liPadre">
                         <a <?php echo "class='".$menu[2]."' href='".site_url("ourteam")."'" ?> class="dropdown-toggle" data-toggle="dropdown">Meet our team <b class="caret"></b></a>
                     </li>
-                    <li class="liPadre">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="http://www.homesellinginsidertips.com/category/insider-tips-for-sellers/" class='homeSellBuy' target="_blank">Home sellers</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="http://www.homesellinginsidertips.com/category/insider-tips-for-buyers/" class="homeSellBuy" target="_blank">home buyers</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a <?php echo "class='".$menu[3]."' href='#'" ?> >News</a>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">our history <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">our story <b class="caret"></b></a>
                     </li>
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
