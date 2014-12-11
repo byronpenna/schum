@@ -116,7 +116,6 @@ a:hover{
 		}
 /* Awards para abajo */
 	.dataOtherSay p,.dataOtherSay h2,.dataOtherSay h3{
-		font-style: italic;
 	}
 	.dataOtherSay p{
 		font-family: 'proximaRegular';
