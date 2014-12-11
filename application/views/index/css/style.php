@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-
-=======
 .banner2 p{
 	font-family: "proximaRegular" !important;
 }
->>>>>>> origin/ultimos-cambios-david
 a:hover{
 	text-decoration: none;
 }
