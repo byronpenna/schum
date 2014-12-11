@@ -18,6 +18,17 @@ class Ourteamm extends CI_Model
 			$imgSrc = URLOCAL;
 			$imgSrc	.= str_replace("../Archivos/","", $value->rutaImg); 
 			// base_url("img/our_team/persona1.png")
+			$divListing = "";
+			if($value->listings != '-1'){
+				$divListing = "
+					<div class='col-xs-6 container-list' id='res2000fixIcon3'>
+						<i class='fa fa-list' style='color:#314782;'></i>
+					</div>
+					<div class='col-xs-6 empleadoIcon' id='res1700fixIcon'>
+						<p>".$value->listings." LISTINGS</p>
+					</div>
+				";	
+			}
 			$cuadritos .= "
 				<div class='col-md-3 col-sm-5 empleado'>
 					<div class='row'>
@@ -35,12 +46,7 @@ class Ourteamm extends CI_Model
 						<div class='row container-fluid' id='contedordeiconos'>
 							<div class='col-md-6 paddingNull'>
 								<a href=".site_url("listings/getListingFromAgent/".$value->idEmpleado." ")."'>
-								<div class='col-xs-6 container-list' id='res2000fixIcon3'>
-									<i class='fa fa-list' style='color:#314782;'></i>
-								</div>
-								<div class='col-xs-6 empleadoIcon' id='res1700fixIcon'>
-									<p>".$value->listings." LISTINGS</p>
-								</div>
+								".$divListing."
 								</a>
 							</div>
 							<div class='col-md-6' id='res2000fixIcon'>

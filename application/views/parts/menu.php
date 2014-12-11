@@ -48,7 +48,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">our history <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">our story <b class="caret"></b></a>
                     </li>
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
