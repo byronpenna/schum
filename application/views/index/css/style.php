@@ -1,3 +1,6 @@
+.banner2 p{
+	font-family: "proximaRegular" !important;
+}
 a:hover{
 	text-decoration: none;
 }
