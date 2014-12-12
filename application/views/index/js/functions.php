@@ -227,6 +227,7 @@ function paginacionEmp(limit){
 				detallePopUp.homeId = value.homeId;
 				detallePopUp.price 	= value.listPrice;
 				dataMarket.icon 	= '<?php echo base_url("img/map/home.png"); ?>';
+				dataMarket.titulo 	= value.nombreVivienda;
 				var location 		= new google.maps.LatLng(value.latitud,value.longitud);
 				var marker 			= newMarker(location,dataMarket);
 				var popUp 			= newPopUp(detallePopUp);
@@ -291,7 +292,7 @@ function paginacionEmp(limit){
 		}
 		var marker = new google.maps.Marker({
 			position: location,
-			title: "casa de prueba",
+			title: data.titulo,
 			icon: data.icon
 		});
 		return marker;
