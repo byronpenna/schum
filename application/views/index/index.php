@@ -229,7 +229,7 @@
 				<div class="row container-fluid">
 					<a href=<?php echo "'".site_url("calendar/general")."'" ?> >
 						<div class="row container-fluid paddingNull">
-							<h2 class="text-center titleVideoSection titleOpenHouse">CHECK OUT OUR OPEN HOUSES THIS WEEKEND</h2>	
+							<h2 class="text-center titleVideoSection titleOpenHouse">Open Houses Calendar</h2>	
 						</div>
 						<div class="row schedule ">
 							<img class="img-responsive imgCenter imgSchedule" src=<?php echo "'".base_url("img/elements/lateral_video/calendario.png")."'"; ?> >
