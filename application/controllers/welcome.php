@@ -101,6 +101,7 @@ class Welcome extends Padre {
 			// news to the market
 				$newsToMarket 				= $indexModel->getNewsToTheMarket();
 				$slider 					= $indexModel->getPointSlider();
+				$buySellerDiv 				= $indexModel->getSellerBuyerImage($this->homeData);
 			$data 		= array(
 				'ubicacion' 		=> $ubicacion,
 				'homeData' 			=> $this->homeData,
@@ -110,7 +111,8 @@ class Welcome extends Padre {
 				'newsToMarket' 		=> $newsToMarket,
 				'searchOp' 			=> $this->searchBarOp,
 				'cnListing' 		=> $listings[0]->cnListing,
-				'slider'			=> $slider
+				'slider'			=> $slider,
+				'buySeller'			=> $buySellerDiv
 			);
 		// views 
 			$this->load->view('index/index.php',$data);

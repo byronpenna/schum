@@ -1,6 +1,5 @@
 <?php 
 	$datos["opMenu"] = 0;
-	// print_r($slider);
 ?>
 <!DOCTYPE html>
 <html>
@@ -358,7 +357,11 @@
 			</div>
 		<!-- Sell or buy -->
 			<div class="row container-fluid buySellSection">
-				<div class="col-md-6 col-lg-6">
+				<?php 
+					echo $buySeller->buyers;
+					echo $buySeller->sellers;
+				?>
+				<!-- <div class="col-md-6 col-lg-6">
 					<a href=<?php echo "'".$homeData->home_buyer."'" ?> target="_blank" >
 						<div class="col-lg-12 boxBuySell " >
 							<div class="row" id='boxBuySell0' style="background:red">
@@ -375,7 +378,7 @@
 							</div>
 						</div>	
 					</a>	
-				</div>
+				</div> -->
 				
 				
 			</div>
