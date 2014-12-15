@@ -601,6 +601,7 @@
 			}
 			.banner2 p{
 				font-size: 3em;
+				margin-top: 13%;
 			}
 	/* news to the market */ 
 		.imgNewsToMarket{
@@ -689,10 +690,11 @@
 			}
 		/* Banner */
 			.banner2 h2{
-				font-size: 5em;
+				font-size: 4em;
 			}
 			.banner2 p{
-				font-size: 5em;
+				font-size: 4em;
+				margin-top: 15%;
 			}
 			.banner2{
 				height: 500px;
