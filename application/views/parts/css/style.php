@@ -1,3 +1,6 @@
+.navbar{
+	list-style: none;
+}
 .footerresp{
 	transform:scale(0.4,0.4);
 	-moz-transform:scale(0.4,0.4);
