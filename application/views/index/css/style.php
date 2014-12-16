@@ -1,3 +1,6 @@
+.banner2{
+	height: auto !important;
+}
 .banner2 p{
 	font-family: "proximaRegular" !important;
 }

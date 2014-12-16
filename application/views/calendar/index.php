@@ -46,7 +46,7 @@
 		<div class="bodyContainer">
 			<div class="row container-fluid ">
 				<div class="col-sm-offset-1 col-xs-9 row titulo">
-					<h2>Open House Calendar</h2>
+					<h2>Open Houses Calendar</h2>
 				</div>
 				<?php 
 					echo $divOpenHouse;

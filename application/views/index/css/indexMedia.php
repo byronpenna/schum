@@ -601,7 +601,6 @@
 			}
 			.banner2 p{
 				font-size: 3em;
-				margin-top: 13%;
 			}
 	/* news to the market */ 
 		.imgNewsToMarket{
@@ -693,8 +692,7 @@
 				font-size: 4em;
 			}
 			.banner2 p{
-				font-size: 4em;
-				margin-top: 15%;
+				font-size: 3.8em;
 			}
 			.banner2{
 				height: 500px;
@@ -993,7 +991,7 @@
 		}
 
 		.banner2 p{
-			font-size: 5em;
+			font-size: 3.8em;
 		}
 
 	/* Video section */
