@@ -180,6 +180,7 @@ label{
 		/* ######## */
 			.keyFeatureBlock{
 				padding-top: 5%;
+				width:100%;
 			}	
 			.keyFeatureBlock h2{
 				margin-bottom: 2%;
@@ -320,4 +321,13 @@ label{
     padding-right: 0px !important;
     text-align: center;
     
+}
+#contkey{
+	width: 15%;
+	height:200px;
+}
+.keyFeatureBlock article{
+	display: inline-block;
+	vertical-align: top;
+	margin-top:5px;	
 }

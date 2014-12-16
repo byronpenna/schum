@@ -27,8 +27,8 @@ class Property_detailsm extends Padrem
 				$keysArr->$propiedad .= $value->opa_nombre;
 			}
 			foreach ($keysArr as $key => $value) {
-				$div .= "<h4>".$this->getAtrName($key)."</h4>
-				<p>".$value."</p>
+				$div .= "<article id='contkey'><h4>".$this->getAtrName($key)."</h4>
+				<p>".$value."</p></article>
 				";
 			}
 			return $div;

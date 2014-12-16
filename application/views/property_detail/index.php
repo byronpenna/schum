@@ -208,7 +208,7 @@
 						</div> -->
 					</div>
 				</div>
-				<div class="col-lg-7 col-sm-7 col-md-7 dataDescription">
+				<div class="col-lg-12 col-sm-12 col-md-12 dataDescription">
 					<!-- <div class="row container-fluid">
 						<h2>Description</h2>
 						<p>
@@ -221,51 +221,21 @@
 							<h2>key features</h2>
 						</div>
 						<div class="row container-fluid">
-							<div class="col-lg-6 col-sm-6 col-md-6">
-								<!-- <p class="bold">Appliances</p>
-								<p><?php echo $appliance; ?></p>	
-								<p class="bold">Indoor Features</p>
-								<p>Fireplace</p>
-								<p class="bold">Exterior Features</p>
-								<p>Stone; Stucco</p>
-								<p class="bold">Other Features</p>
-								<p>Ensuite; Garage; Landscaped</p> -->
-								<?php echo $keys; ?>
-							</div>
-							<div class="col-lg-6 col-sm-6 col-md-6 additionalDetailsSection">
-								<div class="row">
-									<p class="bold addi">Additional Details</p>	
-								</div>
-								<div class="row additionalDetailsBody">
-									<!-- <div class="row container-fluid rowAditionalDetails" >
-										<span class='title'>Type: </span>
-										<span >Residential Detachednity</span>	
-									</div>		
-									<div class="row container-fluid rowAditionalDetails">
-										<span class='title'>Area: </span>
-										<span>3P</span>
-									</div>
-									<div class="row container-fluid rowAditionalDetails">
-										<span class='title'>Gross Tax: </span>
-										<span>Not Assesed</span>
-									</div>
-									<div class="row container-fluid rowAditionalDetails">
-										<span class='title'>Construction: </span>
-										<span>Wood Frame</span>
-									</div>
-									<div class="row container-fluid rowAditionalDetails">
-										<span class='title'>Water: </span>
-										<span>Municipal/Community</span>
-									</div>
-									<div class="row container-fluid rowAditionalDetails">
-										<span class='title'>Heating: </span>
-										<span>Forced Air Natural Gas</span>
-									</div> -->
-								</div>
-							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="col-lg-12 col-sm-12 col-md-12 ">
+									<!-- <p class="bold">Appliances</p>
+									<p><?php echo $appliance; ?></p>	
+									<p class="bold">Indoor Features</p>
+									<p>Fireplace</p>
+									<p class="bold">Exterior Features</p>
+									<p>Stone; Stucco</p>
+									<p class="bold">Other Features</p>
+									<p>Ensuite; Garage; Landscaped</p> -->
 
+									<?php echo $keys; ?>
+								</div>
+							</div>
 						</div>
-						
 					</div>
 				</div>
 
