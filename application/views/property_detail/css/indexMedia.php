@@ -1017,7 +1017,7 @@ iframe[name="f3d7c73d9c"]{
 			font-size: 1em;
 		}
 		.agent{
-			margin-top: 0%;
+			margin: 10px -10% -10%;
 		}
 		.contactAgentText{
 			padding-top: 0%;
@@ -1045,8 +1045,8 @@ iframe[name="f3d7c73d9c"]{
 			margin-top: 3%;
 		}
         .readmore{
-            font-size: 0.8em;
-            width: 100px;
+            font-size: 0.7em;
+            width: 75px;
         }
 
 		.agentSection > .col-sm-12:nth-child(2){
@@ -1235,7 +1235,7 @@ iframe[name="f3d7c73d9c"]{
 			font-size: 1.5em;
 		}
 		.agent{
-			margin-top: 2.7%;
+			margin: 10px -3% -10%;
 		}
 
 		.contactAgentText{
@@ -1267,7 +1267,7 @@ iframe[name="f3d7c73d9c"]{
 			margin-top: 3%;
 		}
         .readmore{
-            font-size: 1.4em;
+            font-size: 0.9em;
             width: 100px;
         }
 
