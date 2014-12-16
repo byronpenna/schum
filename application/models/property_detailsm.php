@@ -33,6 +33,24 @@ class Property_detailsm extends Padrem
 			}
 			return $div;
 		}
+		function getOtherKeysPropertys($homeId){
+			$sql = "select * from shum_tb_keysproperty where exp_id = ".$homeId."";
+			$this->db->trans_start();
+			$query = $this->db->query($sql);
+			$this->db->trans_complete();
+			$query = $query->result();
+			return $query;
+		}
+		function getOthersDivKey($homeId){
+			$otherKeys 	= $this->getOtherKeysPropertys($homeId);
+			$keysDiv 	= $this->getDivKeys($homeId);
+			foreach ($otherKeys as $key => $value) {
+				$keysDiv .= "<h4>".$value->atr_nombre."</h4>
+				<p>".$value->exp_valor."</p>
+				";
+			}
+			return $keysDiv;
+		}
 		function getAtrName($key){
 			$sql = "SELECT atr_nombre FROM crm_atr_atributo WHERE atr_id = ".$key."";
 			$this->db->trans_start();

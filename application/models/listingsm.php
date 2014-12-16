@@ -74,7 +74,8 @@ class Listingsm extends Padrem
 			// vars 
 				$retorno 			= new stdClass();
 				$frm 				= new stdClass();
-				$frm->recent 		= true;			
+				// $frm->recent 		= true;	
+				$frm->marketStatus	= "Active";		
 			// do it 
 				$casas 		= $this->casitasResultado($frm,$l1,$l2);
 				$retorno 	= $this->retornoStandar($casas,$l1,$l2);
@@ -128,6 +129,10 @@ class Listingsm extends Padrem
 		}
 		function addWhere($sql,$frm){
 			$cn = 0;
+			if(isset($frm->active) AND $frm->active != -1){
+				$condicion[$cn] = "rooms >= ".$frm->cbMinBed." ";
+				$cn++;
+			}
 			if(isset($frm->cbMinBed) AND $frm->cbMinBed != -1){
 				$condicion[$cn] = "rooms >= ".$frm->cbMinBed." ";
 				$cn++;
