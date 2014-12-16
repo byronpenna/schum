@@ -358,8 +358,8 @@
 		<!-- Sell or buy -->
 			<div class="row container-fluid buySellSection">
 				<?php 
-					echo $buySeller->buyers;
-					echo $buySeller->sellers;
+					echo @$buySeller->buyers;
+					echo @$buySeller->sellers;
 				?>
 				
 				

@@ -110,7 +110,8 @@ class Welcome extends Padre {
 				'newsToMarket' 		=> $newsToMarket,
 				'searchOp' 			=> $this->searchBarOp,
 				'cnListing' 		=> $listings[0]->cnListing,
-				'slider'			=> $slider
+				'slider'			=> $slider,
+				'buySeller'			=> $indexModel->getSellerBuyerImage($this->homeData)
 			);
 		// views 
 			$this->load->view('index/index.php',$data);
