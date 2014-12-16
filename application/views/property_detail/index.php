@@ -145,6 +145,13 @@
 				</div>
 				
 			</div>
+			<div class="row container-fluid">
+						<h2>Description</h2>
+						<p>
+							<!-- Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments! -->
+							<?php echo $house->description; ?>
+						</p>
+					</div>
 			<div class="row container-fluid descriptionSection ">
 				<div class="col-lg-4 col-sm-4 col-md-4">
 					<?php
@@ -197,13 +204,13 @@
 					</div> -->
 				</div>
 				<div class="col-lg-7 col-sm-7 col-md-7 dataDescription">
-					<div class="row container-fluid">
+					<!-- <div class="row container-fluid">
 						<h2>Description</h2>
 						<p>
-							<!-- Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments! -->
+							Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments!
 							<?php echo $house->description; ?>
 						</p>
-					</div>
+					</div> -->
 					<div class="row container-fluid keyFeatureBlock">
 						<div class="row container-fluid">
 							<h2>key features</h2>
