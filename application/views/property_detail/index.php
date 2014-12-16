@@ -210,21 +210,22 @@
 						</div>
 						<div class="row container-fluid">
 							<div class="col-lg-6 col-sm-6 col-md-6">
-								<p class="bold">Appliances</p>
+								<!-- <p class="bold">Appliances</p>
 								<p><?php echo $appliance; ?></p>	
 								<p class="bold">Indoor Features</p>
 								<p>Fireplace</p>
 								<p class="bold">Exterior Features</p>
 								<p>Stone; Stucco</p>
 								<p class="bold">Other Features</p>
-								<p>Ensuite; Garage; Landscaped</p>
+								<p>Ensuite; Garage; Landscaped</p> -->
+								<?php echo $keys; ?>
 							</div>
 							<div class="col-lg-6 col-sm-6 col-md-6 additionalDetailsSection">
 								<div class="row">
 									<p class="bold addi">Additional Details</p>	
 								</div>
 								<div class="row additionalDetailsBody">
-									<div class="row container-fluid rowAditionalDetails" >
+									<!-- <div class="row container-fluid rowAditionalDetails" >
 										<span class='title'>Type: </span>
 										<span >Residential Detachednity</span>	
 									</div>		
@@ -247,7 +248,7 @@
 									<div class="row container-fluid rowAditionalDetails">
 										<span class='title'>Heating: </span>
 										<span>Forced Air Natural Gas</span>
-									</div>
+									</div> -->
 								</div>
 							</div>
 

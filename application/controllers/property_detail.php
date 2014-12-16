@@ -35,6 +35,7 @@
 					$coordenadas->estado 	= 0;
 				}
 				$estadoCalendar = $propertyModel->getBoolOpenHouse($idProperty);
+				$keyFeature 	= $propertyModel->getDivKeys($idProperty);
 				$data = array(
 					'homeData' 			=> $this->homeData,
 					'imgSlider'			=> $imgSlider,
@@ -44,7 +45,8 @@
 					'empleado'			=> $empleado,
 					'appliance' 		=> $propertyModel->divAppliances($idProperty),
 					"homeId"			=> $idProperty,
-					"estadoCalendar" 	=> $estadoCalendar
+					"estadoCalendar" 	=> $estadoCalendar,
+					"keys" 				=> $keyFeature
 				);
 			// views 
 				$this->load->view("property_detail/index.php",$data);
