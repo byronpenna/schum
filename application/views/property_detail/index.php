@@ -145,65 +145,77 @@
 				</div>
 				
 			</div>
+			<div class="row container-fluid">
+						<h2>Description</h2>
+						<div class="col-xs-12">
+							<p>
+								<!-- Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments! -->
+								<?php echo $house->description; ?>
+							</p>
+						</div>
 			<div class="row container-fluid descriptionSection ">
-				<div class="col-lg-4 col-sm-4 col-md-4">
-					<?php
-							if($estadoCalendar){ 
-						?>
-						
-						<a href=<?php echo "'".site_url("calendar/index/".$homeId." ")."'" ?> >
-							<div class="row container-fluid blockDescriptions" id='openHouseBlock'>
-								<div class="row container-fluid text-center imgBlockDescription">
-									<i class="fa fa-calendar icon"></i>	
-								</div>
-								
-									<div class="row container-fluid titleBlockDescription">
-										<h2>OPEN HOUSE</h2>
+				<div class="col-xs-12">
+					<div class="col-lg-12 col-sm-12 col-md-12">
+						<?php
+								if($estadoCalendar){ 
+							?>
+							<div class="col-xs-6">
+								<a href=<?php echo "'".site_url("calendar/index/".$homeId." ")."'" ?> >
+									<div class="row container-fluid blockDescriptions" id='openHouseBlock'>
+										<div class="row container-fluid text-center imgBlockDescription">
+											<i class="fa fa-calendar icon"></i>	
+										</div>
+										
+											<div class="row container-fluid titleBlockDescription">
+												<h2>OPEN HOUSE</h2>
+											</div>
+
+										<div class="row container-fluid txtBlockDescription text-center" id='openHouseTxtBlock'>
+											<p> Sept, 20 2014 2:00PM - 4:00PM</p>
+										</div>
 									</div>
-
-								<div class="row container-fluid txtBlockDescription text-center" id='openHouseTxtBlock'>
-									<p> Sept, 20 2014 2:00PM - 4:00PM</p>
-								</div>
+								</a>
 							</div>
-						</a>
-					<?php 
-						}
-					?>
+						<?php 
+							}
+						?>
+						<div class="col-xs-6">
+							<div class="row container-fluid blockDescriptions" id='sheetBlock'>
+								<a href=<?php echo "'".$house->pdfFeature."'" ?>  >
+									<div class="row container-fluid text-center imgBlockDescription">
+										<i class="fa fa-file-pdf-o icon"></i>
+									</div>
+									<div class="row container-fluid titleBlockDescription">
+										<h2>Pdf feature sheet</h2>
+									</div>
+									<div class="row container-fluid txtBlockDescription text-center">
+										<p> click here to download</p>
+									</div>
+								</a>
+							</div>
+						</div>
 
-					<div class="row container-fluid blockDescriptions" id='sheetBlock'>
-						<a href=<?php echo "'".$house->pdfFeature."'" ?>  >
+						<!-- <div class="row container-fluid blockDescriptions" id='virtualTourBlock'>
 							<div class="row container-fluid text-center imgBlockDescription">
-								<i class="fa fa-file-pdf-o icon"></i>
+								<i class="fa fa-video-camera icon"></i>	
 							</div>
 							<div class="row container-fluid titleBlockDescription">
-								<h2>Pdf feature sheet</h2>
+								<h2>Virtual tour</h2>
 							</div>
 							<div class="row container-fluid txtBlockDescription text-center">
-								<p> click here to download</p>
+								<p> Play now</p>
 							</div>
-						</a>
+						</div> -->
 					</div>
-
-					<!-- <div class="row container-fluid blockDescriptions" id='virtualTourBlock'>
-						<div class="row container-fluid text-center imgBlockDescription">
-							<i class="fa fa-video-camera icon"></i>	
-						</div>
-						<div class="row container-fluid titleBlockDescription">
-							<h2>Virtual tour</h2>
-						</div>
-						<div class="row container-fluid txtBlockDescription text-center">
-							<p> Play now</p>
-						</div>
-					</div> -->
 				</div>
 				<div class="col-lg-7 col-sm-7 col-md-7 dataDescription">
-					<div class="row container-fluid">
+					<!-- <div class="row container-fluid">
 						<h2>Description</h2>
 						<p>
-							<!-- Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments! -->
+							Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments!
 							<?php echo $house->description; ?>
 						</p>
-					</div>
+					</div> -->
 					<div class="row container-fluid keyFeatureBlock">
 						<div class="row container-fluid">
 							<h2>key features</h2>

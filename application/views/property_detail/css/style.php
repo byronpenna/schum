@@ -1,4 +1,6 @@
-
+.col-xs-6{
+	padding: 2%;
+}
 div.imgfull{
   max-height: 200%;
   overflow: hidden;
