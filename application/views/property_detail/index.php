@@ -290,7 +290,7 @@
 				?>
 					<div class="col-sm-6 col-lg-6 col-md-6">
 						<div class="row titulo">
-							<h2>Listing Represented By</h2>	
+							<h2>Property Listing Represented By</h2>	
 						</div>
 						<div class="row container-fluid agent paddingNull">
 							<div class="col-lg-5 col-sm-6 col-md-5 paddingNull">
