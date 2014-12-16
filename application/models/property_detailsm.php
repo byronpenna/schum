@@ -45,8 +45,9 @@ class Property_detailsm extends Padrem
 			$otherKeys 	= $this->getOtherKeysPropertys($homeId);
 			$keysDiv 	= $this->getDivKeys($homeId);
 			foreach ($otherKeys as $key => $value) {
-				$keysDiv .= "<h4>".$value->atr_nombre."</h4>
+				$keysDiv .= "<article id='contkey'><h4>".$value->atr_nombre."</h4>
 				<p>".$value->exp_valor."</p>
+				</article>
 				";
 			}
 			return $keysDiv;
