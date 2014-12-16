@@ -10,6 +10,43 @@ class Indexm  extends Padrem
 	{
 		$this->load->helper("url");
 	}
+		function getSellerBuyerImage($homeData){
+			// vars 
+				$sql 				= "SELECT * FROM shum_tb_imageSellerBuyer";
+				$result				= $this->getResulset($sql);
+				$cuadrito 			= new stdClass();
+				$cuadrito->buyers 	= "";
+				$cuadrito->sellers 	= "";
+			foreach ($result as $key => $value) {
+				$ruta 	= $value->doc_ruta.$value->doc_nombre;
+				$img 	= $this->getImgSrc($ruta);
+				if($value->doc_descripcion == "buyers-home"){
+					$cuadrito->buyers = "
+					<div class='col-md-6 col-lg-6'>
+						<a href='".$homeData->home_buyer."' target='_blank' >
+							<div class='col-lg-12 boxBuySell ' >
+								<div class='row' id='boxBuySell0' style='background:url(".$img.")'>
+									<h2 class='textBuySellerBox text-center'>Home buyers</h2>
+								</div>
+							</div>
+						</a>
+					</div>";
+				}
+				if($value->doc_descripcion == "sellers-home"){
+					$cuadrito->sellers = "
+					<div class='col-md-6 col-lg-6'>
+						<a href='".$homeData->homeSeller."' target='_blank' >
+							<div class='col-lg-12 boxBuySell'>
+								<div class='row' id='boxBuySell2' style='background:url(".$img.")' >
+									<h2 class='textBuySellerBox text-center'>Home sellers</h2>
+								</div>
+							</div>	
+						</a>	
+					</div>";
+				}
+			}
+			return $cuadrito;
+		}
 		function getSortHouse($op){
 			// vars 
 				$retorno 		= new stdClass();

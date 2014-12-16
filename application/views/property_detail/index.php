@@ -290,7 +290,7 @@
 				?>
 					<div class="col-sm-6 col-lg-6 col-md-6">
 						<div class="row titulo">
-							<h2>Listing Represented By</h2>	
+							<h2>Property Listing Represented By</h2>	
 						</div>
 						<div class="row container-fluid agent paddingNull">
 							<div class="col-lg-5 col-sm-6 col-md-5 paddingNull">
@@ -320,6 +320,12 @@
 								</div>
 									<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
 										<button class="readmore">Read more</button>
+									</a>
+									<a href="#">
+										<button class="readmore">About Derrick <!-- Derrick es variable --></button>
+									</a>
+									<a href="#">
+										<button class="readmore">More Info</button>
 									</a>
 							</div>
 						</div>
