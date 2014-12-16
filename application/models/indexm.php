@@ -120,6 +120,17 @@ class Indexm  extends Padrem
 				foreach ($empleado as $key => $value) {
 					$img = $this->getImgSrc($value->rutaImg);
 					// base_url("img/our_team/persona1.png")
+					$listingDiv = "";
+					if($value->listings != "-1"){
+						$listingDiv = "
+						<div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 paddingNull'>
+							<p>
+								<img class='img-responsive imgLine' src='".base_url("img/our_team/listing.png")."' > 
+								".$value->listings." LISTINGS
+							</p>
+						</div>";
+					}
+				
 					$cuadrito .= "
 					<div class='col-sm-6 col-md-3 container-fluid ourTeamDescription'>
 						<a class='aEmpleadoLink' href='".site_url("individual/index/".$value->idEmpleado."")."'>
@@ -135,12 +146,7 @@ class Indexm  extends Padrem
 									</div>
 								</div>
 								<div class='row rowContactoTeam'>
-									<div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 paddingNull'>
-										<p>
-											<img class='img-responsive imgLine' src='".base_url("img/our_team/listing.png")."' > 
-											".$value->listings." LISTINGS
-										</p>
-									</div>
+									".$listingDiv."
 									<div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 paddingNull'>
 										<p>
 											<a href='mailto:".$value->email."' class='emailEmpleado'>

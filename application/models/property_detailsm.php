@@ -6,6 +6,41 @@ class Property_detailsm extends Padrem
 	{
 
 	}
+		function getKeys($homeId){
+			$sql = "SELECT * FROM schum_tb_opcionesexp WHERE expop_exp_id = ".$homeId."";
+			$this->db->trans_start();
+				$query = $this->db->query($sql);
+			$this->db->trans_complete();
+			return $query->result();
+		}
+		function getDivKeys($homeId){
+			$keys 		= $this->getKeys($homeId);
+			$div 		= ""; 
+			$keysArr 	= new stdClass();
+			foreach ($keys as $key => $value) {
+				$propiedad = $value->opa_atr_id;
+				if(isset($keysArr->$propiedad)){
+					$keysArr->$propiedad .= ",";
+				}else{
+					$keysArr->$propiedad = "";
+				}
+				$keysArr->$propiedad .= $value->opa_nombre;
+			}
+			foreach ($keysArr as $key => $value) {
+				$div .= "<h4>".$this->getAtrName($key)."</h4>
+				<p>".$value."</p>
+				";
+			}
+			return $div;
+		}
+		function getAtrName($key){
+			$sql = "SELECT atr_nombre FROM crm_atr_atributo WHERE atr_id = ".$key."";
+			$this->db->trans_start();
+				$query = $this->db->query($sql);
+			$this->db->trans_complete();
+			$query = $query->result();
+			return $query[0]->atr_nombre;
+		}
 		// #########################################
 			function getBoolOpenHouse($homeId){
 				$this->db->trans_start();
