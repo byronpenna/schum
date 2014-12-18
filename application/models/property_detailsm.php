@@ -34,7 +34,7 @@ class Property_detailsm extends Padrem
 			return $div;
 		}
 		function getOtherKeysPropertys($homeId){
-			$sql = "select * from shum_tb_keysproperty where exp_id = ".$homeId."";
+			$sql = "SELECT * FROM shum_tb_keysproperty where exp_id = ".$homeId."";
 			$this->db->trans_start();
 			$query = $this->db->query($sql);
 			$this->db->trans_complete();

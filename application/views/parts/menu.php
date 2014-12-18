@@ -36,10 +36,10 @@
                         <a <?php echo "class='".$menu[2]."' href='".site_url("ourteam")."'" ?> class="dropdown-toggle" data-toggle="dropdown">Meet our team <b class="caret"></b></a>
                     </li>
                     <li>
-                        <a <?php echo "class='".$menu[3]."' href='#'" ?> >News</a>
+                        <a <?php echo "class='".$menu[3]."' href='".site_url("news")."'" ?> >News</a>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">our story <b class="caret"></b></a>
+                        <a <?php echo "class='".$menu[4]."' href='".site_url("our_story")."'" ?> >our story</a>
                     </li>
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
