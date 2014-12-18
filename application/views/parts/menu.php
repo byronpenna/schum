@@ -39,10 +39,11 @@
                         <a <?php echo "class='".$menu[3]."' href='".site_url("news")."'" ?> >News</a>
                     </li>
                     <li>
-                        <a <?php echo "class='".$menu[4]."' href='".site_url("our_story")."'" ?> >our story</a>
+                        <a <?php echo "class='".$menu[4]."' href='".site_url("our_story")."'" ?> >Our story</a>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
+                        <!-- <a <?php echo "class='".$menu[5]."' href='".site_url("contact_us")."'" ?> class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a> -->
+                        <a <?php echo "class='".$menu[5]."' href='".site_url("contact_us")."'" ?> >Contact us</a>
                     </li>
                 </ul>
             </div>
