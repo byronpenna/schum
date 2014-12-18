@@ -1,10 +1,10 @@
 <?php 
-	$datos["opMenu"] = 3;
+	$datos["opMenu"] = 4;
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>News</title>
+	<title>Our story</title>
 	<!-- load --> 
     	<?php $this->load->view("parts/loads.php",$datos); ?>
     <script type="text/javascript">

@@ -4,7 +4,7 @@
 <head>
 	<title>Property details</title>
 	<!-- Parte del mail chimp --> 
-		        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 		<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
@@ -116,7 +116,7 @@
 							<div class="col-lg-3 col-sm-3 col-md-3 boxSummary">								
 								<label>Living Area:</label> 
 								<p>
-									<?php echo $house->livingAreaFit ?> 
+									<?php echo $house->livingAreaFit ?> ft&sup2;
 								</p>
 							</div>	
 						</div>
@@ -124,13 +124,13 @@
 							<div class="col-lg-4 col-sm-4 col-md-4 boxSummary">								
 								<label>MLS ID # :</label>
 								<p>
-									<?php $house->mlsNumber; ?>
+									<?php echo $house->mlsNumber; ?>
 								</p>
 							</div>
 							<div class="col-lg-4 col-sm-4 col-md-4 boxSummary">								
 								<label>Bedrooms:</label>
 								<p>
-									
+									<?php echo $house->rooms ?>
 								</p>
 							</div>
 							<div class="col-lg-4 col-sm-4 col-md-4 boxSummary">								

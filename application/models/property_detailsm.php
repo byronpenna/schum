@@ -13,7 +13,15 @@ class Property_detailsm extends Padrem
 			$this->db->trans_complete();
 			return $query->result();
 		}
-		function getDivKeys($homeId){
+		function getDivKeys($value,$atrNombre){
+			$div = "
+			<article id='contkey'><h4>".$atrNombre."</h4>
+				<p>".$value."</p>
+			</article>
+			";
+			return $div;
+		}
+		function getCheckKeys($homeId){
 			$keys 		= $this->getKeys($homeId);
 			$div 		= ""; 
 			$keysArr 	= new stdClass();
@@ -27,11 +35,22 @@ class Property_detailsm extends Padrem
 				$keysArr->$propiedad .= $value->opa_nombre;
 			}
 			foreach ($keysArr as $key => $value) {
-				$div .= "<article id='contkey'><h4>".$this->getAtrName($key)."</h4>
-				<p>".$value."</p></article>
-				";
+				$atrNombre 	= $this->getAtrName($key);
+				$div 		.= $this->getDivKeys($value,$atrNombre);
+				// $div .= "<article id='contkey'><h4>".$this->getAtrName($key)."</h4>
+				// <p>".$value."</p></article>
+				// ";
 			}
 			return $div;
+		}
+		function getArrTitleKey(){
+			$arr = new stdClass();
+			$arr->propertyDescription 	= array(5327,3928,3931,3929);
+			$arr->generalInfo 			= array(3872,3873,3884,3885,3886);
+			$arr->lotInformation 		= array(3933,3934,3935,3936);
+			$arr->taxes 				= array(3938,3939,3940,3941,3942,3943,3944);
+			$arr->remark 				= array(3949,3950,3951,3952,3953,3954,3955,3956,4003,3958,3959,3061);
+			return $arr;
 		}
 		function getOtherKeysPropertys($homeId){
 			$sql = "SELECT * FROM shum_tb_keysproperty where exp_id = ".$homeId."";
@@ -43,12 +62,36 @@ class Property_detailsm extends Padrem
 		}
 		function getOthersDivKey($homeId){
 			$otherKeys 	= $this->getOtherKeysPropertys($homeId);
-			$keysDiv 	= $this->getDivKeys($homeId);
-			foreach ($otherKeys as $key => $value) {
-				$keysDiv .= "<article id='contkey'><h4>".$value->atr_nombre."</h4>
-				<p>".$value->exp_valor."</p>
-				</article>
-				";
+			$keysDiv 	= $this->getCheckKeys($homeId);
+			$arr 		= $this->getArrTitleKey();
+			$titulo[0] = "<h2>Property description</h2>"; 	$titulo[1] = "<h2>general info</h2>"; 
+			$titulo[2] = "<h2>Lot information</h2>";		$titulo[3] = "<h2>taxes and local improvements</h2>";
+			$titulo[4] = "<h2>Remarks</h2>";
+			foreach ($otherKeys as $key => $value) {		
+				// $keyDiv = "	
+				// 		<article id='contkey'><h4>".$value->atr_nombre."</h4>
+				// 			<p>".$value->exp_valor."</p>
+				// 		</article>
+				// 		"; 
+				$keyDiv = $this->getDivKeys($value->exp_valor,$value->atr_nombre);
+				if(in_array($value->atr_id,$arr->propertyDescription)){
+					$titulo[0] .= $keyDiv; 
+				}else if(in_array($value->atr_id,$arr->generalInfo)){
+					$titulo[1] .= $keyDiv;
+				}else if(in_array($value->atr_id,$arr->lotInformation)){
+					$titulo[2] .= $keyDiv;
+				}else if(in_array($value->atr_id,$arr->taxes)){
+					$titulo[3] .= $keyDiv;
+				}else if(in_array($value->atr_id,$arr->remark)){
+					$titulo[4] .= $keyDiv;
+				}
+				// $keysDiv .= "<article id='contkey'><h4>".$value->atr_nombre."</h4>
+				// <p>".$value->exp_valor."</p>
+				// </article>
+				// ";
+			}
+			foreach ($titulo as $key => $value) {
+				$keysDiv .= $value;
 			}
 			return $keysDiv;
 		}
@@ -105,6 +148,7 @@ class Property_detailsm extends Padrem
 				return $retorno;
 			}
 		// #########################################
+		
 		function getPropertyInformation($homeId){
 			$sql = "SELECT * 
 					FROM shum_tb_house_listing
