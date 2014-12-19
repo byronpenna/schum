@@ -31,7 +31,8 @@ class Property_detailsm extends Padrem
 			return $arr;
 		}
 		function getOtherKeysPropertys($homeId){
-			$sql = "SELECT * FROM shum_tb_keysproperty where exp_id = ".$homeId."";
+			// $sql = "SELECT * FROM shum_tb_keysproperty where exp_id = ".$homeId."";
+			$sql = "SELECT * from schum_tb_opcionesexp where exp_id = ".$homeId." union select * from shum_tb_keysproperty where exp_id = ".$homeId.";";
 			$this->db->trans_start();
 			$query = $this->db->query($sql);
 			$this->db->trans_complete();
@@ -56,63 +57,90 @@ class Property_detailsm extends Padrem
 			return $titulo;
 		}
 		function getCheckKeys($homeId){
-			$keys 		= $this->getKeys($homeId);
+			// $keys 		= $this->getKeys($homeId);
 			$arr 		= $this->getArrTitleKey();
 			$titulo 	= $this->getArrTitulo();
 			$div 		= ""; 
 			$keysArr 	= new stdClass();
-			foreach ($keys as $key => $value) {
-				$propiedad = $value->opa_atr_id;
-				if(isset($keysArr->$propiedad)){
-					$keysArr->$propiedad .= ",";
-				}else{
-					$keysArr->$propiedad = "";
-				}
-				$keysArr->$propiedad .= $value->opa_nombre;
-			}
+			// foreach ($keys as $key => $value) {
+			// 	$propiedad = $value->atr_id;
+			// 	if(isset($keysArr->$propiedad)){
+			// 		$keysArr->$propiedad .= ",";
+			// 	}else{
+			// 		$keysArr->$propiedad = "";
+			// 	}
+			// 	$keysArr->$propiedad .= $value->opa_nombre;
+			// }
 			// *********************** 
 				$otherKeys 	= $this->getOtherKeysPropertys($homeId);
 				foreach ($otherKeys as $key => $value) {		
-					$keyDiv = $this->getDivKeys($value->exp_valor,$value->atr_nombre);
-					if(in_array($value->atr_id,$arr->propertyDescription)){
-						$titulo[0]->estado = true;
-						$titulo[0]->text .= $keyDiv; 
-					}else if(in_array($value->atr_id,$arr->generalInfo)){
-						$titulo[1]->estado = true;
-						$titulo[1]->text .= $keyDiv;
-					}else if(in_array($value->atr_id,$arr->lotInformation)){
-						$titulo[2]->estado = true;
-						$titulo[2]->text .= $keyDiv;
-					}else if(in_array($value->atr_id,$arr->taxes)){
-						$titulo[3]->estado = true;
-						$titulo[3]->text .= $keyDiv;
-					}else if(in_array($value->atr_id,$arr->remark)){
-						$titulo[4]->estado = true;
-						$titulo[4]->text .= $keyDiv;
+					// $keyDiv = $this->getDivKeys($value->exp_valor,$value->atr_nombre);
+					if(!isset($keyDiv[$value->atr_id])){
+						$keyDiv[$value->atr_id] = "<article id='contkey'><h4>".$value->atr_nombre."</h4>
+									<p>".$value->exp_valor;
+					}else{
+						$keyDiv[$value->atr_id] .= ",".$value->exp_valor;
 					}
+					
 				}
+				foreach ($keyDiv as $key => $value) {
+					$keyDiv[$key] .= "</p>
+					</article>";
+				}
+				$variableGay = array();
+				foreach ($otherKeys as $key => $value) {		
+					
+					if(in_array($value->atr_id,$arr->propertyDescription)){
+						if( @!isset($variableGay[$value->atr_id]) || @!$variableGay[$value->atr_id] ){
+							$titulo[0]->estado = true;
+							$titulo[0]->text .= $keyDiv[$value->atr_id]; 	
+						}
+					}else if(in_array($value->atr_id,$arr->generalInfo)){
+						if( @!isset($variableGay[$value->atr_id]) || @!$variableGay[$value->atr_id] ){
+							$titulo[1]->estado = true;
+							$titulo[1]->text .= $keyDiv[$value->atr_id];
+						}
+					}else if(in_array($value->atr_id,$arr->lotInformation)){
+						if( @!isset($variableGay[$value->atr_id]) || @!$variableGay[$value->atr_id] ){
+							$titulo[2]->estado = true;
+							$titulo[2]->text .= $keyDiv[$value->atr_id];
+						}
+					}else if(in_array($value->atr_id,$arr->taxes)){
+						if( @!isset($variableGay[$value->atr_id]) || @!$variableGay[$value->atr_id] ){
+							$titulo[3]->estado = true;
+							$titulo[3]->text .= $keyDiv[$value->atr_id];
+						}
+					}else if(in_array($value->atr_id,$arr->remark)){
+						if( @!isset($variableGay[$value->atr_id]) || @!$variableGay[$value->atr_id] ){
+							$titulo[4]->estado = true;
+							$titulo[4]->text .= $keyDiv[$value->atr_id];
+						}
+					}
+					$variableGay[$value->atr_id] = true;
+				}
+				
 			// ***********************
-			foreach ($keysArr as $key => $value) {
-				$atrNombre 	= $this->getAtrName($key);
-				// $div 	.= $this->getDivKeys($value,$atrNombre);
-				$keyDiv = $this->getDivKeys($value,$atrNombre);
-				if(in_array($key,$arr->propertyDescription)){
-					$titulo[0]->estado = true;
-					$titulo[0]->text .= $keyDiv; 
-				}else if(in_array($key,$arr->generalInfo)){
-					$titulo[1]->estado = true;
-					$titulo[1]->text .= $keyDiv;
-				}else if(in_array($key,$arr->lotInformation)){
-					$titulo[2]->estado = true;
-					$titulo[2]->text .= $keyDiv;
-				}else if(in_array($key,$arr->taxes)){
-					$titulo[3]->estado = true;
-					$titulo[3]->text .= $keyDiv;
-				}else if(in_array($key,$arr->remark)){
-					$titulo[4]->estado = true;
-					$titulo[4]->text .= $keyDiv;
-				}
-			}
+				// foreach ($keysArr as $key => $value) {
+				// 	$atrNombre 	= $this->getAtrName($key);
+				// 	// $div 	.= $this->getDivKeys($value,$atrNombre);
+				// 	$keyDiv = $this->getDivKeys($value,$atrNombre);
+				// 	if(in_array($key,$arr->propertyDescription)){
+				// 		$titulo[0]->estado = true;
+				// 		$titulo[0]->text .= $keyDiv; 
+				// 	}else if(in_array($key,$arr->generalInfo)){
+				// 		$titulo[1]->estado = true;
+				// 		$titulo[1]->text .= $keyDiv;
+				// 	}else if(in_array($key,$arr->lotInformation)){
+				// 		$titulo[2]->estado = true;
+				// 		$titulo[2]->text .= $keyDiv;
+				// 	}else if(in_array($key,$arr->taxes)){
+				// 		$titulo[3]->estado = true;
+				// 		$titulo[3]->text .= $keyDiv;
+				// 	}else if(in_array($key,$arr->remark)){
+				// 		$titulo[4]->estado = true;
+				// 		$titulo[4]->text .= $keyDiv;
+				// 	}
+				// }
 			foreach ($titulo as $key => $value) {
 				if($value->estado){
 					$div .= $value->text;	
