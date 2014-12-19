@@ -21,28 +21,6 @@ class Property_detailsm extends Padrem
 			";
 			return $div;
 		}
-		function getCheckKeys($homeId){
-			$keys 		= $this->getKeys($homeId);
-			$div 		= ""; 
-			$keysArr 	= new stdClass();
-			foreach ($keys as $key => $value) {
-				$propiedad = $value->opa_atr_id;
-				if(isset($keysArr->$propiedad)){
-					$keysArr->$propiedad .= ",";
-				}else{
-					$keysArr->$propiedad = "";
-				}
-				$keysArr->$propiedad .= $value->opa_nombre;
-			}
-			foreach ($keysArr as $key => $value) {
-				$atrNombre 	= $this->getAtrName($key);
-				$div 		.= $this->getDivKeys($value,$atrNombre);
-				// $div .= "<article id='contkey'><h4>".$this->getAtrName($key)."</h4>
-				// <p>".$value."</p></article>
-				// ";
-			}
-			return $div;
-		}
 		function getArrTitleKey(){
 			$arr = new stdClass();
 			$arr->propertyDescription 	= array(5327,3928,3931,3929);
@@ -60,40 +38,123 @@ class Property_detailsm extends Padrem
 			$query = $query->result();
 			return $query;
 		}
+		function getArrTitulo(){
+
+			$titulo[0] = new stdClass(); 	$titulo[1] = new stdClass(); 
+			$titulo[2] = new stdClass();	$titulo[3] = new stdClass();
+			$titulo[4] = new stdClass();
+
+			$titulo[0]->text = "<h2>Property description</h2>"; 	$titulo[1]->text = "<h2>general info</h2>"; 
+			$titulo[2]->text = "<h2>Lot information</h2>";			$titulo[3]->text = "<h2>taxes and local improvements</h2>";
+			$titulo[4]->text = "<h2>Remarks</h2>";
+
+
+			$titulo[0]->estado = false; 	$titulo[1]->estado = false; 
+			$titulo[2]->estado = false;		$titulo[3]->estado = false;
+			$titulo[4]->estado = false;
+
+			return $titulo;
+		}
+		function getCheckKeys($homeId){
+			$keys 		= $this->getKeys($homeId);
+			$arr 		= $this->getArrTitleKey();
+			$titulo 	= $this->getArrTitulo();
+			$div 		= ""; 
+			$keysArr 	= new stdClass();
+			foreach ($keys as $key => $value) {
+				$propiedad = $value->opa_atr_id;
+				if(isset($keysArr->$propiedad)){
+					$keysArr->$propiedad .= ",";
+				}else{
+					$keysArr->$propiedad = "";
+				}
+				$keysArr->$propiedad .= $value->opa_nombre;
+			}
+			// *********************** 
+				$otherKeys 	= $this->getOtherKeysPropertys($homeId);
+				foreach ($otherKeys as $key => $value) {		
+					$keyDiv = $this->getDivKeys($value->exp_valor,$value->atr_nombre);
+					if(in_array($value->atr_id,$arr->propertyDescription)){
+						$titulo[0]->estado = true;
+						$titulo[0]->text .= $keyDiv; 
+					}else if(in_array($value->atr_id,$arr->generalInfo)){
+						$titulo[1]->estado = true;
+						$titulo[1]->text .= $keyDiv;
+					}else if(in_array($value->atr_id,$arr->lotInformation)){
+						$titulo[2]->estado = true;
+						$titulo[2]->text .= $keyDiv;
+					}else if(in_array($value->atr_id,$arr->taxes)){
+						$titulo[3]->estado = true;
+						$titulo[3]->text .= $keyDiv;
+					}else if(in_array($value->atr_id,$arr->remark)){
+						$titulo[4]->estado = true;
+						$titulo[4]->text .= $keyDiv;
+					}
+				}
+			// ***********************
+			foreach ($keysArr as $key => $value) {
+				$atrNombre 	= $this->getAtrName($key);
+				// $div 	.= $this->getDivKeys($value,$atrNombre);
+				$keyDiv = $this->getDivKeys($value,$atrNombre);
+				if(in_array($key,$arr->propertyDescription)){
+					$titulo[0]->estado = true;
+					$titulo[0]->text .= $keyDiv; 
+				}else if(in_array($key,$arr->generalInfo)){
+					$titulo[1]->estado = true;
+					$titulo[1]->text .= $keyDiv;
+				}else if(in_array($key,$arr->lotInformation)){
+					$titulo[2]->estado = true;
+					$titulo[2]->text .= $keyDiv;
+				}else if(in_array($key,$arr->taxes)){
+					$titulo[3]->estado = true;
+					$titulo[3]->text .= $keyDiv;
+				}else if(in_array($key,$arr->remark)){
+					$titulo[4]->estado = true;
+					$titulo[4]->text .= $keyDiv;
+				}
+			}
+			foreach ($titulo as $key => $value) {
+				if($value->estado){
+					$div .= $value->text;	
+				}
+			}
+			return $div;
+		}
 		function getOthersDivKey($homeId){
+
 			$otherKeys 	= $this->getOtherKeysPropertys($homeId);
 			$keysDiv 	= $this->getCheckKeys($homeId);
 			$arr 		= $this->getArrTitleKey();
-			$titulo[0] = "<h2>Property description</h2>"; 	$titulo[1] = "<h2>general info</h2>"; 
-			$titulo[2] = "<h2>Lot information</h2>";		$titulo[3] = "<h2>taxes and local improvements</h2>";
-			$titulo[4] = "<h2>Remarks</h2>";
+			$titulo 	= $this->getArrTitulo();
+
 			foreach ($otherKeys as $key => $value) {		
-				// $keyDiv = "	
-				// 		<article id='contkey'><h4>".$value->atr_nombre."</h4>
-				// 			<p>".$value->exp_valor."</p>
-				// 		</article>
-				// 		"; 
 				$keyDiv = $this->getDivKeys($value->exp_valor,$value->atr_nombre);
 				if(in_array($value->atr_id,$arr->propertyDescription)){
-					$titulo[0] .= $keyDiv; 
+					$titulo[0]->estado = true;
+					$titulo[0]->text .= $keyDiv; 
 				}else if(in_array($value->atr_id,$arr->generalInfo)){
-					$titulo[1] .= $keyDiv;
+					$titulo[1]->estado = true;
+					$titulo[1]->text .= $keyDiv;
 				}else if(in_array($value->atr_id,$arr->lotInformation)){
-					$titulo[2] .= $keyDiv;
+					$titulo[2]->estado = true;
+					$titulo[2]->text .= $keyDiv;
 				}else if(in_array($value->atr_id,$arr->taxes)){
-					$titulo[3] .= $keyDiv;
+					$titulo[3]->estado = true;
+					$titulo[3]->text .= $keyDiv;
 				}else if(in_array($value->atr_id,$arr->remark)){
-					$titulo[4] .= $keyDiv;
+					$titulo[4]->estado = true;
+					$titulo[4]->text .= $keyDiv;
 				}
-				// $keysDiv .= "<article id='contkey'><h4>".$value->atr_nombre."</h4>
-				// <p>".$value->exp_valor."</p>
-				// </article>
-				// ";
 			}
+
 			foreach ($titulo as $key => $value) {
-				$keysDiv .= $value;
+				if($value->estado){
+					$keysDiv .= $value->text;	
+				}
+				
 			}
 			return $keysDiv;
+
 		}
 		function getAtrName($key){
 			$sql = "SELECT atr_nombre FROM crm_atr_atributo WHERE atr_id = ".$key."";
