@@ -20,18 +20,21 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<?php $this->load->view("parts/header.php") ?>application\views\news
+		<?php $this->load->view("parts/header.php") ?>
 		<div class="row container-fluid sliderNew size" >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
 	<div class="bodyContainer">
 				<div class="row container-fluid ourStoryDescription marginn font">
-						<h2>Our Story</h2>
-						
+						<h2><?= $news->title; ?></h2>
 						<div>
-							<img class="grafica" src=<?php echo "'".base_url("img/news/grafica.jpg")."'" ?> "application/views/news/grafica.jpg">
+							<!-- <img class="grafica" src=<?php echo "'".base_url("img/news/grafica.jpg")."'" ?> "application/views/news/grafica.jpg"> -->
+							<?= $news->img ?>
 						</div>
 						<p>
+							<?= $news->text; ?>
+						</p>
+						<!-- <p>
 							There Are Many Fantastic Real Estate Brokerages In Our Great City! We Work Diligently To Continue To Remain One Of Them.
 						</p>
 						<p>
@@ -47,7 +50,7 @@
 						</p>
 						<p>
 							Thank You For Your Trust and Business
-						</p>
+						</p> -->
 				</div>
 				</div>
 		<?php 	

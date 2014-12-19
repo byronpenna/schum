@@ -16,7 +16,15 @@ class Padrem extends CI_Model
 		$this->db->trans_complete();
 		return $retorno;
 	}
-	
+	public function getResulseti($sql){
+		$this->db->trans_start();
+			$query 		= $this->db->query($sql);
+			$retorno 	= $query; 
+			$query->free_result();
+			$query->next_result();
+		$this->db->trans_complete();
+		return $retorno;
+	}
 	public function getImgSrc($imgRuta){
 		$imgSrc = URLOCAL;
 		$img 	= str_replace("../Archivos/","", $imgRuta); 
