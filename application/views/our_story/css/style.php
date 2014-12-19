@@ -1,5 +1,5 @@
 .size{
-	height: 225%;
+	height: 225px;
 }
 .ourStoryDescription > p{
 	font-family: 'proximaRegular';
@@ -12,4 +12,7 @@
 }
 .marginn{
 	margin-left: 3%;
+}
+.font > p{
+	font-family: 'proximaRegular';
 }
