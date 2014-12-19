@@ -220,7 +220,7 @@
 						<div class="row container-fluid">
 							<h2>key features</h2>
 						</div>
-						<div class="row container-fluid">
+						<div class="row container-fluid silicon">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div class="col-lg-12 col-sm-12 col-md-12 ">
 									<!-- <p class="bold">Appliances</p>

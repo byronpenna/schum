@@ -332,3 +332,16 @@ label{
 	vertical-align: top;
 	margin-top:5px;	
 }
+.silicon h2{
+	margin-top: 5%;
+}
+.silicon h4{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-left: 5%;
+}
+.silicon p{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-left: 5%;
+}
