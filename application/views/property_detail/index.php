@@ -104,7 +104,7 @@
 							<div class="col-lg-6 col-sm-6 col-md-6 boxSummary">								
 								<label>Country/Minicipality:</label> 
 								<p>
-									<?php echo $house->country; ?>
+									<?php echo $house->cityTown; ?>
 								</p>
 							</div>
 							<div class="col-lg-3 col-sm-3 col-md-3 boxSummary">								
