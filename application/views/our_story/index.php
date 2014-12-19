@@ -24,7 +24,7 @@
 		<div class="row container-fluid sliderNew size" >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
-			<div class="row container-fluid ourStoryDescription marginn">
+			<div class="row container-fluid ourStoryDescription marginn font">
 					<h2>Our Story</h2>
 					<p>
 						There Are Many Fantastic Real Estate Brokerages In Our Great City! We Work Diligently To Continue To Remain One Of Them.
