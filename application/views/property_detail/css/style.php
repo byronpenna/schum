@@ -323,8 +323,9 @@ label{
     
 }
 #contkey{
-	width: 15%;
-	height:200px;
+	width: 20%;
+	height: 200px;
+	background: none repeat scroll 0% 0% rgb(236, 237, 233);
 }
 .keyFeatureBlock article{
 	display: inline-block;
