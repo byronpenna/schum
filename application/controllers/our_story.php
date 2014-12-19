@@ -7,8 +7,14 @@ class Our_story extends Padre
 		parent::__construct();
 	}
 	function index(){
+		// loads
+			$this->load->model("Our_storym");
 		// vars 
-			$data = array('homeData' => $this->homeData );
+			$ourStoryModel 	= new Our_storym();
+			$data 			= 	array(
+									'homeData' => $this->homeData,
+									'ourStory' => $ourStoryModel->getOurStory()
+								);
 		// views 
 			$this->load->view("our_story/index.php",$data);
 	}

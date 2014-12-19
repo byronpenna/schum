@@ -26,13 +26,13 @@
 		</div>
 	<div class="bodyContainer">
 				<div class="row container-fluid ourStoryDescription marginn font">
-						<h2><?= $news->title; ?></h2>
+						<h2><?php echo $news->title; ?></h2>
 						<div>
 							<!-- <img class="grafica" src=<?php echo "'".base_url("img/news/grafica.jpg")."'" ?> "application/views/news/grafica.jpg"> -->
-							<?= $news->img ?>
+							<?php echo $news->img; ?>
 						</div>
 						<p>
-							<?= $news->text; ?>
+							<?php echo $news->text; ?>
 						</p>
 						<!-- <p>
 							There Are Many Fantastic Real Estate Brokerages In Our Great City! We Work Diligently To Continue To Remain One Of Them.

@@ -26,7 +26,8 @@
 		</div>
 			<div class="row container-fluid ourStoryDescription marginn font">
 					<h2>Our Story</h2>
-					<p>
+					<?php  ?>
+					<!-- <p>
 						There Are Many Fantastic Real Estate Brokerages In Our Great City! We Work Diligently To Continue To Remain One Of Them.
 					</p>
 					<p>
@@ -42,7 +43,7 @@
 					</p>
 					<p>
 						Thank You For Your Trust and Business
-					</p>
+					</p> -->
 				</div>
 		<div class="bodyContainer">
 			
