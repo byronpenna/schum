@@ -24,11 +24,32 @@
 		<div class="row container-fluid sliderNew size" >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
-		<div class="bodyContainer">
-			<div>
-				<img class="grafica" src=<?php echo "'".base_url("img/news/grafica.jpg")."'" ?> "application/views/news/grafica.jpg">
-			</div>
-		</div>
+	<div class="bodyContainer">
+				<div class="row container-fluid ourStoryDescription marginn font">
+						<h2>Our Story</h2>
+						
+						<div>
+							<img class="grafica" src=<?php echo "'".base_url("img/news/grafica.jpg")."'" ?> "application/views/news/grafica.jpg">
+						</div>
+						<p>
+							There Are Many Fantastic Real Estate Brokerages In Our Great City! We Work Diligently To Continue To Remain One Of Them.
+						</p>
+						<p>
+							Our Team Culture Is Rooted In Non-Negotiable Integrity With Laser-Focused Purpose:
+						</p>
+						<p>
+							To Serve Our Customers With Utmost Professionalism And Quality, 
+							Helping Them Achieve Their Dreams And Goals, And Prosper Along the Way. 
+							We Love Our Unique Brand and Believe Marketing Should Be Creative, Engaging And Actionable, 
+							Generating Extraordinary Results For Our Customers. 
+							We Are Passionate About Giving Back To Our Community, About Being Instrumental In Adding Quality of Life,
+							And Partnering In Making Change Happen For Those Less Fortunate In Our City.
+						</p>
+						<p>
+							Thank You For Your Trust and Business
+						</p>
+				</div>
+				</div>
 		<?php 	
 			$this->load->view("parts/footer.php");
 		?>
