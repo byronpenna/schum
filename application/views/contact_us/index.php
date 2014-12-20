@@ -42,10 +42,10 @@
 				                    P:</abbr>
 				                (123) 456-7890 -->
 				            </address>
-				            <!-- <address>
-				                <strong>Full Name</strong><br>
-				                <a href="mailto:#">first.last@example.com</a>
-				            </address> -->
+				            <address>
+				                <strong>Email Address</strong><br>
+				                <a href="mailto:info@driventofinish.com">info@driventofinish.com</a>
+				            </address>
 				            </form>
 				        </div>
 				        <div class="col-md-8">

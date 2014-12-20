@@ -42,7 +42,7 @@
                         <a <?php echo "class='".$menu[4]."' href='".site_url("our_story")."'" ?> >Our story</a>
                     </li>
                     <li>
-                        <a <?php echo "class='".$menu[5]."' href='".site_url("contact_us")."'" ?> >Contact us</a>
+                        <a <?php echo "class='".$menu[5]."' href='".site_url("contact_us")."'" ?> >Contact</a>
                     </li>
                 </ul>
             </div>
