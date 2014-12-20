@@ -87,9 +87,9 @@
 			</div>
             </br>
 			<div class="row container-fluid summarySection">
-				<div class="row container-fluid">
+				<!-- <div class="row container-fluid"> -->
 						<h2>Summary</h2>
-				</div>
+				<!-- </div> -->
 				<div class="row">
 					<div class="col-lg-12 col-sm-12 col-md-12 parentBoxSummary">
 						<div class="col-lg-3 col-sm-4 col-md-3 paddingNull">
@@ -208,6 +208,7 @@
 						</div> -->
 					</div>
 				</div>
+				<h2>key features</h2>
 				<div class="col-lg-12 col-sm-12 col-md-12 dataDescription">
 					<!-- <div class="row container-fluid">
 						<h2>Description</h2>
@@ -217,9 +218,9 @@
 						</p>
 					</div> -->
 					<div class="row container-fluid keyFeatureBlock">
-						<div class="row container-fluid">
-							<h2>key features</h2>
-						</div>
+						<!-- <div class="row container-fluid"> -->
+							
+						<!-- </div> -->
 						<div class="row container-fluid silicon">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div class="col-lg-12 col-sm-12 col-md-12 ">
@@ -257,9 +258,9 @@
 			?>
 			<!-- Location -->
 			<div class="row container-fluid locationSection">
-				<div class="row container-fluid">
+				<!-- <div class="row container-fluid"> -->
 					<h2 class="titul">Location</h2>
-				</div>
+				<!-- </div> -->
 				<div class="row container-fluid">
 					<div id='map_canvas' class="map">
 						

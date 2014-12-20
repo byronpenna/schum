@@ -588,14 +588,14 @@ iframe[name="f3d7c73d9c"]{
 
 @media(max-width:767px){
 	.titul{
-        font-size: 1.5em;
+        /*font-size: 1.5em;*/
     }
     .boxSummary{
         font-size: 0.8em;
         text-align: center;
     }
     .summarySection h2{
-        font-size: 1.5em;
+        /*font-size: 1.5em;*/
     }
     .namesection h2, namesection h4{
         text-align: center;
@@ -636,7 +636,7 @@ iframe[name="f3d7c73d9c"]{
 /*Key feature*/
 
     .keyFeatureBlock h2{
-        font-size: 1.1em;
+        /*font-size: 1.1em;*/
     }
 
     .keyFeatureBlock > .row:nth-child(2) > .col-sm-6 > p{
@@ -660,7 +660,7 @@ iframe[name="f3d7c73d9c"]{
 @media(min-width:768px){	
 	/*sm*/
     .titul{
-        font-size: 1.2em;
+        /*font-size: 1.2em;*/
     }
     .jscarousal-contents
     {
@@ -728,7 +728,7 @@ iframe[name="f3d7c73d9c"]{
 	/*Summary*/		
 
 		.summarySection h2{
-			font-size: 1.2em;
+			/*font-size: 1.2em;*/
 		}
 
 
@@ -776,7 +776,7 @@ iframe[name="f3d7c73d9c"]{
 	/*Key feature*/
 
 		.keyFeatureBlock h2{
-			font-size: 1.2em;
+			/*font-size: 1.2em;*/
 		}
 
 		.keyFeatureBlock > .row:nth-child(2) > .col-sm-6 > p{
@@ -933,7 +933,7 @@ iframe[name="f3d7c73d9c"]{
             padding-top: 25px;
         }
 		.summarySection h2{
-			font-size: 1.2em;
+			/*font-size: 1.2em;*/
 		}
         .listPriceSummary{
             font-size: 2em !important;
@@ -982,7 +982,7 @@ iframe[name="f3d7c73d9c"]{
 		}
         /*Key Feature*/
         .keyFeatureBlock h2{
-			font-size: 1.5em;
+			/*font-size: 1.5em;*/
 		}
 
 		.keyFeatureBlock > .row:nth-child(2) > .col-sm-6 > p{
@@ -997,7 +997,7 @@ iframe[name="f3d7c73d9c"]{
 			font-size: 0.4em;
 		}
         .titul{
-            font-size: 1.2em;
+            /*font-size: 1.2em;*/
         }
         /*Video Tour*/
 
@@ -1159,7 +1159,7 @@ iframe[name="f3d7c73d9c"]{
         padding-top: 30px;
     }
     .summarySection h2{
-			font-size: 1.5em;
+			/*font-size: 1.5em;*/
 		}
         .listPriceSummary{
             font-size: 3em !important;
@@ -1205,7 +1205,7 @@ iframe[name="f3d7c73d9c"]{
 			font-size: 2em;
 		}
         .titul{
-            font-size: 1.5em;
+            /*font-size: 1.5em;*/
         }
         #openHouseBlock h2{
 			font-size: 1.5em;
@@ -1518,7 +1518,7 @@ iframe[name="f3d7c73d9c"]{
     }
 	/*Summary*/	
 		.summarySection h2{
-			font-size: 2em;
+			/*font-size: 2em;*/
 		}
         .listPriceSummary{
             font-size: 5em !important;
@@ -1578,7 +1578,7 @@ iframe[name="f3d7c73d9c"]{
 		}
         /*Key Feature*/
         .keyFeatureBlock h2{
-			font-size: 2em;
+			/*font-size: 2em;*/
 		}
 
 		.keyFeatureBlock > .row:nth-child(2) > .col-sm-6 > p{
@@ -1593,7 +1593,7 @@ iframe[name="f3d7c73d9c"]{
 			font-size: 0.6em;
 		}
         .titul{
-            font-size: 2em;
+            /*font-size: 2em;*/
         }
         /*Video Tour*/
 
@@ -1617,7 +1617,7 @@ iframe[name="f3d7c73d9c"]{
     }
    	/*Agent for this listings*/
    		.titulo{
-   			font-size: 1.5em;
+   			/*font-size: 1.5em;*/
    		}
 
 		.agent{
@@ -1767,7 +1767,7 @@ iframe[name="f3d7c73d9c"]{
 	/*Summary*/		
     
 		.summarySection h2{
-			font-size: 2.5em;
+			/*font-size: 2.5em;*/
 		} 
         .boxSummary{
 		height: 220px;
@@ -1832,7 +1832,7 @@ iframe[name="f3d7c73d9c"]{
 		}
     /*Key Feature*/
         .keyFeatureBlock h2{
-			font-size: 2.6em;
+			/*font-size: 2.6em;*/
 		}
 
 		.keyFeatureBlock > .row:nth-child(2) > .col-sm-6 > p{
@@ -1847,7 +1847,7 @@ iframe[name="f3d7c73d9c"]{
 			font-size: 0.7em;
 		}
     .titul{
-        font-size: 3em;
+        /*font-size: 3em;*/
     }
     /*Video Tour*/
 
@@ -1919,7 +1919,7 @@ iframe[name="f3d7c73d9c"]{
 
 	/*Download free ebook*/
 		.titulo{
-			font-size: 1.7em;
+			/*font-size: 1.7em;*/
 		}
 		.libro{
             width: 100%;
