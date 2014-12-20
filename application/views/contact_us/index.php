@@ -33,17 +33,19 @@
 				            <form>
 				            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
 				            <address>
-				                <strong>Twitter, Inc.</strong><br>
-				                795 Folsom Ave, Suite 600<br>
-				                San Francisco, CA 94107<br>
-				                <abbr title="Phone">
+				                <strong>Mailing Address:</strong><br>
+				                Schumacher Realty ltd.<br>
+				                PO BOX 226, 530 Main St.<br>
+				                Outbank, MB R0E 1J0<br>
+				                Canada
+				                <!-- <abbr title="Phone">
 				                    P:</abbr>
-				                (123) 456-7890
+				                (123) 456-7890 -->
 				            </address>
-				            <address>
+				            <!-- <address>
 				                <strong>Full Name</strong><br>
 				                <a href="mailto:#">first.last@example.com</a>
-				            </address>
+				            </address> -->
 				            </form>
 				        </div>
 				        <div class="col-md-8">
@@ -60,16 +62,17 @@
 					                            <div class="input-group">
 					                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
 					                                </span>
-					                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+					                                <input type="email" name='emailT' class="form-control" id="email" placeholder="Enter email" required="required" /></div>
 					                        </div>
 					                        <div class="form-group">
 					                            <label for="subject">Subject</label>
-					                            <select id="subject" name="subject" class="form-control" required="required">
+					                            <input type="text" name='subject' class='form-control'>
+					                            <!-- <select id="subject" name="subject" class="form-control" required="required">
 					                                <option value="na" selected="">Choose One:</option>
 					                                <option value="service">General Customer Service</option>
 					                                <option value="suggestions">Suggestions</option>
 					                                <option value="product">Product Support</option>
-					                            </select>
+					                            </select> -->
 					                        </div>
 					                        <div class="form-group">
 					                            <label for="name">Message</label>
@@ -77,7 +80,7 @@
 					                        </div>
 					                    </div>
 					                    <div class="col-md-12">
-					                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
+					                        <button type="submit" class="btn btnSend pull-right" id="btnContactUs">Send Message</button>
 					                    </div>
 					                </div>
 				                </form>

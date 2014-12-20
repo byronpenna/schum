@@ -12,8 +12,9 @@ class Contact_us extends Padre
 		);
 		$this->load->view("contact_us/index.php",$data);
 	}
-	function sendMail($frm){
-		mail("byronpenna@gmail.com","contact",$frm->message);
-		echo "mensaje enviado correctamente";
+	function sendMail(){
+		$frm = json_decode($_POST["frm"]);
+		mail("info@driventofinish.com","General Inquiry: Realty Ltd.",$frm->message,"from:".$frm->emailT." ");
+		echo true;
 	}
 }
