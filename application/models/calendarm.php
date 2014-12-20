@@ -21,10 +21,14 @@ class Calendarm extends Padrem
 			$openHouse 	= $this->getAllOpenHouse();
 			$casa 		= $openHouse; 	
 			$div 		= "";
+			// $div = $openHouse;
 		foreach ($openHouse as $key => $value) {
-			$casa 	= $listingModel->getCasa($value->homeId);;
-			$img 	= $this->getImgSrc($casa->rutaImg);
-			$div 	.= $this->templateDiv($casa,$value,$img);
+			$casa 	= $listingModel->getCasa($value->homeId);
+			if(is_object($casa)){
+				$img 	= $this->getImgSrc($casa->rutaImg);
+				$div 	.= $this->templateDiv($casa,$value,$img);	
+			}
+			// $div .= "| ".print_r($casa).",".$value->homeId." |";
 		}
 		return $div;
 	}

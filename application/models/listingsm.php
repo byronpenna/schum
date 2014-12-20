@@ -262,7 +262,7 @@ class Listingsm extends Padrem
 			$query = $this->db->get_where('shum_tb_house_listing', array('homeId' => $homeId));
 		$this->db->trans_complete();
 		$retorno = $query->result();
-		return $retorno[0];
+		return @$retorno[0];
 	}
 	function getNumsPaginacion($cn,$active=0){ // variable filtro se usara para saber si se uso una busqueda del searchbar
 		$div = "
