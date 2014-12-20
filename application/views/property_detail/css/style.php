@@ -345,3 +345,8 @@ label{
 	margin-bottom: 10%;
 	margin-left: 5%;
 }
+
+/*################################*/
+.txtSubtitle{
+	color: black !important;
+}

@@ -12,4 +12,8 @@ class Contact_us extends Padre
 		);
 		$this->load->view("contact_us/index.php",$data);
 	}
+	function sendMail($frm){
+		mail("byronpenna@gmail.com","contact",$frm->message);
+		echo "mensaje enviado correctamente";
+	}
 }

@@ -45,9 +45,9 @@ class Property_detailsm extends Padrem
 			$titulo[2] = new stdClass();	$titulo[3] = new stdClass();
 			$titulo[4] = new stdClass();
 
-			$titulo[0]->text = "<h2>Property description</h2>"; 	$titulo[1]->text = "<h2>general info</h2>"; 
-			$titulo[2]->text = "<h2>Lot information</h2>";			$titulo[3]->text = "<h2>taxes and local improvements</h2>";
-			$titulo[4]->text = "<h2>Remarks</h2>";
+			$titulo[0]->text = "<h2 class='txtSubtitle'>Property description</h2>"; 	$titulo[1]->text = "<h2 class='txtSubtitle'>general info</h2>"; 
+			$titulo[2]->text = "<h2 class='txtSubtitle'>Lot information</h2>";			$titulo[3]->text = "<h2 class='txtSubtitle'>taxes and local improvements</h2>";
+			$titulo[4]->text = "<h2 class='txtSubtitle'>Remarks</h2>";
 
 
 			$titulo[0]->estado = false; 	$titulo[1]->estado = false; 
