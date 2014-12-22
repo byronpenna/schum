@@ -293,6 +293,7 @@ class Listingsm extends Padrem
 	}
 	function getCasas($l1=0,$l2=12){
 		// vars 
+			// mucho ojo podria afectar a otro lado
 			$sql[0] 	= "SELECT * 
 						   FROM shum_tb_house_listing
 						   ORDER BY homeId DESC

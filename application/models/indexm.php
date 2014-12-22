@@ -52,6 +52,7 @@ class Indexm  extends Padrem
 				$retorno 		= new stdClass();
 				$sql 			= "SELECT * 
 								   FROM shum_tb_house_listing
+								   WHERE marketStatus <> 'Finished'
 								  ";	
 				$retorno->div 	= "";
 				if($op == 1){
@@ -59,8 +60,9 @@ class Indexm  extends Padrem
 				}else{
 					$sql .= "ORDER BY listPrice DESC";
 				}
-				$houseListings = $this->getResulset($sql);
-				$retorno->data = $houseListings;
+				// $sql 			.= "WHERE marketStatus <> 'Finished'";
+				$houseListings 	= $this->getResulset($sql);
+				$retorno->data 	= $houseListings;
 			// do it 
 				foreach ($houseListings as $key => $value) {
 					$imgSrc = $this->getImgSrc($value->rutaImg);
