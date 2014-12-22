@@ -300,6 +300,7 @@ class Property_detailsm extends Padrem
 					if($key == 0){
 						$miniatura->first = $value;
 					}
+					$value = str_replace(" ","%20",$value);
 					$miniatura->div .= "					
 							<div><img class='thumbnailSlider imgFull' src=".$value." />	</div>
 					";
