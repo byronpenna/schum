@@ -178,7 +178,7 @@ class Listingsm extends Padrem
 			}
 
 			if(isset($frm->recent) && $frm->recent){
-				$sql = "ORDER BY listingDate DESC";
+				$sql = "ORDER BY homeId DESC";
 			}
 
 			return $sql;
