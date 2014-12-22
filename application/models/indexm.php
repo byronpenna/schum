@@ -78,7 +78,7 @@ class Indexm  extends Padrem
 				$listingModel = new Listingsm();
 			// vars 
 				$divNews 	= "";
-				$casas 		= $listingModel->getCasas($l1,$l2);
+				$casas 		= $listingModel->getCasasNewsMarket($l1,$l2);
 				$casas 		= $casas->resultado[0];
 			// do it 
 				foreach ($casas as $key => $value) {

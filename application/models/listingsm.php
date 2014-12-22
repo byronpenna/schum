@@ -292,6 +292,33 @@ class Listingsm extends Padrem
 		return $div;
 
 	}
+	function getCasasNewsMarket($l1=0,$l2=12){
+		// vars 
+			// mucho ojo podria afectar a otro lado
+			$sql[0] 	= "SELECT * 
+						   FROM shum_tb_house_listing
+						   WHERE marketStatus <> 'Finished'
+						   ORDER BY homeId DESC
+						   LIMIT ".$l1.",".$l2." 
+						   ";
+			$sql[1] 	= "SELECT COUNT(*) AS casas
+					   		FROM shum_tb_house_listing
+					   		WHERE marketStatus <> 'Finished'
+					   		";
+			$regresar 	= new stdClass();
+		// do it 
+			$this->db->trans_start();
+				$query 		= $this->db->query($sql[0]);
+				$retorno 	= $query->result();
+				$query 		= $this->db->query($sql[1]);
+				$retorno2 	= $query->result();
+				// $query->free_result();
+				// $query->next_result();
+			$this->db->trans_complete();
+			$regresar->resultado[0] = $retorno;
+			$regresar->resultado[1] = $retorno2;
+		return $regresar;
+	}
 	function getCasas($l1=0,$l2=12){
 		// vars 
 			// mucho ojo podria afectar a otro lado
@@ -316,4 +343,5 @@ class Listingsm extends Padrem
 			$regresar->resultado[1] = $retorno2;
 		return $regresar;
 	}
+
 }

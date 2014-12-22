@@ -17,6 +17,7 @@
 	    	<?php
 	    	 	$this->load->view("listings/css/style.php");
 	    	 	$this->load->view("listings/css/jquery.fs.selecter.css"); 
+	    	 	$this->load->view("listings/css/owl.carousel.php"); 
 	    	 	$this->load->view("listings/css/indexMedia.php");
 	    	 ?>
 	    </style>
@@ -24,7 +25,7 @@
     	<script type="text/javascript">
 	    	<?php
 	    		$this->load->view("listings/js/jquery.fs.selecter.js");
-	    		
+	    		$this->load->view("listings/js/owl.carousel.php");
 	    		$this->load->view("parts/js/script.php");
 
 	    		$this->load->view("listings/js/functions.php");
@@ -193,6 +194,7 @@
 						
 					</div>
 				</div>
+				
 				<!-- <div class="row container-fluid calculatorSection">
 					<h2>Mortgage calculator</h2>
 					<h4>What will your monthly mortgage payment be?</h4>	
