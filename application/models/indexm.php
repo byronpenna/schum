@@ -330,7 +330,7 @@ class Indexm  extends Padrem
 				";
 			}
 			$retorno->div 	= $div;
-			$retorno->first = $slider[0]->rutaImg;
+			@$retorno->first = $slider[0]->rutaImg;
 			return $retorno;
 		}
 		function getSlider(){
