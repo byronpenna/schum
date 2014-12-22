@@ -81,6 +81,7 @@ class Indexm  extends Padrem
 			// do it 
 				foreach ($casas as $key => $value) {
 					$imgSrc = $this->getImgSrc($value->rutaImg);
+					$imgSrc = str_replace(" ","%20",$imgSrc);
 					if($key < 4){
 						// <img class='img-responsive imgFull imgNewsToMarket' src='".$imgSrc."'  >
 						$divNews .= "
