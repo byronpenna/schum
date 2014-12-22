@@ -157,8 +157,8 @@
 				<div class="col-xs-12">
 					<div class="col-lg-12 col-sm-12 col-md-12">
 						<?php
-								if($estadoCalendar){ 
-							?>
+							if($estadoCalendar){ 
+						?>
 							<div class="col-xs-6">
 								<a href=<?php echo "'".site_url("calendar/index/".$homeId." ")."'" ?> >
 									<div class="row container-fluid blockDescriptions" id='openHouseBlock'>
@@ -179,22 +179,30 @@
 						<?php 
 							}
 						?>
+						<?php 
+									
+							if($house->pdfFeature != "#"){
+						?>
 						<div class="col-xs-6">
 							<div class="row container-fluid blockDescriptions" id='sheetBlock'>
-								<a href=<?php echo "'".$house->pdfFeature."'" ?>  >
-									<div class="row container-fluid text-center imgBlockDescription">
-										<i class="fa fa-file-pdf-o icon"></i>
-									</div>
-									<div class="row container-fluid titleBlockDescription">
-										<h2>Pdf feature sheet</h2>
-									</div>
-									<div class="row container-fluid txtBlockDescription text-center">
-										<p> click here to download</p>
-									</div>
-								</a>
+
+									<a href=<?php echo "'".$house->pdfFeature."'" ?>  >
+										<div class="row container-fluid text-center imgBlockDescription">
+											<i class="fa fa-file-pdf-o icon"></i>
+										</div>
+										<div class="row container-fluid titleBlockDescription">
+											<h2>Pdf feature sheet</h2>
+										</div>
+										<div class="row container-fluid txtBlockDescription text-center">
+											<p> click here to download</p>
+										</div>
+									</a>
+								
 							</div>
 						</div>
-
+						<?php 
+							}
+						?>
 						<!-- <div class="row container-fluid blockDescriptions" id='virtualTourBlock'>
 							<div class="row container-fluid text-center imgBlockDescription">
 								<i class="fa fa-video-camera icon"></i>	
