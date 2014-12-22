@@ -125,6 +125,7 @@ class Listingsm extends Padrem
 				// preparando retorno
 					$regresar->result 				= $retorno[0];
 					$regresar->cn 					= $retorno[1];
+					$regresar->query 				= $sql[1];
 				return $regresar;
 		}
 		function addWhere($sql,$frm){

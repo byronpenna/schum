@@ -168,6 +168,7 @@
 			// do it 
 				$casas 	= $listingModel->finishedListings();
 				$data 	= $this->getStandarData($casas);
+				$data["origen"] = 0;
 			// view
 				$this->load->view("listings/index.php",$data);
 
