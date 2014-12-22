@@ -187,7 +187,7 @@ class Indexm  extends Padrem
 		function getCountListing(){
 			$sql = "SELECT COUNT(*) AS cnListing
 					from shum_tb_house_listing
-					WHERE statusHome = 'Publish Item'";
+					WHERE statusHome = 'Publish Item' AND marketStatus <> 'Finished' ";
 			$retorno = $this->getResulset($sql);
 			return $retorno;
 		}
