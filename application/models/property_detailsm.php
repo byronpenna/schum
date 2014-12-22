@@ -224,7 +224,7 @@ class Property_detailsm extends Padrem
 						FROM shum_tb_especial_listing
 						WHERE agente = '".$agentName."'";
 				$listing = $this->getResulset($sql);
-				return $listing[0]->cnListings;
+				return @$listing[0]->cnListings;
 			}
 			function getEmpId($empNombre){
 				$sql = "SELECT idEmpleado 
@@ -297,10 +297,10 @@ class Property_detailsm extends Padrem
 			if(isset($thumbnails) && !empty($thumbnails) && is_array($thumbnails)){
 				
 				foreach ($thumbnails as $key => $value) {
+					$value = str_replace(" ","%20",$value);
 					if($key == 0){
 						$miniatura->first = $value;
 					}
-					$value = str_replace(" ","%20",$value);
 					$miniatura->div .= "					
 							<div><img class='thumbnailSlider imgFull' src=".$value." />	</div>
 					";
