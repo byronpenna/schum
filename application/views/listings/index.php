@@ -112,7 +112,7 @@
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<div class="row container-fluid displaySection">
-							<div class="col-md-offset-6 col-sm-offset-4 col-md-6 col-sm-6 text-right AlADerecha">
+							<div style="display:none" class="col-md-offset-6 col-sm-offset-4 col-md-6 col-sm-6 text-right AlADerecha">
 								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 DivDisplay">
 									<h3 class="imgLine"> Display By </h3>	
 								</div>

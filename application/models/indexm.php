@@ -374,7 +374,7 @@ class Indexm  extends Padrem
 	// get home 
 		function getHouse(){
 			// vars 
-				$sql = "SELECT * FROM `shum_tb_house_listing` where latitud IS NOT NULL AND longitud IS NOT NULL;";
+				$sql = "SELECT * FROM `shum_tb_house_listing` WHERE marketStatus <> 'Finished' AND  latitud IS NOT NULL AND longitud IS NOT NULL;";
 			// do it 
 				$this->db->trans_start();
 					$query 		= $this->db->query($sql);
