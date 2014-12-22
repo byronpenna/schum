@@ -188,6 +188,7 @@ class Listingsm extends Padrem
 		}else{
 			$textoCasita = "";	
 		}
+		$imgSrc = str_replace(" ","%20",$imgSrc);
 		// <img class='imgFull' src='".$imgSrc."' >
 		$div = "
 					<div class='col-lg-3 col-md-4 col-sm-4 casa'>

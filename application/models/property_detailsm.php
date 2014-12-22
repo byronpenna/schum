@@ -83,10 +83,13 @@ class Property_detailsm extends Padrem
 					}
 					
 				}
-				foreach ($keyDiv as $key => $value) {
-					$keyDiv[$key] .= "</p>
-					</article>";
+				if(isset($keyDiv)){
+					foreach ($keyDiv as $key => $value) {
+						$keyDiv[$key] .= "</p>
+						</article>";
+					}	
 				}
+				
 				$variableGay = array();
 				foreach ($otherKeys as $key => $value) {		
 					
