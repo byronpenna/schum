@@ -295,7 +295,9 @@ class Listingsm extends Padrem
 		// vars 
 			$sql[0] 	= "SELECT * 
 						   FROM shum_tb_house_listing
-						   LIMIT ".$l1.",".$l2."";
+						   ORDER BY homeId DESC
+						   LIMIT ".$l1.",".$l2." 
+						   ";
 			$sql[1] 	= "SELECT COUNT(*) AS casas
 					   		FROM shum_tb_house_listing";
 			$regresar 	= new stdClass();
