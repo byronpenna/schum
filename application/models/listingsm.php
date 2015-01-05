@@ -268,7 +268,7 @@ class Listingsm extends Padrem
 	}
 	function getNumsPaginacion($cn,$active=0){ // variable filtro se usara para saber si se uso una busqueda del searchbar
 		$div = "
-			<div class='col-lg-1 col-sm-1' id='imgNavLeft'>
+			<div class='col-lg-1 col-sm-1 imgNav' direccion='0' id='imgNavLeft'>
 				<i class='fa fa-angle-left blank'></i>
 			</div>
 		";
@@ -278,6 +278,9 @@ class Listingsm extends Padrem
 			}else{
 				$txtActive = "";
 			}
+			if($i % 10){
+					
+			}
 			$div .= "
 				<div class='btnPaginacion col-lg-1 col-sm-1 ".$txtActive."' valor='".($i+1)."'>
 					".($i+1)."
@@ -285,7 +288,7 @@ class Listingsm extends Padrem
 			";
 		}
 		$div .= "
-		<div class='col-lg-1 col-sm-1' id='imgNavRight'>
+		<div class='col-lg-1 col-sm-1 imgNav' direccion='1' id='imgNavRight'>
 			<i class='fa fa-angle-right blank'></i>
 		</div>
 		";
