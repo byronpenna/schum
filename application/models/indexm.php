@@ -51,7 +51,7 @@ class Indexm  extends Padrem
 			// vars 
 				$retorno 		= new stdClass();
 				$sql 			= "SELECT * 
-								   FROM shum_tb_house_listing
+								   FROM (".$this->getSqlHouseListing().") houseListing
 								   WHERE marketStatus <> 'Finished'
 								  ";	
 				$retorno->div 	= "";
@@ -186,7 +186,7 @@ class Indexm  extends Padrem
 	// map section 
 		function getCountListing(){
 			$sql = "SELECT COUNT(*) AS cnListing
-					from shum_tb_house_listing
+					FROM (".$this->getSqlHouseListing().") houseListing
 					WHERE statusHome = 'Publish Item' AND marketStatus <> 'Finished' ";
 			$retorno = $this->getResulset($sql);
 			return $retorno;
@@ -371,10 +371,18 @@ class Indexm  extends Padrem
 			}
 			return $homeData;
 		}
-	// get home 
+		// function pruebaData(){
+		// 	$sql 		= $this->getSqlHouseListing();
+		// 	$sql 		= "	SELECT * 
+		// 				   	FROM (".$sql.") houseListing
+		// 					WHERE marketStatus <> 'Finished'";
+		// 	$listing 	= $this->getResulset($sql);
+		// 	return $listing;
+		// }
+	// // get home 
 		function getHouse(){
 			// vars 
-				$sql = "SELECT * FROM `shum_tb_house_listing` WHERE marketStatus <> 'Finished' AND  latitud IS NOT NULL AND longitud IS NOT NULL;";
+				$sql = "SELECT * FROM (".$this->getSqlHouseListing().") houseListing WHERE marketStatus <> 'Finished' AND  latitud IS NOT NULL AND longitud IS NOT NULL;";
 			// do it 
 				$this->db->trans_start();
 					$query 		= $this->db->query($sql);

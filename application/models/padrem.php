@@ -31,4 +31,543 @@ class Padrem extends CI_Model
 		$imgSrc .= $img;
 		return $imgSrc;
 	}
+	public function getSqlNominaEmp(){
+		$sql = "SELECT
+					`nombre`.`idEmpleado` AS `idEmpleado`,
+					concat(
+						`nombre`.`nombre`,
+						' ',
+						`apellido`.`apellido`
+					) AS `nombre`,
+					`posicion`.`posicion` AS `posicion`,
+					`descripcion`.`descripcion` AS `descripcion`,
+					`email`.`email` AS `email`,
+					`phone`.`phone` AS `phone`,
+					`contact`.`contact` AS `contact`,
+
+				IF (
+					(
+						isnull(`listings`.`cnListings`)
+						OR (`listings`.`cnListings` = 0)
+					),
+
+				IF (
+					(
+						(
+							`posicion`.`posicion` = 'Realtor'
+						)
+						OR (
+							`posicion`.`posicion` = 'Broker/owner'
+						)
+						OR (
+							`posicion`.`posicion` = 'REALTOR ®'
+						)
+					),
+					'--',
+					'-1'
+				),
+				 `listings`.`cnListings`
+				) AS `listings`,
+				 concat(
+					`documento`.`doc_ruta`,
+					`documento`.`doc_nombre`
+				) AS `rutaImg`,
+				 `short`.`shortDescrip` AS `shortDescription`,
+				 ucase(`nombre`.`nombre`) AS `simpleName`
+				FROM
+					(
+						(
+							(
+								(
+									(
+										(
+											(
+												(
+													(
+														(
+															`shum_tb_emp_nombres` `nombre`
+															LEFT JOIN `shum_tb_emp_apellidos` `apellido` ON (
+																(
+																	`apellido`.`idEmpleado` = `nombre`.`idEmpleado`
+																)
+															)
+														)
+														LEFT JOIN `shum_tb_emp_posicion` `posicion` ON (
+															(
+																`posicion`.`idEmpleado` = `nombre`.`idEmpleado`
+															)
+														)
+													)
+													LEFT JOIN `shum_tb_emp_descripcion` `descripcion` ON (
+														(
+															`descripcion`.`idEmpleado` = `nombre`.`idEmpleado`
+														)
+													)
+												)
+												LEFT JOIN `shum_tb_emp_email` `email` ON (
+													(
+														`email`.`idEmpleado` = `nombre`.`idEmpleado`
+													)
+												)
+											)
+											LEFT JOIN `shum_tb_emp_phone` `phone` ON (
+												(
+													`phone`.`idEmpleado` = `nombre`.`idEmpleado`
+												)
+											)
+										)
+										LEFT JOIN `shum_tb_emp_shortdescrip` `short` ON (
+											(
+												`short`.`idEmpleado` = `nombre`.`idEmpleado`
+											)
+										)
+									)
+									LEFT JOIN `shum_tb_emp_contact` `contact` ON (
+										(
+											`contact`.`idEmpleado` = `nombre`.`idEmpleado`
+										)
+									)
+								)
+								LEFT JOIN `shum_tb_especial_listing` `listings` ON (
+									(
+										`listings`.`Agente` = concat(
+											`nombre`.`nombre`,
+											' ',
+											`apellido`.`apellido`
+										)
+									)
+								)
+							)
+							LEFT JOIN `crm_ambito` `ambito` ON (
+								(
+									`ambito`.`amb_exp_id` = `nombre`.`idEmpleado`
+								)
+							)
+						)
+						LEFT JOIN `crm_documento` `documento` ON (
+							(
+								`documento`.`doc_amb_id` = `ambito`.`amb_id`
+							)
+						)
+					)
+				WHERE
+					(
+						(
+							`documento`.`doc_ruta` IS NOT NULL
+						)
+						AND (
+							`documento`.`doc_nombre` IS NOT NULL
+						)
+					)
+				GROUP BY
+					`nombre`.`idEmpleado`";
+		return $sql;
+	}
+	public function getSqlHouseListing(){
+		$sql = "SELECT 
+				streetNumber.exp_id as homeId,
+				CONCAT(
+					streetNumber.exp_valor,
+					' ',
+					streetName.exp_valor,
+					' ',
+					type.exp_valor
+					) AS `nombreVivienda`,
+				IF (
+					(
+						isnull(`city`.`exp_valor`)
+						OR (`city`.`exp_valor` = '')
+					),
+					'Sin asignar',
+					`city`.`exp_valor`
+				) AS `cityTown`,
+				`list`.`exp_valor` AS `listPrice`,
+				'1' AS `livingAreaFit`,
+					IF (
+					(
+						isnull(`sqft`.`exp_valor`)
+						OR (`sqft`.`exp_valor` = '')
+					),
+					'--',
+					`sqft`.`exp_valor`
+				) AS `sq`,
+				IF (
+					(
+						isnull(`bed`.`exp_valor`)
+						OR (`bed`.`exp_valor` = '')
+					),
+					'--',
+					`bed`.`exp_valor`
+				) AS `rooms`,
+				IF (
+					(
+						isnull(`bath`.`exp_valor`)
+						OR (`bath`.`exp_valor` = '')
+					),
+					'--',
+					`bath`.`exp_valor`
+				) AS `bathroom`,
+				concat(
+					`documento`.`doc_ruta`,
+					`documento`.`doc_nombre`
+				) AS `rutaImg`,
+				`type`.`exp_valor` AS `type`,
+				`propertyType`.`exp_valor` AS `propertyType`,
+					IF (
+					(
+						isnull(`video`.`exp_valor`)
+						OR (`video`.`exp_valor` = '')
+					),
+					'null',
+					`video`.`exp_valor`
+				) AS `video`,
+				IF (
+					(
+						isnull(`pdf`.`ruta`)
+						OR (`pdf`.`ruta` = '')
+					),
+					'#',
+					`pdf`.`ruta`
+				) AS `pdfFeature`,
+				`marketStatus`.`marketStatus` AS `marketStatus`,
+				`ubicacion`.`latitud` AS `latitud`,
+				`ubicacion`.`longitud` AS `longitud`,
+				`agent`.`agent` AS `agent`,
+				`mls`.`mlsNumber` AS `mlsNumber`,
+				`country`.`country` AS `country`,
+				`yearBuilt`.`yearBuilt` AS `yearBuilt`,
+				`streetName`.`listingDate` AS `listingDate`,
+				`houseDescription`.`description` AS `description`,
+				imagesHome.numFotos,
+				`statusHome`.`exp_valor` AS `statusHome`
+			FROM (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3868
+					)
+			) streetNumber
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`,
+					`crm_exp_expediente`.`exp_fecha_creacion` AS `listingDate`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3869
+					)
+			)streetName
+			on streetNumber.exp_id = streetName.exp_id 
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3870
+					)
+			) type
+			on type.exp_id = streetName.exp_id 
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3875
+					)
+			) city
+			on city.exp_id = streetNumber.exp_id
+			LEFT JOIN(
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3865
+					)
+			) list
+			on list.exp_id = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 4007
+					)
+			) sqft
+			on sqft.exp_id = list.exp_id 
+			left join(
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 5148
+					)
+			) bed
+			on bed.exp_id = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 5149
+					)
+			) bath
+			ON bath.exp_id = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`amb`.`amb_exp_id` AS `amb_exp_id`,
+					`doc`.`doc_fecha_creacion` AS `doc_fecha_creacion`,
+					`doc`.`doc_ruta` AS `doc_ruta`,
+					`doc`.`doc_nombre` AS `doc_nombre`,
+					`doc`.`doc_amb_id` AS `doc_amb_id`,
+					`doc`.`doc_descripcion` AS `doc_descripcion`
+				FROM
+					(
+						`crm_documento` `doc`
+						LEFT JOIN `crm_ambito` `amb` ON (
+							(
+								`amb`.`amb_id` = `doc`.`doc_amb_id`
+							)
+						)
+					)
+				WHERE
+					(
+						(`amb`.`amb_com_id` = 17)
+						AND (
+							`doc`.`doc_descripcion` = 'square-map-home'
+						)
+					)
+				GROUP BY
+					`amb`.`amb_exp_id`
+				ORDER BY
+					`doc`.`doc_fecha_creacion`
+			) documento
+			on documento.amb_exp_id = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3928
+					)
+			) propertyType 
+			on propertyType.exp_id = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3946
+					)
+			) video
+			on video.exp_id = streetNumber.exp_id 
+			LEFT JOIN (
+				SELECT
+					`streetNumber`.`exp_id` AS `homeId`,
+					concat(
+						`documento`.`doc_ruta`,
+						`documento`.`doc_nombre`
+					) AS `ruta`
+				FROM
+					(
+						(
+							`shum_tb_home_streetnumber` `streetNumber`
+							LEFT JOIN `crm_ambito` `ambito` ON (
+								(
+									`ambito`.`amb_exp_id` = `streetNumber`.`exp_id`
+								)
+							)
+						)
+						LEFT JOIN `crm_documento` `documento` ON (
+							(
+								`documento`.`doc_amb_id` = `ambito`.`amb_id`
+							)
+						)
+					)
+				WHERE
+					(
+						`documento`.`doc_nombre` = 'featuresheet.pdf'
+					)
+			) pdf
+			on pdf.homeId = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`exp`.`exp_id` AS `exp_id`,
+					`exp`.`exp_valor` AS `marketStatus`
+				FROM
+					`crm_exp_expediente` `exp`
+				WHERE
+					(
+						(`exp`.`exp_atr_id` = 3778)
+						AND (`exp`.`exp_com_id` = 17)
+						AND (`exp`.`exp_cat_id` = 12)
+					)
+			) marketStatus
+			on marketStatus.exp_id = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `exp_id`,
+					`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3777
+					)
+			) statusHome
+			ON statusHome.exp_id = streetNumber.exp_id 
+			LEFT JOIN `crm_ubicaciones_maps` `ubicacion` 
+			ON `ubicacion`.`exp_id_fk` = `streetNumber`.`exp_id`
+			LEFT JOIN (
+				SELECT DISTINCT
+					`crm_exp_expediente`.`exp_id` AS `homeId`,
+					`crm_exp_expediente`.`exp_valor` AS `agent`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						(
+							`crm_exp_expediente`.`exp_atr_id` = 3889
+						)
+						AND (
+							`crm_exp_expediente`.`exp_com_id` = 17
+						)
+					)
+			) agent
+			on agent.homeId = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `homeId`,
+					`crm_exp_expediente`.`exp_valor` AS `mlsNumber`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						(
+							`crm_exp_expediente`.`exp_atr_id` = 3866
+						)
+						AND (
+							`crm_exp_expediente`.`exp_com_id` = 17
+						)
+					)
+			) mls
+			on mls.homeId = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `homeId`,
+					`crm_exp_expediente`.`exp_valor` AS `country`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						(
+							`crm_exp_expediente`.`exp_atr_id` = 3873
+						)
+						AND (
+							`crm_exp_expediente`.`exp_com_id` = 17
+						)
+					)
+			) country
+			ON country.homeId = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `homeId`,
+					`crm_exp_expediente`.`exp_valor` AS `yearBuilt`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						(
+							`crm_exp_expediente`.`exp_atr_id` = 3930
+						)
+						AND (
+							`crm_exp_expediente`.`exp_com_id` = 17
+						)
+					)
+			) yearBuilt
+			on yearBuilt.homeId = streetNumber.exp_id
+			LEFT JOIN (
+				SELECT
+					`crm_exp_expediente`.`exp_id` AS `homeId`,
+					`crm_exp_expediente`.`exp_valor` AS `description`
+				FROM
+					`crm_exp_expediente`
+				WHERE
+					(
+						`crm_exp_expediente`.`exp_atr_id` = 3948
+					)
+			) houseDescription
+			ON houseDescription.homeId = streetNumber.exp_id
+			lEFT JOIN (
+				SELECT numImage.idVivienda,COUNT(numImage.idVivienda) AS numFotos
+				FROM (
+					SELECT DISTINCT
+						`exp`.`exp_id` AS `idVivienda`,
+						`documento`.`doc_nombre` AS `doc_nombre`
+					FROM
+						(
+							(
+								(
+									`crm_documento` `documento`
+									LEFT JOIN `crm_ambito` `ambito` ON (
+										(
+											`ambito`.`amb_id` = `documento`.`doc_amb_id`
+										)
+									)
+								)
+								LEFT JOIN `crm_exp_expediente` `exp` ON (
+									(
+										`exp`.`exp_id` = `ambito`.`amb_exp_id`
+									)
+								)
+							)
+							LEFT JOIN `crm_compania` `compania` ON (
+								(
+									`compania`.`com_id` = `exp`.`exp_com_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(`compania`.`com_id` = 17)
+							AND (`exp`.`exp_cat_id` = 12)
+							AND (
+								`documento`.`doc_tipo` = 'image'
+							)
+						)
+			) numImage
+			GROUP BY(numImage.idVivienda)
+			) imagesHome
+			on imagesHome.idVivienda = streetNumber.exp_id";
+		return $sql;
+	}
 }

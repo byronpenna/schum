@@ -115,6 +115,11 @@ class Welcome extends Padre {
 			);
 		// views 
 			$this->load->view('index/index.php',$data);
+			
+
+			// $listing = $indexModel->pruebaData();
+			// print_r($listing);
+			// echo "hola mundo";
 	}
 	public function getCommitment(){
 		// load 

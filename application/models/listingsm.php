@@ -110,9 +110,9 @@ class Listingsm extends Padrem
 					$sql[0] = $this->addWhere("",$frm);
 				}
 				$sql[1] = "SELECT COUNT(*) AS casas
-				FROM shum_tb_house_listing ".$sql[0];
+				FROM (".$this->getSqlHouseListing().") houseListing ".$sql[0];
 				$sql[0] = "SELECT * 
-				FROM shum_tb_house_listing ".$sql[0]."
+				FROM (".$this->getSqlHouseListing().") houseListing ".$sql[0]."
 				LIMIT ".$l1.",".$l2."
 				";
 			// do it 
@@ -261,7 +261,8 @@ class Listingsm extends Padrem
 	}
 	function getCasa($homeId){
 		$this->db->trans_start();
-			$query = $this->db->get_where('shum_tb_house_listing', array('homeId' => $homeId));
+			// $query = $this->db->get_where('shum_tb_house_listing', array('homeId' => $homeId));
+			$query = "SELECT * FROM (".$this->getSqlHouseListing().") houseListing WHERE 'homeId' = ".$homeId." ";
 		$this->db->trans_complete();
 		$retorno = $query->result();
 		return @$retorno[0];
@@ -299,13 +300,13 @@ class Listingsm extends Padrem
 		// vars 
 			// mucho ojo podria afectar a otro lado
 			$sql[0] 	= "SELECT * 
-						   FROM shum_tb_house_listing
+						   FROM (".$this->getSqlHouseListing().") houseListing
 						   WHERE marketStatus <> 'Finished'
 						   ORDER BY homeId DESC
 						   LIMIT ".$l1.",".$l2." 
 						   ";
 			$sql[1] 	= "SELECT COUNT(*) AS casas
-					   		FROM shum_tb_house_listing
+					   		FROM (".$this->getSqlHouseListing().") houseListing
 					   		WHERE marketStatus <> 'Finished'
 					   		";
 			$regresar 	= new stdClass();
@@ -326,12 +327,12 @@ class Listingsm extends Padrem
 		// vars 
 			// mucho ojo podria afectar a otro lado
 			$sql[0] 	= "SELECT * 
-						   FROM shum_tb_house_listing
+						   FROM (".$this->getSqlHouseListing().") houseListing
 						   ORDER BY homeId DESC
 						   LIMIT ".$l1.",".$l2." 
 						   ";
 			$sql[1] 	= "SELECT COUNT(*) AS casas
-					   		FROM shum_tb_house_listing";
+					   		FROM (".$this->getSqlHouseListing().") houseListing";
 			$regresar 	= new stdClass();
 		// do it 
 			$this->db->trans_start();
