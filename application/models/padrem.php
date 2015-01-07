@@ -857,7 +857,12 @@ class Padrem extends CI_Model
 			) numImage
 			GROUP BY(numImage.idVivienda)
 			) imagesHome
-			on imagesHome.idVivienda = streetNumber.exp_id";
+			on imagesHome.idVivienda = streetNumber.exp_id
+			where concat(
+					`documento`.`doc_ruta`,
+					`documento`.`doc_nombre`
+				) is not null
+			";
 		return $sql;
 	}
 }
