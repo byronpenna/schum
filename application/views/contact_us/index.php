@@ -18,8 +18,8 @@
 			$this->load->view("contact_us/css/style.php");
 		?>
 	</style>
-	<!-- <script src='https://www.google.com/recaptcha/api.js'></script>-->
-	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+	 <script src='https://www.google.com/recaptcha/api.js'></script>
+	<!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>-->
 </head>
 <body>
 	<div class="container-fluid">
@@ -56,7 +56,9 @@
 				        </div>
 				        <div class="col-md-8">
 				            <div class="well well-sm">
-				                <form class='frmContact'>
+                        <!-- class='frmContact' -->
+                        <!-- action=<?php echo site_url("prueba") ?> method='POST' -->
+				                <form  class="frmContact">
 					                <div class="row">
 					                    <div class="col-md-12">
 					                        <div class="form-group">
@@ -90,7 +92,6 @@
 					                    </div>
 					                </div>
 					                <div class="g-recaptcha" data-sitekey="6LddGwATAAAAAC2En6zYnC2tpKI059mZWVwhI5k2"></div>
-
 				                </form>
 				            </div>
 				        </div>
