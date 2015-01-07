@@ -18,6 +18,8 @@
 			$this->load->view("contact_us/css/style.php");
 		?>
 	</style>
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script>-->
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -31,7 +33,11 @@
 				    <div class="row">
 				        <div class="col-md-4">
 				            <form>
-				            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+				            <legend><span class="glyphicon glyphicon-globe"></span> CONTACT</legend>
+				            <p>
+					            To contact us directly, use the following information.
+					            General Inquiries:
+				            </p>
 				            <address>
 				                <strong>Mailing Address:</strong><br>
 				                Schumacher Realty ltd.<br>
@@ -83,6 +89,8 @@
 					                        <button type="submit" class="btn btnSend pull-right" id="btnContactUs">Send Message</button>
 					                    </div>
 					                </div>
+					                <div class="g-recaptcha" data-sitekey="6LddGwATAAAAAC2En6zYnC2tpKI059mZWVwhI5k2"></div>
+
 				                </form>
 				            </div>
 				        </div>
