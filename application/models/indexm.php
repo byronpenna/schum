@@ -170,7 +170,7 @@ class Indexm  extends Padrem
 		function getEmpleados($l1=0,$l2=4){
 			// vars 
 				// $sql = "call shum_getEmpleados()";
-				$sql = "SELECT * FROM shum_tb_emp_nominaemp ";
+				$sql = "SELECT * FROM (".$this->getSqlNominaEmp().") nominaEmp ";
 				if($l1 != -1 && $l2 != -1){
 					$sql .= "LIMIT $l1,$l2";
 				}
