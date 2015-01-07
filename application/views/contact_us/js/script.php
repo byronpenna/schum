@@ -18,7 +18,6 @@ $(document).ready(function(){
 	}
 	$(document).on("submit",".frmContact",function(e){
 		e.preventDefault();
-		
 		enviarEmail(serializeToJson($(this).serializeArray()));
 	});
 });

@@ -6,10 +6,11 @@ function enviarEmail(frm){
 		url: 	<?php echo "'".site_url('contact_us/sendMail')."'" ?>,
 		type: 	"POST",
 		success: function(data){
-			console.log("respuesta server: ",data);
-			if(data){
-				alert("Enviado correctamente");
-			}
+			console.log( "respuesta server: " , data);
+			datos = jQuery.parseJSON(data);
+			// if(datos.estado){
+				alert(datos.mensaje);
+			// }
 			
 		}
 	});

@@ -21,7 +21,7 @@ class Contact_us extends Padre
 		$frm["recaptcha"] 	= $frm["g-recaptcha-response"];
 		$frm 				= (Object)$frm;
 		$retorno 			= $this->contactUsModel->sendMail($frm);
-		print_r($retorno);
+		echo json_encode($retorno);
 		// echo true;
 	}
 }

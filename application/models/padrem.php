@@ -31,6 +31,107 @@ class Padrem extends CI_Model
 		$imgSrc .= $img;
 		return $imgSrc;
 	}
+	public function getSqlEspecialListing(){
+		$sql = "select 
+				`agente`.`Agente` AS `Agente`,
+				count(`codigo`.`exp_id`) AS `cnListings` 
+				from 
+				(
+					SELECT
+						`crm_exp_expediente`.`exp_id` AS `exp_id`
+					FROM
+						`crm_exp_expediente`
+					WHERE
+						(
+							(
+								`crm_exp_expediente`.`exp_com_id` = 17
+							)
+							AND (
+								`crm_exp_expediente`.`exp_cat_id` = 12
+							)
+						)
+					GROUP BY
+						`crm_exp_expediente`.`exp_id`
+				) codigo
+				LEFT JOIN
+				(
+					SELECT
+						`E`.`exp_id` AS `id1`,
+						`E`.`exp_valor` AS `Agente`
+					FROM
+						(
+							`crm_exp_expediente` `E`
+							JOIN `crm_atr_atributo` `A` ON (
+								(
+									`A`.`atr_id` = `E`.`exp_atr_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(`E`.`exp_cat_id` = 12)
+							AND (`A`.`atr_comp_id` = 17)
+							AND (
+								`A`.`atr_nombre` = 'Agent / Realtor ®'
+							)
+						)
+				) agente
+				on `agente`.`id1` = `codigo`.`exp_id`
+				LEFT JOIN (
+						SELECT
+						`E`.`exp_id` AS `id2`,
+						`E`.`exp_valor` AS `Market`
+					FROM
+						(
+							`crm_exp_expediente` `E`
+							JOIN `crm_atr_atributo` `A` ON (
+								(
+									`A`.`atr_id` = `E`.`exp_atr_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(`E`.`exp_cat_id` = 12)
+							AND (`A`.`atr_comp_id` = 17)
+							AND (
+								`A`.`atr_nombre` = 'Market Status'
+							)
+						)
+				) market
+				on `market`.`id2` = `codigo`.`exp_id`
+				LEFT JOIN (
+					SELECT
+						`E`.`exp_id` AS `id3`,
+						`E`.`exp_valor` AS `Statuss`
+					FROM
+						(
+							`crm_exp_expediente` `E`
+							JOIN `crm_atr_atributo` `A` ON (
+								(
+									`A`.`atr_id` = `E`.`exp_atr_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(`E`.`exp_cat_id` = 12)
+							AND (`A`.`atr_comp_id` = 17)
+							AND (`A`.`atr_nombre` = 'Status')
+						)
+				) statuss
+				on `statuss`.`id3` = `codigo`.`exp_id`
+				WHERE
+					(
+						(`market`.`Market` = 'Active')
+						AND (
+							`statuss`.`Statuss` = 'Publish Item'
+						)
+					)
+				GROUP BY
+					`agente`.`Agente`";
+		return $sql;
+	}
 	public function getSqlNominaEmp(){
 		$sql = "SELECT `nombre`.`idEmpleado` AS `idEmpleado`,
 			concat(

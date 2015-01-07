@@ -91,7 +91,7 @@
 					                        <button type="submit" class="btn btnSend pull-right" id="btnContactUs">Send Message</button>
 					                    </div>
 					                </div>
-					                <div class="g-recaptcha" data-sitekey="6LddGwATAAAAAC2En6zYnC2tpKI059mZWVwhI5k2"></div>
+					                <div class="g-recaptcha" data-sitekey="6LcpHAATAAAAABswjmSR8V7PrJ-fsydsB_nQPuRk"></div>
 				                </form>
 				            </div>
 				        </div>
