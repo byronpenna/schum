@@ -13,6 +13,11 @@
     		$this->load->view("contact_us/js/script.php");
     	?>
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+	        $("#recaptcha-anchor-label").text("Something different.");
+	    });
+	</script>
 	<style type="text/css">
 		<?php 
 			$this->load->view("contact_us/css/style.php");

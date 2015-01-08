@@ -23,6 +23,18 @@
 	  			getSortHouse($(this).val());
 	  		});
 	  	// eventos 
+	  		// mouseover
+	  			var interval;
+	  			$(document).on("mouseover",".imgNewsToMarket",function(){
+	  				clearInterval(interval);
+	  				divInputs 	= 	$(this).parents(".casaNewsToMarket").find(".sourceImageNewsToMarket");
+	  				interval 	= 	setInterval(function(){
+										slideNewsToMarket(divInputs);
+									}, 1000 );
+	  			});
+	 			$(document).on("mouseleave",".imgNewsToMarket",function(){
+	 				clearInterval(interval);
+	 			});		
 	  		// click 
 	  			// paginado 
 	  				// news to market 

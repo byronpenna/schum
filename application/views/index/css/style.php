@@ -249,11 +249,14 @@ body{
     .popUpMap{
     	padding-top: 6%;
     	padding-bottom: 6%;
-    	padding-left: 6%;
+    	padding-left: 12%;
     	padding-right: 6%;
     	text-decoration: none;
     	width: 190px;
-    	height: 250px;
+    	height: 270px;
+    }
+    .aPopupMap{
+    	text-decoration: none;
     }
     .calleBig {
     	color: #be0000;
@@ -621,6 +624,7 @@ body{
 	.priceMap{
 		color: #5a5a5a;
 		font-family: 'proximaRegular';
+		font-size: 2em;
 	}
 /* Header */
 	

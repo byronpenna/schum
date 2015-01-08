@@ -316,6 +316,14 @@
 									<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
 										<button class="readmore">About <?php echo $empleado->simpleName; ?> <!-- Derrick es variable --></button>
 									</a>
+									<button class="readmore">
+										<a href="mailto:<?php echo $empleado->email ?>?subject=Property Inquiry: <?php echo $house->nombreVivienda ?>">
+											More Info
+										</a>
+									</button>
+									<button class="readmore">
+										<a href="mailto:<?php echo $empleado->email ?>?subject=Showing Request For: <?php echo $house->nombreVivienda ?>">Book a showing</a> 
+									</button>
 									<!-- <a href="#">
 										<button class="readmore">More Info</button>
 									</a> -->

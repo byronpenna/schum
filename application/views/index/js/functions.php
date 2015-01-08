@@ -1,3 +1,16 @@
+function slideNewsToMarket(divInputs){
+	input = divInputs.find(".imgSlideNewsToMarket.active");
+	console.log(input.val());
+	input.removeClass("active");
+	input = input.next();
+	console.log("lenght input",input);
+	if(input.length == -1){
+		input = input.first();
+		console.log("input",input);
+	}
+	input.addClass("active");
+	// console.log("tick,tock");
+}
 function getLimits(nav,selector1,selector2){
 	limits 		= new Object();
 	l1 			= parseInt(selector1.val());
@@ -237,7 +250,10 @@ function paginacionEmp(limit){
 			// do it 	
 				marker.setMap(map);
 			// events 
-				google.maps.event.addListener(marker, 'click', function() {
+				// google.maps.event.addListener(marker, 'click', function() {
+				//     popUp.open(map,marker);
+				// });
+				google.maps.event.addListener(marker, 'mouseover', function() {
 				    popUp.open(map,marker);
 				});
 		});
@@ -264,9 +280,8 @@ function paginacionEmp(limit){
 		var popUp = new google.maps.InfoWindow({
 		
 		    content: "\
-		    	<a href='"+url+"'>\
+		    	<a class='aPopupMap' href='"+url+"'>\
 		    		<div class='popUpMap'>\
-		    			<center>\
 			    			<div class='row'>\
 			    				<img class='casaMapa' src='"+varsContent.img+"'>\
 							</div>\
@@ -277,13 +292,12 @@ function paginacionEmp(limit){
 								<span class='cityTownMapa'>"+varsContent.city+"</span>\
 							</div>\
 							<div class='row'>\
-								<span class='priceMap'>"+varsContent.price+"</span>\
+								<span class='priceMap'>$"+varsContent.price+"</span>\
 							</div>\
 							<div class='row'>\
 								<button class='btnReadMoreMap'>READ MORE</button>\
 							</div>\
 							\
-						</center>\
 		    		</div>\
 		    	</a>",
 		    // content:contenido,

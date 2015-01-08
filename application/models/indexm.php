@@ -72,6 +72,23 @@ class Indexm  extends Padrem
 
 		}
 	// news to the market
+		function getImagenesNewsToMarket($id){
+			$sql 		= "SELECT 
+								CONCAT(doc_ruta,doc_nombre) AS imagen 
+							FROM crm_documento LEFT JOIN crm_ambito ON amb_id = doc_amb_id WHERE amb_exp_id = ".$id." ";
+			$imagenes 	= $this->getResulset($sql);
+			$inputs 	= "<div class='sourceImageNewsToMarket'>";
+			foreach ($imagenes as $key => $value) {
+				if($key == 0){
+					$active = "active";
+				}else{
+					$active = "";
+				}
+				$inputs .= "<input type='hidden' class='imgSlideNewsToMarket ".$active."' value='".$this->getImgSrc($value->imagen)."'>";
+			}
+			$inputs 	.= "</div>";
+			return $inputs;
+		}
 		function getNewsToTheMarket($l1=0,$l2=4){
 			// load 
 				$this->load->model("listingsm");
@@ -86,8 +103,10 @@ class Indexm  extends Padrem
 					$imgSrc = str_replace(" ","%20",$imgSrc);
 					if($key < 4){
 						// <img class='img-responsive imgFull imgNewsToMarket' src='".$imgSrc."'  >
+						$inputs = $this->getImagenesNewsToMarket($value->homeId);
 						$divNews .= "
 							<div class='col-sm-5 col-md-3 casaNewsToMarket'>
+								".$inputs."
 								<a class='aaah' href='".site_url("property_detail/index/".$value->homeId." ")."'>
 									<div class='row white n-cuadroCasita'>
 										<div class='row container-fluid imgNewsToMarket' style='background:url(".$imgSrc.")'>
