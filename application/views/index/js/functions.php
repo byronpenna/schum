@@ -209,7 +209,7 @@ function paginacionEmp(limit){
 			data:{
 
 			},
-			url: 	<?php echo "'".site_url('welcome/getCasas')."'" ?>,
+			url: 	<?php echo "'".site_url('welcome/getCasasForMap')."'" ?>,
 			type: 	"POST",
 			success: function(data){
 				casas = jQuery.parseJSON(data);
@@ -227,6 +227,8 @@ function paginacionEmp(limit){
 				detallePopUp.calle 	= value.nombreVivienda;
 				detallePopUp.homeId = value.homeId;
 				detallePopUp.price 	= value.listPrice;
+				detallePopUp.img 	= value.rutaImg;
+				detallePopUp.city 	= value.cityTown;
 				dataMarket.icon 	= '<?php echo base_url("img/map/home.png"); ?>';
 				dataMarket.titulo 	= value.nombreVivienda;
 				var location 		= new google.maps.LatLng(value.latitud,value.longitud);
@@ -264,10 +266,27 @@ function paginacionEmp(limit){
 		    content: "\
 		    	<a href='"+url+"'>\
 		    		<div class='popUpMap'>\
-		    			<b class='calleBig'>Address:</b> <p class='calleSmall'>"+varsContent.calle+"</p> <br>\
-		    			<b class='calleBig'>Price:</b> <p class='calleSmall'>"+varsContent.price+"</p> <br>\
+		    			<center>\
+			    			<div class='row'>\
+			    				<img class='casaMapa' src='"+varsContent.img+"'>\
+							</div>\
+							<div class='row'>\
+							<span class='tituloViviendaMap'>"+varsContent.calle+"</span>\
+							</div>\
+							<div class='row'>\
+								<span class='cityTownMapa'>"+varsContent.city+"</span>\
+							</div>\
+							<div class='row'>\
+								<span class='priceMap'>"+varsContent.price+"</span>\
+							</div>\
+							<div class='row'>\
+								<button class='btnReadMoreMap'>READ MORE</button>\
+							</div>\
+							\
+						</center>\
 		    		</div>\
 		    	</a>",
+		    // content:contenido,
 		    height: 100
 		});
 		return popUp;

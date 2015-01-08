@@ -63,6 +63,15 @@ class Welcome extends Padre {
 		// do it 
 			echo json_encode($casas);
 	}
+	public function getCasasForMap(){
+		// load 
+			$this->load->model("indexm");
+		// vars 
+			$indexModel = new Indexm();
+			$casas 		= $indexModel->getHouseForMap();
+		// do it 
+			echo json_encode($casas);
+	}
 	public function getCasasForMapSection(){
 		// load 
 			$this->load->model("indexm");

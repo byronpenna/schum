@@ -1,3 +1,7 @@
+.casaMapa{
+	width: 150px;
+	height: 150px;
+}
 .banner2{
 	height: auto !important;
 }
@@ -248,7 +252,8 @@ body{
     	padding-left: 6%;
     	padding-right: 6%;
     	text-decoration: none;
-    	
+    	width: 190px;
+    	height: 250px;
     }
     .calleBig {
     	color: #be0000;
@@ -594,6 +599,28 @@ body{
 		text-transform: uppercase;
 		padding-right: 10%;
 		padding-left: 10%;
+	}
+	.btnReadMoreMap{
+		background: #314782;
+		color: white;
+		width: 150px;
+		padding: 3%;
+		font-size: 1em;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+	.tituloViviendaMap{
+		color: #565656;
+		text-transform: uppercase;
+		font-family: 'proximaNovaBold';
+	}
+	.cityTownMapa{
+		color: #c3c3c3;
+		font-family: 'proximaNovaSemiBold';
+	}
+	.priceMap{
+		color: #5a5a5a;
+		font-family: 'proximaRegular';
 	}
 /* Header */
 	

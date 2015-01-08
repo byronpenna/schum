@@ -392,6 +392,13 @@ class Indexm  extends Padrem
 				$query->next_result();
 			return $retorno;
 		}
+		function getHouseForMap(){
+			$houses = $this->getHouse();
+			foreach ($houses as $key => $value) {
+				$houses[$key]->rutaImg = $this->getImgSrc($value->rutaImg);
+			}
+			return $houses;
+		}
 		function getMainUbication(){
 			$ubicacion = $this->getUbicationFromCompania(17);
 			$ubicacion = $ubicacion[0];
