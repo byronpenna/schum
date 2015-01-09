@@ -84,7 +84,9 @@ class Indexm  extends Padrem
 				}else{
 					$active = "";
 				}
-				$inputs .= "<input type='hidden' class='imgSlideNewsToMarket ".$active."' value='".$this->getImgSrc($value->imagen)."'>";
+				$imgSrc = $this->getImgSrc($value->imagen);
+				$imgSrc = str_replace(" ","%20",$imgSrc);
+				$inputs .= "<input type='hidden' class='imgSlideNewsToMarket ".$active."' value='".$imgSrc."'>";
 			}
 			$inputs 	.= "</div>";
 			return $inputs;

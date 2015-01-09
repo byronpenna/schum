@@ -1,14 +1,27 @@
-function slideNewsToMarket(divInputs){
+function slideNewsToMarket(divInputs,selector){
+	
 	input = divInputs.find(".imgSlideNewsToMarket.active");
 	console.log(input.val());
+	// #############
+		$(selector).animate({
+		    opacity: 0.50,
+		}, 500, function() {
+			selector.css("background","url("+input.val()+")");
+		  	$(selector).animate({
+		  		opacity: 1
+		  	},500,function(){
+		  		
+		  	});
+		});
+	// #############
 	input.removeClass("active");
+
 	input = input.next();
-	console.log("lenght input",input);
-	if(input.length == -1){
-		input = input.first();
-		console.log("input",input);
+	if(input.val() == undefined){
+		input = divInputs.find(".imgSlideNewsToMarket").first();
 	}
 	input.addClass("active");
+	
 	// console.log("tick,tock");
 }
 function getLimits(nav,selector1,selector2){
