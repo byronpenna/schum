@@ -13,10 +13,10 @@
 					changeImage(imgSrc);
 			});
 
-			// $(document).ready(function() {
-	  //          	$('#jsCarousel').jsCarousel({ onthumbnailclick: function(src) { }, autoscroll: false, masked: true, itemstodisplay: 12, orientation: 'h' });
-	  //          	initialize();
-		 //    });
+			$(document).ready(function() {
+	           	$('#jsCarousel').jsCarousel({ onthumbnailclick: function(src) { }, autoscroll: false, masked: true, itemstodisplay: 12, orientation: 'h' });
+	           	initialize();
+		    });
 
 		
 		$(document).on("click",".sliderNew",function(){
