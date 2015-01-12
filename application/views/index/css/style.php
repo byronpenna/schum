@@ -1,3 +1,6 @@
+ul li{
+	list-style: none !important;
+}
 .casaMapa{
 	width: 150px;
 	height: 150px;
