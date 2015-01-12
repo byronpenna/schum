@@ -327,3 +327,213 @@
 		.hidemenu{
 			display:none;
 		}
+
+
+
+
+
+
+
+
+
+
+
+		/* estilos para el footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer_container {
+  border-top: 2px solid #ce4e25;
+  background-color: #24231f;
+  width: 100%;
+  font-family: "Nunito", "Helvetica", sans-serif; }
+  #footer_container .site-footer.row a {
+    text-decoration: none;
+    color: #cccccc; }
+  #footer_container .site-footer.row #recent-posts-2 h3.widget-title {
+    color: #cccccc; }
+  #footer_container .site-footer.row #recent-posts-2 ul li {
+    padding: 12px 0;
+    list-style: none;
+    line-height: 1.5em; }
+    #footer_container .site-footer.row #recent-posts-2 ul li a {
+      font-size: 2rem;
+      font-size: 20px; }
+  #footer_container .site-footer.row #simple_tweet_widget-2 h3.widget-title {
+    color: #cccccc; }
+  #footer_container .site-footer.row #simple_tweet_widget-2 .tweets {
+    color: #cccccc; }
+  #footer_container .site-footer.row #simple_tweet_widget-2 .tweets-meta {
+    margin: 2em 0 10em 0; }
+    #footer_container .site-footer.row #simple_tweet_widget-2 .tweets-meta strong.real-name {
+      color: #cccccc; }
+    #footer_container .site-footer.row #simple_tweet_widget-2 .tweets-meta p.twitget-user-description {
+      color: #cccccc; }
+
+    #footer_container .site-footer.row #text-4 h3.widget-title {
+      color: #fbb03b !important;
+      text-align: right; }
+    #footer_container .site-footer.row #text-4 a.foot-social-ico {
+      font-size: 10px;
+      float: left;
+      width: 4.3em;
+      height: 4.3em;
+      line-height: 4.3em;
+      list-style-type: none;
+      text-align: center;
+      margin-right: 8px;
+      margin-bottom: 16px;
+      background-color: #fbb03b;
+      display: block;
+      border-radius: 50%; }
+      #footer_container .site-footer.row #text-4 a.foot-social-ico .fa {
+        font-size: 2em;
+        vertical-align: middle;
+        color: #24231f; }
+      #footer_container .site-footer.row #text-4 a.foot-social-ico:hover {
+        background-color: #faa622; }
+  #footer_container .credits.row {
+    padding: 20px 0; }
+    #footer_container .credits.row p {
+      font-family: "Nunito", "Helvetica", sans-serif;
+      font-weight: 400;
+      padding: 0; }
+      #footer_container .credits.row p a {
+        color: #cccccc;
+        font-size: 2rem;
+        font-size: 20px;
+        text-decoration: none; }
+        #footer_container .credits.row p a:visited {
+          color: #cccccc; }
+    #footer_container .credits.row a.terms {
+      color: #cccccc; }
+
+
+
+
+
+#header_container, #footer_container, #main_content_container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  clear: both; }
+  .container#header_container > .row, .container#footer_container > .row, .container#main_content_container > .row, .container-fluid#header_container > .row, .container-fluid#footer_container > .row, .container-fluid#main_content_container > .row {
+    margin-left: 0;
+    margin-right: 0; }
+    .container#header_container > .row > .col:first-of-type, .container#footer_container > .row > .col:first-of-type, .container#main_content_container > .row > .col:first-of-type, .container-fluid#header_container > .row > .col:first-of-type, .container-fluid#footer_container > .row > .col:first-of-type, .container-fluid#main_content_container > .row > .col:first-of-type {
+      padding-left: 0; }
+    .container#header_container > .row > .col:last-of-type, .container#footer_container > .row > .col:last-of-type, .container#main_content_container > .row > .col:last-of-type, .container-fluid#header_container > .row > .col:last-of-type, .container-fluid#footer_container > .row > .col:last-of-type, .container-fluid#main_content_container > .row > .col:last-of-type {
+      padding-right: 0; }
+
+.blog #main_content_container #primary.site-content,
+.archive #main_content_container #primary.site-content,
+.single #main_content_container #primary.site-content, #header_container .site-header .inner, #footer_container .site-footer .inner, .search #main_content_container .site-content,
+.error404 #main_content_container .site-content {
+  clear: both;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  float: none; }
+
+.blog #main_content_container #primary.site-content,
+.archive #main_content_container #primary.site-content,
+.single #main_content_container #primary.site-content {
+  max-width: 699.6px; }
+
+#footer_container {
+  width: 100%; }
+
+.site-footer {
+  clear: both;
+  width: 90%;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 30px 0 0 0;
+  padding: 1.875rem 0 0 0; }
+
+.site-footer a:focus {
+  outline: thin dotted;
+  color: black; }
+
+.site-footer .widget-area .widget {
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
+
+#footer_container .site-footer {
+  clear: both;
+  font-size: 1.4em;
+  line-height: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: black; }
+  #footer_container .site-footer .inner {
+    position: relative; }
+  #footer_container .site-footer .col:first-of-type {
+    padding-left: 0; }
+  #footer_container .site-footer .col:last-of-type {
+    padding-right: 0; }
+  #footer_container .site-footer .navigation {
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0 50px 0; }
+    #footer_container .site-footer .navigation .main-navigation .nav-menu {
+      text-align: justify; }
+      #footer_container .site-footer .navigation .main-navigation .nav-menu:after {
+        content: '';
+        display: inline-block;
+        width: 100%; }
+      #footer_container .site-footer .navigation .main-navigation .nav-menu > li {
+        display: inline-block;
+        float: none;
+        list-style: none;
+        margin: 0;
+        position: static; }
+      #footer_container .site-footer .navigation .main-navigation .nav-menu li a {
+        color: white; }
+  #footer_container .site-footer .sidebars {
+    display: inline-block;
+    width: 100%; }
+#footer_container .foot-social-ico {
+  font-size: 10px;
+  float: left;
+  width: 4.3em;
+  height: 4.3em;
+  line-height: 4.3em;
+  list-style-type: none;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-radius: 50%; }
+  #footer_container .foot-social-ico .fa {
+    font-size: 2em;
+    vertical-align: middle; }
+#footer_container .credits {
+  background-color: #444444;
+  color: #fdfdfd;
+  text-align: center; }
+  #footer_container .credits p {
+    font-size: 14px;
+    font-size: 0.875rem; }
+  #footer_container .credits a {
+    color: #555; }
+    #footer_container .credits a:visited {
+      color: #555; }
+    #footer_container .credits a:hover {
+      color: #2997AB; }
