@@ -244,6 +244,7 @@ function paginacionEmp(limit){
 			}
 		});	
 	}
+	
 	function putCasas(casas,map){
 		$.each(casas,function(key,value){
 			// vars 
@@ -266,8 +267,14 @@ function paginacionEmp(limit){
 				// google.maps.event.addListener(marker, 'click', function() {
 				//     popUp.open(map,marker);
 				// });
+				// google.maps.event.addListener(popUp, 'mouseout', function(){
+					
+				// });
 				google.maps.event.addListener(marker, 'mouseover', function() {
 				    popUp.open(map,marker);
+				});
+				google.maps.event.addListener(marker, 'mouseout', function() {
+				    popUp.close(); 
 				});
 		});
 	} 
