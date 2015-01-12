@@ -50,9 +50,28 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body>
+	<!-- ###################3 -->
+		<div class="modal" id="myModal">
+			<div id='dialogoModal' class="modal-dialog">
+		      <div id='contenidoModal' class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		          <h4 class="modal-title"></h4>
+		        </div>
+		        <div class="modal-body">
+		          <img id='imgModal'>
+		        </div>
+		        <!-- <div class="modal-footer">
+		          <a href="#" data-dismiss="modal" class="btn">Close</a>
+		          <a href="#" class="btn btn-primary">Save changes</a>
+		        </div> -->
+		      </div>
+		    </div>
+		</div>
+	<!-- #################### -->
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<div class="row container-fluid sliderNew" style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
+		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
 		

@@ -36,6 +36,7 @@ function changeImage(url){
 		// new_url[new_url.length - 1] = new_url[new_url.length - 1].substring(1, new_url[new_url.length - 1].length);
 		// new_url = (new_url.join()).replace(/\,/g, "/");
 	new_url = url;
+	$(".sliderNew").attr("fondo",new_url);
 	$(".sliderNew").css({
 		"background" 			: "url("+new_url+")",
 		"background-repeat"		: "none",
