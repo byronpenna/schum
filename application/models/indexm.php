@@ -10,6 +10,10 @@ class Indexm  extends Padrem
 	{
 		$this->load->helper("url");
 	}
+		function getAlinaTweets(){
+			$tweets = $this->getTweets(10,"Alina_SR");
+			return $tweets;
+		}
 		function getSellerBuyerImage($homeData){
 			// vars 
 				$sql 				= "SELECT * FROM shum_tb_imageSellerBuyer";
