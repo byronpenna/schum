@@ -1,3 +1,12 @@
+#imgModal{
+	width: 100%;
+}
+#dialogoModal{
+	margin-top: 0;
+}
+#contenidoModal,.modal-dialog{
+	width: 100%;
+}
 .col-xs-6{
 	padding: 2%;
 }

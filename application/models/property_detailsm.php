@@ -224,7 +224,7 @@ class Property_detailsm extends Padrem
 			}
 			function getListing($agentName){
 				$sql = "SELECT *
-						FROM shum_tb_especial_listing
+						FROM (".$this->getSqlEspecialListing().") specialListing
 						WHERE agente = '".$agentName."'";
 				$listing = $this->getResulset($sql);
 				return @$listing[0]->cnListings;
@@ -243,7 +243,7 @@ class Property_detailsm extends Padrem
 		
 		function getPropertyInformation($homeId){
 			$sql = "SELECT * 
-					FROM shum_tb_house_listing
+					FROM (".$this->getSqlHouseListing().") houseListing
 					WHERE homeId = ".$homeId." ";
 			$this->db->trans_start();
 				$query 		= $this->db->query($sql);

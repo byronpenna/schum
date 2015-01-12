@@ -22,6 +22,7 @@
 		</style>
 	<!-- scripts -->
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+		<script type="text/javascript" src=<?php echo "'".base_url("plugins/jquery.timer.js")."'" ?>></script>
 		<script type="text/javascript">
 			<?php
 				$this->load->view("parts/js/script.php");

@@ -31,6 +31,107 @@ class Padrem extends CI_Model
 		$imgSrc .= $img;
 		return $imgSrc;
 	}
+	public function getSqlEspecialListing(){
+		$sql = "select 
+				`agente`.`Agente` AS `Agente`,
+				count(`codigo`.`exp_id`) AS `cnListings` 
+				from 
+				(
+					SELECT
+						`crm_exp_expediente`.`exp_id` AS `exp_id`
+					FROM
+						`crm_exp_expediente`
+					WHERE
+						(
+							(
+								`crm_exp_expediente`.`exp_com_id` = 17
+							)
+							AND (
+								`crm_exp_expediente`.`exp_cat_id` = 12
+							)
+						)
+					GROUP BY
+						`crm_exp_expediente`.`exp_id`
+				) codigo
+				LEFT JOIN
+				(
+					SELECT
+						`E`.`exp_id` AS `id1`,
+						`E`.`exp_valor` AS `Agente`
+					FROM
+						(
+							`crm_exp_expediente` `E`
+							JOIN `crm_atr_atributo` `A` ON (
+								(
+									`A`.`atr_id` = `E`.`exp_atr_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(`E`.`exp_cat_id` = 12)
+							AND (`A`.`atr_comp_id` = 17)
+							AND (
+								`A`.`atr_nombre` = 'Agent / Realtor ®'
+							)
+						)
+				) agente
+				on `agente`.`id1` = `codigo`.`exp_id`
+				LEFT JOIN (
+						SELECT
+						`E`.`exp_id` AS `id2`,
+						`E`.`exp_valor` AS `Market`
+					FROM
+						(
+							`crm_exp_expediente` `E`
+							JOIN `crm_atr_atributo` `A` ON (
+								(
+									`A`.`atr_id` = `E`.`exp_atr_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(`E`.`exp_cat_id` = 12)
+							AND (`A`.`atr_comp_id` = 17)
+							AND (
+								`A`.`atr_nombre` = 'Market Status'
+							)
+						)
+				) market
+				on `market`.`id2` = `codigo`.`exp_id`
+				LEFT JOIN (
+					SELECT
+						`E`.`exp_id` AS `id3`,
+						`E`.`exp_valor` AS `Statuss`
+					FROM
+						(
+							`crm_exp_expediente` `E`
+							JOIN `crm_atr_atributo` `A` ON (
+								(
+									`A`.`atr_id` = `E`.`exp_atr_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(`E`.`exp_cat_id` = 12)
+							AND (`A`.`atr_comp_id` = 17)
+							AND (`A`.`atr_nombre` = 'Status')
+						)
+				) statuss
+				on `statuss`.`id3` = `codigo`.`exp_id`
+				WHERE
+					(
+						(`market`.`Market` = 'Active')
+						AND (
+							`statuss`.`Statuss` = 'Publish Item'
+						)
+					)
+				GROUP BY
+					`agente`.`Agente`";
+		return $sql;
+	}
 	public function getSqlNominaEmp(){
 		$sql = "SELECT `nombre`.`idEmpleado` AS `idEmpleado`,
 			concat(
@@ -321,138 +422,7 @@ class Padrem extends CI_Model
 		ON short.idEmpleado = nombre.idEmpleado";
 		return $sql;
 	}
-	// public function getSqlNominaEmp(){
-	// 	$sql = "SELECT
-	// 				`nombre`.`idEmpleado` AS `idEmpleado`,
-	// 				concat(
-	// 					`nombre`.`nombre`,
-	// 					' ',
-	// 					`apellido`.`apellido`
-	// 				) AS `nombre`,
-	// 				`posicion`.`posicion` AS `posicion`,
-	// 				`descripcion`.`descripcion` AS `descripcion`,
-	// 				`email`.`email` AS `email`,
-	// 				`phone`.`phone` AS `phone`,
-	// 				`contact`.`contact` AS `contact`,
-
-	// 			IF (
-	// 				(
-	// 					isnull(`listings`.`cnListings`)
-	// 					OR (`listings`.`cnListings` = 0)
-	// 				),
-
-	// 			IF (
-	// 				(
-	// 					(
-	// 						`posicion`.`posicion` = 'Realtor'
-	// 					)
-	// 					OR (
-	// 						`posicion`.`posicion` = 'Broker/owner'
-	// 					)
-	// 					OR (
-	// 						`posicion`.`posicion` = 'REALTOR ®'
-	// 					)
-	// 				),
-	// 				'--',
-	// 				'-1'
-	// 			),
-	// 			 `listings`.`cnListings`
-	// 			) AS `listings`,
-	// 			 concat(
-	// 				`documento`.`doc_ruta`,
-	// 				`documento`.`doc_nombre`
-	// 			) AS `rutaImg`,
-	// 			 `short`.`shortDescrip` AS `shortDescription`,
-	// 			 ucase(`nombre`.`nombre`) AS `simpleName`
-	// 			FROM
-	// 				(
-	// 					(
-	// 						(
-	// 							(
-	// 								(
-	// 									(
-	// 										(
-	// 											(
-	// 												(
-	// 													(
-	// 														`shum_tb_emp_nombres` `nombre`
-	// 														LEFT JOIN `shum_tb_emp_apellidos` `apellido` ON (
-	// 															(
-	// 																`apellido`.`idEmpleado` = `nombre`.`idEmpleado`
-	// 															)
-	// 														)
-	// 													)
-	// 													LEFT JOIN `shum_tb_emp_posicion` `posicion` ON (
-	// 														(
-	// 															`posicion`.`idEmpleado` = `nombre`.`idEmpleado`
-	// 														)
-	// 													)
-	// 												)
-	// 												LEFT JOIN `shum_tb_emp_descripcion` `descripcion` ON (
-	// 													(
-	// 														`descripcion`.`idEmpleado` = `nombre`.`idEmpleado`
-	// 													)
-	// 												)
-	// 											)
-	// 											LEFT JOIN `shum_tb_emp_email` `email` ON (
-	// 												(
-	// 													`email`.`idEmpleado` = `nombre`.`idEmpleado`
-	// 												)
-	// 											)
-	// 										)
-	// 										LEFT JOIN `shum_tb_emp_phone` `phone` ON (
-	// 											(
-	// 												`phone`.`idEmpleado` = `nombre`.`idEmpleado`
-	// 											)
-	// 										)
-	// 									)
-	// 									LEFT JOIN `shum_tb_emp_shortdescrip` `short` ON (
-	// 										(
-	// 											`short`.`idEmpleado` = `nombre`.`idEmpleado`
-	// 										)
-	// 									)
-	// 								)
-	// 								LEFT JOIN `shum_tb_emp_contact` `contact` ON (
-	// 									(
-	// 										`contact`.`idEmpleado` = `nombre`.`idEmpleado`
-	// 									)
-	// 								)
-	// 							)
-	// 							LEFT JOIN `shum_tb_especial_listing` `listings` ON (
-	// 								(
-	// 									`listings`.`Agente` = concat(
-	// 										`nombre`.`nombre`,
-	// 										' ',
-	// 										`apellido`.`apellido`
-	// 									)
-	// 								)
-	// 							)
-	// 						)
-	// 						LEFT JOIN `crm_ambito` `ambito` ON (
-	// 							(
-	// 								`ambito`.`amb_exp_id` = `nombre`.`idEmpleado`
-	// 							)
-	// 						)
-	// 					)
-	// 					LEFT JOIN `crm_documento` `documento` ON (
-	// 						(
-	// 							`documento`.`doc_amb_id` = `ambito`.`amb_id`
-	// 						)
-	// 					)
-	// 				)
-	// 			WHERE
-	// 				(
-	// 					(
-	// 						`documento`.`doc_ruta` IS NOT NULL
-	// 					)
-	// 					AND (
-	// 						`documento`.`doc_nombre` IS NOT NULL
-	// 					)
-	// 				)
-	// 			GROUP BY
-	// 				`nombre`.`idEmpleado`";
-	// 	return $sql;
-	// }
+	
 	public function getSqlHouseListing(){
 		$sql = "SELECT 
 				streetNumber.exp_id as homeId,

@@ -19,6 +19,7 @@
 				$imgSlider 			= $propertyModel->getSlider($idProperty); 
 				$thumbnail 			= $propertyModel->getImgThumbnail(0,12,$idProperty);
 				$houseInformation	= $propertyModel->getPropertyInformation($idProperty);
+				// print_r($houseInformation);
 				$ubicacion 			= $indexModel->getMainUbication();
 				$empleado 			= $propertyModel->getEmpInformation($houseInformation->agent);
 				if(!isset($empleado->estado)){

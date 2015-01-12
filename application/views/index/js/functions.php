@@ -1,3 +1,29 @@
+function slideNewsToMarket(divInputs,selector){
+	
+	input = divInputs.find(".imgSlideNewsToMarket.active");
+	console.log(input.val());
+	// #############
+		$(selector).animate({
+		    opacity: 0.50,
+		}, 500, function() {
+			selector.css("background","url("+input.val()+")");
+		  	$(selector).animate({
+		  		opacity: 1
+		  	},500,function(){
+		  		
+		  	});
+		});
+	// #############
+	input.removeClass("active");
+
+	input = input.next();
+	if(input.val() == undefined){
+		input = divInputs.find(".imgSlideNewsToMarket").first();
+	}
+	input.addClass("active");
+	
+	// console.log("tick,tock");
+}
 function getLimits(nav,selector1,selector2){
 	limits 		= new Object();
 	l1 			= parseInt(selector1.val());
@@ -209,7 +235,7 @@ function paginacionEmp(limit){
 			data:{
 
 			},
-			url: 	<?php echo "'".site_url('welcome/getCasas')."'" ?>,
+			url: 	<?php echo "'".site_url('welcome/getCasasForMap')."'" ?>,
 			type: 	"POST",
 			success: function(data){
 				casas = jQuery.parseJSON(data);
@@ -227,6 +253,8 @@ function paginacionEmp(limit){
 				detallePopUp.calle 	= value.nombreVivienda;
 				detallePopUp.homeId = value.homeId;
 				detallePopUp.price 	= value.listPrice;
+				detallePopUp.img 	= value.rutaImg;
+				detallePopUp.city 	= value.cityTown;
 				dataMarket.icon 	= '<?php echo base_url("img/map/home.png"); ?>';
 				dataMarket.titulo 	= value.nombreVivienda;
 				var location 		= new google.maps.LatLng(value.latitud,value.longitud);
@@ -235,7 +263,10 @@ function paginacionEmp(limit){
 			// do it 	
 				marker.setMap(map);
 			// events 
-				google.maps.event.addListener(marker, 'click', function() {
+				// google.maps.event.addListener(marker, 'click', function() {
+				//     popUp.open(map,marker);
+				// });
+				google.maps.event.addListener(marker, 'mouseover', function() {
 				    popUp.open(map,marker);
 				});
 		});
@@ -262,12 +293,27 @@ function paginacionEmp(limit){
 		var popUp = new google.maps.InfoWindow({
 		
 		    content: "\
-		    	<a href='"+url+"'>\
+		    	<a class='aPopupMap' href='"+url+"'>\
 		    		<div class='popUpMap'>\
-		    			<b class='calleBig'>Address:</b> <p class='calleSmall'>"+varsContent.calle+"</p> <br>\
-		    			<b class='calleBig'>Price:</b> <p class='calleSmall'>"+varsContent.price+"</p> <br>\
+			    			<div class='row'>\
+			    				<img class='casaMapa' src='"+varsContent.img+"'>\
+							</div>\
+							<div class='row'>\
+							<span class='tituloViviendaMap'>"+varsContent.calle+"</span>\
+							</div>\
+							<div class='row'>\
+								<span class='cityTownMapa'>"+varsContent.city+"</span>\
+							</div>\
+							<div class='row'>\
+								<span class='priceMap'>$"+varsContent.price+"</span>\
+							</div>\
+							<div class='row'>\
+								<button class='btnReadMoreMap'>READ MORE</button>\
+							</div>\
+							\
 		    		</div>\
 		    	</a>",
+		    // content:contenido,
 		    height: 100
 		});
 		return popUp;
