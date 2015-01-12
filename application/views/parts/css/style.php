@@ -99,6 +99,7 @@
 	.footer{
 		padding-top: 5%;
 		padding-bottom: 5%;
+		background: black;
 	}
 /* Menu */ 
 	ul{
