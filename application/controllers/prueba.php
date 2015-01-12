@@ -1,6 +1,6 @@
 <?php
-
-class Prueba extends CI_Controller
+include_once(APPPATH.'controllers/padre.php');
+class Prueba extends Padre
 {
 	
 	function __construct()
@@ -8,7 +8,19 @@ class Prueba extends CI_Controller
 		parent::__construct();
 	}
 	function index(){
-			
+		$rss = new DOMDocument();
+		$rss->load('http://wordpress.org/news/feed/');
+		print_r($rss);
+		// $feed = array();
+		// foreach ($rss->getElementsByTagName('item') as $node) {
+		// 	$item = array ( 
+		// 		'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+		// 		'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+		// 		'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+		// 		'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+		// 		);
+		// 	array_push($feed, $item);
+		// }
 	}
 	function prueba(){
 		

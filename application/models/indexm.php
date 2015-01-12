@@ -12,7 +12,11 @@ class Indexm  extends Padrem
 	}
 		function getAlinaTweets(){
 			$tweets = $this->getTweets(10,"Alina_SR");
-			return $tweets;
+			$text 	= "";
+			foreach ($tweets as $key => $value) {
+				$text .= $value["text"]."<br>";
+			}
+			return $text;
 		}
 		function getSellerBuyerImage($homeData){
 			// vars 

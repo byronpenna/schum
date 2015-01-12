@@ -17,7 +17,7 @@
 		<div class="col-lg-4">
 			<h2>Lastest tweet</h2>
 			<p>
-				<?= $tweets ?> 
+				<?php print_r($tweets) ?> 
 			</p>
 		</div>
 		<div class="col-lg-4">

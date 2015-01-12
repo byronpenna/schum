@@ -51,7 +51,7 @@ class Padrem extends CI_Model
 		}else{
 			echo "you don't have a tweet";
 		}
-		return "";	
+		return $tweets;	
 	}
 	public function getResulset($sql){
 		$this->db->trans_start();
