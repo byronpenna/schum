@@ -48,5 +48,31 @@ $(document).ready(function(){
 			 //        }
 			 //    );
 
+
+
+
+
+
+			var menu = $('.amostrar');
+          var men  = $('.aocultar');
+          var contenedor = $('.menu-contenedor');
+          var cont_offset = contenedor.offset();
+          // Cada vez que se haga scroll en la página
+          // haremos un chequeo del estado del menú
+          // y lo vamos a alternar entre 'fixed' y 'static'.
+
+          $(window).on('scroll', function() {
+             //alert($(window).scrollTop());
+            if($(window).scrollTop() > cont_offset.top) {
+              menu.addClass('menu-fijo');
+              men.addClass('hidemenu');
+              menu.addClass('showmenu');
+            } else {
+              menu.removeClass('menu-fijo');
+              men.removeClass('hidemenu');
+              menu.removeClass('showmenu');
+            }
+          });
+
 			
 });

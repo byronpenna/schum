@@ -34,10 +34,40 @@
 		<?php 
 			$this->load->view("index/js/script.php");
 		?>
+		<script type="text/javascript">
+            $(document).ready(function() {
+          	var menu = $('.amostrar');
+          	var men  = $('.aocultar');
+          	var contenedor = $('.menu-contenedor');
+          	var cont_offset = contenedor.offset();
+          // Cada vez que se haga scroll en la página
+          // haremos un chequeo del estado del menú
+          // y lo vamos a alternar entre 'fixed' y 'static'.
+
+          $(window).on('scroll', function() {
+             //alert($(window).scrollTop());
+            if($(window).scrollTop() > cont_offset.top) {
+              menu.addClass('menu-fijo');
+              men.addClass('hidemenu');
+              menu.addClass('showmenu');
+            } else {
+              menu.removeClass('menu-fijo');
+              men.removeClass('hidemenu');
+              menu.removeClass('showmenu');
+            }
+          });
+        });
+  </script>
 </head>
 <body>	
 <div class="container-fluid"> <!-- ahorita tiene container fluid por el tonto slider -->
 		<?php $this->load->view("parts/header.php") ?>
+		<?php $this->load->view("parts/menushow.php") ?>
+      <!-- <ul class="menu">
+        <li><a href="#">Elemento 1</a></li>
+        <li><a href="#">Elemento 2</a></li>
+        <li><a href="#">Elemento 3</a></li>
+      </ul> -->
 		<div class="row container-fluid sliderNew" style=<?php echo "'background:url(".$slider->first.");'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
 			<div class="row container-fluid">	
