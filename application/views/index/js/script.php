@@ -4,7 +4,6 @@
 		$(".searchCb").selecter();
 		$(".Clasemamasita").selecter();
 		// automatic functions 
-		
 			// timerSlider();
 		// plugins
 	  		//Maps

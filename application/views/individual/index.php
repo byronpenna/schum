@@ -20,6 +20,7 @@
 <body>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
+		<?php $this->load->view("parts/menushow.php") ?>
 		<div class="col-lg-12 paddingNull">
 			<div class="row container-fluid sliderNew">
 				<?php $this->load->view("parts/menu.php") ?>

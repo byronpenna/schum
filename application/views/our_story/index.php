@@ -21,6 +21,7 @@
 <body>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
+		<?php $this->load->view("parts/menushow.php") ?>
 		<div class="row container-fluid sliderNew size" >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>

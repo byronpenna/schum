@@ -232,6 +232,7 @@
 	}
 	.nav > li{
 		display: inline-block;
+		list-style: none;
 		padding-left: 3%;
 		padding-right: 3%;
 		border-right: 1px solid #d1d1d1; /* PORFAVOR DESCOMENTAR ESTO */ 
@@ -255,6 +256,7 @@
 		padding-bottom: 0;
 	}
 	.nav > li{
+		list-style: none;
 		padding-top: 2%;
 		padding-bottom: 2%;
 		padding-right: 4%;
@@ -298,3 +300,30 @@
 			background: #22769B;
 		}
 		
+
+
+
+		/* menu fijo al top  */
+		.menu-fijo {
+			background: rgba(255, 255, 255, 1);
+			position: fixed;
+			top: 0;
+			z-index:900000000;
+		}
+		.menu-contenedor{
+			z-index:900000000;
+		}
+		.amostrar{
+			width:100%;
+			margin-left:-15px;
+			z-index:900000000;
+			opacity:0;
+		}
+
+		.showmenu{
+			opacity:1;	
+		}
+
+		.hidemenu{
+			display:none;
+		}

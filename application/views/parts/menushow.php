@@ -1,12 +1,11 @@
-    <!-- <div class="col-lg-12 col-md-12"> -->
-    <?php 
+<?php 
         $menu = array("","","","","","");
         if(isset($opMenu)){
             $menu[$opMenu] = "activeMenu";    
         }
         
     ?>
-    <div class="navbar navbar-default navbar-fixed-top aocultar" role="navigation">
+<div class="navbar navbar-default menu-contenedor amostrar" role="navigation">
         <div class="container container-menu">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
@@ -48,4 +47,3 @@
             </div>
         </div>
     </div>
-<!-- </div> -->
