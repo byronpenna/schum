@@ -71,8 +71,9 @@
 
 						<!-- INICIA TWEET -->
 											<ul class="tweets">
-<li><p><a href="http://twitter.com/Alina_SR/statuses/554670746065068032">Information becomes <a href="http://twitter.com/search?q=%23Revelation">#Revelation</a> through <a href="http://twitter.com/search?q=%23Meditation">#Meditation</a>. 
- <a href="http://twitter.com/search?q=%23breakthrough">#breakthrough</a> <a href="http://twitter.com/search?q=%23wisdom">#wisdom</a> <a href="http://t.co/QBS9bl1Uuy">http://t.co/QBS9bl1Uuy</a></a></p><p class='time'><span class="0_tweet_date"></span></p></li>
+<!-- <li><p><a href="http://twitter.com/Alina_SR/statuses/554670746065068032">Information becomes <a href="http://twitter.com/search?q=%23Revelation">#Revelation</a> through <a href="http://twitter.com/search?q=%23Meditation">#Meditation</a>. 
+ <a href="http://twitter.com/search?q=%23breakthrough">#breakthrough</a> <a href="http://twitter.com/search?q=%23wisdom">#wisdom</a> <a href="http://t.co/QBS9bl1Uuy">http://t.co/QBS9bl1Uuy</a></a></p><p class='time'><span class="0_tweet_date"></span></p></li> -->
+<?= $tweets ?>
 </ul>
 
 <!-- finaliza tweet -->
