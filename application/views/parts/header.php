@@ -48,7 +48,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="iconCuadro" id='wordpress'>
+				<!-- <div class="iconCuadro" id='wordpress'>
 					<a href=<?php echo "'".$homeData->wordpress."'" ?> target="_blank">
 						<div class="circle-text " >
 							<div>
@@ -56,7 +56,7 @@
 							</div>
 						</div>
 					</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="row container-fluid headerImage paddingNull">

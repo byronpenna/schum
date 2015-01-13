@@ -541,3 +541,8 @@
       color: #555; }
     #footer_container .credits a:hover {
       color: #2997AB; }
+
+      li:before{
+		width: 0px !important;
+		height: 0px !important;
+	}

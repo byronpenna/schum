@@ -749,3 +749,4 @@ body{
 	.shumSlider,.searchBar{
 		position: absolute;
 	}*/
+	
