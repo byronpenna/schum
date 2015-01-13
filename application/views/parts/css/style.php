@@ -278,26 +278,26 @@
 	}
 /* eventos */
 	/* header */ 
-		#tw > a > .circle-text:hover:after{
-			background: #5EA9DD;
+		#tw > a > .circle-text:hover:after,#twitterFooter:hover{
+			background: #5EA9DD !important;
 		}
 		
-		#in > a > .circle-text:hover:after{
+		#in > a > .circle-text:hover:after,#inFooter:hover{
 			/*content: url(<?php echo "'".base_url("img/social_networks/in2.png")."'"; ?>);	*/
-			background: #007BB6;
+			background: #007BB6 !important;
 		}
 
-		#fb > a > .circle-text:hover:after{
-			background: #4A6EA9;
+		#fb > a > .circle-text:hover:after,#fbFooter:hover{
+			background: #4A6EA9 !important;
 		}
-		#youtube > a > .circle-text:hover:after{
-			background: #DF2926;
+		#youtube > a > .circle-text:hover:after,#youtubeFooter:hover{
+			background: #DF2926 !important;
 		}
-		#pinterest > a > .circle-text:hover:after{
-			background: #CD2129;
+		#pinterest > a > .circle-text:hover:after,#pinterestFooter:hover{
+			background: #CD2129 !important;
 		}
 		#wordpress > a > .circle-text:hover:after{
-			background: #22769B;
+			background: #22769B !important;
 		}
 		
 
@@ -390,7 +390,7 @@
       }
 
     #footer_container .site-footer.row #text-4 h3.widget-title {
-      color: #fbb03b !important;
+      color: white !important;
       text-align: right; }
     #footer_container .site-footer.row #text-4 a.foot-social-ico {
       font-size: 10px;
@@ -402,15 +402,16 @@
       text-align: center;
       margin-right: 8px;
       margin-bottom: 16px;
-      background-color: #fbb03b;
+      background-color: gray;
       display: block;
       border-radius: 50%; }
       #footer_container .site-footer.row #text-4 a.foot-social-ico .fa {
         font-size: 2em;
         vertical-align: middle;
-        color: #24231f; }
-      #footer_container .site-footer.row #text-4 a.foot-social-ico:hover {
-        background-color: #faa622; }
+        color: white; }
+    #footer_container .site-footer.row #text-4 a.foot-social-ico:hover {
+        /*background-color: skyblue; */
+    }
   #footer_container .credits.row {
     padding: 20px 0; }
     #footer_container .credits.row p {
@@ -546,3 +547,12 @@
 		width: 0px !important;
 		height: 0px !important;
 	}
+
+.connectFooter{
+	color: white;
+}
+
+.tituloFooter{
+	color: white !important;
+	font-weight: bold;
+}

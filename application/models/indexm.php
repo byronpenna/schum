@@ -24,6 +24,18 @@ class Indexm  extends Padrem
 			}
 			return $text;
 		}
+		function getAlinaBlog(){
+			$feeds 		= $this->getRSS("http://alina.peacefulmediadev.com/feed/");
+			$postTitle 	= "";
+			foreach ($feeds as $key => $value) {
+				$postTitle .= "
+					<li>
+						<a href='".$value["link"]."'>".$value["title"]."</a>
+					</li>
+				";
+			}
+			return $postTitle;
+		}
 		function getSellerBuyerImage($homeData){
 			// vars 
 				$sql 				= "SELECT * FROM shum_tb_imageSellerBuyer";
@@ -396,7 +408,10 @@ class Indexm  extends Padrem
 		}
 		function getHome(){
 			$homeData = $this->getHomeData();
+			
 			$homeData = $homeData[0];
+			$homeData->blogsAlina 	= $this->getAlinaBlog();
+			$homeData->tweets 		= $this->getAlinaTweets();
 			$homeData->commitmentBackground = $this->getImgSrc($homeData->commitmentBackground);
 			foreach ($homeData as $key => $value) {
 				if(!strpos($value,"http://") && $key != 'commitmentBackground'){

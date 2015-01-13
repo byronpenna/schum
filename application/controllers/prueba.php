@@ -8,9 +8,7 @@ class Prueba extends Padre
 		parent::__construct();
 	}
 	function index(){
-		$rss = new DOMDocument();
-		$rss->load('http://wordpress.org/news/feed/');
-		print_r($rss);
+		
 		// $feed = array();
 		// foreach ($rss->getElementsByTagName('item') as $node) {
 		// 	$item = array ( 

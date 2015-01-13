@@ -8,13 +8,30 @@ class Padrem extends CI_Model
 		parent::__construct();
 		$this->load->helper("url");
 	}
+	public function getRSS($url){
+		$rss = new DOMDocument();
+		$rss->load($url);
+		// print_r($rss);
+		$feed = array();
+		foreach ($rss->getElementsByTagName('item') as $node) {
+			$item = array ( 
+				'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+				'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+				'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+				'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+				);
+			array_push($feed, $item);
+		}
+		// print_r($feed);
+		return $feed;
+	}
 	public function getTweets($nTweets,$twitterName){
 		# Load Twitter class
 		// require_once('TwitterOAuth.php');
 
 		# Define constants
-		define('TWEET_LIMIT', $nTweets);
-		define('TWITTER_USERNAME', $twitterName);
+		// define('TWEET_LIMIT', $nTweets);
+		// define('TWITTER_USERNAME', $twitterName);
 		define('CONSUMER_KEY', 'PXXAQ3oPHiji4MmXfb4GlW64Z');
 		define('CONSUMER_SECRET', 'ZXuBGds4wisrBj9e82aZNeLfxReReWYL0mDtqjKxlTgPqFGKmR');
 		define('ACCESS_TOKEN', '475449870-bluBlqL384UWQFYedQLw6EdBqQ0fGppbzjBS1o6T');
@@ -27,7 +44,7 @@ class Padrem extends CI_Model
 		$twitter->ssl_verifypeer = true;
 
 		# Load the Tweets
-		$tweets = $twitter->get('statuses/user_timeline', array('screen_name' => TWITTER_USERNAME, 'exclude_replies' => 'true', 'include_rts' => 'false', 'count' => TWEET_LIMIT));
+		$tweets = $twitter->get('statuses/user_timeline', array('screen_name' => $twitterName, 'exclude_replies' => 'true', 'include_rts' => 'false', 'count' => $nTweets));
 
 		# Example output
 		if(!empty($tweets)) {
