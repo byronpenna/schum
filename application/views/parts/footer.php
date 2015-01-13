@@ -46,7 +46,7 @@
 			  </div><!-- /.navigation -->
 
 				<div class="sidebars">
-								<div class="col col-md-4">
+								<div class="col col-md-12">
 									<div class="widget-area" role="complementary">
 												
 								<!-- inicia post -->
