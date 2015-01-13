@@ -37,11 +37,11 @@
     	?>
     	<style type="text/css" media="screen">
     		.amostrar{
-			width:100%;
-			margin-left:0px;
-			z-index:900000000;
-			opacity:1;
-		}
+					width:100%;
+					margin-left:0px;
+					z-index:900000000;
+					opacity:1;
+				}
     	</style>
 </head>
 <body>

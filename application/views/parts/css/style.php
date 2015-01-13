@@ -302,14 +302,16 @@
 		
 
 
-
+		/* 11,12,13 */
 		/* menu fijo al top  */
 		.menu-fijo {
-			background: rgba(255, 255, 255, 1);
+			background: rgba(11,12,13, 0.8);
 			position: fixed;
 			top: 0;
 			z-index:900000000;
 		}
+
+		.menu-fijo .navbar-default .navbar-nav > li > a 
 		.menu-contenedor{
 			z-index:900000000;
 		}
