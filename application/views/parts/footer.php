@@ -50,7 +50,7 @@
 									<div class="widget-area" role="complementary">
 												
 								<!-- inicia post -->
-												<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Alina&#8217;s Posts</h3>		<ul>
+												<aside id="recent-posts-2" class="widget widget_recent_entries col col-md-4">		<h3 class="widget-title">Alina&#8217;s Posts</h3>		<ul>
 					<li>
 				<a href="http://alina.peacefulmediadev.com/world-changers-struggle-smart-goals/">Why World Changers Struggle With SMART Goals</a>
 						</li>
