@@ -379,11 +379,15 @@
   #footer_container .site-footer.row #simple_tweet_widget-2 .tweets {
     color: #cccccc; }
   #footer_container .site-footer.row #simple_tweet_widget-2 .tweets-meta {
-    margin: 2em 0 10em 0; }
+    margin: 2em 0 0em 0; }
     #footer_container .site-footer.row #simple_tweet_widget-2 .tweets-meta strong.real-name {
       color: #cccccc; }
     #footer_container .site-footer.row #simple_tweet_widget-2 .tweets-meta p.twitget-user-description {
       color: #cccccc; }
+
+      .tweets-meta a {
+      	color:red;
+      }
 
     #footer_container .site-footer.row #text-4 h3.widget-title {
       color: #fbb03b !important;
@@ -481,7 +485,6 @@
   padding-top: 0;
   padding-bottom: 0;
   width: 100%;
-  height:800px;
   background-color: black; }
   #footer_container .site-footer .inner {
     position: relative; }
