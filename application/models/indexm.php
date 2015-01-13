@@ -11,10 +11,16 @@ class Indexm  extends Padrem
 		$this->load->helper("url");
 	}
 		function getAlinaTweets(){
-			$tweets = $this->getTweets(10,"Alina_SR");
+			$tweets = $this->getTweets(1,"Alina_SR");
 			$text 	= "";
+			// print_r($tweets);
 			foreach ($tweets as $key => $value) {
-				$text .= $value["text"]."<br>";
+				$text .= "<li>
+							<p>"
+							.$value["text"].
+							"</p>
+							</li>
+						";
 			}
 			return $text;
 		}

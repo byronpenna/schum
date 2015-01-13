@@ -31,7 +31,7 @@ class Padrem extends CI_Model
 
 		# Example output
 		if(!empty($tweets)) {
-		    foreach($tweets as $tweet) {
+		    foreach($tweets as $key => $tweet) {
 
 		        # Access as an object
 		        $tweetText = $tweet['text'];
@@ -44,7 +44,8 @@ class Padrem extends CI_Model
 
 		        # Linkify tags
 		        $tweetText = preg_replace("/#(w+)/", '<a href="http://search.twitter.com/search?q=$1" target="_blank">#$1</a>', $tweetText);
-
+				$tweetText = preg_replace("/#([A-Za-z0-9_]+)/", "<a href='https://twitter.com/hashtag/$1?src=hash' target='_blank'>#$1</a>", $tweetText);	
+		       	$tweets[$key]["text"] = $tweetText;
 		        # Output
 		        // echo $tweetText."<br>";
 		    }
