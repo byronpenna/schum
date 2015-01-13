@@ -481,6 +481,7 @@
   padding-top: 0;
   padding-bottom: 0;
   width: 100%;
+  height:800px;
   background-color: black; }
   #footer_container .site-footer .inner {
     position: relative; }
