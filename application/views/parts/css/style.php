@@ -321,7 +321,7 @@
 		}
 
 		.showmenu{
-			opacity:1;	
+			opacity:1;
 		}
 
 		.hidemenu{
