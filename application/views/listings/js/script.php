@@ -28,6 +28,12 @@
 						$(this).addClass("activeNumber");
 					changePage(obj);
 				});
+				$(document).on("click",".imgNav",function(){
+					// direccion 0 izquierda 1 derecha
+					// getNextPage();
+					direccion 	= $(this).attr("direccion");
+					page 		= $("#txtPagePaginacion").val();
+				});
 			// change
 				$(document).on("change","#selectDisplay",function(){
 					changeDisplay($(this).val());

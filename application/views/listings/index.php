@@ -192,6 +192,7 @@
 					<span class='hidden' id='txtOrigen'><?php echo $origen ?></span>
 					<div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-12 paginacion ">
 						<div class="col-lg-2 titlePagination paddingNull hello">
+							<input type="hidden" id='txtPagePaginacion' value=<?php echo "'".$pageOf[0]."'" ?> >
 							Page <?php echo " ".$pageOf[0]." of ".$pageOf[1]." " ?> 
 						</div>
 						<div class="numbers">

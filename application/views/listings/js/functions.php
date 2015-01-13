@@ -1,3 +1,15 @@
+	function getNextPage(direccion){
+		$.ajax({
+			data:{
+				direccion: direccion
+			},
+			url: 		<?php echo "'".site_url('listings/getNextPage')."'" ?>,
+			type: 		"POST",
+			success: function(data){
+				console.log(data);
+			}
+		});
+	}
 // null number pagination 
 	function nullNumberPagination(){
 		$(".btnPaginacion").each(function(i,value){
