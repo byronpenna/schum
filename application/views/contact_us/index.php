@@ -38,25 +38,23 @@
 				    <div class="row">
 				        <div class="col-md-4">
 				            <form>
-				            <legend><span class="glyphicon glyphicon-globe"></span> CONTACT</legend>
-				            <p>
-					            To contact us directly, use the following information.
-					            General Inquiries:
-				            </p>
-				            <address>
-				                <strong>Mailing Address:</strong><br>
-				                Schumacher Realty ltd.<br>
-				                PO BOX 226, 530 Main St.<br>
-				                Outbank, MB R0E 1J0<br>
-				                Canada
-				                <!-- <abbr title="Phone">
-				                    P:</abbr>
-				                (123) 456-7890 -->
-				            </address>
-				            <address>
-				                <strong>Email Address</strong><br>
-				                <a href="mailto:info@driventofinish.com">info@driventofinish.com</a>
-				            </address>
+					            <legend>CONTACT</legend>
+					            <p>
+						            To Contact Us Directly, Use the following information.
+						            <b>General Inquiries:</b>
+						            <br>
+						            <a href="mailto:info@driventofinish.com">info@driventofinish.com</a>
+					            </p>
+					            <address>
+					                <strong>Mailing Address:</strong><br>
+					                Schumacher Realty Ltd.<br>
+					                PO BOX 226, 530 Main St.<br>
+					                Oakbank, MB R0E 1J0<br>
+					                Canada
+					                <!-- <abbr title="Phone">
+					                    P:</abbr>
+					                (123) 456-7890 -->
+					            </address>
 				            </form>
 				        </div>
 				        <div class="col-md-8">
