@@ -26,6 +26,7 @@
 					// do it 
 						nullNumberPagination();
 						$(this).addClass("activeNumber");
+						console.log("el objeto es de la paginacion:",obj);
 					changePage(obj);
 				});
 				$(document).on("click",".imgNav",function(){
@@ -33,8 +34,11 @@
 					// getNextPage();
 					direccion 	= $(this).attr("direccion");
 					page 		= $("#txtPagePaginacion").val();
-					console.log("page",page);
-					console.log("direccion",direccion);
+					totalPagina = $("#txtPageTotales").val();
+					getNextPage(direccion,page,totalPagina);
+					// console.log("page",page);
+					// console.log("direccion",direccion);
+
 				});
 			// change
 				$(document).on("change","#selectDisplay",function(){

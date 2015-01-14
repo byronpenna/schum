@@ -1,14 +1,49 @@
-	function getNextPage(direccion){
-		$.ajax({
-			data:{
-				direccion: direccion
-			},
-			url: 		<?php echo "'".site_url('listings/getNextPage')."'" ?>,
-			type: 		"POST",
-			success: function(data){
-				console.log(data);
+	function getNextPage(direccion,page,totalPagina){
+		page 	= parseInt(page);
+		cn 		= page - 1;
+		cn 		= cn * 10;
+		div = "\
+			<div class='col-lg-1 col-sm-1 imgNav' direccion='0' id='imgNavLeft'>\
+				<i class='fa fa-angle-left blank'></i>\
+			</div>\
+		"; 
+		// page= 1 cn = 0; cn*10+9 = 8;final = 9
+		// page= 2 cn = 1; cn*10+9 = 19; 
+		if(direccion == 0){
+			cn 		-= 20;
+			page 	-= 1;
+		}else if(direccion == 1 && (cn+9) < totalPagina ){
+			page = page + 1;
+		}
+		if(cn < 0){
+			cn 		= 0;
+			page 	= 2;
+			console.log("volvera al inicio");
+		}
+
+		for (var i = cn; i < (cn + 10); i++) { // direccion derecha 1
+			num = i;
+			if(i == 0){
+				num = 1;
 			}
-		});
+			if( i <= totalPagina){
+				div += "\
+				<div class='btnPaginacion col-lg-1 col-sm-1' valor='"+num+"'>\
+					"+num+"\
+				</div>\
+				";	
+			}
+			
+		};
+		div += "\
+		<div class='col-lg-1 col-sm-1 imgNav' direccion='1' id='imgNavRight'>\
+			<i class='fa fa-angle-right blank'></i>\
+		</div>\
+		";
+		$(".numbers").empty().append(div);
+		
+		console.log("valor de page",page);
+		$("#txtPagePaginacion").val(page);
 	}
 // null number pagination 
 	function nullNumberPagination(){
@@ -70,6 +105,7 @@ function changePage(obj){
 		}else{
 			direccion += '/searchNowPagination';	
 		}
+		console.log("la direccion es: ",direccion);
 	$.ajax({
 		data:{
 			obj: JSON.stringify(obj) 
@@ -77,7 +113,7 @@ function changePage(obj){
 		url: 		direccion,
 		type: 		"POST",
 		success: function(data){
-			console.log("antes de hacer json:",data);
+			// console.log("antes de hacer json:",data);
 			datos = jQuery.parseJSON(data);
 			console.log("paginacion perfecta: ",datos);
 			$(".seccionCasitas").empty().append(datos.html);

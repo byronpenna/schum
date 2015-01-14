@@ -78,14 +78,20 @@
 					if(isset($obj) && !empty($obj)){
 						$limits 				= $this->getLimitsForPagination($obj);
 						// #############################
-						$retorno 				= $listingModel->getListasCasas($limits->l1,$limits->l2);
+						$retorno 				= $listingModel->getListasCasas($limits->l1,12);
 						$retorno->origen 		= 0;
 						$retorno->pageIndicador	= $this->getPageIndicator($obj->pagina,$retorno->paginasTotales[1]);
 					}
+					$retorno->limitsB = $limits;
 					echo json_encode($retorno);
 			}
 			function getPageIndicator($l1,$l2){
-				$retorno = "Page ".$l1." of ".$l2;
+				$pagePagination = 	ceil($l1 / 10);
+				$pagePagination += 	1;
+				$retorno = "
+				<input type=\"hidden\" id='txtPagePaginacion' value='".$pagePagination."'  >
+				<input type=\"hidden\" id='txtPageTotales' 	value='".$l2."' >
+				Page ".$l1." of ".$l2;
 				return $retorno;
 			}
 
