@@ -19,7 +19,7 @@
 								<a href=<?php echo "'".site_url("our_story")."'" ?> > Our Story</a>
 							</li>
 							<li id="menu-item-1412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412">
-								<a href=<?php echo "'".site_url("contac_us")."'" ?> > Contact</a>
+								<a href=<?php echo "'".site_url("contact_us")."'" ?> > Contact</a>
 							</li>
 						</ul>
 					</div>				

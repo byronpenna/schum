@@ -11,7 +11,7 @@ class Indexm  extends Padrem
 		$this->load->helper("url");
 	}
 		function getAlinaTweets(){
-			$tweets = $this->getTweets(1,"Alina_SR");
+			$tweets = $this->getTweets(1,"schumacherrlty");
 			$text 	= "";
 			// print_r($tweets);
 			foreach ($tweets as $key => $value) {
