@@ -55,6 +55,7 @@ $(document).ready(function(){
 
 			var menu = $('.amostrar');
           var men  = $('.aocultar');
+          var negritos = $('.listaNegritos');
           var contenedor = $('.menu-contenedor');
           var cont_offset = contenedor.offset();
           // Cada vez que se haga scroll en la página
@@ -67,10 +68,12 @@ $(document).ready(function(){
               menu.addClass('menu-fijo');
               men.addClass('hidemenu');
               menu.addClass('showmenu');
+              negritos.css('color','#FFFFFF');
             } else {
               menu.removeClass('menu-fijo');
               men.removeClass('hidemenu');
               menu.removeClass('showmenu');
+              negritos.css('color','#555555');
             }
           });
 

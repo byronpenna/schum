@@ -68,7 +68,7 @@
 
 
 
-	<p class="twitget-user-description">Child of God, Wife, #HomeschoolMom, #WorshipLeader, #RealEstate Broker & Coach, Certified #JohnMaxwell Speaker, Visionary, #Entrepreneur</p>
+	<p class="twitget-user-description" > <br>Child of God, Wife, #HomeschoolMom, #WorshipLeader, #RealEstate Broker & Coach, Certified #JohnMaxwell Speaker, Visionary, #Entrepreneur</p>
 </div>
 <script type="text/javascript">
 	jQuery(document).ready(function() { 
@@ -116,5 +116,4 @@
 	<address>© 2015 Schumacher Productions Inc.</address>
 	<address><a class="terms" title="Terms" href="http://alina.peacefulmediadev.com/terms/">Terms of Use &amp; Privacy Policy</a></address>
 </div><!-- /.credits -->
-
 </div>

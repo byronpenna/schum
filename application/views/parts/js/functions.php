@@ -1,4 +1,3 @@
-
 // menu 	
 	function removeOpenMenu(li){
 		cerrarAbiertos();
