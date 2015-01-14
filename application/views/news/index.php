@@ -28,12 +28,12 @@
 	<div class="bodyContainer">
 				<div class="row container-fluid ourStoryDescription marginn font">
 						<h2><?php echo $news->title; ?></h2>
-						<div>
+						<div class='imgPrincipal'>
 							<!-- <img class="grafica" src=<?php echo "'".base_url("img/news/grafica.jpg")."'" ?> "application/views/news/grafica.jpg"> -->
 							<?php echo $news->img; ?>
 						</div>
 						<p>
-							<?php echo $news->text; ?>
+							<?php echo nl2br($news->text); ?>
 						</p>
 						<!-- <p>
 							There Are Many Fantastic Real Estate Brokerages In Our Great City! We Work Diligently To Continue To Remain One Of Them.

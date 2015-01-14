@@ -20,4 +20,9 @@
 }
 .font > p{
 	font-family: 'proximaRegular';
+	width: 80%;
+	margin-bottom: 3%;
+}
+.imgPrincipal{
+	margin-top: 2%;
 }

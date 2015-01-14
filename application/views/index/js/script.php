@@ -8,11 +8,11 @@
 		// plugins
 	  		//Maps
 	  			initialize();
-	  			setInterval(function(){
+	  			intervaloSlider = setInterval(function(){
 		  			timerSlider();
-		  			if(slider){
+		  			// if(slider){
 		  				startSlider();	
-		  			}
+		  			// }
 	  			},6000);
 	  		// tiempo();
 	  		// scroll 
@@ -52,6 +52,13 @@
 						slider = false;
 						point = getPoint($(this));
 						slide(point);
+						clearInterval(intervaloSlider);
+						intervaloSlider = setInterval(function(){
+				  			timerSlider();
+				  			// if(slider){
+				  				startSlider();	
+				  			// }
+			  			},6000);
 			  		});
 			  		$(document).on("click",".pointIMG",function(){
 			  			slider = false;
