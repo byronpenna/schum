@@ -33,6 +33,8 @@
 					// getNextPage();
 					direccion 	= $(this).attr("direccion");
 					page 		= $("#txtPagePaginacion").val();
+					console.log("page",page);
+					console.log("direccion",direccion);
 				});
 			// change
 				$(document).on("change","#selectDisplay",function(){
