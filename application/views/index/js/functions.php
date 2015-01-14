@@ -276,9 +276,8 @@ function paginacionEmp(limit){
 				
 				google.maps.event.addListener(marker, 'dblclick', function() {
 					url = getBaseUrl()+"/property_detail/index/"+detallePopUp.homeId+"";
-					console.log("url",url);
 					// location.href=url;
-					window.opener.top.location.href = url;
+					window.location.href = url;
 				});
 				google.maps.event.addListener(marker, 'mouseover', function() {
 				    popUp.open(map,marker);
