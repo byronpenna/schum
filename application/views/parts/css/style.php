@@ -277,28 +277,7 @@
 		background-color: #cccccc;
 	}
 /* eventos */
-	/* header */ 
-		#tw > a > .circle-text:hover:after,#twitterFooter:hover{
-			background: #5EA9DD !important;
-		}
-		
-		#in > a > .circle-text:hover:after,#inFooter:hover{
-			/*content: url(<?php echo "'".base_url("img/social_networks/in2.png")."'"; ?>);	*/
-			background: #007BB6 !important;
-		}
-
-		#fb > a > .circle-text:hover:after,#fbFooter:hover{
-			background: #4A6EA9 !important;
-		}
-		#youtube > a > .circle-text:hover:after,#youtubeFooter:hover{
-			background: #DF2926 !important;
-		}
-		#pinterest > a > .circle-text:hover:after,#pinterestFooter:hover{
-			background: #CD2129 !important;
-		}
-		#wordpress > a > .circle-text:hover:after{
-			background: #22769B !important;
-		}
+	
 		
 
 
@@ -407,7 +386,7 @@
       text-align: center !important;
       margin-right: 8px !important;
       margin-bottom: 16px !important;
-      background-color: gray !important;
+      background-color: gray ;
       display: block !important;
       border-radius: 50% !important;  }
       #footer_container .site-footer.row #text-4 a.foot-social-ico .fa {
@@ -561,3 +540,26 @@
 	color: white !important;
 	font-weight: bold;
 }
+
+/* header */ 
+		#tw > a > .circle-text:hover:after,#twitterFooter:hover{
+			background: #5EA9DD !important;
+		}
+		
+		#in > a > .circle-text:hover:after,#inFooter:hover{
+			/*content: url(<?php echo "'".base_url("img/social_networks/in2.png")."'"; ?>);	*/
+			background: #007BB6 !important;
+		}
+
+		#fb > a > .circle-text:hover:after,#fbFooter:hover{
+			background: #4A6EA9 !important;
+		}
+		#youtube > a > .circle-text:hover:after,#youtubeFooter:hover{
+			background: #DF2926 !important;
+		}
+		#pinterest > a > .circle-text:hover:after,#pinterestFooter:hover{
+			background: #CD2129 !important;
+		}
+		#wordpress > a > .circle-text:hover:after{
+			background: #22769B !important;
+		}
