@@ -13,17 +13,20 @@ $(document).ready(function(){
 				});
 			// menu 
 				$(document).on("click",".liPadre > a",function(e){
+					e.stopPropagation();
 					url = $(this).attr("href");
 					window.location=url;
 					
 				});
 				$(document).on("click",".nav li a",function(e){
+					e.stopPropagation();
 					$(this).parent().removeClass("open");
 					console.log("puso open");
 				});
 		// Hover
 			// menu 
 				$(document).on("mouseenter",".liPadre",function(e){
+
 					if(document.documentElement.clientWidth > 767){
 						removeOpenMenu($(this));	
 					}
