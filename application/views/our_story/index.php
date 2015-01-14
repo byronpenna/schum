@@ -26,8 +26,10 @@
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
 			<div class="row container-fluid ourStoryDescription marginn font">
-					<h2>Our Story</h2>
-					<?php  ?>
+					<h2><?php echo $ourStory->titulo ?></h2>
+					<p>
+						<?php echo nl2br($ourStory->texto) ?>
+					</p>
 					<!-- <p>
 						There Are Many Fantastic Real Estate Brokerages In Our Great City! We Work Diligently To Continue To Remain One Of Them.
 					</p>
