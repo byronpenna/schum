@@ -340,12 +340,11 @@ function paginacionEmp(limit){
 			var mainLocation = new google.maps.LatLng(<?php echo $ubicacion->latitud ?>, <?php echo $ubicacion->longitud ?>);
 			var mapOptions = {
 		      center: mainLocation,
-		      zoom: 12,
+		      zoom: 10,
 		      mapTypeId: google.maps.MapTypeId.ROADMAP
 		    };
 		    var map 	= new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
 		    // var marker 	= newMarker(mainLocation);
-
 		// do it 
 	    	// marker.setMap(map);
 	    	getCasas(map);

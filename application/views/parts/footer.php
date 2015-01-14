@@ -113,7 +113,7 @@
 </footer><!-- /.site-footer.row -->
 
 <div class="credits row">
-	<address>© 2015 Schumacher Productions Inc.</address>
+	<address>© 2015 Schumacher Realty Ltd.</address>
 	<address><a class="terms" title="Terms" href="http://alina.peacefulmediadev.com/terms/">Terms of Use &amp; Privacy Policy</a></address>
 </div><!-- /.credits -->
 </div>
