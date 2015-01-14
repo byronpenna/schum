@@ -24,6 +24,9 @@
 				echo json_encode($retorno);
 			}
 		// ################ 
+		function getNextPage(){
+			
+		}
 		function searchNow(){
 			// load 
 				$this->load->model("listingsm");

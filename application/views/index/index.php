@@ -25,9 +25,10 @@
 		<script type="text/javascript" src=<?php echo "'".base_url("plugins/jquery.timer.js")."'" ?>></script>
 		<script type="text/javascript">
 			<?php
+				$this->load->view("index/js/functions.php");
 				$this->load->view("parts/js/script.php");
 				$this->load->view("index/js/jquery.slimscroll.js");
-				$this->load->view("index/js/functions.php");
+				
 				$this->load->view("index/js/jquery.fs.selecter.js");
 			?>
 		</script>

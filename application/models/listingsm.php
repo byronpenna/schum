@@ -273,7 +273,7 @@ class Listingsm extends Padrem
 				<i class='fa fa-angle-left blank'></i>
 			</div>
 		";
-		for ($i=0; $i < 10; $i++) { 
+		for ($i=0; $i < $cn; $i++) { 
 			if($i == ($active-1) ){
 				$txtActive = "activeNumber";
 			}else{

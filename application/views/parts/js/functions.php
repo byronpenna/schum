@@ -24,6 +24,10 @@
 		});
 		return o;
 	}
+	function getBaseUrl(){
+		url = <?php echo "'".site_url()."'" ?>;
+		return url;
+	}
 // maps 
 	function newMarker(location,data){
 		if(data.icon == undefined){
