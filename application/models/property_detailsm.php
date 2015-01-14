@@ -345,4 +345,13 @@ class Property_detailsm extends Padrem
 			$imgPrincipal = $imgSrc;
 			return $images;
 		}
+		function getSlider2($idProperty){
+			@$images = $this->getImages(0,1,$idProperty);
+			@$imgSrc = $this->getUrlImage($images[0]);
+			@$imgSrc .= $images[0]->doc_nombre;
+			// la url si debe ser la del server aunque ahorita este como site_url
+			// $imgPrincipal = "<img class='imgFull' src='".$imgSrc." ' />";
+			$imgPrincipal = $imgSrc;
+			return $imgPrincipal;
+		}
 }

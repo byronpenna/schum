@@ -89,6 +89,7 @@ label{
 		
 		/*echo "'".base_url("img/property_detail/slider/img1.png")."'"*/
 		background: url(<?php echo $imgSlider; ?>);
+		/*background: red;*/
 		background-repeat: none;
 		background-position: center;
 		background-size: 50%;

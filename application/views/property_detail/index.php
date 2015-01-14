@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Property details</title>
-	<!-- Parte del mail chimp --> 
+	<!-- Parte  del mail chimp --> 
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
@@ -36,6 +36,7 @@
 		<?php
 			$this->load->view("property_detail/js/jsCarousel.php");
 		?>
+		
 		</script>
 		<?php 
 			$this->load->view("property_detail/js/script.php");
