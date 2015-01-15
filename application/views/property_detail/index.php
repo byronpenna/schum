@@ -23,6 +23,14 @@
 				$this->load->view("property_detail/css/jsCarousel.php");
 			?>	
 	    </style>
+	    <style type="text/css" media="screen">
+    		.amostrar{
+					width:100%;
+					margin-left:0px;
+					z-index:900000000;
+					opacity:1;
+				}
+	</style>
 	<!-- scripts --> 
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
 		<script type="text/javascript">
@@ -83,9 +91,8 @@
 	<!-- #################### -->
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<?php //$this->load->view("parts/menushow.php") ?>
 		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
-			<?php $this->load->view("parts/menu.php") ?>
+			<?php $this->load->view("parts/menushow.php") ?>
 		</div>
 		
 		<div class="row container-fluid bodySection">

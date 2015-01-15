@@ -17,13 +17,20 @@
 			$this->load->view("our_story/css/style.php");
 		?>
 	</style>
+	<style type="text/css" media="screen">
+    		.amostrar{
+					width:100%;
+					margin-left:0px;
+					z-index:900000000;
+					opacity:1;
+				}
+	</style>
 </head>
 <body>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<?php $this->load->view("parts/menushow.php") ?>
 		<div class="row container-fluid sliderNew size" >
-			<?php $this->load->view("parts/menu.php") ?>
+			<?php $this->load->view("parts/menushow.php") ?>
 		</div>
 			<div class="row container-fluid ourStoryDescription marginn font">
 					<h2><?php echo $ourStory->titulo ?></h2>
