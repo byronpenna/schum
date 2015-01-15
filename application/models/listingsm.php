@@ -237,7 +237,7 @@ class Listingsm extends Padrem
 			$retorno 		= new stdClass();
 			$countReg 		= $var->resultado[1][0]->casas / 12;
 			$countReg 		= ceil($countReg);
-			$activeNumber 	= $l2 / ($l2-$l1); 
+			$activeNumber 	= $l2; 
 		foreach ($casas as $key => $value) {
 			if($cn == 0){
 				//$html .= "<div class='row container-fluid'>";
@@ -245,7 +245,7 @@ class Listingsm extends Padrem
 			// base_url("img/listings/h1.png")
 			$imgSrc = URLOCAL;
 			$imgSrc	.= str_replace("../Archivos/","", $value->rutaImg); 
-			$html .= $this->getDivCasita($value,$imgSrc);
+			$html 	.= $this->getDivCasita($value,$imgSrc);
 			if($cn == 3){
 				$cn = 0;
 				//$html .= "</div>";
@@ -257,7 +257,34 @@ class Listingsm extends Padrem
 		$retorno->html 				= $html;
 		$retorno->paginasTotales[0] = 1;
 		$retorno->paginasTotales[1] = $countReg;
+		$retorno->query 			= $var->query;
 		return $retorno;
+	}
+	function getCasas($l1=0,$l2=12){
+		// vars 
+			// mucho ojo podria afectar a otro lado
+			$sql[0] 	= "SELECT * 
+						   FROM (".$this->getSqlHouseListing().") houseListing
+						   ORDER BY homeId DESC
+						   LIMIT ".$l1." , ".$l2." 
+						   ";
+			$sql[1] 	= "SELECT COUNT(*) AS casas
+					   		FROM (".$this->getSqlHouseListing().") houseListing
+					   		";
+			$regresar 	= new stdClass();
+		// do it 
+			$this->db->trans_start();
+				$query 		= $this->db->query($sql[0]);
+				$retorno 	= $query->result();
+				$query 		= $this->db->query($sql[1]);
+				$retorno2 	= $query->result();
+				// $query->free_result();
+				// $query->next_result();
+			$this->db->trans_complete();
+			$regresar->resultado[0] = $retorno;
+			$regresar->resultado[1] = $retorno2;
+			$regresar->query 		= $sql[0];
+		return $regresar;
 	}
 	function getCasa($homeId){
 		$this->db->trans_start();
@@ -273,7 +300,7 @@ class Listingsm extends Padrem
 				<i class='fa fa-angle-left blank'></i>
 			</div>
 		";
-		for ($i=0; $i < 10; $i++) { 
+		for ($i=0; $i < 9; $i++) { 
 			if($i == ($active-1) ){
 				$txtActive = "activeNumber";
 			}else{
@@ -323,29 +350,6 @@ class Listingsm extends Padrem
 			$regresar->resultado[1] = $retorno2;
 		return $regresar;
 	}
-	function getCasas($l1=0,$l2=12){
-		// vars 
-			// mucho ojo podria afectar a otro lado
-			$sql[0] 	= "SELECT * 
-						   FROM (".$this->getSqlHouseListing().") houseListing
-						   ORDER BY homeId DESC
-						   LIMIT ".$l1.",".$l2." 
-						   ";
-			$sql[1] 	= "SELECT COUNT(*) AS casas
-					   		FROM (".$this->getSqlHouseListing().") houseListing";
-			$regresar 	= new stdClass();
-		// do it 
-			$this->db->trans_start();
-				$query 		= $this->db->query($sql[0]);
-				$retorno 	= $query->result();
-				$query 		= $this->db->query($sql[1]);
-				$retorno2 	= $query->result();
-				// $query->free_result();
-				// $query->next_result();
-			$this->db->trans_complete();
-			$regresar->resultado[0] = $retorno;
-			$regresar->resultado[1] = $retorno2;
-		return $regresar;
-	}
+	
 
 }

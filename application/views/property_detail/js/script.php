@@ -1,11 +1,11 @@
 <script type="text/javascript">
 	$(document).ready(function(){
-		// plugins
-			// Maps 
+		// // plugins
+		// 	// Maps 
 				initialize();
-			// slider 
+		// 	// slider 
 				initSlider();
-		// eventos
+		// // eventos
 			$(document).on("click",".thumbnailSlider",function(){
 				// vars 
 					imgSrc = $(this).attr("src");
@@ -13,10 +13,10 @@
 					changeImage(imgSrc);
 			});
 
-			$(document).ready(function() {
+			// $(document).ready(function() {
 	           	$('#jsCarousel').jsCarousel({ onthumbnailclick: function(src) { }, autoscroll: false, masked: true, itemstodisplay: 12, orientation: 'h' });
-	           	initialize();
-		    });
+	 //           	initialize();
+		    // });
 
 		
 		$(document).on("click",".sliderNew",function(){
