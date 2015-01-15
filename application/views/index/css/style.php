@@ -442,7 +442,7 @@ body{
 		background: url(<?php echo "'".base_url("img/elements/buy_sell/1.png")."'"; ?>);
 	}
 	#boxBuySell2{
-		background: url(<?php echo "'".base_url("img/elements/buy_sell/2.png")."'"; ?>);	
+		/*background: url(<?php echo "'".base_url("img/elements/buy_sell/2.png")."'"; ?>);	*/
 	}
 	#boxBuySell0,#boxBuySell2{
 		min-height: 500px;
