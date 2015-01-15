@@ -18,10 +18,12 @@
 	 //           	initialize();
 		    // });
 
-		
+		$(document).on("click","navSlide",function(){
+
+		});
 		$(document).on("click",".sliderNew",function(){
 			imgSrc = $(this).attr("fondo");
-			$("#imgModal").attr("src",imgSrc); 
+			$(".dvImgModal").attr("style","background:url("+imgSrc+");background-size:100% 100%"); 
 			$('#myModal').modal({show:true});
 		});
 	});
