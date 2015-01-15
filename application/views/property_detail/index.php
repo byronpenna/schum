@@ -68,7 +68,18 @@
 		          <h4 class="modal-title"></h4>
 		        </div>
 		        <div class="modal-body">
-		          <img id='imgModal'>
+		          <div class='dvImgModal'>
+		          	<!-- <img id='imgModal'>	 -->
+		          	<div class="navs">
+		          		<div class="col-lg-1 navControl">
+		          			<img src=<?php echo "'".base_url("img/slider/navLeft.png")."'" ?> class='navSlide' direccion='0'>
+		          		</div>
+		          		<div class="col-lg-offset-10 col-lg-1 navControl">
+		          			<img src=<?php echo "'".base_url("img/slider/navRight.png")."'" ?> class='navSlide' direccion='1'>
+		          		</div>
+		          	</div>
+		          </div>
+		          
 		        </div>
 		        <!-- <div class="modal-footer">
 		          <a href="#" data-dismiss="modal" class="btn">Close</a>
