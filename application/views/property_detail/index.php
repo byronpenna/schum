@@ -27,7 +27,7 @@
     		.amostrar{
 					width:100%;
 					margin-left:0px;
-					z-index:900000000;
+					z-index:100;
 					opacity:1;
 				}
 	</style>
