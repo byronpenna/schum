@@ -287,16 +287,16 @@
 			background: rgba(230,229,230, 0.8);
 			position: fixed;
 			top: 0;
-			z-index:900000000;
+			z-index:100;
 		}
 
 		.menu-contenedor{
-			z-index:900000000;
+			z-index:100;
 		}
 		.amostrar{
 			width:100%;
 			margin-left:-15px;
-			z-index:900000000;
+			z-index:100;
 			opacity:0;
 		}
 
