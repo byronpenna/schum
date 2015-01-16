@@ -54,6 +54,18 @@
 		margin-left: 39%;
 		margin-top: -22%;
 		}
+
+		.navControlDer{
+			left:-25px;
+		}
+
+
+}
+@media(min-width:767px) and (max-width: 799px){
+	.navControlDer{
+		left:-25px;
+	}
+
 }
 @media(min-width:800px) and (max-width: 899px){
 .fbbox iframe{
@@ -85,7 +97,14 @@
 		font-size: 1.8em;
 		margin-left: 35%;
 		margin-top: -22%;
+		}
+		.navControlDer{
+			left:-30px;
 		}	
+		.navSlide{
+			width:7%;
+		}
+		
 }
 @media(min-width:768px) and (max-width: 799px){
 .fbbox iframe{
@@ -151,6 +170,9 @@
 		margin-left: 35%;
 		margin-top: -22%;
 		}	
+		.navControlDer{
+			left:90px;
+		}
 }
 @media(min-width:600px) and (max-width: 699px){
 .fbbox iframe{
@@ -183,6 +205,9 @@
 		font-size: 1.8em;
 		margin-left: 35%;
 		margin-top: -22%;
+		}
+		.navControlDer{
+			left:70px;
 		}	
 }
 @media(min-width:500px) and (max-width: 599px){
@@ -261,7 +286,13 @@
 	.arreglosChulos {
 		margin-left: 13%;
 	}
+	.navControlDer{
+		/*left:-25px;*/
 	}
+	.navSlide{
+		width:6%;
+	}
+}
 @media(min-width:1000px) and (max-width: 1099px){
 	.fbbox iframe{
 		display: block;
@@ -279,7 +310,10 @@
 		transform:scale(0.75,0.75);
 		-moz-transform:scale(0.75,0.75);
 		-webkit-transform:scale(0.75,0.75);
-}
+	}
+	.navControl{
+		left:0px;
+	}
 }
 @media(min-width:1100px) and (max-width: 1199px){
 	.fbbox iframe{
@@ -298,7 +332,10 @@
 		transform:scale(0.75,0.75);
 		-moz-transform:scale(0.75,0.75);
 		-webkit-transform:scale(0.75,0.75);
-}
+	}
+	.navControl{
+		left:6.5px;
+	}
 }
 @media(min-width:1200px) and (max-width: 1299px){
 	.fbbox iframe{

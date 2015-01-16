@@ -1,5 +1,6 @@
 #imgModal{
-	width: 100%;
+	width:100%;
+	height:100% fixed;
 	cursor: pointer;
 }
 #dialogoModal{
@@ -10,13 +11,18 @@
 }
 .dvImgModal{
 	width: 100%; 
-	height: 100%;
+	height: auto;
 }
 .col-xs-6{
 	padding: 2%;
 }
 .navControl{
-	margin-top: 20%;
+	top: 50%;
+	/*left:5px;*/
+	position:absolute;
+	width: 100%;
+	background: none;
+	display: inline-block;
 }
 div.imgfull{
   max-height: 200%;

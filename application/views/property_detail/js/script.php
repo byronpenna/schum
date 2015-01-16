@@ -46,6 +46,7 @@
 				"background-size"		: "50%",
 				"background-size" 		: "50%",
 			});
+			$("#imgModal").attr("src",""+activeThumbnail.attr("src")+"");
 			$(".sliderNew").attr("fondo",activeThumbnail.attr("src")) ;
 			console.log("ruta de la otra imagen",activeThumbnail.attr("src"));
 			$(".dvImgModal").css({
@@ -56,7 +57,7 @@
 		});
 		$(document).on("click",".sliderNew",function(){
 			imgSrc = $(this).attr("fondo");
-			$(".dvImgModal").attr("style","background:url("+imgSrc+");background-size:100% 100%"); 
+			$("#imgModal").attr("src",""+imgSrc+""); 
 			$('#myModal').modal({show:true});
 		});
 	});

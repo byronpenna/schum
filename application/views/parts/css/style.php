@@ -308,34 +308,7 @@
 			display:none;
 		}
 
-
-
-
-
-
-
-
-
-
-
-		/* estilos para el footer */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	/* estilos para el footer */
 
 #footer_container {
   border-top: 2px solid #ce4e25 !important;

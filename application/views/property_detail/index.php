@@ -69,12 +69,12 @@
 		        </div>
 		        <div class="modal-body">
 		          <div class='dvImgModal'>
-		          	<!-- <img id='imgModal'>	 -->
+		          	<img id='imgModal' >
 		          	<div class="navs">
 		          		<div class="col-lg-1 navControl">
 		          			<img src=<?php echo "'".base_url("img/slider/navLeft.png")."'" ?> class='navSlide' direccion='0'>
 		          		</div>
-		          		<div class="col-lg-offset-10 col-lg-1 navControl">
+		          		<div class="col-lg-offset-11 col-md-1 col-md-offset-11 col-sm-4 col-sm-offset-11 col-lg-1 col-xs-1 col-xs-offset-9 navControl navControlDer">
 		          			<img src=<?php echo "'".base_url("img/slider/navRight.png")."'" ?> class='navSlide' direccion='1'>
 		          		</div>
 		          	</div>
