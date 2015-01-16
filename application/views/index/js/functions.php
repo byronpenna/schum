@@ -6,7 +6,10 @@ function slideNewsToMarket(divInputs,selector){
 		$(selector).animate({
 		    opacity: 0.50,
 		}, 500, function() {
-			selector.css("background","url("+input.val()+")");
+			selector.css({
+				"background":"url("+input.val()+")",
+				"background-size": "100% 100%"
+			});
 		  	$(selector).animate({
 		  		opacity: 1
 		  	},500,function(){

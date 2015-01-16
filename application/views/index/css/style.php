@@ -351,7 +351,7 @@ body{
 	color: white;
 	position: absolute;
 	bottom: 0px;
-	right: 0px;
+	left: 20px;
 	font-weight: bold;
 	/*width: 100%;*/
 }
@@ -363,8 +363,8 @@ body{
 		}
 .imgNewsToMarket{
 	background-repeat: no-repeat;
-	background-position: 10% 10%;
-	background-size: cover !important;
+	/*background-position: 10% 10%;*/
+	/*background-size: cover !important;*/
 	position: relative;
 }
 .descriptionNewsToMarket{
