@@ -686,6 +686,7 @@
 
 		.paginationSection{
 			margin-top: 5%;
+			margin-left: -40%;
 		}
 
 		#imgNavLeft{

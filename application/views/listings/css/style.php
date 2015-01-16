@@ -230,3 +230,7 @@
 .activeNumber{
 	color: #314782 !important;
 }
+.btnPaginacion{
+	width: 100%;
+
+}

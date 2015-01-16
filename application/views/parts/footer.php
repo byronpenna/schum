@@ -61,10 +61,8 @@
 <div class="tweets-meta col col-md-12">
 
 	<img class="alignleft" src="http://pbs.twimg.com/profile_images/2639578145/037ceec6e86c795ebc5edddcae07faf8_normal.jpeg">
-	<ul style="margin-left: 52px;margin-top: -60px;">
-		<li ><strong class="real-name" style="vertical-align:top;">Alina Schumacher</strong></li>
-		<li ><a href="https://www.twitter.com/Alina_SR">@Alina_SR</a></li>
-	</ul>
+		<strong class="real-name" style="vertical-align:top;">Alina Schumacher</strong>
+			<a href="https://www.twitter.com/Alina_SR">@Alina_SR</a>
 
 
 

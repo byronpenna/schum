@@ -28,7 +28,7 @@
 			}
 			if( i <= totalPagina){
 				div += "\
-				<div class='btnPaginacion col-lg-1 col-sm-1' valor='"+num+"'>\
+				<div class='btnPaginacion col-lg-1 col-sm-1' valor='"+num+"' style='width:auto;'>\
 					"+num+"\
 				</div>\
 				";	
