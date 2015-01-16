@@ -681,13 +681,13 @@ class Padrem extends CI_Model
 					(
 						(`amb`.`amb_com_id` = 17)
 						AND (
-							`doc`.`doc_descripcion` = 'square-map-home'
+							`doc`.`doc_descripcion` = 'slider-property'
 						)
 					)
 				GROUP BY
 					`amb`.`amb_exp_id`
 				ORDER BY
-					`doc`.`doc_fecha_creacion`
+					`doc`.`doc_orden`
 			) documento
 			on documento.amb_exp_id = streetNumber.exp_id
 			LEFT JOIN (
