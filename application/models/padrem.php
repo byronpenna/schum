@@ -661,33 +661,39 @@ class Padrem extends CI_Model
 			) bath
 			ON bath.exp_id = streetNumber.exp_id
 			LEFT JOIN (
-				SELECT
-					`amb`.`amb_exp_id` AS `amb_exp_id`,
-					`doc`.`doc_fecha_creacion` AS `doc_fecha_creacion`,
-					`doc`.`doc_ruta` AS `doc_ruta`,
-					`doc`.`doc_nombre` AS `doc_nombre`,
-					`doc`.`doc_amb_id` AS `doc_amb_id`,
-					`doc`.`doc_descripcion` AS `doc_descripcion`
-				FROM
-					(
-						`crm_documento` `doc`
-						LEFT JOIN `crm_ambito` `amb` ON (
-							(
-								`amb`.`amb_id` = `doc`.`doc_amb_id`
+				-- ##################
+					SELECT *
+					FROM (
+					SELECT
+						`amb`.`amb_exp_id` AS `amb_exp_id`,
+						doc_id,
+						`doc`.`doc_fecha_creacion` AS `doc_fecha_creacion`,
+						`doc`.`doc_ruta` AS `doc_ruta`,
+						`doc`.`doc_nombre` AS `doc_nombre`,
+						`doc`.`doc_amb_id` AS `doc_amb_id`,
+						`doc`.`doc_descripcion` AS `doc_descripcion`,
+						doc.doc_orden
+					FROM
+						(
+							`crm_documento` `doc`
+							LEFT JOIN `crm_ambito` `amb` ON (
+								(
+									`amb`.`amb_id` = `doc`.`doc_amb_id`
+								)
 							)
 						)
-					)
-				WHERE
-					(
-						(`amb`.`amb_com_id` = 17)
-						AND (
-							`doc`.`doc_descripcion` = 'slider-property'
+					WHERE
+						(
+							(`amb`.`amb_com_id` = 17)
+							AND (
+								`doc`.`doc_descripcion` = 'slider-property'
+							)
 						)
-					)
-				GROUP BY
-					`amb`.`amb_exp_id`
-				ORDER BY
-					`doc`.`doc_orden`
+						ORDER BY doc_orden
+						
+					) sliderProperty
+					group by amb_exp_id 
+				-- ##################
 			) documento
 			on documento.amb_exp_id = streetNumber.exp_id
 			LEFT JOIN (
@@ -896,6 +902,7 @@ class Padrem extends CI_Model
 					`documento`.`doc_ruta`,
 					`documento`.`doc_nombre`
 				) is not null
+			
 			";
 		return $sql;
 	}
