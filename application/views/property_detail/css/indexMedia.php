@@ -1083,7 +1083,7 @@ iframe[name="f3d7c73d9c"]{
 		}
         .readmore{
             font-size: 0.7em;
-            width: 75px;
+            /*width: 75px;*/
         }
 
 		.agentSection > .col-sm-12:nth-child(2){
