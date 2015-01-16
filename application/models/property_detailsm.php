@@ -320,7 +320,7 @@ class Property_detailsm extends Padrem
 						ON  ambito.amb_id = documento.doc_amb_id
 						WHERE ambito.amb_exp_id = ".$homeId." AND documento.doc_descripcion = 'slider-property' 
 						ORDER BY documento.doc_orden
-						LIMIT 0,12
+						LIMIT ".$l1.",".$l2."
 						";
 			// do it 
 				$this->db->trans_start();
