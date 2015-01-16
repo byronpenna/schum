@@ -27,6 +27,7 @@ class Listingsm extends Padrem
 		function searchNow($frm,$l1=0,$l2=12){
 			$retorno 		= new stdClass();
 			$casitas 		= $this->casitasResultado($frm,$l1,$l2);
+			$query 			= $casitas->query;
 			$countReg		= ceil($casitas->cn[0]->casas/12);
 			$activeNumber 	= $l2;
 			$paginacion 	= $this->getNumsPaginacion($countReg,$activeNumber);
@@ -42,6 +43,7 @@ class Listingsm extends Padrem
 				$retorno->paginacion 			= $paginacion;
 				$retorno->paginasTotales[0] 	= 1;
 				$retorno->paginasTotales[1] 	= $countReg;
+				$retorno->query 				= $query;
 			// return $casitas;
 			return $retorno;
 		}
@@ -127,7 +129,7 @@ class Listingsm extends Padrem
 				// preparando retorno
 					$regresar->result 				= $retorno[0];
 					$regresar->cn 					= $retorno[1];
-					$regresar->query 				= $sql[1];
+					$regresar->query 				= $sql[0];
 				return $regresar;
 		}
 		function addWhere($sql,$frm){
