@@ -352,9 +352,12 @@
 									<!-- <a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
 										<button class="readmore">Read more</button>
 									</a> -->
-									<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
-										<button class="readmore">About <?php echo $empleado->simpleName; ?> <!-- Derrick es variable --></button>
-									</a>
+									
+										<button class="readmore">
+											<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
+												About <?php echo $empleado->simpleName; ?> <!-- Derrick es variable -->
+											</a>
+										</button>
 									<button class="readmore">
 										<a href="mailto:<?php echo $empleado->email ?>?subject=Property Inquiry: <?php echo $house->nombreVivienda ?>">
 											More Info

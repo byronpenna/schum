@@ -17,7 +17,7 @@
 				$indexModel 		= new Indexm();
 				$coordenadas  		= new stdClass();
 				$imgSlider 			= $propertyModel->getSlider2($idProperty); 
-				$thumbnail 			= $propertyModel->getImgThumbnail(0,12,$idProperty);
+				$thumbnail 			= $propertyModel->getImgThumbnail(0,30,$idProperty);
 				$houseInformation	= $propertyModel->getPropertyInformation($idProperty);
 				// print_r($houseInformation);
 				$ubicacion 			= $indexModel->getMainUbication();

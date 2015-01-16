@@ -332,8 +332,10 @@ label{
 }
 .readmore{
     border: none;
-    color: #fff;
     background-color: #be0000;
+}
+.readmore a{
+	color:#FFFFFF !important;
 }
 .bot{
     padding-left: 0px !important;

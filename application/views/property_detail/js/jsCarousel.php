@@ -1,5 +1,4 @@
-﻿
-(function($) {
+﻿(function($) {
     $.fn.extend({
         jsCarousel: function(options) {
             var settings = $.extend({
