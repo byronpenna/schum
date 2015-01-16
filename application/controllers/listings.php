@@ -58,8 +58,13 @@
 					if(isset($obj) && !empty($obj)){
 						$limits 				= $this->getLimitsForPagination($obj); 
 						$obj->filtro 			= json_decode($obj->filtro);
+						if($obj->filtro == 10){
+							$obj->filtro 				= new stdClass();
+							$obj->filtro->marketStatus 	= "Active";
+						}
 						// ###############################
-						$retorno 				= $listingModel->searchNow($obj->filtro,$limits->l1,$limits->l2);
+						$retorno 				= $listingModel->searchNow($obj->filtro,$limits->l1,12);
+						$retorno->filtro 		= $obj->filtro;
 						$retorno->html 			= $retorno->contenido;
 						$retorno->origen 		= json_encode($obj->filtro);
 						$retorno->pageIndicador = $this->getPageIndicator($obj->pagina,$retorno->paginasTotales[1]);
@@ -78,7 +83,7 @@
 					if(isset($obj) && !empty($obj)){
 						$limits 				= $this->getLimitsForPagination($obj);
 						// #############################
-						$retorno 				= $listingModel->getListasCasas($limits->l1,12);
+						$retorno = $listingModel->getListasCasas($limits->l1,12);	
 						$retorno->origen 		= 0;
 						$retorno->pageIndicador	= $this->getPageIndicator($obj->pagina,$retorno->paginasTotales[1]);
 					}
@@ -177,7 +182,6 @@
 			// do it 
 				$casas 	= $listingModel->finishedListings();
 				$data 	= $this->getStandarData($casas);
-				$data["origen"] = 0;
 			// view
 				$this->load->view("listings/index.php",$data);
 
@@ -189,7 +193,8 @@
 				$listingModel 	= new Listingsm();
 				$casas 			= $listingModel->mostRecent();
 			// do it
-				$data = $this->getStandarData($casas);
+				$data 			= $this->getStandarData($casas);
+				$data["origen"] = 10;
 			// views 
 				$this->load->view("listings/index.php",$data);
 		}
@@ -203,6 +208,7 @@
 				$indexModel 	= new Indexm();
 				$searchBar 		= $this->getSearchBar();
 				$casas 			= $listingModel->getListasCasas();
+
 				$data 			= array(
 									'casas' 			=> $casas->html,
 									'homeData'			=> $this->homeData,

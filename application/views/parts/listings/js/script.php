@@ -10,7 +10,7 @@
 				});
 				$(document).on("click",".btnPaginacion",function(){
 					// vars
-						obj = new Object();
+						obj 			= new Object();
 						obj.pagina 		= $(this).attr("valor");
 						obj.displayBy 	= $("#selectDisplay").val();
 						origen 			= $("#txtOrigen").text();
