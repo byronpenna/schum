@@ -28,7 +28,7 @@ class Listingsm extends Padrem
 			$retorno 		= new stdClass();
 			$casitas 		= $this->casitasResultado($frm,$l1,$l2);
 			$countReg		= ceil($casitas->cn[0]->casas/12);
-			$activeNumber 	= $l2 / ($l2-$l1);
+			$activeNumber 	= $l2;
 			$paginacion 	= $this->getNumsPaginacion($countReg,$activeNumber);
 			$casitas 		= $casitas->result;
 			$div 			= "";
@@ -37,9 +37,9 @@ class Listingsm extends Padrem
 				$div .= $this->getDivCasita($value,$img);
 			}
 			// preparando el retorno 
-				$retorno->estado 		= true; 
-				$retorno->contenido 	= $div;
-				$retorno->paginacion 	= $paginacion;
+				$retorno->estado 				= true; 
+				$retorno->contenido 			= $div;
+				$retorno->paginacion 			= $paginacion;
 				$retorno->paginasTotales[0] 	= 1;
 				$retorno->paginasTotales[1] 	= $countReg;
 			// return $casitas;
@@ -108,6 +108,8 @@ class Listingsm extends Padrem
 				$regresar = new stdClass();
 				if(!empty($frm)){
 					$sql[0] = $this->addWhere("",$frm);
+				}else{
+					$sql[0] = "";
 				}
 				$sql[1] = "SELECT COUNT(*) AS casas
 				FROM (".$this->getSqlHouseListing().") houseListing ".$sql[0];
