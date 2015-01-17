@@ -1,3 +1,34 @@
+function slidePopup(direccion,activeThumbnail){
+	if(direccion == 1){
+		siguienteThumbnail = activeThumbnail.parent().next().find(".thumbnailSlider");
+	}else if(direccion == 0){
+		siguienteThumbnail = activeThumbnail.parent().prev().find(".thumbnailSlider");
+	}
+	if(siguienteThumbnail.attr("src") == undefined){
+		if(direccion == 1){
+			activeThumbnail = $(".thumbnailSlider").first();
+		}else if(direccion == 0){
+			activeThumbnail = $(".thumbnailSlider").last();
+		}
+	}else{
+		activeThumbnail = siguienteThumbnail;
+	}
+	$(".sliderNew").css({
+		"background" 			: "url("+activeThumbnail.attr("src")+")",
+		"background-repeat"		: "none",
+		"background-position" 	: "50% 50%",
+		"background-position" 	: "50% 50%\9 !important",
+		"background-size"		: "50%",
+		"background-size" 		: "50%",
+	});
+	$("#imgModal").attr("src",""+activeThumbnail.attr("src")+"");
+	$(".sliderNew").attr("fondo",activeThumbnail.attr("src")) ;
+	console.log("ruta de la otra imagen",activeThumbnail.attr("src"));
+	$(".dvImgModal").css({
+		"background": 			"url("+activeThumbnail.attr("src")+")",
+		"background-size"	: 	"100% 100%",
+	});
+}
 function initialize(){
 	var lat 		= <?php echo $coordenadas->latitud ?> 	;
 	var lon 		= <?php echo $coordenadas->longitud ?> 	;
