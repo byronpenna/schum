@@ -21,10 +21,14 @@
 		}
 
 		for (var i = cn; i < (cn + 10); i++) { // direccion derecha 1
+			if(direccion == 0 && i == 0){
+				i=1;
+			}
 			num = i;
 			if(i == 0 && direccion == 1){
 				num = 1;
 			}
+
 			if( i <= totalPagina){
 				div += "\
 				<div class='btnPaginacion col-lg-1 col-sm-1' valor='"+num+"'>\
