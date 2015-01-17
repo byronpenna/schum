@@ -26,8 +26,8 @@
 	    	<?php
 	    		$this->load->view("listings/js/jquery.fs.selecter.js");
 	    		$this->load->view("listings/js/owl.carousel.php");
+	    		$this->load->view("parts/js/functions.php");
 	    		$this->load->view("parts/js/script.php");
-
 	    		$this->load->view("listings/js/functions.php");
 	    		
 	    	?>

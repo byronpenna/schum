@@ -18,12 +18,11 @@
 		if(cn < 0){
 			cn 		= 0;
 			page 	= 2;
-			console.log("volvera al inicio");
 		}
 
 		for (var i = cn; i < (cn + 10); i++) { // direccion derecha 1
 			num = i;
-			if(i == 0){
+			if(i == 0 && direccion == 1){
 				num = 1;
 			}
 			if( i <= totalPagina){
@@ -41,8 +40,6 @@
 		</div>\
 		";
 		$(".numbers").empty().append(div);
-		
-		console.log("valor de page",page);
 		$("#txtPagePaginacion").val(page);
 	}
 // null number pagination 
@@ -112,6 +109,11 @@ function changePage(obj){
 		},
 		url: 		direccion,
 		type: 		"POST",
+		beforeSend: function(){
+			imgSrc 	= getUrl()+"/img/recursos/ajax-loader.gif";
+			img 	= "<div class='text-center'><img src='"+imgSrc+"' /></div>";
+			$(".seccionCasitas").empty().append(img);
+		},
 		success: function(data){
 			// console.log("antes de hacer json:",data);
 			datos = jQuery.parseJSON(data);

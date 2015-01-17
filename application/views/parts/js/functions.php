@@ -27,6 +27,10 @@
 		url = <?php echo "'".site_url()."'" ?>;
 		return url;
 	}
+	function getUrl(){
+		url = <?php echo "'".base_url()."'" ?>;
+		return url;	
+	}
 // maps 
 	function newMarker(location,data){
 		if(data.icon == undefined){
