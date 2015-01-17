@@ -12,6 +12,7 @@
 		$this->load->view("parts/css/media.php");
 		$this->load->view("index/css/fonts.php"); // ** 
 		$this->load->view("parts/font-awesome/css/font-awesome.css");
+
 	?>
 </style>
 <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"> -->

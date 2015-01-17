@@ -317,7 +317,7 @@ class Listingsm extends Padrem
 					
 			}
 			$div .= "
-				<div class='btnPaginacion col-lg-1 col-sm-1 ".$txtActive."' valor='".($i+1)."'>
+				<div class='btnPaginacion col-lg-1 col-sm-1 ".$txtActive."' valor='".($i+1)."' style='width:auto;'>
 					".($i+1)."
 				</div>
 			";
