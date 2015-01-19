@@ -3641,7 +3641,7 @@ img {
 	 }
 } */ }
     #footer_container .site-footer.row #text-4 h3.widget-title {
-      color: #fbb03b !important;
+      color: #CCCCCC !important;
       text-align: right; }
     #footer_container .site-footer.row #text-4 a.foot-social-ico {
       font-size: 10px;
