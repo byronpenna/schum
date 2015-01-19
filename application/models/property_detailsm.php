@@ -56,6 +56,43 @@ class Property_detailsm extends Padrem
 
 			return $titulo;
 		}
+		function getSqlRooms($homeId){
+			$sql = "SELECT atr_id,atr_nombre,exp_valor,if(atr_nombre like '%Room Type%','1',
+						if(atr_nombre like '%Dimension 1%',2.1,
+							if(atr_nombre like '%Dimension 2%',2.2,'-')
+						)
+					) as nivel 
+					from crm_atr_atributo 
+					inner join crm_exp_expediente
+					on exp_atr_id = atr_id
+					where atr_cat_id = 12 and atr_area = 'Rooms' and atr_comp_id = 17 
+					and (atr_tipo_objeto = 'Text' or atr_tipo_objeto = 'Select') and exp_id = ".$homeId."
+ 				";
+			return $sql;
+		}
+		function getRooms($homeId){
+			$rooms 		= $this->getResulset($this->getSqlRooms($homeId));
+			$keysRooms 	= "<h2 class='txtSubtitle'>Rooms</h2>"; 
+			$detalle 	= false;
+			foreach ($rooms as $key => $value) {
+				if($value->nivel == "1" && $value->exp_valor != ""){
+					$keysRooms .= "
+						<article id='contkey'>
+							<h4>".$value->exp_valor."</h4>
+							<p>
+						";
+					$detalle = true;
+				}	
+				if($value->nivel == "2.1" && $detalle == true){
+					$keysRooms .= $value->exp_valor;
+				}
+				if($value->nivel == "2.2" && $detalle == true){
+					$keysRooms .= " x ".$value->exp_valor."</p></article>";
+					$detalle = false;
+				}
+			}
+			return $keysRooms;
+		}
 		function getCheckKeys($homeId){
 			// $keys 		= $this->getKeys($homeId);
 			$arr 		= $this->getArrTitleKey();

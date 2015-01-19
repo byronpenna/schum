@@ -37,6 +37,7 @@
 				}
 				$estadoCalendar = $propertyModel->getBoolOpenHouse($idProperty);
 				$keyFeature 	= $propertyModel->getCheckKeys($idProperty);
+				$rooms 			= $propertyModel->getRooms($idProperty);
 				$data = array(
 					'homeData' 			=> $this->homeData,
 					'imgSlider'			=> $imgSlider,
@@ -47,7 +48,8 @@
 					'appliance' 		=> $propertyModel->divAppliances($idProperty),
 					"homeId"			=> $idProperty,
 					"estadoCalendar" 	=> $estadoCalendar,
-					"keys" 				=> $keyFeature
+					"keys" 				=> $keyFeature,
+					"roomsKey" 			=> $rooms
 				);
 			// views 
 				$this->load->view("property_detail/index.php",$data);

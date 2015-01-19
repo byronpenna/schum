@@ -300,6 +300,7 @@
 									<p>Ensuite; Garage; Landscaped</p> -->
 
 									<?php echo $keys; ?>
+									<?php print_r($roomsKey); ?>
 								</div>
 							</div>
 						</div>
