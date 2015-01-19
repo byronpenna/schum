@@ -1,6 +1,13 @@
 function slideNewsToMarket(divInputs,selector){
 	
 	input = divInputs.find(".imgSlideNewsToMarket.active");
+	input.removeClass("active");
+
+	input = input.next();
+	if(input.val() == undefined){
+		input = divInputs.find(".imgSlideNewsToMarket").first();
+	}
+	input.addClass("active");
 	console.log(input.val());
 	// #############
 		$(selector).animate({
@@ -17,13 +24,7 @@ function slideNewsToMarket(divInputs,selector){
 		  	});
 		});
 	// #############
-	input.removeClass("active");
-
-	input = input.next();
-	if(input.val() == undefined){
-		input = divInputs.find(".imgSlideNewsToMarket").first();
-	}
-	input.addClass("active");
+	
 	
 	// console.log("tick,tock");
 }
