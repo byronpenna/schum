@@ -30,6 +30,12 @@
 					z-index:100;
 					opacity:1;
 				}
+
+			 #footer_container .foot-social-ico .fa {
+			    font-size: 2em;
+			    vertical-align: middle;
+			    margin-top:10px !important;
+		     }
 	</style>
 	<!-- scripts --> 
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
