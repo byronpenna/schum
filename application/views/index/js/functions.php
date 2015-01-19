@@ -326,9 +326,6 @@ function paginacionEmp(limit){
 							<div class='row'>\
 								<span class='priceMap'>$"+varsContent.price+"</span>\
 							</div>\
-							<div class='row'>\
-								<button class='btnReadMoreMap'>READ MORE</button>\
-							</div>\
 							\
 		    		</div>\
 		    	</a>",

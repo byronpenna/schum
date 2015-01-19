@@ -4256,3 +4256,7 @@ img {
 		#wordpress > a > .circle-text:hover:after{
 			background: #22769B !important;
 		}
+
+	#facebook_area{
+		margin-left:100px;
+	}

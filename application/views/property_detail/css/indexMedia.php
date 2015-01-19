@@ -1057,7 +1057,7 @@ iframe[name="f3d7c73d9c"]{
 			margin: 10px -10% -10%;
 		}
 		.contactAgentText{
-			padding-top: 0%;
+			padding-top: 2%;
 		}
 
 		/*name*/

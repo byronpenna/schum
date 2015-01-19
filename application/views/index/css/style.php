@@ -257,6 +257,10 @@ body{
     	text-decoration: none;
     	width: 190px;
     	height: 270px;
+    	/* width: 590px;
+    	height: 300px;
+    	margin-left: 50px;
+    	position: absolute; */
     }
     .aPopupMap{
     	text-decoration: none;

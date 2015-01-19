@@ -401,7 +401,7 @@
 				<?php 
 					}
 				?>
-					<div class="col-sm-6 col-xs-12 col-md-3" id='facebook_area'>
+					<div class="col-sm-12 col-xs-12 col-md-3" id='facebook_area'>
 						<!-- Plugin de facebook -->
 						<div class="row titulo arreglosChulos">
 							<h2>LIKE US ON FACEBOOK</h2>
