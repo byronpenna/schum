@@ -60,6 +60,19 @@
 </head>
 <body>
 	<!-- ###################3 -->
+		<div class='modal' id='modalTour'>
+			<div id='dialogoModal' class="modal-dialog">
+			    <div id='contenidoModal' class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			          <h4 class="modal-title"></h4>
+			        </div>
+			        <div class="modal-body">
+						<iframe src=<?php echo "'".$house->videoTour."'" ?> class="iframeVirtual"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="modal" id="myModal">
 			<div id='dialogoModal' class="modal-dialog">
 		      <div id='contenidoModal' class="modal-content">
@@ -242,17 +255,23 @@
 						<?php 
 							}
 						?>
-						<!-- <div class="row container-fluid blockDescriptions" id='virtualTourBlock'>
-							<div class="row container-fluid text-center imgBlockDescription">
-								<i class="fa fa-video-camera icon"></i>	
+						<?php 
+							if($house->videoTour != "#"){
+						?>
+							<div class="row container-fluid blockDescriptions" id='virtualTourBlock'>
+								<div class="row container-fluid text-center imgBlockDescription">
+									<i class="fa fa-video-camera icon"></i>	
+								</div>
+								<div class="row container-fluid titleBlockDescription">
+									<h2>Virtual tour</h2>
+								</div>
+								<div class="row container-fluid txtBlockDescription text-center">
+									<p> Play now</p>
+								</div>
 							</div>
-							<div class="row container-fluid titleBlockDescription">
-								<h2>Virtual tour</h2>
-							</div>
-							<div class="row container-fluid txtBlockDescription text-center">
-								<p> Play now</p>
-							</div>
-						</div> -->
+						<?php 
+							}
+						?>
 					</div>
 				</div>
 				<h2>key features</h2>

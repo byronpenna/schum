@@ -3658,12 +3658,15 @@ h1.entry-title {
       background-color: #CCCCCC;
       display: block;
       border-radius: 50%; }
-      #footer_container .site-footer.row #text-4 a.foot-social-ico .fa {
-        font-size: 2em;
-        vertical-align: middle;
-        color: #CCCCCC; }
+      	#footer_container .site-footer.row #text-4 a.foot-social-ico .fa {
+	        font-size: 2em;
+	        vertical-align: middle;
+	        color: rgb(98, 98, 98); 
+    	}
       #footer_container .site-footer.row #text-4 a.foot-social-ico:hover {
-        background-color: #faa622; }
+        background-color: black;
+        color: black;
+        }
   #footer_container .credits.row {
     padding: 20px 0; }
     #footer_container .credits.row p {

@@ -17,6 +17,9 @@
 	           	$('#jsCarousel').jsCarousel({ onthumbnailclick: function(src) { }, autoscroll: false, masked: true, itemstodisplay: 12, orientation: 'h' });
 	 //           	initialize();
 		    // });
+		$(document).on("click","#virtualTourBlock",function(){
+			$("#modalTour").modal({show:true});
+		});
 		$(document).on("click","#imgModal",function(){
 			direccion 		= 1;
 			background 		= $(".sliderNew").attr("fondo");
