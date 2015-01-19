@@ -30,7 +30,7 @@
 	  				selector 	= 	$(this);
 	  				interval 	= 	setInterval(function(){
 										slideNewsToMarket(divInputs,selector);
-									}, 4000 );
+									}, 2000 );
 	  			});
 	 			$(document).on("mouseleave",".imgNewsToMarket",function(){
 	 				clearInterval(interval);
