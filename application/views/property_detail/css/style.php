@@ -380,3 +380,17 @@ label{
 .txtSubtitle{
 	color: black !important;
 }
+.contenedor-cubos{
+	background:none;
+	width: 100%;
+}
+
+.contenedor-cubos article{
+	display: inline-block;
+	vertical-align: top;
+	margin-left:25px;
+	width: 30%;
+	height: 130px;
+	padding:0px;
+}
+
