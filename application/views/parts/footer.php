@@ -84,7 +84,7 @@
 			<h3 class="widget-title connectFooter">Connect With Us</h3>		
 			<div class="textwidget"><div style="padding-top:10px;"></div>
 				<span style="float:right;">
-					<a class="foot-social-ico" id='fbFooter' href=<?php echo "'".$homeData->facebook."'" ?> target="_blank">
+					<a class="foot-social-ico" id='fbFooter' href=<?php echo "'".$homeData->facebook."'" ?> target="_blank" style="color:red;">
 						<i class="fa fa-facebook"></i>
 					</a>
 					<a class="foot-social-ico" id='inFooter' href=<?php echo "'".$homeData->linkedIn."'" ?> target="_blank">
