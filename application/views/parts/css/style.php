@@ -2189,7 +2189,7 @@ img {
   #footer_container .foot-social-ico .fa {
     font-size: 2em;
     vertical-align: middle;
-    margin-top:10px; }
+     }
 #footer_container .credits {
   background-color: #444444;
   color: #fdfdfd;
