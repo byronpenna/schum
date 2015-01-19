@@ -239,7 +239,7 @@
 									
 							if($house->pdfFeature != "#"){
 						?>
-							<article class=" blockDescriptions cubos-colores" id='sheetBlock' style="background:orange;">
+							<article class=" blockDescriptions cubos-colores" id='sheetBlock' style="background:#314782;">
 									<br>
 									<a href=<?php echo "'".$house->pdfFeature."'" ?>  >
 										<div class=" text-center imgBlockDescription">
@@ -260,7 +260,7 @@
 						<?php 
 							if($house->videoTour != "#"){
 						?>
-							<article class=" blockDescriptions cubos-colores" id='virtualTourBlock' style="background:red;">
+							<article class=" blockDescriptions cubos-colores" id='virtualTourBlock' style="background:#314782;">
 								<br>
 								<div class=" text-center imgBlockDescription">
 									<i class="fa fa-video-camera icon"></i>	

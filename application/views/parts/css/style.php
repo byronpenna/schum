@@ -792,38 +792,6 @@ img.wp-post-image {
 canvas {
   -ms-touch-action: double-tap-zoom; }
 
-@font-face {
-  font-family: 'BebasNeueRegular';
-  src: url("../webfonts/BebasNeueRegular/bebasneue-webfont.eot");
-  src: url("../webfonts/BebasNeueRegular/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../webfonts/BebasNeueRegular/bebasneue-webfont.woff2") format("woff2"), url("../webfonts/BebasNeueRegular/bebasneue-webfont.woff") format("woff"), url("../webfonts/BebasNeueRegular/bebasneue-webfont.ttf") format("truetype"), url("../webfonts/BebasNeueRegular/bebasneue-webfont.svg#bebas_neueregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-.font-sans-serif, blockquote cite, .wp-caption .wp-caption-text,
-.gallery-caption,
-.entry-caption, button, input, .archive-title,
-.page-title,
-.entry-content th,
-.comment-content th, .comments-link, .entry-header address,
-.comment-content address, .entry-header time, .entry-content dt,
-.comment-content dt, .archive-meta, #wp-calendar caption, body, h1, h2, h3, h4, h5, h6, dt, b, strong, em, #header_container, #header_container .site-header, #footer_container .site-footer, form label.error, .comments-area .comment-meta cite, .entry-meta address, .entry-meta time {
-  font-family: "Futura", "Helvetica Neue", "Helvetica", Sans-serif;
-  font-size: 1em; }
-
-.font-serif {
-  font-family: "Georgia", "Times New Roman", "Times", serif;
-  font-size: 1em; }
-
-.font-bebas-neue {
-  font-family: "BebasNeueRegular", "Futura", "Helvetica Neue", "Helvetica", Sans-serif;
-  font-size: 1em; }
-
-.font-rokkitt {
-  font-family: "Rokkitt", "Georgia", "Times New Roman", "Times", serif;
-  font-size: 1em; }
-
-.font-open-sans {
-  font-family: "Open Sans", "Futura", "Helvetica Neue", "Helvetica", Sans-serif;
-  font-size: 1em; }
 
 .entry-content .twitter-tweet-rendered {
   max-width: 100% !important; }
@@ -992,43 +960,7 @@ input[type="submit"] {
 input[type="button"] {
   width: auto; }
 
-.btn {
-  display: inline-block;
-  *display: inline;
-  padding: 8px 14px;
-  padding: 0.5rem 0.875rem;
-  margin-bottom: 0;
-  *margin-left: .3em;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #333333;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  *background-color: #e6e6e6;
-  background-image: -ms-linear-gradient(top, white, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
-  background-image: -o-linear-gradient(top, white, #e6e6e6);
-  background-image: linear-gradient(top, white, #e6e6e6);
-  background-image: -moz-linear-gradient(top, white, #e6e6e6);
-  background-repeat: repeat-x;
-  border: 1px solid #cccccc;
-  *border: 0;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6');
-  *zoom: 1;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+
 
 a.btn {
   color: #333333;
@@ -1756,18 +1688,6 @@ li span.dots {
   .author-description {
     float: left;
     width: 100%; } }
-html {
-  font-size: 16px; }
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  font-weight: 300;
-  font-style: normal;
-  text-align: left;
-  color: black; }
 
 h1, h2, h3, h4, h5, h6 {
   font-style: normal;
@@ -2612,10 +2532,7 @@ img {
 	  margin: 0 20px 0 0;
 	  margin: 0 1.25rem 0 0; }
 
-	body.single-post .site-content {
-	  background-color: white;
-	  padding-top: 20px;
-	  padding-bottom: 20px; }
+	
 
 	.wpb_row {
 	  border: 0 solid transparent; }
@@ -2643,9 +2560,7 @@ img {
 	    text-align: center;
 	    font-size: 36px;
 	    min-height: 90px; }
-	    body.bs-grid-xs .wpb_row.vc-row-blog-featured-posts > .row-inner > .wpb_column > .wpb_wrapper .wpb_single_image .wpb_heading {
-	      min-height: initial !important;
-	      height: auto !important; }
+	    
 	  .wpb_row.vc-row-blog-featured-posts > .row-inner > .wpb_column > .wpb_wrapper .wpb_single_image img {
 	    width: 100%;
 	    height: auto; }
@@ -2656,10 +2571,7 @@ img {
 	    margin-bottom: -22px;
 	    bottom: 0;
 	    left: 50%; }
-	    body.bs-grid-xs .wpb_row.vc-row-blog-featured-posts > .row-inner > .wpb_column > .wpb_wrapper .vc-pm-button, body.bs-grid-xs .wpb_row.vc-row-blog-featured-posts > .row-inner > .wpb_column > .wpb_wrapper .vc-pm-advanced-button {
-	      margin-bottom: 5px; }
-	  body.bs-grid-xs .wpb_row.vc-row-blog-featured-posts > .row-inner > .wpb_column > .wpb_wrapper {
-	    height: auto !important; }
+	    
 
 	.wpb_row.vc-row-section-header-light, .wpb_row.vc-row-section-header-dark {
 	  padding-top: 5px;
@@ -2740,10 +2652,10 @@ img {
 	  color: #178dad;
 	  border-radius: 3px;
 	  border: 1px solid transparent;
-	  border-top-color: #f6fbfb;
-	  border-bottom-color: #939e9d;
-	  border-right-color: #939e9d;
-	  border-left-color: #f6fbfb;
+	  border-top-color: #be0000;
+	  border-bottom-color: #be0000;
+	  border-right-color: #be0000;
+	  border-left-color: #be0000;
 	  box-shadow: 1px 1px 3px rgba(23, 141, 173, 0.4); }
 	  button strong, input[type="button"] strong, input[type="submit"] strong, a[role="button"] strong, p.learn-more a strong, .button strong, .vc-pm-button strong, .vc-pm-advanced-button strong, button em, input[type="button"] em, input[type="submit"] em, a[role="button"] em, p.learn-more a em, .button em, .vc-pm-button em, .vc-pm-advanced-button em, button i, input[type="button"] i, input[type="submit"] i, a[role="button"] i, p.learn-more a i, .button i, .vc-pm-button i, .vc-pm-advanced-button i {
 	    -webkit-transition: all 0.3s ease-in-out;
@@ -2752,8 +2664,8 @@ img {
 	  button i, input[type="button"] i, input[type="submit"] i, a[role="button"] i, p.learn-more a i, .button i, .vc-pm-button i, .vc-pm-advanced-button i {
 	    font-style: normal; }
 	  button:hover, input[type="button"]:hover, input[type="submit"]:hover, a[role="button"]:hover, p.learn-more a:hover, .button:hover, .vc-pm-button:hover, .vc-pm-advanced-button:hover {
-	    border-color: #0e5669;
-	    background-color: #e9f0ee; }
+	    border-color: #be0000;
+	    background-color: #be0000; }
 	    button:hover strong, input[type="button"]:hover strong, input[type="submit"]:hover strong, a[role="button"]:hover strong, p.learn-more a:hover strong, .button:hover strong, .vc-pm-button:hover strong, .vc-pm-advanced-button:hover strong, button:hover em, input[type="button"]:hover em, input[type="submit"]:hover em, a[role="button"]:hover em, p.learn-more a:hover em, .button:hover em, .vc-pm-button:hover em, .vc-pm-advanced-button:hover em, button:hover i, input[type="button"]:hover i, input[type="submit"]:hover i, a[role="button"]:hover i, p.learn-more a:hover i, .button:hover i, .vc-pm-button:hover i, .vc-pm-advanced-button:hover i {
 	      color: #1db2da; }
 
@@ -2959,15 +2871,15 @@ img {
 
 	button[type=submit], button.inf-button, .col .lgm-optin button[type=submit], .col .lgm-optin input[type=submit] {
 	  vertical-align: middle;
-	  color: #24231f;
+	  color: #FFFFFF;
 	  padding-top: 0.2em;
 	  padding-bottom: 0.2em;
-	  text-transform: uppercase;
 	  height: 40px;
 	  font-size: 18px;
 	  text-align: center; }
 	  button[type=submit]:hover, button.inf-button:hover, .col .lgm-optin button[type=submit]:hover, .col .lgm-optin input[type=submit]:hover {
-	    background-color: #faa622; }
+	    background-color: #be0000;
+	    color: #FFFFFF; }
 
 	a.vc-pm-button, a.vc-pm-advanced-button, .site-content a[role=button], .site-content button, .site-content a.lgm-popup-button, input[type="button"], input[type="reset"], input[type="submit"] {
 	  padding: 17px 35px 15px 25px;
@@ -3029,7 +2941,7 @@ img {
 	button[type=submit], button.inf-button {
 	  padding: 0 40px;
 	  height: 48px;
-	  background: url("../img/arrow-indent-left-black.png") #fbb03b center left no-repeat; }
+	  background: url("../img/arrow-indent-left-black.png") #be0000 center left no-repeat; }
 
 	a.vc-pm-button.read-more:hover {
 	  border-color: white;
@@ -3074,16 +2986,7 @@ img {
 	  a.vc-pm-button {
 	    font-size: 1em;
 	    padding: 15px 25px 15px 15px; } }
-	a.vc-pm-button, a.vc-pm-advanced-button, .site-content a[role=button], .site-content button, .site-content a.lgm-popup-button, input[type="button"], input[type="reset"], input[type="submit"], a.vc-pm-button strong.button-text, a.vc-pm-advanced-button strong.button-text, .site-content a[role=button] strong.button-text, .site-content button strong.button-text, .site-content a.lgm-popup-button strong.button-text, input[type="button"] strong.button-text, input[type="reset"] strong.button-text, input[type="submit"] strong.button-text, a.vc-pm-button a, a.vc-pm-advanced-button a, .site-content a[role=button] a, .site-content button a, .site-content a.lgm-popup-button a, input[type="button"] a, input[type="reset"] a, input[type="submit"] a, p.learn-more strong.button-text, a.button strong.button-text, a.vc-pm-button.read-more strong, p.learn-more strong, a.button strong, a.vc-pm-button.read-more em.button-secondary-text, p.learn-more em.button-secondary-text, a.button em.button-secondary-text, .col h1, .col h2, .col h3, label, legend, fieldset, .home-masthead-callout .home-masthead-callout-inner h1 {
-	  font-family: "Open Sans", "Helvetica", sans-serif; }
-
-	button[type=submit], button.inf-button, .col .lgm-optin button[type=submit], .col .lgm-optin input[type=submit], p, blockquote p, .entry-content table, .comment-content table, .archive-title, .page-title, .entry-content th, .comment-content th, ol, ul, dl, address, .wpb_accordion_content, .wpb_accordion_content p, .col .lgm-optin .optin-copy p, .col .lgm-optin .optin-copy .optin-copy-description, html body, img, .col h4, .col h5, .col h6, input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], input[type="date"], textarea, select, .col .lgm-optin .optin-copy-headline {
-	  font-family: "Nunito", "Helvetica", sans-serif; }
-
-	p, blockquote p, .entry-content table, .comment-content table, .archive-title, .page-title, .entry-content th, .comment-content th, ol, ul, dl, address, .wpb_accordion_content, .wpb_accordion_content p, .col .lgm-optin .optin-copy p, .col .lgm-optin .optin-copy .optin-copy-description, .col h1, .col h2, .col h3, .col h4, .col h5, .col h6, label {
-	  -webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale; }
-
+	
 	.col h6, .site-content .social-panel p {
 	  -webkit-font-smoothing: subpixel-antialiased;
 	  -moz-osx-font-smoothing: auto; }
@@ -3093,9 +2996,6 @@ img {
 	  font-size: 16px;
 	  line-height: 1.6;
 	  margin-bottom: 1.2em; }
-
-	html body {
-	  font-size: 12px; }
 
 	.site-content article {
 	  margin-bottom: 0; }
@@ -3526,10 +3426,6 @@ img {
 	.tagcloud a {
 	  font-family: "Open Sans", "Helvetica", sans-serif; }
 
-	#calendar_wrap #wp-calendar caption, #calendar_wrap #wp-calendar tfoot, #calendar_wrap #wp-calendar tbody {
-	  font-size: 1.3rem;
-	  font-size: 13px;
-	  font-family: "Open Sans", "Helvetica", sans-serif; }
 	#calendar_wrap #wp-calendar thead tr th {
 	  font-size: 1.2rem;
 	  font-size: 12px;
@@ -3986,7 +3882,7 @@ img {
 	        vertical-align: middle;
 	        color: #000000; }
 	      #footer_container .site-footer.row #text-4 a.foot-social-ico:hover {
-	        background-color: #faa622; }
+	        background-color: #be0000; }
 	  #footer_container .credits.row {
 	    padding: 20px 0; }
 	    #footer_container .credits.row p {
@@ -4008,7 +3904,7 @@ img {
 	  width: 25%;
 	  text-align: center;
 	  height: 48px;
-	  background: url("../img/arrow-indent-left-black.png") #fbb03b center left no-repeat; }
+	  background: #be0000 ;}
 	.col .lgm-optin .optin-form {
 	  margin-top: 0;
 	  padding: 0; }
@@ -4044,7 +3940,7 @@ img {
 	    max-height: 250px; }
 
 	.col .lgm-optin2 button[type=submit], .col .lgm-optin2 input[type=submit] {
-	  background: url("../img/arrow-indent-left-dark-gray.png") #fbb03b center left no-repeat; }
+	  background: url("../img/arrow-indent-left-dark-gray.png") #be0000 center left no-repeat; }
 	.col .lgm-optin2 .optin-form {
 	  margin-top: 20px;
 	  margin-bottom: 0; }

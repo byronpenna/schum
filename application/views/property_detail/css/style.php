@@ -388,9 +388,13 @@ label{
 .contenedor-cubos article{
 	display: inline-block;
 	vertical-align: top;
-	margin-left:25px;
-	width: 30%;
-	height: 130px;
+	margin-left:5px;
+	width: 32%;
+	height: 150px;
 	padding:0px;
+	padding-top:15px;
 }
 
+#virtualTourBlock p {
+	font-size:1.5em;
+}

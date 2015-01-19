@@ -593,10 +593,10 @@ iframe[name="f3d7c73d9c"]{
 	}
 	/*la letra pequeña*/
 	#openHouseBlock p {
-		font-size: 0.8em !important;
+		font-size: 1.2em !important;
 	}
 	#sheetBlock p {
-		font-size: 0.8em !important;
+		font-size: 1.2em !important;
 	}
 }
 
@@ -658,7 +658,7 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	#virtualTourBlock p{
-        font-size: 0.7em;
+        font-size: 1.5em;
     }
 /*Description*/
 
@@ -1007,7 +1007,7 @@ iframe[name="f3d7c73d9c"]{
 		}
 
 		#virtualTourBlock p{
-			font-size: 0.5em;
+			font-size: 1.2em;
 		}
 
 		.dataDescription h2{
@@ -1051,7 +1051,7 @@ iframe[name="f3d7c73d9c"]{
     }
     	/*Agent for this listings*/
 		.titulo h2{
-			font-size: 1em;
+			font-size: 1.8em;
 		}
 		.agent{
 			margin: 10px -10% -10%;
@@ -1062,27 +1062,27 @@ iframe[name="f3d7c73d9c"]{
 
 		/*name*/
 		.contactAgentText h2{
-			font-size: 1em;
+			font-size: 1.7em;
             padding-top: 5%
 		}
 
 		/*cargo*/
 		.contactAgentText h3{
-			font-size: 0.7em;
+			font-size: 1.5em;
 		}
         .inform{
-            font-size: 0.7em;
+            font-size: 1.2em;
         }
 		/*p agent*/
 		.contactAgentText p{
-			font-size: 0.6em;
+			font-size: 1.5em;
 		}
 		/*read more*/
 		.contactAgentText > .row:nth-child(5){
 			margin-top: 3%;
 		}
         .readmore{
-            font-size: 0.7em;
+            font-size: 1.2em;
             /*width: 75px;*/
         }
 
@@ -1124,7 +1124,7 @@ iframe[name="f3d7c73d9c"]{
 		/*form*/
 
 		.freeEbookSection > .row:nth-child(2){
-			margin-top: 5%;			
+			margin-top: 1%;			
 		}
 		.privacyFreeBook{
 			margin-top: 5%;
@@ -1174,7 +1174,7 @@ iframe[name="f3d7c73d9c"]{
 }	
 @media(min-width:1200px){
 	.contactAgentText p{
-		font-size: 1em;
+		font-size: 1.7em;
 	}
 	.libro{
 		width: 4em;
@@ -1304,7 +1304,7 @@ iframe[name="f3d7c73d9c"]{
 			margin-top: 3%;
 		}
         .readmore{
-            font-size: 0.9em;
+            font-size: 1.2em;
             width: 100px;
         }
 
