@@ -51,7 +51,7 @@ class Indexm  extends Padrem
 					<div class='col-md-6 col-lg-6'>
 						<a href='".$homeData->home_buyer."' target='_blank' >
 							<div class='col-lg-12 boxBuySell ' >
-								<div class='row' id='boxBuySell0' style='background:url(".$img.")'>
+								<div class='row' id='boxBuySell0' style='background:url(".$img."); background-size: 100% 100%;'>
 									<h2 class='textBuySellerBox text-center'>Home buyers</h2>
 								</div>
 							</div>
@@ -63,7 +63,7 @@ class Indexm  extends Padrem
 					<div class='col-md-6 col-lg-6'>
 						<a href='".$homeData->homeSeller."' target='_blank' >
 							<div class='col-lg-12 boxBuySell'>
-								<div class='row' id='boxBuySell2' style='background:url(".$img.")' >
+								<div class='row' id='boxBuySell2' style='background:url(".$img."); background-size: 100% 100%;' >
 									<h2 class='textBuySellerBox text-center'>Home sellers</h2>
 								</div>
 							</div>	
