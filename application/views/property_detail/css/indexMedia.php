@@ -104,6 +104,10 @@
 		.navSlide{
 			width:7%;
 		}
+
+		.iframeVirtual{
+			height: 640px !important;
+		}
 		
 }
 @media(min-width:768px) and (max-width: 799px){
@@ -223,7 +227,7 @@
 
 
 		.iframeVirtual{
-			height: 360px !important; 
+			height: 500px !important; 
 		}	
 
 
@@ -622,7 +626,7 @@ iframe[name="f3d7c73d9c"]{
 		font-size: 0.65em !important;
 	}
 	.iframeVirtual{
-		height: 450px !important; 
+		height: 640px !important; 
 	}
 }
 
@@ -648,7 +652,7 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	.iframeVirtual{
-		height: 500px !important; 
+		height: 750px !important; 
 	}
 }
 
@@ -672,6 +676,8 @@ iframe[name="f3d7c73d9c"]{
 	#sheetBlock p {
 		font-size: 1.2em !important;
 	}
+
+
 }
 
 @media(min-width:1501px) and (max-width: 1999px){
@@ -1261,7 +1267,7 @@ iframe[name="f3d7c73d9c"]{
 		font-size: 0.8em;
 	}
 	.iframeVirtual{
-		height: 600px !important; 
+		height: 850px !important; 
 	}
 }
 @media(min-width:1400px){
