@@ -28,9 +28,10 @@
 	  				clearInterval(interval);
 	  				divInputs 	= 	$(this).parents(".casaNewsToMarket").find(".sourceImageNewsToMarket");
 	  				selector 	= 	$(this);
+	  				slideNewsToMarket(divInputs,selector);
 	  				interval 	= 	setInterval(function(){
 										slideNewsToMarket(divInputs,selector);
-									}, 2000 );
+									}, 3000 );
 	  			});
 	 			$(document).on("mouseleave",".imgNewsToMarket",function(){
 	 				clearInterval(interval);
