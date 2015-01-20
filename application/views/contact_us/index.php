@@ -48,7 +48,7 @@
 				            <form>
 					            <legend>CONTACT</legend>
 					            <p>
-						            To Contact Us Directly, Use the following information.
+						            To Contact Us Directly, Use the following information.<br>
 						            <b>General Inquiries:</b>
 						            <br>
 						            <a href="mailto:info@driventofinish.com">info@driventofinish.com</a>
