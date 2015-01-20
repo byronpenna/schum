@@ -507,7 +507,7 @@ class Padrem extends CI_Model
 		`city`.`exp_valor`
 	) AS `cityTown`,
 	`list`.`exp_valor` AS `listPrice`,
-	'1' AS `livingAreaFit`,
+	living.exp_valor AS `livingAreaFit`,
 		IF (
 		(
 			isnull(`sqft`.`exp_valor`)
@@ -871,6 +871,18 @@ LEFT JOIN (
 		)
 ) houseDescription
 ON houseDescription.homeId = streetNumber.exp_id
+LEFT JOIN (
+	SELECT
+		`crm_exp_expediente`.`exp_id` AS `homeId`,
+		`crm_exp_expediente`.`exp_valor` 
+	FROM
+		`crm_exp_expediente`
+	WHERE
+		(
+			`crm_exp_expediente`.`exp_atr_id` = 4007
+		)
+) living
+ON living.homeId = streetNumber.exp_id 
 lEFT JOIN (
 	SELECT numImage.idVivienda,COUNT(numImage.idVivienda) AS numFotos
 	FROM (
