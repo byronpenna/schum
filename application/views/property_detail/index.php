@@ -218,7 +218,7 @@
 							<article style="background:#be0000;" class="cubos-colores">
 								<a href=<?php echo "'".site_url("calendar/index/".$homeId." ")."'" ?> >
 									<div class=" blockDescriptions" id='openHouseBlock'>
-										<div class=" text-center imgBlockDescription" style="margin-top:8px;">
+										<div class=" text-center imgBlockDescription">
 											<i class="fa fa-calendar icon"></i>	
 										</div>
 										

@@ -155,6 +155,9 @@ label{
 		.imgBlockDescription img{
 			width: 10%;
 		}
+		.imgBlockDescription{
+			margin: 10px;
+		}
 		.blockDescriptions{
 			padding-left: 20%;
 			padding-right: 20%;			
@@ -169,7 +172,7 @@ label{
 		.txtBlockDescription p {
 			color: #000;
 			text-transform: uppercase;
-			text-decoration: underline;
+			text-decoration: none;
 			font-family: 'proximaNovaSemiBold';
 		}
 		#openHouseTxtBlock p{
@@ -397,4 +400,9 @@ label{
 
 #virtualTourBlock p {
 	font-size:1.5em;
+}
+
+
+.titleBlockDescription{
+	font-size:1.8em;
 }

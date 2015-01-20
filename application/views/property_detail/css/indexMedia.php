@@ -660,10 +660,10 @@ iframe[name="f3d7c73d9c"]{
 	}
 	/*los titulos*/
 	#openHouseBlock h2{
-		font-size: 1.35em !important;
+		font-size: 1.5em !important;
 	}
 	#sheetBlock h2 {
-		font-size: 1.35em !important;
+		font-size: 1.5em !important;
 	}
 	/*la letra pequeña*/
 	#openHouseBlock p {
@@ -1077,7 +1077,7 @@ iframe[name="f3d7c73d9c"]{
 		}		
 
 		#virtualTourBlock h2{
-			font-size: 1em;
+			font-size: 1.5em;
 		}
 
 		#virtualTourBlock p{
