@@ -1,6 +1,6 @@
 .iframeVirtual{
 	width: 100%;
-	min-height: 500px;
+	height: 700px;
 }
 #imgModal{
 	width:100%;
