@@ -1,6 +1,6 @@
 .iframeVirtual{
 	width: 100%;
-	min-height: 500px;
+	height: 700px;
 }
 #imgModal{
 	width:100%;
@@ -379,4 +379,22 @@ label{
 /*################################*/
 .txtSubtitle{
 	color: black !important;
+}
+.contenedor-cubos{
+	background:none;
+	width: 100%;
+}
+
+.contenedor-cubos article{
+	display: inline-block;
+	vertical-align: top;
+	margin-left:5px;
+	width: 32%;
+	height: 150px;
+	padding:0px;
+	padding-top:15px;
+}
+
+#virtualTourBlock p {
+	font-size:1.5em;
 }

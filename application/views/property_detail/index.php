@@ -113,7 +113,6 @@
 		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
 			<?php $this->load->view("parts/menushow.php") ?>
 		</div>
-		
 		<div class="row container-fluid bodySection">
 			<!-- ############################## -->
 			<!-- <div class="row">
@@ -211,29 +210,28 @@
 								<?php echo $house->description; ?>
 							</p>
 						</div>
-			<div class="row container-fluid descriptionSection ">
-				<div class="col-xs-12">
-					<div class="col-lg-12 col-sm-12 col-md-12">
+
+						<article class="contenedor-cubos col-md-12">
 						<?php
 							if($estadoCalendar){ 
 						?>
-							<div class="col-xs-6">
+							<article style="background:#be0000;" class="cubos-colores">
 								<a href=<?php echo "'".site_url("calendar/index/".$homeId." ")."'" ?> >
-									<div class="row container-fluid blockDescriptions" id='openHouseBlock'>
-										<div class="row container-fluid text-center imgBlockDescription">
+									<div class=" blockDescriptions" id='openHouseBlock'>
+										<div class=" text-center imgBlockDescription" style="margin-top:8px;">
 											<i class="fa fa-calendar icon"></i>	
 										</div>
 										
-											<div class="row container-fluid titleBlockDescription">
+											<div class=" titleBlockDescription">
 												<h2>OPEN HOUSE</h2>
 											</div>
 
-										<div class="row container-fluid txtBlockDescription text-center" id='openHouseTxtBlock'>
+										<div class=" txtBlockDescription text-center" id='openHouseTxtBlock'>
 											<p> Sept, 20 2014 2:00PM - 4:00PM</p>
 										</div>
 									</div>
 								</a>
-							</div>
+							</article>
 						<?php 
 							}
 						?>
@@ -241,45 +239,44 @@
 									
 							if($house->pdfFeature != "#"){
 						?>
-						<div class="col-xs-6">
-							<div class="row container-fluid blockDescriptions" id='sheetBlock'>
-
+							<article class=" blockDescriptions cubos-colores" id='sheetBlock' style="background:#314782;">
+									<br>
 									<a href=<?php echo "'".$house->pdfFeature."'" ?>  >
-										<div class="row container-fluid text-center imgBlockDescription">
+										<div class=" text-center imgBlockDescription">
 											<i class="fa fa-file-pdf-o icon"></i>
 										</div>
-										<div class="row container-fluid titleBlockDescription">
+										<div class=" titleBlockDescription">
 											<h2>Pdf feature sheet</h2>
 										</div>
-										<div class="row container-fluid txtBlockDescription text-center">
+										<div class=" txtBlockDescription text-center">
 											<p> click here to download</p>
 										</div>
 									</a>
 								
-							</div>
-						</div>
+							</article>
 						<?php 
 							}
 						?>
 						<?php 
 							if($house->videoTour != "#"){
 						?>
-							<div class="row container-fluid blockDescriptions" id='virtualTourBlock'>
-								<div class="row container-fluid text-center imgBlockDescription">
+							<article class=" blockDescriptions cubos-colores" id='virtualTourBlock' style="background:#314782;">
+								<br>
+								<div class=" text-center imgBlockDescription">
 									<i class="fa fa-video-camera icon"></i>	
 								</div>
-								<div class="row container-fluid titleBlockDescription">
+								<div class=" titleBlockDescription">
 									<h2>Virtual tour</h2>
 								</div>
-								<div class="row container-fluid txtBlockDescription text-center">
+								<div class=" txtBlockDescription text-center">
 									<p> Play now</p>
 								</div>
-							</div>
+							</article>
 						<?php 
 							}
 						?>
-					</div>
-				</div>
+					</article>
+			<div class="row container-fluid descriptionSection ">
 				<h2>key features</h2>
 				<div class="col-lg-12 col-sm-12 col-md-12 dataDescription">
 					<!-- <div class="row container-fluid">

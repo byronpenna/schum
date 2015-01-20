@@ -59,7 +59,7 @@
 			left:-25px;
 		}
 
-
+		
 }
 @media(min-width:767px) and (max-width: 799px){
 	.navControlDer{
@@ -173,6 +173,17 @@
 		.navControlDer{
 			left:90px;
 		}
+
+		.iframeVirtual{
+			height: 508px !important;
+		}
+
+
+		.contenedor-cubos article{
+			width: 100%;
+			font-size: 1.5em;
+			margin-top:10px;
+		}
 }
 @media(min-width:600px) and (max-width: 699px){
 .fbbox iframe{
@@ -209,6 +220,18 @@
 		.navControlDer{
 			left:70px;
 		}	
+
+
+		.iframeVirtual{
+			height: 360px !important; 
+		}	
+
+
+		.contenedor-cubos article{
+			width: 100%;
+			font-size: 1.5em;
+			margin-top:10px;
+		}
 }
 @media(min-width:500px) and (max-width: 599px){
 .fbbox iframe{
@@ -242,6 +265,16 @@
 		margin-left: 35%;
 		margin-top: -22%;
 		}	
+
+		.iframeVirtual{
+			height: 490px !important;
+		}
+
+		.contenedor-cubos article{
+			width: 100%;
+			font-size: 1.5em;
+			margin-top:10px;
+		}
 }
 @media(min-width:400px) and (max-width: 499px){
 .fbbox iframe{
@@ -274,8 +307,27 @@
 		font-size: 1.5em;
 		margin-left: 27%;
 		margin-top: -22%;
+		}
+		.iframeVirtual{
+			height: 300px !important;
 		}	
+
+		.contenedor-cubos article{
+			width: 100%;
+			font-size: 1.5em;
+			margin-top:10px;
+		}
 }	
+
+
+	@media(min-width:300px) and (max-width: 399px){
+		.contenedor-cubos article{
+			width: 100%;
+			font-size: 1.5em;
+			margin-top:10px;
+		}
+	}
+
 @media(min-width:300px) and (max-width: 999px){
 	.fbbox iframe{
 		display: none;
@@ -291,6 +343,9 @@
 	}
 	.navSlide{
 		width:6%;
+	}
+	.iframeVirtual{
+		height: 260px;
 	}
 }
 @media(min-width:1000px) and (max-width: 1099px){
@@ -336,6 +391,9 @@
 	.navControl{
 		left:6.5px;
 	}
+	.iframeVirtual{
+		height: 500px !important; 
+	}
 }
 @media(min-width:1200px) and (max-width: 1299px){
 	.fbbox iframe{
@@ -375,6 +433,9 @@
 		-moz-transform:scale(0.75,0.75);
 		-webkit-transform:scale(0.75,0.75);
 }
+.iframeVirtual{
+		height: 600px !important; 
+	}
 }
 @media(min-width:1400px) and (max-width: 1599px){
 	.fbbox iframe{
@@ -450,6 +511,9 @@
 		-moz-transform:scale(1.15,1.15);
 		-webkit-transform:scale(1.15,1.15);
 }
+	.iframeVirtual{
+		height: 1200px !important; 
+	}
 }
 @media(min-width:2200px) and (max-width: 2399px){
 	.fbbox iframe{
@@ -471,6 +535,9 @@
 		-moz-transform:scale(1.25,1.25);
 		-webkit-transform:scale(1.25,1.25);
 }
+	.iframeVirtual{
+		height: 1100px !important; 
+	}
 }
 @media(min-width:2400px) and (max-width: 2599px){
 	.fbbox iframe{
@@ -554,6 +621,9 @@ iframe[name="f3d7c73d9c"]{
 	#openHouseBlock p {
 		font-size: 0.65em !important;
 	}
+	.iframeVirtual{
+		height: 450px !important; 
+	}
 }
 
 @media(min-width:993px) and (max-width: 1199px){
@@ -576,6 +646,10 @@ iframe[name="f3d7c73d9c"]{
 	#sheetBlock p {
 		font-size: 0.75em !important;
 	}
+
+	.iframeVirtual{
+		height: 500px !important; 
+	}
 }
 
 @media(min-width:1200px) and (max-width: 1500px){
@@ -593,10 +667,10 @@ iframe[name="f3d7c73d9c"]{
 	}
 	/*la letra pequeña*/
 	#openHouseBlock p {
-		font-size: 0.8em !important;
+		font-size: 1.2em !important;
 	}
 	#sheetBlock p {
-		font-size: 0.8em !important;
+		font-size: 1.2em !important;
 	}
 }
 
@@ -658,7 +732,7 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	#virtualTourBlock p{
-        font-size: 0.7em;
+        font-size: 1.5em;
     }
 /*Description*/
 
@@ -976,10 +1050,10 @@ iframe[name="f3d7c73d9c"]{
             font-size: 2em !important;
         }
         .boxSummary label{
-            font-size: 0.8em;
+            font-size: 1.2em;
         }
         .boxSummary p{
-            font-size: 0.8em;
+            font-size: 1.2em;
         }
         .padd{
             padding-top: 2em;    
@@ -1007,7 +1081,7 @@ iframe[name="f3d7c73d9c"]{
 		}
 
 		#virtualTourBlock p{
-			font-size: 0.5em;
+			font-size: 1.2em;
 		}
 
 		.dataDescription h2{
@@ -1015,7 +1089,7 @@ iframe[name="f3d7c73d9c"]{
 		}
 
 		.dataDescription p{
-			font-size: 0.9em;
+			font-size: 1.5em;
 		}
         /*Key Feature*/
         .keyFeatureBlock h2{
@@ -1051,7 +1125,7 @@ iframe[name="f3d7c73d9c"]{
     }
     	/*Agent for this listings*/
 		.titulo h2{
-			font-size: 1em;
+			font-size: 1.8em;
 		}
 		.agent{
 			margin: 10px -10% -10%;
@@ -1062,27 +1136,27 @@ iframe[name="f3d7c73d9c"]{
 
 		/*name*/
 		.contactAgentText h2{
-			font-size: 1em;
+			font-size: 1.7em;
             padding-top: 5%
 		}
 
 		/*cargo*/
 		.contactAgentText h3{
-			font-size: 0.7em;
+			font-size: 1.5em;
 		}
         .inform{
-            font-size: 0.7em;
+            font-size: 1.2em;
         }
 		/*p agent*/
 		.contactAgentText p{
-			font-size: 0.6em;
+			font-size: 1.5em;
 		}
 		/*read more*/
 		.contactAgentText > .row:nth-child(5){
 			margin-top: 3%;
 		}
         .readmore{
-            font-size: 0.7em;
+            font-size: 1.2em;
             /*width: 75px;*/
         }
 
@@ -1124,7 +1198,7 @@ iframe[name="f3d7c73d9c"]{
 		/*form*/
 
 		.freeEbookSection > .row:nth-child(2){
-			margin-top: 5%;			
+			margin-top: 1%;			
 		}
 		.privacyFreeBook{
 			margin-top: 5%;
@@ -1145,42 +1219,49 @@ iframe[name="f3d7c73d9c"]{
 
 	/*Calculator*/
 		.calcu h4{
-			font-size: 1em;
+			font-size: 1.5em;
 		}
 		.calculatorSection{
 			margin-top: 7%;
 		}
 
 		.calculadora label{
-			font-size: 0.8em;			
+			font-size: 1.4em;			
 		}
 
 		.calculadora button, input{
-			font-size: 1em !important;
+			font-size: 1.4em !important;
 		}
 /*
 		.butto{
 			width: 6em;
 		}
 */
+
+	.iframeVirtual{
+		height: 520px;
+	}
 }
 @media(min-width:1130px){
     .boxSummary label{
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
     .boxSummary p{
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
 }	
 @media(min-width:1200px){
 	.contactAgentText p{
-		font-size: 1em;
+		font-size: 1.7em;
 	}
 	.libro{
 		width: 4em;
 	}
 	.freeEbookSection p{
 		font-size: 0.8em;
+	}
+	.iframeVirtual{
+		height: 600px !important; 
 	}
 }
 @media(min-width:1400px){
@@ -1304,7 +1385,7 @@ iframe[name="f3d7c73d9c"]{
 			margin-top: 3%;
 		}
         .readmore{
-            font-size: 0.9em;
+            font-size: 1.2em;
             width: 100px;
         }
 
@@ -1533,7 +1614,11 @@ iframe[name="f3d7c73d9c"]{
 			width: 6em;
 		}
 */
-}
+
+		.iframeVirtual{
+			height: 780px !important; 
+		}
+	}
 
 @media(min-width:2000px){
     .jscarousal{
@@ -1785,6 +1870,9 @@ iframe[name="f3d7c73d9c"]{
 			width: 6 !important;
 		}
 */
+		.iframeVirtual{
+			height: 1000px !important; 
+		}
 }
 @media(min-width:2400px){
 	body{
