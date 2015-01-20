@@ -660,7 +660,7 @@ iframe[name="f3d7c73d9c"]{
 
 	/*los iconos de los cuadritos*/
 	.imgBlockDescription > i{
-		font-size: 1.4em !important;
+		font-size: 1em !important;
 	}
 	/*los titulos*/
 	#openHouseBlock h2{
@@ -671,10 +671,11 @@ iframe[name="f3d7c73d9c"]{
 	}
 	/*la letra pequeña*/
 	#openHouseBlock p {
-		font-size: 1.2em !important;
+		font-size: 0.8em !important;
+		color:#FFFFFF;
 	}
 	#sheetBlock p {
-		font-size: 1.2em !important;
+		font-size: 0.8em !important;
 	}
 
 
@@ -1047,13 +1048,13 @@ iframe[name="f3d7c73d9c"]{
             padding-top: 15px !important;
         }
         .boxSummary{
-            padding-top: 25px;
+            /*padding-top: 25px;*/
         }
 		.summarySection h2{
 			/*font-size: 1.2em;*/
 		}
         .listPriceSummary{
-            font-size: 2em !important;
+            font-size: 1.3em !important;
         }
         .boxSummary label{
             font-size: 1.2em;
@@ -1087,15 +1088,16 @@ iframe[name="f3d7c73d9c"]{
 		}
 
 		#virtualTourBlock p{
-			font-size: 1.2em;
+			font-size: 0.8em;
 		}
 
 		.dataDescription h2{
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 
 		.dataDescription p{
-			font-size: 1.5em;
+			font-size: 1em;
+			text-align: center;
 		}
         /*Key Feature*/
         .keyFeatureBlock h2{
@@ -1131,7 +1133,7 @@ iframe[name="f3d7c73d9c"]{
     }
     	/*Agent for this listings*/
 		.titulo h2{
-			font-size: 1.8em;
+			font-size: 1.5em;
 		}
 		.agent{
 			margin: 10px -10% -10%;
@@ -1142,16 +1144,15 @@ iframe[name="f3d7c73d9c"]{
 
 		/*name*/
 		.contactAgentText h2{
-			font-size: 1.7em;
-            padding-top: 5%
+			font-size: 1.2em;
 		}
 
 		/*cargo*/
 		.contactAgentText h3{
-			font-size: 1.5em;
+			font-size: 1em;
 		}
         .inform{
-            font-size: 1.2em;
+            font-size: 1em;
         }
 		/*p agent*/
 		.contactAgentText p{
@@ -1159,15 +1160,15 @@ iframe[name="f3d7c73d9c"]{
 		}
 		/*read more*/
 		.contactAgentText > .row:nth-child(5){
-			margin-top: 3%;
+			margin-top: 0%;
 		}
         .readmore{
-            font-size: 1.2em;
+            font-size: 1em;
             /*width: 75px;*/
         }
 
 		.agentSection > .col-sm-12:nth-child(2){
-			margin-top: 3%;
+			margin-top: 0px;
 		}
 
 	/*Download free ebook*/
@@ -1225,18 +1226,18 @@ iframe[name="f3d7c73d9c"]{
 
 	/*Calculator*/
 		.calcu h4{
-			font-size: 1.5em;
+			font-size: 1em;
 		}
 		.calculatorSection{
 			margin-top: 7%;
 		}
 
 		.calculadora label{
-			font-size: 1.4em;			
+			font-size: 1em;			
 		}
 
 		.calculadora button, input{
-			font-size: 1.4em !important;
+			font-size: 1em !important;
 		}
 /*
 		.butto{
@@ -1250,15 +1251,15 @@ iframe[name="f3d7c73d9c"]{
 }
 @media(min-width:1130px){
     .boxSummary label{
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .boxSummary p{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }	
 @media(min-width:1200px){
 	.contactAgentText p{
-		font-size: 1.7em;
+		font-size: 1.5em;
 	}
 	.libro{
 		width: 4em;

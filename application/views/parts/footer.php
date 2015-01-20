@@ -1,6 +1,6 @@
-<div id="footer_container" class="container-fluid">
+<div id="footer_container" >
 
-	<footer class="site-footer row" role="contentinfo">
+	<footer class="site-footer" >
 
 		<div class="inner">
 
@@ -60,13 +60,13 @@
 <!-- finaliza tweet -->
 <div class="tweets-meta col col-md-12">
 
-	<img class="alignleft" src="http://pbs.twimg.com/profile_images/2639578145/037ceec6e86c795ebc5edddcae07faf8_normal.jpeg">
-		<strong class="real-name" style="vertical-align:top;">Alina Schumacher</strong>
-			<a href="https://www.twitter.com/Alina_SR">@Alina_SR</a>
+	<img class="alignleft"  src="https://pbs.twimg.com/profile_images/2597234936/3aovw5e38hcvo67jmfkx_normal.jpeg">
+		<strong class="real-name" style="vertical-align:top;">Schumacher Realty</strong>
+			<a href="https://www.twitter.com/Alina_SR">@SchumacherRlty</a>
 
 
 
-	<p class="twitget-user-description" > <br>Child of God, Wife, #HomeschoolMom, #WorshipLeader, #RealEstate Broker & Coach, Certified #JohnMaxwell Speaker, Visionary, #Entrepreneur</p>
+	<p class="twitget-user-description" > <br>We love helping people to successfuly reach their #goals in buying and selling #RealEstate in Manitoba!</p>
 </div>
 <script type="text/javascript">
 	jQuery(document).ready(function() { 
@@ -84,7 +84,7 @@
 			<h3 class="widget-title connectFooter">Connect With Us</h3>		
 			<div class="textwidget"><div style="padding-top:10px;"></div>
 				<span style="float:right;">
-					<a class="foot-social-ico" id='fbFooter' href=<?php echo "'".$homeData->facebook."'" ?> target="_blank" style="color:red;">
+					<a class="foot-social-ico" id='fbFooter' href=<?php echo "'".$homeData->facebook."'" ?> target="_blank">
 						<i class="fa fa-facebook"></i>
 					</a>
 					<a class="foot-social-ico" id='inFooter' href=<?php echo "'".$homeData->linkedIn."'" ?> target="_blank">
@@ -110,7 +110,7 @@
 
 </footer><!-- /.site-footer.row -->
 
-<div class="credits row">
+<div class="credits">
 	<address>© 2015 Schumacher Realty Ltd.</address>
 	<!-- <address><a class="terms" title="Terms" href="http://alina.peacefulmediadev.com/terms/">Terms of Use &amp; Privacy Policy</a></address> -->
 </div><!-- /.credits -->

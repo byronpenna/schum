@@ -155,9 +155,6 @@ label{
 		.imgBlockDescription img{
 			width: 10%;
 		}
-		.imgBlockDescription{
-			margin: 10px;
-		}
 		.blockDescriptions{
 			padding-left: 20%;
 			padding-right: 20%;			
@@ -170,7 +167,7 @@ label{
 			margin-top: 3%;
 		}
 		.txtBlockDescription p {
-			color: #000;
+			color: #FFFFFF;
 			text-transform: uppercase;
 			text-decoration: none;
 			font-family: 'proximaNovaSemiBold';
@@ -396,13 +393,10 @@ label{
 	height: 150px;
 	padding:0px;
 	padding-top:15px;
+	cursor:pointer;
 }
 
 #virtualTourBlock p {
 	font-size:1.5em;
 }
 
-
-.titleBlockDescription{
-	font-size:1.8em;
-}

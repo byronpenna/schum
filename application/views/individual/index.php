@@ -11,6 +11,14 @@
     			$this->load->view("individual/css/indexMedia.php");
     		?>
     	</style>
+    	<style type="text/css" media="screen">
+    		.amostrar{
+					width:100%;
+					margin-left:0px;
+					z-index:900000000;
+					opacity:1;
+				}
+    	</style>
     	<script type="text/javascript">
 	    	<?php 
 	    		$this->load->view("parts/js/script.php");
@@ -20,10 +28,9 @@
 <body>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<?php $this->load->view("parts/menushow.php") ?>
 		<div class="col-lg-12 paddingNull">
 			<div class="row container-fluid sliderNew">
-				<?php $this->load->view("parts/menu.php") ?>
+				<?php $this->load->view("parts/menushow.php") ?>
 			</div>	
 		</div>
 		<div class="row container-fluid individualSection">
@@ -154,6 +161,7 @@
 				</div>
 			</div>
 		</div>
+		<?php $this->load->view("parts/footer.php") ?>
 	</div>
 </body>
 </html>
