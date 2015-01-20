@@ -252,11 +252,12 @@ body{
     .popUpMap{
     	padding-top: 6%;
     	padding-bottom: 6%;
-    	padding-left: 12%;
+    	padding-left: 25%;
     	padding-right: 6%;
     	text-decoration: none;
     	width: 190px;
     	height: 270px;
+    	overflow:hidden !important;
     	/* width: 590px;
     	height: 300px;
     	margin-left: 50px;
