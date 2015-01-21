@@ -115,7 +115,7 @@ class Property_detailsm extends Padrem
 				foreach ($otherKeys as $key => $value) {		
 					// $keyDiv = $this->getDivKeys($value->exp_valor,$value->atr_nombre);
 					if(!isset($keyDiv[$value->atr_id])){
-						$keyDiv[$value->atr_id] = "<article id='contkey'><h4>".$value->atr_nombre."</h4>
+						$keyDiv[$value->atr_id] = "<article id='contkey'><h4 class='text-center'>".$value->atr_nombre."</h4>
 									<p>".$value->exp_valor;
 					}else{
 						$keyDiv[$value->atr_id] .= ",".$value->exp_valor;
