@@ -24,7 +24,21 @@ class Property_detailsm extends Padrem
 		
 		function getOtherKeysPropertys($homeId){
 			// $sql = "SELECT * FROM shum_tb_keysproperty where exp_id = ".$homeId."";
-			$sql = "SELECT * from schum_tb_opcionesexp where exp_id = ".$homeId." union select * from shum_tb_keysproperty where exp_id = ".$homeId.";";
+			$sql = "SELECT * from 
+				(
+					select 
+					expop_exp_id as exp_id,
+					expop_atr_id as atr_id,
+					atr_nombre,
+					opa_nombre AS exp_valor
+					from crm_expop_expedienteopcion 
+					inner join crm_atr_atributo 
+					on atr_id = expop_atr_id
+					INNER JOIN crm_opa_opcionatr
+					on opa_id = expop_opa_id
+					where expop_exp_id = ".$homeId." 
+				) yeah
+			 union select * from shum_tb_keysproperty where exp_id = ".$homeId.";";
 			$this->db->trans_start();
 			$query = $this->db->query($sql);
 			$this->db->trans_complete();
@@ -70,8 +84,8 @@ class Property_detailsm extends Padrem
 				if($value->nivel == "1" && $value->exp_valor != ""){
 					$keysRooms .= "
 						<article id='contkey'>
-							<h4>".$value->exp_valor."</h4>
-							<p>
+							<h4 class='text-center'>".$value->exp_valor."</h4>
+							<p class='text-center'>
 						";
 					$detalle = true;
 				}	
