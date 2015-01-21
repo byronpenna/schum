@@ -355,7 +355,7 @@ class Property_detailsm extends Padrem
 						FROM crm_documento AS documento
 						LEFT JOIN crm_ambito AS ambito
 						ON  ambito.amb_id = documento.doc_amb_id
-						WHERE ambito.amb_exp_id = ".$homeId." AND documento.doc_descripcion = 'slider-property' 
+						WHERE ambito.amb_exp_id = ".$homeId." and doc_tipo = 'image'
 						ORDER BY documento.doc_orden
 						LIMIT ".$l1.",".$l2."
 						";
