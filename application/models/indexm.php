@@ -101,7 +101,7 @@ class Indexm  extends Padrem
 		function getImagenesNewsToMarket($id){
 			$sql 		= "SELECT 
 								CONCAT(doc_ruta,doc_nombre) AS imagen 
-							FROM crm_documento LEFT JOIN crm_ambito ON amb_id = doc_amb_id WHERE amb_exp_id = ".$id." ";
+							FROM crm_documento LEFT JOIN crm_ambito ON amb_id = doc_amb_id WHERE amb_exp_id = ".$id." and doc_tipo = 'image' ";
 			$imagenes 	= $this->getResulset($sql);
 			$inputs 	= "<div class='sourceImageNewsToMarket'>";
 			foreach ($imagenes as $key => $value) {
