@@ -21,15 +21,7 @@ class Property_detailsm extends Padrem
 			";
 			return $div;
 		}
-		function getArrTitleKey(){
-			$arr = new stdClass();
-			$arr->propertyDescription 	= array(5327,3928,3931,3929);
-			$arr->generalInfo 			= array(3872,3873,3884,3885,3886);
-			$arr->lotInformation 		= array(3933,3934,3935,3936);
-			$arr->taxes 				= array(3938,3939,3940,3941,3942,3943,3944);
-			$arr->remark 				= array(3949,3950,3951,3952,3953,3954,3955,3956,4003,3958,3959,3061);
-			return $arr;
-		}
+		
 		function getOtherKeysPropertys($homeId){
 			// $sql = "SELECT * FROM shum_tb_keysproperty where exp_id = ".$homeId."";
 			$sql = "SELECT * from schum_tb_opcionesexp where exp_id = ".$homeId." union select * from shum_tb_keysproperty where exp_id = ".$homeId.";";
@@ -43,11 +35,11 @@ class Property_detailsm extends Padrem
 
 			$titulo[0] = new stdClass(); 	$titulo[1] = new stdClass(); 
 			$titulo[2] = new stdClass();	$titulo[3] = new stdClass();
-			$titulo[4] = new stdClass();
+			$titulo[4] = new stdClass();	$titulo[5] = new stdClass();
 
 			$titulo[0]->text = "<h2 class='txtSubtitle'>Property description</h2>"; 	$titulo[1]->text = "<h2 class='txtSubtitle'>general info</h2>"; 
 			$titulo[2]->text = "<h2 class='txtSubtitle'>Lot information</h2>";			$titulo[3]->text = "<h2 class='txtSubtitle'>taxes and local improvements</h2>";
-			$titulo[4]->text = "<h2 class='txtSubtitle'>Remarks</h2>";
+			$titulo[4]->text = "<h2 class='txtSubtitle'>Remarks</h2>"; 					$titulo[5]->text = "<h2 class='txtSubtitle'>Interior and Utilities</h2>";
 
 
 			$titulo[0]->estado = false; 	$titulo[1]->estado = false; 
@@ -92,6 +84,16 @@ class Property_detailsm extends Padrem
 				}
 			}
 			return $keysRooms;
+		}
+		function getArrTitleKey(){
+			$arr = new stdClass();
+			$arr->propertyDescription 	= array(5327,3928,3931,3929);
+			$arr->generalInfo 			= array(3872,3873,3884,3885,3886);
+			$arr->lotInformation 		= array(3933,3934,3935,3936);
+			$arr->taxes 				= array(3938,3939,3940,3941,3942,3943,3944);
+			$arr->remark 				= array(3949,3950,3951,3952,3953,3954,3955,3956,4003,3958,3959,3061);
+			$arr->interior 				= array(3964,3965,3967,3968,3969,3970,3971,3972,3973);
+			return $arr;
 		}
 		function getCheckKeys($homeId){
 			// $keys 		= $this->getKeys($homeId);
@@ -154,6 +156,11 @@ class Property_detailsm extends Padrem
 						if( @!isset($variableGay[$value->atr_id]) || @!$variableGay[$value->atr_id] ){
 							$titulo[4]->estado = true;
 							$titulo[4]->text .= $keyDiv[$value->atr_id];
+						}
+					}else if(in_array($value->atr_id,$arr->interior)){
+						if( @!isset($variableGay[$value->atr_id]) || @!$variableGay[$value->atr_id] ){
+							$titulo[5]->estado = true;
+							$titulo[5]->text .= $keyDiv[$value->atr_id];
 						}
 					}
 					$variableGay[$value->atr_id] = true;
