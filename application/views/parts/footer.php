@@ -46,7 +46,7 @@
 					<div class="col col-md-4">
 						<div class="widget-area" role="complementary">
 							<aside id="simple_tweet_widget-2" class="widget simple_tweet_widget">
-								<h3 class="widget-title tituloFooter">
+								<h3 class="widget-title tituloFooter" style="text-align:left;">
 									Latest Tweet
 								</h3>
 
@@ -61,7 +61,7 @@
 <div class="tweets-meta col col-md-12">
 
 	<img class="alignleft"  src="https://pbs.twimg.com/profile_images/2597234936/3aovw5e38hcvo67jmfkx_normal.jpeg">
-		<strong class="real-name" style="vertical-align:top;">Schumacher Realty</strong>
+		<strong class="real-name">Schumacher Realty</strong>
 			<a href="https://www.twitter.com/Alina_SR">@SchumacherRlty</a>
 
 
@@ -80,8 +80,8 @@
 </div>
 <div class="col col-md-4">
 	<div class="widget-area" role="complementary">
-		<aside id="text-4" class="widget widget_text">
-			<h3 class="widget-title connectFooter">Connect With Us</h3>		
+		<aside id="text-4" class="widget widget_text contSociales">
+			<h3 class="widget-title connectFooter" style="text-align:right;">Connect With Us</h3>		
 			<div class="textwidget"><div style="padding-top:10px;"></div>
 				<span style="float:right;">
 					<a class="foot-social-ico" id='fbFooter' href=<?php echo "'".$homeData->facebook."'" ?> target="_blank">
@@ -114,4 +114,5 @@
 	<address>© 2015 Schumacher Realty Ltd.</address>
 	<!-- <address><a class="terms" title="Terms" href="http://alina.peacefulmediadev.com/terms/">Terms of Use &amp; Privacy Policy</a></address> -->
 </div><!-- /.credits -->
+</div>
 </div>

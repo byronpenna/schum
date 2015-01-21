@@ -361,7 +361,8 @@
   padding: 1.875rem 0 0 0; }
 
   #footer_container {
-  width: 100%; }
+  width: 100%; 
+	border-top:0.2em solid #be0000;}
 .site-footer a:focus {
   outline: thin dotted;
   color: black; }
@@ -415,7 +416,7 @@
 			  line-height: 4.3em;
 			  list-style-type: none;
 			  text-align: center;
-			  margin-right: 20px;
+			  margin-right: 8px;
 			  margin-bottom: 16px;
 			  display: inline-block;
 			  border-radius: 50%; }
@@ -485,7 +486,8 @@
     width: 70%;
     float: left;
     font-size: 0.8em;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-align: left; }
     .widget .tweets p.time {
       width: 30%; }
   .widget .tweets .time {
@@ -501,19 +503,22 @@
     font-weight: 400;
     display: block;
     letter-spacing: .01em;
-    color: #cCCCCC; }
+    color: #cCCCCC; 
+	margin-left:60px;
+	margin-top:-50px;}
   .widget .tweets-meta a {
     font-size: 0.8em;
     font-family: "Open Sans", "Helvetica", sans-serif;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-left:60px; }
   .widget .tweets-meta p.twitget-user-description {
     font-family: "Nunito", "Helvetica", sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 300;
     line-height: 1.6;
     clear: both;
-    margin-top: 1em;
-    color: #CCCCCC; }
+    color: #CCCCCC; 
+text-align: left;}
   .widget .tweets-meta img {
     border-radius: 4px;
     margin-right: 10px; }
@@ -559,5 +564,11 @@
           color: #cccccc; }
     #footer_container .credits.row a.terms {
       color: #cccccc; }
+
+      .contSociales a{
+      	background:#CCCCCC;
+      	color:#000000 !important;
+
+      }
 
 
