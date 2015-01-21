@@ -56,7 +56,7 @@ function newMarker(location,data){
 	}
 	var marker = new google.maps.Marker({
 		position: location,
-		title: "casa de prueba",
+		title: "",
 		icon: data.icon
 	});
 	return marker;

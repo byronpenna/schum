@@ -25,10 +25,15 @@
 	  		// mouseover
 	  			var interval;
 	  			$(document).on("mouseover",".imgNewsToMarket",function(){
+					divInputs 	= 	$(this).parents(".casaNewsToMarket").find(".sourceImageNewsToMarket");
+	  				selector 	= 	$(this);
+	  				slideNewsToMarket(divInputs,selector);
+	  			});
+	  			$(document).on("mouseover",".imgNewsToMarket",function(){
 	  				clearInterval(interval);
 	  				divInputs 	= 	$(this).parents(".casaNewsToMarket").find(".sourceImageNewsToMarket");
 	  				selector 	= 	$(this);
-	  				slideNewsToMarket(divInputs,selector);
+	  				// slideNewsToMarket(divInputs,selector);
 	  				interval 	= 	setInterval(function(){
 										slideNewsToMarket(divInputs,selector);
 									}, 3000 );

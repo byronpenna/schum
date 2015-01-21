@@ -293,7 +293,11 @@ class Listingsm extends Padrem
 	function getCasa($homeId){
 		$this->db->trans_start();
 			// $query = $this->db->get_where('shum_tb_house_listing', array('homeId' => $homeId));
-			$query = "SELECT * FROM (".$this->getSqlHouseListing().") houseListing WHERE 'homeId' = ".$homeId." ";
+			$query = "SELECT * FROM (".$this->getSqlHouseListing().") houseListing WHERE homeId = ".$homeId." ";
+			// echo "<pre>";
+			// 	echo $query;
+			// echo "</pre>";
+			$query = $this->db->query($query);
 		$this->db->trans_complete();
 		$retorno = $query->result();
 		return @$retorno[0];
