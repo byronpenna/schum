@@ -699,9 +699,7 @@ LEFT JOIN (
 		WHERE
 			(
 				(`amb`.`amb_com_id` = 17)
-				AND (
-					`doc`.`doc_descripcion` = 'slider-property'
-				)
+				
 			)
 			ORDER BY doc_orden
 			
