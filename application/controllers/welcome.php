@@ -138,19 +138,54 @@ class Welcome extends Padre {
 			$homeData 	= $indexModel->getHomeData();
 			
 			$obj[0] = new stdClass();
-			$obj[0]->title 	= $homeData[0]->titulo1;
+			$obj[0]->title 	= '';
 			$obj[0]->text 	= $homeData[0]->txt1;
 			$obj[0]->url 	= "#";
 
 			$obj[1] = new stdClass();
-			$obj[1]->title 	= $homeData[0]->titulo2;
+			$obj[1]->title 	= '';
 			$obj[1]->text 	= $homeData[0]->txt2;
 			$obj[1]->url 	= "#";
 
 			$obj[2] = new stdClass();
-			$obj[2]->title 	= $homeData[0]->titulo3;
+			$obj[2]->title 	= '';
 			$obj[2]->text 	= $homeData[0]->txt3;
 			$obj[2]->url 	= "#";
+
+			$obj[3] = new stdClass();
+			$obj[3]->title 	= '';
+			$obj[3]->text 	= $homeData[0]->txt4;
+			$obj[3]->url 	= "#";
+
+			$obj[4] = new stdClass();
+			$obj[4]->title 	= '';
+			$obj[4]->text 	= $homeData[0]->txt5;
+			$obj[4]->url 	= "#";
+
+			$obj[5] = new stdClass();
+			$obj[5]->title 	= '';
+			$obj[5]->text 	= $homeData[0]->txt6;
+			$obj[5]->url 	= "#";
+
+			$obj[6] = new stdClass();
+			$obj[6]->title 	= '';
+			$obj[6]->text 	= $homeData[0]->txt7;
+			$obj[6]->url 	= "#";
+
+			$obj[7] = new stdClass();
+			$obj[7]->title 	= '';
+			$obj[7]->text 	= $homeData[0]->txt8;
+			$obj[7]->url 	= "#";
+
+			$obj[8] = new stdClass();
+			$obj[8]->title 	= '';
+			$obj[8]->text 	= $homeData[0]->txt9;
+			$obj[8]->url 	= "#";
+
+			$obj[9] = new stdClass();
+			$obj[9]->title 	= '';
+			$obj[9]->text 	= $homeData[0]->txt10;
+			$obj[9]->url 	= "#";
 			echo json_encode($obj);
 	}
 }

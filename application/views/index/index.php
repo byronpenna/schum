@@ -361,8 +361,8 @@
 	background-size: cover; '" ?> class="col-md-12 banner2">
 				<h2>Commitment</h2>
 				<p>
-				We elevate your real estate experience with a specialized, full-service approach that is unique within 
-				the real estate industry.
+				<!-- We elevate your real estate experience with a specialized, full-service approach that is unique within 
+				the real estate industry. -->
 				</p>	
 			</div>
 		</div>

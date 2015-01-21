@@ -97,7 +97,10 @@
 	function changeBanner2(data){		
 
 		$(".banner2").find("h2").html(jsondata[index]["title"]).hide().fadeIn("slow");
-		$(".banner2").find("p").html(jsondata[index]["text"]).hide().fadeIn("slow");
+		if(jsondata[index]["text"] != ""){
+			$(".banner2").find("p").html(jsondata[index]["text"]).hide().fadeIn("slow");	
+		}
+		
 
 		index++;
 
