@@ -36,7 +36,7 @@
 					$coordenadas->estado 	= 0;
 				}
 				$estadoCalendar = $propertyModel->getBoolOpenHouse($idProperty);
-				$keyFeature 	= $propertyModel->getCheckKeys($idProperty);
+				$keyFeature 	= $propertyModel->getCheckKeys($idProperty,$houseInformation->yearBuilt,$houseInformation->schooldivision);
 				$rooms 			= $propertyModel->getRooms($idProperty);
 				$data = array(
 					'homeData' 			=> $this->homeData,

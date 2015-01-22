@@ -524,6 +524,8 @@ class Padrem extends CI_Model
 		'--',
 		`bed`.`exp_valor`
 	) AS `rooms`,
+	schooldivision.exp_valor AS schooldivision
+	,
 	IF (
 		(
 			isnull(`bath`.`exp_valor`)
@@ -576,6 +578,18 @@ FROM (
 			`crm_exp_expediente`.`exp_atr_id` = 3868
 		)
 ) streetNumber
+LEFT JOIN (
+	SELECT
+		`crm_exp_expediente`.`exp_id` AS `exp_id`,
+		`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+	FROM
+		`crm_exp_expediente`
+	WHERE
+		(
+			`crm_exp_expediente`.`exp_atr_id` = 4668
+		)
+) schooldivision
+on schooldivision.exp_id = streetNumber.exp_id 
 LEFT JOIN (
 	SELECT
 		`crm_exp_expediente`.`exp_id` AS `exp_id`,
