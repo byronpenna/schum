@@ -140,8 +140,7 @@ class Indexm  extends Padrem
 								".$inputs."
 								<a class='aaah' href='".site_url("property_detail/index/".$value->homeId." ")."'>
 									<div class='row white n-cuadroCasita'>
-										<div class='row container-fluid ' >
-										<img src='".$imgSrc."'  class='imgNewsToMarket'/>
+										<div class='row container-fluid imgNewsToMarket'  style='background:url(".$imgSrc."); background-size: 100% 100%;'>
 											<div class='row container-fluid numImageNewsMarket'>	
 												<div class='row cuadritoNum'>
 													<img class='imgCamera' src='".base_url("img/elements/news_to_market/camera.png")."'  > 
