@@ -29,7 +29,7 @@ class Property_detailsm extends Padrem
 					select 
 					expop_exp_id as exp_id,
 					expop_atr_id as atr_id,
-					atr_nombre,
+					if( atr_nombre = 'Neighbourhood / Subdivision Rural Municipality','Neighbourhood',atr_nombre) as atr_nombre,
 					opa_nombre AS exp_valor
 					from crm_expop_expedienteopcion 
 					inner join crm_atr_atributo 
@@ -38,7 +38,12 @@ class Property_detailsm extends Padrem
 					on opa_id = expop_opa_id
 					where expop_exp_id = ".$homeId." 
 				) yeah
-			 union select * from shum_tb_keysproperty where exp_id = ".$homeId.";";
+			 union select 
+	`exp_id`,
+	`atr_id`,
+	if( atr_nombre = 'Neighbourhood / Subdivision Rural Municipality','Neighbourhood',	atr_nombre) as atr_nombre, 
+	 `exp_valor`
+			from shum_tb_keysproperty where exp_id = ".$homeId."";
 			$this->db->trans_start();
 			$query = $this->db->query($sql);
 			$this->db->trans_complete();
