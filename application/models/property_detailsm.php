@@ -15,7 +15,7 @@ class Property_detailsm extends Padrem
 		}
 		function getDivKeys($value,$atrNombre){
 			$div = "
-			<article id='contkey'><h4>".$atrNombre."</h4>
+			<article id='contkey' class='ckeyK'><h4>".$atrNombre."</h4>
 				<p>".$value."</p>
 			</article>
 			";
@@ -62,7 +62,7 @@ class Property_detailsm extends Padrem
 
 			if($yearBuilt != ""){
 				$titulo[0]->text .= "
-				<article id='contkey'>
+				<article id='contkey' class='ckeyK'>
 					<h4 class='text-center'>Year built</h4>
 					<p>".$yearBuilt."</p>
 				</article>
@@ -71,7 +71,7 @@ class Property_detailsm extends Padrem
 
 			if($school != ""){
 				$titulo[4]->text .= "
-				<article id='contkey'>
+				<article id='contkey' class='ckeyK'>
 					<h4 class='text-center'>School Division</h4>
 					<p>".$school."</p>
 				</article>"; 
@@ -104,7 +104,7 @@ class Property_detailsm extends Padrem
 			foreach ($rooms as $key => $value) {
 				if($value->nivel == "1" && $value->exp_valor != ""){
 					$keysRooms .= "
-						<article id='contkey'>
+						<article id='contkey' class='ckeyK'>
 							<h4 class='text-center'>".$value->exp_valor."</h4>
 							<p class='text-center'>
 						";
@@ -150,7 +150,7 @@ class Property_detailsm extends Padrem
 				foreach ($otherKeys as $key => $value) {		
 					// $keyDiv = $this->getDivKeys($value->exp_valor,$value->atr_nombre);
 					if(!isset($keyDiv[$value->atr_id])){
-						$keyDiv[$value->atr_id] = "<article id='contkey'><h4 class='text-center'>".$value->atr_nombre."</h4>
+						$keyDiv[$value->atr_id] = "<article id='contkey' class='ckeyK'><h4 class='text-center'>".$value->atr_nombre."</h4>
 									<p>".$value->exp_valor;
 					}else{
 						$keyDiv[$value->atr_id] .= ",".$value->exp_valor;
