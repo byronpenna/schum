@@ -159,7 +159,7 @@
 						</div>
 						<div class="col-lg-5 col-sm-8 col-md-5 paddingNull">
 							<div class="col-lg-6 col-sm-6 col-md-6 boxSummary">								
-								<label>Country/Minicipality:</label> 
+								<label>City/Town:</label> 
 								<p>
 									<?php echo $house->cityTown; ?>
 								</p>
