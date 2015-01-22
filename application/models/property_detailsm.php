@@ -29,7 +29,7 @@ class Property_detailsm extends Padrem
 					select 
 					expop_exp_id as exp_id,
 					expop_atr_id as atr_id,
-					atr_nombre,
+					if( atr_nombre = 'Neighbourhood / Subdivision Rural Municipality','Neighbourhood',atr_nombre) as atr_nombre,
 					opa_nombre AS exp_valor
 					from crm_expop_expedienteopcion 
 					inner join crm_atr_atributo 
@@ -38,14 +38,19 @@ class Property_detailsm extends Padrem
 					on opa_id = expop_opa_id
 					where expop_exp_id = ".$homeId." 
 				) yeah
-			 union select * from shum_tb_keysproperty where exp_id = ".$homeId.";";
+			 union select 
+	`exp_id`,
+	`atr_id`,
+	if( atr_nombre = 'Neighbourhood / Subdivision Rural Municipality','Neighbourhood',	atr_nombre) as atr_nombre, 
+	 `exp_valor`
+			from shum_tb_keysproperty where exp_id = ".$homeId."";
 			$this->db->trans_start();
 			$query = $this->db->query($sql);
 			$this->db->trans_complete();
 			$query = $query->result();
 			return $query;
 		}
-		function getArrTitulo(){
+		function getArrTitulo($yearBuilt,$school){
 
 			$titulo[0] = new stdClass(); 	$titulo[1] = new stdClass(); 
 			$titulo[2] = new stdClass();	$titulo[3] = new stdClass();
@@ -55,6 +60,22 @@ class Property_detailsm extends Padrem
 			$titulo[2]->text = "<h2 class='txtSubtitle'>Lot information</h2>";			$titulo[3]->text = "<h2 class='txtSubtitle'>taxes and local improvements</h2>";
 			$titulo[4]->text = "<h2 class='txtSubtitle'>Remarks</h2>"; 					$titulo[5]->text = "<h2 class='txtSubtitle'>Interior and Utilities</h2>";
 
+			if($yearBuilt != ""){
+				$titulo[0]->text .= "
+				<article id='contkey'>
+					<h4 class='text-center'>Year built</h4>
+					<p>".$yearBuilt."</p>
+				</article>
+				";
+			}
+
+			if($school != ""){
+				$titulo[4]->text .= "
+				<article id='contkey'>
+					<h4 class='text-center'>School Division</h4>
+					<p>".$school."</p>
+				</article>"; 
+			}
 
 			$titulo[0]->estado = false; 	$titulo[1]->estado = false; 
 			$titulo[2]->estado = false;		$titulo[3]->estado = false;
@@ -109,10 +130,10 @@ class Property_detailsm extends Padrem
 			$arr->interior 				= array(3964,3965,3967,3968,3969,3970,3971,3972,3973);
 			return $arr;
 		}
-		function getCheckKeys($homeId){
+		function getCheckKeys($homeId,$yearBuilt="",$school){
 			// $keys 		= $this->getKeys($homeId);
 			$arr 		= $this->getArrTitleKey();
-			$titulo 	= $this->getArrTitulo();
+			$titulo 	= $this->getArrTitulo($yearBuilt,$school);
 			$div 		= ""; 
 			$keysArr 	= new stdClass();
 			// foreach ($keys as $key => $value) {
