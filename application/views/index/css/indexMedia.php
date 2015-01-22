@@ -294,7 +294,7 @@
 			font-size: 2em;
 		}
 		.banner2 h2{
-			font-size: 3em;
+			font-size: 2em;
 		}
 		.sendButtonEbook{
 			margin: 0 auto;
@@ -545,7 +545,7 @@
 		}
 
 		.banner2 p{
-			font-size: 3em;
+			font-size: 2em;
 		}
 
 		
@@ -600,7 +600,7 @@
 				font-size: 2.5em;
 			}
 			.banner2 p{
-				font-size: 3em;
+				font-size: 2em;
 			}
 	/* news to the market */ 
 		.imgNewsToMarket{
