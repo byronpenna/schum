@@ -305,7 +305,7 @@
 		}
 
 		.hidemenu{
-			display:none;
+			opacity:0;
 		}
 
 	

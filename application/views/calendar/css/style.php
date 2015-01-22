@@ -64,8 +64,8 @@ html, body{
 }
 .horario{
 	padding: 10%;
-	/* background: #ba0000; */
-	background: url('http://deercoder.com/shum/img/elements/fondo_calendar.png') !important;
+	background: #ba0000;
+	/* background: url('http://deercoder.com/shum/img/elements/fondo_calendar.png') !important; */
 	color: #fff;
 	text-align: center;
 }

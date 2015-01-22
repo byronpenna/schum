@@ -611,6 +611,9 @@ body{
 		padding-right: 10%;
 		padding-left: 10%;
 	}
+	.btnReadMore:hover{
+		background: #be0000;
+	}
 	.btnReadMoreMap{
 		background: #314782;
 		color: white;
