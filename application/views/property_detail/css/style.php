@@ -356,6 +356,7 @@ label{
 	width: 20%;
 	height: auto;
 	background: none repeat scroll 0% 0% rgba(243, 243, 243, 0.51);
+	word-break:break-word;
 }
 .ckeyK{
 	margin-left:10px;
