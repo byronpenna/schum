@@ -126,6 +126,9 @@ class Indexm  extends Padrem
 				$casas 		= $listingModel->getCasasNewsMarket($l1,$l2);
 				$casas 		= $casas->resultado[0];
 			// do it 
+				// echo "<pre>";
+				// 	print_r($casas);
+				// echo "</pre>";
 				foreach ($casas as $key => $value) {
 					$imgSrc = $this->getImgSrc($value->rutaImg);
 					$imgSrc = str_replace(" ","%20",$imgSrc);

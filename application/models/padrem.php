@@ -698,7 +698,7 @@ LEFT JOIN (
 			)
 		WHERE
 			(
-				(`amb`.`amb_com_id` = 17)
+				(`amb`.`amb_com_id` = 17) and doc_tipo = 'image'
 				
 			)
 			ORDER BY doc_orden
