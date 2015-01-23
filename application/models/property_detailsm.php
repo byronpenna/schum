@@ -60,22 +60,9 @@ class Property_detailsm extends Padrem
 			$titulo[2]->text = "<h2 class='txtSubtitle'>Lot information</h2>";			$titulo[3]->text = "<h2 class='txtSubtitle'>taxes and local improvements</h2>";
 			$titulo[4]->text = "<h2 class='txtSubtitle'>Remarks</h2>"; 					$titulo[5]->text = "<h2 class='txtSubtitle'>Interior and Utilities</h2>";
 
-			if($yearBuilt != ""){
-				$titulo[0]->text .= "
-				<article id='contkey' class='ckeyK'>
-					<h4 class='text-center'>Year built</h4>
-					<p>".$yearBuilt."</p>
-				</article>
-				";
-			}
 
-			if($school != ""){
-				$titulo[4]->text .= "
-				<article id='contkey' class='ckeyK'>
-					<h4 class='text-center'>School Division</h4>
-					<p>".$school."</p>
-				</article>"; 
-			}
+			
+
 
 			$titulo[0]->estado = false; 	$titulo[1]->estado = false; 
 			$titulo[2]->estado = false;		$titulo[3]->estado = false;
@@ -198,7 +185,27 @@ class Property_detailsm extends Padrem
 							$titulo[5]->text .= $keyDiv[$value->atr_id];
 						}
 					}
+
+
+
+
 					$variableGay[$value->atr_id] = true;
+				}
+				if($yearBuilt != ""){
+					$titulo[0]->text .= "
+					<article id='contkey'>
+						<h4 class='text-center'>Year built</h4>
+						<p>".$yearBuilt."</p>
+					</article>
+					";
+				}
+
+				if($school != ""){
+					$titulo[4]->text .= "
+					<article id='contkey'>
+						<h4 class='text-center'>School Division</h4>
+						<p>".$school."</p>
+					</article>"; 
 				}
 				
 			// ***********************

@@ -712,7 +712,9 @@ LEFT JOIN (
 			)
 		WHERE
 			(
-				(`amb`.`amb_com_id` = 17) and doc_tipo = 'image'
+				(`amb`.`amb_com_id` = 17)
+				and `doc`.`doc_tipo` = 'image'
+
 				
 			)
 			ORDER BY doc_orden
@@ -771,7 +773,7 @@ LEFT JOIN (
 		)
 	WHERE
 		(
-			`documento`.`doc_nombre` = 'featuresheet.pdf'
+			`documento`.`doc_descripcion` = 'featuresheet'
 		)
 ) pdf
 on pdf.homeId = streetNumber.exp_id
