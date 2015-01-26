@@ -140,7 +140,7 @@ class Property_detailsm extends Padrem
 						$keyDiv[$value->atr_id] = "<article id='contkey' class='ckeyK'><h4 class='text-center'>".$value->atr_nombre."</h4>
 									<p>".$value->exp_valor;
 					}else{
-						$keyDiv[$value->atr_id] .= ",".$value->exp_valor;
+						$keyDiv[$value->atr_id] .= ", &nbsp;&nbsp;".$value->exp_valor;
 					}
 					
 				}
