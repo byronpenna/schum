@@ -197,7 +197,7 @@ class Padrem extends CI_Model
 		return $sql;
 	}
 	public function getSqlNominaEmp(){
-		$sql = "SELECT `nombre`.`idEmpleado` AS `idEmpleado`,
+		$sql = "SELECT DISTINCTROW(`nombre`.`idEmpleado`) AS `idEmpleado`,
 			concat(
 				`nombre`.`nombre`,
 				' ',
@@ -483,7 +483,12 @@ class Padrem extends CI_Model
 					)
 				)
 		) short
-		ON short.idEmpleado = nombre.idEmpleado";
+		ON short.idEmpleado = nombre.idEmpleado
+		WHERE 
+			concat(
+				`documento`.`doc_ruta`,
+				`documento`.`doc_nombre`
+			) is not null";
 		return $sql;
 	}
 	
