@@ -98,7 +98,7 @@ class Indexm  extends Padrem
 
 		}
 	// news to the market
-		function getImagenesNewsToMarket($id){
+		/*function getImagenesNewsToMarket($id){
 			$sql 		= "SELECT 
 								CONCAT(doc_ruta,doc_nombre) AS imagen 
 							FROM crm_documento LEFT JOIN crm_ambito ON amb_id = doc_amb_id WHERE amb_exp_id = ".$id." and doc_tipo = 'image' ";
@@ -116,7 +116,28 @@ class Indexm  extends Padrem
 			}
 			$inputs 	.= "</div>";
 			return $inputs;
+		}*/
+		function getImagenesNewsToMarket($id){
+			$sql 		= "SELECT 
+								CONCAT(doc_ruta,doc_nombre) AS imagen 
+							FROM crm_documento LEFT JOIN crm_ambito ON amb_id = doc_amb_id WHERE amb_exp_id = ".$id." and doc_tipo = 'image' ";
+			$imagenes 	= $this->getResulset($sql);
+			$inputs ;
+			foreach ($imagenes as $key => $value) {
+				$imgSrc = $this->getImgSrc($value->imagen);
+				$imgSrc = str_replace(" ","%20",$imgSrc);
+
+				if($key == 0){
+					$inputs .= "<img class='inicial imagesNewToMarket img-responsive' src='".$imgSrc."' data-pos='0' />
+								<div>";
+				}else{
+					$inputs .= "<img class='imagesNewToMarket img-responsive' style='display:none' src='".$imgSrc."' />";
+				}	
+			}
+			$inputs 	.= "</div>";
+			return $inputs;
 		}
+
 		function getNewsToTheMarket($l1=0,$l2=4){
 			// load 
 				$this->load->model("listingsm");
@@ -136,7 +157,38 @@ class Indexm  extends Padrem
 						// <img class='img-responsive imgFull imgNewsToMarket' src='".$imgSrc."'  >
 						$inputs = $this->getImagenesNewsToMarket($value->homeId);
 						$divNews .= "
-							<div class='col-sm-5 col-md-3 casaNewsToMarket'>
+							<div class='col-sm-5 col-md-3 casaNewsToMarket' id='".$value->homeId."'>
+
+							<a class='aaah' href='".site_url("property_detail/index/".$value->homeId." ")."'>
+								<div class='row white n-cuadroCasita'>
+									<div class='row container-fluid imgNewsToMarket'>"
+									    . $inputs .
+										"<div class='row container-fluid numImageNewsMarket'>	
+											<div class='row cuadritoNum'>
+												<img class='imgCamera' src='".base_url("img/elements/news_to_market/camera.png")."'  > 
+												<span class='num'> ".$value->numFotos." </span>
+											</div>
+										</div>		
+									</div>
+									<div class='row container-fluid paddingNull descriptionNewsToMarket'>
+										<h3 class='newsToMarketTitle'>".$value->nombreVivienda."</h3>
+										<h5 class='newsToMarketSubTitle'>
+											<img class='marketImage' src='".base_url("img/elements/news_to_market/market.png")."'>	
+											".$value->cityTown."
+										</h5>
+										<h2 class='priceNewsToMarket'>$".$value->listPrice."</h2>
+									</div>	
+								</div>
+							</a>
+						</div>";
+
+
+
+
+
+
+/*						$divNews .= "
+							<div class='col-sm-5 col-md-3 casaNewsToMarket' id='".$value->homeId."'>
 								".$inputs."
 								<a class='aaah' href='".site_url("property_detail/index/".$value->homeId." ")."'>
 									<div class='row white n-cuadroCasita'>
@@ -159,7 +211,7 @@ class Indexm  extends Padrem
 									</div>
 								</a>
 							</div>		
-						";	
+						";*/	
 					}
 					
 				}

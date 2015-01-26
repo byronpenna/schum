@@ -21,8 +21,13 @@
 	  		$(document).on("change",".cbMapSearch",function(){
 	  			getSortHouse($(this).val());
 	  		});
+
+
 	  	// eventos 
 	  		// mouseover
+	  			
+	  			/*
+	  			Version Anterior del slider de NewToMarket
 	  			var interval;
 	  			$(document).on("mouseover",".imgNewsToMarket",function(){
 					divInputs 	= 	$(this).parents(".casaNewsToMarket").find(".sourceImageNewsToMarket");
@@ -32,7 +37,7 @@
 	  			$(document).on("mouseover",".imgNewsToMarket",function(){
 	  				clearInterval(interval);
 	  				divInputs 	= 	$(this).parents(".casaNewsToMarket").find(".sourceImageNewsToMarket");
-	  				selector 	= 	$(this);
+	  				selector 	= 	$(this).attr("id");
 	  				// slideNewsToMarket(divInputs,selector);
 	  				interval 	= 	setInterval(function(){
 										slideNewsToMarket(divInputs,selector);
@@ -40,7 +45,28 @@
 	  			});
 	 			$(document).on("mouseleave",".imgNewsToMarket",function(){
 	 				clearInterval(interval);
-	 			});		
+	 			});
+				*/
+
+	 			// NewToMarket
+				var pos = 0;
+				$(document).on("mouseover",".inicial",function(){
+				   	pos = $(this).data('pos');
+				    $(this).next('div').find('.imagesNewToMarket').eq(pos%3).fadeIn("slow");
+					//El número, en este caso 3 es donde se indica la cantidad de elementos a 
+					//los cuales se aplica (contando desde 0)
+				    $(this).fadeOut("slow");
+				    pos++;
+				    $(this).data('pos',pos);
+				});
+
+				$(document).on("mouseover",".imagesNewToMarket",function(){
+				    $(this).fadeOut("slow");
+				    $('.inicial').fadeIn("slow");
+				});
+				
+
+
 	  		// click 
 	  			// paginado 
 	  				// news to market 

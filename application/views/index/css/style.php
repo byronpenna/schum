@@ -369,6 +369,13 @@ body{
 	/*background-size: cover !important;*/
 	position: relative;
 }
+
+.imagesNewToMarket{
+	position: absolute;
+	width: 90%;
+	height: 100%;
+}	
+
 .descriptionNewsToMarket{
 	background: #FFFFFF;
 	padding-left: 8%;
@@ -754,4 +761,3 @@ body{
 	.shumSlider,.searchBar{
 		position: absolute;
 	}*/
-	
