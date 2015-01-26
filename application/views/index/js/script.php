@@ -52,9 +52,9 @@
 				var pos = 0;
 				$(document).on("mouseover",".inicial",function(){
 				   	pos = $(this).data('pos');
-				    $(this).next('div').find('.imagesNewToMarket').eq(pos%3).fadeIn("slow");
-					//El número, en este caso 3 es donde se indica la cantidad de elementos a 
-					//los cuales se aplica (contando desde 0)
+				    $(this).next('div').find('.imagesNewToMarket').eq(pos%20).fadeIn("slow");
+					//El número, en este caso 20 es donde se indica la cantidad de elementos a 
+					//los cuales se aplica (contando desde 0 son 21 elementos)
 				    $(this).fadeOut("slow");
 				    pos++;
 				    $(this).data('pos',pos);
