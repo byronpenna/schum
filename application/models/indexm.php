@@ -122,7 +122,7 @@ class Indexm  extends Padrem
 								CONCAT(doc_ruta,doc_nombre) AS imagen 
 							FROM crm_documento LEFT JOIN crm_ambito ON amb_id = doc_amb_id WHERE amb_exp_id = ".$id." and doc_tipo = 'image' ";
 			$imagenes 	= $this->getResulset($sql);
-			$inputs ;
+			$inputs = "";
 			foreach ($imagenes as $key => $value) {
 				$imgSrc = $this->getImgSrc($value->imagen);
 				$imgSrc = str_replace(" ","%20",$imgSrc);
