@@ -234,6 +234,7 @@ class Padrem extends CI_Model
 				`documento`.`doc_ruta`,
 				`documento`.`doc_nombre`
 			) AS `rutaImg`,
+			documento.doc_descripcion as descripdoc,
 			`short`.`shortDescrip` AS `shortDescription`,
 			ucase(`nombre`.`nombre`) AS `simpleName`
 		from (
@@ -488,7 +489,8 @@ class Padrem extends CI_Model
 			concat(
 				`documento`.`doc_ruta`,
 				`documento`.`doc_nombre`
-			) is not null";
+			) is not null and not(doc_descripcion like '%award%')
+		GROUP BY `nombre`.`idEmpleado`";
 		return $sql;
 	}
 	
