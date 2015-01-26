@@ -440,4 +440,5 @@ class Property_detailsm extends Padrem
 			$imgPrincipal = $imgSrc;
 			return $imgPrincipal;
 		}
+
 }

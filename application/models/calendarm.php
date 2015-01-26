@@ -62,8 +62,8 @@ class Calendarm extends Padrem
 				<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3'>
 					<div class='horario col-xs-12' >
 						<i class='fa fa-calendar icono'></i>
-						<h3>DATE: ".$value->startDate."</h3>
-						<h3>TIME: ".$value->age_hora_inicio." - ".$value->age_hora_fin." </h3>
+						<h3>DATE: ".strtoupper(date("M, d Y",strtotime($value->startDate)))."</h3>
+						<h3>TIME: ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h3>
 					</div>
 				</div>
 			</div>

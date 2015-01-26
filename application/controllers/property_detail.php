@@ -12,13 +12,16 @@
 				$this->load->helper("url");
 				$this->load->model("property_detailsm");
 				$this->load->model("indexm");
+				$this->load->model("calendarm");
 			// vars 
 				$propertyModel 		= new Property_detailsm();
 				$indexModel 		= new Indexm();
+				$calendarm 			= new Calendarm();
 				$coordenadas  		= new stdClass();
 				$imgSlider 			= $propertyModel->getSlider2($idProperty); 
 				$thumbnail 			= $propertyModel->getImgThumbnail(0,30,$idProperty);
 				$houseInformation	= $propertyModel->getPropertyInformation($idProperty);
+				$fechaOpenHouse		= $calendarm->getOpenHouse($idProperty);
 				// print_r($houseInformation);
 				$ubicacion 			= $indexModel->getMainUbication();
 				$empleado 			= $propertyModel->getEmpInformation($houseInformation->agent);
@@ -49,8 +52,9 @@
 					"homeId"			=> $idProperty,
 					"estadoCalendar" 	=> $estadoCalendar,
 					"keys" 				=> $keyFeature,
-					"roomsKey" 			=> $rooms
-				);
+					"roomsKey" 			=> $rooms,
+					"FechaOpenHouse"	=> $fechaOpenHouse
+					);
 			// views 
 				$this->load->view("property_detail/index.php",$data);
 		}
