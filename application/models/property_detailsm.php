@@ -68,7 +68,8 @@ class Property_detailsm extends Padrem
 
 			$titulo[0]->estado = false; 	$titulo[1]->estado = false; 
 			$titulo[2]->estado = false;		$titulo[3]->estado = false;
-			$titulo[4]->estado = false;
+			$titulo[4]->estado = false;		$titulo[5]->estado = false;
+			$titulo[6]->estado = false;
 
 			return $titulo;
 		}
