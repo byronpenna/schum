@@ -227,7 +227,12 @@
 											</div>
 
 										<div class=" txtBlockDescription text-center" id='openHouseTxtBlock'>
-											<p> Sept, 20 2014 2:00PM - 4:00PM</p>
+											<p><?php echo date("M, d Y",strtotime($FechaOpenHouse[0]->startDate))." ".date("g:iA ",strtotime($FechaOpenHouse[0]->age_hora_inicio ))." - ".date("g:iA  ",strtotime($FechaOpenHouse[0]->age_hora_fin )); ?></p><br>
+											<p><?php 
+												if(isset($FechaOpenHouse[1]->startDate)){
+											 		echo date("M, d Y",strtotime($FechaOpenHouse[1]->startDate))." ".date("g:iA ",strtotime($FechaOpenHouse[1]->age_hora_inicio ))." - ".date("g:iA  ",strtotime($FechaOpenHouse[1]->age_hora_fin ));
+											 	}
+											 	?></p>
 										</div>
 									</div>
 								</a>
