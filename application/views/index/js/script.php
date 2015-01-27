@@ -30,7 +30,7 @@
 					$(this).hide(2000,function(){
 						//console.log("siguiente",$(this).next().attr("src"));
 						if($(this).next().attr("src") == undefined){
-							$(this).parents(".container").find(".firstimg").fadeIn(2000);
+							$(this).parents(".container").find(".firstimg").show(2000);
 						}else{
 							$(this).next().show(2000);	
 						}	
