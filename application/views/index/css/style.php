@@ -372,8 +372,9 @@ body{
 
 .imagesNewToMarket{
 	position: absolute;
-	width: 90%;
+	width: 100%;
 	height: 100%;
+	margin-left: -30px;
 }	
 
 .descriptionNewsToMarket{

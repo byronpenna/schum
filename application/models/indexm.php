@@ -179,38 +179,7 @@ class Indexm  extends Padrem
 									</div>	
 								</div>
 							</a>
-						</div>";
-
-
-
-
-
-
-/*						$divNews .= "
-							<div class='col-sm-5 col-md-3 casaNewsToMarket' id='".$value->homeId."'>
-								".$inputs."
-								<a class='aaah' href='".site_url("property_detail/index/".$value->homeId." ")."'>
-									<div class='row white n-cuadroCasita'>
-										<div class='row container-fluid imgNewsToMarket'  style='background:url(".$imgSrc."); background-size: 100% 100%;'>
-											<div class='row container-fluid numImageNewsMarket'>	
-												<div class='row cuadritoNum'>
-													<img class='imgCamera' src='".base_url("img/elements/news_to_market/camera.png")."'  > 
-													<span class='num'> ".$value->numFotos." </span>
-												</div>
-											</div>		
-										</div>
-										<div class='row container-fluid paddingNull descriptionNewsToMarket'>
-											<h3 class='newsToMarketTitle'>".$value->nombreVivienda."</h3>
-											<h5 class='newsToMarketSubTitle'>
-												<img class='marketImage' src='".base_url("img/elements/news_to_market/market.png")."'>	
-												".$value->cityTown."
-											</h5>
-											<h2 class='priceNewsToMarket'>$".$value->listPrice."</h2>
-										</div>	
-									</div>
-								</a>
-							</div>		
-						";*/	
+						</div>";	
 					}
 					
 				}

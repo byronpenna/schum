@@ -28,19 +28,19 @@
 	  			
 	  			$(document).on("mouseenter",".imagesNewToMarket2",function(){
 					$(this).fadeOut(2000,function(){
-						console.log("siguiente",$(this).next().attr("src"));
+						//console.log("siguiente",$(this).next().attr("src"));
 						if($(this).next().attr("src") == undefined){
 							$(this).parents(".container").find(".firstimg").fadeIn(2000);
 						}else{
 							$(this).next().fadeIn(2000);	
 						}	
 					});
-					
-					
+				});
+
+				$(document).on("mouseleave",".imagesNewToMarket2",function(){
+					$(this).finish();
 				});
 				
-
-
 	  		// click 
 	  			// paginado 
 	  				// news to market 
