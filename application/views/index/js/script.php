@@ -27,12 +27,12 @@
 	  		// mouseover
 	  			
 	  			$(document).on("mouseenter",".imagesNewToMarket2",function(){
-					$(this).fadeOut(2000,function(){
+					$(this).hide(2000,function(){
 						//console.log("siguiente",$(this).next().attr("src"));
 						if($(this).next().attr("src") == undefined){
 							$(this).parents(".container").find(".firstimg").fadeIn(2000);
 						}else{
-							$(this).next().fadeIn(2000);	
+							$(this).next().show(2000);	
 						}	
 					});
 				});
