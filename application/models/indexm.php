@@ -29,8 +29,8 @@ class Indexm  extends Padrem
 			$postTitle 	= "";
 			foreach ($feeds as $key => $value) {
 				$postTitle .= "
-					<li>
-						<a href='".$value["link"]."'>".$value["title"]."</a>
+					<li style='border-bottom:1px solid rgba(204, 204, 204, 0.5);padding-bottom:15px;'>
+						<a href='".$value["link"]."' style='text-decoration:none;'>".$value["title"]."</a>
 					</li>
 				";
 			}
