@@ -26,43 +26,17 @@
 	  	// eventos 
 	  		// mouseover
 	  			
-	  			/*
-	  			Version Anterior del slider de NewToMarket
-	  			var interval;
-	  			$(document).on("mouseover",".imgNewsToMarket",function(){
-					divInputs 	= 	$(this).parents(".casaNewsToMarket").find(".sourceImageNewsToMarket");
-	  				selector 	= 	$(this);
-	  				slideNewsToMarket(divInputs,selector);
-	  			});
-	  			$(document).on("mouseover",".imgNewsToMarket",function(){
-	  				clearInterval(interval);
-	  				divInputs 	= 	$(this).parents(".casaNewsToMarket").find(".sourceImageNewsToMarket");
-	  				selector 	= 	$(this).attr("id");
-	  				// slideNewsToMarket(divInputs,selector);
-	  				interval 	= 	setInterval(function(){
-										slideNewsToMarket(divInputs,selector);
-									}, 3000 );
-	  			});
-	 			$(document).on("mouseleave",".imgNewsToMarket",function(){
-	 				clearInterval(interval);
-	 			});
-				*/
-
-	 			// NewToMarket
-				var pos = 0;
-				$(document).on("mouseover",".inicial",function(){
-				   	pos = $(this).data('pos');
-				    $(this).next('div').find('.imagesNewToMarket').eq(pos%20).fadeIn("slow");
-					//El número, en este caso 20 es donde se indica la cantidad de elementos a 
-					//los cuales se aplica (contando desde 0 son 21 elementos)
-				    $(this).fadeOut("slow");
-				    pos++;
-				    $(this).data('pos',pos);
-				});
-
-				$(document).on("mouseover",".imagesNewToMarket",function(){
-				    $(this).fadeOut("slow");
-				    $('.inicial').fadeIn("slow");
+	  			$(document).on("mouseenter",".imagesNewToMarket2",function(){
+					$(this).fadeOut(2000,function(){
+						console.log("siguiente",$(this).next().attr("src"));
+						if($(this).next().attr("src") == undefined){
+							$(this).parents(".container").find(".firstimg").fadeIn(2000);
+						}else{
+							$(this).next().fadeIn(2000);	
+						}	
+					});
+					
+					
 				});
 				
 
