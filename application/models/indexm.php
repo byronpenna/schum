@@ -87,8 +87,11 @@ class Indexm  extends Padrem
 					$sql .= "ORDER BY listPrice DESC";
 				}
 				// $sql 			.= "WHERE marketStatus <> 'Finished'";
-				$houseListings 	= $this->getResulset($sql);
-				$retorno->data 	= $houseListings;
+				$houseListings 		= $this->getResulseti($sql);
+				$rowcount 			= $houseListings->num_rows();
+				$houseListings 		= $houseListings->result();
+				$retorno->rowcount 	= $rowcount;
+				$retorno->data 		= $houseListings;
 			// do it 
 				foreach ($houseListings as $key => $value) {
 					$imgSrc = $this->getImgSrc($value->rutaImg);
