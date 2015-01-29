@@ -82,10 +82,13 @@ class Padrem extends CI_Model
 	}
 	public function getResulseti($sql){
 		$this->db->trans_start();
-			$query 		= $this->db->query($sql);
-			$retorno 	= $query; 
+			$query 				= $this->db->query($sql);
+			$retorno 			= $query; 
+			$retorno->query		= $query->result();
+			$retorno->cn 		= $query->num_rows();
 			$query->free_result();
 			$query->next_result();
+
 		$this->db->trans_complete();
 		return $retorno;
 	}

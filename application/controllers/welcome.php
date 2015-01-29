@@ -106,19 +106,21 @@ class Welcome extends Padre {
 				//$cuadritosCasa 				= $indexModel->getCasasForMapSection();
 				$cuadritosCasa 				= $indexModel->getSortHouse(1);
 				$ubicacion 					= $indexModel->getMainUbication();
-				$listings 					= $indexModel->getCountListing();
+				$listings 					= $cuadritosCasa->cn;
 			// news to the market
-				$newsToMarket 				= $indexModel->getNewsToTheMarket();
+				// $newsToMarket 				= $indexModel->getNewsToTheMarket();
 				$slider 					= $indexModel->getPointSlider();
 			$data 		= array(
 				'ubicacion' 		=> $ubicacion,
 				'homeData' 			=> $this->homeData,
 				'searchBar'			=> $searchBar,
-				'cuadritoCasa' 		=> $cuadritosCasa->div,
+				// 'cuadritoCasa' 		=> $cuadritosCasa->div,
+				'cuadritoCasa'		=> '',	
 				'cuadritoEmpleado' 	=> $indexModel->getCuadritosEmpleados(),
-				'newsToMarket' 		=> $newsToMarket,
+				// 'newsToMarket' 		=> $newsToMarket,
+				'newsToMarket' 		=> '',
 				'searchOp' 			=> $this->searchBarOp,
-				'cnListing' 		=> $listings[0]->cnListing,
+				'cnListing' 		=> $listings,
 				'slider'			=> $slider,
 				'buySeller'			=> $indexModel->getSellerBuyerImage($this->homeData)
 			);
