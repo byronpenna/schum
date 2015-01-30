@@ -90,40 +90,60 @@ class Welcome extends Padre {
 			$cuadritoEmpleado = $indexModel->getCuadritosEmpleados($l1,$l2);
 		return $cuadritoEmpleado;
 	}
+	function microtime_float()
+	{
+	    list($usec, $sec) = explode(" ", microtime());
+	    return ((float)$usec + (float)$sec);
+	}
 	public function index()
 	{	
 		// loads 
 			$this->load->helper("url");
 			$this->load->model("indexm");
+			$start 						= $this->microtime_float();
 		// vars 
 			$indexModel 				= new Indexm();
 			$searchBar 					= new stdClass();
+			
+
 			// search bar
+				
 				$searchBar->propertyType 	= $indexModel->getCbSearchBar(3);
 				$searchBar->minBedRoom 		= $indexModel->getCbSearchBar(2);
 				$searchBar->minBath 		= $indexModel->getCbSearchBar(1);
+				
+				
 			// map 
 				//$cuadritosCasa 				= $indexModel->getCasasForMapSection();
-				$cuadritosCasa 				= $indexModel->getSortHouse2(1);
+				// $cuadritosCasa 				= $indexModel->getSortHouse2(1);
+				
 				$ubicacion 					= $indexModel->getMainUbication();
-				$listings 					= $cuadritosCasa->cn;
+				// $listings 					= $cuadritosCasa->cn;
+
 			// news to the market
-				$newsToMarket 				= $indexModel->getNewsToTheMarket();
+				
+				// $newsToMarket 				= $indexModel->getNewsToTheMarket();
+				
 				$slider 					= $indexModel->getPointSlider();
 			$data 		= array(
 				'ubicacion' 		=> $ubicacion,
 				'homeData' 			=> $this->homeData,
 				'searchBar'			=> $searchBar,
-				'cuadritoCasa' 		=> $cuadritosCasa->div,
-				// 'cuadritoCasa'		=> '',	
-				'cuadritoEmpleado' 	=> $indexModel->getCuadritosEmpleados(),
-				'newsToMarket' 		=> $newsToMarket,
-				// 'newsToMarket' 		=> '',
+				// 'cuadritoCasa' 		=> $cuadritosCasa->div,
+				'cuadritoCasa'		=> '',	
+				// 'cuadritoEmpleado' 	=> $indexModel->getCuadritosEmpleados(),
+				'cuadritoEmpleado' 	=> '',
+				// 'newsToMarket' 		=> $newsToMarket,
+				'newsToMarket' 		=> '',
 				'searchOp' 			=> $this->searchBarOp,
-				'cnListing' 		=> $listings,
+				// 'cnListing' 		=> $listings,
+				'cnListing' 		=> '',
 				'slider'			=> $slider,
 				'buySeller'			=> $indexModel->getSellerBuyerImage($this->homeData)
 			);
+			$end 						= $this->microtime_float();
+			$time 						= $end-$start;
+			echo "El tiempo de ejecucion es: ".$time;
 		// views 
 			$this->load->view('index/index.php',$data);
 			

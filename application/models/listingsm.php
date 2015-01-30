@@ -345,17 +345,19 @@ class Listingsm extends Padrem
 						   ORDER BY homeId DESC
 						   LIMIT ".$l1.",".$l2." 
 						   ";
-			$sql[1] 	= "SELECT COUNT(*) AS casas
-					   		FROM (".$indexModel->smallIndexListing().") houseListing
-					   		WHERE marketStatus <> 'Finished'
-					   		";
+			// $sql[1] 	= "SELECT COUNT(*) AS casas
+			// 		   		FROM (".$indexModel->smallIndexListing().") houseListing
+			// 		   		WHERE marketStatus <> 'Finished'
+			// 		   		";
+
 			$regresar 	= new stdClass();
 		// do it 
 			$this->db->trans_start();
 				$query 		= $this->db->query($sql[0]);
 				$retorno 	= $query->result();
-				$query 		= $this->db->query($sql[1]);
-				$retorno2 	= $query->result();
+				// $query 		= $this->db->query($sql[1]);
+				// $retorno2 	= $query->result();
+				$retorno2 		= $query->num_rows();
 				// $query->free_result();
 				// $query->next_result();
 			$this->db->trans_complete();
