@@ -48,9 +48,12 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '50.62.42.134';
-$db['default']['username'] = 'admin';
-$db['default']['password'] = 'ERPb1542013';
+// $db['default']['hostname'] = '50.62.42.134';
+// $db['default']['username'] = 'admin';
+// $db['default']['password'] = 'ERPb1542013';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'crm';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';

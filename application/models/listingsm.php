@@ -334,17 +334,19 @@ class Listingsm extends Padrem
 		return $div;
 
 	}
-	function getCasasNewsMarket($l1=0,$l2=12){
+	function getCasasNewsMarket2($l1=0,$l2=12){
 		// vars 
 			// mucho ojo podria afectar a otro lado
+			$this->load->model("indexm");
+			$indexModel = new Indexm();
 			$sql[0] 	= "SELECT * 
-						   FROM (".$this->getSqlHouseListing().") houseListing
+						   FROM (".$indexModel->smallIndexListing().") houseListing
 						   WHERE marketStatus <> 'Finished'
 						   ORDER BY homeId DESC
 						   LIMIT ".$l1.",".$l2." 
 						   ";
 			$sql[1] 	= "SELECT COUNT(*) AS casas
-					   		FROM (".$this->getSqlHouseListing().") houseListing
+					   		FROM (".$indexModel->smallIndexListing().") houseListing
 					   		WHERE marketStatus <> 'Finished'
 					   		";
 			$regresar 	= new stdClass();
@@ -361,6 +363,34 @@ class Listingsm extends Padrem
 			$regresar->resultado[1] = $retorno2;
 		return $regresar;
 	}
+
+	// function getCasasNewsMarket($l1=0,$l2=12){
+	// 	// vars 
+	// 		// mucho ojo podria afectar a otro lado
+	// 		$sql[0] 	= "SELECT * 
+	// 					   FROM (".$this->getSqlHouseListing().") houseListing
+	// 					   WHERE marketStatus <> 'Finished'
+	// 					   ORDER BY homeId DESC
+	// 					   LIMIT ".$l1.",".$l2." 
+	// 					   ";
+	// 		$sql[1] 	= "SELECT COUNT(*) AS casas
+	// 				   		FROM (".$this->getSqlHouseListing().") houseListing
+	// 				   		WHERE marketStatus <> 'Finished'
+	// 				   		";
+	// 		$regresar 	= new stdClass();
+	// 	// do it 
+	// 		$this->db->trans_start();
+	// 			$query 		= $this->db->query($sql[0]);
+	// 			$retorno 	= $query->result();
+	// 			$query 		= $this->db->query($sql[1]);
+	// 			$retorno2 	= $query->result();
+	// 			// $query->free_result();
+	// 			// $query->next_result();
+	// 		$this->db->trans_complete();
+	// 		$regresar->resultado[0] = $retorno;
+	// 		$regresar->resultado[1] = $retorno2;
+	// 	return $regresar;
+	// }
 	
 
 }

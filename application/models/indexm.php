@@ -73,11 +73,11 @@ class Indexm  extends Padrem
 			}
 			return $cuadrito;
 		}
-		function getSortHouse($op){
+		function getSortHouse2($op){
 			// vars 
 				$retorno 		= new stdClass();
 				$sql 			= "SELECT * 
-								   FROM (".$this->getSqlHouseListing().") houseListing
+								   FROM (".$this->smallIndexListing().") houseListing
 								   WHERE marketStatus <> 'Finished'
 								  ";	
 				$retorno->div 	= "";
@@ -97,9 +97,35 @@ class Indexm  extends Padrem
 					$imgSrc = $this->getImgSrc($value->rutaImg);
 					$retorno->div .= $this->getDivCasa($value,$imgSrc);
 				}
-				return $retorno;
-
+				return $retorno;	
 		}
+		// function getSortHouse($op){
+		// 	// vars 
+		// 		$retorno 		= new stdClass();
+		// 		$sql 			= "SELECT * 
+		// 						   FROM (".$this->getSqlHouseListing().") houseListing
+		// 						   WHERE marketStatus <> 'Finished'
+		// 						  ";	
+		// 		$retorno->div 	= "";
+		// 		if($op == 1){
+		// 			$sql .= "ORDER BY listPrice ASC"; // low to high
+		// 		}else{
+		// 			$sql .= "ORDER BY listPrice DESC";
+		// 		}
+		// 		// $sql 			.= "WHERE marketStatus <> 'Finished'";
+		// 		$houseListings 	= $this->getResulseti($sql);
+		// 		$retorno->cn 	= $houseListings->cn;
+		// 		$houseListings 	= $houseListings->query;
+		// 		$retorno->data 	= $houseListings;
+		// 		// $retorno->cn 	= 
+		// 	// do it 
+		// 		foreach ($houseListings as $key => $value) {
+		// 			$imgSrc = $this->getImgSrc($value->rutaImg);
+		// 			$retorno->div .= $this->getDivCasa($value,$imgSrc);
+		// 		}
+		// 		return $retorno;
+
+		// }
 	// news to the market
 		/*function getImagenesNewsToMarket($id){
 			$sql 		= "SELECT 
@@ -146,7 +172,7 @@ class Indexm  extends Padrem
 				$listingModel = new Listingsm();
 			// vars 
 				$divNews 	= "";
-				$casas 		= $listingModel->getCasasNewsMarket($l1,$l2);
+				$casas 		= $listingModel->getCasasNewsMarket2($l1,$l2);
 				$casas 		= $casas->resultado[0];
 			// do it 
 				// echo "<pre>";
@@ -491,5 +517,183 @@ class Indexm  extends Padrem
 					$query->next_result();
 				$this->db->trans_complete();
 			return $resultado;
+		}
+		function smallIndexListing(){
+			$sql = "SELECT streetNumber.exp_id as homeId,
+					imagesHome.numFotos,
+					CONCAT(
+							streetNumber.exp_valor,
+							' ',
+							streetName.exp_valor,
+							' ',
+							type.exp_valor
+							) AS `nombreVivienda`,
+							IF (
+								(
+									isnull(`city`.`exp_valor`)
+									OR (`city`.`exp_valor` = '')
+								),
+								'Sin asignar',
+								`city`.`exp_valor`
+							) AS `cityTown`,
+							`list`.`exp_valor` AS `listPrice`,
+							concat(
+								`documento`.`doc_ruta`,
+								`documento`.`doc_nombre`
+							) AS `rutaImg`,
+							marketStatus.marketStatus
+					FROM (
+						SELECT
+							`crm_exp_expediente`.`exp_id` AS `exp_id`,
+							`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+						FROM
+							`crm_exp_expediente`
+						WHERE
+							(
+								`crm_exp_expediente`.`exp_atr_id` = 3868
+							)
+					) streetNumber
+					LEFT JOIN (
+						SELECT
+							`crm_exp_expediente`.`exp_id` AS `exp_id`,
+							`crm_exp_expediente`.`exp_valor` AS `exp_valor`,
+							`crm_exp_expediente`.`exp_fecha_creacion` AS `listingDate`
+						FROM
+							`crm_exp_expediente`
+						WHERE
+							(
+								`crm_exp_expediente`.`exp_atr_id` = 3869
+							)
+					)streetName
+					ON streetNumber.exp_id = streetName.exp_id 
+					LEFT JOIN (
+						SELECT
+							`crm_exp_expediente`.`exp_id` AS `exp_id`,
+							`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+						FROM
+							`crm_exp_expediente`
+						WHERE
+							(
+								`crm_exp_expediente`.`exp_atr_id` = 3870
+							)
+					) type
+					on type.exp_id = streetName.exp_id 
+					LEFT JOIN (
+						SELECT
+							`crm_exp_expediente`.`exp_id` AS `exp_id`,
+							`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+						FROM
+							`crm_exp_expediente`
+						WHERE
+							(
+								`crm_exp_expediente`.`exp_atr_id` = 3875
+							)
+					) city
+					on city.exp_id = streetNumber.exp_id
+					LEFT JOIN(
+						SELECT
+							`crm_exp_expediente`.`exp_id` AS `exp_id`,
+							`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+						FROM
+							`crm_exp_expediente`
+						WHERE
+							(
+								`crm_exp_expediente`.`exp_atr_id` = 3865
+							)
+					) list
+					on list.exp_id = streetNumber.exp_id
+					LEFT JOIN (
+						
+							SELECT *
+							FROM (
+							SELECT
+								`amb`.`amb_exp_id` AS `amb_exp_id`,
+								doc_id,
+								`doc`.`doc_fecha_creacion` AS `doc_fecha_creacion`,
+								`doc`.`doc_ruta` AS `doc_ruta`,
+								`doc`.`doc_nombre` AS `doc_nombre`,
+								`doc`.`doc_amb_id` AS `doc_amb_id`,
+								`doc`.`doc_descripcion` AS `doc_descripcion`,
+								doc.doc_orden
+							FROM
+								(
+									`crm_documento` `doc`
+									LEFT JOIN `crm_ambito` `amb` ON (
+										(
+											`amb`.`amb_id` = `doc`.`doc_amb_id`
+										)
+									)
+								)
+							WHERE
+								(
+									(`amb`.`amb_com_id` = 17)
+									and `doc`.`doc_tipo` = 'image'
+
+									
+								)
+								ORDER BY doc_orden
+								
+							) sliderProperty
+							group by amb_exp_id 
+						
+					) documento
+					on documento.amb_exp_id = streetNumber.exp_id
+					LEFT JOIN (
+						SELECT
+							`exp`.`exp_id` AS `exp_id`,
+							`exp`.`exp_valor` AS `marketStatus`
+						FROM
+							`crm_exp_expediente` `exp`
+						WHERE
+							(
+								(`exp`.`exp_atr_id` = 3778)
+								AND (`exp`.`exp_com_id` = 17)
+								AND (`exp`.`exp_cat_id` = 12)
+							)
+					) marketStatus
+					on marketStatus.exp_id = streetNumber.exp_id
+					lEFT JOIN (
+					SELECT numImage.idVivienda,COUNT(numImage.idVivienda) AS numFotos
+					FROM (
+						SELECT DISTINCT
+							`exp`.`exp_id` AS `idVivienda`,
+							`documento`.`doc_nombre` AS `doc_nombre`
+						FROM
+							(
+								(
+									(
+										`crm_documento` `documento`
+										LEFT JOIN `crm_ambito` `ambito` ON (
+											(
+												`ambito`.`amb_id` = `documento`.`doc_amb_id`
+											)
+										)
+									)
+									LEFT JOIN `crm_exp_expediente` `exp` ON (
+										(
+											`exp`.`exp_id` = `ambito`.`amb_exp_id`
+										)
+									)
+								)
+								LEFT JOIN `crm_compania` `compania` ON (
+									(
+										`compania`.`com_id` = `exp`.`exp_com_id`
+									)
+								)
+							)
+						WHERE
+							(
+								(`compania`.`com_id` = 17)
+								AND (`exp`.`exp_cat_id` = 12)
+								AND (
+									`documento`.`doc_tipo` = 'image'
+								)
+							)
+				) numImage
+				GROUP BY(numImage.idVivienda)
+				) imagesHome
+				on imagesHome.idVivienda = streetNumber.exp_id
+					";
+			return $sql;
 		}
 }
