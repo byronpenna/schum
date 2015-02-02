@@ -116,9 +116,9 @@ class Property_detailsm extends Padrem
 			$arr->generalInfo 			= array(3872,3873,3884,3885,3886);
 			$arr->lotInformation 		= array(3933,3934,3935,3936);
 			$arr->taxes 				= array(3938,3939,3940,3941,3942,3943,3944);
-			$arr->remark 				= array(3949,3950,3951,3952,3953,3954,3955,3956,4003,3958,3959,3061);
-			$arr->interior 				= array(3964,3965,3967,3968,3969,3970,3971,3972,3973);
-			$arr->util 					= array(3994,3995,3996,3997);
+			$arr->remark 				= array(3949,3950,3951,3952,3953,3954,3955,3956,4003,3958,3959,3061,3960,3961);
+			$arr->interior 				= array(3964,3965,3967,3968,3969,3970,3971,3972,3973,3966,3977);
+			$arr->util 					= array(3994,3995,3996,3997,4008);
 			return $arr;
 		}
 		function getCheckKeys($homeId,$yearBuilt="",$school){
