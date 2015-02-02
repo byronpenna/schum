@@ -31,12 +31,12 @@
 	  		// mouseover
 	  			
 	  			$(document).on("mouseenter",".imagesNewToMarket2",function(){
-					$(this).hide(2000,function(){
+					$(this).delay(500).hide(1,function(){
 						//console.log("siguiente",$(this).next().attr("src"));
 						if($(this).next().attr("src") == undefined){
-							$(this).parents(".container").find(".firstimg").show(2000);
+							$(this).parents(".container").find(".firstimg").delay(500).show();
 						}else{
-							$(this).next().show(2000);	
+							$(this).next().delay(500).show();	
 						}	
 					});
 				});
