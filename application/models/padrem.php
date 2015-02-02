@@ -7,6 +7,7 @@ class Padrem extends CI_Model
 	{
 		parent::__construct();
 		$this->load->helper("url");
+		date_default_timezone_set('America/Costa_Rica');
 	}
 	public function getRSS($url){
 		$rss = new DOMDocument();

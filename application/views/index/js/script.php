@@ -3,6 +3,10 @@
 	$(document).ready(function(){
 		$(".searchCb").selecter();
 		$(".Clasemamasita").selecter();
+		
+		loadNewToMarket();
+		loadEmpleados();
+		
 		// automatic functions 
 			// timerSlider();
 		// plugins

@@ -95,6 +95,16 @@ class Welcome extends Padre {
 	    list($usec, $sec) = explode(" ", microtime());
 	    return ((float)$usec + (float)$sec);
 	}
+	public function getNewToTheMarket(){
+		$this->load->model("indexm");
+		$indexModel = new Indexm();
+		echo $indexModel->getNewsToTheMarket();
+	}
+	public function getEmpleados(){
+		$this->load->model("indexm");
+		$indexModel = new Indexm();
+		echo $indexModel->getCuadritosEmpleados();		
+	}
 	public function index()
 	{	
 		// loads 
@@ -130,6 +140,7 @@ class Welcome extends Padre {
 				'homeData' 			=> $this->homeData,
 				'searchBar'			=> $searchBar,
 				'cuadritoCasa' 		=> $cuadritosCasa->div,
+				'ajaxLoader'		=> $this->getAjaxLoaderSrc(),
 				// 'cuadritoCasa'		=> '',	
 				// 'cuadritoEmpleado' 	=> $indexModel->getCuadritosEmpleados(),
 				'cuadritoEmpleado' 	=> '',

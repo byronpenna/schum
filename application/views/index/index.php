@@ -1,5 +1,6 @@
 <?php 
 	$datos["opMenu"] = 0;
+	
 ?>
 <!DOCTYPE html>
 <html>

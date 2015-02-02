@@ -14,6 +14,16 @@ class Padre extends CI_Controller
 			$this->homeData 	= $indexModel->getHome();
 			
 	}
+	public function getAjaxLoaderSrc(){
+		// $ajax = site_url("img/recursos/ajax-loader.gif");
+		$ajax = " <div class='loader'>\
+					  <div class='flipper'>\
+					    <div class='front'></div>\
+					    <div class='back'></div>\
+					  </div>\
+					</div>";
+		return $ajax;
+	}
 	public function getSearchBar(){
 		// load 
 			$this->load->model("indexm");

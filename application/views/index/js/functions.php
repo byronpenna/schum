@@ -1,3 +1,39 @@
+function loadNewToMarket(){
+	$.ajax({
+		data:{
+			
+		},
+		url: 	<?php echo "'".site_url('welcome/getNewToTheMarket')."'" ?>,
+		type: 	"POST",
+		beforeSend: function(){
+			div = <?php echo "\" $ajaxLoader \""; ?>;
+			loader = "<div style='margin-top:10%;'>"+div+"</div>";
+			$(".pedazoNewsToMarket").empty().append(loader);
+		},
+		success: function(data){
+			$(".pedazoNewsToMarket").empty().append(data);
+			// console.log("las casitas son:",data);
+		}
+	});
+}
+function loadEmpleados(){
+	$.ajax({
+		data:{
+			
+		},
+		url: 	<?php echo "'".site_url('welcome/getEmpleados')."'" ?>,
+		type: 	"POST",
+		beforeSend: function(){
+			div = <?php echo "\" $ajaxLoader \""; ?>;
+			loader = "<div style='margin-top:3%;position:absolute;left:50%;'>"+div+"</div>";
+			$(".cuadritosEmpleadoSection").empty().append(loader);
+		},
+		success: function(data){
+			$(".cuadritosEmpleadoSection").empty().append(data);
+			// console.log("las casitas son:",data);
+		}
+	});	
+}
 function slideNewsToMarket(divInputs,selector){
 	
 	input = divInputs.find(".imgSlideNewsToMarket.active");
@@ -8,7 +44,7 @@ function slideNewsToMarket(divInputs,selector){
 		input = divInputs.find(".imgSlideNewsToMarket").first();
 	}
 	input.addClass("active");
-	console.log(input.val());
+	// console.log(input.val());
 	// #############
 		$(selector).animate({
 		    opacity: 0.50,
@@ -56,7 +92,7 @@ function paginacion(limit){
 		type: 	"POST",
 		success: function(data){
 			if(data != ""){
-				console.log(data);
+				// console.log(data);
 				$(".pedazoNewsToMarket").empty().append(data);
 				$("#txtl1").val(l1);
 	  			$("#txtl2").val(l2);
@@ -72,7 +108,7 @@ function paginacionEmp(limit){
 		url: 	<?php echo "'".site_url('welcome/getEmpPagination')."'" ?>,
 		type: 	"POST",
 		success: function(data){
-			console.log("la data es: ",limit);
+			// console.log("la data es: ",limit);
 			// console.log("nice",data);
 			if(data != ""){
 				$("#txtl1").val(limit.l1);
@@ -127,7 +163,7 @@ function paginacionEmp(limit){
 			type: 	"POST",
 			success: function(data){
 				datos = jQuery.parseJSON(data);
-				console.log(datos);
+				// console.log(datos);
 				$(".cuadritoVivienda").empty().append(datos.div);
 			}
 		});	
@@ -135,11 +171,11 @@ function paginacionEmp(limit){
 	function searchBar(){
 		frm = serializeToJson($(".searchBarBackground :input").serializeArray());
 		url = <?php echo "'".site_url("listings/searchHome")."'"  ?> ;
-		console.log(frm);
+		// console.log(frm);
 		$.each(frm,function(i,value){
 			url += "/"+value;
 		});
-		console.log(url);
+		// console.log(url);
 		location.href=url;
 		// window.location=url+"/"+frm;
 		// url = url+"/"+frm;
@@ -310,7 +346,7 @@ function paginacionEmp(limit){
 	}
 	function newPopUp(varsContent){
 		var url = <?php echo "'".site_url("property_detail/index/")."'" ?>+"/"+varsContent.homeId;
-		console.log(varsContent);
+		// console.log(varsContent);
 		var popUp = new google.maps.InfoWindow({
 		
 		    content: "\
