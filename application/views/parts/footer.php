@@ -80,7 +80,7 @@
 		<aside id="text-4" class="widget widget_text contSociales">
 			<h3 class="widget-title connectFooter" style="text-align:right;">Connect With Us</h3>		
 			<div class="textwidget"><div style="padding-top:10px;"></div>
-				<span style="float:right;">
+				<span style="float:right;" id="spanFooter">
 					<a class="foot-social-ico" id='fbFooter' href=<?php echo "'".$homeData->facebook."'" ?> target="_blank">
 						<i class="fa fa-facebook"></i>
 					</a>

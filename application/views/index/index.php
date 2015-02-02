@@ -20,6 +20,9 @@
 				$this->load->view("index/css/indexMedia.php");
 				$this->load->view("index/css/jquery.fs.selecter.css");
 			?>
+			#spanFooter .fa{
+				margin-top:25%;
+			}
 		</style>
 	<!-- scripts -->
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
