@@ -154,7 +154,7 @@ class Welcome extends Padre {
 			);
 			$end 						= $this->microtime_float();
 			$time 						= $end-$start;
-			echo "El tiempo de ejecucion es: ".$time;
+			// echo "El tiempo de ejecucion es: ".$time;
 		// views 
 			$this->load->view('index/index.php',$data);
 			
