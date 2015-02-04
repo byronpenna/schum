@@ -40,7 +40,7 @@
 @media(min-width:1100px) and (max-width:1499px){
 	/*botones estandarisados como en el psd*/
 	.dataOtherSay button {
-		font-size: 0.8em !important;
+		font-size: 1em !important;
 	}
 	.botonChulo {
 	width: 80%;
@@ -269,6 +269,9 @@
 	.descriptionIndividual h3{
 		font-size: 1em;
 	}
+	h3.contactTitle{
+			font-size:1.3em;
+		}
 	.idiomas h2{
 		font-size: 1em;
 	}
@@ -310,6 +313,7 @@
 		.descriptionIndividual h3{
 			font-size: 1em;
 		}
+
 		.direccion{
 			font-size: 1em;
 		}
