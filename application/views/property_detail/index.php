@@ -16,7 +16,11 @@
 	    		$this->load->view("property_detail/css/style.php");
 	    		$this->load->view("property_detail/css/indexMedia.php");
 	    	?> 
+	    	.nosubrayar{
+				text-decoration: none !important;
+			}
 	    </style>
+
 	    <!-- jcarrusel -->
 	    <style type="text/css">	    
 			<?php
@@ -179,7 +183,7 @@
 						</div>
 						<div class="col-lg-4 col-sm-12 col-md-4 paddingNull">
 							<div class="col-lg-4 col-sm-4 col-md-4 boxSummary">								
-								<label>MLS ID # :</label>
+								<label>MLS # :</label>
 								<p>
 									<?php echo $house->mlsNumber; ?>
 								</p>
@@ -368,7 +372,9 @@
 								</div>
 								<div class="row container-fluid inform">
 										<div class="listingSort">
-											<i class="fa fa-list"></i>&nbsp;<span><?php echo $empleado->listings ?> ACTIVE LISTINGS </span>
+											<a class='nosubrayar' href=<?php echo site_url('listings/getListingFromAgent/'.$empleado->idEmpleado); ?>  >
+												<i class="fa fa-list"></i>&nbsp;<span><?php echo $empleado->listings ?> ACTIVE LISTINGS </span>
+											</a>
 										</div>
 										<div class="listingSort">
 											<i class="fa fa-envelope"></i>&nbsp;<a href=<?php echo "mailto:".$empleado->email." " ?> ><span><?php echo $empleado->nombre ?></span></a>	

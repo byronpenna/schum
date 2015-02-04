@@ -241,7 +241,7 @@
 				<div class="row container-fluid">
 					<a href=<?php echo "'".site_url("calendar/general")."'" ?> >
 						<div class="row container-fluid paddingNull">
-							<h2 class="text-center titleVideoSection titleOpenHouse">Open Houses Calendar</h2>	
+							<h2 class="text-center titleVideoSection titleOpenHouse">Open House Calendar</h2>	
 						</div>
 						<div class="row schedule ">
 							<img class="img-responsive imgCenter imgSchedule" src=<?php echo "'".base_url("img/elements/lateral_video/calendario.png")."'"; ?> >
@@ -305,7 +305,8 @@
 					</div>
 					<div class="row container-fluid">
 						<div id="likebox-wrapper">
-							<div class="fb-like-box" data-href="https://www.facebook.com/SchumacherRealty?ref=br_tf" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>	
+							<!-- <div class="fb-like-box" data-href="https://www.facebook.com/SchumacherRealty?ref=br_tf" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>	 -->
+							<iframe name="f151cbc7a8" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="http://www.facebook.com/v2.0/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df884d3298%26domain%3Ddeercoder.com%26origin%3Dhttp%253A%252F%252Fdeercoder.com%252Ff32eecd288%26relation%3Dparent.parent&amp;color_scheme=light&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2FSchumacherRealty&amp;locale=en_US&amp;sdk=joey&amp;show_border=true&amp;show_faces=true&amp;stream=false" class="face col-sm-12 col-lg-12 col-sx-12 col-md-12"></iframe>
 						</div>	
 					</div>
 					

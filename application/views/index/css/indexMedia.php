@@ -546,8 +546,14 @@
 
 		.banner2 p{
 			font-size: 2em;
+			
 		}
-
+		.banner2{
+			padding-top: 9%;
+			padding-bottom: 5%;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
 		
 	body{
 		background: green;
@@ -600,7 +606,7 @@
 				font-size: 2.5em;
 			}
 			.banner2 p{
-				font-size: 2em;
+				font-size: 2.5em;
 			}
 	/* news to the market */ 
 		.imgNewsToMarket{
@@ -663,7 +669,16 @@
 		background: pink;
 	}
 }
-
+@media(min-width:1280px){
+	.banner2{
+		padding-top: 6%;
+	}
+}
+@media(min-width:1300px){
+	.banner2{
+		padding-top: 5%;
+	}
+}
 @media(min-width:1400px){
 	/*lg*/
 		.sendButtonEbook{

@@ -408,6 +408,11 @@
 		height: 500px !important; 
 	}
 }
+@media(min-width: 1024px){
+	#contkey{
+		width: 18%;
+	}
+}
 @media(min-width:1200px) and (max-width: 1299px){
 	.fbbox iframe{
 		display: block;

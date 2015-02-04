@@ -362,7 +362,7 @@ class Padrem extends CI_Model
 		) contact
 		on contact.idEmpleado = nombre.idEmpleado
 		LEFT JOIN (
-			-- ##########################
+			
 				SELECT
 					`agente`.`Agente` AS `Agente`,
 					count(`codigo`.`exp_id`) AS `cnListings`
@@ -372,7 +372,7 @@ class Padrem extends CI_Model
 							(
 								`schum_fl_codigo` `codigo`
 								LEFT JOIN (
-									-- #########################
+									
 									SELECT
 											`E`.`exp_id` AS `id1`,
 											`E`.`exp_valor` AS `Agente`
@@ -393,7 +393,7 @@ class Padrem extends CI_Model
 													`A`.`atr_nombre` = 'Agent / Realtor ®'
 												)
 											)
-									-- #########################
+									
 								) `agente` ON (
 									(
 										`agente`.`id1` = `codigo`.`exp_id`
@@ -401,7 +401,7 @@ class Padrem extends CI_Model
 								)
 							)
 							LEFT JOIN (
-								-- ##################################
+								
 									SELECT
 										`E`.`exp_id` AS `id2`,
 										`E`.`exp_valor` AS `Market`
@@ -422,7 +422,7 @@ class Padrem extends CI_Model
 												`A`.`atr_nombre` = 'Market Status'
 											)
 										)
-								-- ##################################
+								
 								) `market` ON (
 								(
 									`market`.`id2` = `codigo`.`exp_id`
@@ -430,7 +430,7 @@ class Padrem extends CI_Model
 							)
 						)
 						LEFT JOIN (
-								-- ############################
+								
 										SELECT
 											`E`.`exp_id` AS `id3`,
 											`E`.`exp_valor` AS `Statuss`
@@ -449,7 +449,7 @@ class Padrem extends CI_Model
 												AND (`A`.`atr_comp_id` = 17)
 												AND (`A`.`atr_nombre` = 'Status')
 											)
-								-- ############################
+								
 							) `statuss` ON (
 							(
 								`statuss`.`id3` = `codigo`.`exp_id`
@@ -465,7 +465,7 @@ class Padrem extends CI_Model
 					)
 				GROUP BY
 					`agente`.`Agente`
-			-- ##########################
+			
 		) listings	
 		on listings.Agente = concat(`nombre`.`nombre`,' ',`apellido`.`apellido`)
 		LEFT JOIN `crm_ambito` `ambito` 
@@ -700,7 +700,7 @@ LEFT JOIN (
 ) bath
 ON bath.exp_id = streetNumber.exp_id
 LEFT JOIN (
-	-- ##################
+	
 		SELECT *
 		FROM (
 		SELECT
@@ -732,7 +732,7 @@ LEFT JOIN (
 			
 		) sliderProperty
 		group by amb_exp_id 
-	-- ##################
+	
 ) documento
 on documento.amb_exp_id = streetNumber.exp_id
 LEFT JOIN (
