@@ -403,7 +403,7 @@
 										</a>
 									</button>
 									<button class="readmore">
-										<a href="mailto:<?php echo $empleado->email ?>?subject=Showing Request For: <?php echo $house->nombreVivienda ?>">Book a showing</a> 
+										<a href="mailto:<?php echo $empleado->email ?>?subject=Showing Request For: <?php echo $house->nombreVivienda ?>">Book a Showing</a> 
 									</button>
 									<!-- <a href="#">
 										<button class="readmore">More Info</button>

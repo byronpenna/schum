@@ -42,13 +42,13 @@
 				<div class="row container-fluid descriptionIndividual">
 					<div class="row container-fluid txtContact">
 						<div class="col-lg-6">
-							<h3>Contact</h3>		
+							<h3 class='contactTitle'>Contact</h3>		
 						</div>
 					</div>
 					<div class="row container-fluid">
-						<div class="col-lg-8">
+						<div class="col-lg-9">
 							<span class='direccion'>
-								<?php echo $empleado->contact; ?>
+								<?php echo nl2br($empleado->contact); ?>
 							</span>	
 						</div>
 					</div>
@@ -148,7 +148,7 @@
 									echo $testimonios;
 								?>
 								<div class="row container-fluid dataOtherSay">
-									<div class="col-md-5 col-lg-3">
+									<div class="col-md-5 col-lg-4">
 										<button class="form-control botonChulo">
 											MORE TESTIMONIALS	
 										</button>	

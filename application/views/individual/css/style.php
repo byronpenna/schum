@@ -71,7 +71,7 @@ a:hover{
 		padding-bottom: 6%;
 	}
 	.viewListingSection button{
-		background: #be0000;
+		background: #314782 ;
 		color: white;
 		height: auto;
 		font-family: 'proximaNovaBlack';
@@ -79,6 +79,17 @@ a:hover{
 		letter-spacing: 0px;
 		border-radius: 0;
 	}
+	
+	.viewListingSection button:hover{
+		background: #be0000	 ;
+	}
+	.dataOtherSay button{
+		background: #314782	 ;	
+	}
+	.dataOtherSay button:hover{
+		background: 	 #be0000;	
+	}
+
 	.contact div{
 		padding-top: 1%;
 	}
@@ -134,9 +145,9 @@ a:hover{
 		margin: 0;
 	}
 	.dataOtherSay button{
-		background: #be0000;
+		
 		color: white;
-		padding: 4%;
+		padding: 6%;
 		font-size: 1.5em;
 	}
 	.dataOtherSay h3{

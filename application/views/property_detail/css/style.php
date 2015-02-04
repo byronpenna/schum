@@ -76,6 +76,7 @@ img.imgfull{
 }
 .readmore{
 	margin-bottom: 5%;
+	background: 
 }
 .descript{
 	word-break: break-all;
@@ -339,7 +340,10 @@ label{
 }
 .readmore{
     border: none;
-    background-color: #be0000;
+    background-color: #314782;
+}
+.readmore:hover{
+	background: #be0000;
 }
 .readmore a{
 	color:#FFFFFF !important;
