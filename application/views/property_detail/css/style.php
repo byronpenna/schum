@@ -1,3 +1,6 @@
+.listingSort{
+	display: inline-block;
+}
 .iframeVirtual{
 	width: 100%;
 	height: 700px;

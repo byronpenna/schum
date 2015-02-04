@@ -5,8 +5,12 @@
 	margin-top: 10%;
 }
 .btnSend{
-	background: #BE0000;
+	background: #314782;
 	color: white;
 	font-weight: bold;
 	border-radius: 0;
+}
+.btnSend:hover{
+	color: white;
+	background: #BE0000;
 }

@@ -55,13 +55,13 @@ class Padrem extends CI_Model
 		        $tweetText = $tweet['text'];
 
 		        # Make links active
-		        $tweetText = preg_replace("#(http://|(www.))(([^s<]{4,68})[^s<]*)#", '<a href="http://$2$3" target="_blank">$1$2$4</a>', $tweetText);
+		        $tweetText = preg_replace("#(http://|(www.))(([^s<]{4,68})[^s<]*)#", '<a class="fondoRojo nosubrayar" href="http://$2$3" target="_blank">$1$2$4</a>', $tweetText);
 
 		        # Linkify user mentions
-		        $tweetText = preg_replace("/@(w+)/", '<a href="http://www.twitter.com/$1" target="_blank">@$1</a>', $tweetText);
+		        $tweetText = preg_replace("/@(w+)/", '<a class="fondoRojo nosubrayar" href="http://www.twitter.com/$1" target="_blank">@$1</a>', $tweetText);
 
 		        # Linkify tags
-		        $tweetText = preg_replace("/#(w+)/", '<a href="http://search.twitter.com/search?q=$1" target="_blank">#$1</a>', $tweetText);
+		        $tweetText = preg_replace("/#(w+)/", '<a class="fondoRojo nosubrayar" href="http://search.twitter.com/search?q=$1" target="_blank">#$1</a>', $tweetText);
 				$tweetText = preg_replace("/#([A-Za-z0-9_]+)/", "<a href='https://twitter.com/hashtag/$1?src=hash' target='_blank'>#$1</a>", $tweetText);	
 		       	$tweets[$key]["text"] = $tweetText;
 		        # Output

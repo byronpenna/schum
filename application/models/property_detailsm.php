@@ -59,7 +59,7 @@ class Property_detailsm extends Padrem
 
 			$titulo[0]->text = "<h2 class='txtSubtitle'>Property description</h2>"; 	$titulo[1]->text = "<h2 class='txtSubtitle'>general info</h2>"; 
 			$titulo[2]->text = "<h2 class='txtSubtitle'>Lot information</h2>";			$titulo[3]->text = "<h2 class='txtSubtitle'>taxes and local improvements</h2>";
-			$titulo[4]->text = "<h2 class='txtSubtitle'>Remarks</h2>"; 					$titulo[5]->text = "<h2 class='txtSubtitle'>Interior</h2>";
+			$titulo[4]->text = "<h2 class='txtSubtitle'>Features</h2>"; 					$titulo[5]->text = "<h2 class='txtSubtitle'>Interior</h2>";
 			$titulo[6]->text = "<h2 class='txtSubtitle'>Utilities</h2>";
 
 
@@ -89,7 +89,7 @@ class Property_detailsm extends Padrem
 		}
 		function getRooms($homeId){
 			$rooms 		= $this->getResulset($this->getSqlRooms($homeId));
-			$keysRooms 	= "<h2 class='txtSubtitle'>Rooms</h2>"; 
+			$keysRooms 	= "<h2 class='txtSubtitle'>Approx. Room Sizes</h2>"; 
 			$detalle 	= false;
 			foreach ($rooms as $key => $value) {
 				if($value->nivel == "1" && $value->exp_valor != ""){
@@ -144,7 +144,7 @@ class Property_detailsm extends Padrem
 						$keyDiv[$value->atr_id] = "<article id='contkey' class='ckeyK'><h4 class='text-center'>".$value->atr_nombre."</h4>
 									<p>".$value->exp_valor;
 					}else{
-						$keyDiv[$value->atr_id] .= ", &nbsp;&nbsp;".$value->exp_valor;
+						$keyDiv[$value->atr_id] .= ", ".$value->exp_valor;
 					}
 					
 				}

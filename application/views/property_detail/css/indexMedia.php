@@ -373,6 +373,15 @@
 	.navControl{
 		left:0px;
 	}
+	.listingSort{
+		display: block;
+	}
+	div.imgfull img{
+		margin-top: 15%;
+	}
+	.readmore{
+		width: 80%;
+	}
 }
 @media(min-width:1100px) and (max-width: 1199px){
 	.fbbox iframe{
@@ -1270,6 +1279,12 @@ iframe[name="f3d7c73d9c"]{
 	.iframeVirtual{
 		height: 850px !important; 
 	}
+	.nameSection h2{
+		font-size: 3em;
+	}
+	.nameSection h4{
+		font-size: 2.3em;
+	}
 }
 @media(min-width:1400px){
 	.control{
@@ -1894,7 +1909,7 @@ iframe[name="f3d7c73d9c"]{
 			font-size: 5em;
     }
     .nameSection h4{
-			font-size: 3em;
+		font-size: 3em;
     }
 	/*Summary*/		
     

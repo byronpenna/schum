@@ -367,8 +367,13 @@
 									<h3><?php echo $empleado->posicion ?> </h3>
 								</div>
 								<div class="row container-fluid inform">
-										<i class="fa fa-list"></i>&nbsp;<span><?php echo $empleado->listings ?> LISTINGS&nbsp;&nbsp;</span>
-										<i class="fa fa-envelope"></i>&nbsp;<a href=<?php echo "mailto:".$empleado->email." " ?> ><span><?php echo $empleado->nombre ?></span></a>
+										<div class="listingSort">
+											<i class="fa fa-list"></i>&nbsp;<span><?php echo $empleado->listings ?> ACTIVE LISTINGS </span>
+										</div>
+										<div class="listingSort">
+											<i class="fa fa-envelope"></i>&nbsp;<a href=<?php echo "mailto:".$empleado->email." " ?> ><span><?php echo $empleado->nombre ?></span></a>	
+										</div>
+										
 								</div>
                                 <div class="row descripcionempleado">
 									<div class="col-lg-12 col-sm-12 col-md-12 descript">
