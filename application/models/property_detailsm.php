@@ -203,7 +203,7 @@ class Property_detailsm extends Padrem
 				if($yearBuilt != ""){
 					$titulo[0]->text .= "
 					<article id='contkey'>
-						<h4 class='text-center'>Year built</h4>
+						<h4 class='text-center'>Year Built</h4>
 						<p>".$yearBuilt."</p>
 					</article>
 					";

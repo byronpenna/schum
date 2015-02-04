@@ -114,9 +114,15 @@ class Listingsm extends Padrem
 					$sql[0] = "";
 				}
 				$sql[1] = "SELECT COUNT(*) AS casas
-				FROM (".$this->getSqlHouseListing().") houseListing ".$sql[0];
+				FROM (".$this->getSqlHouseListing().") houseListing 
+
+				".$sql[0]." 
+				ORDER BY marketStatus,homeId DESC
+				";
+
 				$sql[0] = "SELECT * 
 				FROM (".$this->getSqlHouseListing().") houseListing ".$sql[0]."
+				ORDER BY marketStatus,homeId DESC
 				LIMIT ".$l1.",".$l2."
 				";
 			// do it 
