@@ -32,6 +32,9 @@
 					z-index:900000000;
 					opacity:1;
 				}
+				.nosubrayar{
+				text-decoration: none !important;
+			}
 	</style>
 </head>
 <body>
@@ -48,10 +51,10 @@
 				            <form>
 					            <legend>CONTACT</legend>
 					            <p>
-						            To Contact Us Directly, Use the following information.<br>
+						            To Contact Us Directly, Use The Following Information.<br>
 						            <b>General Inquiries:</b>
 						            <br>
-						            <a href="mailto:info@driventofinish.com">info@driventofinish.com</a>
+						            <a class='nosubrayar' href="mailto:info@driventofinish.com">Info@DrivenToFinish.com</a>
 					            </p>
 					            <address>
 					                <strong>Mailing Address:</strong><br>

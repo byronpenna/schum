@@ -1,3 +1,11 @@
+<style type="text/css">
+	.nosubrayar{
+		text-decoration: none !important;
+	}
+	.fondoRojo:hover{
+		color: #BE0000 !important;
+	}
+</style>
 <div id="footer_container" >
 
 	<footer class="site-footer" >
@@ -10,16 +18,16 @@
 					<div class="menu-footer-menu-container">
 						<ul id="menu-footer-menu" class="nav-menu">
 							<li id="menu-item-1411" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-152 current_page_item menu-item-1411">
-								<a href=<?php echo "'".site_url("ourteam")."'" ?> > Meet our team</a>
+								<a class='nosubrayar'  href=<?php echo "'".site_url("ourteam")."'" ?> > Meet Our Team</a>
 							</li>
 							<li id="menu-item-1409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409">
-								<a href=<?php echo "'".site_url("news")."'" ?> > News</a>
+								<a class='nosubrayar'  href=<?php echo "'".site_url("news")."'" ?> > News</a>
 							</li>
 							<li id="menu-item-1414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1414">
-								<a href=<?php echo "'".site_url("our_story")."'" ?> > Our Story</a>
+								<a  class='nosubrayar' href=<?php echo "'".site_url("our_story")."'" ?> > Our Story</a>
 							</li>
 							<li id="menu-item-1412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412">
-								<a href=<?php echo "'".site_url("contact_us")."'" ?> > Contact</a>
+								<a  class='nosubrayar' href=<?php echo "'".site_url("contact_us")."'" ?> > Contact</a>
 							</li>
 						</ul>
 					</div>				
@@ -62,7 +70,7 @@
 
 	<img class="alignleft"  src="https://pbs.twimg.com/profile_images/2597234936/3aovw5e38hcvo67jmfkx_normal.jpeg">
 		<strong class="real-name">Schumacher Realty</strong>
-			<a href="https://www.twitter.com/schumacherrlty" target="_blank">@SchumacherRlty</a>
+			<a href="https://www.twitter.com/schumacherrlty" target="_blank" class='fondoRojo nosubrayar'>@SchumacherRlty</a>
 	<p class="twitget-user-description" > <br>We love helping people to successfuly reach their #goals in buying and selling #RealEstate in Manitoba!</p>
 </div>
 <script type="text/javascript">
