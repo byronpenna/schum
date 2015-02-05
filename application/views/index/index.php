@@ -23,6 +23,14 @@
 			#spanFooter .fa{
 				margin-top:10%;
 			}
+
+
+
+			@media(min-width:767px){
+				.sliderNew {
+					margin-top:-40px;
+				}
+			}
 		</style>
 	<!-- scripts -->
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
