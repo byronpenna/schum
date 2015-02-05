@@ -28,7 +28,7 @@ class Individualm extends Padrem
 			$div .= "
 			<div class='row container-fluid dataOtherSay'>
 				<div class='col-md-8'>
-					<p>
+					<p style='text-align:justify'>
 						".$data[0]."
 					</p>
 					<h2>".$data[1]."</h2>
