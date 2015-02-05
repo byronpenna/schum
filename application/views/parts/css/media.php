@@ -52,9 +52,31 @@
 	}
 
 	.headerImage{
-		width: 50%;
-		margin: auto;
+		margin:auto !important;
+		width: 50% !important;
 	}
+
+	.propertySearchSection h3{
+		margin-left:-30px !important;
+	}
+
+	.videoYoutube {
+			display:none !important;
+	}
+
+	.likeUsCuadrito {
+			display:none !important;
+	}
+
+	.banner2 p {
+		width: 700px !important;
+		margin-left: -200px !important;
+	}
+
+	.dataTeam p{
+		font-size:1em !important;
+	}
+
 }
 @media(min-width:767px){
 		body{
@@ -89,10 +111,6 @@
 			margin-top:-40px;
 		}
 
-
-		.propertySearchSection{
-			font-size: 0.5em;
-		}
 }
 @media(min-width:992px) and (max-width:1199px){
 	body{
@@ -123,6 +141,10 @@
 		}
 		.navbar-nav{
 			margin-left: 5%;
+		}
+
+		.headerImage{
+			width: 100%;
 		}
 }
 
@@ -192,6 +214,10 @@
 	/* calculadora */ 
 		.calculadora label{
 			font-size: 2em;
+		}
+
+		.headerImage{
+			width: 100%;
 		}
 
 }
@@ -301,6 +327,9 @@
 		.bannerMovil {
 			display: block;
 		}
+		.headerImage{
+			width: 100%;
+		}
 	}
 @media(min-width: 992px) {
 		.bannerDesktopBig {
@@ -313,3 +342,26 @@
 			display: none;
 		}
 	}
+
+	@media(min-width: 769px) and (max-width:2000px){
+		.headerImage{
+			width: 100% !important;
+		}
+
+		.propertySearchSection h3{
+			margin-left:0px !important;
+		}
+
+		.videoYoutube {
+			display:block !important;
+		}
+
+		.likeUsCuadrito {
+			display:block !important;
+		}
+
+		.banner2 p {
+			width: 100% !important;
+			margin-left: 0px !important;
+	}
+}

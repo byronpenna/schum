@@ -375,8 +375,6 @@
 					echo @$buySeller->buyers;
 					echo @$buySeller->sellers;
 				?>
-				
-				
 			</div>
 		<!-- Footer -->
 		<?php $this->load->view("parts/footer.php") ?>

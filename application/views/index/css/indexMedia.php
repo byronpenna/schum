@@ -339,7 +339,39 @@
 		}
 
 		.boxOurTeam{
-			height:1200px;
+			height:670px;
+		}
+
+		.rowContactoTeam ul li{
+			height: 40px;
+		}
+
+		.rowContactoTeam ul li{
+			font-size:0.6em !important;
+		}
+
+
+		/*.buySellSection div{
+			display: inline-block;
+		}*/
+
+		#boxBuySell0, #boxBuySell2{
+			
+			min-height: 200px;
+
+
+		}
+
+		/*.textBuySellerBox{
+			width: 50%;
+		}*/
+
+
+		.cont-sellers{
+			width: 45%;
+			display: inline-block;
+			vertical-align: top;
+			margin-left:30px;
 		}
 	}
 @media(min-width:500px) and (max-width:767px){

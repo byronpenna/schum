@@ -48,7 +48,7 @@ class Indexm  extends Padrem
 				$img 	= $this->getImgSrc($ruta);
 				if($value->doc_descripcion == "buyers-home"){
 					$cuadrito->buyers = "
-					<div class='col-md-6 col-lg-6'>
+					<div class='col-md-6 col-lg-6 cont-sellers' >
 						<a href='".$homeData->home_buyer."' target='_blank' >
 							<div class='col-lg-12 boxBuySell ' >
 								<div class='row' id='boxBuySell0' style='background:url(".$img."); background-size: 100% 100%;'>
@@ -60,7 +60,7 @@ class Indexm  extends Padrem
 				}
 				if($value->doc_descripcion == "sellers-home"){
 					$cuadrito->sellers = "
-					<div class='col-md-6 col-lg-6'>
+					<div class='col-md-6 col-lg-6 cont-sellers' >
 						<a href='".$homeData->homeSeller."' target='_blank' >
 							<div class='col-lg-12 boxBuySell'>
 								<div class='row' id='boxBuySell2' style='background:url(".$img."); background-size: 100% 100%;' >
