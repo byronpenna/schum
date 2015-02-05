@@ -50,6 +50,11 @@
 	.dropdown-menu > li > a{
 		font-size: 0.84em;
 	}
+
+	.headerImage{
+		width: 50%;
+		margin: auto;
+	}
 }
 @media(min-width:767px){
 		body{
@@ -63,7 +68,9 @@
 		}
 	/* Menu */ 
 		.container-menu{
-			width: 95%;
+			width: 100%;
+			font-size: 0.8em;
+			/*margin-top:-45px;*/
 		}
 		.nav > li{
 			padding-left: 1.5%;
@@ -76,6 +83,15 @@
 		}
 		.navbar-default .navbar-nav > li > a{
 			font-size: 0.8em;
+		}
+
+		.sliderNew {
+			margin-top:-40px;
+		}
+
+
+		.propertySearchSection{
+			font-size: 0.5em;
 		}
 }
 @media(min-width:992px) and (max-width:1199px){
