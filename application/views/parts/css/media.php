@@ -107,10 +107,10 @@
 			font-size: 0.8em;
 		}
 
-		.sliderNew {
+		/*.sliderNew {
 			margin-top:-40px;
 		}
-
+*/
 }
 @media(min-width:992px) and (max-width:1199px){
 	body{
