@@ -356,6 +356,7 @@ body{
 		padding: 8%;
 		padding-bottom: 2%;
 		/*background: green;*/
+		height: 550px;
 	}
 	.ourTeamDescription{
 		padding: 2%;
@@ -830,3 +831,22 @@ body{
 	.shumSlider,.searchBar{
 		position: absolute;
 	}*/
+
+
+.cont-mail{
+	margin-top:37.5px;
+}
+
+.rowContactoTeam ul{
+	/*background:red;*/
+	width: 100%;
+	bottom:10px;
+	position: absolute;
+	padding: 0px;
+}
+.rowContactoTeam ul li{
+	/*background:orange;*/
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+}

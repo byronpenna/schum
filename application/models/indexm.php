@@ -225,12 +225,10 @@ class Indexm  extends Padrem
 					$listingDiv = "";
 					if($value->listings != "-1"){
 						$listingDiv = "
-						<div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 paddingNull'>
 							<p>
 								<img class='img-responsive imgLine' src='".base_url("img/our_team/listing.png")."' > 
-								".$value->listings." LISTINGS
-							</p>
-						</div>";
+								".$value->listings." ACTIVE LISTINGS
+							</p>";
 					}
 				
 					$cuadrito .= "
@@ -248,15 +246,15 @@ class Indexm  extends Padrem
 									</div>
 								</div>
 								<div class='row rowContactoTeam'>
-									".$listingDiv."
-									<div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 paddingNull'>
-										<p>
+								<ul>
+									<li>".$listingDiv."</li>
+										<li><p>
 											<a href='mailto:".$value->email."' class='emailEmpleado'>
 												<img class='img-responsive imgLine' src='".base_url("img/our_team/email.png")."' > 
 												EMAIL ".$value->simpleName."
 											</a>
-										</p>
-									</div>
+									</p></li>
+									</ul>
 								</div>	
 							</div>
 						</a>

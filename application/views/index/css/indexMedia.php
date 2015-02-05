@@ -57,6 +57,10 @@
 		font-size: 0.7em !important;
 	}
 
+	.boxOurTeam{
+		height: 650px !important;
+	}
+
 }
 @media(min-width:993px) and (max-width:1199px){
 	/*titulo*/
@@ -85,6 +89,18 @@
 		font-size: 0.7em !important;
 	}
 
+	.boxOurTeam{
+		height:390px;
+	}
+
+	.cont-mail{
+		margin-top:20px;
+	}
+	#cont-contact{
+		margin-top:10%%;
+	}
+
+
 }
 @media(min-width:1300px) and (max-width:1600px){
 	/*titulo*/
@@ -98,7 +114,7 @@
 		font-size: 0.65em !important;
 	}
 	.boxOurTeam {
-		height: 285px;
+		height: 350px;
 	}
 }
 @media(min-width:1601px) and (max-width:1800px){
@@ -159,6 +175,10 @@
 		font-size: 0.6em !important;
 		width: 325% !important;
 	}
+
+	/*.cont-mail{
+		margin-top:;
+	}*/
 }
 
 @media(max-width:767px){
@@ -305,6 +325,10 @@
 		.youtubeVideoHome{
 			min-height: 300px;
 		}
+
+		.boxOurTeam{
+			height: 900px;
+		}
 }
 @media(min-width:768px) and (max-width:991px){
 		.casaNewsToMarket {
@@ -312,6 +336,10 @@
 			margin-left: 4%;
 			margin-top: 2%;
 			margin-bottom: 2%;
+		}
+
+		.boxOurTeam{
+			height:1200px;
 		}
 	}
 @media(min-width:500px) and (max-width:767px){
@@ -664,6 +692,10 @@
 			}
 			.searchMapSection{
 				padding-right: 3%;
+			}
+
+			#cont-contact{
+				margin-top:5%;
 			}
 	body{
 		background: pink;
