@@ -1447,3 +1447,60 @@
 @media(min-width: 300px) and (max-width: 499px) {
 
 }
+
+@media(min-width: 300px) and (max-width:1024px){
+	.fbOculto{
+		display:block;
+	}
+
+	.fbMostrar{
+		display: none;
+	}
+
+
+	.likeUsCuadrito h2{
+		font-size:1.4em;
+	}
+
+	.schedule {
+		margin-top:-15% !important;
+	}
+
+	.numImageNewsMarket{
+		width: 25%;
+		height:40px;
+	}
+
+	.imgCamera{
+		width: 18%;
+		margin-top: -20%;
+	}
+
+	.num{
+		font-size: 0.8em;
+		vertical-align: top;
+	}
+
+	.tweets a{
+		font-size: 0.95em;
+	}
+}
+
+@media(min-width: 1025px) and (max-width: 2000px) {
+	.fbOculto{
+		display:none !important;
+	}
+
+	.fbMostrar{
+		display: block;
+	}
+
+	.likeUsCuadrito h2{
+		font-size:1em;
+	}
+
+	.schedule {
+		margin-top:0px  !important;
+	}
+
+}
