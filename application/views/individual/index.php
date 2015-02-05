@@ -118,7 +118,7 @@
 				<div class="row container-fluid ">
 					<div class="row container-fluid dataContent">
 						<p>
-							<?php echo $empleado->descripcion ?>	
+							<?php echo nl2br($empleado->descripcion) ?>	
 						</p>
 						
 					</div>

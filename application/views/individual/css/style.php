@@ -4,9 +4,10 @@
 	-webkit-word-break:break-all;
 }
 .dataContent {
-	word-break:break-all;
+	/*word-break:break-all;
 	-moz-word-break:break-all;
-	-webkit-word-break:break-all;
+	-webkit-word-break:break-all;*/
+	text-align: justify;
 }
 .botonChulo {
 	width: 60%;
