@@ -1,7 +1,9 @@
 body {
   background: #eee;
 }
-
+.nosubrayar{
+		text-decoration: none !important;
+	}
 .loader {
   width: 25px;
   height: 25px;

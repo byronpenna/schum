@@ -25,12 +25,12 @@ class Indexm  extends Padrem
 			return $text;
 		}
 		function getAlinaBlog(){
-			$feeds 		= $this->getRSS("http://alina.peacefulmediadev.com/feed/");
+			$feeds 		= $this->getRSS("http://alinaschumacher.com/feed/");
 			$postTitle 	= "";
 			foreach ($feeds as $key => $value) {
 				$postTitle .= "
 					<li style='border-bottom:1px solid rgba(204, 204, 204, 0.5);padding-bottom:15px;'>
-						<a href='".$value["link"]."' style='text-decoration:none;'>".$value["title"]."</a>
+						<a href='".$value["link"]."' target='_blank' style='text-decoration:none;'>".$value["title"]."</a>
 					</li>
 				";
 			}
@@ -249,7 +249,7 @@ class Indexm  extends Padrem
 								<ul>
 									<li>".$listingDiv."</li>
 										<li><p>
-											<a href='mailto:".$value->email."' class='emailEmpleado'>
+											<a href='mailto:".$value->email."' class='emailEmpleado nosubrayar' style='text-decoration:none'>
 												<img class='img-responsive imgLine' src='".base_url("img/our_team/email.png")."' > 
 												EMAIL ".$value->simpleName."
 											</a>

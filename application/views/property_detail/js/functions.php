@@ -1,3 +1,35 @@
+function getCharFromEvent(e){
+	asccii 		= e.which;
+	character 	=  String.fromCharCode(asccii);
+	return character;
+}
+function probarExp(exp,texto){
+	return exp.test(texto);
+}
+function decimal(){
+
+}
+function onlyNumbers(e){
+	exp = /[0-9]/;
+	txt = getCharFromEvent(e);
+	return probarExp(exp,txt);
+}
+function mortage(p,i,n){
+	numerador 	= i * (Math.pow((1 + i),n));
+	console.log("numerador",numerador);
+	denominador	= (Math.pow((1+i),n)) - 1;
+	console.log("Denominador",denominador);
+	respTem 	= numerador / denominador;   
+	console.log("Respuesta temp",respTem);
+	m 	= p * respTem;
+	m 	= m / 12;
+	bi 	= m / 2;
+	m 	= m.toFixed(2);
+	bi 	= bi.toFixed(2);
+	// console.log(m);
+	$("#txtMonthlyPayments").val("$ "+m);
+	$("#txtBi").val("$ "+bi);
+}
 function slidePopup(direccion,activeThumbnail){
 	if(direccion == 1){
 		siguienteThumbnail = activeThumbnail.parent().next().find(".thumbnailSlider");

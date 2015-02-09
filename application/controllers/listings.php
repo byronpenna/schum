@@ -109,7 +109,7 @@
 					$this->load->helper("url");
 					$this->load->model("listingsm");
 					$cbPropertyType = str_replace("%20"," ", $cbPropertyType); // desapareceran los tontos espacios >.< 
-					echo $cbPropertyType;
+					// echo $cbPropertyType;
 				// vars 
 					$listingModel 	= new Listingsm();
 					$frm 			= $this->getFrmForSearch($cbPropertyType,$cbMinBedRoom,$cbMinBath,$cbMinSf,$cbMinPrice,$cbMaxPrice);
