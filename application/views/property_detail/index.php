@@ -28,13 +28,19 @@
 			?>	
 	    </style>
 	    <style type="text/css" media="screen">
-    		.amostrar{
+    		/*.amostrar{
 					width:100%;
 					margin-left:0px;
 					z-index:100;
 					opacity:1;
 				}
-
+			*/
+			.navbar{
+				margin-bottom: 0;
+			}
+			.sliderNew{
+				min-height: 550px;
+			}
 			 #footer_container .foot-social-ico .fa {
 			    font-size: 2em;
 			    vertical-align: middle;
@@ -114,8 +120,9 @@
 	<!-- #################### -->
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
+		<?php $this->load->view("parts/menushow.php") ?>
 		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
-			<?php $this->load->view("parts/menushow.php") ?>
+			<?php $this->load->view("parts/menu.php") ?>
 		</div>
 		<div class="row container-fluid bodySection">
 			<!-- ############################## -->
