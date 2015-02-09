@@ -175,7 +175,7 @@
 		margin-top: -22%;
 		}	
 		.navControlDer{
-			left:90px;
+			left:13%;
 		}
 
 		.iframeVirtual{
@@ -222,7 +222,7 @@
 		margin-top: -22%;
 		}
 		.navControlDer{
-			left:70px;
+			left:13%;
 		}	
 
 
@@ -279,6 +279,10 @@
 			font-size: 1.5em;
 			margin-top:10px;
 		}
+
+		.navControlDer{
+			left:10%;
+		}
 }
 @media(min-width:400px) and (max-width: 499px){
 .fbbox iframe{
@@ -320,6 +324,10 @@
 			width: 100%;
 			font-size: 1.5em;
 			margin-top:10px;
+		}
+
+		.navControlDer{
+			left:8%;
 		}
 }	
 
@@ -371,7 +379,7 @@
 		-webkit-transform:scale(0.75,0.75);
 	}
 	.navControl{
-		left:0px;
+		left:-2.2%;
 	}
 	.listingSort{
 		display: block;
@@ -381,6 +389,11 @@
 	}
 	.readmore{
 		width: 80%;
+	}
+
+	#contenidoModal,.modal-dialog{
+		height: 550px;
+		width: 600px;
 	}
 }
 @media(min-width:1100px) and (max-width: 1199px){
@@ -402,10 +415,15 @@
 		-webkit-transform:scale(0.75,0.75);
 	}
 	.navControl{
-		left:6.5px;
+		left:-2%;
 	}
 	.iframeVirtual{
 		height: 500px !important; 
+	}
+
+	#contenidoModal,.modal-dialog{
+		width: 650px;
+		height: 560px;
 	}
 }
 @media(min-width: 1024px){
@@ -431,6 +449,11 @@
 		-moz-transform:scale(0.75,0.75);
 		-webkit-transform:scale(0.75,0.75);
 }
+
+#contenidoModal,.modal-dialog{
+	width: 650px;
+	height: 600px !important;
+}
 }
 
 @media(min-width:1300px) and (max-width: 1399px){
@@ -451,9 +474,14 @@
 		-moz-transform:scale(0.75,0.75);
 		-webkit-transform:scale(0.75,0.75);
 }
-.iframeVirtual{
-		height: 600px !important; 
-	}
+	.iframeVirtual{
+			height: 600px !important; 
+		}
+
+		#contenidoModal,.modal-dialog{
+			width: 750px !important;
+			height: 650px !important;
+		}
 }
 @media(min-width:1400px) and (max-width: 1599px){
 	.fbbox iframe{
@@ -472,6 +500,10 @@
 		margin-left: 10%;
 		margin-top: 6%;
 }
+#contenidoModal,.modal-dialog{
+	width: 800px;
+	height: 700px !important;
+}
 }
 @media(min-width:1600px) and (max-width: 1799px){
 	.fbbox iframe{
@@ -489,7 +521,11 @@
 	.fbbox iframe{
 		margin-left: 10%;
 		margin-top: 6%;
-}
+	}
+	#contenidoModal,.modal-dialog{
+		width: 900px !important;
+		height: 850px !important;
+	}
 }
 @media(min-width:1800px) and (max-width: 1999px){
 	.fbbox iframe{
@@ -691,7 +727,10 @@ iframe[name="f3d7c73d9c"]{
 	#sheetBlock p {
 		font-size: 0.8em !important;
 	}
-
+	
+	#contenidoModal, .modal-dialog{
+		height: 90%;
+	}
 
 }
 
@@ -714,6 +753,10 @@ iframe[name="f3d7c73d9c"]{
 	}
 	#sheetBlock p {
 		font-size: 0.85em !important;
+	}
+
+	#contenidoModal, .modal-dialog{
+		height: 95%;
 	}
 }
 

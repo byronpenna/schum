@@ -7,14 +7,16 @@
 }
 #imgModal{
 	width:100%;
-	height:100% fixed;
+	height:80%;
 	cursor: pointer;
 }
 #dialogoModal{
 	margin-top: 0;
 }
 #contenidoModal,.modal-dialog{
-	width: 100%;
+	width: 76%;
+	margin:auto;
+	height: 85%;
 }
 .dvImgModal{
 	width: 100%; 
@@ -25,7 +27,7 @@
 }
 .navControl{
 	top: 50%;
-	/*left:5px;*/
+	left:-1%;
 	position:absolute;
 	width: 100%;
 	background: none;
