@@ -3,31 +3,31 @@
 			<div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label >Mortgage Amount: </label>
-					<input class="form-control" placeholder='$'>	
+					<input class="form-control" placeholder='$' id='txtMortage'>	
 				</div>
 			</div>
 			<div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label>Annual Interest: </label>
-					<input class="form-control" placeholder='Year'>
+					<input class="form-control" placeholder='%' id='txtInteres'>
 				</div>
 			</div>
             <div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label>Mortgage term: </label>
-					<input class="form-control" placeholder='$'>
+					<input class="form-control" placeholder='Years' id='txtTerm'>
 				</div>
             </div>
             <div class="col-lg-2 col-sm-6  col-md-3 col-xs-12">
 				<div class="form-group">
 					<label>Monthly Payments</label>
-					<input class="form-control" placeholder='$'>
+					<input disabled class="form-control" placeholder='$' id='txtMonthlyPayments'>
 				</div>
 			</div>
 			<div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label>Bi-Weekly Payments: </label>
-					<input class="form-control" placeholder='$'>
+					<input disabled class="form-control" placeholder='$' id='txtBi'> <!-- Monthly payments / 2 -->
 				</div>
             </div>
             <div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
