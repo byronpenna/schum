@@ -1502,5 +1502,4 @@
 	.schedule {
 		margin-top:0px  !important;
 	}
-
 }
