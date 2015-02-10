@@ -22,6 +22,10 @@
 			width: 90px;
 			border-radius: 20px;
 		}
+
+		.iframeVirtual{
+			height: 730px !important;
+		}
 	}
 @media(min-width:900px) and (max-width: 991px){
 	.fbbox iframe{
@@ -188,7 +192,7 @@
 			font-size: 1.5em;
 			margin-top:10px;
 		}
-		#contenidoModal, .modal-dialog{
+		#myModal #contenidoModal, .modal-dialog{
 			width: 500px !important;
 			/*height: 350px !important;*/
 			margin-top:20%;
@@ -242,7 +246,7 @@
 			margin-top:10px;
 		}
 
-		#contenidoModal, .modal-dialog{
+		#myModal #contenidoModal, .modal-dialog{
 			width: 400px !important;
 			/*height: 300px !important;*/
 			margin-top:30%; 
@@ -282,7 +286,7 @@
 		}	
 
 		.iframeVirtual{
-			height: 490px !important;
+			height: 450px !important;
 		}
 
 		.contenedor-cubos article{
@@ -295,7 +299,7 @@
 			left:10%;
 		}
 
-		#contenidoModal, .modal-dialog{
+		#myModal #contenidoModal, .modal-dialog{
 			width: 300px !important;
 			/*height: 250px !important;*/
 
@@ -348,7 +352,7 @@
 			left:8%;
 		}
 
-		#contenidoModal, .modal-dialog{
+		#myModal #contenidoModal, .modal-dialog{
 			width: 300px !important;
 			/*height: 250px !important;*/
 			margin-top: 40%;
@@ -362,7 +366,7 @@
 			font-size: 1.5em;
 			margin-top:10px;
 		}
-		#contenidoModal, .modal-dialog{
+		#myModal #contenidoModal, .modal-dialog{
 			width: 300px !important;
 			/*height: 250px !important;*/
 			margin-top:30%;
@@ -425,11 +429,14 @@
 		width: 80%;
 	}
 
-	#contenidoModal,.modal-dialog{
+	#myModal #contenidoModal,.modal-dialog{
 		height: 450px !important;
 		width: 600px;
 		margin-top:12%;
 	}
+
+
+
 }
 @media(min-width:1100px) and (max-width: 1199px){
 	.fbbox iframe{
@@ -453,10 +460,10 @@
 		left:-2%;
 	}
 	.iframeVirtual{
-		height: 500px !important; 
+		height: 850px !important; 
 	}
 
-	#contenidoModal,.modal-dialog{
+	#myModal #contenidoModal,.modal-dialog{
 		width: 650px;
 		height: 460px !important;
 		margin-top:12%;
@@ -486,7 +493,7 @@
 		-webkit-transform:scale(0.75,0.75);
 }
 
-#contenidoModal,.modal-dialog{
+#myModal #contenidoModal,.modal-dialog{
 	width: 650px;
 	height: 600px !important;
 }
@@ -514,7 +521,7 @@
 			height: 600px !important; 
 		}
 
-		#contenidoModal,.modal-dialog{
+		#myModal #contenidoModal,.modal-dialog{
 			width: 850px !important;
 			height: auto !important;
 		}
@@ -536,7 +543,7 @@
 		margin-left: 10%;
 		margin-top: 6%;
 }
-#contenidoModal,.modal-dialog{
+#myModal #contenidoModal,.modal-dialog{
 	width: 800px;
 	height: 700px !important;
 }
@@ -558,7 +565,7 @@
 		margin-left: 10%;
 		margin-top: 6%;
 	}
-	#contenidoModal,.modal-dialog{
+	#myModal #contenidoModal,.modal-dialog{
 		width: 900px !important;
 		height: 850px !important;
 	}
@@ -715,7 +722,7 @@ iframe[name="f3d7c73d9c"]{
 		height: 640px !important; 
 	}
 
-	#contenidoModal, .modal-dialog{
+	#myModal #contenidoModal, .modal-dialog{
 		width: 600px;
 		/*height: 450px;*/
 		margin-top: 12%;
@@ -743,9 +750,9 @@ iframe[name="f3d7c73d9c"]{
 		font-size: 0.75em !important;
 	}
 
-	.iframeVirtual{
-		height: 750px !important; 
-	}
+/* 	.iframeVirtual{
+	height: 750px !important; 
+} */
 }
 
 @media(min-width:1200px) and (max-width: 1500px){
@@ -770,7 +777,7 @@ iframe[name="f3d7c73d9c"]{
 		font-size: 0.8em !important;
 	}
 	
-	#contenidoModal, .modal-dialog{
+	#myModal #contenidoModal, .modal-dialog{
 		width: 700px;
 		/*height: 600px !important;*/
 	}
@@ -798,7 +805,7 @@ iframe[name="f3d7c73d9c"]{
 		font-size: 0.85em !important;
 	}
 
-	#contenidoModal, .modal-dialog{
+	#myModal #contenidoModal, .modal-dialog{
 		/*height: 95%;*/
 	}
 }
@@ -1346,7 +1353,7 @@ iframe[name="f3d7c73d9c"]{
 */
 
 	.iframeVirtual{
-		height: 520px;
+		height: 720px;
 	}
 
 
@@ -2361,6 +2368,6 @@ iframe[name="f3d7c73d9c"]{
 		}
 }
 
-#contenidoModal, .modal-dialog{
+#myModal #contenidoModal, .modal-dialog{
 	height: auto !important;
 }

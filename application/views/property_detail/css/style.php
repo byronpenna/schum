@@ -13,7 +13,11 @@
 #dialogoModal{
 	margin-top: 0;
 }
-#contenidoModal,.modal-dialog{
+#modalTour #dialogoModal,.modal-dialog{
+	width: 100% !important;
+	height: 400px !important;
+}
+#myModal #contenidoModal,.modal-dialog{
 	width: 700px;
 	margin:auto;
 	height: 500px;
