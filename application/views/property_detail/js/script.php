@@ -18,11 +18,25 @@
 	 //           	initialize();
 		    // });
 		$(document).on("keypress","#txtMortage",function(e){
-			txtActual = $(this).val();
-			txtActual = txtActual.replace("$","");
-			txtActual += getCharFromEvent(e);
-			txtActual = "$"+txtActual;
-			$(this).val(txtActual);
+			txtActual 	= $(this).val();
+			txtActual 	= txtActual.replace("$","");
+			character 	= getCharFromEvent(e);
+			txtActual 	+= character;
+			txtActual 	= "$"+txtActual;
+			exp 		= /[0-9 \.]/;
+			if(testExpression(e, exp)){
+				if(txtActual.indexOf('.')!=-1){ 
+					console.log("el caracter es: ",character);
+					if(character == "."){
+						$(this).val(txtActual);
+					}
+
+				}else{
+					$(this).val(txtActual);
+				}	
+				
+			}
+			
 		});
 		$(document).on("keypress","#txtInteres",function(e){
 			e.preventDefault();
@@ -74,6 +88,27 @@
 			$("#imgModal").attr("src",""+imgSrc+""); 
 			$('#myModal').modal({show:true});
 		});
+
+
+
+		//keypress
+	$(document).on("keypress",".NumPunto",function(e){//evento para validar si es un numero
+		e.preventDefault();
+		el 			= $(this).val();
+		exp 		= /[0-9 \.]/;
+		console.log(testExpression(e, exp));
+		caracter 	= getCharFromEvent(e);
+		if(testExpression(e, exp)){
+			if(el.indexOf('.')!=-1){
+				if(caracter=="."){
+					e.preventDefault();
+				}
+			}
+		}else{
+			console.log("holaaaaaaa");
+			e.preventDefault();
+		}
+	});
 
 	});
 </script>

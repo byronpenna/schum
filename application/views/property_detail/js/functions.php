@@ -114,3 +114,20 @@ function initSlider(){
 
 	},3000);
 }
+
+
+// Validar los keypress 
+	function probarExp(exp,texto){
+		return exp.test(texto);
+	}
+
+	function getCharFromEvent(e){
+		asccii 		= e.which;
+		character 	=  String.fromCharCode(asccii);
+		return character;
+	}
+
+	function testExpression(e,expresion){
+		character = getCharFromEvent(e);
+		return probarExp(expresion,character);
+	}
