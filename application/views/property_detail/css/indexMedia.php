@@ -190,7 +190,7 @@
 		}
 		#contenidoModal, .modal-dialog{
 			width: 500px !important;
-			height: 350px !important;
+			/*height: 350px !important;*/
 			margin-top:20%;
 		}
 }
@@ -244,7 +244,7 @@
 
 		#contenidoModal, .modal-dialog{
 			width: 400px !important;
-			height: 300px !important;
+			/*height: 300px !important;*/
 			margin-top:30%; 
 		}
 }
@@ -297,7 +297,8 @@
 
 		#contenidoModal, .modal-dialog{
 			width: 300px !important;
-			height: 250px !important;
+			/*height: 250px !important;*/
+
 			margin-top: 40%;
 		}
 }
@@ -349,7 +350,7 @@
 
 		#contenidoModal, .modal-dialog{
 			width: 300px !important;
-			height: 250px !important;
+			/*height: 250px !important;*/
 			margin-top: 40%;
 		}
 }	
@@ -363,7 +364,7 @@
 		}
 		#contenidoModal, .modal-dialog{
 			width: 300px !important;
-			height: 250px !important;
+			/*height: 250px !important;*/
 			margin-top:30%;
 
 		}
@@ -515,7 +516,7 @@
 
 		#contenidoModal,.modal-dialog{
 			width: 850px !important;
-			height: 550px !important;
+			height: auto !important;
 		}
 }
 @media(min-width:1400px) and (max-width: 1599px){
@@ -716,7 +717,7 @@ iframe[name="f3d7c73d9c"]{
 
 	#contenidoModal, .modal-dialog{
 		width: 600px;
-		height: 450px;
+		/*height: 450px;*/
 		margin-top: 12%;
 	}
 }
@@ -771,7 +772,7 @@ iframe[name="f3d7c73d9c"]{
 	
 	#contenidoModal, .modal-dialog{
 		width: 700px;
-		height: 600px !important;
+		/*height: 600px !important;*/
 	}
 
 }
@@ -798,7 +799,7 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	#contenidoModal, .modal-dialog{
-		height: 95%;
+		/*height: 95%;*/
 	}
 }
 
@@ -2358,4 +2359,8 @@ iframe[name="f3d7c73d9c"]{
 		.calculadora button, input{
 			font-size: 2em !important;
 		}
+}
+
+#contenidoModal, .modal-dialog{
+	height: auto !important;
 }
