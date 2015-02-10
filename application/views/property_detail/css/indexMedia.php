@@ -191,6 +191,7 @@
 		#contenidoModal, .modal-dialog{
 			width: 500px !important;
 			height: 350px !important;
+			margin-top:20%;
 		}
 }
 @media(min-width:600px) and (max-width: 699px){
@@ -244,6 +245,7 @@
 		#contenidoModal, .modal-dialog{
 			width: 400px !important;
 			height: 300px !important;
+			margin-top:30%; 
 		}
 }
 @media(min-width:500px) and (max-width: 599px){
@@ -296,6 +298,7 @@
 		#contenidoModal, .modal-dialog{
 			width: 300px !important;
 			height: 250px !important;
+			margin-top: 40%;
 		}
 }
 @media(min-width:400px) and (max-width: 499px){
@@ -347,6 +350,7 @@
 		#contenidoModal, .modal-dialog{
 			width: 300px !important;
 			height: 250px !important;
+			margin-top: 40%;
 		}
 }	
 
@@ -360,6 +364,8 @@
 		#contenidoModal, .modal-dialog{
 			width: 300px !important;
 			height: 250px !important;
+			margin-top:30%;
+
 		}
 
 		.navControlDer{
@@ -421,6 +427,7 @@
 	#contenidoModal,.modal-dialog{
 		height: 450px !important;
 		width: 600px;
+		margin-top:12%;
 	}
 }
 @media(min-width:1100px) and (max-width: 1199px){
@@ -451,6 +458,7 @@
 	#contenidoModal,.modal-dialog{
 		width: 650px;
 		height: 460px !important;
+		margin-top:12%;
 	}
 }
 @media(min-width: 1024px){
@@ -709,6 +717,7 @@ iframe[name="f3d7c73d9c"]{
 	#contenidoModal, .modal-dialog{
 		width: 600px;
 		height: 450px;
+		margin-top: 12%;
 	}
 }
 
