@@ -14,9 +14,10 @@
 	margin-top: 0;
 }
 #contenidoModal,.modal-dialog{
-	width: 76%;
+	width: 700px;
 	margin:auto;
-	height: 85%;
+	height: 500px;
+	margin-top: 5%;
 }
 .dvImgModal{
 	width: 100%; 

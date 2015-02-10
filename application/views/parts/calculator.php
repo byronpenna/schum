@@ -13,7 +13,7 @@
 				<div class="form-group">
 					<label>Annual Interest: </label>
 					<div class="input-group">
-					  <input class="form-control NumPunto" placeholder='%' id='txtInteres'>
+					  <input class="form-control NumPunto" placeholder='0' id='txtInteres'>
 					  <span class="input-group-addon colorAddon">%</span>
 					</div>
 				</div>
@@ -29,7 +29,7 @@
 					<label>Monthly Payments</label>
 					<div class="input-group">
 					  <span class="input-group-addon colorAddon">$</span>
-					  <input disabled class="form-control" placeholder='$' id='txtMonthlyPayments'>
+					  <input disabled class="form-control" placeholder='00.00' id='txtMonthlyPayments'>
 					</div>
 				</div>
 			</div>
@@ -38,7 +38,7 @@
 					<label>Bi-Weekly Payments: </label>
 					<div class="input-group">
 					  <span class="input-group-addon colorAddon">$</span>
-					  <input disabled class="form-control" placeholder='$' id='txtBi'> <!-- Monthly payments / 2 -->
+					  <input disabled class="form-control" placeholder='00.00' id='txtBi'> <!-- Monthly payments / 2 -->
 					</div>
 				</div>
             </div>

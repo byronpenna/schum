@@ -27,8 +27,8 @@ function mortage(p,i,n){
 	m 	= m.toFixed(2);
 	bi 	= bi.toFixed(2);
 	// console.log(m);
-	$("#txtMonthlyPayments").val("$ "+m);
-	$("#txtBi").val("$ "+bi);
+	$("#txtMonthlyPayments").val(m);
+	$("#txtBi").val(bi);
 }
 function slidePopup(direccion,activeThumbnail){
 	if(direccion == 1){
