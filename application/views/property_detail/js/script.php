@@ -17,7 +17,7 @@
 	           	$('#jsCarousel').jsCarousel({ onthumbnailclick: function(src) { }, autoscroll: false, masked: true, itemstodisplay: 12, orientation: 'h' });
 	 //           	initialize();
 		    // });
-		$(document).on("keypress","#txtMortage",function(e){
+		/*$(document).on("keypress","#txtMortage",function(e){
 			txtActual 	= $(this).val();
 			txtActual 	= txtActual.replace("$","");
 			character 	= getCharFromEvent(e);
@@ -37,8 +37,9 @@
 				
 			}
 			
-		});
-		$(document).on("keypress","#txtInteres",function(e){
+		});*/
+
+	/*	$(document).on("keypress","#txtInteres",function(e){
 			e.preventDefault();
 			txtInteres = $(this).val();
 			txtInteres = txtInteres.replace("%","");
@@ -47,12 +48,23 @@
 
 			$(this).val(txtInteres);
 		});
-		
+	*/	
 		$(document).on("keypress","#txtTerm",function(e){
 			if(!onlyNumbers(e)){
 				e.preventDefault();
 			}
 		})
+
+		
+
+		$(document).on("click","#clearButton",function(e){
+			$("#txtMortage").val("");
+			$("#txtInteres").val("");
+			$("#txtTerm").val("");
+			$("#txtMonthlyPayments").val("");
+			$("#txtBi").val("");
+		})
+
 		$(document).on("click","#calculateButton",function(){
 			mortageAmount = $("#txtMortage").val();
 			mortageAmount = mortageAmount.replace(",","");
@@ -92,7 +104,7 @@
 
 
 		//keypress
-	$(document).on("keypress",".NumPunto",function(e){//evento para validar si es un numero
+/*	$(document).on("keypress",".NumPunto",function(e){//evento para validar si es un numero
 		e.preventDefault();
 		el 			= $(this).val();
 		exp 		= /[0-9 \.]/;
@@ -104,8 +116,23 @@
 					e.preventDefault();
 				}
 			}
+		}
+	});*/
+
+
+
+	//keypress
+	$(document).on("keypress",".NumPunto",function(e){//evento para validar si es un numero
+		el 			= $(this).val();
+		exp 		= /[0-9 \.]/;
+		caracter 	=getCharFromEvent(e);
+		if(testExpression(e, exp)){
+			if(el.indexOf('.')!=-1){
+				if(caracter=="."){
+					e.preventDefault();
+				}
+			}
 		}else{
-			console.log("holaaaaaaa");
 			e.preventDefault();
 		}
 	});

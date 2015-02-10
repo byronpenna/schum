@@ -189,8 +189,8 @@
 			margin-top:10px;
 		}
 		#contenidoModal, .modal-dialog{
-			width: 600px !important;
-			height: 550px !important;
+			width: 500px !important;
+			height: 350px !important;
 		}
 }
 @media(min-width:600px) and (max-width: 699px){
@@ -242,8 +242,8 @@
 		}
 
 		#contenidoModal, .modal-dialog{
-			width: 500px !important;
-			height: 450px !important;
+			width: 400px !important;
+			height: 300px !important;
 		}
 }
 @media(min-width:500px) and (max-width: 599px){
@@ -294,8 +294,8 @@
 		}
 
 		#contenidoModal, .modal-dialog{
-			width: 400px !important;
-			height: 350px !important;
+			width: 300px !important;
+			height: 250px !important;
 		}
 }
 @media(min-width:400px) and (max-width: 499px){
@@ -345,8 +345,8 @@
 		}
 
 		#contenidoModal, .modal-dialog{
-			width: 400px !important;
-			height: 350px !important;
+			width: 300px !important;
+			height: 250px !important;
 		}
 }	
 
@@ -360,6 +360,10 @@
 		#contenidoModal, .modal-dialog{
 			width: 300px !important;
 			height: 250px !important;
+		}
+
+		.navControlDer{
+			left:10%;
 		}
 	}
 
@@ -415,7 +419,7 @@
 	}
 
 	#contenidoModal,.modal-dialog{
-		height: 550px;
+		height: 450px !important;
 		width: 600px;
 	}
 }
@@ -446,7 +450,7 @@
 
 	#contenidoModal,.modal-dialog{
 		width: 650px;
-		height: 560px;
+		height: 460px !important;
 	}
 }
 @media(min-width: 1024px){
@@ -502,8 +506,8 @@
 		}
 
 		#contenidoModal,.modal-dialog{
-			width: 750px !important;
-			height: 650px !important;
+			width: 850px !important;
+			height: 550px !important;
 		}
 }
 @media(min-width:1400px) and (max-width: 1599px){
@@ -704,7 +708,7 @@ iframe[name="f3d7c73d9c"]{
 
 	#contenidoModal, .modal-dialog{
 		width: 600px;
-		height: 550px;
+		height: 450px;
 	}
 }
 
@@ -757,7 +761,8 @@ iframe[name="f3d7c73d9c"]{
 	}
 	
 	#contenidoModal, .modal-dialog{
-		height: 90%;
+		width: 700px;
+		height: 600px !important;
 	}
 
 }
@@ -1333,6 +1338,8 @@ iframe[name="f3d7c73d9c"]{
 	.iframeVirtual{
 		height: 520px;
 	}
+
+
 }
 @media(min-width:1130px){
     .boxSummary label{
