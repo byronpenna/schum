@@ -108,7 +108,6 @@
 		          		</div>
 		          	</div>
 		          </div>
-		          
 		        </div>
 		        <!-- <div class="modal-footer">
 		          <a href="#" data-dismiss="modal" class="btn">Close</a>
