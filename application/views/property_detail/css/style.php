@@ -93,7 +93,7 @@ label{
     margin-bottom: 0px !important;
 }
 .input-group-addon{
-    background-color: #be0000 !important;
+    background-color: #be0000;
     color: #fff !important;
     border-radius: 0px !important;
     border: none !important;

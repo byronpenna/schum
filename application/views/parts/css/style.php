@@ -571,4 +571,6 @@ text-align: left;}
 
       }
 
-
+.colorAddon {
+	background-color: #585E6A !important;
+}
