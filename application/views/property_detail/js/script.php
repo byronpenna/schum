@@ -136,6 +136,7 @@
 			e.preventDefault();
 		}
 	});
+	$("#contenidoModal, .modal-dialog").css("heigth","auto");
 
 	});
 </script>

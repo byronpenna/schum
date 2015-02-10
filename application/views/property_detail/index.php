@@ -468,5 +468,6 @@
 			$this->load->view("parts/footer.php");
 		?> 
 	</div>
+	
 </body>
 </html>
