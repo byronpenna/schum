@@ -3,13 +3,13 @@
 			<div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label >Mortgage Amount: </label>
-					<input class="form-control" placeholder='$' id='txtMortage'>	
+					<input class="form-control NumPunto" placeholder='$' id='txtMortage'>	
 				</div>
 			</div>
 			<div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label>Annual Interest: </label>
-					<input class="form-control" placeholder='%' id='txtInteres'>
+					<input class="form-control NumPunto" placeholder='%' id='txtInteres'>
 				</div>
 			</div>
             <div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
