@@ -3,13 +3,19 @@
 			<div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label >Mortgage Amount: </label>
-					<input class="form-control NumPunto" placeholder='$' id='txtMortage'>	
+					<div class="input-group">
+					  <span class="input-group-addon colorAddon">$</span>
+					  <input class="form-control NumPunto" placeholder='00.00' id='txtMortage'>
+					</div>	
 				</div>
 			</div>
 			<div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label>Annual Interest: </label>
-					<input class="form-control NumPunto" placeholder='%' id='txtInteres'>
+					<div class="input-group">
+					  <input class="form-control NumPunto" placeholder='%' id='txtInteres'>
+					  <span class="input-group-addon colorAddon">%</span>
+					</div>
 				</div>
 			</div>
             <div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
@@ -21,13 +27,19 @@
             <div class="col-lg-2 col-sm-6  col-md-3 col-xs-12">
 				<div class="form-group">
 					<label>Monthly Payments</label>
-					<input disabled class="form-control" placeholder='$' id='txtMonthlyPayments'>
+					<div class="input-group">
+					  <span class="input-group-addon colorAddon">$</span>
+					  <input disabled class="form-control" placeholder='$' id='txtMonthlyPayments'>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
 				<div class="form-group">
 					<label>Bi-Weekly Payments: </label>
-					<input disabled class="form-control" placeholder='$' id='txtBi'> <!-- Monthly payments / 2 -->
+					<div class="input-group">
+					  <span class="input-group-addon colorAddon">$</span>
+					  <input disabled class="form-control" placeholder='$' id='txtBi'> <!-- Monthly payments / 2 -->
+					</div>
 				</div>
             </div>
             <div class="col-lg-2 col-sm-6 col-md-3 col-xs-12">
