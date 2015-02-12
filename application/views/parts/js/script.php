@@ -80,5 +80,15 @@ $(document).ready(function(){
             }
           });
 
+          $('html, body').animate({ scrollTop: '0px'});
+          $(".loader-global").fadeIn();
+          $("body").css("overflow","hidden");
+          $(".amostrar").css("z-index","0");
+          setTimeout(function() {
+                    $(".loader-global").fadeOut();
+                    $("body").css("overflow","");
+                    $(".amostrar").css("z-index","900000");
+          }, 4000);
+
 			
 });

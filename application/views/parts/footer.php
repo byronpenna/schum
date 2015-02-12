@@ -116,8 +116,8 @@
 </footer><!-- /.site-footer.row -->
 
 <div class="credits">
-	<address style='margin:0;'>© 2015 Schumacher Realty Ltd.</address>
-	<address style='font-size:0.6em;margin-top:1%;'>The information contained herein has been obtained through sources deemed reliable by Schumacher Realty Ltd., but cannot be guaranteed as to its accuracy. The buyer is advised to obtain independent verification of any information which is of material interest to them.</address>
+	<address style='margin:0;font-size:1.3em;'>© 2015 Schumacher Realty Ltd.</address>
+	<address style='font-size:1em;margin-top:1%;color:#D3D3D3;'>All information provided on this website is deemed reliable but cannot be guaranteed as to its accuracy.</address>
 	<!-- <address><a class="terms" title="Terms" href="http://alina.peacefulmediadev.com/terms/">Terms of Use &amp; Privacy Policy</a></address> -->
 </div><!-- /.credits -->
 </div>

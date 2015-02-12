@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Listings</title>
+	<title>Listings - Schumacher Realty</title>
 	<!-- load --> 
 		
 		
@@ -45,6 +45,9 @@
     	</style>
 </head>
 <body>
+	<?php 
+			$this->load->view("parts/loader-global.php");
+	?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
 		
@@ -189,25 +192,18 @@
 			</div>
 			<!-- Paginado -->
 				<div class="row container-fluid paginationSection">
+						<center>
 					<span class='hidden' id='txtOrigen'><?php echo $origen ?></span>
-					<div class="col-lg-offset-3 col-lg-7 col-sm-offset-2 col-sm-12 paginacion ">
-						<div class="col-lg-2 titlePagination paddingNull hello">
 							<input type="hidden" id='txtPagePaginacion' value=<?php echo "'".($pageOf[0]+1)."'" ?> >
 							<input type="hidden" id='txtPageTotales' 	value=<?php echo "'".$pageOf[1]."'" ?> >
-							Page <?php echo " ".$pageOf[0]." of ".$pageOf[1]." " ?> 
-						</div>
-						<div class="numbers">
+							<div id="conte-pagin">
+								Page <?php echo " ".$pageOf[0]." of ".$pageOf[1]." " ?>
+							</div>
 							<?php
 								echo $numsPaginacion;
-							?>	
-						</div>
-						<div class="col-lg-2">
-							
-						</div>
-						
-					</div>
+							?>
+						</center>
 				</div>
-				
 				<!-- <div class="row container-fluid calculatorSection">
 					<h2>Mortgage calculator</h2>
 					<h4>What will your monthly mortgage payment be?</h4>	

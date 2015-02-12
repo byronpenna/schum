@@ -1,7 +1,4 @@
 
-.paginacion {
-	margin-left: 36%;
-}
 .textEstadoCasa{
 	font-family: impact !important;
 }
@@ -231,6 +228,26 @@
 	color: #314782 !important;
 }
 .btnPaginacion{
-	width: 100%;
+	width: auto;
+	height: 40px;
+	padding:5px;
+}
 
+.imgNav,.btnPagincion{
+	width: 2%;
+	padding: 0.5em;
+	height: 40px;
+
+}
+#conte-pagin{
+	width: 10%;
+	padding:5px;
+}
+.paginationSection{
+	width: 100%;
+}
+
+.paginationSection div{
+	display: inline-block;
+	vertical-align: top;
 }

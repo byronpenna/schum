@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>News</title>
+	<title>News - Schumacher Realty</title>
 	<!-- load --> 
     	<?php $this->load->view("parts/loads.php",$datos); ?>
 	<style type="text/css">
@@ -25,6 +25,9 @@
 	</script>
 </head>
 <body>
+	<?php 
+			$this->load->view("parts/loader-global.php");
+	?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
 		

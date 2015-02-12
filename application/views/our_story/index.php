@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Our story</title>
+	<title>Our Story - Schumacher Realty</title>
 	<!-- load --> 
     	<?php $this->load->view("parts/loads.php",$datos); ?>
     <script type="text/javascript">
@@ -27,6 +27,9 @@
 	</style>
 </head>
 <body>
+	<?php 
+			$this->load->view("parts/loader-global.php");
+	?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
 		<div class="row container-fluid sliderNew size" >

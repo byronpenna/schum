@@ -204,7 +204,8 @@ class Listingsm extends Padrem
 		$div = "
 					<div class='col-lg-3 col-md-4 col-sm-4 casa'>
 						<a class='aCasa' href='".site_url("property_detail/index/".$value->homeId." ")."'>
-							<div class='row imgListing'  style='background:url(".$imgSrc.")'>
+							<div class='row imgListing'  style='background:url()'>
+							<img src='".$imgSrc."' style='width:100%;height:100%;position:absolute;bottom:0;' />
 								<div class='row container-fluid'>
 									<h2 class='textEstadoCasa'>".$textoCasita."<h2>
 								</div>
@@ -310,7 +311,7 @@ class Listingsm extends Padrem
 	}
 	function getNumsPaginacion($cn,$active=0){ // variable filtro se usara para saber si se uso una busqueda del searchbar
 		$div = "
-			<div class='col-lg-1 col-sm-1 imgNav' direccion='0' id='imgNavLeft'>
+			<div class='imgNav' direccion='0' id='imgNavLeft'>
 				<i class='fa fa-angle-left blank'></i>
 			</div>
 		";
@@ -327,13 +328,13 @@ class Listingsm extends Padrem
 					
 			}
 			$div .= "
-				<div class='btnPaginacion col-lg-1 col-sm-1 ".$txtActive."' valor='".($i+1)."' style='width:auto;'>
+				<div class='btnPaginacion  ".$txtActive."' valor='".($i+1)."'>
 					".($i+1)."
 				</div>
 			";
 		}
 		$div .= "
-		<div class='col-lg-1 col-sm-1 imgNav' direccion='1' id='imgNavRight'>
+		<div class=' imgNav' direccion='1' id='imgNavRight'>
 			<i class='fa fa-angle-right blank'></i>
 		</div>
 		";

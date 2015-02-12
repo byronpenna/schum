@@ -1,6 +1,6 @@
 <div class="row container-fluid encabezado headerPrincipal paddingNull">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		<div class="row container-fluid ">
+		<div class="row container-fluid conte-socialNetwork">
 			<div id="banneraner" class="col-sm-offset-5 col-sm-7 col-lg-offset-8 col-lg-4  text-right socialNetworkBar">
 				<!-- <span class="fa fa-facebook"></span> -->
 				<div class="iconCuadro" id='tw'>
@@ -48,7 +48,7 @@
 						</div>
 					</a>
 				</div>
-				<!-- <div class="iconCuadro" id='wordpress'>
+				<div class="iconCuadro" id='wordpress'>
 					<a href=<?php echo "'".$homeData->wordpress."'" ?> target="_blank">
 						<div class="circle-text " >
 							<div>
@@ -56,7 +56,7 @@
 							</div>
 						</div>
 					</a>
-				</div> -->
+				</div>
 			</div>
 		</div>
 		<div class="row container-fluid headerImage paddingNull">
@@ -68,3 +68,4 @@
 		</div>
 	</div>
 </div>
+

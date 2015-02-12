@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Our team</title>
+	<title>Meet Our Team - Schumacher Realty</title>
 	<!-- load --> 
     	<?php $this->load->view("parts/loads.php",$datos); ?>
     <!-- css --> 
@@ -31,6 +31,9 @@
     	</style>
 </head>
 <body>
+	<?php 
+			$this->load->view("parts/loader-global.php");
+	?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
 		

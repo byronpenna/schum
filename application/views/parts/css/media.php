@@ -365,3 +365,49 @@
 			margin-left: 0px !important;
 	}
 }
+
+@media(min-width: 100px) and (max-width:414px){
+		.amostrar,.aocultar,.conte-socialNetwork{
+			display:none;
+			z-index:0;
+		}
+		.menu-responsivo{
+			position:absolute;
+			z-index: 90000;
+		}
+
+
+		.social-responsivo{
+			width: 100%;
+			float: right;
+			margin-right: 12%;
+		}
+		.boton-responsivo{
+			float: left;
+			margin: 10px;
+			position: absolute;
+			top: 0px;
+		}
+
+		.HideResponsive{
+			display:none;
+		}
+
+
+		.headerPrincipal {
+			display:none;
+		}
+
+		.sliderNew{
+			margin-top: 22%;
+			height: 300px;
+			/*background: url(<?php echo "'".base_url("img/slider/img/img1.png")."'"; ?>);*/
+				background-repeat: no-repeat;
+				background-size: 100% 100% !important;
+				/*background-size: cover ;*/
+		}
+
+		#footer_container{
+			display:none;
+		}
+}
