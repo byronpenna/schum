@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Schumacher</title>
+	<title>Schumacher Realty - Winnipeg Real Estate</title>
 
 	<!-- load --> 
     	<?php $this->load->view("parts/loads.php",$datos); ?>
@@ -50,6 +50,10 @@
 		
 </head>
 <body>	
+	<?php 
+			$this->load->view("parts/loader-global.php");
+	?>
+	<?php $this->load->view("parts/menuresponsive.php") ?>
 <div class="container-fluid"> <!-- ahorita tiene container fluid por el tonto slider -->
 		<?php $this->load->view("parts/header.php") ?>
 		<?php $this->load->view("parts/menushow.php") ?>
@@ -60,6 +64,8 @@
       </ul> -->
 		<div class="row container-fluid sliderNew" style=<?php echo "'background:url(".$slider->first.");'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
+			<!-- empieza la vista del menu responsive -->
+		<!-- termina el menu responsive -->
 			<div class="row container-fluid">	
 				<div class="row container-fluid paddingNull navSliderSection">
 					<div class="col-sm-1 col-md-1 col-lg-1">
@@ -198,6 +204,10 @@
 				</div>
 			</div> 
 		</div>
+
+
+		<!-- esto se eliminara cuando entre en resolucion baja -->
+		<section class="HideResponsive">
 		<!-- Maps -->			
 			<div class="row container-fluid mapSection">
 				<div class="row container-fluid paddingNull" >
@@ -396,6 +406,10 @@
 					echo @$buySeller->sellers;
 				?>
 			</div>
+
+			</section>
+			<!-- fin a ocultar -->
+
 		<!-- Footer -->
 		<?php $this->load->view("parts/footer.php") ?>
 

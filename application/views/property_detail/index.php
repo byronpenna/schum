@@ -75,6 +75,9 @@
 		}(document, 'script', 'facebook-jssdk'));*/</script>
 </head>
 <body>
+	<?php 
+			$this->load->view("parts/loader-global.php");
+	?>
 	<!-- ###################3 -->
 		<div class='modal' id='modalTour'>
 			<div id='dialogoModal' class="modal-dialog">

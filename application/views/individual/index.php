@@ -26,6 +26,9 @@
     	</script>
 </head>
 <body>
+	<?php 
+			$this->load->view("parts/loader-global.php");
+	?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
 		<div class="col-lg-12 paddingNull">
