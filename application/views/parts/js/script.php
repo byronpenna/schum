@@ -89,6 +89,4 @@ $(document).ready(function(){
                     $("body").css("overflow","");
                     $(".amostrar").css("z-index","900000");
           }, 4000);
-
-			
 });
