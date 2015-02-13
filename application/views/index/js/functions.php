@@ -90,6 +90,11 @@ function paginacion(limit){
 		},
 		url: 	<?php echo "'".site_url('welcome/getNewsToMarketPagination')."'" ?>,
 		type: 	"POST",
+		beforeSend: function(){
+			div = <?php echo "\" $ajaxLoader \""; ?>;
+			loader = "<div style='margin-top:10%;'>"+div+"</div>";
+			$(".pedazoNewsToMarket").empty().append(loader);
+		},
 		success: function(data){
 			if(data != ""){
 				// console.log(data);
@@ -107,6 +112,11 @@ function paginacionEmp(limit){
 		},
 		url: 	<?php echo "'".site_url('welcome/getEmpPagination')."'" ?>,
 		type: 	"POST",
+		beforeSend: function(){
+			div = <?php echo "\" $ajaxLoader \""; ?>;
+			loader = "<div style='margin-top:3%;position:absolute;left:50%;'>"+div+"</div>";
+			$(".cuadritosEmpleadoSection").empty().append(loader);
+		},
 		success: function(data){
 			// console.log("la data es: ",limit);
 			// console.log("nice",data);
