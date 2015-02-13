@@ -736,3 +736,10 @@ text-align: left;}
 		.conte-searchSecc{
 			display:none;
 		}
+
+
+
+
+		.schumMovil{
+			display: none;
+		}

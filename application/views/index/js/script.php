@@ -48,7 +48,7 @@
 	  		// click 
 	  			// paginado 
 	  				// news to market 
-			  			$(document).on("click",".navNewToMarket",function(){			  				
+			  			$(document).on("click",".navNewToMarket",function(){		  				
 			  				limits = getLimits($(this),$("#txtl1"),$("#txtl2"));
 			  				paginacion(limits);
 			  			});
