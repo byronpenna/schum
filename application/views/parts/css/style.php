@@ -721,3 +721,18 @@ text-align: left;}
 
 
 /*end loader*/
+
+
+
+#footer_containerR{
+			display:none;
+}
+
+.menu-responsivo{
+			display:none;
+		}
+
+
+		.conte-searchSecc{
+			display:none;
+		}

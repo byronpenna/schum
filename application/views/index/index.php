@@ -24,6 +24,11 @@
 				margin-top:10%;
 			}
 
+			@media(min-width: 100px) and (max-width:414px){
+				body{
+					overflow: hidden;
+				}
+			}
 
 
 			@media(min-width:767px){
@@ -410,8 +415,13 @@
 			</section>
 			<!-- fin a ocultar -->
 
+			<section class="conte-searchSecc">
+				
+			</section>
+
 		<!-- Footer -->
 		<?php $this->load->view("parts/footer.php") ?>
+		<?php $this->load->view("parts/footerResponsivo.php") ?>
 
 </div>
 <!-- faceboook plugin
