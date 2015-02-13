@@ -372,9 +372,10 @@
 			z-index:0;
 		}
 		.menu-responsivo{
-			position:absolute;
+			position:fixed;
 			display: block;
 			z-index: 90000;
+			background: #FFFFFF;
 		}
 
 
@@ -383,6 +384,8 @@
 			float: right;
 			margin-left: -5% !important;
 			position: absolute;
+			margin-top: 1.2%;
+			border-bottom: 0.8px solid #000000;
 		}
 		.boton-responsivo{
 			float: left;
@@ -418,15 +421,30 @@
 			color:#D3D3D3;
 		}
 
- 		/*.searchBar1{
-			display: block !important;
-			position:absolute;
-		} */
+
+		.bannerFootResponsiva{
+			display:block !important;
+		}
+
+ 		.searchBar1{
+ 			display: block !important;
+ 			position:absolute;
+ 			z-index:1;
+ 			width: 100%;
+ 			padding-left: 0;
+			padding-right: 0;
+			margin-top: -15% !important;
+ 		} 
+
+ 		.searchBar {
+			padding-left: 0px !important;
+			padding-right: 0px !important; 
+		}
 
 		.conte-searchSecc{
 			display: block;
 			width: 100%;
-			height: 300px;
+			height: 380px;
 			background: #eee;
 		}
 		.container-fluid{
@@ -447,49 +465,52 @@
 
 		.schumMovil{
 			display: block;
-			position: absolute;
 			background: #FFFFFF;
 			width: 100%;
-			height: 85%;
+			height: 685px;
 			z-index: 1;
-			margin-top: 12%;
+			/*margin-top: 12%;*/
 
 		}
 
 		.schumMovil img{
-			margin: auto;
+			margin-left: 10%;
 			width: 80%;
-			margin-top: 40%;
+			margin-top: 70%;
+			position: absolute;
 		}
-
-		.scrollDownMovil{
-			font-size: 5em !important;
-			/*filter: invert(1);
-			-webkit-filter: invert(1);*/
-
-
-			 background: -webkit-linear-gradient(#000, #CCC);
-			  -webkit-background-clip: text;
-			  -webkit-text-fill-color: transparent;
-		}
-
 		
-		.conteArrowDown{
-			/*background: red;*/
-			width: 40%;
-			margin: auto;
+		.containerSelect{
+			width: 25%;
+			margin-left: 13%;
 			text-align: center;
-			margin-top: 30%;
-
-
-
 		}
 
-		.conteArrowDown p{
-			font-size:1.2em;
-			color: #000000;
-			margin: 0px;
+		.propertySearchSection h3 {
+			font-size: 0.8em;
+			margin-top: 5%;
 		}
 
+		.propertySearchSection img {
+			width: 14% !important;
+			margin-top: 5%;
+		}
 
+		.propertySearchSection {
+			width: 40%;
+		}	
+
+
+		.btnSearchNow {
+			width: 75%;
+			margin: auto;
+		}	
+		
+		.txtSearchNow {
+			font-size: 1em !important;
+		}
+
+		.circle-text {
+			font-size: 1.2em;
+		}
 }

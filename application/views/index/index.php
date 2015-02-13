@@ -24,12 +24,12 @@
 				margin-top:10%;
 			}
 
-			@media(min-width: 100px) and (max-width:414px){
-				body{
-					overflow: hidden;
-				}
-			}
-
+ /*			@media(min-width: 100px) and (max-width:414px){
+	body{
+		overflow: hidden;
+	}
+}*/
+ 
 
 			@media(min-width:767px){
 				.sliderNew {
@@ -59,16 +59,13 @@
 			$this->load->view("parts/loader-global.php");
 	?>
 	<?php $this->load->view("parts/menuresponsive.php") ?>
-	<section class="schumMovil">
-		<img class="imgFull img-responsive bannerMovil "  src=<?php echo "'".base_url("img/logos/logo2.png")."'" ?> >
-		<article class="conteArrowDown">
-			<p>Scroll Down</p>
-			
-		</article>		
-	</section>
+	
 <div class="container-fluid"> <!-- ahorita tiene container fluid por el tonto slider -->
 		<?php $this->load->view("parts/header.php") ?>
 		<?php $this->load->view("parts/menushow.php") ?>
+		<section class="schumMovil">
+		<img class="imgFull img-responsive bannerMovil "  src=<?php echo "'".base_url("img/logos/logo2.png")."'" ?> >
+	</section>
       <!-- <ul class="menu">
         <li><a href="#">Elemento 1</a></li>
         <li><a href="#">Elemento 2</a></li>
@@ -423,131 +420,72 @@
 			<!-- fin a ocultar -->
 
 			<section class="conte-searchSecc">
-				<div class="row container-fluid  searchBar searchBar1">
-						<div class="row container-fluid">
-							<div class="col-lg-9 ">
-								<div class="col-sm-3 col-md-3 col-lg-3 propertySearchSection">
-									<div class="col-md-12 col-lg-12">
+				<div class=" searchBar searchBar1">
+						
+								<div class="propertySearchSection">
+									
 										<h3><img src=<?php echo "'".base_url("img/elements/search_bar/lupa.png")."'"; ?> /> Property Search</h3>			
-									</div>
+									
 								</div>
-							</div>
-						</div>
-						<div class="paddingNull row container-fluid searchBarBackground contenedorSearch">	
-							<div class="searchSelect col-sm-10 col-md-10 col-lg-10">
-								<div class="col-sm-2 col-md-2 col-lg-2 paddingNull containerSelect">
+							
+						<div class="searchBarBackground contenedorSearch">
+							<div class="searchSelect ">
+								<div class="containerSelect">
 									<select name="cbPropertyType" class="form-control searchCb">
 										<option value="-1">Property Type</option>
 										<?php echo $searchBar->propertyType; ?>
 									</select>	
 								</div>
-								<div class="col-sm-2 col-md-2 col-lg-2 paddingNull containerSelect">
+								<div class="containerSelect">
 									<select name="cbMinBedRooms" class="form-control searchCb">
 										<option value="-1">Min. Bedrooms</option>
 										<?php echo $searchBar->minBedRoom;?>
 									</select>
 								</div>
-								<div class="col-sm-2 col-md-2 col-lg-2 paddingNull containerSelect">
+								<div class="containerSelect">
 									<select name='cbMinBath' class="form-control searchCb">
 										<option value="-1">Min. Bathroom</option>
 										<?php echo $searchBar->minBath; ?>
 									</select>
 								</div>
-								<div class="col-sm-2 col-md-2 col-lg-2 paddingNull containerSelect">
+								<div class="containerSelect">
 									<select name='cbMinSf' class="form-control searchCb">
 										<option value="-1">Min. SF</option>
 										<?php echo $searchOp->minSf; ?>
 									</select>
 								</div>
-								<div class="col-sm-2 col-md-2 col-lg-2 paddingNull containerSelect">
+								<div class="containerSelect">
 									<select name="cbMinPrice" class="form-control searchCb">
 										<option value="-1">Min. Price</option>
 										<?php echo $searchOp->minPrice; ?>
 									</select>
 								</div>
-								<div class=" col-sm-2 col-md-2 col-lg-2 paddingNull containerSelect">
+								<div class="containerSelect">
 									<select name="cbMaxPrice" class="form-control searchCb">
 										<option value="-1">Max. Price</option>
 										<?php echo $searchOp->maxPrice; ?>
 									</select>
 								</div>
 							</div>
-							<div class="col-sm-2 col-md-2 col-lg-2 btnSearchNow paddingNull">
-								<button class="controlSearchbar form-control searchButton paddingNull">
-										<div class="iconLupitaSection col-lg-offset-1  col-lg-9 ">
+							<div class=" btnSearchNow ">
+								<button class="controlSearchbar form-control searchButton ">
+										<div class="iconLupitaSection ">
 											<i class="fa fa-search"></i>
 											<div class='txtSearchNow'>Search Now</div>	
 										</div> 
 								</button>	
 							</div>
 						</div>
-						<div class="row container-fluid">
-							<div class="col-md-offset-5 col-md-2 sliderPoints">
-								<div id="puntituos" class="col-md-11">
-									<!-- <div class="pointCuadro">
-										<a href="#">
-											<div class="circle-slider " >
-												<div>
-													
-												</div>
-											</div>	
-										</a>
-										
-									</div> -->
-									
-									<?php
-									echo $slider->div;
-									?>
-
-									<!-- <div class="pointCuadro" id='fb'>
-										<div class="circle-text circle-slider pointIMG activePoint" other='img1'>
-											<div>
-											</div>
-										</div>
-									</div>
-									<div class="pointCuadro" id='fb'>
-										<div class="circle-text circle-slider pointIMG" other='img2'>
-											<div>
-											</div>
-										</div>
-									</div>
-									<div class="pointCuadro" id='fb'>
-										<div class="circle-text circle-slider pointIMG" other='img3'>
-											<div>
-											</div>
-										</div>
-									</div>
-									<div class="pointCuadro" id='fb'>
-										<div class="circle-text circle-slider pointIMG" other='img4'>
-											<div>
-											</div>
-										</div>
-									</div> -->
-
-									<!-- <div class="col-md-2">
-										<img class='imgFull pointIMG activePoint' other='img1' src=<?php echo "'".base_url("img/slider/activeControl.png")."'"; ?> >	
-									</div>
-									<div class="col-md-2">
-										<img class='imgFull pointIMG' other='img2' src=<?php echo "'".base_url("img/slider/control.png")."'"; ?> >	
-									</div>
-									<div class="col-md-2">
-										<img class='imgFull pointIMG' other='img3' src=<?php echo "'".base_url("img/slider/control.png")."'"; ?> >	
-									</div>
-									<div class="col-md-2">
-										<img class='imgFull pointIMG' other='img4' src=<?php echo "'".base_url("img/slider/control.png")."'"; ?> >	
-									</div>
-									<div class="col-md-2">
-										<img class='imgFull pointIMG' src=<?php echo "'".base_url("img/slider/control.png")."'"; ?> >	
-									</div>
-									<div class="col-md-2">
-										<img class='imgFull pointIMG'  src=<?php echo "'".base_url("img/slider/control.png")."'"; ?> >	
-									</div>	 -->
+						
+							<div class="sliderPoints">
+								<div id="puntituos">
 								</div>
 							</div>
-						</div> 
+						
 				</div>		
 			</section>
-
+		
+		<img class="imgFull img-responsive bannerMovil bannerFootResponsiva" style="margin:auto;width:50%;display:none;" src=<?php echo "'".base_url("img/logos/logo2.png")."'" ?> >
 		<!-- Footer -->
 		<?php $this->load->view("parts/footer.php") ?>
 		<?php $this->load->view("parts/footerResponsivo.php") ?>

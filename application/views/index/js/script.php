@@ -6,6 +6,11 @@
 		
 		loadNewToMarket();
 		loadEmpleados();
+
+
+		$(document).on("click",".conteArrowDown",function(){
+			$(".schumMovil").slideUp("slow");
+		});
 		
 		// automatic functions 
 			// timerSlider();
