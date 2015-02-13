@@ -373,6 +373,7 @@
 		}
 		.menu-responsivo{
 			position:absolute;
+			display: block;
 			z-index: 90000;
 		}
 
@@ -380,7 +381,8 @@
 		.social-responsivo{
 			width: 100%;
 			float: right;
-			margin-right: 12%;
+			margin-right: 15%;
+			position: absolute;
 		}
 		.boton-responsivo{
 			float: left;
@@ -399,8 +401,8 @@
 		}
 
 		.sliderNew{
-			margin-top: 22%;
-			height: 300px;
+			margin-top: 13%;
+			height: 200px;
 			/*background: url(<?php echo "'".base_url("img/slider/img/img1.png")."'"; ?>);*/
 				background-repeat: no-repeat;
 				background-size: 100% 100% !important;
@@ -409,5 +411,28 @@
 
 		#footer_container{
 			display:none;
+		}
+		#footer_containerR{
+			display:block;
+			width: 100%;
+			color:#D3D3D3;
+		}
+
+/*		.searchBar{
+			display: block !important;
+			position:absolute;
+		}*/
+
+		.conte-searchSecc{
+			display: block;
+			width: 100%;
+			height: 300px;
+			background: #eee;
+		}
+		.container-fluid{
+			 padding-right: 0; 
+			 padding-left: 0; 
+			 margin-right: 0; 
+			 margin-left: 0; 
 		}
 }
