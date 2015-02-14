@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SCHUMACHER</title>
+	<title>Schumacher Realty - Hopen Houses</title>
 	
 	<!-- load --> 
     	<?php $this->load->view("parts/loads.php",$datos); ?>
@@ -29,7 +29,20 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
+					font-size:1.6em;
 				}
+
+
+				#footer_container .foot-social-ico .fa {
+			    font-size: 2em;
+			    vertical-align: middle;
+			    margin-top:10px !important;
+		     }
+
+				.sliderNew{
+					min-height: 10px !important; 
+				}
+
     	</style>
     <!-- scripts -->
     	<script type="text/javascript">
@@ -46,9 +59,13 @@
     	?>
 </head>
 <body>
+	<?php 
+			$this->load->view("parts/loader-global.php");
+	?>
+	<?php $this->load->view("parts/menuresponsive.php") ?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<div class="row container-fluid sliderNew">
+		<div class="row container-fluid sliderNew" style="margin-bottom:0px;" >
 			<?php $this->load->view("parts/menushow.php") ?>
 		</div>
 		<div class="bodyContainer">

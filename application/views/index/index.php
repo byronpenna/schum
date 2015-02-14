@@ -23,14 +23,7 @@
 			#spanFooter .fa{
 				margin-top:10%;
 			}
-
- /*			@media(min-width: 100px) and (max-width:414px){
-	body{
-		overflow: hidden;
-	}
-}*/
  
-
 			@media(min-width:767px){
 				.sliderNew {
 					margin-top:-40px;

@@ -23,6 +23,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
+					font-size:1.6em;
 				}
 	</style>
 </head>
@@ -32,7 +33,7 @@
 	?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<div class="row container-fluid sliderNew size" >
+		<div class="row container-fluid sliderNew" style="margin-bottom:5%;height:0px;" >
 			<?php $this->load->view("parts/menushow.php") ?>
 		</div>
 			<div class="row container-fluid ourStoryDescription marginn font">

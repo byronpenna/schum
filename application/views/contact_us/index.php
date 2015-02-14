@@ -31,6 +31,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
+					font-size:1.6em;
 				}
 				.nosubrayar{
 				text-decoration: none !important;
@@ -43,7 +44,7 @@
 	?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<div class="row container-fluid sliderNew" >
+		<div class="row container-fluid sliderNew" style="padding:0px;height:0px;" >
 			<?php $this->load->view("parts/menushow.php") ?>
 		</div>
 		<div class="bodyContainer">
