@@ -484,3 +484,20 @@ img.imgfull{
 			font-size: 2em;
 	}
 }
+
+
+@media(min-width: 100px) and (max-width:414px){
+	
+	.sliderNew{
+		display:none;
+	}
+
+	.titulo h2 {
+		font-size: 1.6em !important;
+		margin-left: 15%;
+		width: 300px;
+	}
+	.bodyContainer{
+		margin-top:10%; 
+	}
+}

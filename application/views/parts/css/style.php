@@ -1,5 +1,6 @@
 .navbar{
 	list-style: none;
+	margin-bottom: 0px !important;
 }
 .footerresp{
 	transform:scale(0.4,0.4);
