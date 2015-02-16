@@ -71,6 +71,7 @@
 		<div class="bodyContainer">
 			<div class="row container-fluid ">
 				<div class="col-sm-offset-1 col-xs-9 row titulo">
+					<img class="imgScheduleOH" src=<?php echo "'".base_url("img/elements/lateral_video/calendario.png")."'"; ?>>
 					<h2>Open House Calendar</h2>
 				</div>
 				<?php 
