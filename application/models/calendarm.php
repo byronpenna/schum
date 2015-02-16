@@ -8,10 +8,26 @@ class Calendarm extends Padrem
 		parent::__construct();
 	}
 	function getAllOpenHouse(){
+		$tbOpenHouse = $this->getSqlOpenHouse();
+		// $sql = "SELECT * FROM shum_tb_openhouse ORDER BY startDate DESC LIMIT 0,3";
+		$sql = "SELECT * FROM (".$tbOpenHouse.") openhouse 
+				GROUP BY homeId
+				ORDER BY startDate DESC LIMIT 0,3";
 		$this->db->trans_start();
-			$query = $this->db->query("SELECT * FROM shum_tb_openhouse ORDER BY startDate DESC LIMIT 0,3");
+			$query = $this->db->query($sql);
 		$this->db->trans_complete();
 		return $query->result();
+	}
+	function getCalendar($homeId){
+		$tbOpenHouse = $this->getSqlOpenHouse();
+		// $sql = "SELECT * FROM shum_tb_openhouse ORDER BY startDate DESC LIMIT 0,3";
+		$sql = "SELECT * FROM (".$tbOpenHouse.") openhouse 
+				WHERE homeId = ".$homeId." AND startDate > DATE_FORMAT(NOW(),'%Y-%m-%d') AND endDate < ADDDATE(NOW(),INTERVAL 2 WEEK)
+				ORDER BY startDate;";
+		$this->db->trans_start();
+			$query = $this->db->query($sql);
+		$this->db->trans_complete();
+		return $query->result();	
 	}
 	function getDivOpenHouseGeneral(){
 		// load 
@@ -25,8 +41,9 @@ class Calendarm extends Padrem
 		foreach ($openHouse as $key => $value) {
 			$casa 	= $listingModel->getCasa($value->homeId);
 			if(is_object($casa)){
-				$img 	= $this->getImgSrc($casa->rutaImg);
-				$div 	.= $this->templateDiv($casa,$value,$img);	
+				$img 		= $this->getImgSrc($casa->rutaImg);
+				$calendario = $this->getCalendar($value->homeId);
+				$div 		.= $this->templateDiv($casa,$calendario,$img);	
 			}
 			// $div .= "| ".print_r($casa).",".$value->homeId." |";
 		}
@@ -38,7 +55,7 @@ class Calendarm extends Padrem
 		$this->db->trans_complete();
 		return $query->result();
 	}
-	function templateDiv($casa,$value,$img){
+	function templateDiv($casa,$calendario,$img){
 		$div = "
 			<div class='col-xs-12 col-sm-10 col-sm-offset-1  col-md-9 col-sx-10 col-lg-9 calendar'>
 				<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 photosection'>
@@ -60,7 +77,10 @@ class Calendarm extends Padrem
 						<h4 class='price'>$".$casa->listPrice." |</h4><h4 class='descr'>SQ FT:".$casa->sq." ft2 |</h4><h4 class='descr'>BED: ".$casa->rooms." |</h4><h4 class='descr'>BATH: ".$casa->bathroom."</h4>
 					</div>
 				</div>
-				<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3'>
+				<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3'>";
+		foreach ($calendario as $key => $value) {
+			$div .= "
+				<div class='row'>
 					<div class='horario col-xs-12' >
 						<i class='fa fa-calendar icono'></i>
 						<h3>DATE: ".strtoupper(date("M, d Y",strtotime($value->startDate)))."</h3>
@@ -68,10 +88,23 @@ class Calendarm extends Padrem
 					</div>
 					<div class='horario1 col-xs-12' >
 						<h4 class='text-center'>".strtoupper(date("F, d Y",strtotime($value->startDate)))." ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h4>
-					</div>
+					</div>					
+				</div>
+			";
+		}
+		$div .= "
 				</div>
 			</div>
 		";	
+
+		// <div class='horario col-xs-12' >
+		// 	<i class='fa fa-calendar icono'></i>
+		// 	<h3>DATE: ".strtoupper(date("M, d Y",strtotime($value->startDate)))."</h3>
+		// 	<h3>TIME: ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h3>
+		// </div>
+		// <div class='horario1 col-xs-12' >
+		// 	<h4 class='text-center'>".strtoupper(date("F, d Y",strtotime($value->startDate)))." ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h4>
+		// </div>
 		return $div;
 	}
 	function getDivOpenHouse($homeId){
@@ -80,13 +113,14 @@ class Calendarm extends Padrem
 		// vars 
 			$listingModel 	= new Listingsm();
 			$casa 			= $listingModel->getCasa($homeId);;
-			$openHouse 		= $this->getOpenHouse($homeId);
+			// $openHouse 		= $this->getOpenHouse($homeId);
 			$div 			= "";
 			$img 			= $this->getImgSrc($casa->rutaImg);
 		// do it 
-			foreach ($openHouse as $key => $value) {
-				$div .= $this->templateDiv($casa,$value,$img);
-			}
+			// foreach ($openHouse as $key => $value) {
+				$calendario = $this->getCalendar($homeId);
+				$div .= $this->templateDiv($casa,$calendario,$img);
+			// }
 		return $div;	
 	}
 }
