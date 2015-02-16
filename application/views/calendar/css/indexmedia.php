@@ -494,9 +494,8 @@ img.imgfull{
 
 	.titulo h2 {
 		font-size: 1.6em !important;
-		margin-left: 10%;
+		margin-left: 30%;
 		width: 300px;
-		margin-bottom: -6%;
 	}
 	
 /*
@@ -515,6 +514,19 @@ img.imgfull{
 		margin-top:10%; 
 	}
 
+
+	.imgScheduleOH{
+		display: block;
+		background: #be0000;
+		position: absolute;
+		margin-top: 6%;
+		margin-left: 8%;
+		padding-left: 3%;
+		padding-right: 1.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
 	.descript{
 		display: none;
 	}
@@ -527,15 +539,10 @@ img.imgfull{
 		display: none;
 	}
 
-	.price1{
-		/* float: right; */
+	.price{
+		float: right;
 		vertical-align: top;
-		margin-top: -5%;
-		display: block;
-		margin-left: -5%;
-		color: #6b6b6b;
-		font-family: 'proximaNovaLight';
-		/* position: absolute; */
+		margin-top: -15%;
 	}
 
 	.horario{
@@ -545,49 +552,36 @@ img.imgfull{
 	.horario1{
 		display: block;
 		text-align: center;
-		background: #be0000;
-		width: 352px;
-		margin-left: -5%;
-		margin-bottom: 4%;
-		color:#FFFFFF;
-		padding-bottom: 5px;
-		padding-top: 5px;
+		margin-top: -4%;
 	}
 
 	.horario1 h4{
 		font-family: 'proximaNovaSemiBold';
-		font-size: 0.8em;
-		/*color: #be0000;*/
-		color: #FFFFFF;
-		margin-left: 5px;
+		font-size: 0.6em;
+		color: #be0000;
+		border-bottom: 1px solid #CCCCCC;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
 	}
 
 	.calendar{
 		width: 90%;
 		margin-left:5%;
 		border: 2px solid #FFFFFF;
-		margin-bottom: 10%;
-		border-bottom: 2px solid #CCCCCC;
 	}
 
 	.photosection .imgfull{
 		border: 5px solid #CCCCCC;
-	}
-
-	.OHimg{
-		width: 100%;
+		border-right: 10px solid #CCCCCC;
 	}
 
 	.photosection h2 {
 		font-size: 1.2em;
-		margin-left: -5%;
 	}
 
 	.photosection h3 {
 		font-size: 1.2em;
 	}
-	
-	.photosection .icon {
-		margin-left: -5%;
-	}
+
 }

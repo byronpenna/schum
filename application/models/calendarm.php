@@ -43,11 +43,8 @@ class Calendarm extends Padrem
 			<div class='col-xs-12 col-sm-10 col-sm-offset-1  col-md-9 col-sx-10 col-lg-9 calendar'>
 				<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 photosection'>
                     <div class='imgfull'>
-					   <img src='".$img."' class='imgfull row OHimg'>
+					   <img src='".$img."' class='imgfull row'>
                     </div>
-                    <div class='horario1 col-xs-12' >
-						<i class='fa fa-calendar icono'></i><h4 class='text-center'>".strtoupper(date("M, d Y",strtotime($value->startDate)))." ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h4>
-					</div>
 					<h2>".$casa->nombreVivienda."</h2>
 					<i class='fa fa-map-marker icon'></i> <h3>&nbsp;".$casa->cityTown."</h3>
 				</div>
@@ -68,6 +65,9 @@ class Calendarm extends Padrem
 						<i class='fa fa-calendar icono'></i>
 						<h3>DATE: ".strtoupper(date("M, d Y",strtotime($value->startDate)))."</h3>
 						<h3>TIME: ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h3>
+					</div>
+					<div class='horario1 col-xs-12' >
+						<h4 class='text-center'>".strtoupper(date("F, d Y",strtotime($value->startDate)))." ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h4>
 					</div>
 				</div>
 			</div>
