@@ -552,6 +552,7 @@ img.imgfull{
 	.horario1{
 		display: block;
 		text-align: center;
+		margin-top: -4%;
 	}
 
 	.horario1 h4{
@@ -561,6 +562,7 @@ img.imgfull{
 		border-bottom: 1px solid #CCCCCC;
 		padding-left: 10%;
 		padding-right: 10%;
+		padding-bottom: 5%;
 	}
 
 	.calendar{
