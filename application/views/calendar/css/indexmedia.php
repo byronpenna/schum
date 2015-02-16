@@ -494,10 +494,92 @@ img.imgfull{
 
 	.titulo h2 {
 		font-size: 1.6em !important;
-		margin-left: 15%;
+		margin-left: 30%;
 		width: 300px;
 	}
+	
+/*
+	.titulo {
+		background: red;
+		margin: 10% 0 10% 0;
+		width: 100%;
+	}
+
+	.titulo div{
+		background: orange;
+		width: 40%;
+		display: inline-block;
+	}*/
 	.bodyContainer{
 		margin-top:10%; 
 	}
+
+
+	.imgScheduleOH{
+		display: block;
+		background: #be0000;
+		position: absolute;
+		margin-top: 6%;
+		margin-left: 8%;
+		padding-left: 3%;
+		padding-right: 1.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	.descript{
+		display: none;
+	}
+
+	.searchSection{
+		display: none;
+	}
+
+	.des{
+		display: none;
+	}
+
+	.price{
+		float: right;
+		vertical-align: top;
+		margin-top: -15%;
+	}
+
+	.horario{
+		display:none;
+	}
+
+	.horario1{
+		display: block;
+		text-align: center;
+	}
+
+	.horario1 h4{
+		font-family: 'proximaNovaSemiBold';
+		font-size: 0.6em;
+		color: #be0000;
+		border-bottom: 1px solid #CCCCCC;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.calendar{
+		width: 90%;
+		margin-left:5%;
+		border: 2px solid #FFFFFF;
+	}
+
+	.photosection .imgfull{
+		border: 5px solid #CCCCCC;
+		border-right: 10px solid #CCCCCC;
+	}
+
+	.photosection h2 {
+		font-size: 1.2em;
+	}
+
+	.photosection h3 {
+		font-size: 1.2em;
+	}
+
 }

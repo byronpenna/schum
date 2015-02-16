@@ -538,6 +538,10 @@ body{
 	/*background: #ba0000;*/
 	background: url(<?php echo "'".base_url("img/elements/fondo_calendar.png")."'"; ?>);
 }
+
+.schedule1{
+	display: none;
+}
 .schedule:hover{
 	cursor: pointer;
 }

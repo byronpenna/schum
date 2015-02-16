@@ -104,3 +104,14 @@ h4{
     bottom: 0;
     margin-left: -15px !important;
 }
+
+.imgScheduleOH{
+	display:none;
+}
+
+.horario1{
+	display: none;
+}
+.price1{
+	display: none;
+}

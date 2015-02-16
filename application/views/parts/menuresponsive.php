@@ -8,12 +8,11 @@
     ?>
     <div class="navbar navbar-default navbar-fixed-top responsive menu-responsivo" role="navigation">
         <div class="container container-menu">
-            
             <div class="navbar-header">
+
+                <img class="imgFull img-responsive bannerMovil schumMovilLogo"  src=<?php echo "'".base_url("img/logos/logo2.png")."'" ?> 
+
                 <!-- social  -->
-            
-
-
             <div class="row container-fluid social-responsivo">
             <div id="banneraner" class="col-sm-offset-5 col-sm-7 col-lg-offset-8 col-lg-4  text-right socialNetworkBar">
                 <!-- <span class="fa fa-facebook"></span> -->
@@ -70,6 +69,8 @@
 
 
             <!-- fin social -->
+
+
               <button type="button" class="navbar-toggle collapsed boton-responsivo" data-toggle="collapse" data-target="#bajador">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>

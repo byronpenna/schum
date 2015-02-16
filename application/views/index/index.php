@@ -56,9 +56,6 @@
 <div class="container-fluid"> <!-- ahorita tiene container fluid por el tonto slider -->
 		<?php $this->load->view("parts/header.php") ?>
 		<?php $this->load->view("parts/menushow.php") ?>
-		<section class="schumMovil">
-		<img class="imgFull img-responsive bannerMovil "  src=<?php echo "'".base_url("img/logos/logo2.png")."'" ?> >
-	</section>
       <!-- <ul class="menu">
         <li><a href="#">Elemento 1</a></li>
         <li><a href="#">Elemento 2</a></li>
@@ -477,8 +474,16 @@
 						
 				</div>		
 			</section>
-		
-		<img class="imgFull img-responsive bannerMovil bannerFootResponsiva" style="margin:auto;width:50%;display:none;" src=<?php echo "'".base_url("img/logos/logo2.png")."'" ?> >
+		<div class="schedule1 ">
+			<a href=<?php echo "'".site_url("calendar/general")."'" ?> >
+			<article style="margin-top:5%;width:35%;">
+				<img class="img-responsive imgCenter imgSchedule" src=<?php echo "'".base_url("img/elements/lateral_video/calendario.png")."'"; ?> style="width:25%;">
+			</article>
+			<article style="width:60%;">
+				<h4 class="text-center">CHECK OUT OUR <br>OPEN HOUSES THIS WEEKEND</h4>
+			</article>
+		</a>
+		</div>	
 		<!-- Footer -->
 		<?php $this->load->view("parts/footer.php") ?>
 		<?php $this->load->view("parts/footerResponsivo.php") ?>

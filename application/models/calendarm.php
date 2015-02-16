@@ -55,6 +55,7 @@ class Calendarm extends Padrem
 							".$casa->description."
 						</p>
 					</div>
+					<h4 class='price price1'>$".$casa->listPrice."</h4>
 					<div class='col-xs-12 des' style='text-align:justify'>
 						<h4 class='price'>$".$casa->listPrice." |</h4><h4 class='descr'>SQ FT:".$casa->sq." ft2 |</h4><h4 class='descr'>BED: ".$casa->rooms." |</h4><h4 class='descr'>BATH: ".$casa->bathroom."</h4>
 					</div>
@@ -64,6 +65,9 @@ class Calendarm extends Padrem
 						<i class='fa fa-calendar icono'></i>
 						<h3>DATE: ".strtoupper(date("M, d Y",strtotime($value->startDate)))."</h3>
 						<h3>TIME: ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h3>
+					</div>
+					<div class='horario1 col-xs-12' >
+						<h4 class='text-center'>".strtoupper(date("F, d Y",strtotime($value->startDate)))." ".date("g:iA ",strtotime($value->age_hora_inicio))." - ".date("g:iA ",strtotime($value->age_hora_fin))." </h4>
 					</div>
 				</div>
 			</div>
