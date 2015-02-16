@@ -103,6 +103,44 @@ class Padrem extends CI_Model
 		$imgSrc .= $img;
 		return $imgSrc;
 	}
+	public function getSqlOpenHouse(){
+		$sql = "SELECT
+				`ag`.`age_id` AS `agendaId`,
+				`ag`.`age_titulo` AS `agendaTitle`,
+				`ag`.`age_descripcion` AS `agendaDescripcion`,
+				`ag`.`age_fecha_inicio` AS `startDate`,
+				`ag`.`age_fecha_fin` AS `endDate`,
+				`ag`.`age_hora_inicio` AS `age_hora_inicio`,
+				`ag`.`age_hora_fin` AS `age_hora_fin`,
+				`ag`.`age_amb_id` AS `age_amb_id`,
+				`ag`.`age_lugar` AS `age_lugar`,
+				`ag`.`age_color` AS `age_color`,
+				`amb`.`amb_id` AS `amb_id`,
+				`amb`.`amb_general` AS `amb_general`,
+				`amb`.`amb_com_id` AS `amb_com_id`,
+				`amb`.`amb_usu_id` AS `amb_usu_id`,
+				`amb`.`amb_cat_id` AS `amb_cat_id`,
+				`amb`.`amb_exp_id` AS `homeId`
+			FROM
+				(
+					`crm_agenda` `ag`
+					LEFT JOIN `crm_ambito` `amb` ON (
+						(
+							`amb`.`amb_id` = `ag`.`age_amb_id`
+						)
+					)
+				)
+			WHERE
+				(
+					(
+						`ag`.`age_titulo` = 'open-house'
+					)
+					AND (`amb`.`amb_com_id` = 17)
+				)
+			ORDER BY
+				`ag`.`age_fecha_inicio` DESC";
+		return $sql;
+	}
 	public function getSqlEspecialListing(){
 		$sql = "select 
 				`agente`.`Agente` AS `Agente`,
