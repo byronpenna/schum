@@ -29,7 +29,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
-					font-size:1.6em;
+					font-size:1.4em;
 				}
 
 
@@ -71,7 +71,8 @@
 		<div class="bodyContainer">
 			<div class="row container-fluid ">
 				<div class="col-sm-offset-1 col-xs-9 row titulo">
-					<h2>Open Houses Calendar</h2>
+					<img class="imgScheduleOH" src=<?php echo "'".base_url("img/elements/lateral_video/calendario.png")."'"; ?>>
+					<h2>Open House Calendar</h2>
 				</div>
 				<?php 
 					echo $divOpenHouse;
@@ -140,6 +141,7 @@
 			</div>
 		</div>
 		<?php $this->load->view("parts/footer.php") ?>
+		<?php $this->load->view("parts/footerResponsivo.php") ?>
 	</div>
 </body>
 </html>

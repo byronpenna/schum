@@ -382,7 +382,7 @@
 		.social-responsivo{
 			width: 86%;
 			float: right;
-			margin-left: -5% !important;
+			margin-left: -10% !important;
 			position: absolute;
 			margin-top: 1.2%;
 			border-bottom: 0.8px solid #000000;
@@ -421,11 +421,28 @@
 			color:#D3D3D3;
 		}
 
-
-		.bannerFootResponsiva{
-			display:block !important;
+		.schedule1{
+			display: block !important;
+			width: 100% !important;
+			/*padding-top: 20px;
+			padding-bottom: 20px;*/
+			background: url(<?php echo "'".base_url("img/elements/fondo_calendar.png")."'"; ?>);
 		}
 
+		.schedule1 h4{
+			color:#FFFFFF;
+		}
+
+		.schedule1:hover{
+			cursor: pointer;
+		}
+
+		.schedule1 article{
+			/*background: orange;*/
+			/*width: 45%;*/
+			display: inline-block;
+			vertical-align: top;
+		}
  		.searchBar1{
  			display: block !important;
  			position:absolute;
@@ -463,20 +480,10 @@
 			background-color: #000000;
 		}
 
-		.schumMovil{
-			display: block;
-			background: #FFFFFF;
-			width: 100%;
-			height: 685px;
-			z-index: 1;
-			/*margin-top: 12%;*/
-
-		}
-
-		.schumMovil img{
-			margin-left: 10%;
-			width: 80%;
-			margin-top: 70%;
+		.schumMovilLogo{
+			margin-left: 78%;
+			width: 22%;
+			margin-top: 0.1%;
 			position: absolute;
 		}
 		

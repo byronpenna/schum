@@ -41,7 +41,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
-					font-size:1.6em;
+					font-size:1.4em;
 				}
     	</style>
 </head>
