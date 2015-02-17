@@ -50,10 +50,10 @@ div.imgfull img {
   display: block;
   max-width: none !important;
 }
-img.imgfull{
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
+/*img.imgfull{
+    margin-left: 0px ;
+    margin-right: 0px ;
+}*/
 
 .fbbox iframe{
 	display: none;
@@ -418,3 +418,14 @@ label{
 	font-size:1.5em;
 }
 
+.conte-readmore{
+	display: none;
+}
+
+.summarySection1{
+	display: none;
+}
+
+.imgControls{
+	display: none;
+}

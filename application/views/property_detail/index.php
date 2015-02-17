@@ -11,6 +11,11 @@
 	<!-- load --> 
     	<?php $this->load->view("parts/loads.php"); ?>
     <!-- css -->
+    <style type="text/css">	    
+			<?php
+				$this->load->view("property_detail/css/jsCarousel.php");
+			?>	
+	    </style>
 	    <style type="text/css">
 	    	<?php 
 	    		$this->load->view("property_detail/css/style.php");
@@ -22,11 +27,7 @@
 	    </style>
 
 	    <!-- jcarrusel -->
-	    <style type="text/css">	    
-			<?php
-				$this->load->view("property_detail/css/jsCarousel.php");
-			?>	
-	    </style>
+	    
 	    <style type="text/css" media="screen">
     		/*.amostrar{
 					width:100%;
@@ -78,6 +79,7 @@
 	<?php 
 			$this->load->view("parts/loader-global.php");
 	?>
+	
 	<!-- ###################3 -->
 		<div class='modal' id='modalTour'>
 			<div id='dialogoModal' class="modal-dialog">
@@ -112,6 +114,7 @@
 		          	</div>
 		          </div>
 		        </div>
+
 		        <!-- <div class="modal-footer">
 		          <a href="#" data-dismiss="modal" class="btn">Close</a>
 		          <a href="#" class="btn btn-primary">Save changes</a>
@@ -123,6 +126,11 @@
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
 		<?php $this->load->view("parts/menushow.php") ?>
+		<?php $this->load->view("parts/menuresponsive.php") ?>
+
+
+		<img src="<?php echo  base_url('img/elements/derecha.png') ?>" class="imgControls derResponsive navSlide"  direccion="1"/>
+		<img src="<?php echo base_url('img/elements/izquierda.png') ?>" class="imgControls izResponsive navSlide"  direccion="0" />
 		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
@@ -148,14 +156,14 @@
 					</div>
 				</div> -->
 			</div>
-            </br>
+            <br>
 			<div class="row nameSection">
 				<div class="col-lg-6">
 					<h2><?php echo $house->nombreVivienda ?></h2> 
                     <h4><?php echo $house->cityTown ?> </h4>	
 				</div>
 			</div>
-            </br>
+            <br>
 			<div class="row container-fluid summarySection">
 				<!-- <div class="row container-fluid"> -->
 						<h2>Summary</h2>
@@ -215,8 +223,67 @@
 				</div>
 				
 			</div>
+
+			<!-- inicio del sumary responsive -->
+
+			<div class="summarySection summarySection1">
+				<!-- <div class="row container-fluid"> -->
+						<h2>Summary</h2>
+				<!-- </div> -->
+				<div class="row">
+					<div class="parentBoxSummary">
+							<div class="boxSummary">
+								<label>List price:</label> 
+								<p class="listPriceSummary">
+									<small>$<?php echo $house->listPrice; ?></small>
+								</p>
+							</div>
+							<div class="boxSummary">								
+								<label>City/Town:</label> 
+								<p>
+									<?php echo $house->cityTown; ?>
+								</p>
+							</div>
+							<div class="boxSummary">								
+								<label>Year built:</label> 
+								<p>
+									<?php echo $house->yearBuilt; ?>
+								</p>
+							</div>
+							<div class="boxSummary">								
+								<label>Living Area:</label> 
+								<p>
+									<?php echo $house->livingAreaFit ?> ft&sup2;
+								</p>
+							</div>	
+							<div class=" boxSummary mls">								
+								<label>MLS # :</label>
+								<p>
+									<?php echo $house->mlsNumber; ?>
+								</p>
+							</div>
+							<div class=" boxSummary">								
+								<label>Bedrooms:</label>
+								<p>
+									<?php echo $house->rooms ?>
+								</p>
+							</div>
+							<div class=" boxSummary">								
+								<label>Bathrooms:</label>
+								<p>
+									<?php echo $house->bathroom; ?>
+								</p>
+							</div>		
+					</div>
+				</div>
+			</div>
+
+
+			<!-- sumary responsive -->
+
+
 			<div class="row container-fluid">
-						<h2>Description</h2>
+						<h2 id="desPD">Description</h2>
 						<div class="col-xs-12">
 							<p>
 								<!-- Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments! -->
@@ -365,7 +432,7 @@
 							<h2>Property Listing Represented By</h2>	
 						</div>
 						<div class="row container-fluid agent paddingNull">
-							<div class="col-lg-5 col-sm-6 col-md-5 paddingNull">
+							<div class="col-lg-5 col-sm-6 col-md-5 paddingNull agentImg">
 								<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
                                     <div class="imgfull">
 									   <img class="imgfull" src=<?php echo "'".$empleado->rutaImg."'"; ?> />
@@ -373,10 +440,10 @@
 								</a>
 							</div>
 							<div class="col-lg-7 col-sm-6 col-md-7 contactAgentText">
-								<div class="row container-fluid">
+								<div class="row container-fluid empName">
 									<h2><?php echo $empleado->nombre ?></h2>
 								</div>
-								<div class="row container-fluid ">
+								<div class="row container-fluid empPosicion">
 									<h3><?php echo $empleado->posicion ?> </h3>
 								</div>
 								<div class="row container-fluid inform">
@@ -465,11 +532,29 @@
 					<h4>What will your monthly mortgage payment be?</h4>	
 				</div>		
 			</div>
+
+
+			<article class="conte-readmore">
+				<button class="readmore">
+					<a href="tel:+6494461709" >
+						Call Agent
+					</a>
+				</button>
+				<button class="readmore">
+					<a href="mailto:<?php echo $empleado->email ?>?subject=Property Inquiry: <?php echo $house->nombreVivienda ?>">
+						More Info
+					</a>
+				</button>
+				<button class="readmore">
+					<a href="mailto:<?php echo $empleado->email ?>?subject=Showing Request For: <?php echo $house->nombreVivienda ?>">Book a Showing</a> 
+				</button>
+			</article>
 		</div><!-- aqui finaliza el bodySection --> 
 		<?php 
 			$this->load->view("parts/calculator.php");
 			$this->load->view("parts/footer.php");
 		?> 
+		<?php $this->load->view("parts/footerResponsivo.php") ?>
 	</div>
 	
 </body>

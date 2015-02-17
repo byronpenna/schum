@@ -1852,3 +1852,13 @@
 			}
 
 }
+
+
+@media(min-width: 100px) and (max-width:414px){
+	body{
+		background: red;
+	}
+
+
+
+}

@@ -211,8 +211,8 @@
 			-webkit-box-shadow: 0px 0px 5px #CCC;
 			-moz-box-shadow: 0px 0px 5px #CCC;
 			box-shadow: 0px 0px 5px #CCC;
-			max-height: 150px;
-			min-height: 150px;
+			/*max-height: 150px;
+			min-height: 150px;*/
 			overflow: hidden;
 		}
 		.marketImage{

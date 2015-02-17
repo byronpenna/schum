@@ -20,7 +20,8 @@
 	    	 	$this->load->view("listings/css/owl.carousel.php"); 
 	    	 	$this->load->view("listings/css/indexMedia.php");
 	    	 ?>
-	    </style>
+
+	     </style>
      <!-- scripts -->
     	<script type="text/javascript">
 	    	<?php
@@ -43,22 +44,107 @@
 					opacity:1;
 					font-size:1.4em;
 				}
+
+				   	 @media(min-width: 100px) and (max-width:414px){
+						.searchSection {
+							margin-top: 5%;
+							display: none;
+							/*background: red;*/
+						}
+
+
+						.beforeHomes h2 {
+						font-size: 1.6em;
+						text-align: left;
+						}
+
+						.beforeHomes {
+							margin-top: 0px;
+							margin-bottom: 0px;
+							margin-left: -10%;
+							/*background: red;*/
+							}
+
+							.sliderNew{
+								height: 0px;
+							}
+
+							.casa{
+								/*background: red;*/
+								padding: 0px;
+								margin-top: 5%;
+								margin-bottom: 5%;
+							}
+
+							.casa img{
+								position: relative !important;
+								border: 0.6em solid #CCCCCC;
+							}
+
+							.imgListing {
+								width: 90%;
+								margin: auto;
+								min-height: 250px;
+								height: 0px !important;
+							}
+
+							.descripcionCasa h3 {
+							margin-top: 2%;
+							font-size: 1.2em;
+							}
+
+							.descripcionCasa h5 {
+								margin-top: 1%;
+								font-size: 1em;
+								}
+
+								.mappin {
+								font-size: 100%;
+								}
+
+								.descripcionCasa h2 {
+									font-size: 1.5em;
+								}
+
+							.titleFootDescriptionCasa, .desFootDescriptionCasa {
+								font-size: 0.5em;
+								text-align: center;
+							}
+
+							.descripcionCasa {
+								width: 90%;
+								margin: auto;
+								padding: 0px;
+								padding-top: 2%;
+								padding-left: 0px;
+								padding-bottom:2%; 
+								 -webkit-box-shadow: 0px 0px 0px transparent; 
+								-moz-box-shadow: 0px 0px 0px transparent;
+								 box-shadow: 0px 0px 0px transparent; 
+								 border-bottom: 1px solid #CCCCCC;
+							}
+
+							.paginationSection{
+								display:none;
+							}
+
+
+
+					}
+	
     	</style>
 </head>
 <body>
-	<?php 
-			$this->load->view("parts/loader-global.php");
-	?>
+	<?php $this->load->view("parts/loader-global.php");?>
+	<?php $this->load->view("parts/menuresponsive.php") ?>
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		
-
 		<div class="row container-fluid sliderNew">
 		<?php /*$this->load->view("parts/menu.php") */?>	
 		<?php $this->load->view("parts/menushow.php") ?>
 		</div>
 		<div class="bodySection">
-			<!-- Property search --> 
+			<!-- Property search -->
 			<div class="row container-fluid searchSection">
 				<div class="row container-fluid titleSearch">
 					<div class="col-md-6 col-sm-6">
@@ -189,7 +275,6 @@
 				<div class="row seccionCasitas cuadritos">
 					<?php echo $casas; ?> 
 				</div>
-				
 			</div>
 			<!-- Paginado -->
 				<div class="row container-fluid paginationSection">
@@ -217,5 +302,6 @@
 				// $this->view("parts/calculator.php"); 
 				$this->view("parts/footer.php");
 			?>
+			<?php $this->load->view("parts/footerResponsivo.php") ?>
 </body>
 </html>

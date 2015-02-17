@@ -552,6 +552,7 @@ img.imgfull{
 		color:#FFFFFF;
 		padding-bottom: 5px;
 		padding-top: 5px;
+		margin-top: -3%;
 	}
 
 	.horario1 h4{
