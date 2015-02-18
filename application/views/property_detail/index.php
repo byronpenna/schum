@@ -172,9 +172,9 @@
 					<div class="col-lg-12 col-sm-12 col-md-12 parentBoxSummary">
 						<div class="col-lg-3 col-sm-4 col-md-3 paddingNull">
 							<div class="col-lg-12 col-sm-12 col-md-12 boxSummary price">
-								<label>List price:</label> 
+								<label>List Price:</label> 
 								<p class="listPriceSummary">
-									<small>$<?php echo $house->listPrice; ?></small>
+									$<?php echo $house->listPrice; ?>
 								</p>
 							</div>
 						</div>
@@ -186,7 +186,7 @@
 								</p>
 							</div>
 							<div class="col-lg-3 col-sm-3 col-md-3 boxSummary">								
-								<label>Year built:</label> 
+								<label>Year Built:</label> 
 								<p>
 									<?php echo $house->yearBuilt; ?>
 								</p>
@@ -233,9 +233,9 @@
 				<div class="row">
 					<div class="parentBoxSummary">
 							<div class="boxSummary">
-								<label>List price:</label> 
+								<label>List Price:</label> 
 								<p class="listPriceSummary">
-									<small>$<?php echo $house->listPrice; ?></small>
+									$<?php echo $house->listPrice; ?>
 								</p>
 							</div>
 							<div class="boxSummary">								
@@ -245,7 +245,7 @@
 								</p>
 							</div>
 							<div class="boxSummary">								
-								<label>Year built:</label> 
+								<label>Year Built:</label> 
 								<p>
 									<?php echo $house->yearBuilt; ?>
 								</p>
@@ -285,9 +285,9 @@
 			<div class="row container-fluid">
 						<h2 id="desPD">Description</h2>
 						<div class="col-xs-12">
-							<p>
+							<p style="text-align:justify;">
 								<!-- Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments! -->
-								<?php echo $house->description; ?>
+								<?php echo nl2br($house->description); ?>
 							</p>
 						</div>
 

@@ -2373,7 +2373,333 @@ iframe[name="f3d7c73d9c"]{
 }
 }
 
-@media(min-width: 100px) and (max-width:414px){
+
+@media(max-height: 480px){
+	.titulo {
+		margin-top: 118px;
+		font-size: 10px;
+	}
+
+	h1, .h1, h2, .h2, h3, .h3 {
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+}
+
+
+@media(min-width: 100px) and (max-width: 320px){
+	.nameSection{
+		position: absolute;
+		top: 10%;
+	}
+	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
+		display:none;
+	}
+
+	.sliderNew{
+		min-height: 300px !important;
+		margin-top: 38%;
+	}
+
+	.mls{
+		display:none !important;
+	}
+
+	.bodySection{
+		margin-top: 100%;
+	}
+
+	.agentSection{
+		top: 58%;
+		position: absolute;
+		text-align: right;
+		right: 4%;
+	}
+
+	.summarySection h2{
+		font-size: 1.5em
+	}
+
+	.titulo h2{
+		font-size: 0.8em;
+		color:#000000;
+	}
+
+	.contactAgentText h2{
+		font-size: 0.8em;	
+	}
+
+	.agent {
+		border: 0px solid transparent;
+	}
+
+	.empName{
+		position: absolute;
+		margin-top: -22%;
+		right: 0;
+	}
+
+	.empName h2{
+		color:#314782;
+	}
+
+	.summarySection{
+		display: none;
+	}
+
+	.summarySection1{
+		display: block;
+		margin-top: -127%;
+	}	
+
+
+	.boxSummary {
+		border-right: 0px solid;
+		padding-top: 1%; 
+		padding-bottom: 1%; 
+		padding-left: 1%;
+		width: 49%;
+		display: inline-block;
+		margin-top: 1%;
+		font-size:1em;
+		vertical-align: top;
+		height: 40px;
+		margin-right: 1px;
+	}
+
+	.boxSummary label{
+		float: left;
+	}
+	
+	.cubos-colores{
+		height: 100px !important;
+	}
+	.contenedor-cubos article {
+		width: 30%;
+		font-size: 1.5em;
+		margin-top: 10px;
+		display: inline-block;
+	}
+
+	.txtBlockDescription {
+		display:none;
+	}
+
+	.titleBlockDescription h2 {
+		font-size: 0.5em !important;
+	}
+
+	.imgBlockDescription{
+		margin-top: -30%;
+	}
+	
+	.imgBlockDescription .fa-calendar{
+		margin-top: 30%;
+	}
+
+	.blockDescriptions{
+		padding-top: 0;
+	}
+
+	#desPD{
+		font-size: 1.5em;
+	}
+	
+	.conte-readmore{
+		display: block;
+	}
+
+	.conte-readmore .readmore{
+		display: inline-block;
+		width: 32%;
+		padding: 2%;
+		background: #be0000;
+		font-size: 11px;
+	}
+	
+	.namesection h2{
+	font-size: 1.5em;
+	margin-top: 10px;
+	}
+
+
+	.imgControls{
+		display: block;
+		position: absolute;
+		margin-top: 75%;
+		width: 15%;
+		cursor:pointer;
+	}
+
+	.derResponsive{
+		right: 0px;
+	}
+
+	.titulo{
+		margin-top: 64px;
+		font-size: 12px;
+	}
+
+
+}
+
+
+
+@media(min-width: 321px) and (max-width: 375px){
+	.nameSection{
+		position: absolute;
+		top: 5%;
+	}
+	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
+		display:none;
+	}
+
+	.sliderNew{
+		min-height: 300px !important;
+		margin-top: 30%;
+	}
+
+	.mls{
+		display:none !important;
+	}
+
+	.bodySection{
+		margin-top: 100%;
+	}
+
+	.agentSection{
+		top: 58%;
+		position: absolute;
+		text-align: right;
+		right: 4%;
+	}
+
+	.summarySection h2{
+		font-size: 1.5em
+	}
+
+	.titulo h2{
+		font-size: 0.8em;
+		color:#000000;
+	}
+
+	.contactAgentText h2{
+		font-size: 0.8em;	
+	}
+
+	.agent {
+		border: 0px solid transparent;
+	}
+
+	.empName{
+		position: absolute;
+		margin-top: -22%;
+		right: 0;
+	}
+
+	.empName h2{
+		color:#314782;
+	}
+
+	.summarySection{
+		display: none;
+	}
+
+	.summarySection1{
+		display: block;
+		margin-top: -120%;
+	}	
+
+
+	.boxSummary {
+		border-right: 0px solid;
+		padding-top: 1%; 
+		padding-bottom: 1%; 
+		padding-left: 1%;
+		width: 49%;
+		display: inline-block;
+		margin-top: 1%;
+		font-size:1em;
+		vertical-align: top;
+		height: 40px;
+		margin-right: 1px;
+	}
+
+	.boxSummary label{
+		float: left;
+	}
+	
+	.cubos-colores{
+		height: 100px !important;
+	}
+	.contenedor-cubos article {
+		width: 30%;
+		font-size: 1.5em;
+		margin-top: 10px;
+		display: inline-block;
+	}
+
+	.txtBlockDescription {
+		display:none;
+	}
+
+	.titleBlockDescription h2 {
+		font-size: 0.5em !important;
+	}
+
+	.imgBlockDescription{
+		margin-top: -30%;
+	}
+	
+	.imgBlockDescription .fa-calendar{
+		margin-top: 30%;
+	}
+
+	.blockDescriptions{
+		padding-top: 0;
+	}
+
+	#desPD{
+		font-size: 1.5em;
+	}
+	
+	.conte-readmore{
+		display: block;
+	}
+
+	.conte-readmore .readmore{
+		display: inline-block;
+		width: 32%;
+		padding: 2%;
+		background: #be0000;
+		font-size: 12px;
+	}
+	
+	.namesection h2{
+	font-size: 1.5em;
+	}
+
+
+	.imgControls{
+		display: block;
+		position: absolute;
+		margin-top: 55%;
+		width: 20%;
+		cursor:pointer;
+	}
+
+	.derResponsive{
+		right: 0px;
+	}
+
+	.titulo{
+		margin-top: 20px;
+	}
+
+
+}
+
+@media(min-width: 376px) and (max-width:414px){
 	.nameSection{
 		position: absolute;
 		top: 5%;
@@ -2444,10 +2770,13 @@ iframe[name="f3d7c73d9c"]{
 		padding-top: 1%; 
 		padding-bottom: 1%; 
 		padding-left: 1%;
-		width: 49.4%;
+		width: 49%;
 		display: inline-block;
 		margin-top: 1%;
 		font-size:1em;
+		vertical-align: top;
+		height: 40px;
+		margin-right: 2px;
 	}
 
 	.boxSummary label{

@@ -131,7 +131,21 @@
 
 
 					}
-	
+				@media(min-width: 100px) and (max-width:420px){
+
+					.descripcionCasa > .row:nth-child(4) {
+						margin-top: 0%; 
+					}
+
+
+
+				}
+
+				@media(max-width:320px){
+					.textEstadoCasa{
+						font-size: 70px;
+					}
+				}	
     	</style>
 </head>
 <body>
