@@ -18,6 +18,18 @@
 					opacity:1;
 					font-size:1.4em;
 				}
+
+
+				@media(min-width: 100px) and (max-width:414px){
+
+					.ourStoryDescription > h2 {
+						font-size: 1.6em;
+					}
+
+					.font > p {
+						width: 97%;
+					}
+				}
 	</style>
     <script type="text/javascript">
     	<?php
@@ -34,6 +46,7 @@
 		
 <div class="row container-fluid sliderNew" style="margin-bottom:5%;height:0px;" >
 			<?php $this->load->view("parts/menushow.php") ?>
+			<?php $this->load->view("parts/menuresponsive.php") ?>
 		</div>
 	<div class="bodyContainer">
 				<div class="row container-fluid ourStoryDescription marginn font">
@@ -67,6 +80,7 @@
 		<?php 	
 			$this->load->view("parts/footer.php");
 		?>
+		<?php $this->load->view("parts/footerResponsivo.php") ?>
 	</div>
 </body>
 </html>

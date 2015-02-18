@@ -25,6 +25,19 @@
 					opacity:1;
 					font-size:1.4em;
 				}
+
+				@media(min-width: 100px) and (max-width:414px){
+
+					.ourStoryDescription > h2 {
+						font-size: 1.6em;
+					}
+
+					.font > p {
+						width: 97%;
+					}
+				}
+
+				
 	</style>
 </head>
 <body>
