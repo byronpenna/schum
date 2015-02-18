@@ -2376,7 +2376,7 @@ iframe[name="f3d7c73d9c"]{
 
 @media(max-height: 480px){
 	.titulo {
-		margin-top: 118px;
+		margin-top: 120px; 
 		font-size: 10px;
 	}
 
