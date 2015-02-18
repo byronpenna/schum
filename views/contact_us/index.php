@@ -31,7 +31,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
-					font-size:1.4em;
+					font-size:1.6em;
 				}
 				.nosubrayar{
 				text-decoration: none !important;
@@ -42,15 +42,12 @@
 	<?php 
 			$this->load->view("parts/loader-global.php");
 	?>
-
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
 		<div class="row container-fluid sliderNew" style="padding:0px;height:0px;" >
 			<?php $this->load->view("parts/menushow.php") ?>
-
 		</div>
 		<div class="bodyContainer">
-			<?php $this->load->view("parts/menuresponsive.php") ?>
 			<!-- ############### --> 
 				<div class="container contact">
 				    <div class="row">
@@ -58,9 +55,7 @@
 				            <form>
 					            <legend>CONTACT</legend>
 					            <p>
-						            To Contact Us Directly, Use The Following Information.
-						            <br>
-						            <br>
+						            To Contact Us Directly, Use The Following Information.<br>
 						            <b>General Inquiries:</b>
 						            <br>
 						            <a class='nosubrayar' href="mailto:info@driventofinish.com">Info@DrivenToFinish.com</a>
@@ -127,7 +122,6 @@
 		<?php 	
 			$this->load->view("parts/footer.php");
 		?>
-		<?php $this->load->view("parts/footerResponsivo.php") ?>
 	</div>
 </body>
 </html>

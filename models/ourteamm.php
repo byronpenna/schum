@@ -71,28 +71,6 @@ class Ourteamm extends CI_Model
 							</a>
 						</div>
 					</div>
-
-					<div class='row container-fluid  conteIconos2' id='contedordeiconos'>
-							<div class='col-md-6 paddingNull'>
-								<a href=".site_url("listings/getListingFromAgent/".$value->idEmpleado." ")."'>
-								".$divListing."
-								</a>
-							</div>
-							<div class='col-md-6' id='res2000fixIcon'>
-								<a href='mailto:".$value->email."'>
-									<div class='col-xs-6' id='res2000fixIcon2'>
-										<i class='fa fa-envelope' style='color:#314782;'></i>	
-									</div>
-									<div class='col-xs-6 empleadoIcon' id='res1400fixIcon'>
-										<p>EMAIL</p>
-									</div>	
-								</a>
-							</div>
-						</div>
-
-
-
-
 				</div>
 			";
 		}

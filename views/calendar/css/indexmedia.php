@@ -494,101 +494,10 @@ img.imgfull{
 
 	.titulo h2 {
 		font-size: 1.6em !important;
-		margin-left: 10%;
+		margin-left: 15%;
 		width: 300px;
-		margin-bottom: -6%;
 	}
-	
-/*
-	.titulo {
-		background: red;
-		margin: 10% 0 10% 0;
-		width: 100%;
-	}
-
-	.titulo div{
-		background: orange;
-		width: 40%;
-		display: inline-block;
-	}*/
 	.bodyContainer{
 		margin-top:10%; 
-	}
-
-	.descript{
-		display: none;
-	}
-
-	.searchSection{
-		display: none;
-	}
-
-	.des{
-		display: none;
-	}
-
-	.price1{
-		/* float: right; */
-		vertical-align: top;
-		margin-top: -5%;
-		display: block;
-		margin-left: -5%;
-		color: #6b6b6b;
-		font-family: 'proximaNovaLight';
-		/* position: absolute; */
-	}
-
-	.horario{
-		display:none;
-	}
-
-	.horario1{
-		display: block;
-		text-align: center;
-		background: #be0000;
-		width: 114%;
-		margin-left: -5%;
-		margin-bottom: 4%;
-		color:#FFFFFF;
-		padding-bottom: 5px;
-		padding-top: 5px;
-		margin-top: -3%;
-	}
-
-	.horario1 h4{
-		font-family: 'proximaNovaSemiBold';
-		font-size: 0.8em;
-		/*color: #be0000;*/
-		color: #FFFFFF;
-		margin-left: 5px;
-	}
-
-	.calendar{
-		width: 90%;
-		margin-left:5%;
-		border: 2px solid #FFFFFF;
-		margin-bottom: 10%;
-		border-bottom: 2px solid #CCCCCC;
-	}
-
-	.photosection .imgfull{
-		border: 5px solid #CCCCCC;
-	}
-
-	.OHimg{
-		width: 100%;
-	}
-
-	.photosection h2 {
-		font-size: 1.2em;
-		margin-left: -5%;
-	}
-
-	.photosection h3 {
-		font-size: 1.2em;
-	}
-	
-	.photosection .icon {
-		margin-left: -5%;
 	}
 }

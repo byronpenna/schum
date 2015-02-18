@@ -90,3 +90,10 @@
 	#contedordeiconos {
             padding-left: 0px;
         }
+
+
+
+
+        .conteIconos2{
+        	display: none;
+        }
