@@ -18,6 +18,42 @@ img.imgfull{
 .sliderNew{
 	min-height: 300px;
 }
+
+
+
+@media(max-width:320px){
+
+.price1{
+	font-size: 1em;
+}
+
+.photosection h2{
+	font-size: 1.2em;
+}
+
+.photosection h3{
+	font-size: 1.1em;
+}
+
+.horario1{
+	font-size: 0.8em;
+}
+
+div.imgfull {
+	margin-top: 5px;
+	width: 116%;
+}
+
+.calendar{
+	margin-top: 15px;
+}
+
+.titulo h2 {
+	margin-top: 22px;
+}
+
+}
+
 @media(min-width:360px){
 .calendar{
 		margin-top: 5%;
@@ -66,6 +102,10 @@ img.imgfull{
 	.calendar {
 	    height: relative;
 	    margin-bottom: 0%;
+	}
+
+	.horario1 {
+		font-size: 15px;
 	}
 }
 @media(min-width:400px){
