@@ -15,6 +15,13 @@
 .viewListingSection button {
 	font-size: 1.7em !important;
 }
+.generalData1{
+	display: none;
+}
+
+	.arBotones{
+		display: none;
+	}
 a:hover{
 	text-decoration: none;
 }

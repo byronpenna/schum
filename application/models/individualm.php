@@ -74,8 +74,10 @@ class Individualm extends Padrem
 		foreach ($idiomas as $key => $value) {
 			$idioma .= "<h2>".$value."</h2>";
 		}
+		$idioma .= "</div>";
 		return $idioma;
 	}
+
 	function getIdiomas($idiomas){
 		$idioma = "<div class='containerIdioma'>";
 		foreach ($idiomas as $key => $value) {

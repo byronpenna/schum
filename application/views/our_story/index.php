@@ -35,6 +35,7 @@
 		<?php $this->load->view("parts/header.php") ?>
 		<div class="row container-fluid sliderNew" style="margin-bottom:5%;height:0px;" >
 			<?php $this->load->view("parts/menushow.php") ?>
+			<?php $this->load->view("parts/menuresponsive.php") ?>
 		</div>
 			<div class="row container-fluid ourStoryDescription marginn font">
 					<h2><?php echo $ourStory->titulo ?></h2>
@@ -65,6 +66,7 @@
 		<?php 	
 			$this->load->view("parts/footer.php");
 		?>
+		<?php $this->load->view("parts/footerResponsivo.php") ?>
 	</div>
 </body>
 </html>

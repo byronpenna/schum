@@ -51,11 +51,12 @@
 	<?php 
 			$this->load->view("parts/loader-global.php");
 	?>
-	<?php $this->load->view("parts/menuresponsive.php") ?>
+	
 	
 <div class="container-fluid"> <!-- ahorita tiene container fluid por el tonto slider -->
 		<?php $this->load->view("parts/header.php") ?>
 		<?php $this->load->view("parts/menushow.php") ?>
+
       <!-- <ul class="menu">
         <li><a href="#">Elemento 1</a></li>
         <li><a href="#">Elemento 2</a></li>
@@ -64,6 +65,7 @@
 		<div class="row container-fluid sliderNew" style=<?php echo "'background:url(".$slider->first.");'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
 			<!-- empieza la vista del menu responsive -->
+			<?php $this->load->view("parts/menuresponsive.php") ?>
 		<!-- termina el menu responsive -->
 			<div class="row container-fluid">	
 				<div class="row container-fluid paddingNull navSliderSection">

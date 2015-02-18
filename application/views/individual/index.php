@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Individual page</title>
+	<title>Individual - Schumacher Realty</title>
 	<!-- load --> 
     	<?php $this->load->view("parts/loads.php"); ?>
     	    <!-- css --> 
@@ -35,12 +35,17 @@
 		<div class="col-lg-12 paddingNull">
 			<div class="row container-fluid sliderNew">
 				<?php $this->load->view("parts/menushow.php") ?>
+				
 			</div>	
 		</div>
+		<?php $this->load->view("parts/menuresponsive.php") ?>
+		<div class="row container-fluid generalData generalData1">
+					<h2> <?php echo $empleado->nombre ?> </h2>
+					<h3> <?php echo $empleado->posicion ?> </h3>
+			</div>
 		<div class="row container-fluid individualSection">
 			<div class="col-sm-4 col-md-3 col-lg-3 individualTarjeta">
 				<div class="row">
-					<!-- src=<?php echo "'".base_url("img/individual/alina.png")."'"; ?> -->
 					<img class="imgFull" src=<?php echo "'".$empleado->rutaImg."'";  ?>  >	
 				</div>
 				<div class="row container-fluid descriptionIndividual">
@@ -57,7 +62,7 @@
 						</div>
 					</div>
 					<div class="row container-fluid contact">
-						<div class="row container-fluid">
+						<div class="row container-fluid contact2">
 							<a href=<?php echo "mailto:".$empleado->email ?> >
 								<div class="col-lg-7">
 									<h3>
@@ -71,7 +76,7 @@
 							</a>
 							
 						</div>
-						<div class="row container-fluid">
+						<div class="row container-fluid contact2">
 							<div class="col-lg-7">
 								<h3>
 									<!-- <img class='imgDetail' src=<?php echo "'".base_url("img/icons/phone.png")."'"; ?> >	 -->
@@ -82,7 +87,7 @@
 								</h3>		
 							</div>
 						</div>
-						<div class="row container-fluid ">
+						<div class="row container-fluid contact2">
 							<div class="col-md-7 col-lg-7">
 								<h3>
 									<i class="fa fa-globe iconDescripcionPersona"></i>
@@ -145,7 +150,7 @@
 							<?php 
 								if($testimonios != ""){
 							?>
-								<div class="row container-fluid">
+								<div class="row container-fluid txtSaying">
 									<h3>What Others Are Saying</h3>
 								</div>
 								<?php 	
@@ -164,8 +169,25 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- responsivos -->
+			<article class="arBotones">
+				<a href=<?php echo "'".site_url("listings/getListingFromAgent/".$idEmp." ")."'" ?>  class="viewListingSection1 viewListingSection">
+					<button class="form-control">View listings</button>
+				</a>
+
+				<a href="#" class="dataOtherSay dataOtherSay1">
+				<button class="form-control botonChulo">
+					MORE TESTIMONIALS	
+				</button>	
+				</a>
+			</article>
+			<!-- fin botones responsivos -->
+
+
 		</div>
 		<?php $this->load->view("parts/footer.php") ?>
+		<?php $this->load->view("parts/footerResponsivo.php") ?>
 	</div>
 </body>
 </html>

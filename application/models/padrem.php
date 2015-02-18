@@ -103,6 +103,7 @@ class Padrem extends CI_Model
 		$imgSrc .= $img;
 		return $imgSrc;
 	}
+	
 	public function getSqlOpenHouse(){
 		$sql = "SELECT
 				`ag`.`age_id` AS `agendaId`,
