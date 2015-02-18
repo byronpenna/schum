@@ -546,13 +546,12 @@ img.imgfull{
 		display: block;
 		text-align: center;
 		background: #be0000;
-		width: 114%;
+		width: 114.5%;
 		margin-left: -5%;
-		margin-bottom: 4%;
+		margin-bottom: 1%;
 		color:#FFFFFF;
 		padding-bottom: 5px;
 		padding-top: 5px;
-		margin-top: -3%;
 	}
 
 	.horario1 h4{

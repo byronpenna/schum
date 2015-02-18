@@ -22,8 +22,9 @@ class Calendarm extends Padrem
 		$tbOpenHouse = $this->getSqlOpenHouse();
 		// $sql = "SELECT * FROM shum_tb_openhouse ORDER BY startDate DESC LIMIT 0,3";
 		$sql = "SELECT * FROM (".$tbOpenHouse.") openhouse 
-				WHERE homeId = ".$homeId." AND startDate > DATE_FORMAT(NOW(),'%Y-%m-%d') AND endDate < ADDDATE(NOW(),INTERVAL 2 WEEK)
+				WHERE homeId = ".$homeId." AND startDate > DATE_FORMAT(NOW(),'%Y-%m-%d') 
 				ORDER BY startDate;";
+				// AND endDate < ADDDATE(NOW(),INTERVAL 2 WEEK)
 		$this->db->trans_start();
 			$query = $this->db->query($sql);
 		$this->db->trans_complete();
@@ -43,7 +44,7 @@ class Calendarm extends Padrem
 			if(is_object($casa)){
 				$img 		= $this->getImgSrc($casa->rutaImg);
 				$calendario = $this->getCalendar($value->homeId);
-				$div 		.= $this->templateDiv($casa,$calendario,$img);	
+				$div 		.= $this->templateDiv($casa,$calendario,$img,$value->homeId);	
 			}
 			// $div .= "| ".print_r($casa).",".$value->homeId." |";
 		}
@@ -55,12 +56,13 @@ class Calendarm extends Padrem
 		$this->db->trans_complete();
 		return $query->result();
 	}
-	function templateDiv($casa,$calendario,$img){
+	function templateDiv($casa,$calendario,$img,$homeId =''){
+
 		$div = "
 			<div class='col-xs-12 col-sm-10 col-sm-offset-1  col-md-9 col-sx-10 col-lg-9 calendar'>
 				<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 photosection'>
-                    <div class='imgfull'>
-					   <img src='".$img."' class='imgfull row OHimg'>
+                    <div class='imgfull'><a href='" . site_url("property_detail/index/".$homeId ). "'>
+					   <img src='".$img."' class='imgfull row OHimg'></a>
                     </div>";
                     foreach ($calendario as $key => $value) {
 			$div .= "

@@ -276,6 +276,7 @@
 					<?php echo $casas; ?> 
 				</div>
 			</div>
+
 			<!-- Paginado -->
 				<div class="row container-fluid paginationSection">
 						<center>
@@ -290,6 +291,7 @@
 							?>
 						</center>
 				</div>
+				<div class="loadMore"></div>
 				<!-- <div class="row container-fluid calculatorSection">
 					<h2>Mortgage calculator</h2>
 					<h4>What will your monthly mortgage payment be?</h4>	
