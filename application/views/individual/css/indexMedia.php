@@ -474,15 +474,27 @@
 
 
 
-@media(min-width: 100px) and (max-width:414px){
-	.dataOtherSay,.txtSaying,.sliderNew{
+@media(min-width: 376px) and (max-width:414px){
+	.testi1,.sliderNew{
 		display:none;
 	}
+
+	.txtSaying h3{
+		font-size: 1.5em;
+		font-weight: bold;
+		font-family: 'proximaNovaBold';
+		margin-left: 3.5%;
+	}
+
 
 	.individualSection{
 		margin-top: 10%;
 		box-shadow: 0.1px 0.1px 20px #CCCCCC !important;
 		margin: 10px;
+	}
+	
+	.botonChulo1{
+		display: none;
 	}
 
 	.individualTarjeta img{
@@ -561,10 +573,13 @@
 	}
 
 
-	contact h3, .generalData, .awardsContent h3 {
+	.contact h3, .generalData, .awardsContent h3 {
 		text-align: left;
 	}
 
+	.awardsContent h3 {
+		font-size: 1.5em;
+	}
 	.arBotones{
 		display: block;
 		width: 100%;
@@ -613,10 +628,576 @@
 
 	.containerIdioma{
 		text-align: left;
+		width: 150px;
 	}
 
+	.containerIdioma h2{
+		display: block;
+	}
 
 	.txtContact{
 		margin-top:-10%;
 	}
+
+
+	.dataOtherSay p{
+		font-size: 1em;
+	}
+
+
+	.segundos h2,h3{
+		font-size: 1em;
+	}
+}
+
+
+
+
+@media(min-width: 361px) and (max-width:375px){
+	.testi1,.sliderNew{
+		display:none;
+	}
+
+	.txtSaying h3{
+		font-size: 1.5em;
+		font-weight: bold;
+		font-family: 'proximaNovaBold';
+		margin-left: 3.5%;
+	}
+
+
+	.individualSection{
+		margin-top: 10%;
+		box-shadow: 0.1px 0.1px 20px #CCCCCC !important;
+		margin: 10px;
+	}
+	
+	.botonChulo1{
+		display: none;
+	}
+
+	.individualTarjeta img{
+		width: 45%;
+		/*border-right: 2px solid #CCCCCC;*/
+	}
+
+	.generalData{
+		display:none;
+	}
+	.generalData1{
+		display:block;
+		margin-top: 10%;
+		margin-left: 3%;
+	}
+
+	.generalData1 h2{
+		font-size:1.5em;
+	}
+	.generalData1 h3{
+		font-size:1.5em;
+	}
+	.descriptionIndividual{
+		border: 0px solid transparent;
+		width: 60%;
+		margin-left: 45%;
+		margin-top: -48%;
+		/* position: absolute; */
+		right: 0;
+		/* top: -1%; */
+		padding: 0px;
+		padding-bottom: 5%;
+		border-left: 2px solid #CCCCCC;
+	}
+
+	.viewListingSection{
+		display: none;
+	}
+
+	.contact2{
+		height: 20px;
+		padding-top: 0;
+	}
+
+	.contact2 h3{
+		font-size: 0.8em;
+		margin-left: -90%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.contact2 h3 span{
+		position: absolute;
+		top: 30%;
+		left: 18%;
+	}
+	
+
+	.contact2 h2{
+		font-size: 1em; 
+		display: inline;
+		margin: 1%;
+	}
+
+	.dataContent p {
+		font-size: 1em;
+	}
+
+	.dataContent{
+		margin-top:10%;
+	}
+
+
+	.divAward img{
+		width: 20%;
+	}
+
+
+	.contact h3, .generalData, .awardsContent h3 {
+		text-align: left;
+	}
+
+	.awardsContent h3 {
+		font-size: 1.5em;
+	}
+	.arBotones{
+		display: block;
+		width: 100%;
+		margin-top: 5%;
+	}
+	.arBotones a{
+		width: 48%;
+		display: inline-block;
+	}
+
+	.viewListingSection1{
+		display: block;
+		 border-right: 0px solid #dbdbdb; 
+		 border-left: 0px solid #dbdbdb; 
+		 border-bottom: 0px solid #dbdbdb; 
+		 padding-top: 0px !important;
+		 padding-bottom: 0px !important;
+	}
+
+	.dataOtherSay1{
+		display: block;
+	}
+
+	.direccion{
+		margin-top:-4%;
+		font-size: 0.8em;
+	}
+
+
+	.dataOtherSay1 button{
+		font-size: 1em !important;
+		margin-top: -20%;
+	}
+
+	.botonChulo{
+		width: 100% !important;
+	}
+
+
+	.arBotones button {
+		padding: 6%;
+	}
+
+	.iconDescripcionPersona{
+		font-size: 1em !important;
+	}
+
+	.containerIdioma{
+		text-align: left;
+		width: 150px;
+	}
+
+	.containerIdioma h2{
+		display: block;
+	}
+
+	.txtContact{
+		margin-top:-10%;
+	}
+
+
+	.dataOtherSay p{
+		font-size: 1em;
+	}
+
+
+	.segundos h2,h3{
+		font-size: 1em;
+	}
+
+	.contact{
+		margin-top: 5%;
+	}
+}
+
+
+
+@media(min-width: 321px) and (max-width:360px){
+	.testi1,.sliderNew{
+		display:none;
+	}
+
+	.txtSaying h3{
+		font-size: 1.5em;
+		font-weight: bold;
+		font-family: 'proximaNovaBold';
+		margin-left: 3.5%;
+	}
+
+
+	.individualSection{
+		margin-top: 10%;
+		box-shadow: 0.1px 0.1px 20px #CCCCCC !important;
+		margin: 10px;
+	}
+	
+	.botonChulo1{
+		display: none;
+	}
+
+	.individualTarjeta img{
+		width: 45%;
+		/*border-right: 2px solid #CCCCCC;*/
+	}
+
+	.generalData{
+		display:none;
+	}
+	.generalData1{
+		display:block;
+		margin-top: 10%;
+		margin-left: 3%;
+	}
+
+	.generalData1 h2{
+		font-size:1.5em;
+	}
+	.generalData1 h3{
+		font-size:1.5em;
+	}
+	.descriptionIndividual{
+		border: 0px solid transparent;
+		width: 60%;
+		margin-left: 45%;
+		margin-top: -48%;
+		/* position: absolute; */
+		right: 0;
+		/* top: -1%; */
+		padding: 0px;
+		padding-bottom: 5%;
+		border-left: 2px solid #CCCCCC;
+	}
+
+	.viewListingSection{
+		display: none;
+	}
+
+	.contact2{
+		height: 20px;
+		padding-top: 0;
+	}
+
+	.contact2 h3{
+		font-size: 0.8em;
+		margin-left: -90%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.contact2 h3 span{
+		position: absolute;
+		top: 30%;
+		left: 18%;
+	}
+	
+
+	.contact2 h2{
+		font-size: 1em; 
+		display: inline;
+		margin: 1%;
+	}
+
+	.dataContent p {
+		font-size: 1em;
+	}
+
+	.dataContent{
+		margin-top:10%;
+	}
+
+
+	.divAward img{
+		width: 20%;
+	}
+
+
+	.contact h3, .generalData, .awardsContent h3 {
+		text-align: left;
+	}
+
+	.awardsContent h3 {
+		font-size: 1.5em;
+	}
+	.arBotones{
+		display: block;
+		width: 100%;
+		margin-top: 5%;
+		font-size: 0.7em;
+	}
+	.arBotones a{
+		width: 48%;
+		display: inline-block;
+	}
+
+	.viewListingSection1{
+		display: block;
+		 border-right: 0px solid #dbdbdb; 
+		 border-left: 0px solid #dbdbdb; 
+		 border-bottom: 0px solid #dbdbdb; 
+		 padding-top: 0px !important;
+		 padding-bottom: 0px !important;
+	}
+
+	.dataOtherSay1{
+		display: block;
+	}
+
+	.direccion{
+		margin-top:-4%;
+		font-size: 0.8em;
+	}
+
+
+	.dataOtherSay1 button{
+		font-size: 1em !important;
+		margin-top: -20%;
+	}
+
+	.botonChulo{
+		width: 100% !important;
+	}
+
+
+	.arBotones button {
+		padding: 6%;
+	}
+
+	.iconDescripcionPersona{
+		font-size: 1em !important;
+	}
+
+	.containerIdioma{
+		text-align: left;
+		width: 150px;
+	}
+
+	.containerIdioma h2{
+		display: block;
+	}
+
+	.txtContact{
+		margin-top:-10%;
+	}
+
+
+	.dataOtherSay p{
+		font-size: 1em;
+	}
+
+
+	.segundos h2,h3{
+		font-size: 1em;
+	}
+
+	.contact{
+		margin-top: 5%;
+	}
+}
+
+
+@media(min-width: 100px) and (max-width:320px){
+	.testi1,.sliderNew{
+		display:none;
+	}
+
+	.txtSaying h3{
+		font-size: 1.5em;
+		font-weight: bold;
+		font-family: 'proximaNovaBold';
+		margin-left: 3.5%;
+	}
+
+
+	.individualSection{
+		margin-top: 10%;
+		box-shadow: 0.1px 0.1px 20px #CCCCCC !important;
+		margin: 10px;
+	}
+	
+	.botonChulo1{
+		display: none;
+	}
+
+	.individualTarjeta img{
+		width: 45%;
+		/*border-right: 2px solid #CCCCCC;*/
+	}
+
+	.generalData{
+		display:none;
+	}
+	.generalData1{
+		display:block;
+		margin-top: 10%;
+		margin-left: 3%;
+	}
+
+	.generalData1 h2{
+		font-size:1.5em;
+	}
+	.generalData1 h3{
+		font-size:1.5em;
+	}
+	.descriptionIndividual{
+		border: 0px solid transparent;
+		width: 60%;
+		margin-left: 45%;
+		margin-top: -48%;
+		/* position: absolute; */
+		right: 0;
+		/* top: -1%; */
+		padding: 0px;
+		padding-bottom: 5%;
+		border-left: 2px solid #CCCCCC;
+	}
+
+	.viewListingSection{
+		display: none;
+	}
+
+	.contact2{
+		height: 12px;
+		padding-top: 0;
+	}
+
+	.contact2 h3{
+		font-size: 0.6em;
+		margin-left: -90%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.contact2 h3 span{
+		position: absolute;
+		top: 30%;
+		left: 18%;
+	}
+	
+
+	.contact2 h2{
+		font-size: 1em; 
+		display: inline;
+		margin: 1%;
+	}
+
+	.dataContent p {
+		font-size: 0.8em;
+	}
+
+	.dataContent{
+		margin-top:10%;
+	}
+
+
+	.divAward img{
+		width: 20%;
+	}
+
+
+	.contact h3, .generalData, .awardsContent h3 {
+		text-align: left;
+	}
+
+	.awardsContent h3 {
+		font-size: 1.5em;
+	}
+	.arBotones{
+		display: block;
+		width: 100%;
+		margin-top: 5%;
+		font-size: 0.7em;
+	}
+	.arBotones a{
+		width: 48%;
+		display: inline-block;
+	}
+
+	.viewListingSection1{
+		display: block;
+		 border-right: 0px solid #dbdbdb; 
+		 border-left: 0px solid #dbdbdb; 
+		 border-bottom: 0px solid #dbdbdb; 
+		 padding-top: 0px !important;
+		 padding-bottom: 0px !important;
+	}
+
+	.dataOtherSay1{
+		display: block;
+	}
+
+	.direccion{
+		margin-top:-4%;
+		font-size: 0.7em;
+	}
+
+
+	.dataOtherSay1 button{
+		font-size: 1em !important;
+		margin-top: -20%;
+	}
+
+	.botonChulo{
+		width: 100% !important;
+	}
+
+
+	.arBotones button {
+		padding: 6%;
+	}
+
+	.iconDescripcionPersona{
+		font-size: 1em !important;
+	}
+
+	.containerIdioma{
+		text-align: left;
+		width: 150px;
+	}
+
+	.containerIdioma h2{
+		display: block;
+	}
+
+	.txtContact{
+		margin-top:-10%;
+	}
+
+
+	.dataOtherSay p{
+		font-size: 0.8em;
+	}
+
+
+	.segundos h2,h3{
+		font-size: 0.8em;
+	}
+
+	.contact{
+		margin-top: 5%;
+	}
+
 }

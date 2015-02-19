@@ -124,10 +124,24 @@
 								 border-bottom: 1px solid #CCCCCC;
 							}
 
-							.paginationSection{
-								display:none;
-							}
+							
+								.btnPaginacion{
+									display:none !important;
+								}
 
+								
+								.imgNav{
+									width: 2%;
+									padding: 0.5em;
+									height: 40px;
+									padding-right: 1em;
+								}
+
+								#conte-pagin {
+									width: 40%;
+									padding: 5px;
+									display: block;
+								}
 
 
 					}

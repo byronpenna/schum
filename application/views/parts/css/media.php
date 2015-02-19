@@ -366,7 +366,7 @@
 	}
 }
 
-@media(min-width: 100px) and (max-width:414px){
+@media (min-device-width: 100px) and (max-device-width:414px){
 		.amostrar,.aocultar,.conte-socialNetwork{
 			display:none;
 			z-index:0;

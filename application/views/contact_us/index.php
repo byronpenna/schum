@@ -36,6 +36,49 @@
 				.nosubrayar{
 				text-decoration: none !important;
 			}
+
+
+
+@media(min-width: 100px) and (max-width:414px){
+	/*iframe{
+		margin-top: -12%;
+	}	
+
+	iframe .rc-anchor-checkbox-label {
+		font-family: Roboto;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 17px;
+		width: 85px;
+	}*/
+
+	.btnSubmit1{
+		display:none;
+	}
+
+	.btnSubmit2{
+		display: block;
+		margin-top: 2.5%;
+		/* margin-left: -10%; */
+		position: absolute;
+	}
+
+	.frmContact{
+		padding-bottom: 15%;
+	}
+
+
+	.rc-anchor {
+border-radius: 3px;
+box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+-webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+-moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+height: 74px;
+width: 90% !important;
+}
+
+}
+
 	</style>
 </head>
 <body>
@@ -110,11 +153,13 @@
 					                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
 					                        </div>
 					                    </div>
-					                    <div class="col-md-12">
+					                    <div class="col-md-12 btnSubmit1">
 					                        <button type="submit" class="btn btnSend pull-right" id="btnContactUs">Send Message</button>
 					                    </div>
+
 					                </div>
 					                <div class="g-recaptcha" data-sitekey="6LcpHAATAAAAABswjmSR8V7PrJ-fsydsB_nQPuRk"></div>
+					                <button type="submit" class="btn btnSend pull-right btnSubmit2" id="btnContactUs">Send Message</button>
 				                </form>
 				            </div>
 				        </div>

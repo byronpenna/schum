@@ -1207,9 +1207,91 @@
 }
 
 
+@media(min-width: 100px) and (max-width:320px){
+   
+    .sliderNew{
+        display: none;
+    }
+
+    .ourTeamDescription{
+        margin-top:10%;
+    }
+
+    .ourTeamDescription h2{
+        font-size: 1.5em;
+    }
+    
+    .ourTeamDescription p{
+        display: none;
+    }
+
+    .empleadoIcon {
+     margin-top: 0%;
+    }
+
+    .empleadoIcon p {
+     font-size: 1em;
+    }
+
+    #res2000fixIcon3 {
+        padding-top: 0%;
+    }
+
+    .txtEmpleado{
+        border:0px solid transparent;
+        width: 60%;
+        position: absolute;
+        right: 0;
+        top: -5%;
+        padding: 0px 10px 0px 0px;
+        height: 130px;
+        margin-bottom: 0px;
+    }
 
 
-@media(min-width: 100px) and (max-width:375px){
+    .txtEmpleado p{
+     font-size: 0.7em;
+    }
+
+    .empleado{
+        border: 2px solid #d9d9d9;
+        margin-top: 2.5%;
+    }
+
+    .empleado img {
+        width: 35%;
+        margin-left: 4%;
+    }
+
+    .accionEmpleado{
+        display: none;
+    }
+
+    .descripcionEmpleado h2{
+        font-size: 1.2em;
+    }
+
+    .descripcionEmpleado h3{
+        font-size: 1em;
+    }    
+
+    #contedordeiconos{
+        display: none;
+    }
+
+    .conteIconos2 {
+        margin-top: 10%;
+    }
+
+    .conteIconos2{
+        display: block !important;
+        font-size: 0.8em;
+        margin-left: -4%;
+    }
+
+}
+
+@media(min-width: 321px) and (max-width:375px){
    .sliderNew{
         display: none;
     }
@@ -1254,8 +1336,9 @@
      font-size: 0.7em;
     }
 
-    .empleadosSection {
-         border: 1px solid #d9d9d9; 
+    .empleado{
+        border: 2px solid #d9d9d9;
+        margin-top: 2.5%;
     }
 
     .empleado img {
@@ -1327,8 +1410,9 @@
      font-size: 0.8em;
     }
 
-    .empleadosSection {
-         border: 1px solid #d9d9d9; 
+    .empleado{
+        border: 2px solid #d9d9d9;
+        margin-top: 2.5%;
     }
 
     .empleado img {

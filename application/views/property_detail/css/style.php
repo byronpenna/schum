@@ -195,7 +195,8 @@ label{
 		}
 		#openHouseBlock{
 			background: #ba0202;
-			background: url('http://deercoder.com/shum/img/elements/fondo_calendar.png');
+			background: url(<?php echo "'".base_url("img/elements/fondo_calendar.png")."'"; ?>);
+
 			color: #fff;
 		}
 	/* Right */ 
@@ -408,7 +409,7 @@ label{
 	vertical-align: top;
 	margin-left:5px;
 	width: 32%;
-	height: 150px;
+	height: 170px;
 	padding:0px;
 	padding-top:15px;
 	cursor:pointer;

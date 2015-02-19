@@ -22,9 +22,15 @@
     	</style>
     	<script type="text/javascript">
 	    	<?php 
+	    	// $this->load->view("individual/js/script.php");
 	    		$this->load->view("parts/js/script.php");
 	    	?>
     	</script>
+
+    	<?php 
+	    	$this->load->view("individual/js/script.php");
+	    		// $this->load->view("parts/js/script.php");
+	    ?>
 </head>
 <body>
 	<?php 
@@ -150,6 +156,7 @@
 							<?php 
 								if($testimonios != ""){
 							?>
+							<article class="testi1">
 								<div class="row container-fluid txtSaying">
 									<h3>What Others Are Saying</h3>
 								</div>
@@ -158,11 +165,13 @@
 								?>
 								<div class="row container-fluid dataOtherSay">
 									<div class="col-md-5 col-lg-4">
-										<button class="form-control botonChulo">
+										<button class="form-control botonChulo botonChulo1 ">
 											MORE TESTIMONIALS	
 										</button>	
 									</div>
 								</div>
+
+								</article>
 							<?php 
 								}
 							?>
@@ -177,12 +186,31 @@
 				</a>
 
 				<a href="#" class="dataOtherSay dataOtherSay1">
-				<button class="form-control botonChulo">
-					MORE TESTIMONIALS	
-				</button>	
+					<button class="form-control botonChulo btnViewMore">
+						VIEW TESTIMONIALS
+					</button>
 				</a>
 			</article>
 			<!-- fin botones responsivos -->
+
+			
+				<!-- ################## -->
+							<?php 
+								if($testimonios != ""){
+							?>
+							<article class="testi2">
+								<div class="row container-fluid txtSaying">
+									<h3>What Others Are Saying</h3>
+								</div>
+									<article class="segundos">
+										<?php 	
+											echo $testimonios;
+										?>
+									</article>
+								</article>
+							<?php 
+								}
+							?>
 
 
 		</div>

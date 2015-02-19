@@ -112,7 +112,7 @@ a:hover{
 
 /* data description */ 
 	.dataDescription{
-		border-left: 2px solid #dbdbdb;	
+		/*border-left: 2px solid #dbdbdb;	*/
 		margin-left: 1%;
 		padding-left: 3%;
 	}
@@ -132,6 +132,11 @@ a:hover{
 		.dataContent p{
 			font-size: 2.5em;
 			font-family: 'proximaRegular';
+		}
+
+
+		.testi2{
+			display:none;
 		}
 /* Awards para abajo */
 	.dataOtherSay p,.dataOtherSay h2,.dataOtherSay h3{

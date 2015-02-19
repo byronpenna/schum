@@ -2374,7 +2374,7 @@ iframe[name="f3d7c73d9c"]{
 }
 
 
-@media(max-height: 480px){
+/*@media(max-height: 480px){
 	.titulo {
 		margin-top: 120px; 
 		font-size: 10px;
@@ -2384,14 +2384,25 @@ iframe[name="f3d7c73d9c"]{
 		margin-top: 20px;
 		margin-bottom: 5px;
 	}
-}
 
+	.empName{
+		position: absolute !important;
+		margin-top: -18% !important;
+		right: 0 !important;
+	}
+}*/
 
 @media(min-width: 100px) and (max-width: 320px){
 	.nameSection{
 		position: absolute;
 		top: 10%;
 	}
+
+	#sheetBlock,#virtualTourBlock{
+		margin-top: 4%;
+		padding-top: 4%;
+	}
+
 	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
 		display:none;
 	}
@@ -2407,13 +2418,6 @@ iframe[name="f3d7c73d9c"]{
 
 	.bodySection{
 		margin-top: 100%;
-	}
-
-	.agentSection{
-		top: 58%;
-		position: absolute;
-		text-align: right;
-		right: 4%;
 	}
 
 	.summarySection h2{
@@ -2434,10 +2438,13 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	.empName{
-		position: absolute;
-		margin-top: -22%;
-		right: 0;
+		/* position: absolute; */
+		margin-top: -12%;
+		margin-left: -10%;
+		/* background: red; */
+		/* height: 40px; */
 	}
+
 
 	.empName h2{
 		color:#314782;
@@ -2536,7 +2543,7 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	.titulo{
-		margin-top: 64px;
+		margin-top: -4%;
 		font-size: 12px;
 	}
 
@@ -2567,13 +2574,6 @@ iframe[name="f3d7c73d9c"]{
 		margin-top: 100%;
 	}
 
-	.agentSection{
-		top: 58%;
-		position: absolute;
-		text-align: right;
-		right: 4%;
-	}
-
 	.summarySection h2{
 		font-size: 1.5em
 	}
@@ -2590,13 +2590,6 @@ iframe[name="f3d7c73d9c"]{
 	.agent {
 		border: 0px solid transparent;
 	}
-
-	.empName{
-		position: absolute;
-		margin-top: -22%;
-		right: 0;
-	}
-
 	.empName h2{
 		color:#314782;
 	}
@@ -2693,7 +2686,22 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	.titulo{
-		margin-top: 20px;
+		margin-top: -5%;
+	}
+
+
+	.empName{
+		/* position: absolute; */
+		margin-top: -12%;
+		margin-left: -10%;
+		/* background: red; */
+		/* height: 40px; */
+	}
+
+	#sheetBlock,#virtualTourBlock{
+		height: 103px !important;
+		margin-top: 2.5%;
+		padding-top: 4%;
 	}
 
 
@@ -2703,6 +2711,12 @@ iframe[name="f3d7c73d9c"]{
 	.nameSection{
 		position: absolute;
 		top: 5%;
+	}
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 4%;
 	}
 	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
 		display:none;
@@ -2722,23 +2736,27 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	.agentSection{
-		top: 58%;
-		position: absolute;
-		text-align: right;
-		right: 4%;
+/*		top: 58%;*/
+		/*position: absolute;*/
+		/*text-align: right;*/
+		/*right: 4%;*/
 	}
 
 	.summarySection h2{
 		font-size: 1.5em
 	}
 
+	.titulo{
+		margin-top:-6%;
+	}
+
 	.titulo h2{
-		font-size: 0.8em;
+		font-size: 1em;
 		color:#000000;
 	}
 
 	.contactAgentText h2{
-		font-size: 0.8em;	
+		font-size: 1em;	
 	}
 
 	.agent {
@@ -2746,9 +2764,11 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 	.empName{
-		position: absolute;
-		margin-top: -22%;
-		right: 0;
+		/* position: absolute; */
+		margin-top: -12%;
+		margin-left: -10%;
+		/* background: red; */
+		/* height: 40px; */
 	}
 
 	.empName h2{
@@ -2844,10 +2864,15 @@ iframe[name="f3d7c73d9c"]{
 	.derResponsive{
 		right: 0px;
 	}
+	
+	#sheetBlock{
+		padding-left: 1%;
+	}	
+	
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 6%;
+	}
 }
-
-
-
-
-
-

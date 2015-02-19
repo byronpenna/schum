@@ -1448,7 +1448,7 @@
 
 }
 
-@media(min-width: 300px) and (max-width:1024px){
+@media(min-width: 801px) and (max-width:1024px){
 	.fbOculto{
 		display:block;
 	}
@@ -1502,4 +1502,171 @@
 	.schedule {
 		margin-top:0px  !important;
 	}
+}
+
+
+
+
+
+@media (min-device-width: 769px) and (max-device-width:800px){
+			.bannerDesktopBig{
+				display:block;
+			}
+
+			.bannerMovil{
+				display: none;
+			}
+
+			#wordpress{
+				display:none;
+			}
+
+			.propertySearchSection h3 {
+				font-size: 0.9em !important;
+			}
+
+			.videoYoutube {
+				text-align: left;
+				width: 60%;
+				/*background: red;*/
+				margin-left: -1%;
+				margin-top: -8%;
+			}
+
+			.youtubeVideoHome {
+				width: 100% !important;
+				min-height: 300px !important;
+				height: auto;
+				margin: 0 auto;
+			}
+
+
+			#divCruzado{
+				display: none;
+			}
+
+
+			.titleVideoSection {
+				/* margin: 0; */
+				 margin-bottom: 0px !important; 
+				margin-left: -52%;
+				font-size: 1.2em;
+			}
+
+			.rightVideoSection{
+				width: 40%;
+				margin-top: -8%;
+			}
+
+
+			.schedule {
+				margin-top: 0% !important;
+				width: 100% !important;
+				padding-bottom: 15px;
+			}
+
+			.fbMostrar{
+				display: none;
+			}
+
+			.titleOpenHouse{
+				margin-right: -20%;
+			}
+
+
+			.likeUsCuadrito {
+				width: 100% !important;
+				margin: 0 auto ;
+				text-align: left !important;
+			}
+
+
+			.likeUsCuadrito h2{
+				font-size:1.2em;
+			}
+			
+
+			.schedule  h4{
+				height: 3px !important;
+				margin-top: 5%;
+			}
+
+			.casaNewsToMarket {
+				margin-right: 0 !important; 
+				margin-left: 0 !important;
+				margin-top: 0 !important;
+				margin-bottom: 0 !important;
+				padding-left: 0 !important;
+				padding-top: 0 !important;
+				padding-right: 0 !important;
+				padding-bottom: 0 !important;
+				width: 15%;
+				margin: 5% !important;
+			}
+
+			.titleNewsToMarketSection{
+				font-size: 1.5em;
+			}
+
+			.imgNewsToMarket {
+				height: 120px !important;
+			}
+
+
+			.newsToMarketTitle {
+				font-size: 0.8em !important;
+			}
+
+			.newsToMarket h2 {
+				font-size: 1.2em;
+			}
+			
+
+			.banner2 p {
+				font-size: 1.8em !important;
+			}
+
+			.banner2{
+				height: 357px !important;
+				padding-left: 20% !important;
+				padding-right: 20% !important;
+			}
+
+			.aEmpleadoLink li p{
+				font-size: 1.8em !important;
+			}
+
+			.emailEmpleado {
+				font-size: 2.5em !important;	
+			}
+
+			.textBuySellerBox{
+				font-size: 1.2em;
+			}
+
+			.controlSearchbar {
+				margin-top: 11%;
+				padding-bottom: 5% !important;
+			}
+
+
+			#spanFooter{
+				float: left !important;
+			}
+
+			.connectFooter{
+				text-align: left !important;
+			}
+
+			.contSociales,.tituloFooter{
+				width: 94%;
+			}
+			
+			.contSociales{
+				margin-top: -25%;
+			}
+
+
+			
+					
 }

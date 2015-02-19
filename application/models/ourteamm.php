@@ -62,7 +62,7 @@ class Ourteamm extends CI_Model
 						</div>
 						<div class='row container-fluid textoEmpleado'>
 							<p>
-								".$value->shortDescription."
+								".nl2br($value->shortDescription)."
 							</p>
 						</div>
 						<div class='row container-fluid accionEmpleado'>

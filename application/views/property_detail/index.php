@@ -307,7 +307,7 @@
 											</div>
 
 										<div class=" txtBlockDescription text-center" id='openHouseTxtBlock'>
-											<p><?php echo date("M, d Y",strtotime($FechaOpenHouse[0]->startDate))." ".date("g:iA ",strtotime($FechaOpenHouse[0]->age_hora_inicio ))." - ".date("g:iA  ",strtotime($FechaOpenHouse[0]->age_hora_fin )); ?></p><br>
+											<p><?php echo date("M, d Y",strtotime($FechaOpenHouse[0]->startDate))." ".date("g:iA ",strtotime($FechaOpenHouse[0]->age_hora_inicio ))." - ".date("g:iA  ",strtotime($FechaOpenHouse[0]->age_hora_fin )); ?></p>
 											<p><?php 
 												if(isset($FechaOpenHouse[1]->startDate)){
 											 		echo date("M, d Y",strtotime($FechaOpenHouse[1]->startDate))." ".date("g:iA ",strtotime($FechaOpenHouse[1]->age_hora_inicio ))." - ".date("g:iA  ",strtotime($FechaOpenHouse[1]->age_hora_fin ));
@@ -428,9 +428,9 @@
 					if($empleado->estado){
 				?>
 					<div class="col-sm-6 col-lg-6 col-md-6">
-						<div class="row titulo">
+						<article class="row titulo">
 							<h2>Property Listing Represented By</h2>	
-						</div>
+						</article>
 						<div class="row container-fluid agent paddingNull">
 							<div class="col-lg-5 col-sm-6 col-md-5 paddingNull agentImg">
 								<a href=<?php echo "'".site_url("individual/index/".$empleado->idEmpleado." ")."'" ?> >
@@ -440,9 +440,9 @@
 								</a>
 							</div>
 							<div class="col-lg-7 col-sm-6 col-md-7 contactAgentText">
-								<div class="row container-fluid empName">
+								<article class="row container-fluid empName">
 									<h2><?php echo $empleado->nombre ?></h2>
-								</div>
+								</article>
 								<div class="row container-fluid empPosicion">
 									<h3><?php echo $empleado->posicion ?> </h3>
 								</div>
