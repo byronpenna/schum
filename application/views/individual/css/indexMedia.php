@@ -1201,3 +1201,45 @@
 	}
 
 }
+
+
+
+
+
+@media (min-device-width: 769px) and (max-device-width:800px){
+		.dataOtherSay p {
+			font-size: 1.7em;
+		}
+
+	.botonChulo {
+		width: 50%;
+	}
+
+
+	.divAward img{
+		width: 20%;
+	}
+}
+
+
+
+@media (min-device-width: 604px) and (max-device-width:768px){
+		.dataOtherSay p {
+			font-size: 1.7em;
+		}
+
+	.botonChulo {
+		width: 50%;
+	}
+
+
+	.divAward img{
+		width: 20%;
+	}
+
+
+	.navbar-default .navbar-nav > li > a {
+							font-size: 0.8em;
+						}
+
+}

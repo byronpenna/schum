@@ -1,5 +1,5 @@
 <div class="row container-fluid encabezado headerPrincipal paddingNull">
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 afterPrincipal">
 		<div class="row container-fluid conte-socialNetwork">
 			<div id="banneraner" class="col-sm-offset-5 col-sm-7 col-lg-offset-8 col-lg-4  text-right socialNetworkBar">
 				<!-- <span class="fa fa-facebook"></span> -->

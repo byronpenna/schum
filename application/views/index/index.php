@@ -322,7 +322,7 @@
 					<div class="row container-fluid">
 						<h2>Like Us On Facebook</h2>
 					</div>
-					<div class="row container-fluid">
+					<div class="row container-fluid conteFB">
 						<div id="likebox-wrapper">
 							<div class="fb-like-box fbOculto" data-href="https://www.facebook.com/SchumacherRealty?ref=br_tf" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>	
 							<div class="fbMostrar">

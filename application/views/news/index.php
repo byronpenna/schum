@@ -30,6 +30,18 @@
 						width: 97%;
 					}
 				}
+
+
+
+				       @media (width:768px){
+                                
+.navbar-default .navbar-nav > li > a {
+                            font-size: 0.8em;
+                        }
+
+
+
+                        }
 	</style>
     <script type="text/javascript">
     	<?php
@@ -48,6 +60,9 @@
 			<?php $this->load->view("parts/menushow.php") ?>
 			<?php $this->load->view("parts/menuresponsive.php") ?>
 		</div>
+		<article class="conteImgInternas">
+				<img src="<?php echo base_url('img/elements/imgInternas.png'); ?>">
+			</article>			
 	<div class="bodyContainer">
 				<div class="row container-fluid ourStoryDescription marginn font">
 						<h2><?php echo $news->title; ?></h2>

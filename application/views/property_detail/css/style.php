@@ -38,6 +38,11 @@
 	background: none;
 	display: inline-block;
 }
+
+
+.contactAgentText1{
+	display: none;
+}
 div.imgfull{
   max-height: 200%;
   overflow: hidden;

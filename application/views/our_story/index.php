@@ -37,6 +37,15 @@
 					}
 				}
 
+
+				  @media (width:768px){
+                                
+						.navbar-default .navbar-nav > li > a {
+                            font-size: 0.8em;
+                        }
+
+                        }
+
 				
 	</style>
 </head>
@@ -50,6 +59,9 @@
 			<?php $this->load->view("parts/menushow.php") ?>
 			<?php $this->load->view("parts/menuresponsive.php") ?>
 		</div>
+		<article class="conteImgInternas">
+				<img src="<?php echo base_url('img/elements/imgInternas.png'); ?>">
+			</article>			
 			<div class="row container-fluid ourStoryDescription marginn font">
 					<h2><?php echo $ourStory->titulo ?></h2>
 					<p>

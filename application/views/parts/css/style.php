@@ -72,7 +72,7 @@
 /* header */ 
 	.headerPrincipal{
 		cursor: pointer;
-		height: 400px;
+		/*height: 400px;*/
 	}
 	.imgFull{
 		width: 100%;
@@ -745,6 +745,22 @@ text-align: left;}
 			display: none;
 		}
 
+
+
+
+
+	.conteImgInternas{
+		width: 110%;
+		height: 250px;
+		overflow: hidden;
+		margin-left: -5%;
+	}
+	
+	.conteImgInternas img{
+		width: 100%;
+		height: 200%;
+	}
+	
 
 
 

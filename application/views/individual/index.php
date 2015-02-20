@@ -41,8 +41,11 @@
 		<div class="col-lg-12 paddingNull">
 			<div class="row container-fluid sliderNew">
 				<?php $this->load->view("parts/menushow.php") ?>
-				
-			</div>	
+				<article class="conteImgInternas">
+				<img src="<?php echo base_url('img/elements/imgInternas.png'); ?>">
+			</article>			
+			</div>
+			
 		</div>
 		<?php $this->load->view("parts/menuresponsive.php") ?>
 		<div class="row container-fluid generalData generalData1">

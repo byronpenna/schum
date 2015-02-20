@@ -1444,3 +1444,17 @@
         margin-left: -4%;
     }
 }
+
+
+
+
+
+                        @media (width:768px){
+                                
+.navbar-default .navbar-nav > li > a {
+                            font-size: 0.8em;
+                        }
+
+
+
+                        }

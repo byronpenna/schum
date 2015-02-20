@@ -2876,3 +2876,351 @@ iframe[name="f3d7c73d9c"]{
 		padding-top: 6%;
 	}
 }
+
+
+@media (min-device-width: 769px) and (max-device-width:800px){
+			.navbar-default .navbar-nav > li > a {
+				font-size: 1em;
+			}
+
+
+
+			.sliderNew{
+				background-size: 85% !important;
+			}
+
+
+			#openHouseBlock p {
+				font-size: 0.65em !important;
+				width: 120%;
+				margin-left: -10%;
+			}
+
+
+			.summarySection{
+				margin-top: -5%;
+			}
+
+
+			.nameSection h4 {
+				font-size: 1.2em;
+				color: #999999;
+			}
+
+
+
+			.afterSilicon{
+				margin-top:-8%;
+			}
+
+
+
+
+
+
+			.descriptionSection {
+				 padding-top: 0; 
+				/*background: orange;*/
+				width: 105%;
+				margin-left: -3%;
+				}
+
+			.container-fluid {
+				 padding-right: 0px; 
+				 padding-left: 0px; 
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+
+				#contkey {
+					width: 20%;
+					height: auto;
+					background: none repeat scroll 0% 0% rgba(243, 243, 243, 0.51);
+					word-break: break-word;
+					margin-left: 1%;
+				}
+
+
+		.dataDescription{
+			margin-left: 3.5%;
+		}
+
+
+		.silicon h4{
+			font-size: 1em;
+		}
+
+
+		.dataDescription p {
+		text-align: center;
+		font-size: 0.8em;
+		}
+
+		.listPriceSummary {
+			margin-top: 0px;
+			margin-left: 3%;
+			font-size: 1em;
+			font-weight: normal;
+		}
+
+
+		h2, .h2 {
+			font-size: 20px !important;
+		}
+
+
+		/*.readmore{
+			margin-left: -30%;
+		}*/
+
+		.facebookcool{
+			display: none;
+		}
+
+		#facebook_area{
+			/*background: red;*/
+			width: 50%;
+			margin-left: 50%;
+			margin-top: -32.5%;
+		}
+
+		.titulo h2 {
+		font-size: 1em;
+		/*margin-left: -10%;*/
+		}
+
+		.arreglosChulos h2{
+			margin-left: -10%;	
+		}
+
+
+		.afterArreglos{
+			margin-top:3.5%;
+		}
+
+
+		.textoFB{
+			display: none;
+		}
+
+		/*.readmore{
+			margin-left: 30%;
+			padding: 2%;
+		}*/
+
+		.conteRead{
+			display: none;
+		}
+
+		.contactAgentText h2 {
+			font-size: 1em !important;
+		}
+
+
+		.contactAgentText1{
+			display: block;
+			width: 65%;
+			/* background: red; */
+			margin-left: 45%;
+			margin-top: -10%;
+		}
+
+		.readmore {
+			font-size: 0.6em;
+			padding: 2%;
+		}
+
+
+
+		.afterArreglos {
+			margin-top: 3.2%;
+		}
+
+
+
+		.afterArreglos {
+			margin-top: 0;
+		}
+
+
+		.calcu{
+			margin-top: -5%;
+		}
+
+}
+
+
+
+
+
+@media (width:768px){
+			.navbar-default .navbar-nav > li > a {
+				font-size: 1em;
+			}
+
+
+			.sliderNew{
+				background-size: 85% !important;
+			}
+
+
+			#openHouseBlock p {
+				font-size: 0.65em !important;
+				width: 120%;
+				margin-left: -10%;
+			}
+
+
+			.summarySection{
+				margin-top: -5%;
+			}
+
+
+			.nameSection h4 {
+				font-size: 1.2em;
+				color: #999999;
+			}
+
+
+
+			.afterSilicon{
+				margin-top:-8%;
+			}
+
+
+
+
+
+
+			.descriptionSection {
+				 padding-top: 0; 
+				/*background: orange;*/
+				width: 105%;
+				margin-left: -3%;
+				}
+
+			.container-fluid {
+				 padding-right: 0px; 
+				 padding-left: 0px; 
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+
+				#contkey {
+					width: 20%;
+					height: auto;
+					background: none repeat scroll 0% 0% rgba(243, 243, 243, 0.51);
+					word-break: break-word;
+					margin-left: 1%;
+				}
+
+
+		.dataDescription{
+			margin-left: 3.5%;
+		}
+
+
+		.silicon h4{
+			font-size: 1em;
+		}
+
+
+		.dataDescription p {
+		text-align: center;
+		font-size: 0.8em;
+		}
+
+		.listPriceSummary {
+			margin-top: 0px;
+			margin-left: 3%;
+			font-size: 1em;
+			font-weight: normal;
+		}
+
+
+		h2, .h2 {
+			font-size: 20px !important;
+		}
+
+
+		/*.readmore{
+			margin-left: -30%;
+		}*/
+
+		.facebookcool{
+			display: none;
+		}
+
+		#facebook_area{
+			/*background: red;*/
+			width: 50%;
+			margin-left: 50%;
+			margin-top: -32.5%;
+		}
+
+		.titulo h2 {
+		font-size: 1em;
+		/*margin-left: -10%;*/
+		}
+
+		.arreglosChulos h2{
+			margin-left: -10%;	
+		}
+
+
+		.afterArreglos{
+			margin-top:3.5%;
+		}
+
+
+		.textoFB{
+			display: none;
+		}
+
+		/*.readmore{
+			margin-left: 30%;
+			padding: 2%;
+		}*/
+
+		.conteRead{
+			display: none;
+		}
+
+		.contactAgentText h2 {
+			font-size: 1em !important;
+		}
+
+
+		.contactAgentText1{
+			display: block;
+			width: 65%;
+			/* background: red; */
+			margin-left: 45%;
+			margin-top: -10%;
+		}
+
+		.readmore {
+			font-size: 0.6em;
+			padding: 2%;
+		}
+
+
+
+		.afterArreglos {
+			margin-top: 3.2%;
+		}
+
+
+
+		.afterArreglos {
+			margin-top: 0;
+		}
+
+
+		.calcu{
+			margin-top: -5%;
+		}
+
+}

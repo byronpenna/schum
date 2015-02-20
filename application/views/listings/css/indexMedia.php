@@ -26,9 +26,9 @@
 .btnSearchNow > .lupita {
 	font-size: 110%;
 }
-.serchi {
+/*.serchi {
 	font-size: 1.1em !important;
-}
+}*/
 .AlADerecha {
 	width: 120%;
 	margin-left:50%;
@@ -1852,5 +1852,3 @@
 			}
 
 }
-
-

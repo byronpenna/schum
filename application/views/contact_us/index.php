@@ -69,15 +69,42 @@
 
 
 	.rc-anchor {
-border-radius: 3px;
-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
--webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
--moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
-height: 74px;
-width: 90% !important;
+		border-radius: 3px;
+		box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+		-webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+		-moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+		height: 74px;
+		width: 90% !important;
+	}
+		
 }
 
-}
+
+	@media(min-width: 769px) and (max-width:800px){
+		.btnSubmit1{
+			display: none;
+		}
+		
+		.btnSubmit2{
+			margin-top: -8%;
+		}
+		
+	}
+
+	@media(width:768px){
+		.btnSubmit1{
+			display: none;
+		}
+		
+		.btnSubmit2{
+			margin-top: -8%;
+		}
+		
+
+		.navbar-default .navbar-nav > li > a {
+                            font-size: 0.8em;
+                        }
+	}
 
 	</style>
 </head>
@@ -92,6 +119,11 @@ width: 90% !important;
 			<?php $this->load->view("parts/menushow.php") ?>
 
 		</div>
+
+
+		<article class="conteImgInternas">
+				<img src="<?php echo base_url('img/elements/imgInternas.png'); ?>">
+			</article>			
 		<div class="bodyContainer">
 			<?php $this->load->view("parts/menuresponsive.php") ?>
 			<!-- ############### --> 
