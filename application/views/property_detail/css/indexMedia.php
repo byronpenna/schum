@@ -822,9 +822,9 @@ iframe[name="f3d7c73d9c"]{
     .summarySection h2{
         /*font-size: 1.5em;*/
     }
-    .namesection h2, namesection h4{
+    /*.namesection h2, namesection h4{
         text-align: center;
-    }
+    }*/
     #openHouseBlock h2{
 		font-size: 1em;
 	}
@@ -2392,10 +2392,19 @@ iframe[name="f3d7c73d9c"]{
 	}
 }*/
 
+
+
 @media(min-width: 100px) and (max-width: 320px){
+	.nameSection1{
+		/*position: absolute;*/
+		display: block !important;
+		margin-top:15%;
+	}
+
+
 	.nameSection{
-		position: absolute;
-		top: 10%;
+		display: none;
+		
 	}
 
 	#sheetBlock,#virtualTourBlock{
@@ -2409,7 +2418,7 @@ iframe[name="f3d7c73d9c"]{
 
 	.sliderNew{
 		min-height: 300px !important;
-		margin-top: 38%;
+		margin-top: 0;
 	}
 
 	.mls{
@@ -2553,17 +2562,25 @@ iframe[name="f3d7c73d9c"]{
 
 
 @media(min-width: 321px) and (max-width: 375px){
-	.nameSection{
-		position: absolute;
-		top: 5%;
+	.nameSection1{
+		/*position: absolute;*/
+		display: block !important;
+		margin-top:12%;
 	}
+
+
+	.nameSection{
+		display: none;
+		
+	}
+
 	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
 		display:none;
 	}
 
 	.sliderNew{
 		min-height: 300px !important;
-		margin-top: 30%;
+		margin-top: 0;
 	}
 
 	.mls{
@@ -2676,7 +2693,7 @@ iframe[name="f3d7c73d9c"]{
 	.imgControls{
 		display: block;
 		position: absolute;
-		margin-top: 55%;
+		margin-top: 65%;
 		width: 20%;
 		cursor:pointer;
 	}
@@ -2707,10 +2724,788 @@ iframe[name="f3d7c73d9c"]{
 
 }
 
-@media(min-width: 376px) and (max-width:414px){
+
+	
+
+
+
+
+
+@media(min-width: 435px) and (max-width:500px){
+	.nameSection1{
+		/*position: absolute;*/
+		display: block !important;
+		margin-top:12%;
+	}
+
+
 	.nameSection{
+		display: none;
+		
+	}
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 4%;
+	}
+	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
+		display:none;
+	}
+
+	.sliderNew{
+		min-height: 360px !important;
+		margin-top: 0;
+	}
+
+	.mls{
+		display:none !important;
+	}
+
+	.bodySection{
+		margin-top: 100%;
+	}
+
+	.agentSection{
+/*		top: 58%;*/
+		/*position: absolute;*/
+		/*text-align: right;*/
+		/*right: 4%;*/
+	}
+
+	.summarySection h2{
+		font-size: 1.8em
+	}
+
+	.titulo{
+		margin-top:-6%;
+	}
+
+	.titulo h2{
+		font-size: 1em;
+		color:#000000;
+	}
+
+	.contactAgentText h2{
+		font-size: 1em;	
+	}
+
+	.agent {
+		border: 0px solid transparent;
+	}
+
+	.empName{
+		/* position: absolute; */
+		margin-top: -12%;
+		margin-left: -8%;
+		/* background: red; */
+		/* height: 40px; */
+	}
+
+	.empName h2{
+		color:#314782;
+	}
+
+	.summarySection{
+		display: none;
+	}
+
+	.summarySection1{
+		display: block;
+		margin-top: -115%;
+	}	
+
+
+	.boxSummary {
+		border-right: 0px solid;
+		padding-top: 1%; 
+		padding-bottom: 1%; 
+		padding-left: 1%;
+		width: 49%;
+		display: inline-block;
+		margin-top: 1%;
+		font-size:1.2em;
+		vertical-align: top;
+		height: 40px;
+		margin-right: 2px;
+	}
+
+	.pDescription{
+		font-size: 1.2em;
+	}
+
+	.boxSummary label{
+		float: left;
+	}
+	
+	.cubos-colores{
+		height: 100px !important;
+	}
+	.contenedor-cubos article {
+		width: 30%;
+		font-size: 1.5em;
+		margin-top: 12px;
+		display: inline-block;
+	}
+
+	.txtBlockDescription {
+		display:none;
+	}
+
+	.titleBlockDescription h2 {
+		font-size: 0.5em !important;
+	}
+
+	.imgBlockDescription{
+		margin-top: -30%;
+	}
+	
+	.imgBlockDescription .fa-calendar{
+		margin-top: 30%;
+	}
+
+	.blockDescriptions{
+		padding-top: 0;
+	}
+
+	#desPD{
+		font-size: 1.8em;
+	}
+	
+	.conte-readmore{
+		display: block;
+	}
+
+	.conte-readmore .readmore{
+		display: inline-block;
+		width: 32%;
+		padding: 2%;
+		background: #be0000;
+	}
+	
+	.namesection h2{
+	font-size: 2em;
+	}
+
+	.namesection h2{
+	font-size: 1.7em;
+	}
+
+	.imgControls{
+		display: block;
 		position: absolute;
-		top: 5%;
+		margin-top: 65%;
+		width: 20%;
+		cursor:pointer;
+	}
+
+	.derResponsive{
+		right: 0px;
+	}
+	
+	#sheetBlock{
+		padding-left: 1%;
+	}	
+	
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 6%;
+	}
+}
+
+
+
+@media(min-width: 501px) and (max-width:600px){
+	.nameSection1{
+		/*position: absolute;*/
+		display: block !important;
+		margin-top:12%;
+	}
+
+
+	.nameSection{
+		display: none;
+		
+	}
+
+	.readmore a{
+		font-size: 1.1em;
+	}
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 4%;
+	}
+	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
+		display:none;
+	}
+
+	.sliderNew{
+		min-height: 360px !important;
+		margin-top: 0;
+	}
+
+	.mls{
+		display:none !important;
+	}
+
+	.bodySection{
+		margin-top: 100%;
+	}
+
+	.agentSection{
+/*		top: 58%;*/
+		/*position: absolute;*/
+		/*text-align: right;*/
+		/*right: 4%;*/
+	}
+
+	.summarySection h2{
+		font-size: 1.8em
+	}
+
+	.titulo{
+		margin-top:-6%;
+	}
+
+	.titulo h2{
+		font-size: 1em;
+		color:#000000;
+	}
+
+	.contactAgentText h2{
+		font-size: 1em;	
+	}
+
+	.agent {
+		border: 0px solid transparent;
+	}
+
+	.empName{
+		/* position: absolute; */
+		margin-top: -10%;
+		margin-left: -8%;
+		/* background: red; */
+		/* height: 40px; */
+	}
+
+	.empName h2{
+		color:#314782;
+	}
+
+	.summarySection{
+		display: none;
+	}
+
+	.summarySection1{
+		display: block;
+		margin-top: -115%;
+	}	
+
+
+	.boxSummary {
+		border-right: 0px solid;
+		padding-top: 1%; 
+		padding-bottom: 1%; 
+		padding-left: 1%;
+		width: 49%;
+		display: inline-block;
+		margin-top: 1%;
+		font-size:1.2em;
+		vertical-align: top;
+		height: 40px;
+		margin-right: 2px;
+	}
+
+	.pDescription{
+		font-size: 1.2em;
+	}
+
+	.boxSummary label{
+		float: left;
+	}
+	
+	.cubos-colores{
+		height: 95px !important;
+	}
+	.contenedor-cubos article {
+		width: 30%;
+		font-size: 1.5em;
+		margin-top: 17px;
+		display: inline-block;
+	}
+
+	.txtBlockDescription {
+		display:none;
+	}
+
+	.titleBlockDescription h2 {
+		font-size: 0.5em !important;
+	}
+
+	.imgBlockDescription{
+		margin-top: -30%;
+	}
+	
+	.imgBlockDescription .fa-calendar{
+		margin-top: 30%;
+	}
+
+	.blockDescriptions{
+		padding-top: 0;
+	}
+
+	#desPD{
+		font-size: 1.8em;
+	}
+	
+	.conte-readmore{
+		display: block;
+	}
+
+	.conte-readmore .readmore{
+		display: inline-block;
+		width: 32%;
+		padding: 2%;
+		background: #be0000;
+	}
+	
+	.namesection h2{
+	font-size: 2em;
+	}
+
+	.namesection h2{
+	font-size: 1.7em;
+	}
+
+	.imgControls{
+		display: block;
+		position: absolute;
+		margin-top: 50%;
+		width: 20%;
+		cursor:pointer;
+	}
+
+	.derResponsive{
+		right: 0px;
+	}
+	
+	#sheetBlock{
+		padding-left: 1%;
+	}	
+	
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 6%;
+	}
+}
+
+
+
+
+
+
+@media(min-width: 601px) and (max-width:700px){
+	.nameSection1{
+		/*position: absolute;*/
+		display: block !important;
+		margin-top:8%;
+	}
+
+
+	.nameSection{
+		display: none;
+		
+	}
+
+	.readmore a{
+		font-size: 1.1em;
+	}
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 4%;
+	}
+	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
+		display:none;
+	}
+
+	.sliderNew{
+		min-height: 460px !important;
+		margin-top: 0 !important;
+	}
+
+	.mls{
+		display:none !important;
+	}
+
+	.bodySection{
+		margin-top: 100%;
+	}
+
+	.agentSection{
+/*		top: 58%;*/
+		/*position: absolute;*/
+		/*text-align: right;*/
+		/*right: 4%;*/
+	}
+
+	.summarySection h2{
+		font-size: 1.8em
+	}
+
+	.titulo{
+		margin-top:-6%;
+	}
+
+	.titulo h2{
+		font-size: 1em;
+		color:#000000;
+	}
+
+	.contactAgentText h2{
+		font-size: 1em;	
+	}
+
+	.agent {
+		border: 0px solid transparent;
+	}
+
+	.empName{
+		/* position: absolute; */
+		margin-top: -8%;
+		margin-left: -7%;
+		/* background: red; */
+		/* height: 40px; */
+	}
+
+	.empName h2{
+		color:#314782;
+	}
+
+	.summarySection{
+		display: none;
+	}
+
+	.summarySection1{
+		display: block;
+		margin-top: -115%;
+	}	
+
+
+	.boxSummary {
+		border-right: 0px solid;
+		padding-top: 1%; 
+		padding-bottom: 1%; 
+		padding-left: 1%;
+		width: 49%;
+		display: inline-block;
+		margin-top: 1%;
+		font-size:1.2em;
+		vertical-align: top;
+		height: 40px;
+		margin-right: 2px;
+	}
+
+	.pDescription{
+		font-size: 1.2em;
+	}
+
+	.boxSummary label{
+		float: left;
+	}
+	
+	.cubos-colores{
+		height: 90px !important;
+	}
+	.contenedor-cubos article {
+		width: 30%;
+		font-size: 1.5em;
+		margin-top: 24px;
+		display: inline-block;
+	}
+
+	.txtBlockDescription {
+		display:none;
+	}
+
+	.titleBlockDescription h2 {
+		font-size: 0.5em !important;
+	}
+
+	.imgBlockDescription{
+		margin-top: -30%;
+	}
+	
+	.imgBlockDescription .fa-calendar{
+		margin-top: 30%;
+	}
+
+	.blockDescriptions{
+		padding-top: 0;
+	}
+
+	#desPD{
+		font-size: 1.8em;
+	}
+	
+	.conte-readmore{
+		display: block;
+	}
+
+	.conte-readmore .readmore{
+		display: inline-block;
+		width: 32%;
+		padding: 2%;
+		background: #be0000;
+	}
+	
+	.namesection h2{
+	font-size: 2em;
+	}
+
+	.namesection h2{
+	font-size: 1.7em;
+	}
+
+	.imgControls{
+		display: block;
+		position: absolute;
+		margin-top: 50%;
+		width: 20%;
+		cursor:pointer;
+	}
+
+	.derResponsive{
+		right: 0px;
+	}
+	
+	#sheetBlock{
+		padding-left: 1%;
+	}	
+	
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 6%;
+	}
+}
+
+
+
+
+
+@media(min-width: 701px) and (max-width:767px){
+	.nameSection1{
+		/*position: absolute;*/
+		display: block !important;
+		margin-top:8%;
+	}
+
+
+	.nameSection{
+		display: none;
+		
+	}
+
+	.readmore a{
+		font-size: 1.1em;
+	}
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 4%;
+	}
+	.miniaturasSlider,.calculatorSection,.calculadora,#facebook_area,.descriptionSection,.locationSection,.agentImg,.empPosicion,.inform,.descripcionempleado,.readmore{
+		display:none;
+	}
+
+	.sliderNew{
+		min-height: 460px !important;
+		margin-top: 0 !important;
+	}
+
+	.mls{
+		display:none !important;
+	}
+
+	.bodySection{
+		margin-top: 100%;
+	}
+
+	.agentSection{
+/*		top: 58%;*/
+		/*position: absolute;*/
+		/*text-align: right;*/
+		/*right: 4%;*/
+	}
+
+	.summarySection h2{
+		font-size: 1.8em
+	}
+
+	.titulo{
+		margin-top:-6%;
+	}
+
+	.titulo h2{
+		font-size: 1em;
+		color:#000000;
+	}
+
+	.contactAgentText h2{
+		font-size: 1em;	
+	}
+
+	.agent {
+		border: 0px solid transparent;
+	}
+
+	.empName{
+		/* position: absolute; */
+		margin-top: -8%;
+		margin-left: -7%;
+		/* background: red; */
+		/* height: 40px; */
+	}
+
+	.empName h2{
+		color:#314782;
+	}
+
+	.summarySection{
+		display: none;
+	}
+
+	.summarySection1{
+		display: block;
+		margin-top: -115%;
+	}	
+
+
+	.boxSummary {
+		border-right: 0px solid;
+		padding-top: 1%; 
+		padding-bottom: 1%; 
+		padding-left: 1%;
+		width: 49%;
+		display: inline-block;
+		margin-top: 1%;
+		font-size:1.2em;
+		vertical-align: top;
+		height: 40px;
+		margin-right: 2px;
+	}
+
+	.pDescription{
+		font-size: 1.2em;
+	}
+
+	.boxSummary label{
+		float: left;
+	}
+	
+	.cubos-colores{
+		height: 85px !important;
+	}
+	.contenedor-cubos article {
+		width: 30%;
+		font-size: 1.5em;
+		margin-top: 28px;
+		display: inline-block;
+	}
+
+	.txtBlockDescription {
+		display:none;
+	}
+
+	.titleBlockDescription h2 {
+		font-size: 0.5em !important;
+	}
+
+	.imgBlockDescription{
+		margin-top: -30%;
+	}
+	
+	.imgBlockDescription .fa-calendar{
+		margin-top: 20%;
+	}
+
+	.blockDescriptions{
+		padding-top: 0;
+	}
+
+	#desPD{
+		font-size: 1.8em;
+	}
+	
+	.conte-readmore{
+		display: block;
+	}
+
+	.conte-readmore .readmore{
+		display: inline-block;
+		width: 32%;
+		padding: 2%;
+		background: #be0000;
+	}
+	
+	.namesection h2{
+	font-size: 2em;
+	}
+
+	.namesection h2{
+	font-size: 1.7em;
+	}
+
+	.imgControls{
+		display: block;
+		position: absolute;
+		margin-top: 50%;
+		width: 20%;
+		cursor:pointer;
+	}
+
+	.derResponsive{
+		right: 0px;
+	}
+	
+	#sheetBlock{
+		padding-left: 1%;
+	}	
+	
+
+	#sheetBlock,#virtualTourBlock{
+		height: 105px !important;
+		margin-top: 1.5%;
+		padding-top: 6%;
+	}
+}
+
+
+
+
+
+
+@media(min-width: 376px) and (max-width:434px){
+	.nameSection1{
+		/*position: absolute;*/
+		display: block !important;
+		margin-top:12%;
+	}
+
+
+	.nameSection{
+		display: none;
+		
 	}
 
 	#sheetBlock,#virtualTourBlock{
@@ -2724,7 +3519,7 @@ iframe[name="f3d7c73d9c"]{
 
 	.sliderNew{
 		min-height: 300px !important;
-		margin-top: 30%;
+		margin-top: 0;
 	}
 
 	.mls{
@@ -3056,7 +3851,7 @@ iframe[name="f3d7c73d9c"]{
 
 @media (width:768px){
 			.navbar-default .navbar-nav > li > a {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 
 

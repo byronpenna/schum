@@ -20,7 +20,7 @@
 				}
 
 
-				@media(min-width: 100px) and (max-width:414px){
+				@media(min-width: 100px) and (max-width:767px){
 
 					.ourStoryDescription > h2 {
 						font-size: 1.6em;
@@ -28,6 +28,10 @@
 
 					.font > p {
 						width: 97%;
+					}
+
+					.sliderNew{
+						margin-top: 0 !important;
 					}
 				}
 

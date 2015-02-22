@@ -39,7 +39,7 @@
 
 
 
-@media(min-width: 100px) and (max-width:414px){
+@media(min-width: 100px) and (max-width:767px){
 	/*iframe{
 		margin-top: -12%;
 	}	
@@ -77,6 +77,9 @@
 		width: 90% !important;
 	}
 		
+		.contact {
+	margin-top: 0;
+	}
 }
 
 

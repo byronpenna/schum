@@ -131,6 +131,12 @@
 
 		<img src="<?php echo  base_url('img/elements/derecha.png') ?>" class="imgControls derResponsive navSlide"  direccion="1"/>
 		<img src="<?php echo base_url('img/elements/izquierda.png') ?>" class="imgControls izResponsive navSlide"  direccion="0" />
+		<div class="row nameSection nameSection1">
+				<div class="col-lg-6">
+					<h2><?php echo $house->nombreVivienda ?></h2> 
+                    <h4><?php echo $house->cityTown ?> </h4>	
+				</div>
+			</div>
 		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
@@ -285,7 +291,7 @@
 			<div class="row container-fluid">
 						<h2 id="desPD">Description</h2>
 						<div class="col-xs-12">
-							<p style="text-align:justify;">
+							<p style="text-align:justify;" class="pDescription">
 								<!-- Vieira Masterpiece adorned with the quality materials and workmanship expected in Countryside Crossings. Gourmet island kitchen open to great room and communicating with covered deck, spacious master, triple garage and so much more. No disappointments! -->
 								<?php echo nl2br($house->description); ?>
 							</p>

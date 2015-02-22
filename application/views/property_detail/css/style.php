@@ -351,6 +351,11 @@ label{
 .nameSection h4{
     font-family: "proximaNovaSemiBold";
 }
+
+nameSection1{
+	display: none;
+}
+
 .readmore{
     border: none;
     background-color: #314782;
