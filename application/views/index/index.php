@@ -478,7 +478,7 @@
 			</section>
 		<div class="schedule1 ">
 			<a href=<?php echo "'".site_url("calendar/general")."'" ?> >
-			<article style="margin-top:5%;width:35%;">
+			<article style="margin-top:5%;width:35%;" class="imgSH1">
 				<img class="img-responsive imgCenter imgSchedule" src=<?php echo "'".base_url("img/elements/lateral_video/calendario.png")."'"; ?> style="width:25%;">
 			</article>
 			<article style="width:60%;">

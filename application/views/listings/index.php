@@ -45,7 +45,214 @@
 					font-size:1.4em;
 				}
 
-				   	 @media(min-width: 100px) and (max-width:414px){
+
+
+				@media(min-width: 500px) and (max-width:600px){
+						.searchSection {
+							margin-top: 5%;
+							display: none;
+							/*background: red;*/
+						}
+
+
+						.beforeHomes h2 {
+						font-size: 2.5em;
+						text-align: left;
+						}
+
+						.beforeHomes {
+							margin-top: 0px;
+							margin-bottom: 0px;
+							margin-left: -10%;
+							/*background: red;*/
+							}
+
+							.sliderNew{
+								height: 0px;
+							}
+
+							.casa{
+								/*background: red;*/
+								padding: 0px;
+								margin-top: 5%;
+								margin-bottom: 5%;
+							}
+
+							.casa img{
+								position: relative !important;
+								border: 0.6em solid #CCCCCC;
+							}
+
+							.imgListing {
+								width: 90%;
+								margin: auto;
+								min-height: 350px;
+								height: 0px !important;
+							}
+
+							.descripcionCasa h3 {
+							margin-top: 2%;
+							font-size: 1.5em;
+							}
+
+							.descripcionCasa h5 {
+								margin-top: 1%;
+								font-size: 1.5em;
+								}
+
+								.mappin {
+								font-size: 100%;
+								}
+
+								.descripcionCasa h2 {
+									font-size: 2em;
+								}
+
+							.titleFootDescriptionCasa, .desFootDescriptionCasa {
+								font-size: 0.7em;
+								text-align: center;
+							}
+
+							.descripcionCasa {
+								width: 90%;
+								margin: auto;
+								padding: 0px;
+								padding-top: 2%;
+								padding-left: 0px;
+								padding-bottom:2%; 
+								 -webkit-box-shadow: 0px 0px 0px transparent; 
+								-moz-box-shadow: 0px 0px 0px transparent;
+								 box-shadow: 0px 0px 0px transparent; 
+								 border-bottom: 1px solid #CCCCCC;
+							}
+
+							
+								.btnPaginacion{
+									display:none !important;
+								}
+
+								
+								.imgNav{
+									width: 2%;
+									padding: 0.5em;
+									height: 40px;
+									padding-right: 1em;
+								}
+
+								#conte-pagin {
+									width: 40%;
+									padding: 5px;
+									display: block;
+								}
+
+
+					}
+
+
+
+					@media(min-width: 601px) and (max-width:767px){
+						.searchSection {
+							margin-top: 5%;
+							display: none;
+							/*background: red;*/
+						}
+
+
+						.beforeHomes h2 {
+						font-size: 2.5em;
+						text-align: left;
+						}
+
+						.beforeHomes {
+							margin-top: 0px;
+							margin-bottom: 0px;
+							margin-left: -10%;
+							/*background: red;*/
+							}
+
+							.sliderNew{
+								height: 0px;
+							}
+
+							.casa{
+								/*background: red;*/
+								padding: 0px;
+								margin-top: 5%;
+								margin-bottom: 5%;
+							}
+
+							.casa img{
+								position: relative !important;
+								border: 0.6em solid #CCCCCC;
+							}
+
+							.imgListing {
+								width: 90%;
+								margin: auto;
+								min-height: 450px;
+								height: 0px !important;
+							}
+
+							.descripcionCasa h3 {
+							margin-top: 2%;
+							font-size: 1.5em;
+							}
+
+							.descripcionCasa h5 {
+								margin-top: 1%;
+								font-size: 1.5em;
+								}
+
+								.mappin {
+								font-size: 100%;
+								}
+
+								.descripcionCasa h2 {
+									font-size: 2em;
+								}
+
+							.titleFootDescriptionCasa, .desFootDescriptionCasa {
+								font-size: 0.7em;
+								text-align: center;
+							}
+
+							.descripcionCasa {
+								width: 90%;
+								margin: auto;
+								padding: 0px;
+								padding-top: 2%;
+								padding-left: 0px;
+								padding-bottom:2%; 
+								 -webkit-box-shadow: 0px 0px 0px transparent; 
+								-moz-box-shadow: 0px 0px 0px transparent;
+								 box-shadow: 0px 0px 0px transparent; 
+								 border-bottom: 1px solid #CCCCCC;
+							}
+
+							
+								.btnPaginacion{
+									display:none !important;
+								}
+
+								
+								.imgNav{
+									width: 2%;
+									padding: 0.5em;
+									height: 40px;
+									padding-right: 1em;
+								}
+
+								#conte-pagin {
+									width: 40%;
+									padding: 5px;
+									display: block;
+								}
+
+
+					}
+
+
+				   	 @media(min-width: 100px) and (max-width:499px){
 						.searchSection {
 							margin-top: 5%;
 							display: none;

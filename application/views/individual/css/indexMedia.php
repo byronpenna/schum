@@ -1,8 +1,8 @@
 @media(min-width:300px) and (max-width:767px){
 	/*botones estandarisados como en el psd*/
-	.dataOtherSay button {
+	/*.dataOtherSay button {
 		font-size: 0.8em !important;
-	}
+	}*/
 	.botonChulo {
 	width: 40%;
 	}
@@ -150,16 +150,16 @@
 	body{
 		/*background: green*/
 	}
-	.txtContact h3{
+	/*.txtContact h3{
 		font-size: 3em;
 		text-align: center;
-	}
+	}*/
 	.viewListingSection button{
 		padding: 4% 0; 
 	}
-	.dataContent p{
+	/*.dataContent p{
 		font-size: 2em;
-	}
+	}*/
 	.divAward{
 		text-align: center;
 		margin-top: 3%;
@@ -174,9 +174,9 @@
 		font-size: 2em;
 		margin-bottom: 3%;
 	}
-	.direccion{
+	/*.direccion{
 		font-size: 2em;
-	}
+	}*/
 	.dataDescription{
 		border-left: none;
 		margin-top: 4%;
@@ -472,9 +472,566 @@
 		}
 }
 
+@media(min-width: 701px) and (max-width:767px){
+	.testi1,.sliderNew{
+		display:none;
+	}
+
+	.txtSaying h3{
+		font-size: 2.5em;
+		font-weight: bold;
+		font-family: 'proximaNovaBold';
+		margin-left: 3.5%;
+	}
 
 
-@media(min-width: 376px) and (max-width:414px){
+	.individualSection{
+		margin-top: 10%;
+		box-shadow: 0.1px 0.1px 20px #CCCCCC !important;
+		margin: 10px;
+	}
+	
+	.botonChulo1{
+		display: none;
+	}
+
+	.individualTarjeta img{
+		width: 45%;
+		/*border-right: 2px solid #CCCCCC;*/
+	}
+
+	.generalData{
+		display:none;
+	}
+	.generalData1{
+		display:block;
+		margin-top: 10%;
+		margin-left: 3%;
+	}
+
+	.generalData1 h2{
+		font-size:2.5em;
+	}
+	.generalData1 h3{
+		font-size:2.5em;
+	}
+	.descriptionIndividual{
+		border: 0px solid transparent;
+		width: 60%;
+		margin-left: 45%;
+		margin-top: -40%;
+		/* position: absolute; */
+		right: 0;
+		/* top: -1%; */
+		padding: 0px;
+		padding-bottom: 5%;
+		border-left: 2px solid #CCCCCC;
+	}
+
+	.viewListingSection{
+		display: none;
+	}
+
+	.contact2{
+		height: 26px;
+		padding-top: 0;
+	}
+
+	.contact2 h3{
+		font-size: 1.2em; 
+		margin-left: -90%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.contact2 h3 span{
+		position: absolute;
+		top: 30%;
+		left: 18%;
+	}
+	
+
+	.contact2 h2{
+		font-size: 1em; 
+		display: inline;
+		margin: 1%;
+	}
+
+	.dataContent p {
+		font-size: 1.5em;
+	}
+
+	.dataContent{
+		margin-top:10%;
+	}
+
+
+	.divAward img{
+		width: 20%;
+	}
+
+
+	.contact h3, .generalData, .awardsContent h3 {
+		text-align: left;
+	}
+
+	.awardsContent h3 {
+		font-size: 2.5em;
+	}
+	.arBotones{
+		display: block;
+		width: 100%;
+		margin-top: 5%;
+	}
+	.arBotones a{
+		width: 48%;
+		display: inline-block;
+	}
+
+	.viewListingSection1{
+		display: block;
+		 border-right: 0px solid #dbdbdb; 
+		 border-left: 0px solid #dbdbdb; 
+		 border-bottom: 0px solid #dbdbdb; 
+		 padding-top: 0px !important;
+		 padding-bottom: 0px !important;
+	}
+
+	.dataOtherSay1{
+		display: block;
+	}
+
+	.direccion{
+		margin-top:-4%;
+		font-size: 1.3em;
+	}
+
+
+	.dataOtherSay1 button{
+		font-size: 1em !important;
+		margin-top: -20%;
+	}
+
+	.botonChulo{
+		width: 100% !important;
+	}
+
+
+	.arBotones button {
+		padding: 6%;
+		font-size: 1.3em !important;
+	}
+
+	.iconDescripcionPersona{
+		font-size: 1em !important;
+	}
+
+	.containerIdioma{
+		text-align: left;
+		width: 150px;
+	}
+
+	.containerIdioma h2{
+		display: block;
+	}
+
+	.txtContact{
+		margin-top:-10%;
+	}
+
+
+	.dataOtherSay p{
+		font-size: 1.5em;
+	}
+
+
+	.segundos h2,h3{
+		font-size: 2em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 601px) and (max-width:700px){
+	.testi1,.sliderNew{
+		display:none;
+	}
+
+	.txtSaying h3{
+		font-size: 2em;
+		font-weight: bold;
+		font-family: 'proximaNovaBold';
+		margin-left: 3.5%;
+	}
+
+
+	.individualSection{
+		margin-top: 10%;
+		box-shadow: 0.1px 0.1px 20px #CCCCCC !important;
+		margin: 10px;
+	}
+	
+	.botonChulo1{
+		display: none;
+	}
+
+	.individualTarjeta img{
+		width: 45%;
+		/*border-right: 2px solid #CCCCCC;*/
+	}
+
+	.generalData{
+		display:none;
+	}
+	.generalData1{
+		display:block;
+		margin-top: 10%;
+		margin-left: 3%;
+	}
+
+	.generalData1 h2{
+		font-size:2em;
+	}
+	.generalData1 h3{
+		font-size:2em;
+	}
+	.descriptionIndividual{
+		border: 0px solid transparent;
+		width: 60%;
+		margin-left: 45%;
+		margin-top: -48%;
+		/* position: absolute; */
+		right: 0;
+		/* top: -1%; */
+		padding: 0px;
+		padding-bottom: 5%;
+		border-left: 2px solid #CCCCCC;
+	}
+
+	.viewListingSection{
+		display: none;
+	}
+
+	.contact2{
+		height: 26px;
+		padding-top: 0;
+	}
+
+	.contact2 h3{
+		font-size: 1.2em; 
+		margin-left: -90%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.contact2 h3 span{
+		position: absolute;
+		top: 30%;
+		left: 18%;
+	}
+	
+
+	.contact2 h2{
+		font-size: 1em; 
+		display: inline;
+		margin: 1%;
+	}
+
+	.dataContent p {
+		font-size: 1.3em;
+	}
+
+	.dataContent{
+		margin-top:10%;
+	}
+
+
+	.divAward img{
+		width: 20%;
+	}
+
+
+	.contact h3, .generalData, .awardsContent h3 {
+		text-align: left;
+	}
+
+	.awardsContent h3 {
+		font-size: 2em;
+	}
+	.arBotones{
+		display: block;
+		width: 100%;
+		margin-top: 5%;
+	}
+	.arBotones a{
+		width: 48%;
+		display: inline-block;
+	}
+
+	.viewListingSection1{
+		display: block;
+		 border-right: 0px solid #dbdbdb; 
+		 border-left: 0px solid #dbdbdb; 
+		 border-bottom: 0px solid #dbdbdb; 
+		 padding-top: 0px !important;
+		 padding-bottom: 0px !important;
+	}
+
+	.dataOtherSay1{
+		display: block;
+	}
+
+	.direccion{
+		margin-top:-4%;
+		font-size: 1.3em;
+	}
+
+
+	.dataOtherSay1 button{
+		font-size: 1em !important;
+		margin-top: -20%;
+	}
+
+	.botonChulo{
+		width: 100% !important;
+	}
+
+
+	.arBotones button {
+		padding: 6%;
+		font-size: 1.3em !important;
+	}
+
+	.iconDescripcionPersona{
+		font-size: 1em !important;
+	}
+
+	.containerIdioma{
+		text-align: left;
+		width: 150px;
+	}
+
+	.containerIdioma h2{
+		display: block;
+	}
+
+	.txtContact{
+		margin-top:-10%;
+	}
+
+
+	.dataOtherSay p{
+		font-size: 1.3em;
+	}
+
+
+	.segundos h2,h3{
+		font-size: 2em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 500px) and (max-width:600px){
+	.testi1,.sliderNew{
+		display:none;
+	}
+
+	.txtSaying h3{
+		font-size: 1.5em;
+		font-weight: bold;
+		font-family: 'proximaNovaBold';
+		margin-left: 3.5%;
+	}
+
+
+	.individualSection{
+		margin-top: 10%;
+		box-shadow: 0.1px 0.1px 20px #CCCCCC !important;
+		margin: 10px;
+	}
+	
+	.botonChulo1{
+		display: none;
+	}
+
+	.individualTarjeta img{
+		width: 45%;
+		/*border-right: 2px solid #CCCCCC;*/
+	}
+
+	.generalData{
+		display:none;
+	}
+	.generalData1{
+		display:block;
+		margin-top: 10%;
+		margin-left: 3%;
+	}
+
+	.generalData1 h2{
+		font-size:2em;
+	}
+	.generalData1 h3{
+		font-size:2em;
+	}
+	.descriptionIndividual{
+		border: 0px solid transparent;
+		width: 60%;
+		margin-left: 45%;
+		margin-top: -48%;
+		/* position: absolute; */
+		right: 0;
+		/* top: -1%; */
+		padding: 0px;
+		padding-bottom: 5%;
+		border-left: 2px solid #CCCCCC;
+	}
+
+	.viewListingSection{
+		display: none;
+	}
+
+	.contact2{
+		height: 22px;
+		padding-top: 0;
+	}
+
+	.contact2 h3{
+		font-size: 1em; 
+		margin-left: -90%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.contact2 h3 span{
+		position: absolute;
+		top: 30%;
+		left: 18%;
+	}
+	
+
+	.contact2 h2{
+		font-size: 1em; 
+		display: inline;
+		margin: 1%;
+	}
+
+	.dataContent p {
+		font-size: 1.3em;
+	}
+
+	.dataContent{
+		margin-top:10%;
+	}
+
+
+	.divAward img{
+		width: 20%;
+	}
+
+
+	.contact h3, .generalData, .awardsContent h3 {
+		text-align: left;
+	}
+
+	.awardsContent h3 {
+		font-size: 1.5em;
+	}
+	.arBotones{
+		display: block;
+		width: 100%;
+		margin-top: 5%;
+	}
+	.arBotones a{
+		width: 48%;
+		display: inline-block;
+	}
+
+	.viewListingSection1{
+		display: block;
+		 border-right: 0px solid #dbdbdb; 
+		 border-left: 0px solid #dbdbdb; 
+		 border-bottom: 0px solid #dbdbdb; 
+		 padding-top: 0px !important;
+		 padding-bottom: 0px !important;
+	}
+
+	.dataOtherSay1{
+		display: block;
+	}
+
+	.direccion{
+		margin-top:-4%;
+	}
+
+
+	.dataOtherSay1 button{
+		font-size: 1em !important;
+		margin-top: -20%;
+	}
+
+	.botonChulo{
+		width: 100% !important;
+	}
+
+
+	.arBotones button {
+		padding: 6%;
+	}
+
+	.iconDescripcionPersona{
+		font-size: 1em !important;
+	}
+
+	.containerIdioma{
+		text-align: left;
+		width: 150px;
+	}
+
+	.containerIdioma h2{
+		display: block;
+	}
+
+	.txtContact{
+		margin-top:-10%;
+	}
+
+
+	.dataOtherSay p{
+		font-size: 1.3em;
+	}
+
+
+	.segundos h2,h3{
+		font-size: 1.6em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 376px) and (max-width:499x){
 	.testi1,.sliderNew{
 		display:none;
 	}
@@ -1224,9 +1781,7 @@
 
 
 @media (min-device-width: 604px) and (max-device-width:768px){
-		.dataOtherSay p {
-			font-size: 1.7em;
-		}
+		
 
 	.botonChulo {
 		width: 50%;
@@ -1236,10 +1791,6 @@
 	.divAward img{
 		width: 20%;
 	}
-
-
-	.navbar-default .navbar-nav > li > a {
-							font-size: 0.8em;
-						}
+				}
 
 }
