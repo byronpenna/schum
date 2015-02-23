@@ -100,7 +100,7 @@ h4{
 	font-family: "proximaNovaSemiBold";
 }
 .des{
-    position: absolute !important;
+    /*position: absolute !important;*/
     bottom: 0;
     margin-left: -15px !important;
 }

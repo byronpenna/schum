@@ -1071,3 +1071,101 @@ div.imgfull {
 		margin-left: -3%;
 	}
 }
+
+
+
+
+
+
+@media (min-device-width: 775px) and (max-device-width:800px){
+
+	.navbar-default .navbar-nav > li > a {
+		font-size: 0.6em;
+	}
+	
+	.searchBMAP{
+		display: none;
+	}
+
+
+	.btnSearchNow {
+		margin-top: 6%;
+	}
+
+	.des{
+		font-size: 0.9em;
+	}
+}
+
+
+@media (min-device-width: 769px) and (max-device-width:774px){
+	.navbar-default .navbar-nav > li > a {
+		font-size: 13px;
+	}
+	
+	.searchBMAP{
+		display: none;
+	}
+
+
+	.btnSearchNow {
+		margin-top: 9%;
+	}
+
+	.des{
+		font-size: 0.9em;
+	}
+
+
+	.col-sm-2 > button {
+		font-size: 0.7em !important;
+	}
+
+	.titulo h2 {
+		font-size: 1.6em;
+		/* margin-bottom: 2%; */
+	}
+
+
+	.titleSearch h2{
+		font-size: 1.6em;
+	}
+
+}
+
+
+
+@media (width: 768px){
+	.navbar-default .navbar-nav > li > a {
+		font-size: 13px;
+	}
+	
+	.searchBMAP{
+		display: none;
+	}
+
+
+	.btnSearchNow {
+		margin-top: 9%;
+	}
+
+	.des{
+		font-size: 0.9em;
+	}
+
+
+	.col-sm-2 > button {
+		font-size: 0.7em !important;
+	}
+
+	.titulo h2 {
+		font-size: 1.6em;
+		/* margin-bottom: 2%; */
+	}
+
+
+	.titleSearch h2{
+		font-size: 1.6em;
+	}
+
+}

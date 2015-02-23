@@ -82,7 +82,7 @@
 					<div class="col-md-6 col-sm-6">
 						<h2>Property Search</h2>		
 					</div>
-					<div class="col-md-6 col-sm-6 text-right">
+					<div class="col-md-6 col-sm-6 text-right searchBMAP">
 						<h4><a href=<?php echo "'".site_url("welcome/index/#elmapa")."'" ?> >SEARCH BY MAP</a> <i class="fa fa-globe globo"></i></h4>
 					</div>
 				</div>
