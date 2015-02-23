@@ -42,6 +42,14 @@ html, body{
 .descriptionsection p{
 	/*text-align: justify;*/
 }
+
+
+.descript {
+		padding-left: 0px;
+		text-align: justify;
+	}
+
+
 .calendar{
 	border: 2px solid #d9d9d9;
 

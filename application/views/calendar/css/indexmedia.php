@@ -1114,6 +1114,7 @@ div.imgfull {
 
 	.des{
 		font-size: 0.9em;
+		width: 150%;
 	}
 
 
@@ -1151,6 +1152,7 @@ div.imgfull {
 
 	.des{
 		font-size: 0.9em;
+		width: 150%;
 	}
 
 
@@ -1167,5 +1169,10 @@ div.imgfull {
 	.titleSearch h2{
 		font-size: 1.6em;
 	}
+
+
+	
+
+
 
 }

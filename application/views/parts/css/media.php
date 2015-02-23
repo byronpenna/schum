@@ -73,9 +73,9 @@
 		margin-left: -200px !important;
 	}
 
-	.dataTeam p{
+	/*.dataTeam p{
 		font-size:1em !important;
-	}
+	}*/
 
 }
 @media(min-width:767px){
