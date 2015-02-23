@@ -540,7 +540,7 @@
 		}
 	/* video section */ 
 		.videoSection h2{
-			font-size: 1.7em;
+			font-size: 1.5em;
 		}
 		/*.youtubeVideoHome{
 			min-height: 340px;

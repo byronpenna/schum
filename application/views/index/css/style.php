@@ -482,7 +482,7 @@ body{
 .newsToMarketTitle{
 	color: #314782;
 	font-family: 'proximaNovaBold';
-	font-size: 1em;
+	font-size: 0.9em;
 	text-transform: uppercase;
 }
 .casaNewsToMarket{
