@@ -1077,7 +1077,7 @@ div.imgfull {
 
 
 
-@media (min-device-width: 775px) and (max-device-width:800px){
+@media (min-width: 775px) and (max-width:800px){
 
 	.navbar-default .navbar-nav > li > a {
 		font-size: 0.6em;
@@ -1098,7 +1098,7 @@ div.imgfull {
 }
 
 
-@media (min-device-width: 769px) and (max-device-width:774px){
+@media (min-width: 769px) and (max-width:774px){
 	.navbar-default .navbar-nav > li > a {
 		font-size: 13px;
 	}
