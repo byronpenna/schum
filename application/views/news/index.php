@@ -20,7 +20,7 @@
 				}
 
 
-				@media(min-width: 100px) and (max-width:767px){
+				@media(min-width: 501px) and (max-width:767px){
 
 					.ourStoryDescription > h2 {
 						font-size: 1.6em;
@@ -33,8 +33,56 @@
 					.sliderNew{
 						margin-top: 0 !important;
 					}
+
+					.bodyContainer{
+						margin-top: 10%;
+					}
 				}
 
+
+				@media(min-width: 321px) and (max-width: 375px){
+					.bodyContainer{
+						margin-top: 0%;
+					}
+
+
+					.ourStoryDescription > h2 {
+					color: #be0000;
+					font-size: 1.6em;
+					}
+				}
+
+
+				@media(min-width: 376px) and (max-width:434px){
+					.bodyContainer{
+						margin-top: 0%;
+					}	
+
+					.ourStoryDescription > h2 {
+					color: #be0000;
+					font-size: 1.6em;
+					}
+				}
+
+				@media(min-width: 435px) and (max-width:500px){
+					.bodyContainer{
+						margin-top: 0%;
+					}	
+
+					.ourStoryDescription > h2 {
+					color: #be0000;
+					font-size: 1.5em;
+					}
+				}
+				
+				@media(min-width: 100px) and (max-width: 320px){
+					
+
+					.ourStoryDescription > h2 {
+					color: #be0000;
+					font-size: 1.6em;
+					}
+				}
 
 
 				       @media (width:768px){

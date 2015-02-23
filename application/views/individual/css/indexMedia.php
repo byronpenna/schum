@@ -194,10 +194,10 @@
 		/*background: skyblue;*/
 	}
 	.dataContent p{
-		font-size: 1.7em;
+		font-size: 1.5em;
 	}
 	.dataOtherSay p{
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	.descriptionIndividual h3{
 		font-size: 1.5em;
@@ -1092,7 +1092,7 @@
 	}
 
 	.contact2{
-		height: 40px;
+		height: 22px;
 		padding-top: 0;
 	}
 
@@ -1162,6 +1162,7 @@
 
 	.direccion{
 		margin-top:-4%;
+		font-size: 0.9em;
 	}
 
 
@@ -1346,7 +1347,7 @@
 
 
 	.dataOtherSay1 button{
-		font-size: 1em !important;
+		font-size: 0.9em !important;
 		margin-top: -20%;
 	}
 
@@ -1388,6 +1389,10 @@
 
 	.contact{
 		margin-top: 5%;
+	}
+
+	.dataOtherSay {
+	margin-top: 0px;
 	}
 }
 
@@ -1525,7 +1530,7 @@
 
 	.direccion{
 		margin-top:-4%;
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
 
@@ -1763,7 +1768,7 @@
 
 
 
-@media (min-device-width: 769px) and (max-device-width:800px){
+@media (min-width: 769px) and (max-width:800px){
 		.dataOtherSay p {
 			font-size: 1.7em;
 		}
@@ -1780,7 +1785,7 @@
 
 
 
-@media (min-device-width: 604px) and (max-device-width:768px){
+@media (min-width: 604px) and (max-width:768px){
 		
 
 	.botonChulo {
@@ -1791,6 +1796,13 @@
 	.divAward img{
 		width: 20%;
 	}
-				}
+
+	.amostrar {
+		width: 100%;
+		margin-left: 0px;
+		z-index: 900000000;
+		opacity: 1;
+		font-size: 12px !important;
+	}
 
 }

@@ -78,8 +78,8 @@
 	}
 		
 		.contact {
-	margin-top: 0;
-	}
+			margin-top: 5%;
+		}
 }
 
 

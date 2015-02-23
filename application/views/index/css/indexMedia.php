@@ -1507,9 +1507,17 @@
 
 
 
-@media (min-device-width: 769px) and (max-device-width:800px){
+@media (min-width: 769px) and (max-width:800px){
 			.bannerDesktopBig{
 				display:block;
+			}
+
+			.navbar-default .navbar-nav > li > a {
+				font-size: 0.8em;
+			}
+
+			.amostrar {
+				font-size: 0.9em;
 			}
 
 			.bannerMovil{
