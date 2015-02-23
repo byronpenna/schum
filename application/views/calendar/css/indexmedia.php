@@ -526,7 +526,7 @@ div.imgfull {
 }
 
 
-@media(min-width: 100px) and (max-width:414px){
+@media(min-width: 100px) and (max-width:449px){
 	
 	.sliderNew{
 		display:none;
@@ -629,5 +629,445 @@ div.imgfull {
 	
 	.photosection .icon {
 		margin-left: -5%;
+	}
+}
+
+
+
+
+
+
+@media(min-width: 450px) and (max-width:550px){
+	
+	.sliderNew{
+		display:none;
+	}
+
+	.titulo h2 {
+		font-size: 1.6em !important;
+		margin-left: 10%;
+		width: 300px;
+		margin-bottom: -6%;
+	}
+	
+/*
+	.titulo {
+		background: red;
+		margin: 10% 0 10% 0;
+		width: 100%;
+	}
+
+	.titulo div{
+		background: orange;
+		width: 40%;
+		display: inline-block;
+	}*/
+	.bodyContainer{
+		margin-top:10%; 
+	}
+
+	.descript{
+		display: none;
+	}
+
+	.searchSection{
+		display: none;
+	}
+
+	.des{
+		display: none;
+	}
+
+	.price1{
+		/* float: right; */
+		vertical-align: top;
+		margin-top: -3%;
+		display: block;
+		margin-left: -5%;
+		color: #6b6b6b;
+		font-family: 'proximaNovaLight';
+		/* position: absolute; */
+	}
+
+	.horario{
+		display:none;
+	}
+
+	.horario1{
+		display: block;
+		text-align: center;
+		background: #be0000;
+		width: 110.5%;
+		margin-left: -3.5%;
+		margin-bottom: 1%;
+		color: #FFFFFF;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+	.horario1 h4{
+		font-family: 'proximaNovaSemiBold';
+		font-size: 0.8em;
+		/*color: #be0000;*/
+		color: #FFFFFF;
+		margin-left: 5px;
+	}
+
+	.calendar{
+		width: 90%;
+		margin-left:5%;
+		border: 2px solid #FFFFFF;
+		margin-bottom: 10%;
+		border-bottom: 2px solid #CCCCCC;
+	}
+
+	.photosection .imgfull{
+		border: 5px solid #CCCCCC;
+	}
+
+	.OHimg{
+		width: 100%;
+	}
+
+	.photosection h2 {
+		font-size: 1.2em;
+		margin-left: -5%;
+	}
+
+	.photosection h3 {
+		font-size: 1.2em;
+	}
+	
+	.photosection .icon {
+		margin-left: -5%;
+	}
+}
+
+
+
+
+@media(min-width: 551px) and (max-width:650px){
+	
+	.sliderNew{
+		display:none;
+	}
+
+	.titulo h2 {
+		font-size: 1.8em !important;
+		margin-left: 8%;
+		width: 300px;
+		margin-bottom: -4%;
+	}
+	
+/*
+	.titulo {
+		background: red;
+		margin: 10% 0 10% 0;
+		width: 100%;
+	}
+
+	.titulo div{
+		background: orange;
+		width: 40%;
+		display: inline-block;
+	}*/
+	.bodyContainer{
+		margin-top:10%; 
+	}
+
+	.descript{
+		display: none;
+	}
+
+	.searchSection{
+		display: none;
+	}
+
+	.des{
+		display: none;
+	}
+
+	.price1{
+		/* float: right; */
+		vertical-align: top;
+		margin-top: -2%;
+		display: block;
+		margin-left: -5%;
+		color: #6b6b6b;
+		font-family: 'proximaNovaLight';
+		/* position: absolute; */
+	}
+
+	.horario{
+		display:none;
+	}
+
+	.horario1{
+		display: block;
+		text-align: center;
+		background: #be0000;
+		width: 109.5%;
+		margin-left: -3.5%;
+		margin-bottom: 1%;
+		color: #FFFFFF;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+	.horario1 h4{
+		font-family: 'proximaNovaSemiBold';
+		font-size: 0.8em;
+		/*color: #be0000;*/
+		color: #FFFFFF;
+		margin-left: 5px;
+	}
+
+	.calendar{
+		width: 90%;
+		margin-left:5%;
+		border: 2px solid #FFFFFF;
+		margin-bottom: 10%;
+		border-bottom: 2px solid #CCCCCC;
+	}
+
+	.photosection .imgfull{
+		border: 5px solid #CCCCCC;
+	}
+
+	.OHimg{
+		width: 100%;
+	}
+
+	.photosection h2 {
+		font-size: 1.2em;
+		margin-left: -5%;
+	}
+
+	.photosection h3 {
+		font-size: 1.2em;
+		margin-top: 10px !important;
+	}
+	
+	.photosection .icon {
+		margin-left: -5%;
+	}
+}
+
+
+
+@media(min-width: 651px) and (max-width:750px){
+	
+	.sliderNew{
+		display:none;
+	}
+
+	.titulo h2 {
+		font-size: 1.8em !important;
+		margin-left: 8%;
+		width: 300px;
+		margin-bottom: -4%;
+	}
+	
+/*
+	.titulo {
+		background: red;
+		margin: 10% 0 10% 0;
+		width: 100%;
+	}
+
+	.titulo div{
+		background: orange;
+		width: 40%;
+		display: inline-block;
+	}*/
+	.bodyContainer{
+		margin-top:10%; 
+	}
+
+	.descript{
+		display: none;
+	}
+
+	.searchSection{
+		display: none;
+	}
+
+	.des{
+		display: none;
+	}
+
+	.price1{
+		/* float: right; */
+		vertical-align: top;
+		margin-top: -1%;
+		display: block;
+		margin-left: -3%;
+		color: #6b6b6b;
+		font-family: 'proximaNovaLight';
+		/* position: absolute; */
+	}
+
+	.horario{
+		display:none;
+	}
+
+	.horario1{
+		display: block;
+		text-align: center;
+		background: #be0000;
+		width: 108%;
+		margin-left: -2.5%;
+		margin-bottom: 1%;
+		color: #FFFFFF;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+	.horario1 h4{
+		font-family: 'proximaNovaSemiBold';
+		font-size: 0.8em;
+		/*color: #be0000;*/
+		color: #FFFFFF;
+		margin-left: 5px;
+	}
+
+	.calendar{
+		width: 90%;
+		margin-left:5%;
+		border: 2px solid #FFFFFF;
+		margin-bottom: 10%;
+		border-bottom: 2px solid #CCCCCC;
+	}
+
+	.photosection .imgfull{
+		border: 5px solid #CCCCCC;
+	}
+
+	.OHimg{
+		width: 100%;
+	}
+
+	.photosection h2 {
+		font-size: 1.2em;
+		margin-left: -3%;
+	}
+
+	.photosection h3 {
+		font-size: 1.2em;
+		margin-top: 10px !important;
+	}
+	
+	.photosection .icon {
+		margin-left: -3%;
+	}
+}
+
+
+
+
+@media(min-width: 751px) and (max-width:767px){
+	
+	.sliderNew{
+		display:none;
+	}
+
+	.titulo h2 {
+		font-size: 1.8em !important;
+		margin-left: 8%;
+		width: 300px;
+		margin-bottom: -4%;
+	}
+	
+/*
+	.titulo {
+		background: red;
+		margin: 10% 0 10% 0;
+		width: 100%;
+	}
+
+	.titulo div{
+		background: orange;
+		width: 40%;
+		display: inline-block;
+	}*/
+	.bodyContainer{
+		margin-top:10%; 
+	}
+
+	.descript{
+		display: none;
+	}
+
+	.searchSection{
+		display: none;
+	}
+
+	.des{
+		display: none;
+	}
+
+	.price1{
+		/* float: right; */
+		vertical-align: top;
+		margin-top: -1%;
+		display: block;
+		margin-left: -3%;
+		color: #6b6b6b;
+		font-family: 'proximaNovaLight';
+		/* position: absolute; */
+	}
+
+	.horario{
+		display:none;
+	}
+
+	.horario1{
+		display: block;
+		text-align: center;
+		background: #be0000;
+		width: 108%;
+		margin-left: -2.5%;
+		margin-bottom: 1%;
+		color: #FFFFFF;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+	.horario1 h4{
+		font-family: 'proximaNovaSemiBold';
+		font-size: 0.8em;
+		/*color: #be0000;*/
+		color: #FFFFFF;
+		margin-left: 5px;
+	}
+
+	.calendar{
+		width: 90%;
+		margin-left:5%;
+		border: 2px solid #FFFFFF;
+		margin-bottom: 10%;
+		border-bottom: 2px solid #CCCCCC;
+	}
+
+	.photosection .imgfull{
+		border: 5px solid #CCCCCC;
+	}
+
+	.OHimg{
+		width: 100%;
+	}
+
+	.photosection h2 {
+		font-size: 1.2em;
+		margin-left: -3%;
+	}
+
+	.photosection h3 {
+		font-size: 1.2em;
+		margin-top: 10px !important;
+	}
+	
+	.photosection .icon {
+		margin-left: -3%;
 	}
 }
