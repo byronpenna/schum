@@ -438,7 +438,7 @@
 			min-height: 0;*/
 		}
 		.propertySearchSection h3{
-			font-size: 1em;
+			font-size: 0.9em;
 		}
 }
 @media(max-width:992px){
@@ -518,7 +518,7 @@
 			width: 90%;
 		}
 		.searchMapSection > .row > div > h3{
-			font-size: 1.4em;
+			font-size: 1em;
 		}
 	/* news to the market */
 		.imgNewsToMarket{
@@ -614,6 +614,10 @@
 		
 	body{
 		background: green;
+	}
+
+	.btnSearchNow {
+		margin-top: 0px !important;
 	}
 }
 @media(min-width:1100px){
@@ -1480,6 +1484,11 @@
 
 	.tweets a{
 		font-size: 0.95em;
+	}
+
+
+	.btnSearchNow {
+		margin-top: 1.5%;
 	}
 }
 

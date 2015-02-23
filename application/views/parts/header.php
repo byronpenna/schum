@@ -48,21 +48,11 @@
 						</div>
 					</a>
 				</div>
-				<div class="iconCuadro" id='wordpress'>
-					<a href=<?php echo "'".$homeData->wordpress."'" ?> target="_blank">
-						<div class="circle-text " >
-							<div>
-								<i class="fa fa-wordpress"></i>
-							</div>
-						</div>
-					</a>
-				</div>
 			</div>
 		</div>
 		<div class="row container-fluid headerImage paddingNull">
 			<div class="col-lg-12 paddingNull">
-				<img class="imgFull img-responsive bannerMovil" src=<?php echo "'".base_url("img/logos/logo2.png")."'" ?> >
-				<img class='imgFull img-responsive bannerDesktop' src=<?php echo "'".base_url("img/elements/banner/SR-Header.gif")."'" ?> >
+				
 				<img class='imgFull img-responsive bannerDesktopBig' src=<?php echo "'".base_url("img/elements/banner/driventofinish_logo.png")."'" ?> >
 			</div>
 		</div>
