@@ -1934,4 +1934,13 @@
 			#boxBuySell0, #boxBuySell2 {
 				min-height: 240px;
 			}
+
+
+			.amostrar {
+				font-size: 0.9em;
+			}
+
+			.navbar-default .navbar-nav > li > a {
+				font-size: 0.8em;
+			}
 }

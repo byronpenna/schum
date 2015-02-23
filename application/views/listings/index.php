@@ -445,7 +445,7 @@
 
 				@media (width:768px){
 						.navbar-default .navbar-nav > li > a {
-							font-size: 0.7em;
+							font-size: 13px;
 						}
 
 

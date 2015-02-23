@@ -2682,7 +2682,7 @@ iframe[name="f3d7c73d9c"]{
 		width: 32%;
 		padding: 2%;
 		background: #be0000;
-		font-size: 12px;
+		font-size: 11px;
 	}
 	
 	.namesection h2{
@@ -3641,6 +3641,7 @@ iframe[name="f3d7c73d9c"]{
 		width: 32%;
 		padding: 2%;
 		background: #be0000;
+		font-size: 12px;
 	}
 	
 	.namesection h2{
