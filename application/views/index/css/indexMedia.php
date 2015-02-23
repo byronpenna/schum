@@ -1507,7 +1507,7 @@
 
 
 
-@media (min-width: 769px) and (max-width:800px){
+@media (width:800px){
 			.bannerDesktopBig{
 				display:block;
 			}
@@ -1529,7 +1529,7 @@
 			}
 
 			.propertySearchSection h3 {
-				font-size: 0.9em !important;
+				font-size: 0.8em !important;
 			}
 
 			.videoYoutube {
@@ -1732,7 +1732,7 @@
 
 
 
-@media (width:768px){
+@media (min-width:768px) and (max-width: 799px){
 			.bannerDesktopBig{
 				display:block;
 			}
@@ -1750,7 +1750,7 @@
 			}
 
 			.propertySearchSection h3 {
-				font-size: 0.9em !important;
+				font-size: 13px !important;
 			}
 
 			.videoYoutube {

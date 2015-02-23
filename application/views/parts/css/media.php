@@ -56,9 +56,9 @@
 		width: 50% !important;
 	}*/
 
-	.propertySearchSection h3{
+	/*.propertySearchSection h3{
 		margin-left:-30px !important;
-	}
+	}*/
 
 	/*.videoYoutube {
 			display:none !important;
