@@ -1031,7 +1031,7 @@
 
 
 
-@media(min-width: 376px) and (max-width:499x){
+@media(min-width: 376px) and (max-width:499px){
 	.testi1,.sliderNew{
 		display:none;
 	}

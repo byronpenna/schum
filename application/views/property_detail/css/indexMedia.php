@@ -3585,7 +3585,7 @@ iframe[name="f3d7c73d9c"]{
 		padding-top: 1%; 
 		padding-bottom: 1%; 
 		padding-left: 1%;
-		width: 49%;
+		width: 48.5%;
 		display: inline-block;
 		margin-top: 1%;
 		font-size:1em;

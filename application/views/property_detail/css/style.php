@@ -352,7 +352,7 @@ label{
     font-family: "proximaNovaSemiBold";
 }
 
-nameSection1{
+.nameSection1{
 	display: none;
 }
 
