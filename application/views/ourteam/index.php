@@ -29,6 +29,9 @@
 					opacity:1;
 					font-size:1.4em;
 				}
+				.textoEmpleado p{
+					word-break:break-word;
+				}
     	</style>
 </head>
 <body>
