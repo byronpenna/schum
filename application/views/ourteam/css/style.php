@@ -1,5 +1,5 @@
 .textoEmpleado p {
-	word-break:break-all;
+	/*word-break:break-all;*/
 }
 /* revancha menu bootrap */ 
 	.navbar{
