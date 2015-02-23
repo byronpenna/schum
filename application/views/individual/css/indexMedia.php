@@ -1769,9 +1769,9 @@
 
 
 @media (min-width: 769px) and (max-width:800px){
-		.dataOtherSay p {
-			font-size: 1.7em;
-		}
+	.dataOtherSay p {
+		font-size: 1.7em;
+	}
 
 	.botonChulo {
 		width: 50%;
@@ -1782,13 +1782,17 @@
 		width: 20%;
 	}
 
+	.contactTitle{
+		font-size: 1.6em;
+	}
 
-	@media(min-width: 769px) and (max-width:800px){
-                                .amostrar{
-                                    font-size: 0.9em !important;
-                                }
+    .amostrar{
+        font-size: 0.9em !important;
+    }
 
-                        }
+    .contact2 h3{
+    	font-size: 1em;
+    }
 }
 
 
