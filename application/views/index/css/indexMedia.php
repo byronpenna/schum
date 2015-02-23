@@ -20,6 +20,9 @@
 	.titleCudritoVivienda > h3 {
 		font-size: 1.7em !important;
 	}
+
+
+	
 }
 @media(min-width:1600px) and (max-width:1899px){
 	.titleCudritoVivienda > h4 {
@@ -518,7 +521,7 @@
 			width: 90%;
 		}
 		.searchMapSection > .row > div > h3{
-			font-size: 1.4em;
+			font-size: 1em;
 		}
 	/* news to the market */
 		.imgNewsToMarket{
@@ -627,7 +630,7 @@
 		}
 	/* video section */ 
 		.videoSection h2{
-			font-size: 1.8em;
+			font-size: 1.5em;
 		}
 
 	/* buy and sell */ 
@@ -688,7 +691,7 @@
 			font-size: 1em;
 		}
 		.searchMapSection > .row > div > h3{
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 
 		/*.map {
@@ -1457,10 +1460,11 @@
 
 	.likeUsCuadrito h2{
 		font-size:1.4em;
+		width: 110%;
 	}
 
 	.schedule {
-		margin-top:-15% !important;
+		margin-top:0px !important;
 	}
 
 	.numImageNewsMarket{
@@ -1481,6 +1485,8 @@
 	.tweets a{
 		font-size: 0.95em;
 	}
+
+
 }
 
 @media(min-width: 1025px) and (max-width: 2000px) {
@@ -1493,7 +1499,7 @@
 	}
 
 	.likeUsCuadrito h2{
-		font-size:1em;
+		font-size:1.5em;
 	}
 
 	.schedule {
