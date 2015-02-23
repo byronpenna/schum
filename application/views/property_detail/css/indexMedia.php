@@ -3676,7 +3676,7 @@ iframe[name="f3d7c73d9c"]{
 
 @media (min-device-width: 769px) and (max-device-width:800px){
 			.navbar-default .navbar-nav > li > a {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 
 

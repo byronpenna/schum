@@ -1781,6 +1781,14 @@
 	.divAward img{
 		width: 20%;
 	}
+
+
+	@media(min-width: 769px) and (max-width:800px){
+                                .amostrar{
+                                    font-size: 0.9em !important;
+                                }
+
+                        }
 }
 
 

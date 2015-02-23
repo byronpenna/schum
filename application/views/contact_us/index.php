@@ -92,7 +92,13 @@
 			margin-top: -8%;
 		}
 		
+		.amostrar{
+            font-size: 0.9em !important;
+        }
+
+		
 	}
+
 
 	@media(width:768px){
 		.btnSubmit1{
@@ -106,7 +112,7 @@
 
 		.navbar-default .navbar-nav > li > a {
                             font-size: 13px;
-                        }
+        }
 	}
 
 	</style>
