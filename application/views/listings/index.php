@@ -815,9 +815,11 @@
 							<div id="conte-pagin">
 								Page <?php echo " ".$pageOf[0]." of ".$pageOf[1]." " ?>
 							</div>
-							<?php
-								echo $numsPaginacion;
-							?>
+							<div class="numbers">
+								<?php
+									echo $numsPaginacion;
+								?>
+							</div>
 						</center>
 				</div>
 				<div class="loadMore"></div>

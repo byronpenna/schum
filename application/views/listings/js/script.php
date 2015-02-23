@@ -32,6 +32,7 @@
 				$(document).on("click",".imgNav",function(){
 					// direccion 0 izquierda 1 derecha
 					// getNextPage();
+					console.log("entro imgNav");
 					direccion 	= $(this).attr("direccion");
 					page 		= $("#txtPagePaginacion").val();
 					totalPagina = $("#txtPageTotales").val();
