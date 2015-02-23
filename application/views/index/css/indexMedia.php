@@ -408,9 +408,9 @@
 			height: 400px;
 		}
 	/* video section */ 
-		.videoSection p{
+		/*.videoSection p{
 			font-size: 1.8em;
-		}
+		}*/
 	/* map section */ 
 		/*.parteMapaBusqueda{
 			display: none;
@@ -1722,7 +1722,7 @@
 			}
 
 			.sliderNew{
-				height: 340px;
+				height: 365px;
 			}
 }
 
@@ -1738,7 +1738,7 @@
 			}
 
 			.sliderNew{
-				height: 340px;
+				height: 365px;
 			}
 
 			.bannerMovil{
@@ -1874,7 +1874,7 @@
 			}
 
 			.emailEmpleado {
-				font-size: 1em !important;	
+				font-size: 1.8em !important;	
 			}
 
 			.textBuySellerBox{

@@ -27,8 +27,13 @@ class Calendarm extends Padrem
 				// AND endDate < ADDDATE(NOW(),INTERVAL 2 WEEK)
 		$this->db->trans_start();
 			$query = $this->db->query($sql);
+			if($query->num_rows() > 0){
+				$retorno = $query->result();
+			}else{
+				$retorno = false;
+			}
 		$this->db->trans_complete();
-		return $query->result();	
+		return $retorno;	
 	}
 	function getDivOpenHouseGeneral(){
 		// load 
@@ -44,7 +49,10 @@ class Calendarm extends Padrem
 			if(is_object($casa)){
 				$img 		= $this->getImgSrc($casa->rutaImg);
 				$calendario = $this->getCalendar($value->homeId);
-				$div 		.= $this->templateDiv($casa,$calendario,$img,$value->homeId);	
+				if($calendario != false){
+					$div 		.= $this->templateDiv($casa,$calendario,$img,$value->homeId);		
+				}
+				
 			}
 			// $div .= "| ".print_r($casa).",".$value->homeId." |";
 		}
@@ -126,7 +134,10 @@ class Calendarm extends Padrem
 		// do it 
 			// foreach ($openHouse as $key => $value) {
 				$calendario = $this->getCalendar($homeId);
-				$div .= $this->templateDiv($casa,$calendario,$img);
+				if($calendario != false){
+					$div .= $this->templateDiv($casa,$calendario,$img);
+				}
+				
 			// }
 		return $div;	
 	}
