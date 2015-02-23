@@ -309,7 +309,7 @@
 		}
 
 }
-/*@media(min-width: 300px) and (max-width:992px){
+@media(min-width: 300px) and (max-width:992px){
 		.bannerDesktopBig {
 			display: none;
 		}
@@ -322,8 +322,8 @@
 		.headerImage{
 			width: 100%;
 		}
-	}*/
-@media(min-width: 801px) {
+	}
+@media(min-width: 992px) {
 		.bannerDesktopBig {
 			display: block;
 		}
@@ -333,14 +333,6 @@
 		.bannerMovil {
 			display: none;
 		}
-
-		.navbar-default .navbar-nav > li > a {
-				font-size: 0.8em;
-			}
-
-			.amostrar {
-				font-size: 0.9em;
-			}
 	}
 
 	@media(min-width: 769px) and (max-width:2000px){

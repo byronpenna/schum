@@ -438,7 +438,7 @@
 			min-height: 0;*/
 		}
 		.propertySearchSection h3{
-			font-size: 0.9em;
+			font-size: 1em;
 		}
 }
 @media(max-width:992px){
@@ -518,7 +518,7 @@
 			width: 90%;
 		}
 		.searchMapSection > .row > div > h3{
-			font-size: 1em;
+			font-size: 1.4em;
 		}
 	/* news to the market */
 		.imgNewsToMarket{
@@ -592,7 +592,7 @@
 		/* Search bar */
 		.searchBar select,.searchBar button{
 			height: auto;
-			font-size: 1em;
+			/*font-size: 1em;*/
 		}
 
 		.sliderPoints{	
@@ -614,10 +614,6 @@
 		
 	body{
 		background: green;
-	}
-
-	.btnSearchNow {
-		margin-top: 0px !important;
 	}
 }
 @media(min-width:1100px){
@@ -1485,11 +1481,6 @@
 	.tweets a{
 		font-size: 0.95em;
 	}
-
-
-	.btnSearchNow {
-		margin-top: 1.5%;
-	}
 }
 
 @media(min-width: 1025px) and (max-width: 2000px) {
@@ -1510,6 +1501,699 @@
 	}
 
 	
+}
+
+
+
+
+@media (width:992px){
+			.bannerDesktopBig{
+				display:block;
+			}
+
+
+			.navbar-default .navbar-nav > li > a {
+				font-size: 0.8em;
+			}
+
+			.amostrar {
+				font-size: 0.9em;
+			}
+			
+
+			.videoSection h2 {
+			font-size: 1.7em !important;
+			}
+
+			.bannerMovil{
+				display: none;
+			}
+
+			#wordpress{
+				display:none;
+			}
+
+			.propertySearchSection h3 {
+				font-size: 0.9em !important;
+			}
+
+			.videoYoutube {
+				text-align: left;
+				width: 60%;
+				/*background: red;*/
+				margin-left: -1%;
+				margin-top: -8%;
+			}
+
+			.youtubeVideoHome {
+				width: 100% !important;
+				min-height: 300px !important;
+				height: auto;
+				margin: 0 auto;
+				margin-top: 5%;
+			}
+
+
+			#divCruzado{
+				display: none;
+			}
+
+
+			.titleVideoSection {
+				/* margin: 0; */
+				 margin-bottom: 0px !important; 
+				/*margin-left: -52%;*/
+				font-size: 1.8em;
+			}
+
+			.rightVideoSection{
+				width: 40%;
+				margin-top: -8%;
+			}
+
+
+			.schedule {
+				margin-top: 8% !important;
+				width: 100% !important;
+				padding-bottom: 15px;
+			}
+
+			.fbMostrar{
+				display: none;
+			}
+
+			/*.titleOpenHouse{
+				margin-right: 28%;
+			}*/
+
+
+			.likeUsCuadrito {
+				width: 100% !important;
+				margin: 0 auto ;
+				text-align: left !important;
+			}
+
+			.conteFB{
+				margin-left:-15%;
+			}
+
+
+			.likeUsCuadrito h2{
+				font-size: 1.8em;
+				margin-left: -5%;
+				/*background: orange;*/
+				width: 110%;
+			}
+			
+
+			.schedule  h4{
+				height: 3px !important;
+				margin-top: 5%;
+			}
+
+			.casaNewsToMarket {
+				margin-right: 4.6%;
+				margin-left: 4.6%;
+				margin-top: 4.6%;
+				margin-bottom: 0;
+				padding-left: 0;
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				width: 40%;
+				/* margin: 4.6%; */
+			}
+
+			.titleNewsToMarketSection{
+				font-size: 1.5em;
+			}
+
+			.imgNewsToMarket {
+				height: 240px !important;
+			}
+
+
+			.newsToMarketTitle {
+				font-size: 1.2em !important;
+			}
+
+			.newsToMarket h2 {
+				font-size: 1.8em;
+			}
+			
+
+			.banner2 p {
+				font-size: 1.8em !important;
+			}
+
+			.banner2{
+				height: 357px !important;
+				padding-left: 20% !important;
+				padding-right: 20% !important;
+			}
+
+			.aEmpleadoLink li p{
+				font-size: 1.4em !important;
+			}
+
+			.emailEmpleado {
+				font-size: 1.4em !important;	
+			}
+
+			.textBuySellerBox{
+				font-size: 1.2em;
+			}
+
+			.controlSearchbar {
+				margin-top: 11%;
+				padding-bottom: 5% !important;
+			}
+
+
+			
+
+			/*.afterPrincipal{
+				margin-top:21%;
+			}*/
+
+
+
+			.n-navNewsSection{
+				/*background: red;*/
+				width: 15%;
+				float: right;
+				vertical-align: top;
+				margin-top: -4%;
+			}
+
+
+			.pedazoNewsToMarket {
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+
+			.numImageNewsMarket{
+				padding: 3% 1%;
+				width: 18%;
+				font-size: 1.2em;
+			}
+
+
+			.newsToMarketSubTitle {
+				color: #999999;
+				font-family: 'proximaNovaSemiBold';
+				margin-bottom: 3%;
+				margin-top: 2%;
+				margin-left: -2%;
+				font-size: 1.5em;
+			}
+
+			.boxOurTeam {
+				height: 780px !important;
+			}
+
+			.cont-sellers {
+				width: 49.3%;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 3px;
+				padding-right: 0px;
+				padding-left: 0px;
+			}
+
+
+			#boxBuySell0, #boxBuySell2 {
+				min-height: 240px;
+			}
+
+			.sliderNew{
+				height: 400px;
+			}
+
+			.btnSearchNow {
+				margin-top: -0.5%;
+			}
+
+
+			.ourTeamDescription{
+				width: 50%;
+			}
+
+
+			.ourTeamDescription p {
+				font-size: 1em !important;
+			}
+}
+
+
+
+
+@media (min-width:901px) and (max-width: 991px){
+			.bannerDesktopBig{
+				display:block;
+			}
+
+
+			.navbar-default .navbar-nav > li > a {
+				font-size: 0.8em;
+			}
+
+			.amostrar {
+				font-size: 0.9em;
+			}
+
+			.bannerMovil{
+				display: none;
+			}
+
+			#wordpress{
+				display:none;
+			}
+
+			.propertySearchSection h3 {
+				font-size: 0.9em !important;
+			}
+
+			.videoYoutube {
+				text-align: left;
+				width: 60%;
+				/*background: red;*/
+				margin-left: -1%;
+				margin-top: -8%;
+			}
+
+			.youtubeVideoHome {
+				width: 100% !important;
+				min-height: 300px !important;
+				height: auto;
+				margin: 0 auto;
+				margin-top: 5%;
+			}
+
+
+			#divCruzado{
+				display: none;
+			}
+
+
+			.titleVideoSection {
+				/* margin: 0; */
+				 margin-bottom: 0px !important; 
+				/*margin-left: -52%;*/
+				font-size: 1.8em;
+			}
+
+			.rightVideoSection{
+				width: 40%;
+				margin-top: -8%;
+			}
+
+
+			.schedule {
+				margin-top: 8% !important;
+				width: 100% !important;
+				padding-bottom: 15px;
+			}
+
+			.fbMostrar{
+				display: none;
+			}
+
+			/*.titleOpenHouse{
+				margin-right: 28%;
+			}*/
+
+
+			.likeUsCuadrito {
+				width: 100% !important;
+				margin: 0 auto ;
+				text-align: left !important;
+			}
+
+			.conteFB{
+				margin-left:-15%;
+			}
+
+
+			.likeUsCuadrito h2{
+				font-size: 1.8em;
+				margin-left: -5%;
+				/*background: orange;*/
+				width: 110%;
+			}
+			
+
+			.schedule  h4{
+				height: 3px !important;
+				margin-top: 5%;
+			}
+
+			.casaNewsToMarket {
+				margin-right: 4.6%;
+				margin-left: 4.6%;
+				margin-top: 4.6%;
+				margin-bottom: 0;
+				padding-left: 0;
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				width: 40%;
+				/* margin: 4.6%; */
+			}
+
+			.titleNewsToMarketSection{
+				font-size: 1.5em;
+			}
+
+			.imgNewsToMarket {
+				height: 240px !important;
+			}
+
+
+			.newsToMarketTitle {
+				font-size: 1.2em !important;
+			}
+
+			.newsToMarket h2 {
+				font-size: 1.8em;
+			}
+			
+
+			.banner2 p {
+				font-size: 1.8em !important;
+			}
+
+			.banner2{
+				height: 357px !important;
+				padding-left: 20% !important;
+				padding-right: 20% !important;
+			}
+
+			.aEmpleadoLink li p{
+				font-size: 1.8em !important;
+			}
+
+			.emailEmpleado {
+				font-size: 2.5em !important;	
+			}
+
+			.textBuySellerBox{
+				font-size: 1.2em;
+			}
+
+			.controlSearchbar {
+				margin-top: 11%;
+				padding-bottom: 5% !important;
+			}
+
+
+			
+
+			/*.afterPrincipal{
+				margin-top:21%;
+			}*/
+
+
+
+			.n-navNewsSection{
+				/*background: red;*/
+				width: 15%;
+				float: right;
+				vertical-align: top;
+				margin-top: -4%;
+			}
+
+
+			.pedazoNewsToMarket {
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+
+			.numImageNewsMarket{
+				padding: 3% 1%;
+				width: 18%;
+				font-size: 1.2em;
+			}
+
+
+			.newsToMarketSubTitle {
+				color: #999999;
+				font-family: 'proximaNovaSemiBold';
+				margin-bottom: 3%;
+				margin-top: 2%;
+				margin-left: -2%;
+				font-size: 1.5em;
+			}
+
+			.boxOurTeam {
+				height: 700px !important;
+			}
+
+			.cont-sellers {
+				width: 49.3%;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 3px;
+				padding-right: 0px;
+				padding-left: 0px;
+			}
+
+
+			#boxBuySell0, #boxBuySell2 {
+				min-height: 240px;
+			}
+
+			.sliderNew{
+				height: 400px;
+			}
+
+			.btnSearchNow {
+				margin-top: -0.5%;
+			}
+}
+
+
+
+
+
+
+@media (min-width:801px) and (max-width: 900px){
+			.bannerDesktopBig{
+				display:block;
+			}
+
+			.navbar-default .navbar-nav > li > a {
+				font-size: 0.8em;
+			}
+
+			.amostrar {
+				font-size: 0.9em;
+			}
+
+			.bannerMovil{
+				display: none;
+			}
+
+			#wordpress{
+				display:none;
+			}
+
+			.propertySearchSection h3 {
+				font-size: 0.8em !important;
+			}
+
+			.videoYoutube {
+				text-align: left;
+				width: 60%;
+				/*background: red;*/
+				margin-left: -1%;
+				margin-top: -8%;
+			}
+
+			.youtubeVideoHome {
+				width: 100% !important;
+				min-height: 300px !important;
+				height: auto;
+				margin: 0 auto;
+				margin-top: 5%;
+			}
+
+
+			#divCruzado{
+				display: none;
+			}
+
+
+			.titleVideoSection {
+				/* margin: 0; */
+				 margin-bottom: 0px !important; 
+				/*margin-left: -52%;*/
+				font-size: 1.8em;
+			}
+
+			.rightVideoSection{
+				width: 40%;
+				margin-top: -8%;
+			}
+
+
+			.schedule {
+				margin-top: 8% !important;
+				width: 100% !important;
+				padding-bottom: 15px;
+			}
+
+			.fbMostrar{
+				display: none;
+			}
+
+			/*.titleOpenHouse{
+				margin-right: 28%;
+			}*/
+
+
+			.likeUsCuadrito {
+				width: 100% !important;
+				margin: 0 auto ;
+				text-align: left !important;
+			}
+
+			.conteFB{
+				margin-left:-15%;
+			}
+
+
+			.likeUsCuadrito h2{
+				font-size: 1.8em;
+				margin-left: -5%;
+				/*background: orange;*/
+				width: 110%;
+			}
+			
+
+			.schedule  h4{
+				height: 3px !important;
+				margin-top: 5%;
+			}
+
+			.casaNewsToMarket {
+				margin-right: 4.6%;
+				margin-left: 4.6%;
+				margin-top: 4.6%;
+				margin-bottom: 0;
+				padding-left: 0;
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				width: 40%;
+				/* margin: 4.6%; */
+			}
+
+			.titleNewsToMarketSection{
+				font-size: 1.5em;
+			}
+
+			.imgNewsToMarket {
+				height: 240px !important;
+			}
+
+
+			.newsToMarketTitle {
+				font-size: 1.2em !important;
+			}
+
+			.newsToMarket h2 {
+				font-size: 1.8em;
+			}
+			
+
+			.banner2 p {
+				font-size: 1.8em !important;
+			}
+
+			.banner2{
+				height: 357px !important;
+				padding-left: 20% !important;
+				padding-right: 20% !important;
+			}
+
+			.aEmpleadoLink li p{
+				font-size: 1.8em !important;
+			}
+
+			.emailEmpleado {
+				font-size: 2.5em !important;	
+			}
+
+			.textBuySellerBox{
+				font-size: 1.2em;
+			}
+
+			.controlSearchbar {
+				margin-top: 11%;
+				padding-bottom: 5% !important;
+			}
+
+
+			
+
+			/*.afterPrincipal{
+				margin-top:21%;
+			}*/
+
+
+
+			.n-navNewsSection{
+				/*background: red;*/
+				width: 15%;
+				float: right;
+				vertical-align: top;
+				margin-top: -4%;
+			}
+
+
+			.pedazoNewsToMarket {
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}
+
+			.numImageNewsMarket{
+				padding: 3% 1%;
+				width: 18%;
+				font-size: 1.2em;
+			}
+
+
+			.newsToMarketSubTitle {
+				color: #999999;
+				font-family: 'proximaNovaSemiBold';
+				margin-bottom: 3%;
+				margin-top: 2%;
+				margin-left: -2%;
+				font-size: 1.5em;
+			}
+
+			.boxOurTeam {
+				height: 600px !important;
+			}
+
+			.cont-sellers {
+				width: 49.3%;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 3px;
+				padding-right: 0px;
+				padding-left: 0px;
+			}
+
+
+			#boxBuySell0, #boxBuySell2 {
+				min-height: 240px;
+			}
+
+			.sliderNew{
+				height: 375px;
+			}
 }
 
 
@@ -1717,7 +2401,7 @@
 			}
 
 			.cont-sellers {
-				width: 49.4%;
+				width: 49.3%;
 				display: inline-block;
 				vertical-align: top;
 				margin-left: 3px;
