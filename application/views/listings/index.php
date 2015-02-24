@@ -370,7 +370,141 @@
 
 
 
+				@media (min-width: 901px) and (max-width:992px){
+						.navbar-default .navbar-nav > li > a {
+							font-size: 0.6em;
+						}
 
+						.searchBar > .col-sm-2 {
+							padding: 0.2%;
+							margin-top: 1.6%;
+						}
+
+
+						.selecter-selected {
+							font-size: 0.55em !important;
+							width: 390% !important;
+						}
+
+
+						.selecter-selected {
+							position: relative;
+							background: #ffffff;
+							border: 1px solid #cccccc;
+							color: #222222;
+							cursor: pointer;
+							display: block;
+							font-size: 13px;
+							margin: 0;
+							overflow: hidden;
+							padding: 10px 5px;
+							text-overflow: clip;
+							z-index: 2;
+							border-radius: 0px;
+						}
+
+
+						.searchBar > .col-sm-10 > .col-sm-2 {
+							padding: 1%;
+							margin-left: -1px;
+						}
+
+
+						#conte-pagin {
+							width: 15%;
+							padding: 5px;
+						}
+
+
+						.imgNav, .btnPagincion {
+							width: 2%;
+							padding: 0.5em;
+							height: 40px;
+							padding-right: 2.5%;
+						}
+
+						.elmapa{
+							display: none;
+						}
+
+
+						.paginationSection {
+						margin-top: 5%;
+						/* margin-left: -40%; */
+						margin-bottom: 2% !important;
+						}
+		
+				}
+
+
+				@media (min-width: 801px) and (max-width:900px){
+						.navbar-default .navbar-nav > li > a {
+							font-size: 0.6em;
+							margin-top: -10% !important;
+						}
+
+						.searchBar > .col-sm-2 {
+							padding: 0.2%;
+							margin-top: 1.6%;
+						}
+
+
+						.selecter-selected {
+							font-size: 0.55em !important;
+							width: 390% !important;
+						}
+
+
+						.selecter-selected {
+							position: relative;
+							background: #ffffff;
+							border: 1px solid #cccccc;
+							color: #222222;
+							cursor: pointer;
+							display: block;
+							font-size: 13px;
+							margin: 0;
+							overflow: hidden;
+							padding: 10px 5px;
+							text-overflow: clip;
+							z-index: 2;
+							border-radius: 0px;
+						}
+
+
+						.searchBar > .col-sm-10 > .col-sm-2 {
+							padding: 1%;
+							margin-left: -1px;
+						}
+
+
+						#conte-pagin {
+							width: 15%;
+							padding: 5px;
+						}
+
+
+						.imgNav, .btnPagincion {
+							width: 2%;
+							padding: 0.5em;
+							height: 40px;
+							padding-right: 2.5%;
+						}
+
+						.elmapa{
+							display: none;
+						}
+
+
+						.paginationSection {
+						margin-top: 5%;
+						/* margin-left: -40%; */
+						margin-bottom: 2% !important;
+						}
+
+
+						
+				}
 
 
 				@media (min-width: 775px) and (max-width:800px){

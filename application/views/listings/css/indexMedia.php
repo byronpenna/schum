@@ -134,9 +134,9 @@
 /*lllllllllllllllllllllllllllllllllll*/
 /*Display by 5.0*/
 @media(min-width:930px) and (max-width:992px){
-.btnSearchNow {
+/*.btnSearchNow {
 	margin-top: 6%;
-}
+}*/
 .btnSearchNow > .lupita {
 	font-size: 110%;
 }
@@ -705,6 +705,11 @@
 @media(min-width:770px){
     .imgListing{
 			min-height: 150px;
+		}
+
+
+		.amostrar{
+			font-size: 14px ;
 		}
 		.serchi{
 			font-size: 1.3em;

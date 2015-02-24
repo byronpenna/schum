@@ -154,7 +154,7 @@
 			width: 95%;
 		}
 		.navbar-default .navbar-nav > li > a{
-			font-size: 1em;
+			font-size: 0.9em;
 		}
 		.navbar-nav{
 			margin-left: 5%;
@@ -310,9 +310,7 @@
 
 }
 @media(min-width: 300px) and (max-width:992px){
-		.bannerDesktopBig {
-			display: none;
-		}
+	
 		.bannerDesktop {
 			display: none;
 		}
@@ -358,7 +356,7 @@
 	}
 }
 
-@media (min-device-width: 100px) and (max-device-width:414px){
+@media (min-width: 100px) and (max-width:414px){
 		.amostrar,.aocultar,.conte-socialNetwork{
 			display:none;
 			z-index:0;
@@ -527,7 +525,7 @@
 
 
 
-@media (min-device-width: 415px) and (max-device-width:500px){
+@media (min-width: 415px) and (max-width:500px){
 		.amostrar,.aocultar,.conte-socialNetwork{
 			display:none;
 			z-index:0;
@@ -693,7 +691,7 @@
 
 
 
-@media (min-device-width: 501px) and (max-device-width:603px){
+@media (min-width: 501px) and (max-width:603px){
 		.amostrar,.aocultar,.conte-socialNetwork{
 			display:none;
 			z-index:0;
@@ -868,7 +866,7 @@
 
 
 
-@media (min-device-width: 604px) and (max-device-width:767px){
+@media (min-width: 604px) and (max-width:767px){
 		.amostrar,.aocultar,.conte-socialNetwork{
 			display:none;
 			z-index:0;
@@ -1059,6 +1057,58 @@
 }
 
 
+@media (min-width: 801px) and (max-width:900px){
+			.bannerDesktopBig{
+				display:block;
+			}
+
+			.bannerMovil{
+				display: none;
+			}
+
+			#wordpress{
+				display:none;
+			}
+
+			.propertySearchSection h3 {
+				font-size: 0.9em !important;
+			}
+			
+			#spanFooter{
+				float: left !important;
+			}
+
+			.connectFooter{
+				text-align: left !important;
+			}
+
+			.contSociales,.tituloFooter{
+				width: 94%;
+			}
+			
+			.contSociales{
+				margin-top: -25%;
+			}
+
+			.circle-text {
+				font-size: 1.2em;
+			}
+
+
+			.iconCuadro {
+				width: 7%;
+				display: inline-block;
+				margin-left: 1%;
+			}
+
+
+			.conteImgInternas {
+							width: 110%;
+							height: 150px;
+							overflow: hidden;
+							margin-left: -5%;
+			}
+}
 
 
 
@@ -1066,8 +1116,7 @@
 
 
 
-
-@media (min-device-width: 769px) and (max-device-width:800px){
+@media (min-width: 769px) and (max-width:800px){
 			.bannerDesktopBig{
 				display:block;
 			}
