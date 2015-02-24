@@ -778,7 +778,7 @@
 			}
 		/* Social */
 			.navbar-default .navbar-nav > li > a {
-				font-size: 1.5em;
+				font-size: 17px;
 			}
 	/* News to the market */ 
 		.casaNewsToMarket{
@@ -822,7 +822,7 @@
 			margin-top: 15%;
 		}
 		.videoSection h2{
-			font-size: 2.5em;
+			font-size: 2em;
 		}
 		.videoSection h4{
 			font-size: 1.7em;
@@ -855,7 +855,7 @@
 			.propertySearchSection h3{
 				font-family: 'proximaNovaBold';
 				color: white;
-				font-size: 1.4em;
+				font-size: 20px;
 			}
 			.navSliderSection{
 				margin-top: 12%;
@@ -870,7 +870,7 @@
 					font-size: 1.2em;
 				}
 				.searchMapSection > .row > div > h3{
-					font-size: 1.9em;
+					font-size: 1.5em;
 				}
 			/* ######## */
 			.lateralSeachBody select{

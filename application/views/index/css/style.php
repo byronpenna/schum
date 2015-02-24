@@ -760,6 +760,7 @@ body{
 			}*/
 			.btnSearchNow{
 				padding-right: 1%;
+				font-size: 13.5px;
 			}
 
 		.searchBarBackground{

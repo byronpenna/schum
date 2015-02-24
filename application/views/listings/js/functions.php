@@ -3,7 +3,7 @@
 		cn 		= page - 1;
 		cn 		= cn * 10;
 		div = "\
-			<div class='col-lg-1 col-sm-1 imgNav' direccion='0' id='imgNavLeft'>\
+			<div class='imgNav' direccion='0' id='imgNavLeft'>\
 				<i class='fa fa-angle-left blank'></i>\
 			</div>\
 		"; 
@@ -31,7 +31,7 @@
 
 			if( i <= totalPagina){
 				div += "\
-				<div class='btnPaginacion col-lg-1 col-sm-1' valor='"+num+"' style='width:auto;'>\
+				<div class='btnPaginacion' valor='"+num+"' style='width:auto;'>\
 					"+num+"\
 				</div>\
 				";	
@@ -39,7 +39,7 @@
 			
 		};
 		div += "\
-		<div class='col-lg-1 col-sm-1 imgNav' direccion='1' id='imgNavRight'>\
+		<div class=' imgNav' direccion='1' id='imgNavRight'>\
 			<i class='fa fa-angle-right blank'></i>\
 		</div>\
 		";

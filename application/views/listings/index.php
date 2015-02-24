@@ -958,11 +958,11 @@
 					<span class='hidden' id='txtOrigen'><?php echo $origen ?></span>
 							<input type="hidden" id='txtPagePaginacion' value=<?php echo "'".($pageOf[0]+1)."'" ?> >
 							<input type="hidden" id='txtPageTotales' 	value=<?php echo "'".$pageOf[1]."'" ?> >
-							
-							<div class="numbers">
-								<div id="conte-pagin">
+							<div id="conte-pagin">
 								Page <?php echo " ".$pageOf[0]." of ".$pageOf[1]." " ?>
 							</div>
+							<div class="numbers">
+								
 								<?php
 									echo $numsPaginacion;
 								?>

@@ -143,7 +143,7 @@
 	/* paginacion */
 
 		.numbers{
-			width: 100%;
+			width: 50%;
 		}
 
 		.numbers div{
@@ -244,18 +244,20 @@
 	height: 40px;
 
 }
-#conte-pagin{
-width: 10%;
-padding: 5px;
-/* float: left; */
-/* margin-top: 1%; */
-/* margin-left: 12%; */
-/* background: red; */
-/* position: absolute; */
-font-size: 1.5em !important;
-width: 20%;
-border: none;
-}
+	#conte-pagin{
+		width: 10%;
+		padding: 5px;
+		/* float: left; */
+		/* margin-top: 1%; */
+		/* margin-left: 12%; */
+		/* background: red; */
+		/* position: absolute; */
+		font-size: 1.5em !important;
+		width: 20%;
+		border: none;
+	}
+
+	
 .paginationSection{
 	width: 100%;
 }
@@ -263,4 +265,5 @@ border: none;
 .paginationSection div{
 	display: inline-block;
 	vertical-align: top;
+	/*background: orange;*/
 }

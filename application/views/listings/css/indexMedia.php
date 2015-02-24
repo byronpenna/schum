@@ -969,7 +969,7 @@
 			text-align: center;
 		}
 		.descripcionCasa h3{
-			font-size: 1.15em;
+			font-size: 1em;
 		}
 		.navbar{
 			margin-bottom: 16%;
@@ -978,7 +978,7 @@
 			font-size: 0.8em;
 		}
 		.descripcionCasa h2{
-			font-size: 2em;
+			font-size: 1.8em;
 		}
 		.col-lg-8 {
 		margin-left: 33%;
