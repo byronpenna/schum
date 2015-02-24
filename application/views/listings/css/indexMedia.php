@@ -341,17 +341,6 @@
 		.descripcionCasa h2{
 			font-size: 2em;
 		}
-		.numbers div{
-			font-size: 3em;
-			text-align: center;
-			margin: 1%;
-			width: 5%;
-			padding: 1%;
-			border: 2px solid;
-			font-family: 'proximaNovaSemiBold';
-			color: #333333;
-			cursor: pointer;
-		}
 		.numbers > .col-sm-1 {
 		font-size: 1.5em;
 		}
@@ -399,17 +388,7 @@
 		.descripcionCasa h2{
 			font-size: 2em;
 		}
-		.numbers div{
-			font-size: 3em;
-			text-align: center;
-			margin: 1%;
-			width: 5%;
-			padding: 1%;
-			border: 2px solid;
-			font-family: 'proximaNovaSemiBold';
-			color: #333333;
-			cursor: pointer;
-		}
+		
 		.numbers > .col-sm-1 {
 		font-size: 1.5em;
 		}

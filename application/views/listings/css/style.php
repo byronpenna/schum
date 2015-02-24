@@ -141,19 +141,24 @@
 		font-family: 'proximaNovaSemiBold';
 	}
 	/* paginacion */
+
+		.numbers{
+			width: 100%;
+		}
+
 		.numbers div{
-			font-size: 3em;
+			font-size: 1.5em;
 			text-align: center;
-			margin: 1%;
-			width: 11%;
-			/*padding-top: 1%;
-			padding-bottom: 1%;*/
-			padding: 1%;
+			margin: 0.1%;
+			width: auto;
+			/* padding: 1%; */
+			height: 50px;
 			border: 2px solid;
 			font-family: 'proximaNovaSemiBold';
 			color: #333333;
 			cursor: pointer;
 		}
+		
 		#imgNavLeft{
 			background: #314782;
         }
@@ -241,7 +246,14 @@
 }
 #conte-pagin{
 	width: 10%;
-	padding:5px;
+padding: 5px;
+/* float: left; */
+/* margin-top: 1%; */
+margin-left: 12%;
+/*background: red;*/
+position: absolute;
+font-size: 1.5em !important;
+width: 15%;
 }
 .paginationSection{
 	width: 100%;

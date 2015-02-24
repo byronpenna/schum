@@ -1460,7 +1460,7 @@
 	}
 
 	.schedule {
-		margin-top:-15% !important;
+		margin-top:-3% !important;
 	}
 
 	.numImageNewsMarket{
