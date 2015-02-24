@@ -134,9 +134,9 @@
 /*lllllllllllllllllllllllllllllllllll*/
 /*Display by 5.0*/
 @media(min-width:930px) and (max-width:992px){
-.btnSearchNow {
+/*.btnSearchNow {
 	margin-top: 6%;
-}
+}*/
 .btnSearchNow > .lupita {
 	font-size: 110%;
 }
@@ -341,17 +341,6 @@
 		.descripcionCasa h2{
 			font-size: 2em;
 		}
-		.numbers div{
-			font-size: 3em;
-			text-align: center;
-			margin: 1%;
-			width: 5%;
-			padding: 1%;
-			border: 2px solid;
-			font-family: 'proximaNovaSemiBold';
-			color: #333333;
-			cursor: pointer;
-		}
 		.numbers > .col-sm-1 {
 		font-size: 1.5em;
 		}
@@ -399,17 +388,7 @@
 		.descripcionCasa h2{
 			font-size: 2em;
 		}
-		.numbers div{
-			font-size: 3em;
-			text-align: center;
-			margin: 1%;
-			width: 5%;
-			padding: 1%;
-			border: 2px solid;
-			font-family: 'proximaNovaSemiBold';
-			color: #333333;
-			cursor: pointer;
-		}
+		
 		.numbers > .col-sm-1 {
 		font-size: 1.5em;
 		}
@@ -701,10 +680,20 @@
 			background-size: 85%;
 		}
 
+
+		.navbar-default .navbar-nav > li > a {
+							font-size: 14px;
+						}
+
 }
 @media(min-width:770px){
     .imgListing{
 			min-height: 150px;
+		}
+
+
+		.amostrar{
+			font-size: 14px ;
 		}
 		.serchi{
 			font-size: 1.3em;
@@ -800,6 +789,10 @@
 			font-size: 1.3em;
 			padding-left: 0%;
 			padding-right: 5%;
+		}
+
+		.navbar-default .navbar-nav > li > a {
+		font-size: 17px;
 		}
     
     		.searchBar > .col-sm-10 > .col-sm-2 > select,.searchBar > .col-sm-2 > button{

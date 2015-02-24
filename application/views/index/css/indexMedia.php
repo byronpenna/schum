@@ -1464,7 +1464,8 @@
 	}
 
 	.schedule {
-		margin-top:0px !important;
+		margin-top:-3% !important;
+
 	}
 
 	.numImageNewsMarket{

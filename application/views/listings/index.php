@@ -143,6 +143,8 @@
 									width: 40%;
 									padding: 5px;
 									display: block;
+									position: relative;
+									margin-left: 0px;
 								}
 
 
@@ -246,6 +248,8 @@
 									width: 40%;
 									padding: 5px;
 									display: block;
+									position: relative;
+									margin-left: 0px;
 								}
 
 
@@ -345,9 +349,11 @@
 								}
 
 								#conte-pagin {
-									width: 40%;
+									width: 55%;
 									padding: 5px;
 									display: block;
+									position: relative;
+									margin-left: 0px;
 								}
 
 
@@ -370,7 +376,145 @@
 
 
 
+				@media (min-width: 901px) and (max-width:992px){
+						.navbar-default .navbar-nav > li > a {
+							font-size: 0.6em;
+						}
 
+						.searchBar > .col-sm-2 {
+							padding: 0.2%;
+							margin-top: 1.6%;
+						}
+
+
+						.selecter-selected {
+							font-size: 0.55em !important;
+							width: 390% !important;
+						}
+
+
+						.selecter-selected {
+							position: relative;
+							background: #ffffff;
+							border: 1px solid #cccccc;
+							color: #222222;
+							cursor: pointer;
+							display: block;
+							font-size: 13px;
+							margin: 0;
+							overflow: hidden;
+							padding: 10px 5px;
+							text-overflow: clip;
+							z-index: 2;
+							border-radius: 0px;
+						}
+
+
+						.searchBar > .col-sm-10 > .col-sm-2 {
+							padding: 1%;
+							margin-left: -1px;
+						}
+
+
+						#conte-pagin {
+							width: 25%;
+							padding: 5px;
+							position: relative;
+									margin-left: 0px;
+						}
+
+
+						.imgNav, .btnPagincion {
+							width: 2%;
+							padding: 0.5em;
+							height: 40px;
+							padding-right: 2.5%;
+						}
+
+						.elmapa{
+							display: none;
+						}
+
+
+						.paginationSection {
+						margin-top: 5%;
+						/* margin-left: -40%; */
+						margin-bottom: 2% !important;
+						}
+		
+				}
+
+
+				@media (min-width: 801px) and (max-width:900px){
+						.navbar-default .navbar-nav > li > a {
+							font-size: 0.6em;
+							margin-top: -10% !important;
+						}
+
+						.searchBar > .col-sm-2 {
+							padding: 0.2%;
+							margin-top: 1.6%;
+						}
+
+
+						.selecter-selected {
+							font-size: 0.55em !important;
+							width: 390% !important;
+						}
+
+
+						.selecter-selected {
+							position: relative;
+							background: #ffffff;
+							border: 1px solid #cccccc;
+							color: #222222;
+							cursor: pointer;
+							display: block;
+							font-size: 13px;
+							margin: 0;
+							overflow: hidden;
+							padding: 10px 5px;
+							text-overflow: clip;
+							z-index: 2;
+							border-radius: 0px;
+						}
+
+
+						.searchBar > .col-sm-10 > .col-sm-2 {
+							padding: 1%;
+							margin-left: -1px;
+						}
+
+
+						#conte-pagin {
+							width: 25%;
+							padding: 5px;
+							position: relative;
+									margin-left: 0px;
+						}
+
+
+						.imgNav, .btnPagincion {
+							width: 2%;
+							padding: 0.5em;
+							height: 40px;
+							padding-right: 2.5%;
+						}
+
+						.elmapa{
+							display: none;
+						}
+
+
+						.paginationSection {
+						margin-top: 5%;
+						/* margin-left: -40%; */
+						margin-bottom: 2% !important;
+						}
+
+
+						
+				}
 
 
 				@media (min-width: 775px) and (max-width:800px){
@@ -414,8 +558,10 @@
 
 
 						#conte-pagin {
-							width: 15%;
+							width: 25%;
 							padding: 5px;
+							position: relative;
+									margin-left: 0px;
 						}
 
 
@@ -812,10 +958,11 @@
 					<span class='hidden' id='txtOrigen'><?php echo $origen ?></span>
 							<input type="hidden" id='txtPagePaginacion' value=<?php echo "'".($pageOf[0]+1)."'" ?> >
 							<input type="hidden" id='txtPageTotales' 	value=<?php echo "'".$pageOf[1]."'" ?> >
-							<div id="conte-pagin">
+							
+							<div class="numbers">
+								<div id="conte-pagin">
 								Page <?php echo " ".$pageOf[0]." of ".$pageOf[1]." " ?>
 							</div>
-							<div class="numbers">
 								<?php
 									echo $numsPaginacion;
 								?>

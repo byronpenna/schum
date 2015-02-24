@@ -419,7 +419,7 @@ label{
 	vertical-align: top;
 	margin-left:5px;
 	width: 32%;
-	height: 170px;
+	height: 195px;
 	padding:0px;
 	padding-top:15px;
 	cursor:pointer;
