@@ -143,6 +143,8 @@
 									width: 40%;
 									padding: 5px;
 									display: block;
+									position: relative;
+									margin-left: 0px;
 								}
 
 
@@ -246,6 +248,8 @@
 									width: 40%;
 									padding: 5px;
 									display: block;
+									position: relative;
+									margin-left: 0px;
 								}
 
 
@@ -345,9 +349,11 @@
 								}
 
 								#conte-pagin {
-									width: 40%;
+									width: 55%;
 									padding: 5px;
 									display: block;
+									position: relative;
+									margin-left: 0px;
 								}
 
 
@@ -411,8 +417,10 @@
 
 
 						#conte-pagin {
-							width: 15%;
+							width: 25%;
 							padding: 5px;
+							position: relative;
+									margin-left: 0px;
 						}
 
 
@@ -479,8 +487,10 @@
 
 
 						#conte-pagin {
-							width: 15%;
+							width: 25%;
 							padding: 5px;
+							position: relative;
+									margin-left: 0px;
 						}
 
 
@@ -548,8 +558,10 @@
 
 
 						#conte-pagin {
-							width: 15%;
+							width: 25%;
 							padding: 5px;
+							position: relative;
+									margin-left: 0px;
 						}
 
 
@@ -946,10 +958,11 @@
 					<span class='hidden' id='txtOrigen'><?php echo $origen ?></span>
 							<input type="hidden" id='txtPagePaginacion' value=<?php echo "'".($pageOf[0]+1)."'" ?> >
 							<input type="hidden" id='txtPageTotales' 	value=<?php echo "'".$pageOf[1]."'" ?> >
-							<div id="conte-pagin">
+							
+							<div class="numbers">
+								<div id="conte-pagin">
 								Page <?php echo " ".$pageOf[0]." of ".$pageOf[1]." " ?>
 							</div>
-							<div class="numbers">
 								<?php
 									echo $numsPaginacion;
 								?>

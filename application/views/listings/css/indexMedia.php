@@ -680,6 +680,11 @@
 			background-size: 85%;
 		}
 
+
+		.navbar-default .navbar-nav > li > a {
+							font-size: 14px;
+						}
+
 }
 @media(min-width:770px){
     .imgListing{
@@ -784,6 +789,10 @@
 			font-size: 1.3em;
 			padding-left: 0%;
 			padding-right: 5%;
+		}
+
+		.navbar-default .navbar-nav > li > a {
+		font-size: 17px;
 		}
     
     		.searchBar > .col-sm-10 > .col-sm-2 > select,.searchBar > .col-sm-2 > button{

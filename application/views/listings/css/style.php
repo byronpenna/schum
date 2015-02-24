@@ -245,15 +245,16 @@
 
 }
 #conte-pagin{
-	width: 10%;
+width: 10%;
 padding: 5px;
 /* float: left; */
 /* margin-top: 1%; */
-margin-left: 12%;
-/*background: red;*/
-position: absolute;
+/* margin-left: 12%; */
+/* background: red; */
+/* position: absolute; */
 font-size: 1.5em !important;
-width: 15%;
+width: 20%;
+border: none;
 }
 .paginationSection{
 	width: 100%;

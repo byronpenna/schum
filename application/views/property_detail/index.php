@@ -548,12 +548,12 @@
 
 
 
-                        <div class="col-sm-12 col-lg-12 col-sx-12 col-md-12 conteFB">
+                        <!-- <div class="col-sm-12 col-lg-12 col-sx-12 col-md-12 conteFB">
                         <div class="facebookcool">
                         	<a href="https://www.facebook.com/SchumacherRealty"  target="_blanck"a><i class="fa fa-facebook-square"></i></a>
                         </div>
                         	<p class="textoFB">/SchumacherRealty</p>
-                        </div>
+                        </div> -->
 						  <!-- <div class="fb-like-box" data-href="https://www.facebook.com/SchumacherRealty" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div> -->
 					     </div>
                     </div>

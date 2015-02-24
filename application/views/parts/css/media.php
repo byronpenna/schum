@@ -154,7 +154,7 @@
 			width: 95%;
 		}
 		.navbar-default .navbar-nav > li > a{
-			font-size: 0.9em;
+			/*font-size: 17px;*/
 		}
 		.navbar-nav{
 			margin-left: 5%;
@@ -191,7 +191,7 @@
 			width: 95%;
 		}
 		.navbar-default .navbar-nav > li > a{
-			font-size: 1em;
+			/*font-size: 20px;*/
 		}
 		.dropdown-menu > li > a{
 			font-size: 0.9em;
