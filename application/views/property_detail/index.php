@@ -137,7 +137,7 @@
                     <h4><?php echo $house->cityTown ?> </h4>	
 				</div>
 			</div>
-		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 50%; background-repeat: no-repeat;'" ?> >
+		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 90%; background-repeat: no-repeat;'" ?> >
 			<?php $this->load->view("parts/menu.php") ?>
 		</div>
 		<div class="row container-fluid bodySection">

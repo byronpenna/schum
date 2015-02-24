@@ -100,8 +100,16 @@
 		margin-top:20px;
 	}
 	#cont-contact{
-		margin-top:10%%;
+		margin-top:10%;
 	}
+	
+
+	.btnSearchNow {
+		padding-right: 1%;
+		font-size: 13.5px;
+	}
+
+
 
 
 }
@@ -118,6 +126,10 @@
 	}
 	.boxOurTeam {
 		height: 350px;
+	}
+	.searchBar button {
+		height: auto;
+		font-size: 15.5px;
 	}
 }
 @media(min-width:1601px) and (max-width:1800px){
@@ -434,7 +446,7 @@
 			margin-right: 0.7%;
 		}
 		.searchBar select,.controlSearchbar{
-			font-size: 0.7em;
+			font-size: 14.8px;
 		}
 		.searchBar select,.searchBar button{
 			/*height: 30px;
@@ -861,7 +873,7 @@
 				margin-top: 12%;
 			}
 			.searchBar select, .searchBar button{
-				font-size: 1.2em;
+				font-size: 17.1px;
 				min-height: 31px;
 			}
 		/* lateral seach */

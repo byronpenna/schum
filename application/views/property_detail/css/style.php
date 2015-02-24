@@ -139,7 +139,7 @@ label{
 	}
 /* Slider */ 
 	.miniaturasSlider{
-		margin-top: 0.1%;
+		margin-top: 2%;
 	}
 	.miniaturasSlider{
 		padding: 0;

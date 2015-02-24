@@ -286,7 +286,7 @@
 		/* menu fijo al top  */
 		.menu-fijo {
 			background: rgba(230,229,230, 0.8);
-			position: fixed;
+			position: fixed !important;
 			top: 0;
 			z-index:100;
 		}

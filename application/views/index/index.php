@@ -24,10 +24,15 @@
 				margin-top:10%;
 			}
  
-			@media(min-width:767px){
+			/*@media(min-width:767px){
 				.sliderNew {
 					margin-top:-40px;
 				}
+			}*/
+
+
+			.amostrar {
+				position: absolute;
 			}
 		</style>
 	<!-- scripts -->
