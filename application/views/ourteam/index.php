@@ -27,7 +27,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
-					font-size:1.4em;
+					font-size:14px;
 				}
 				.textoEmpleado p{
 					word-break:break-word;

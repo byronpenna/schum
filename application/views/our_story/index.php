@@ -23,7 +23,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
-					font-size:1.4em;
+					font-size:13.5px;
 				}
 
 			/*	@media(min-width: 100px) and (max-width:767px){
@@ -113,7 +113,7 @@
 				  @media (width:768px){
                                 
 						.navbar-default .navbar-nav > li > a {
-                            font-size: 13px;
+                            font-size: 12.5px;
                         }
 
                         }

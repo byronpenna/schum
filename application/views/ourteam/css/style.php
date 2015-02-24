@@ -89,6 +89,7 @@
 	}
 	#contedordeiconos {
             padding-left: 0px;
+            height: 55px;
         }
 
 

@@ -31,7 +31,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
-					font-size:1.4em;
+					font-size:13.5px;
 				}
 				.nosubrayar{
 				text-decoration: none !important;
@@ -89,6 +89,7 @@
 		}
 		
 		.btnSubmit2{
+			display: block;
 			margin-top: -8%;
 		}
 		
@@ -107,6 +108,7 @@
 		
 		.btnSubmit2{
 			margin-top: -8%;
+			display: block;
 		}
 		
 

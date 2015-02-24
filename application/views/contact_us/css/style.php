@@ -15,4 +15,6 @@
 	background: #BE0000;
 }
 
-
+.btnSubmit2{
+	display: none;
+}

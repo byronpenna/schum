@@ -17,7 +17,7 @@
 					margin-left:0px;
 					z-index:900000000;
 					opacity:1;
-					font-size:1.4em;
+					font-size:13.5px;
 				}
     	</style>
     	<script type="text/javascript">

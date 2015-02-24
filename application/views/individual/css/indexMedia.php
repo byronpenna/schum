@@ -23,6 +23,10 @@
 		font-size: 1.0em !important;
 		padding: 6%;
 	}
+
+	.divAward img{
+		width: 20%;
+	}
 }
 @media(min-width:992px) and (max-width:1099px){
 	/*botones estandarisados como en el psd*/
@@ -36,11 +40,16 @@
 		font-size: 1.0em !important;
 		padding: 6%;
 	}
+
+
+	.divAward img{
+		width: 15%;
+	}
 }
 @media(min-width:1100px) and (max-width:1499px){
 	/*botones estandarisados como en el psd*/
 	.dataOtherSay button {
-		font-size: 1em !important;
+		font-size: 0.9em !important;
 	}
 	.botonChulo {
 	width: 80%;
@@ -48,6 +57,18 @@
 	.viewListingSection button {
 		font-size: 1.1em !important;
 		padding: 6%;
+	}
+
+
+
+	.navbar-default .navbar-nav > li > a {
+	font-size: 14px;
+	}
+
+
+
+	.divAward img{
+		width: 20%;
 	}
 }
 @media(min-width:1500px) and (max-width:1999px){
@@ -225,7 +246,7 @@
 			margin-top: -10%;
 		}
 		.containerIdioma h2{
-			font-size: 1.3em;
+			font-size: 1em;
 		}
 	.descriptionIndividual h3{
 		font-size: 1em;
@@ -245,11 +266,16 @@
 		font-size: 1.3em;
 	}
 	.dataOtherSay p{
-		font-size: 1em;
+		font-size: 1.3em;
 	}
 	.dataOtherSay button{
 		font-size: 0.8em;
 	}
+
+
+	.navbar-default .navbar-nav > li > a {
+font-size: 14px;
+}
 }
 @media(min-width:1200px){
 	body{
@@ -264,10 +290,11 @@
 			margin-top: -10%;
 		}
 		.containerIdioma h2{
-			font-size: 1.3em;
+			font-size: 1em;
 		}
 	.descriptionIndividual h3{
 		font-size: 1em;
+		width: 110%;
 	}
 	h3.contactTitle{
 			font-size:1.3em;
@@ -292,6 +319,15 @@
 	.dataOtherSay button{
 		font-size: 0.8em;
 	}
+
+	.direccion{
+		font-size: 0.9em;	
+	}
+
+	.navbar-default .navbar-nav > li > a {
+		font-size: 16px;
+	}
+	
 }
 @media(min-width:1400px){
 	body{
@@ -497,6 +533,7 @@
 
 	.individualTarjeta img{
 		width: 45%;
+		margin-left: -5%;
 		/*border-right: 2px solid #CCCCCC;*/
 	}
 
@@ -684,6 +721,7 @@
 
 	.individualTarjeta img{
 		width: 45%;
+		margin-left: -5%;
 		/*border-right: 2px solid #CCCCCC;*/
 	}
 
@@ -872,6 +910,7 @@
 	.individualTarjeta img{
 		width: 45%;
 		/*border-right: 2px solid #CCCCCC;*/
+		margin-left: -5%;
 	}
 
 	.generalData{
@@ -1056,6 +1095,7 @@
 
 	.individualTarjeta img{
 		width: 45%;
+		margin-left: -2%;
 		/*border-right: 2px solid #CCCCCC;*/
 	}
 
@@ -1121,7 +1161,7 @@
 	}
 
 	.dataContent{
-		margin-top:10%;
+		margin-top:20%;
 	}
 
 
@@ -1423,6 +1463,7 @@
 
 	.individualTarjeta img{
 		width: 45%;
+		margin-left: -2%;
 		/*border-right: 2px solid #CCCCCC;*/
 	}
 
@@ -1488,7 +1529,7 @@
 	}
 
 	.dataContent{
-		margin-top:10%;
+		margin-top:20%;
 	}
 
 
@@ -1530,7 +1571,7 @@
 
 	.direccion{
 		margin-top:-4%;
-		font-size: 0.7em;
+		font-size: 0.6em;
 	}
 
 

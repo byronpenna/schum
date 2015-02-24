@@ -276,6 +276,8 @@
         .empleado {
             margin-right: 4%;
             margin-left: 4%;
+            margin-top: 4%;
+            margin-bottom: 8%;
         }
         #res1700fixIcon {
          width: 45%;   
