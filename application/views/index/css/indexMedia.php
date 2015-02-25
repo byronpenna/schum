@@ -108,6 +108,15 @@
 		padding-right: 1%;
 		font-size: 13.5px;
 	}
+	
+	.controlSearchbar {
+		font-size: 14px !important;
+	}
+
+
+	.propertySearchSection h3 {
+		font-size: 17px !important;
+}
 
 
 

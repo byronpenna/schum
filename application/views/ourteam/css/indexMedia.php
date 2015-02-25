@@ -653,6 +653,13 @@
         .empleado {
             height: 675px;
         }
+
+        #contedordeiconos {
+            padding-left: 0px;
+            height: 55px;
+            width: 140%;
+        }
+
 }
 @media(min-width:1300px) and (max-width:1399px){
     .descripcionEmpleado h2 {
