@@ -44,8 +44,11 @@
 					opacity:1;
 					font-size:1.4em;
 				}
+				
 
-
+				.selecter-selected{
+					font-size: 11px;
+				}
 
 				@media(min-width: 500px) and (max-width:600px){
 						.searchSection {
@@ -387,6 +390,16 @@
 						}
 
 
+						.numbers div {
+							font-size: 1em;
+						}
+
+						#conte-pagin{
+							font-size: 1.2em !important;
+							margin-right: 0px;
+						}
+
+
 						.selecter-selected {
 							font-size: 0.55em !important;
 							width: 390% !important;
@@ -448,14 +461,22 @@
 				@media (min-width: 801px) and (max-width:900px){
 						.navbar-default .navbar-nav > li > a {
 							font-size: 0.6em;
-							margin-top: -10% !important;
 						}
 
 						.searchBar > .col-sm-2 {
 							padding: 0.2%;
 							margin-top: 1.6%;
 						}
+						
 
+						.numbers div {
+							font-size: 1em;
+						}
+
+						#conte-pagin{
+							font-size: 1.2em !important;
+							margin-right: 0px;
+						}
 
 						.selecter-selected {
 							font-size: 0.55em !important;
@@ -519,14 +540,22 @@
 
 				@media (min-width: 775px) and (max-width:800px){
 						.navbar-default .navbar-nav > li > a {
-							font-size: 0.6em;
+							font-size: 13px;
 						}
 
 						.searchBar > .col-sm-2 {
 							padding: 0.2%;
 							margin-top: 1.6%;
 						}
+						
+						.numbers div {
+							font-size: 1em;
+						}
 
+						#conte-pagin{
+							font-size: 1.2em !important;
+							margin-right: 0px;
+						}
 
 						.selecter-selected {
 							font-size: 0.55em !important;
@@ -697,7 +726,17 @@
 
 				@media (width:768px){
 						.navbar-default .navbar-nav > li > a {
-							font-size: 13px;
+							font-size: 12px;
+						}
+
+
+						.numbers div {
+							font-size: 1em;
+						}
+
+						#conte-pagin{
+							font-size: 1.2em !important;
+							margin-right: 0px;
 						}
 
 

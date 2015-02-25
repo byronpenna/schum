@@ -57,6 +57,9 @@
 		margin-top: 3%;
         color:#afafaf;
 	}
+	.empleadoIcon p{
+        width: 160% !important;
+	}
 	.descripcionEmpleado h2{
 		font-family: 'proximaNovaBold';
 	}

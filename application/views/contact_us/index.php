@@ -143,14 +143,7 @@
 				        <div class="col-md-4">
 				            <form>
 					            <legend>CONTACT</legend>
-					            <p>
-						            To Contact Us Directly, Use The Following Information.
-						            <br>
-						            <br>
-						            <b>General Inquiries:</b>
-						            <br>
-						            <a class='nosubrayar' href="mailto:info@driventofinish.com">Info@DrivenToFinish.com</a>
-					            </p>
+					            
 					            <address>
 					                <strong>Mailing Address:</strong><br>
 					                Schumacher Realty Ltd.<br>
