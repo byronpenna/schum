@@ -144,6 +144,12 @@ div.imgfull {
         height: 100%;
     }
 
+
+
+    .navbar-default .navbar-nav > li > a {
+		font-size: 13px ;
+	}
+
     .calendar .between {
         display: table-row;
     }
