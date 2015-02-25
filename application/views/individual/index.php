@@ -55,7 +55,7 @@
 		<div class="row container-fluid individualSection">
 			<div class="col-sm-4 col-md-3 col-lg-3 individualTarjeta">
 				<div class="row">
-					<img class="imgFull" src=<?php echo "'".$empleado->rutaImg."'";  ?>  >	
+					<img class="imgFull" src=<?php echo "'".$empleado->rutaImg."'";  ?>  >
 				</div>
 				<div class="row container-fluid descriptionIndividual">
 					<div class="row container-fluid txtContact">
@@ -123,7 +123,7 @@
 				<div class="row container-fluid viewListingSection">
 					<div class="col-lg-12">
 						<a href=<?php echo "'".site_url("listings/getListingFromAgent/".$idEmp." ")."'" ?> >
-							<button class="form-control">View listings</button>
+							<button class="form-control">View Active listings</button>
 						</a>
 					</div>
 				</div>

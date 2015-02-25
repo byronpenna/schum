@@ -792,7 +792,7 @@
 		}
 
 		.navbar-default .navbar-nav > li > a {
-		font-size: 17px;
+		font-size: 14px;
 		}
     
     		.searchBar > .col-sm-10 > .col-sm-2 > select,.searchBar > .col-sm-2 > button{

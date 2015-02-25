@@ -25,7 +25,7 @@ class Ourteamm extends CI_Model
 						<i class='fa fa-list' style='color:#314782;'></i>
 					</div>
 					<div class='col-xs-6 empleadoIcon' id='res1700fixIcon'>
-						<p>".$value->listings." LISTINGS</p>
+						<p>".$value->listings." ACTIVE LISTINGS</p>
 					</div>
 				";	
 			}

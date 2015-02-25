@@ -255,7 +255,7 @@
 		font-size: 1.5em !important;
 		width: 20%;
 		border: none;
-		margin-right: -8%;
+		/*margin-right: -8%;*/
 	}
 
 	

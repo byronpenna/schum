@@ -430,8 +430,8 @@
 	}
 
 	#myModal #contenidoModal,.modal-dialog{
-		height: 450px !important;
-		width: 600px;
+		height: 600px !important;
+		width: 90%;
 		margin-top:12%;
 	}
 
@@ -493,10 +493,10 @@
 		-webkit-transform:scale(0.75,0.75);
 }
 
-#myModal #contenidoModal,.modal-dialog{
-	width: 650px;
-	height: 600px !important;
-}
+		#myModal #contenidoModal,.modal-dialog{
+			width: 90% !important;
+			height: 720px !important;	
+		}
 }
 
 @media(min-width:1300px) and (max-width: 1399px){
@@ -522,7 +522,7 @@
 		}
 
 		#myModal #contenidoModal,.modal-dialog{
-			width: 850px !important;
+			width: 1000px !important;
 			height: auto !important;
 		}
 }
@@ -566,8 +566,8 @@
 		margin-top: 6%;
 	}
 	#myModal #contenidoModal,.modal-dialog{
-		width: 900px !important;
-		height: 850px !important;
+		width: 1200px !important;
+		height: auto !important;
 	}
 }
 @media(min-width:1800px) and (max-width: 1999px){
@@ -587,6 +587,12 @@
 		margin-left: 10%;
 		margin-top: 6%;
 }
+
+
+#myModal #contenidoModal,.modal-dialog{
+		width: 1500px !important;
+		height: auto !important;
+	}
 }
 @media(min-width:2000px) and (max-width: 2199px){
 	.fbbox iframe{
@@ -778,8 +784,8 @@ iframe[name="f3d7c73d9c"]{
 	}
 	
 	#myModal #contenidoModal, .modal-dialog{
-		width: 700px;
-		/*height: 600px !important;*/
+		width: 1200px;
+		height: auto !important;
 	}
 
 }
@@ -2403,6 +2409,12 @@ iframe[name="f3d7c73d9c"]{
 	}
 
 
+	#myModal #contenidoModal, .modal-dialog{
+		height: 300px !important;
+	}
+
+
+
 	.nameSection{
 		display: none;
 		
@@ -2567,6 +2579,12 @@ iframe[name="f3d7c73d9c"]{
 		/*position: absolute;*/
 		display: block !important;
 		margin-top:12%;
+	}
+
+
+
+	#myModal #contenidoModal, .modal-dialog{
+		height: 300px !important;
 	}
 
 
@@ -2737,6 +2755,13 @@ iframe[name="f3d7c73d9c"]{
 		/*position: absolute;*/
 		display: block !important;
 		margin-top:12%;
+	}
+
+
+
+	#myModal #contenidoModal, .modal-dialog{
+		height: 300px !important;
+		width: 90% !important;
 	}
 
 
@@ -2923,6 +2948,13 @@ iframe[name="f3d7c73d9c"]{
 		/*position: absolute;*/
 		display: block !important;
 		margin-top:12%;
+	}
+
+
+
+	#myModal #contenidoModal, .modal-dialog{
+		height: 380px !important;
+		width: 90% !important;
 	}
 
 
@@ -3116,6 +3148,12 @@ iframe[name="f3d7c73d9c"]{
 		/*position: absolute;*/
 		display: block !important;
 		margin-top:8%;
+	}
+
+
+	#myModal #contenidoModal, .modal-dialog{
+		height: 440px !important;
+		width: 90% !important;
 	}
 
 
@@ -3501,6 +3539,12 @@ iframe[name="f3d7c73d9c"]{
 		/*position: absolute;*/
 		display: block !important;
 		margin-top:12%;
+	}
+
+
+	#myModal #contenidoModal, .modal-dialog{
+		height: 300px !important;
+		width: 90% !important;
 	}
 
 
@@ -4047,6 +4091,15 @@ iframe[name="f3d7c73d9c"]{
 
 
 
+
+			#myModal #contenidoModal, .modal-dialog{
+				height: 500px !important;
+				width: 90% !important;
+			}
+
+
+			
+
 			.sliderNew{
 				background-size: 85% !important;
 			}
@@ -4219,6 +4272,12 @@ iframe[name="f3d7c73d9c"]{
 @media (width:768px){
 			.navbar-default .navbar-nav > li > a {
 				font-size: 0.9em;
+			}
+
+
+			#myModal #contenidoModal, .modal-dialog{
+				height: 500px !important;
+				width: 90% !important;
 			}
 
 

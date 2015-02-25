@@ -1282,7 +1282,7 @@
     }
 
     .conteIconos2 {
-        margin-top: 10%;
+        margin-top: 20%;
     }
 
     .conteIconos2{
@@ -1365,7 +1365,7 @@
     }
 
     .conteIconos2 {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
 
@@ -1382,6 +1382,12 @@
 @media(min-width: 376px) and (max-width:414px){
     .sliderNew{
         display: none;
+    }
+
+
+
+    .conteIconos2{
+        margin-top:10px;
     }
 
     .ourTeamDescription{
