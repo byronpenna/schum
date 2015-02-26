@@ -147,10 +147,10 @@
 		font-size: 1.0em !important;
 	}
 	.dataTeam h3 {
-		font-size: 0.75em !important;
+		font-size: 0.9em !important;
 	}
 	.ourTeamDescription p {
-		font-size: 0.65em !important;
+		font-size: 0.9em !important;
 	}
 
 }
@@ -160,10 +160,10 @@
 		font-size: 1.15em !important;
 	}
 	.dataTeam h3 {
-		font-size: 0.95em !important;
+		font-size: 1.15em !important;
 	}
 	.ourTeamDescription p {
-		font-size: 0.75em !important;
+		font-size: 1em !important;
 	}
 
 }
@@ -455,7 +455,7 @@
 			margin-right: 0.7%;
 		}
 		.searchBar select,.controlSearchbar{
-			font-size: 14.8px;
+			font-size: 11px;
 		}
 		.searchBar select,.searchBar button{
 			/*height: 30px;
@@ -992,7 +992,7 @@
 		}
 	/* map section */
 		.searchMapSection > .row > div > h3{
-			font-size: 2.3em;
+			font-size: 2em;
 		}
 		.searchMapSection > .row > div > small{
 			font-size: 1.5em;
@@ -1019,7 +1019,7 @@
 			margin-top: 12%;
 		}
 		.propertySearchSection h3{
-			font-size: 1.8em;
+			font-size: 1.5em;
 		}
 		.sliderPoints{
 			width: 20%;
@@ -1035,6 +1035,21 @@
 		.searchBar{
 			padding-left: 2.8%;
 			padding-right: 2.8%;
+		}
+
+
+		.selecter-selected{
+			font-size: 20px !important;
+		}
+
+
+		.searchBar button{
+			font-size: 20px;
+		}
+
+
+		.btnSearchNow{
+			margin-top: 0.2%;
 		}
 }
 @media(min-width:2000px){
@@ -1068,11 +1083,11 @@
 			font-size: 1.8em;
 		}
 		.searchMapSection > .row > div > h3{
-			font-size: 2.7em;
+			font-size: 2em;
 		}
 	/* search */ 
 		.propertySearchSection h3{
-			font-size: 2.1em !important;
+			font-size: 1.7em !important;
 		}
 		.navSliderSection{
 			margin-top: 12%;
@@ -1092,6 +1107,9 @@
 
 		.banner2 p{
 			font-size: 3.8em;
+			width: 90% !important;
+			margin-left: 5% !important;
+			margin-top: 0%;
 		}
 
 	/* Video section */
@@ -1140,6 +1158,15 @@
 		.rowContactoTeam img{
 			width: 15%;
 		}
+
+		.selecter-selected{
+			font-size: 20px !important;
+		}
+		
+		.fbOculto{
+			display: none !important;
+		} 
+
 }
 @media(min-width:1300px) and (max-width: 1400px){
 	/*botones azules PENDIENTE*/
@@ -1227,6 +1254,11 @@
 	.fa-chevron-left{
 		font-size: 0.8em;
 	}
+
+
+	.boxOurTeam {
+		height: 450px;
+	}
 }
 @media(min-width:1800px) and (max-width: 1999px){
 	/*botones azules PENDIENTE*/
@@ -1255,6 +1287,10 @@
 	}
 	.fa-chevron-left{
 		font-size: 0.9em;
+	}
+
+	.boxOurTeam {
+		height: 450px;
 	}
 }
 @media(min-width:2000px) and (max-width: 2399px){
