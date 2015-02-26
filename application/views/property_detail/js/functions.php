@@ -50,8 +50,8 @@ function slidePopup(direccion,activeThumbnail){
 		"background-repeat"		: "none",
 		"background-position" 	: "50% 50%",
 		"background-position" 	: "50% 50%\9 !important",
-		"background-size"		: "50%",
-		"background-size" 		: "50%",
+		"background-size"		: "90%",
+		"background-size" 		: "90%",
 	});
 	$("#imgModal").attr("src",""+activeThumbnail.attr("src")+"");
 	$(".sliderNew").attr("fondo",activeThumbnail.attr("src")) ;
@@ -105,8 +105,8 @@ function changeImage(url){
 		"background-repeat"		: "none",
 		"background-position" 	:"50% 50%",
 		"background-position" 	:"50% 50%\9 !important",
-		"background-size"		: "50%",
-		"background-size" 		: "50%",
+		"background-size"		: "90%",
+		"background-size" 		: "90%",
 	});
 } 
 function initSlider(){
