@@ -133,8 +133,8 @@ function searchNow(){
 	// vars 
 		frm 	= serializeToJson($("#divSearch :input").serializeArray());
 		limit	= $("#selectDisplay").val();
-		console.log("la data a enviar es: ",frm);
-	// val
+		//console.log("la data a enviar es: ",frm);
+		// val
 		estado = isNotSelectedAnyOption(frm,6);
 	// do it
 		// if(!estado){
