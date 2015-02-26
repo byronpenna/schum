@@ -285,6 +285,9 @@
         #res1400fixIcon {
             padding-left:10px;  
         }
+
+
+
 }
 @media(min-width:800px) and (max-width:991px){
         body
@@ -1682,6 +1685,14 @@
                             font-size: 13px;
                         }
 
+
+                        #contedordeiconos {
+                        padding-left: 0px;
+                        height: 55px;
+                        width: 160%;
+                        /*background: red;*/
+                        }
+
                         }
 
 
@@ -1689,6 +1700,30 @@
                         @media(min-width: 769px) and (max-width:800px){
                                 .amostrar{
                                     font-size: 0.9em !important;
+                                }
+
+
+
+                                #contedordeiconos {
+                                    padding-left: 0px;
+                                    height: 55px;
+                                    width: 160%;
+                                    /*background: red;*/
+                                }
+
+                        }
+
+
+
+
+                         @media(min-width: 801px) and (max-width:991px){
+                            
+
+                                #contedordeiconos {
+                                    padding-left: 0px;
+                                    height: 55px;
+                                    width: 160%;
+                                    /*background: red;*/
                                 }
 
                         }
