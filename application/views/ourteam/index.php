@@ -44,6 +44,7 @@
 		<div class="row container-fluid sliderNew">
 			<?php $this->load->view("parts/menushow.php") ?>
 		</div>
+		
 		<article class="conteImgInternas">
 			<img src="<?php echo base_url('img/elements/imgInternas.png'); ?>">
 		</article>
