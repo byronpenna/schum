@@ -1411,6 +1411,11 @@
 		.hello{
 			margin-top: 2.5%;
 		}
+
+
+		.selecter-selected {
+			font-size: 20px;
+		}
 }
 @media(min-width:2200px){
 		/*search by map*/
