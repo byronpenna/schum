@@ -21,7 +21,7 @@
 				$this->load->view("index/css/jquery.fs.selecter.css");
 			?>
 			#spanFooter .fa{
-				margin-top:10%;
+				margin-top:0px !important;
 			}
  
 			/*@media(min-width:767px){

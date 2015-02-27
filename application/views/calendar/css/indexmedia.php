@@ -147,7 +147,7 @@ div.imgfull {
 
 
     .navbar-default .navbar-nav > li > a {
-		font-size: 13px ;
+		font-size: 12px !important;
 	}
 
     .calendar .between {
@@ -538,17 +538,17 @@ div.imgfull {
 
 
 
-@media(min-width: 100px) and (max-width:449px){
+@media(min-width: 100px) and (max-width:359px){
 	
 	.sliderNew{
 		display:none;
 	}
 
 	.titulo h2 {
-		font-size: 1.6em !important;
+		font-size: 1.4em !important;
 		margin-left: 10%;
 		width: 300px;
-		margin-bottom: -6%;
+		/*margin-bottom: -6%;*/
 	}
 	
 /*
@@ -598,7 +598,7 @@ div.imgfull {
 		display: block;
 		text-align: center;
 		background: #be0000;
-		width: 114.5%;
+		width: 100%;
 		margin-left: -5%;
 		margin-bottom: 1%;
 		color:#FFFFFF;
@@ -608,7 +608,7 @@ div.imgfull {
 
 	.horario1 h4{
 		font-family: 'proximaNovaSemiBold';
-		font-size: 0.8em;
+		font-size: 0.6em;
 		/*color: #be0000;*/
 		color: #FFFFFF;
 		margin-left: 5px;
@@ -641,6 +641,11 @@ div.imgfull {
 	
 	.photosection .icon {
 		margin-left: -5%;
+	}
+
+
+	.photosection{
+		width: 114%;
 	}
 }
 
@@ -1265,7 +1270,7 @@ div.imgfull {
 
 @media (width: 768px){
 	.navbar-default .navbar-nav > li > a {
-		font-size: 13px;
+		font-size: 12px;
 	}
 	
 	.searchBMAP{
