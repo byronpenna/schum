@@ -59,12 +59,15 @@
 						$limits 				= $this->getLimitsForPagination($obj); 
 						$filtro 				= $obj->filtro;
 						$obj->filtro 			= json_decode($obj->filtro);
-						if($obj->filtro == 10){
-							$obj->filtro 				= new stdClass();
-							$obj->filtro->marketStatus 	= "Active";
-						}else if($obj->filtro == 20){
-							$obj->filtro 				= new stdClass();
-							$obj->filtro->marketStatus 	= "Finished"; 
+						$retorno->objFiltro 	= $obj->filtro;
+						if(!is_object($obj->filtro)){
+							if($obj->filtro == 10){
+								$obj->filtro 				= new stdClass();
+								$obj->filtro->marketStatus 	= "Active";
+							}else if($obj->filtro == 20){
+								$obj->filtro 				= new stdClass();
+								$obj->filtro->marketStatus 	= "Finished"; 
+							}	
 						}
 						// ###############################
 						$retorno 				= $listingModel->searchNow($obj->filtro,$limits->l1,12);

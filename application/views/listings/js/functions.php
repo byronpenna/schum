@@ -60,6 +60,9 @@
 			},
 			url: 		<?php echo "'".site_url('listings/searchNow')."'" ?>,
 			type: 		"POST",
+			beforeSend: function(){
+
+			},
 			success: function(data){
 				console.log(data);
 				respuesta = jQuery.parseJSON(data);
@@ -122,6 +125,7 @@ function changePage(obj){
 			// console.log("antes de hacer json:",data);
 			datos = jQuery.parseJSON(data);
 			console.log("paginacion perfecta: ",datos);
+			console.log("Filtro es: ",datos.objFiltro);
 			$(".seccionCasitas").empty().append(datos.html);
 			$("#txtOrigen").empty().append(datos.origen);
 			$(".titlePagination").empty().append(datos.pageIndicador);
@@ -145,12 +149,26 @@ function searchNow(){
 				},
 				url: 		<?php echo "'".site_url('listings/searchNow')."'" ?>,
 				type: 		"POST",
+				beforeSend: function(){
+					loader = "\
+					<div class='loader'>\
+						<div class='flipper'>\
+							<div class='front'></div>\
+							<div class='back'></div>\
+						</div>\
+					</div>\
+					";
+					$(".seccionCasitas").empty().append(loader);	
+					$("#conte-pagin").empty().append("");
+				},
 				success: function(data){
 					respuesta = jQuery.parseJSON(data);
 					$(".seccionCasitas").empty().append(respuesta.contenido);
 					$("#txtOrigen").empty().append(respuesta.origen);
 					$(".numbers").empty().append(respuesta.paginacion);
+					$("#txtPageTotales").val(respuesta.paginasTotales[1])
 					$(".titlePagination").empty().append(respuesta.pageIndicador);
+					$("#conte-pagin").empty().append("Page 1 of "+respuesta.paginasTotales[1]);
 				}
 			});	
 		// }else{

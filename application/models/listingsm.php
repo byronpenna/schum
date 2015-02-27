@@ -44,6 +44,7 @@ class Listingsm extends Padrem
 				$retorno->paginasTotales[0] 	= 1;
 				$retorno->paginasTotales[1] 	= $countReg;
 				$retorno->query 				= $query;
+				$retorno->origen 				= 0;
 			// return $casitas;
 			return $retorno;
 		}
@@ -327,9 +328,6 @@ class Listingsm extends Padrem
 				$txtActive = "activeNumber";
 			}else{
 				$txtActive = "";
-			}
-			if($i % 10){
-					
 			}
 			$div .= "
 				<div class='btnPaginacion  ".$txtActive."' valor='".($i+1)."'>
