@@ -125,6 +125,9 @@ class Listingsm extends Padrem
 				ORDER BY marketStatus,homeId DESC
 				LIMIT ".$l1.",".$l2."
 				";
+				// echo "<pre>";
+				// echo "La query es: ".$sql[0];
+				// echo "</pre>";
 			// do it 
 				$this->db->trans_start();
 					$query 		= $this->db->query($sql[0]);
@@ -161,11 +164,11 @@ class Listingsm extends Padrem
 				$cn++;		
 			}
 			if(isset($frm->cbMinPrice) AND $frm->cbMinPrice != -1){
-				$condicion[$cn] = "listPrice >= ".$frm->cbMinPrice." ";
+				$condicion[$cn] = "REPLACE(listPrice,',','') >= ".$frm->cbMinPrice." ";
 				$cn++;		
 			}
 			if(isset($frm->cbMaxPrice) AND $frm->cbMaxPrice != -1){
-				$condicion[$cn] = "listPrice <= ".$frm->cbMaxPrice." ";
+				$condicion[$cn] = "REPLACE(listPrice,',','') <= ".$frm->cbMaxPrice." ";
 				$cn++;		
 			}
 			if(isset($frm->agent)){
@@ -304,6 +307,7 @@ class Listingsm extends Padrem
 			// echo "<pre>";
 			// 	echo $query;
 			// echo "</pre>";
+			
 			$query = $this->db->query($query);
 		$this->db->trans_complete();
 		$retorno = $query->result();
