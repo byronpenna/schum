@@ -4,7 +4,7 @@ body {
 .nosubrayar{
 		text-decoration: none !important;
 	}
-.loader {
+/*.loader {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -16,8 +16,8 @@ body {
   -o-transform: translate3d(-50%,-50%,0);
   -ms-transform: translate3d(-50%,-50%,0);
   perspective: 1200;
-}
-
+}*/
+/*
 .flipper {
     position: relative;
     display: block;
@@ -66,7 +66,7 @@ body {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 
-}
+}*/
 /* ------------- */
 ul li{
 	list-style: none !important;

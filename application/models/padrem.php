@@ -17,10 +17,12 @@ class Padrem extends CI_Model
 		foreach ($rss->getElementsByTagName('item') as $key => $node) {
 			if($key<5){
 				$item = array ( 
+				
 				'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
 				'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
 				'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
 				'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+				
 				);
 				array_push($feed, $item);	
 			}else{
@@ -74,6 +76,9 @@ class Padrem extends CI_Model
 		}else{
 			echo "you don't have a tweet";
 		}
+		// echo "<pre>";
+		// print_r($tweets[0]["user"]["description"]);
+		// echo "</pre>";
 		return $tweets;	
 	}
 	public function getResulset($sql){

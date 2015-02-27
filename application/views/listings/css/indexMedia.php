@@ -1386,17 +1386,17 @@
 			min-height: 230px;
 		}
 		.titleFootDescriptionCasa, .desFootDescriptionCasa{
-			font-size: 0.8em;
+			font-size: 1em;
 			text-align: center;
 		}
 		.descripcionCasa h3{
-			font-size: 1.8em;
+			font-size: 1.5em;
 		}
 		.navbar{
 			margin-bottom: 16%;
 		}
 		.descripcionCasa h5{
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 		.descripcionCasa h2{
 			font-size: 2em;
@@ -1410,6 +1410,15 @@
 		}
 		.hello{
 			margin-top: 2.5%;
+		}
+
+		
+		.selecter-selected {
+			font-size: 20px !important;
+		}
+
+		#conte-pagin{
+			margin-right: -18%;
 		}
 }
 @media(min-width:2200px){
@@ -1450,17 +1459,17 @@
 			min-height: 250px;
 		}
 		.titleFootDescriptionCasa, .desFootDescriptionCasa{
-			font-size: 0.8em;
+			font-size: 1em;
 			text-align: center;
 		}
 		.descripcionCasa h3{
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 		.navbar{
 			margin-bottom: 16%;
 		}
 		.descripcionCasa h5{
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 		.descripcionCasa h2{
 			font-size: 2em;
@@ -1474,6 +1483,11 @@
 		}
 		.hello{
 			margin-top: 2.5%;
+		}
+
+
+		.selecter-selected {
+			font-size: 20px !important;
 		}
 }
 @media(min-width:2300px){
@@ -1515,17 +1529,17 @@
 			min-height: 250px;
 		}
 		.titleFootDescriptionCasa, .desFootDescriptionCasa{
-			font-size: 0.8em;
+			font-size: 1em;
 			text-align: center;
 		}
 		.descripcionCasa h3{
-			font-size: 2em;
+			font-size: 1.6em;
 		}
 		.navbar{
 			margin-bottom: 16%;
 		}
 		.descripcionCasa h5{
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 		.descripcionCasa h2{
 			font-size: 2em;
@@ -1545,6 +1559,10 @@
 		}
 		.hello{
 			margin-top: 2.5%;
+		}
+
+		.selecter-selected {
+			font-size: 20px !important;
 		}
 
 }

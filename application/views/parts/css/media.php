@@ -256,7 +256,7 @@
 			width: 90%;
 		}
 		.navbar-default .navbar-nav > li > a{
-			font-size: 1.7em;
+			font-size: 1em !important;
 		}
 		.dropdown-menu > li > a{
 			font-size: 1.5em;
