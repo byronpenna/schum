@@ -540,7 +540,7 @@
 
 				@media (min-width: 775px) and (max-width:800px){
 						.navbar-default .navbar-nav > li > a {
-							font-size: 13px;
+							font-size: 12px;
 						}
 
 						.searchBar > .col-sm-2 {
@@ -550,6 +550,10 @@
 						
 						.numbers div {
 							font-size: 1em;
+						}
+
+						.numbers {
+							width: 72%;
 						}
 
 						#conte-pagin{
@@ -618,9 +622,16 @@
 
 				@media (min-width: 769px) and (max-width:774px){
 						.navbar-default .navbar-nav > li > a {
-							font-size: 13px;
+							font-size: 12px;
 						}
 
+						.numbers {
+							width: 72%;
+						}
+
+						.numbers div{
+							font-size: 1em;
+						}
 
 						.searchBar > .col-sm-10 > .col-sm-2 > select, .searchBar > .col-sm-2 > button {
 							font-size: 0.7em;
@@ -659,11 +670,13 @@
 							padding: 1%;
 							margin-left: -1px;
 						}
+						
 
 
 						#conte-pagin {
 							width: 20%;
 							padding: 5px;
+							font-size: 1.2em !important;
 						}
 
 
@@ -729,6 +742,9 @@
 							font-size: 12px;
 						}
 
+						.numbers {
+							width: 72%;
+						}
 
 						.numbers div {
 							font-size: 1em;
