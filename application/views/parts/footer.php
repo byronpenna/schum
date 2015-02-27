@@ -71,7 +71,10 @@
 	<img class="alignleft"  src="https://pbs.twimg.com/profile_images/2597234936/3aovw5e38hcvo67jmfkx_normal.jpeg">
 		<strong class="real-name">Schumacher Realty</strong>
 			<a href="https://www.twitter.com/schumacherrlty" target="_blank" class='fondoRojo nosubrayar'>@SchumacherRlty</a>
-	<p class="twitget-user-description" > <br>We love helping people to successfuly reach their #goals in buying and selling #RealEstate in Manitoba!</p>
+	<p class="twitget-user-description" > <br>
+		<!-- We love helping people to successfuly reach their #goals in buying and selling #RealEstate in Manitoba! -->
+		<?php echo $homeData->twitterDescription; ?>
+	</p>
 </div>
 <script type="text/javascript">
 	jQuery(document).ready(function() { 

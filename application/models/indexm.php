@@ -22,7 +22,9 @@ class Indexm  extends Padrem
 							</li>
 						";
 			}
-			return $text;
+			$toReturn[0] = $text;
+			$toReturn[1] = $tweets[0]["user"]["description"];
+			return $toReturn;
 		}
 		function getAlinaBlog(){
 			$feeds 		= $this->getRSS("http://alinaschumacher.com/feed/");
@@ -456,12 +458,15 @@ class Indexm  extends Padrem
 				$query->next_result();
 			return $retorno;
 		}
+
 		function getHome(){
 			$homeData = $this->getHomeData();
 			
 			$homeData = $homeData[0];
-			$homeData->blogsAlina 	= $this->getAlinaBlog();
-			$homeData->tweets 		= $this->getAlinaTweets();
+			$homeData->blogsAlina 			= $this->getAlinaBlog();
+			$twitterInformation 			= $this->getAlinaTweets();
+			$homeData->tweets 				= $twitterInformation[0];
+			$homeData->twitterDescription 	= $twitterInformation[1];
 			$homeData->commitmentBackground = $this->getImgSrc($homeData->commitmentBackground);
 			foreach ($homeData as $key => $value) {
 				if(!strpos($value,"http://") && $key != 'commitmentBackground'){
