@@ -748,7 +748,7 @@
 			min-height: 230px;
 		}
     		.searchBar > .col-sm-10 > .col-sm-2 > select,.searchBar > .col-sm-2 > button{
-			font-size: 0.55em;
+			font-size: 0.7em;
             height: 50px;
 			padding-top: 3%;
 			padding-bottom: 3%;

@@ -117,9 +117,17 @@ function changePage(obj){
 		url: 		direccion,
 		type: 		"POST",
 		beforeSend: function(){
-			imgSrc 	= getUrl()+"/img/recursos/ajax-loader.gif";
-			img 	= "<div class='text-center'><img src='"+imgSrc+"' /></div>";
-			$(".seccionCasitas").empty().append(img);
+			loader = "\
+					<div class='loader' style='position:relative !important;'>\
+						<div class='flipper'>\
+							<div class='front'></div>\
+							<div class='back'></div>\
+						</div>\
+					</div>\
+					";
+			// imgSrc 	= getUrl()+"/img/recursos/ajax-loader.gif";
+			// img 	= "<div class='text-center'><img src='"+imgSrc+"' /></div>";
+			$(".seccionCasitas").empty().append(loader);
 		},
 		success: function(data){
 			// console.log("antes de hacer json:",data);
@@ -151,7 +159,7 @@ function searchNow(){
 				type: 		"POST",
 				beforeSend: function(){
 					loader = "\
-					<div class='loader'>\
+					<div class='loader' style='position:relative !important;'>\
 						<div class='flipper'>\
 							<div class='front'></div>\
 							<div class='back'></div>\
