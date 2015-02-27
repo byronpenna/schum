@@ -12,7 +12,7 @@ class Contact_usm extends Padrem
 		$res 				= null;
 		if($frm->recaptcha != ""){
 			$google_url			= "https://www.google.com/recaptcha/api/siteverify";
-			$secret				= '6LcpHAATAAAAALDT4YX-u3LyCKxFWI46bcYAio7c';
+			$secret				= '6Le7vwITAAAAAMtA3NSgwfy2HZH3Bz8zotH7jsdC';
 			$ip					= $_SERVER['REMOTE_ADDR'];
 			//https://www.google.com/recaptcha/api/siteverify?secret=your_secret&response=response_string&remoteip=user_ip_address
 			$url 				= $google_url."?secret=".$secret."&response=".$frm->recaptcha."&remoteip=".$ip;

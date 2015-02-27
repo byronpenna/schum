@@ -194,7 +194,7 @@
 					                    </div>
 
 					                </div>
-					                <div class="g-recaptcha" data-sitekey="6LcpHAATAAAAABswjmSR8V7PrJ-fsydsB_nQPuRk"></div>
+					                <div class="g-recaptcha" data-sitekey="6Le7vwITAAAAAHzGNW5fYMiklgxg32ADhzFJO2yS"></div>
 					                <button type="submit" class="btn btnSend pull-right btnSubmit2" id="btnContactUs">Send Message</button>
 				                </form>
 				            </div>
