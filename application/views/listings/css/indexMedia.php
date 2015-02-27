@@ -984,6 +984,11 @@
 		margin-left: 33%;
 		font-size: 1.4em;
 		}
+
+
+		#conte-pagin{
+			margin-right: 0%;
+		}
 }
 @media(min-width:1500px){
 	/*search by map*/
