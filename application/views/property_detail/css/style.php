@@ -126,7 +126,7 @@ label{
 		/*background: red;*/
 		background-repeat: none;
 		background-position: center;
-		background-size: 50%;
+		background-size: 90% 100%;
 		background-repeat: no-repeat;
 	}
 	.control:hover{

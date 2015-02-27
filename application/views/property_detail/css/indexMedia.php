@@ -497,6 +497,11 @@
 			width: 90% !important;
 			height: 720px !important;	
 		}
+
+
+		.sliderNew {
+		min-height: 650px !important;
+	}
 }
 
 @media(min-width:1300px) and (max-width: 1399px){
@@ -525,6 +530,11 @@
 			width: 1000px !important;
 			height: auto !important;
 		}
+
+
+		.sliderNew {
+		min-height: 650px !important;
+	}
 }
 @media(min-width:1400px) and (max-width: 1599px){
 	.fbbox iframe{
@@ -547,6 +557,9 @@
 	width: 800px;
 	height: 700px !important;
 }
+	.sliderNew {
+			min-height: 750px !important;
+		}
 }
 @media(min-width:1600px) and (max-width: 1799px){
 	.fbbox iframe{
@@ -569,6 +582,12 @@
 		width: 1200px !important;
 		height: auto !important;
 	}
+
+
+
+	.sliderNew {
+			min-height: 850px !important;
+		}
 }
 @media(min-width:1800px) and (max-width: 1999px){
 	.fbbox iframe{
@@ -593,6 +612,10 @@
 		width: 1500px !important;
 		height: auto !important;
 	}
+
+	.sliderNew {
+			min-height: 950px !important;
+		}
 }
 @media(min-width:2000px) and (max-width: 2199px){
 	.fbbox iframe{
@@ -617,6 +640,10 @@
 	.iframeVirtual{
 		height: 1200px !important; 
 	}
+
+	.sliderNew {
+			min-height: 950px !important;
+		}
 }
 @media(min-width:2200px) and (max-width: 2399px){
 	.fbbox iframe{
@@ -641,6 +668,11 @@
 	.iframeVirtual{
 		height: 1100px !important; 
 	}
+
+
+	.sliderNew {
+			min-height: 1050px !important;
+		}
 }
 @media(min-width:2400px) and (max-width: 2599px){
 	.fbbox iframe{
@@ -662,6 +694,11 @@
 		-moz-transform:scale(1.45,1.45);
 		-webkit-transform:scale(1.45,1.45);
 }
+
+
+.sliderNew {
+			min-height: 1050px !important;
+		}
 }
 @media(min-width:2600px) and (max-width: 2699px){
 	.fbbox iframe{
@@ -683,6 +720,11 @@
 		-moz-transform:scale(1.5,1.5);
 		-webkit-transform:scale(1.5,1.5);
 }
+
+
+.sliderNew {
+			min-height: 1070px !important;
+		}
 }
 @media(min-width:2700px){
 	.fbbox iframe{
@@ -704,6 +746,11 @@
 		-moz-transform:scale(1.5,1.5);
 		-webkit-transform:scale(1.5,1.5);
 }
+
+
+.sliderNew {
+			min-height: 1090px !important;
+		}
 }
 iframe[name="f3d7c73d9c"]{
 	width: 100% !important;
@@ -1392,6 +1439,9 @@ iframe[name="f3d7c73d9c"]{
 	.nameSection h4{
 		font-size: 2.3em;
 	}
+
+
+	
 }
 @media(min-width:1400px){
 	.control{
@@ -1607,6 +1657,8 @@ iframe[name="f3d7c73d9c"]{
 			width: 6em;
 		}
 */
+
+		
 }
 
 @media(min-width:1700px){
