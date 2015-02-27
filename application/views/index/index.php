@@ -33,6 +33,13 @@
 
 			.amostrar {
 				position: absolute;
+				opacity:1;
+			}
+
+
+			.aocultar {
+				position: absolute;
+				opacity:0;
 			}
 		</style>
 	<!-- scripts -->
