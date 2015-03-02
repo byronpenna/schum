@@ -1,4 +1,5 @@
-.listingSort{
+
+	    	.listingSort{
 	display: inline-block;
 }
 .iframeVirtual{
@@ -122,7 +123,7 @@ label{
 		background: green;
 		
 		/*echo "'".base_url("img/property_detail/slider/img1.png")."'"*/
-		background: url(<?php echo $imgSlider; ?>);
+		background: url(http://50.62.42.134/Archivos/Compania_17/Usuarios/Usuario_88/Catalogo_2780/1. Front.jpg);
 		/*background: red;*/
 		background-repeat: none;
 		background-position: center;
@@ -200,7 +201,7 @@ label{
 		}
 		#openHouseBlock{
 			background: #ba0202;
-			background: url(<?php echo "'".base_url("img/elements/fondo_calendar.png")."'"; ?>);
+			background: url('http://localhost/schum/img/elements/fondo_calendar.png');
 
 			color: #fff;
 		}
@@ -437,9 +438,9 @@ label{
 	display: none;
 }
 
-.imgControls{
+/*.imgControls{
 	display: none;
-}
+}*/
 
 
 
