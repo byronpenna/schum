@@ -82,15 +82,19 @@
 		$(document).on("click","#virtualTourBlock",function(){
 			$("#modalTour").modal({show:true});
 		});
+
+
 		$(document).on("click","#imgModal",function(){
 			direccion 		= 1;
 			background 		= $(".sliderNew").attr("fondo");
 			activeThumbnail = $(".thumbnailSlider[src='"+background+"']");
 			slidePopup(direccion,activeThumbnail);
 		});
+
+
 		$(document).on("click",".navSlide",function(){
 			direccion 		= $(this).attr("direccion");
-			background 		= $(".sliderNew").attr("fondo");
+			background 		= $(".imgNewSlider").attr("src");
 			if($(".visible") == 1){
 				div 			= ".visible";	
 			}else{
@@ -100,6 +104,8 @@
 			slidePopup(direccion,activeThumbnail);
 			// console.log("el backgroun del thumbnail es:",activeThumbnail.attr("src"));
 		});
+
+
 		$(document).on("click",".sliderNew",function(){
 			imgSrc = $(this).attr("fondo");
 			$("#imgModal").attr("src",""+imgSrc+""); 

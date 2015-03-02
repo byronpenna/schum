@@ -499,8 +499,8 @@
 		}
 
 
-		.sliderNew {
-		min-height: 650px !important;
+		.conteSlider {
+			height: 650px !important;
 	}
 }
 
@@ -532,8 +532,8 @@
 		}
 
 
-		.sliderNew {
-		min-height: 650px !important;
+		.conteSlider {
+		height: 650px !important;
 	}
 }
 @media(min-width:1400px) and (max-width: 1599px){
@@ -557,8 +557,8 @@
 	width: 800px;
 	height: 700px !important;
 }
-	.sliderNew {
-			min-height: 750px !important;
+	.conteSlider {
+			height: 750px !important;
 		}
 }
 @media(min-width:1600px) and (max-width: 1799px){
@@ -585,8 +585,8 @@
 
 
 
-	.sliderNew {
-			min-height: 850px !important;
+	.conteSlider {
+			height: 850px !important;
 		}
 }
 @media(min-width:1800px) and (max-width: 1999px){
@@ -613,8 +613,8 @@
 		height: auto !important;
 	}
 
-	.sliderNew {
-			min-height: 950px !important;
+	.conteSlider {
+			height: 950px !important;
 		}
 }
 @media(min-width:2000px) and (max-width: 2199px){
@@ -641,8 +641,8 @@
 		height: 1200px !important; 
 	}
 
-	.sliderNew {
-			min-height: 950px !important;
+	.conteSlider {
+			height: 950px !important;
 		}
 }
 @media(min-width:2200px) and (max-width: 2399px){
@@ -670,8 +670,8 @@
 	}
 
 
-	.sliderNew {
-			min-height: 1050px !important;
+	.conteSlider {
+			height: 1050px !important;
 		}
 }
 @media(min-width:2400px) and (max-width: 2599px){
@@ -696,8 +696,8 @@
 }
 
 
-.sliderNew {
-			min-height: 1050px !important;
+.conteSlider {
+			height: 1050px !important;
 		}
 }
 @media(min-width:2600px) and (max-width: 2699px){
@@ -722,8 +722,8 @@
 }
 
 
-.sliderNew {
-			min-height: 1070px !important;
+.conteSlider {
+			height: 1070px !important;
 		}
 }
 @media(min-width:2700px){
@@ -748,8 +748,8 @@
 }
 
 
-.sliderNew {
-			min-height: 1090px !important;
+.conteSlider {
+			height: 1090px !important;
 		}
 }
 iframe[name="f3d7c73d9c"]{
@@ -2482,8 +2482,14 @@ iframe[name="f3d7c73d9c"]{
 		display:none;
 	}
 
-	.sliderNew{
-		min-height: 300px !important;
+
+	.imgNewSlider {
+		width: 100%;
+		height: auto;
+	}
+
+	.conteSlider{
+		height: 200px !important;
 		margin-top: 0;
 	}
 
@@ -2611,6 +2617,7 @@ iframe[name="f3d7c73d9c"]{
 		margin-top: 75%;
 		width: 15%;
 		cursor:pointer;
+		z-index: 2;
 	}
 
 	.derResponsive{
@@ -2650,9 +2657,14 @@ iframe[name="f3d7c73d9c"]{
 		display:none;
 	}
 
-	.sliderNew{
-		min-height: 300px !important;
+	.conteSlider{
+		height: 200px !important;
 		margin-top: 0;
+	}
+
+	.imgNewSlider {
+		width: 100%;
+		height: auto;
 	}
 
 	.mls{
@@ -2768,6 +2780,7 @@ iframe[name="f3d7c73d9c"]{
 		margin-top: 65%;
 		width: 20%;
 		cursor:pointer;
+		z-index:2;
 	}
 
 	.derResponsive{
@@ -2832,9 +2845,14 @@ iframe[name="f3d7c73d9c"]{
 		display:none;
 	}
 
-	.sliderNew{
-		min-height: 360px !important;
+	.conteSlider{
+		height: 320px !important;
 		margin-top: 0;
+	}
+
+	.imgNewSlider {
+		width: 100%;
+		height: auto;
 	}
 
 	.mls{
@@ -2973,9 +2991,10 @@ iframe[name="f3d7c73d9c"]{
 	.imgControls{
 		display: block;
 		position: absolute;
-		margin-top: 65%;
+		margin-top: 55%;
 		width: 20%;
 		cursor:pointer;
+		z-index: 2;
 	}
 
 	.derResponsive{
@@ -3029,8 +3048,8 @@ iframe[name="f3d7c73d9c"]{
 		display:none;
 	}
 
-	.sliderNew{
-		min-height: 360px !important;
+	.conteSlider{
+		height: 360px !important;
 		margin-top: 0;
 	}
 
@@ -3173,6 +3192,7 @@ iframe[name="f3d7c73d9c"]{
 		margin-top: 50%;
 		width: 20%;
 		cursor:pointer;
+		z-index: 2;
 	}
 
 	.derResponsive{
@@ -3228,8 +3248,8 @@ iframe[name="f3d7c73d9c"]{
 		display:none;
 	}
 
-	.sliderNew{
-		min-height: 460px !important;
+	.conteSlider{
+		height: 460px !important;
 		margin-top: 0 !important;
 	}
 
@@ -3372,6 +3392,7 @@ iframe[name="f3d7c73d9c"]{
 		margin-top: 50%;
 		width: 20%;
 		cursor:pointer;
+		z-index: 2;
 	}
 
 	.derResponsive{
@@ -3420,8 +3441,8 @@ iframe[name="f3d7c73d9c"]{
 		display:none;
 	}
 
-	.sliderNew{
-		min-height: 460px !important;
+	.conteSlider{
+		height: 460px !important;
 		margin-top: 0 !important;
 	}
 
@@ -3564,6 +3585,7 @@ iframe[name="f3d7c73d9c"]{
 		margin-top: 50%;
 		width: 20%;
 		cursor:pointer;
+		z-index: 2;
 	}
 
 	.derResponsive{
@@ -3615,9 +3637,14 @@ iframe[name="f3d7c73d9c"]{
 		display:none;
 	}
 
-	.sliderNew{
-		min-height: 300px !important;
+	.conteSlider{
+		height: 280px !important;
 		margin-top: 0;
+	}
+
+	.imgNewSlider {
+		width: 100%;
+		height: auto;
 	}
 
 	.mls{
@@ -3753,6 +3780,7 @@ iframe[name="f3d7c73d9c"]{
 		margin-top: 55%;
 		width: 20%;
 		cursor:pointer;
+		z-index: 2;
 	}
 
 	.derResponsive{
@@ -3781,9 +3809,7 @@ iframe[name="f3d7c73d9c"]{
 
 
 
-			.sliderNew{
-				background-size: 85% !important;
-			}
+			
 
 
 			#openHouseBlock p {
@@ -3957,9 +3983,7 @@ iframe[name="f3d7c73d9c"]{
 
 
 
-			.sliderNew{
-				background-size: 85% !important;
-			}
+			
 
 
 			#openHouseBlock p {
@@ -4153,9 +4177,7 @@ iframe[name="f3d7c73d9c"]{
 
 			
 
-			.sliderNew{
-				background-size: 85% !important;
-			}
+			
 
 
 			#openHouseBlock p {
@@ -4333,10 +4355,6 @@ iframe[name="f3d7c73d9c"]{
 				width: 90% !important;
 			}
 
-
-			.sliderNew{
-				background-size: 85% !important;
-			}
 
 
 			#openHouseBlock p {

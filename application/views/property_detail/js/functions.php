@@ -55,20 +55,8 @@ function slidePopup(direccion,activeThumbnail,visibilidad){
 	}else{
 		activeThumbnail = siguienteThumbnail;
 	}
-	$(".sliderNew").css({
-		"background" 			: "url("+activeThumbnail.attr("src")+")",
-		"background-repeat"		: "none",
-		"background-position" 	: "50% 50%",
-		"background-position" 	: "50% 50%\9 !important",
-		"background-size"		: "90% 100%",
-	});
-	$("#imgModal").attr("src",""+activeThumbnail.attr("src")+"");
-	$(".sliderNew").attr("fondo",activeThumbnail.attr("src")) ;
-	console.log("ruta de la otra imagen",activeThumbnail.attr("src"));
-	$(".dvImgModal").css({
-		"background": 			"url("+activeThumbnail.attr("src")+")",
-		"background-size"	: 	"100% 100%",
-	});
+	$(".imgNewSlider").attr("src",activeThumbnail.attr("src"));
+	
 }
 function initialize(){
 	var lat 		= <?php echo $coordenadas->latitud ?> 	;
@@ -108,14 +96,7 @@ function changeImage(url){
 		// new_url[new_url.length - 1] = new_url[new_url.length - 1].substring(1, new_url[new_url.length - 1].length);
 		// new_url = (new_url.join()).replace(/\,/g, "/");
 	new_url = url;
-	$(".sliderNew").attr("fondo",new_url);
-	$(".sliderNew").css({
-		"background" 			: "url("+new_url+")",
-		"background-repeat"		: "none",
-		"background-position" 	:"50% 50%",
-		"background-position" 	:"50% 50%\9 !important",
-		"background-size"		: "90% 100%",
-	});
+	$(".imgNewSlider").attr("src",new_url);
 } 
 function initSlider(){
 	setInterval(function(){

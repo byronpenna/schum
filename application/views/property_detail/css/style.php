@@ -456,3 +456,8 @@ label{
 	margin-left: 5.5%;
 	position: absolute;
 }
+
+
+.menu-responsivo {
+z-index: 3 !important;
+}
