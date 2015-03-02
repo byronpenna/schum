@@ -91,13 +91,19 @@
 		$(document).on("click",".navSlide",function(){
 			direccion 		= $(this).attr("direccion");
 			background 		= $(".sliderNew").attr("fondo");
-			activeThumbnail = $(".thumbnailSlider[src='"+background+"']");
+			if($(".visible") == 1){
+				div 			= ".visible";	
+			}else{
+				div 			= ".hidden";
+			}
+			activeThumbnail = $(" .thumbnailSlider[src='"+background+"']");
 			slidePopup(direccion,activeThumbnail);
 			// console.log("el backgroun del thumbnail es:",activeThumbnail.attr("src"));
 		});
 		$(document).on("click",".sliderNew",function(){
 			imgSrc = $(this).attr("fondo");
 			$("#imgModal").attr("src",""+imgSrc+""); 
+			$(".visible").attr("activo",1);
 			$('#myModal').modal({show:true});
 		});
 

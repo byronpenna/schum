@@ -30,17 +30,27 @@ function mortage(p,i,n){
 	$("#txtMonthlyPayments").val(m);
 	$("#txtBi").val(bi);
 }
-function slidePopup(direccion,activeThumbnail){
+function slidePopup(direccion,activeThumbnail,visibilidad){
+	// if($(".visible").attr("activo") == 1){
+	// 	div = ".visible";
+	// }
 	if(direccion == 1){
 		siguienteThumbnail = activeThumbnail.parent().next().find(".thumbnailSlider");
 	}else if(direccion == 0){
 		siguienteThumbnail = activeThumbnail.parent().prev().find(".thumbnailSlider");
 	}
 	if(siguienteThumbnail.attr("src") == undefined){
+		if($(".visible").attr("activo") == 1){
+			$(".visible").attr("activo",0);
+			div = ".hidden";
+		}else if($(".hidden").attr("activo") == 1){
+			$(".hidden").attr("activo",0);
+			div = ".visible";
+		}
 		if(direccion == 1){
-			activeThumbnail = $(".thumbnailSlider").first();
+			activeThumbnail = $(""+div+" .thumbnailSlider").first();
 		}else if(direccion == 0){
-			activeThumbnail = $(".thumbnailSlider").last();
+			activeThumbnail = $(""+div+" .thumbnailSlider").last();
 		}
 	}else{
 		activeThumbnail = siguienteThumbnail;
