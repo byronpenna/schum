@@ -61,7 +61,7 @@
 </head>
 <body>	
 	<?php 
-			$this->load->view("parts/loader-global.php");
+			// $this->load->view("parts/loader-global.php");
 	?>
 	
 	

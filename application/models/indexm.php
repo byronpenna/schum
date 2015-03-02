@@ -40,7 +40,51 @@ class Indexm  extends Padrem
 		}
 		function getSellerBuyerImage($homeData){
 			// vars 
-				$sql 				= "SELECT * FROM shum_tb_imageSellerBuyer";
+				$sql 				= "SELECT * FROM (
+					SELECT
+						`crm_documento`.`doc_id` AS `doc_id`,
+						`crm_documento`.`doc_amb_id` AS `doc_amb_id`,
+						`crm_documento`.`doc_nombre` AS `doc_nombre`,
+						`crm_documento`.`doc_descripcion` AS `doc_descripcion`,
+						`crm_documento`.`doc_ruta` AS `doc_ruta`,
+						`crm_documento`.`doc_fecha_creacion` AS `doc_fecha_creacion`,
+						`crm_documento`.`doc_estado` AS `doc_estado`,
+						`crm_documento`.`doc_tamanio` AS `doc_tamanio`,
+						`crm_documento`.`doc_tipo` AS `doc_tipo`,
+						`crm_documento`.`doc_orden` AS `doc_orden`,
+						`crm_ambito`.`amb_id` AS `amb_id`,
+						`crm_ambito`.`amb_general` AS `amb_general`,
+						`crm_ambito`.`amb_com_id` AS `amb_com_id`,
+						`crm_ambito`.`amb_usu_id` AS `amb_usu_id`,
+						`crm_ambito`.`amb_cat_id` AS `amb_cat_id`,
+						`crm_ambito`.`amb_exp_id` AS `amb_exp_id`
+					FROM
+						(
+							`crm_documento`
+							JOIN `crm_ambito` ON (
+								(
+									`crm_documento`.`doc_amb_id` = `crm_ambito`.`amb_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(
+								(
+									`crm_ambito`.`amb_exp_id` = 1572
+								)
+								AND (
+									`crm_documento`.`doc_descripcion` = 'buyers-home'
+								)
+							)
+							OR (
+								`crm_documento`.`doc_descripcion` = 'sellers-home'
+							)
+						)
+					ORDER BY
+						`crm_documento`.`doc_fecha_creacion`
+
+					) sellerBuyer";
 				$result				= $this->getResulset($sql);
 				$cuadrito 			= new stdClass();
 				$cuadrito->buyers 	= "";
@@ -436,7 +480,44 @@ class Indexm  extends Padrem
 			return $retorno;
 		}
 		function getSlider(){
-			$sql = "SELECT rutaImg,doc_nombre FROM shum_tb_home_slider ORDER BY doc_fecha_creacion DESC LIMIT 0,4";
+			$sql = "SELECT rutaImg,doc_nombre FROM (
+					SELECT
+						`crm_documento`.`doc_id` AS `doc_id`,
+						`crm_documento`.`doc_amb_id` AS `doc_amb_id`,
+						`crm_documento`.`doc_nombre` AS `doc_nombre`,
+						`crm_documento`.`doc_descripcion` AS `doc_descripcion`,
+						concat(
+							`crm_documento`.`doc_ruta`,
+							`crm_documento`.`doc_nombre`
+						) AS `rutaImg`,
+						`crm_documento`.`doc_fecha_creacion` AS `doc_fecha_creacion`,
+						`crm_documento`.`doc_estado` AS `doc_estado`,
+						`crm_documento`.`doc_tipo` AS `doc_tipo`,
+						`crm_ambito`.`amb_com_id` AS `amb_com_id`,
+						`crm_ambito`.`amb_exp_id` AS `indexId`
+					FROM
+						(
+							`crm_documento`
+							LEFT JOIN `crm_ambito` ON (
+								(
+									`crm_ambito`.`amb_id` = `crm_documento`.`doc_amb_id`
+								)
+							)
+						)
+					WHERE
+						(
+							(
+								`crm_ambito`.`amb_exp_id` = 1572
+							)
+							AND (
+								`crm_documento`.`doc_descripcion` = 'slider-home'
+							)
+							AND (
+								`crm_documento`.`doc_tipo` = 'image'
+							)
+						)
+
+				) slider ORDER BY doc_fecha_creacion DESC LIMIT 0,4";
 			$this->db->trans_start();
 				$query = $this->db->query($sql);
 			$this->db->trans_complete();
@@ -505,8 +586,11 @@ class Indexm  extends Padrem
 			return $houses;
 		}
 		function getMainUbication(){
-			$ubicacion = $this->getUbicationFromCompania(17);
-			$ubicacion = $ubicacion[0];
+			// $ubicacion = $this->getUbicationFromCompania(17);
+			// $ubicacion = $ubicacion[0];
+			$ubicacion = new stdClass();
+			$ubicacion->latitud =  49.938458;
+			$ubicacion->longitud = -97.031132;
 			return $ubicacion;
 		}
 		function getUbicationFromCompania($compania){
