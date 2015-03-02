@@ -166,8 +166,8 @@
 			<?php $this->load->view("parts/menu.php") ?>
 
 			<!-- mismo thumbnail solo que con diferente estructura del html -->
-
-			<a class="fancybox-button " rel="fancybox-button" href="<?php echo $thumbnail->first; ?>">
+			<?php echo $thumbnail->div ?>
+			<!-- <a class="fancybox-button " rel="fancybox-button" href="<?php echo $thumbnail->first; ?>">
 				<img class="imgNewSlider" src="<?php echo $thumbnail->first; ?>" />
 			</a>
 			<a class="fancybox-button " rel="fancybox-button" href="<?php echo $thumbnail->first; ?>">
@@ -175,7 +175,7 @@
 			</a>
 			<a class="fancybox-button " rel="fancybox-button" href="<?php echo $thumbnail->first; ?>">
 				<img class="imgNewSlider" src="<?php echo $thumbnail->first; ?>" />
-			</a>
+			</a> -->
 			
 		</div>
 		<div class="row container-fluid bodySection">
@@ -190,7 +190,7 @@
 					<div id="wrapper" style='margin-left:1%;'>
 				        <div id="jsCarousel">				        	
 				            <?php
-								echo $thumbnail->div;
+								echo $thumbnail->min;
 							?>
 				        </div>
 				    </div>				

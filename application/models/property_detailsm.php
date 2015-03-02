@@ -392,6 +392,7 @@ class Property_detailsm extends Padrem
 			$miniatura 		= new stdClass(); 
 			$miniatura->div 	= ""; 
 			$miniatura->first 	= "";
+			$miniatura->min 	= "";
 			if(isset($thumbnails) && !empty($thumbnails) && is_array($thumbnails)){
 				
 				foreach ($thumbnails as $key => $value) {
@@ -399,9 +400,18 @@ class Property_detailsm extends Padrem
 					if($key == 0){
 						$miniatura->first = $value;
 					}
-					$miniatura->div .= "					
-							<div><img class='thumbnailSlider imgFull' src=".$value." />	</div>
+					$miniatura->div .= "
+					<a class='fancybox-button ' rel='fancybox-button' href='".$value."'>
+						<img class='imgNewSlider' src='".$value."' />
+					</a>
 					";
+					$miniatura->min .= "
+						<div>
+							<img class='thumbnailSlider imgFull' src=".$value." />	
+						</div>";
+					// $miniatura->div .= "					
+					// 		<div><img class='thumbnailSlider imgFull' src=".$value." />	</div>
+					// ";
 				}	
 			}
 			// $miniatura .= "</div>";	
