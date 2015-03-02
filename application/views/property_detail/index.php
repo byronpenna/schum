@@ -29,13 +29,13 @@
 	    <!-- jcarrusel -->
 	    
 	    <style type="text/css" media="screen">
-    		/*.amostrar{
-					width:100%;
-					margin-left:0px;
-					z-index:100;
-					opacity:1;
+    		.amostrar{
+					/*width:100%;*/
+					/*margin-left:0px;*/
+					z-index:100 !important;
+					/*opacity:1;*/
 				}
-			*/
+			
 			.navbar{
 				margin-bottom: 0;
 			}
@@ -74,6 +74,31 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));*/</script>
+
+
+
+
+		<!-- nuevo pop up -->
+		<link rel="stylesheet" href="<?php echo base_url('plugins/fancyBox/source/jquery.fancybox.css') ?>" type="text/css" media="screen" />
+		<script type="text/javascript" src="<?php echo base_url('plugins/fancyBox/source/jquery.fancybox.pack.js') ?>"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+
+
+				$(".fancybox-button").fancybox({
+					prevEffect		: 'none',
+					nextEffect		: 'none',
+					closeBtn		: false,
+					helpers		: {
+						title	: { type : 'inside' },
+						buttons	: {}
+					}
+				});
+
+			});
+		</script>
+	
 </head>
 <body>
 	<?php 
@@ -137,8 +162,21 @@
                     <h4><?php echo $house->cityTown ?> </h4>	
 				</div>
 			</div>
-		<div class="row container-fluid sliderNew" fondo=<?php echo "'".$thumbnail->first."'" ?> style=<?php echo "'background:url(".$thumbnail->first.");background-repeat: none;background-position: center;background-size: 90% 100%; background-repeat: no-repeat;'" ?> >
+		<div class="row container-fluid conteSlider">
 			<?php $this->load->view("parts/menu.php") ?>
+
+			<!-- mismo thumbnail solo que con diferente estructura del html -->
+
+			<a class="fancybox-button " rel="fancybox-button" href="<?php echo $thumbnail->first; ?>">
+				<img class="imgNewSlider" src="<?php echo $thumbnail->first; ?>" />
+			</a>
+			<a class="fancybox-button " rel="fancybox-button" href="<?php echo $thumbnail->first; ?>">
+				<img class="imgNewSlider" src="<?php echo $thumbnail->first; ?>" />
+			</a>
+			<a class="fancybox-button " rel="fancybox-button" href="<?php echo $thumbnail->first; ?>">
+				<img class="imgNewSlider" src="<?php echo $thumbnail->first; ?>" />
+			</a>
+			
 		</div>
 		<div class="row container-fluid bodySection">
 			<!-- ############################## -->

@@ -440,3 +440,19 @@ label{
 .imgControls{
 	display: none;
 }
+
+
+
+.conteSlider{
+	/*background: orange;*/
+	width: 110%;
+	height: 900px;
+	margin-left: -5%;
+}
+
+.imgNewSlider{
+	width: 95%;
+	height: 120%;
+	margin-left: 5.5%;
+	position: absolute;
+}
