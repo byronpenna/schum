@@ -973,6 +973,7 @@ iframe[name="f3d7c73d9c"]{
 
 		.thumbnailSlider {
 			width: 100%;
+			height: 30%;
 		}
 
 		.minSection{
@@ -1217,10 +1218,10 @@ iframe[name="f3d7c73d9c"]{
             font-size: 1.3em !important;
         }
         .boxSummary label{
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .boxSummary p{
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .padd{
             padding-top: 2em;    
@@ -1564,7 +1565,7 @@ iframe[name="f3d7c73d9c"]{
 			margin-top: 3%;
 		}
         .readmore{
-            font-size: 1.2em;
+            font-size: 11.6px;
             width: 100px;
         }
 
@@ -3877,7 +3878,7 @@ iframe[name="f3d7c73d9c"]{
 			/*background: red;*/
 			width: 50%;
 			margin-left: 50%;
-			margin-top: -32.5%;
+			margin-top: -27.5%;
 		}
 
 		.titulo h2 {
@@ -3917,7 +3918,7 @@ iframe[name="f3d7c73d9c"]{
 			display: block;
 			width: 65%;
 			/* background: red; */
-			margin-left: 45%;
+			margin-left: 49%;
 			margin-top: -10%;
 		}
 
@@ -4091,9 +4092,9 @@ iframe[name="f3d7c73d9c"]{
 
 		.contactAgentText1{
 			display: block;
-			width: 65%;
+			width: 58.7%;
 			/* background: red; */
-			margin-left: 45%;
+			margin-left: 46%;
 			margin-top: -10%;
 		}
 
