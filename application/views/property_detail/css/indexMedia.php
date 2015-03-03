@@ -970,12 +970,11 @@
 
 
 
-
 @media (min-width:2400px) and (max-width: 2499px){
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1760px;
+				height: 1600px;
 				margin-left: -3% !important;
 			}
 			
@@ -1005,6 +1004,7 @@
 				font-size: 2em !important;
 			}
 }
+
 
 
 
@@ -1148,7 +1148,6 @@
 		-moz-transform:scale(1.45,1.45);
 		-webkit-transform:scale(1.45,1.45);
 }
-
 }
 @media(min-width:2600px) and (max-width: 2699px){
 	.fbbox iframe{
