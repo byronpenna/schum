@@ -379,7 +379,7 @@
 		.social-responsivo{
 			width: 86%;
 			float: right;
-			margin-left: -10% !important;
+			margin-left: -5.5% !important;
 			position: absolute;
 			margin-top: 1.2%;
 			border-bottom: 0.8px solid #000000;
