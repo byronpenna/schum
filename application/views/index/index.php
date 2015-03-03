@@ -1,6 +1,5 @@
 <?php 
 	$datos["opMenu"] = 0;
-	
 ?>
 <!DOCTYPE html>
 <html>
@@ -432,7 +431,7 @@
 									
 								</div>
 							
-						<div class="searchBarBackground contenedorSearch">
+						<div class="searchBarBackgroundMovil contenedorSearch">
 							<div class="searchSelect ">
 								<div class="containerSelect">
 									<select name="cbPropertyType" class="form-control searchCb">
