@@ -280,6 +280,7 @@ class Listingsm extends Padrem
 			// mucho ojo podria afectar a otro lado
 			$sql[0] 	= "SELECT * 
 						   FROM (".$this->getSqlHouseListing().") houseListing
+						   WHERE statusHome = 'Publish Item'
 						   ORDER BY marketStatus ,homeId  DESC
 						   LIMIT ".$l1." , ".$l2." 
 						   ";
