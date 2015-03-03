@@ -970,6 +970,44 @@
 
 
 
+
+@media (min-width:2400px) and (max-width: 2499px){
+			.conteSlider {
+				/* background: orange; */
+				width: 110%;
+				height: 1760px;
+				margin-left: -3% !important;
+			}
+			
+
+			.imgNewSlider {
+				height: auto;
+				margin-left: 4.5%;
+			}
+			
+			.derResponsive {
+				right: 0px;
+			}
+
+			.imgControls{
+				display: block;
+				position: absolute;
+				margin-top: 6%;
+				width: 20%;
+				cursor: pointer;
+				z-index: 2;
+				height: 1460px;
+				opacity:0;
+			}
+
+
+			.navbar-default .navbar-nav > li > a {
+				font-size: 2em !important;
+			}
+}
+
+
+
 @media(min-width:1400px) and (max-width: 1599px){
 	.fbbox iframe{
 		display: block;
@@ -1111,10 +1149,6 @@
 		-webkit-transform:scale(1.45,1.45);
 }
 
-
-.conteSlider {
-			height: 1050px !important;
-		}
 }
 @media(min-width:2600px) and (max-width: 2699px){
 	.fbbox iframe{
