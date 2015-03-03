@@ -218,7 +218,6 @@
 				$indexModel 	= new Indexm();
 				$searchBar 		= $this->getSearchBar();
 				$casas 			= $listingModel->getListasCasas();
-
 				$data 			= array(
 									'casas' 			=> $casas->html,
 									'homeData'			=> $this->homeData,
