@@ -452,8 +452,8 @@ label{
 }
 
 .imgNewSlider{
-	width: 95%;
-	height: 120%;
+	width: 75%;
+	/*height: 120%;*/
 	margin-left: 5.5%;
 	position: absolute;
 }

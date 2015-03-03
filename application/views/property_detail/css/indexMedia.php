@@ -5199,7 +5199,7 @@ iframe[name="f3d7c73d9c"]{
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 500px;
+				height: 430px;
 				margin-left: -3% !important;
 			}
 			
@@ -5207,6 +5207,7 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgNewSlider {
 				height: auto;
+				margin-left:15%;
 			}
 			
 			.derResponsive {
@@ -5378,7 +5379,7 @@ iframe[name="f3d7c73d9c"]{
 			margin-top: 3.2%;
 		}
 
-
+		
 
 		.afterArreglos {
 			margin-top: 0;
