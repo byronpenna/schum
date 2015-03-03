@@ -30,18 +30,16 @@
 	    
 	    <style type="text/css" media="screen">
     		.amostrar{
-					/*width:100%;*/
-					/*margin-left:0px;*/
+					width:100%;
+					margin-left:0.6%;
 					z-index:100 !important;
-					/*opacity:1;*/
+					opacity:1;
 				}
 			
 			.navbar{
 				margin-bottom: 0;
 			}
-			.sliderNew{
-				min-height: 550px;
-			}
+
 			 #footer_container .foot-social-ico .fa {
 			    font-size: 2em;
 			    vertical-align: middle;
@@ -150,7 +148,7 @@
 	<!-- #################### -->
 	<div class="container-fluid">
 		<?php $this->load->view("parts/header.php") ?>
-		<?php $this->load->view("parts/menushow.php") ?>
+		
 		<?php $this->load->view("parts/menuresponsive.php") ?>
 
 
@@ -163,7 +161,8 @@
 				</div>
 			</div>
 		<div class="row container-fluid conteSlider">
-			<?php $this->load->view("parts/menu.php") ?>
+			<?php //$this->load->view("parts/menu.php") ?>
+			<?php $this->load->view("parts/menushow.php") ?>
 
 			<!-- mismo thumbnail solo que con diferente estructura del html -->
 			<?php echo $thumbnail->div ?>
