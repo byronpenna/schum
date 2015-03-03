@@ -583,7 +583,7 @@ text-align: left;}
 	height: 100%;
 	background:#eee;
 	position:absolute;
-	z-index: 100;
+	z-index: 101;
 }
 
 

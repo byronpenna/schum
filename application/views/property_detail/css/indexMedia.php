@@ -440,7 +440,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 700px;
+				height: 595px;
 				margin-left: -3% !important;
 			}
 			
@@ -448,22 +448,25 @@
 
 			.imgNewSlider {
 				height: auto;
-				margin-left: 2.5%;
+				margin-left: 13%;
 			}
 			
 			.derResponsive {
-				right: 0px;
+				right: 9%;
+			}
+
+			.izResponsive{
+				left: 10%;
 			}
 
 			.imgControls{
 				display: block;
 				position: absolute;
-				margin-top: 6%;
-				width: 20%;
+				margin-top: 25%;
+				width: 16%;
 				cursor: pointer;
-				z-index: 2;
-				height: 760px;
-				opacity:0;
+				z-index: 41;
+				/* height: 550px; */
 			}
 
 
@@ -4542,7 +4545,7 @@ iframe[name="f3d7c73d9c"]{
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 800px;
+				height: 545px;
 				margin-left: -3% !important;
 			}
 			
@@ -4550,22 +4553,25 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgNewSlider {
 				height: auto;
-				margin-left: 2.5%;
+				margin-left: 13%;
 			}
 			
 			.derResponsive {
-				right: 0px;
+				right: 9%;
+			}
+
+			.izResponsive{
+				left: 10%;
 			}
 
 			.imgControls{
 				display: block;
 				position: absolute;
-				margin-top: 6%;
-				width: 20%;
+				margin-top: 25%;
+				width: 16%;
 				cursor: pointer;
-				z-index: 2;
-				height: 730px;
-				opacity:0;
+				z-index: 41;
+				/* height: 550px; */
 			}
 }
 
@@ -4740,7 +4746,7 @@ iframe[name="f3d7c73d9c"]{
 		.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 660px;
+				height: 540px;
 				margin-left: -3% !important;
 			}
 			
@@ -4748,21 +4754,25 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgNewSlider {
 				height: auto;
+				margin-left: 15%;
 			}
 			
 			.derResponsive {
-				right: 0px;
+				right: 13%;
+			}
+
+			.izResponsive{
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
 				position: absolute;
-				margin-top: 6%;
-				width: 20%;
+				margin-top: 25%;
+				width: 16%;
 				cursor: pointer;
-				z-index: 2;
-				height: 700px;
-				opacity:0;
+				z-index: 41;
+				/* height: 550px; */
 			}
 
 }
@@ -4939,7 +4949,7 @@ iframe[name="f3d7c73d9c"]{
 		.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 650px;
+				height: 490px;
 				margin-left: -3% !important;
 			}
 			
@@ -4947,21 +4957,25 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgNewSlider {
 				height: auto;
+				margin-left: 16%;
 			}
 			
 			.derResponsive {
-				right: 0px;
+				right: 13%;
+			}
+
+			.izResponsive{
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
 				position: absolute;
-				margin-top: 6%;
-				width: 20%;
+				margin-top: 25%;
+				width: 16%;
 				cursor: pointer;
-				z-index: 2;
-				height: 600px;
-				opacity:0;
+				z-index: 41;
+				/* height: 550px; */
 			}
 
 }
@@ -4985,9 +4999,6 @@ iframe[name="f3d7c73d9c"]{
 			.navbar-default .navbar-nav > li > a {
 				font-size: 0.9em;
 			}
-
-
-
 
 			#myModal #contenidoModal, .modal-dialog{
 				height: 500px !important;
@@ -5159,7 +5170,7 @@ iframe[name="f3d7c73d9c"]{
 		.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 600px;
+				height: 440px;
 				margin-left: -3% !important;
 			}
 			
@@ -5167,21 +5178,25 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgNewSlider {
 				height: auto;
+				margin-left: 15%;
 			}
 			
 			.derResponsive {
-				right: 0px;
+				right: 13%;
+			}
+
+			.izResponsive{
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
 				position: absolute;
-				margin-top: 6%;
-				width: 20%;
+				margin-top: 25%;
+				width: 16%;
 				cursor: pointer;
-				z-index: 2;
-				height: 550px;
-				opacity:0;
+				z-index: 41;
+				/* height: 550px; */
 			}
 
 }
@@ -5211,18 +5226,21 @@ iframe[name="f3d7c73d9c"]{
 			}
 			
 			.derResponsive {
-				right: 0px;
+				right: 13%;
+			}
+
+			.izResponsive{
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
 				position: absolute;
-				margin-top: 6%;
-				width: 20%;
+				margin-top: 25%;
+				width: 16%;
 				cursor: pointer;
-				z-index: 2;
-				height: 550px;
-				opacity:0;
+				z-index: 41;
+				/* height: 550px; */
 			}
 
 			#myModal #contenidoModal, .modal-dialog{
