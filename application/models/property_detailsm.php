@@ -400,9 +400,14 @@ class Property_detailsm extends Padrem
 					if($key == 0){
 						$miniatura->first = $value;
 					}
+					if($key == 0){
+						$position = "z-index:40";
+					}else{
+						$position = "";
+					}
 					$miniatura->div .= "
-					<a class='fancybox-button ' rel='fancybox-button' href='".$value."'>
-						<img class='imgNewSlider' src='".$value."' />
+					<a class='fancybox-button'  rel='fancybox-button' href='".$value."'>
+						<img class='imgNewSlider' style='".$position."' src='".$value."' />
 					</a>
 					";
 					$miniatura->min .= "
