@@ -132,7 +132,7 @@
 	});*/
 
 
-
+	
 	//keypress
 	$(document).on("keypress",".NumPunto",function(e){//evento para validar si es un numero
 		el 			= $(this).val();

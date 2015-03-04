@@ -96,7 +96,9 @@ function changeImage(url){
 		// new_url[new_url.length - 1] = new_url[new_url.length - 1].substring(1, new_url[new_url.length - 1].length);
 		// new_url = (new_url.join()).replace(/\,/g, "/");
 	new_url = url;
-	$(".imgNewSlider").attr("src",new_url);
+	// $(".imgNewSlider").attr("src",new_url);
+	$(".imgNewSlider").removeClass("activeSlider");
+	$(".imgNewSlider[src='"+new_url+"']").addClass("activeSlider");
 } 
 function initSlider(){
 	setInterval(function(){
