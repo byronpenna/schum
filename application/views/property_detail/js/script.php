@@ -94,14 +94,28 @@
 
 		$(document).on("click",".navSlide",function(){
 			direccion 		= $(this).attr("direccion");
-			background 		= $(".imgNewSlider").attr("src");
-			if($(".visible") == 1){
-				div 			= ".visible";	
-			}else{
-				div 			= ".hidden";
+			console.log("Vamos a hacer slide");
+			if(direccion == 1){
+				div 		= $(".activeSlider");
+				siguiente 	= $(".activeSlider").parent().next().find(".imgNewSlider");
+				div.removeClass("activeSlider");
+				siguiente.addClass("activeSlider");
+			}else if(direccion == 0){
+				div 		= $(".activeSlider");
+				siguiente 	= $(".activeSlider").parent().prev().find(".imgNewSlider");
+				div.removeClass("activeSlider");
+				siguiente.addClass("activeSlider");
 			}
-			activeThumbnail = $(" .thumbnailSlider[src='"+background+"']");
-			slidePopup(direccion,activeThumbnail);
+			console.log("siguiente es",siguiente);
+			
+			// background 		= $(".imgNewSlider").attr("src");
+			// if($(".visible") == 1){
+			// 	div 			= ".visible";	
+			// }else{
+			// 	div 			= ".hidden";
+			// }
+			// activeThumbnail = $(" .thumbnailSlider[src='"+background+"']");
+			// slidePopup(direccion,activeThumbnail);
 			// console.log("el backgroun del thumbnail es:",activeThumbnail.attr("src"));
 		});
 
