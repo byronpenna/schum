@@ -179,13 +179,27 @@ function paginacionEmp(limit){
 		});	
 	}
 	function searchBar(){
-		frm = serializeToJson($(".searchBarBackground :input").serializeArray());
+		console.log("Hide es: ",$(".HideResponsive").css("display"));
+		display = $(".HideResponsive").css("display");
+		if(display == "none"){
+			frm = serializeToJson($(".searchBarBackgroundMovil :input").serializeArray());
+		}else{
+			frm = serializeToJson($(".searchBarBackground :input").serializeArray());	
+		}
+		
 		url = <?php echo "'". site_url("listings/searchHome") . "'";  ?> ;
-		//console.log(frm);
-		$.each(frm,function(i,value){
-			url += "/"+value[0];
-		});
-		//console.log(url);
+		// console.log(frm);
+		if(display == "none"){
+			$.each(frm,function(i,value){
+				url += "/"+value;
+			});
+		}else{
+			$.each(frm,function(i,value){
+				url += "/"+value[0];
+			});
+		}
+		
+		// console.log(url);
 		location.href=url;
 
 		// window.location=url+"/"+frm;

@@ -124,7 +124,7 @@ class Indexm  extends Padrem
 				$retorno 		= new stdClass();
 				$sql 			= "SELECT * 
 								   FROM (".$this->smallLisingSinFoto().") houseListing
-								   WHERE marketStatus <> 'Finished'
+								   WHERE marketStatus <> 'Finished' and statusHome = 'Publish Item'
 								  ";	
 				$retorno->div 	= "";
 				if($op == 1){
@@ -606,7 +606,9 @@ class Indexm  extends Padrem
 			return $resultado;
 		}
 		function smallLisingSinFoto(){
-			$sql = "SELECT streetNumber.exp_id as homeId,
+			$sql = "SELECT * 
+from (
+	SELECT streetNumber.exp_id as homeId,
 					CONCAT(
 							streetNumber.exp_valor,
 							' ',
@@ -627,7 +629,8 @@ class Indexm  extends Padrem
 								`documento`.`doc_ruta`,
 								`documento`.`doc_nombre`
 							) AS `rutaImg`,
-							marketStatus.marketStatus
+							marketStatus.marketStatus,
+							statusHome.exp_valor as statusHome
 					FROM (
 						SELECT
 							`crm_exp_expediente`.`exp_id` AS `exp_id`,
@@ -737,7 +740,21 @@ class Indexm  extends Padrem
 								AND (`exp`.`exp_cat_id` = 12)
 							)
 					) marketStatus
-					on marketStatus.exp_id = streetNumber.exp_id";
+					on marketStatus.exp_id = streetNumber.exp_id
+					LEFT JOIN (
+						SELECT
+							`crm_exp_expediente`.`exp_id` AS `exp_id`,
+							`crm_exp_expediente`.`exp_valor` AS `exp_valor`
+						FROM
+							`crm_exp_expediente`
+						WHERE
+							(
+								`crm_exp_expediente`.`exp_atr_id` = 3777
+							)
+					) statusHome
+					on statusHome.exp_id = streetNumber.exp_id
+) houseListing
+";
 			return $sql;
 		}
 		function smallIndexListing(){
