@@ -276,6 +276,17 @@ class Indexm  extends Padrem
 								".$value->listings." ACTIVE LISTINGS
 							</p>";
 					}
+
+
+
+					if($value->email != "-1"){
+						$divEmail = "<a href='mailto:".$value->email."' class='emailEmpleado nosubrayar' style='text-decoration:none'>
+										<img class='img-responsive imgLine' src='".base_url("img/our_team/email.png")."' > 
+										EMAIL ".$value->simpleName."
+									</a>";
+					}else{
+						$divEmail = "";
+					}
 				
 					$cuadrito .= "
 					<div class='col-sm-6 col-md-3 container-fluid ourTeamDescription'>
@@ -295,10 +306,7 @@ class Indexm  extends Padrem
 								<ul>
 									<li>".$listingDiv."</li>
 										<li><p>
-											<a href='mailto:".$value->email."' class='emailEmpleado nosubrayar' style='text-decoration:none'>
-												<img class='img-responsive imgLine' src='".base_url("img/our_team/email.png")."' > 
-												EMAIL ".$value->simpleName."
-											</a>
+											".$divEmail."
 									</p></li>
 									</ul>
 								</div>	
