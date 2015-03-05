@@ -179,7 +179,7 @@ function paginacionEmp(limit){
 		});	
 	}
 	function searchBar(){
-		console.log("Hide es: ",$(".HideResponsive").css("display"));
+		//console.log("Hide es: ",$(".HideResponsive").css("display"));
 		display = $(".HideResponsive").css("display");
 		if(display == "none"){
 			frm = serializeToJson($(".searchBarBackgroundMovil :input").serializeArray());
@@ -199,8 +199,8 @@ function paginacionEmp(limit){
 			});
 		}
 		
-		console.log(url);
-		//location.href=url;
+		//console.log(url);
+		location.href=url;
 
 		// window.location=url+"/"+frm;
 		// url = url+"/"+frm;
