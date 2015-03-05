@@ -94,19 +94,27 @@
 
 		$(document).on("click",".navSlide",function(){
 			direccion 		= $(this).attr("direccion");
-			console.log("Vamos a hacer slide");
+			// console.log("Vamos a hacer slide");
 			if(direccion == 1){
 				div 		= $(".activeSlider");
 				siguiente 	= $(".activeSlider").parent().next().find(".imgNewSlider");
-				div.removeClass("activeSlider");
-				siguiente.addClass("activeSlider");
+				if(siguiente.attr("src") == undefined){
+					console.log("la siguiente imagen podria ser indefinida",direccion);
+					siguiente = $(".fancybox-button").first().find(".imgNewSlider");
+
+				}
 			}else if(direccion == 0){
 				div 		= $(".activeSlider");
 				siguiente 	= $(".activeSlider").parent().prev().find(".imgNewSlider");
-				div.removeClass("activeSlider");
-				siguiente.addClass("activeSlider");
+				if(siguiente.attr("src") == undefined){
+					console.log("la siguiente imagen podria ser indefinida",direccion);
+					siguiente = $(".fancybox-button").last().find(".imgNewSlider");
+					// $(".fancybox-button").removeClass("activeSlider");
+				}
 			}
-			console.log("siguiente es",siguiente);
+			$(".imgNewSlider").removeClass("activeSlider");
+			siguiente.addClass("activeSlider");
+			console.log("siguiente es",siguiente.attr("src"));
 			
 			// background 		= $(".imgNewSlider").attr("src");
 			// if($(".visible") == 1){
