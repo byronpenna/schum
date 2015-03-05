@@ -207,6 +207,28 @@
                     <h4><?php echo $house->cityTown ?> </h4>	
 				</div>
 			</div>
+
+
+			<article>
+					<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<?php 
+	
+	$url_actual = "http://" . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
+
+?> 
+
+			
+			<div class="fb-like" data-href="<?php echo $url_actual; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+			</article>	
             <br>
 			<div class="row container-fluid summarySection">
 				<!-- <div class="row container-fluid"> -->
