@@ -440,7 +440,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 595px;
+				height: 535px;
 				margin-left: -3% !important;
 			}
 			
@@ -452,21 +452,21 @@
 			}
 			
 			.derResponsive {
-				right: 9%;
+				right: 12%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 13%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 16%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 23%;
+width: 6%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -509,7 +509,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 650px;
+				height: 584px;
 				margin-left: -3% !important;
 			}
 			
@@ -521,21 +521,21 @@
 			}
 			
 			.derResponsive {
-				right: 10%;
+				right: 12%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 16%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 6%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 }
@@ -572,7 +572,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 700px;
+				height: 633px;
 				margin-left: -3% !important;
 			}
 			
@@ -584,21 +584,21 @@
 			}
 			
 			.derResponsive {
-				right: 10%;
+				right: 12%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 16%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 6%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 }
@@ -634,7 +634,7 @@
 		.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 760px;
+				height: 683px;
 				margin-left: -3% !important;
 			}
 			
@@ -646,21 +646,21 @@
 			}
 			
 			.derResponsive {
-				right: 11%;
+				right: 13%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 }
@@ -671,7 +671,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 800px;
+				height: 730px;
 				margin-left: -3% !important;
 			}
 			
@@ -683,21 +683,21 @@
 			}
 			
 			.derResponsive {
-				right: 11%;
+				right: 13%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 }
 
@@ -707,7 +707,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 850px;
+				height: 784px;
 				margin-left: -3% !important;
 			}
 			
@@ -719,21 +719,21 @@
 			}
 			
 			.derResponsive {
-				right: 11%;
+				right: 13%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 6%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 }
 
@@ -743,7 +743,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 900px;
+				height: 831px;
 				margin-left: -3% !important;
 			}
 			
@@ -755,21 +755,21 @@
 			}
 			
 			.derResponsive {
-				right: 11%;
+				right: 13%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 6%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 }
 
@@ -781,7 +781,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 960px;
+				height: 880px;
 				margin-left: -3% !important;
 			}
 			
@@ -793,21 +793,21 @@
 			}
 			
 			.derResponsive {
-				right: 11%;
+				right: 13%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 }
 
@@ -819,7 +819,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1010px;
+				height: 931px;
 				margin-left: -3% !important;
 			}
 			
@@ -831,21 +831,21 @@
 			}
 			
 			.derResponsive {
-				right: 12%;
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 6%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 }
 
@@ -857,7 +857,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1060px;
+				height: 980px;
 				margin-left: -3% !important;
 			}
 			
@@ -869,21 +869,21 @@
 			}
 			
 			.derResponsive {
-				right: 12%;
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 }
 
@@ -894,7 +894,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1120px;
+				height: 1035px;
 				margin-left: -3% !important;
 			}
 			
@@ -906,21 +906,21 @@
 			}
 			
 			.derResponsive {
-				right: 12%;
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -944,7 +944,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1170px;
+				height: 1082px;
 				margin-left: -3% !important;
 			}
 			
@@ -956,21 +956,21 @@
 			}
 			
 			.derResponsive {
-				right: 12%;
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -994,7 +994,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1220px;
+				height: 1136px;
 				margin-left: -3% !important;
 			}
 			
@@ -1006,21 +1006,21 @@
 			}
 			
 			.derResponsive {
-				right: 12%;
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -1043,7 +1043,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1270px;
+				height: 1185px;
 				margin-left: -3% !important;
 			}
 			
@@ -1055,21 +1055,21 @@
 			}
 			
 			.derResponsive {
-				right: 12%;
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 			.navbar-default .navbar-nav > li > a {
@@ -1092,7 +1092,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1350px;
+				height: 1227px;
 				margin-left: -3% !important;
 			}
 			
@@ -1103,22 +1103,22 @@
 				margin-left: 13%;
 			}
 			
-			.derResponsive {
-				right: 12%;
+		.derResponsive {
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -1137,7 +1137,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1410px;
+				height: 1279px;
 				margin-left: -3% !important;
 			}
 			
@@ -1148,22 +1148,22 @@
 				margin-left: 13%;
 			}
 			
-			.derResponsive {
-				right: 12%;
+		.derResponsive {
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -1181,7 +1181,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1460px;
+				height: 1326px;
 				margin-left: -3% !important;
 			}
 			
@@ -1193,21 +1193,21 @@
 			}
 			
 			.derResponsive {
-				right: 12%;
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -1229,7 +1229,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1520px;
+				height: 1371px;
 				margin-left: -3% !important;
 			}
 			
@@ -1240,22 +1240,22 @@
 				margin-left: 13%;
 			}
 			
-			.derResponsive {
-				right: 12%;
+		.derResponsive {
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -1273,7 +1273,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1560px;
+				height: 1423px;
 				margin-left: -3% !important;
 			}
 			
@@ -1285,21 +1285,21 @@
 			}
 			
 			.derResponsive {
-				right: 12%;
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -1319,7 +1319,7 @@
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 1620px;
+				height: 1467px;
 				margin-left: -3% !important;
 			}
 			
@@ -1330,22 +1330,22 @@
 				margin-left: 13%;
 			}
 			
-			.derResponsive {
-				right: 12%;
+		.derResponsive {
+				right: 14%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 12%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 10%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 25%;
+width: 5%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 
@@ -3412,9 +3412,9 @@ iframe[name="f3d7c73d9c"]{
 	.imgControls{
 		display: block;
 		position: absolute;
-		margin-top: 75%;
-		width: 15%;
-		cursor:pointer;
+		margin-top: 70%;
+		width: 12%;
+		cursor: pointer;
 		z-index: 41;
 	}
 
@@ -3576,9 +3576,9 @@ iframe[name="f3d7c73d9c"]{
 		display: block;
 		position: absolute;
 		margin-top: 65%;
-		width: 20%;
-		cursor:pointer;
-		z-index:41;
+		width: 13%;
+		cursor: pointer;
+		z-index: 41;
 	}
 
 	.derResponsive{
@@ -3991,11 +3991,11 @@ iframe[name="f3d7c73d9c"]{
 
 	.imgControls{
 		display: block;
-		position: absolute;
-		margin-top: 50%;
-		width: 20%;
-		cursor:pointer;
-		z-index: 41;
+position: absolute;
+margin-top: 58%;
+width: 10%;
+cursor: pointer;
+z-index: 41;
 	}
 
 	.derResponsive{
@@ -4196,11 +4196,11 @@ iframe[name="f3d7c73d9c"]{
 
 	.imgControls{
 		display: block;
-		position: absolute;
-		margin-top: 50%;
-		width: 20%;
-		cursor:pointer;
-		z-index: 41;
+position: absolute;
+margin-top: 50%;
+width: 9%;
+cursor: pointer;
+z-index: 41;
 	}
 
 	.derResponsive{
@@ -4394,11 +4394,11 @@ iframe[name="f3d7c73d9c"]{
 
 	.imgControls{
 		display: block;
-		position: absolute;
-		margin-top: 45%;
-		width: 20%;
-		cursor:pointer;
-		z-index: 41;
+position: absolute;
+margin-top: 48%;
+width: 10%;
+cursor: pointer;
+z-index: 41;
 	}
 
 	.derResponsive{
@@ -4590,9 +4590,9 @@ iframe[name="f3d7c73d9c"]{
 	.imgControls{
 		display: block;
 		position: absolute;
-		margin-top: 55%;
-		width: 20%;
-		cursor:pointer;
+		margin-top: 58%;
+		width: 12%;
+		cursor: pointer;
 		z-index: 41;
 	}
 
@@ -4619,7 +4619,7 @@ iframe[name="f3d7c73d9c"]{
 			.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 545px;
+				height: 488px;
 				margin-left: -3% !important;
 			}
 			
@@ -4631,21 +4631,21 @@ iframe[name="f3d7c73d9c"]{
 			}
 			
 			.derResponsive {
-				right: 9%;
+				right: 12%;
 			}
 
 			.izResponsive{
-				left: 10%;
+				left: 13%;
 			}
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 16%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 6%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 }
 
@@ -4820,7 +4820,7 @@ iframe[name="f3d7c73d9c"]{
 		.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 540px;
+				height: 482px;
 				margin-left: -3% !important;
 			}
 			
@@ -4841,12 +4841,12 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 16%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 6%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 }
@@ -5023,7 +5023,7 @@ iframe[name="f3d7c73d9c"]{
 		.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 490px;
+				height: 436px;
 				margin-left: -3% !important;
 			}
 			
@@ -5035,7 +5035,7 @@ iframe[name="f3d7c73d9c"]{
 			}
 			
 			.derResponsive {
-				right: 13%;
+				right: 11.5%;
 			}
 
 			.izResponsive{
@@ -5044,12 +5044,12 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 16%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 23%;
+width: 7%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 }
@@ -5244,7 +5244,7 @@ iframe[name="f3d7c73d9c"]{
 		.conteSlider {
 				/* background: orange; */
 				width: 110%;
-				height: 440px;
+				height: 388px;
 				margin-left: -3% !important;
 			}
 			
@@ -5265,12 +5265,12 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 16%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 23%;
+width: 7%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 }
@@ -5286,10 +5286,10 @@ iframe[name="f3d7c73d9c"]{
 			
 
 			.conteSlider {
-				/* background: orange; */
-				width: 110%;
-				height: 430px;
-				margin-left: -3% !important;
+				/*background: orange;*/
+width: 110%;
+height: 380px;
+margin-left: -3% !important;
 			}
 			
 
@@ -5309,12 +5309,12 @@ iframe[name="f3d7c73d9c"]{
 
 			.imgControls{
 				display: block;
-				position: absolute;
-				margin-top: 25%;
-				width: 16%;
-				cursor: pointer;
-				z-index: 41;
-				/* height: 550px; */
+position: absolute;
+margin-top: 24%;
+width: 7%;
+cursor: pointer;
+z-index: 41;
+/* height: 550px; */
 			}
 
 			#myModal #contenidoModal, .modal-dialog{

@@ -34,8 +34,9 @@
 					margin-left:0.6%;
 					z-index:100 !important;
 					opacity:1;
+					position: absolute;
 				}
-			
+
 			.navbar{
 				margin-bottom: 0;
 			}
@@ -160,10 +161,10 @@
                     <h4><?php echo $house->cityTown ?> </h4>	
 				</div>
 			</div>
-		<div class="row container-fluid conteSlider">
-			<?php //$this->load->view("parts/menu.php") ?>
 			<?php $this->load->view("parts/menushow.php") ?>
 
+		<div class="row container-fluid conteSlider">
+			<?php //$this->load->view("parts/menu.php") ?>
 			<!-- mismo thumbnail solo que con diferente estructura del html -->
 			<?php echo $thumbnail->div ?>
 			<!-- <a class="fancybox-button " rel="fancybox-button" href="<?php echo $thumbnail->first; ?>">
