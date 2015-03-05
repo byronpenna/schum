@@ -111,8 +111,9 @@ class Listingsm extends Padrem
 				$regresar = new stdClass();
 				if(!empty($frm)){
 					$sql[0] = $this->addWhere("",$frm);
+
 				}else{
-					$sql[0] = "";
+					$sql[0] = "WHERE statusHome = 'Publish Item' ";
 				}
 				$sql[1] = "SELECT COUNT(*) AS casas
 				FROM (".$this->getSqlHouseListing().") houseListing 
@@ -180,6 +181,7 @@ class Listingsm extends Padrem
 				$condicion[$cn] = "marketStatus = '".$frm->marketStatus."' ";
 				$cn++;
 			}
+			$condicion[$cn] = "statusHome = 'Publish Item'";
 			if(isset($condicion) && !empty($condicion)){
 				foreach ($condicion as $key => $value) {
 					if($key == 0){
@@ -190,6 +192,7 @@ class Listingsm extends Padrem
 					}
 				}	
 			}
+			// $sql = "AND statusHome = 'Publish Item'";
 
 			if(isset($frm->recent) && $frm->recent){
 				$sql = "ORDER BY homeId DESC";
@@ -351,7 +354,7 @@ class Listingsm extends Padrem
 			$indexModel = new Indexm();
 			$sql[0] 	= "SELECT * 
 						   FROM (".$indexModel->smallIndexListing().") houseListing
-						   WHERE marketStatus <> 'Finished' 
+						   WHERE marketStatus <> 'Finished' and estado = 'Publish Item'
 						   ORDER BY homeId DESC
 						   LIMIT ".$l1.",".$l2." 
 						   ";

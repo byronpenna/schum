@@ -770,6 +770,7 @@ from (
 		function smallIndexListing(){
 			$sql = "SELECT streetNumber.exp_id as homeId,
 					imagesHome.numFotos,
+					estado.estado,
 					CONCAT(
 							streetNumber.exp_valor,
 							' ',
@@ -901,6 +902,22 @@ from (
 							)
 					) marketStatus
 					on marketStatus.exp_id = streetNumber.exp_id
+
+					LEFT JOIN (
+						SELECT
+							`exp`.`exp_id` AS `exp_id`,
+							`exp`.`exp_valor` AS `estado`
+						FROM
+							`crm_exp_expediente` `exp`
+						WHERE
+							(
+								(`exp`.`exp_atr_id` = 3777)
+								AND (`exp`.`exp_com_id` = 17)
+								AND (`exp`.`exp_cat_id` = 12)
+							)
+					) estado 
+					on estado.exp_id = streetNumber.exp_id
+
 					lEFT JOIN (
 					SELECT numImage.idVivienda,COUNT(numImage.idVivienda) AS numFotos
 					FROM (
