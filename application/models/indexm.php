@@ -124,7 +124,7 @@ class Indexm  extends Padrem
 				$retorno 		= new stdClass();
 				$sql 			= "SELECT * 
 								   FROM (".$this->smallLisingSinFoto().") houseListing
-								   WHERE marketStatus <> 'Finished' and statusHome = 'Publish Item'
+								   WHERE marketStatus <> 'Finished'  AND statusHome <> 'Unpublish Item'
 								  ";	
 				$retorno->div 	= "";
 				if($op == 1){
@@ -342,6 +342,8 @@ class Indexm  extends Padrem
 			$retorno = $this->getResulset($sql);
 			return $retorno;
 		}
+
+
 		function getDivCasa($value,$imgSrc){
 			$div = "
 				<div class='container-fluid row'>
@@ -576,7 +578,7 @@ class Indexm  extends Padrem
 	// // get home 
 		function getHouse(){
 			// vars 
-				$sql = "SELECT * FROM (".$this->getSqlHouseListing().") houseListing WHERE marketStatus <> 'Finished' AND  latitud IS NOT NULL AND longitud IS NOT NULL;";
+				$sql = "SELECT * FROM (".$this->getSqlHouseListing().") houseListing WHERE marketStatus <> 'Finished' AND statusHome <> 'Unpublish Item' AND  latitud IS NOT NULL AND longitud IS NOT NULL;";
 			// do it 
 				$this->db->trans_start();
 					$query 		= $this->db->query($sql);

@@ -351,7 +351,7 @@ class Listingsm extends Padrem
 			$indexModel = new Indexm();
 			$sql[0] 	= "SELECT * 
 						   FROM (".$indexModel->smallIndexListing().") houseListing
-						   WHERE marketStatus <> 'Finished'
+						   WHERE marketStatus <> 'Finished' 
 						   ORDER BY homeId DESC
 						   LIMIT ".$l1.",".$l2." 
 						   ";
