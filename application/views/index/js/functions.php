@@ -188,19 +188,19 @@ function paginacionEmp(limit){
 		}
 		
 		url = <?php echo "'". site_url("listings/searchHome") . "'";  ?> ;
-		// console.log(frm);
+		console.log(frm);
 		if(display == "none"){
 			$.each(frm,function(i,value){
 				url += "/"+value;
 			});
 		}else{
 			$.each(frm,function(i,value){
-				url += "/"+value[0];
+				url += "/"+value;
 			});
 		}
 		
-		// console.log(url);
-		location.href=url;
+		console.log(url);
+		//location.href=url;
 
 		// window.location=url+"/"+frm;
 		// url = url+"/"+frm;
