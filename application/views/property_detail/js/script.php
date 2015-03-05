@@ -94,14 +94,36 @@
 
 		$(document).on("click",".navSlide",function(){
 			direccion 		= $(this).attr("direccion");
-			background 		= $(".imgNewSlider").attr("src");
-			if($(".visible") == 1){
-				div 			= ".visible";	
-			}else{
-				div 			= ".hidden";
+			// console.log("Vamos a hacer slide");
+			if(direccion == 1){
+				div 		= $(".activeSlider");
+				siguiente 	= $(".activeSlider").parent().next().find(".imgNewSlider");
+				if(siguiente.attr("src") == undefined){
+					console.log("la siguiente imagen podria ser indefinida",direccion);
+					siguiente = $(".fancybox-button").first().find(".imgNewSlider");
+
+				}
+			}else if(direccion == 0){
+				div 		= $(".activeSlider");
+				siguiente 	= $(".activeSlider").parent().prev().find(".imgNewSlider");
+				if(siguiente.attr("src") == undefined){
+					console.log("la siguiente imagen podria ser indefinida",direccion);
+					siguiente = $(".fancybox-button").last().find(".imgNewSlider");
+					// $(".fancybox-button").removeClass("activeSlider");
+				}
 			}
-			activeThumbnail = $(" .thumbnailSlider[src='"+background+"']");
-			slidePopup(direccion,activeThumbnail);
+			$(".imgNewSlider").removeClass("activeSlider");
+			siguiente.addClass("activeSlider");
+			console.log("siguiente es",siguiente.attr("src"));
+			
+			// background 		= $(".imgNewSlider").attr("src");
+			// if($(".visible") == 1){
+			// 	div 			= ".visible";	
+			// }else{
+			// 	div 			= ".hidden";
+			// }
+			// activeThumbnail = $(" .thumbnailSlider[src='"+background+"']");
+			// slidePopup(direccion,activeThumbnail);
 			// console.log("el backgroun del thumbnail es:",activeThumbnail.attr("src"));
 		});
 
@@ -132,7 +154,7 @@
 	});*/
 
 
-
+	
 	//keypress
 	$(document).on("keypress",".NumPunto",function(e){//evento para validar si es un numero
 		el 			= $(this).val();

@@ -462,3 +462,7 @@ label{
 .menu-responsivo {
 z-index: 3 !important;
 }
+
+.activeSlider{
+	z-index: 40;
+}

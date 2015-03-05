@@ -81,7 +81,7 @@
 		<script type="text/javascript" src="<?php echo base_url('plugins/fancyBox/source/jquery.fancybox.pack.js') ?>"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$(".fancybox").fancybox();
+				// $(".fancybox").fancybox();
 
 
 				$(".fancybox-button").fancybox({
