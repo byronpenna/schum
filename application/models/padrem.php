@@ -257,7 +257,13 @@ class Padrem extends CI_Model
 			) AS `nombre`,
 			`posicion`.`posicion` AS `posicion`,
 			`descripcion`.`descripcion` AS `descripcion`,
-			`email`.`email` AS `email`,
+			
+			if(
+				posicion.posicion = 'Realtor' or posicion.posicion = 'Broker/owner' or posicion.posicion = 'REALTOR ®',
+				`email`.`email` ,'-1'
+			)
+			AS `email`,
+
 			`contact`.`contact` AS `contact`,
 			IF (
 			(
