@@ -3790,7 +3790,7 @@ iframe[name="f3d7c73d9c"]{
 		display: block;
 		position: absolute;
 		margin-top: 55%;
-		width: 20%;
+		width: 10%;
 		cursor:pointer;
 		z-index: 41;
 	}

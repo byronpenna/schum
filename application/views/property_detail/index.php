@@ -31,7 +31,7 @@
 	    <style type="text/css" media="screen">
     		.amostrar{
 					width:100%;
-					margin-left:0.6%;
+					margin-left:-1%;
 					z-index:100 !important;
 					opacity:1;
 					position: absolute;
