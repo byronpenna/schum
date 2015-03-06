@@ -97,9 +97,44 @@
 
 			});
 		</script>
+
+
+		<!-- facebook -->
+								<!-- <div id="fb-root"></div> -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+<!-- google + -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'en'}
+</script>
+
+
+<!-- pinterest -->
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+		<?php 
 	
+	$url_actual = "http://" . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
+
+?>	
 </head>
 <body>
+
+
 	<?php 
 			$this->load->view("parts/loader-global.php");
 	?>
@@ -209,24 +244,23 @@
 			</div>
 
 
-			<article>
-					<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+			<article class="conte-share">
+ 
+			<!-- facebook -->
+			<div class="fb-share-button" data-href="<?php echo $url_actual; ?>" data-layout="button_count"></div>
 
-<?php 
-	
-	$url_actual = "http://" . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
 
-?> 
 
+			<!-- twitter -->
+			<a href="<?php echo $url_actual; ?>" class="twitter-share-button">Tweet</a>
+
+
+			<!-- google + -->
+			<div class="g-plusone" data-href="<?php echo $url_actual; ?>"></div>
+
+			<!-- pinterest -->
+			<a href="<?php echo $url_actual; ?>" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-config="beside" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" style="vertical-align: baseline;" /></a>
 			
-			<div class="fb-like" data-href="<?php echo $url_actual; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
 			</article>	
             <br>

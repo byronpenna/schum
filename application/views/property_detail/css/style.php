@@ -466,3 +466,18 @@ z-index: 3 !important;
 .activeSlider{
 	z-index: 40;
 }
+
+.conte-share{
+	  width: 41%;
+  position: absolute;
+  right: 6%;
+  margin-top: -6.5%;
+}
+/*
+.conte-share div{
+	vertical-align: top;
+}
+
+.conte-share a{
+	vertical-align: top;
+}*/
