@@ -468,10 +468,10 @@ z-index: 3 !important;
 }
 
 .conte-share{
-	  width: 41%;
-  position: absolute;
-  right: 6%;
-  margin-top: -6.5%;
+	width: 41%;
+	position: absolute;
+	right: 6%;
+	margin-top: 4%;
 }
 /*
 .conte-share div{

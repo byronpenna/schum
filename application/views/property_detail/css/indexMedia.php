@@ -3259,6 +3259,11 @@ iframe[name="f3d7c73d9c"]{
 		margin-top:15%;
 	}
 
+	.conte-share{
+		background:red;
+		  margin-top: -100%;
+	}
+
 
 	#myModal #contenidoModal, .modal-dialog{
 		height: 300px !important;
