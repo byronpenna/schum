@@ -1,8 +1,26 @@
+	<?php 
+	
+	$url_actual = "http://" . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
+
+?>	
 <p style="display:none;">tu</p>
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- <title>Schumacher Realty -<?php echo $house->nombreVivienda ?></title> -->
+	<meta name="referrer" content="default" id="meta_referrer">
 	<title>Schumacher Realty -<?php echo $house->nombreVivienda ?></title>
+	<meta property="description" content="Social plugins let you see what your friends have liked, commented on or shared on sites across the web.">
+	<meta property="fb:app_id" content="113869198637480">
+	<meta property="og:site_name" content="Schumacher Realty">
+	<meta property="og:title" content="Schumacher Realty -<?php echo $house->nombreVivienda ?>">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="<?php echo $url_actual; ?>">
+	<meta property="og:image" content="<?php echo $thumbnail->first; ?>">
+	<meta property="og:image" content="<?php echo $thumbnail->first; ?>">
+	<meta property="og:image" content="<?php echo $thumbnail->first; ?>">
+	<meta name="twitter:site:id" content="63359297">
+	<meta name="twitter:card" content="summary">
 	<!-- Parte  del mail chimp --> 
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
@@ -101,22 +119,14 @@
 
 		<!-- facebook -->
 								<!-- <div id="fb-root"></div> -->
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
- (function(d, s, id) {
-
   var js, fjs = d.getElementsByTagName(s)[0];
-
   if (d.getElementById(id)) return;
-
   js = d.createElement(s); js.id = id;
-
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-
+  js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
-
-}(document, 'script', 'facebook-jssdk'));
-
- </script>
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 <!-- twitter -->
@@ -136,17 +146,9 @@
 
 <!-- linked in -->
 <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-
-
-
-		<?php 
-	
-	$url_actual = "http://" . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
-
-?>	
 </head>
 <body>
-
+	
 
 	<?php 
 			$this->load->view("parts/loader-global.php");
@@ -260,6 +262,8 @@
 			<article class="conte-share">
  
 			<!-- facebook -->
+			
+			<?php //echo $url_actual; ?>
 			<div class="fb-like" data-href="<?php echo $url_actual; ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" data-width="300"></div>
 
 
