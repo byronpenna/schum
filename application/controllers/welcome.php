@@ -50,7 +50,7 @@ class Welcome extends Padre {
 			$retorno 	= new stdClass();
 		// do it
 			if(isset($op) && !empty($op)){
-				$retorno = $indexModel->getSortHouse($op);
+				$retorno = $indexModel->getSortHouse2($op);
 			}
 			echo json_encode($retorno);
 	}
