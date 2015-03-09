@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Property details</title>
+	<title>Schumacher Realty -<?php echo $house->nombreVivienda ?></title>
 	<!-- Parte  del mail chimp --> 
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
@@ -102,12 +102,21 @@
 		<!-- facebook -->
 								<!-- <div id="fb-root"></div> -->
 <script>(function(d, s, id) {
+ (function(d, s, id) {
+
   var js, fjs = d.getElementsByTagName(s)[0];
+
   if (d.getElementById(id)) return;
+
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.0";
+
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
+}(document, 'script', 'facebook-jssdk'));
+
+ </script>
 
 
 <!-- twitter -->
