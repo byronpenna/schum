@@ -122,8 +122,12 @@
 
 
 <!-- pinterest -->
-<!-- Please call pinit.js only once per page -->
 <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+<!-- linked in -->
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+
 
 
 		<?php 
@@ -247,21 +251,24 @@
 			<article class="conte-share">
  
 			<!-- facebook -->
-			<div class="fb-share-button" data-href="<?php echo $url_actual; ?>" data-layout="button_count"></div>
+			<div class="fb-like" data-href="<?php echo $url_actual; ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" data-width="300"></div>
 
 
 
 			<!-- twitter -->
-			<a href="<?php echo $url_actual; ?>" class="twitter-share-button">Tweet</a>
+			<a href="<?php echo $url_actual; ?>" class="twitter-share-button" style="background:red;">Tweet</a>
 
 
 			<!-- google + -->
-			<div class="g-plusone" data-href="<?php echo $url_actual; ?>"></div>
+			<!-- <article class="conte-google"> -->
+				<div class="g-plusone" data-href="<?php echo $url_actual; ?>"></div>	
+			<!-- </article> -->
 
 			<!-- pinterest -->
-			<a href="<?php echo $url_actual; ?>" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-config="beside" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" style="vertical-align: baseline;" /></a>
+			<a href="<?php echo $url_actual; ?>" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-config="beside" data-pin-height="28" style="padding-right: 62px;margin-left:-3%;"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" style="vertical-align: baseline;" /></a>
 			
-
+			<!-- linked in -->
+			<script type="IN/Share" data-url="<?php echo $url_actual; ?>" data-counter="right"></script>
 			</article>	
             <br>
 			<div class="row container-fluid summarySection">

@@ -460,7 +460,7 @@ label{
 
 
 .menu-responsivo {
-z-index: 3 !important;
+z-index: 41 !important;
 }
 
 .activeSlider{
@@ -471,8 +471,24 @@ z-index: 3 !important;
 	width: 41%;
 	position: absolute;
 	right: 6%;
-	margin-top: 4%;
+	margin-top: 3%;
+	/*background:red;*/
 }
+
+.fb_iframe_widget {
+	width: 134px;
+}
+
+#twitter-widget-0{
+	width: 92px !important;
+}
+
+.IN-widget{
+	margin-left:-5%;
+}
+/*.conte-google div{
+	margin-left:-4%;
+}*/
 /*
 .conte-share div{
 	vertical-align: top;
