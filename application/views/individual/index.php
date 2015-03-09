@@ -122,7 +122,7 @@
 				</div>
 				<div class="row container-fluid viewListingSection">
 					<div class="col-lg-12">
-						<?php if($empleado->posicion == 'REALTOR ®' || $empleado->posicion == 'Broker/owner' || $empleado->posicion == 'Realtor' || $empleado->posicion == 'Broker/Owner'){ ?>
+						<?php if(strtoupper($empleado->posicion) == 'REALTOR ®' || strtoupper($empleado->posicion) == 'BROKER/OWNER' || strtoupper($empleado->posicion) == 'REALTOR'){ ?>
 						<a href=<?php echo "'".site_url("listings/getListingFromAgent/".$idEmp." ")."'" ?> >
 							<button class="form-control">View Active listings</button>
 						</a>
