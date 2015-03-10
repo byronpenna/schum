@@ -293,7 +293,7 @@ class Property_detailsm extends Padrem
 		// #########################################
 			function getBoolOpenHouse($homeId){
 				$this->db->trans_start();
-					$query = $this->db->query("SELECT COUNT(*) AS existe FROM shum_tb_openhouse WHERE homeId = ".$homeId." ");
+					$query = $this->db->query("SELECT COUNT(*) AS existe FROM shum_tb_openhouse WHERE homeId = ".$homeId." AND startDate > DATE_FORMAT(NOW(),'%Y-%m-%d') ");
 				$this->db->trans_complete();
 				$retorno = $query->result();
 				if($retorno[0]->existe > 0){
