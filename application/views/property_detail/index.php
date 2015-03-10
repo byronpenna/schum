@@ -525,7 +525,7 @@
 						<h2 class="titul">Video tour</h2>	
 					</div>
 					<div class="row containter-fluid">
-						<iframe class="youtubeVideo" src=<?php echo $house->video ?> frameborder="0" allowfullscreen></iframe>
+						<iframe class="youtubeVideo" src="https://<?php echo $house->video; ?>" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			<?php 
