@@ -525,7 +525,11 @@
 						<h2 class="titul">Video tour</h2>	
 					</div>
 					<div class="row containter-fluid">
+						<?php if(strpos($house->video, "https://") === false){ ?>
 						<iframe class="youtubeVideo" src="https://<?php echo $house->video; ?>" frameborder="0" allowfullscreen></iframe>
+						<?php }else{ ?>
+						<iframe class="youtubeVideo" src="<?php echo $house->video; ?>" frameborder="0" allowfullscreen></iframe>
+						<?php } ?>
 					</div>
 				</div>
 			<?php 
