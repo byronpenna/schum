@@ -328,13 +328,13 @@ class Listingsm extends Padrem
 			$cn = 9;
 		}
 		for ($i=0; $i < $cn; $i++) { 
-			if($i == ($active-1) ){
+			if($i == 0 ){
 				$txtActive = "activeNumber";
 			}else{
 				$txtActive = "";
 			}
 			$div .= "
-				<div class='btnPaginacion  ".$txtActive."' valor='".($i+1)."'>
+				<div id='btnPaginacion' class='btnPaginacion  ".$txtActive."' valor='".($i+1)."'>
 					".($i+1)."
 				</div>
 			";

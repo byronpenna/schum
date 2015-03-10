@@ -31,7 +31,7 @@
 
 			if( i <= totalPagina){
 				div += "\
-				<div class='btnPaginacion' valor='"+num+"' style='width:auto;'>\
+				<div class='btnPaginacion' valor='"+num+"' style='width:auto;' id='btnPaginacion'>\
 					"+num+"\
 				</div>\
 				";	
@@ -137,7 +137,7 @@ function changePage(obj){
 			$(".seccionCasitas").empty().append(datos.html);
 			$("#txtOrigen").empty().append(datos.origen);
 			$(".titlePagination").empty().append(datos.pageIndicador);
-			
+
 		}
 	});
 }

@@ -962,46 +962,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="row container-fluid">
-					<div class="row container-fluid">
-						<div class="col-md-3 casa ">
-							<div class="row">
-								<img class='imgFull' src=<?php echo "'".base_url("img/listings/h1.png")."'"; ?> />
-							</div>
-							<div class="row container-fluid descripcionCasa">
-								<div class="row container-fluid">
-									<h3>364 OAKWOOD AVENUE</h2>	
-								</div>
-								<div class="row container-fluid">
-									<h5>Winnipeg, Riverview</h5>
-								</div>
-								<div class="row container-fluid">
-									<h2>$ 634,900</h2>
-								</div>
-								<div class="row container-fluid">
-									<div class="col-md-4">
-										<span class='titleFootDescriptionCasa'>SQ FT:</span><span class='desFootDescriptionCasa'>110 ft</span>
-									</div>
-									<div class="col-md-4">
-										<span class='titleFootDescriptionCasa'>BED:</span> <span class='desFootDescriptionCasa'>3</span>
-									</div>
-									<div class="col-md-4">
-										<span class='titleFootDescriptionCasa'>BATH:</span> <span class='desFootDescriptionCasa'>2</span> 
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 red">
-							aa
-						</div>
-						<div class="col-md-3 pink">
-							aa
-						</div>
-						<div class="col-md-3 red">
-							aa
-						</div>
-					</div>
-				</div> -->
+				
 				<div class="row seccionCasitas cuadritos">
 					<?php echo $casas; ?> 
 				</div>
@@ -1013,7 +974,7 @@
 					<span class='hidden' id='txtOrigen'><?php echo $origen ?></span>
 							<input type="hidden" id='txtPagePaginacion' value=<?php echo "'".($pageOf[0]+1)."'" ?> >
 							<input type="hidden" id='txtPageTotales' 	value=<?php echo "'".$pageOf[1]."'" ?> >
-							<div id="conte-pagin">
+							<div id="conte-pagin" class="titlePagination">
 								Page <?php echo " ".$pageOf[0]." of ".$pageOf[1]." " ?>
 							</div>
 							<div class="numbers">

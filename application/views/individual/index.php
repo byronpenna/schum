@@ -72,7 +72,9 @@
 					</div>
 					<div class="row container-fluid contact">
 						<div class="row container-fluid contact2">
-							<a href=<?php echo "mailto:".$empleado->email ?> >
+							
+							<?php if(strtoupper($empleado->posicion) == 'REALTOR ®' || strtoupper($empleado->posicion) == 'BROKER/OWNER' || strtoupper($empleado->posicion) == 'REALTOR'){ ?>
+						<a href=<?php echo "mailto:".$empleado->email ?> >
 								<div class="col-lg-7">
 									<h3>
 										<!-- <img class='imgDetail' src=<?php echo "'".base_url("img/icons/email.png")."'"; ?> >	 -->
@@ -83,6 +85,9 @@
 									</h3>		
 								</div>	
 							</a>
+						<?php } ?>
+
+							
 							
 						</div>
 						<div class="row container-fluid contact2">
