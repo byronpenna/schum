@@ -72,13 +72,13 @@
 						if(imgNav=="imgNavLeft"){
 							getNextPage(direccion,page,totalPagina);
 
-							$(".btnPaginacion").each(function(i,val){
-								console.log("indice",i);
-								if(i == 0 ){
-									$(this).addClass("activeNumber");
-									$(this).attr("valor");
+							// $(".btnPaginacion").each(function(i,val){
+								// console.log("indice",i);
+								// if(i == 0 ){
+									$(".btnPaginacion").last().addClass("activeNumber");
+									$(".btnPaginacion").last().attr("valor");
 									obj = new Object();
-									obj.pagina 		= $(this).next().attr("valor");
+									obj.pagina 		= $(".btnPaginacion").last().attr("valor");
 									obj.displayBy 	= $("#selectDisplay").val();
 									origen 			= $("#txtOrigen").text();
 									if(origen == '0'){
@@ -88,12 +88,12 @@
 									}
 								// do it 
 									nullNumberPagination();
-									$(this).next().addClass("activeNumber");
-									$(this).removeClass("activeNumber");
+									$(".btnPaginacion").last().prev().addClass("activeNumber");
+									$(".btnPaginacion").last().removeClass("activeNumber");
 									// console.log("el objeto es de la paginacion:",obj);
 									changePage(obj);
-								}
-							});
+								// }
+							// });
 						}
 						// activo.prev().css("background-color","red");
 
@@ -125,13 +125,13 @@
 						if(imgNav == "imgNavRight"){
 							getNextPage(direccion,page,totalPagina);
 
-							$(".btnPaginacion").each(function(i,val){
-								console.log("indice",i);
-								if(i == 0){
-									$(this).addClass("activeNumber");
-									$(this).attr("valor");
+							// $(".btnPaginacion").each(function(i,val){
+								// console.log("indice",i);
+								// if(i == 0){
+									$(".btnPaginacion").first().addClass("activeNumber");
+									$(".btnPaginacion").first().attr("valor");
 									obj = new Object();
-									obj.pagina 		= $(this).next().attr("valor");
+									obj.pagina 		= $(".btnPaginacion").first().next().attr("valor");
 									obj.displayBy 	= $("#selectDisplay").val();
 									origen 			= $("#txtOrigen").text();
 									if(origen == '0'){
@@ -141,12 +141,12 @@
 									}
 								// do it 
 									nullNumberPagination();
-									$(this).next().addClass("activeNumber");
-									$(this).removeClass("activeNumber");
+									$(".btnPaginacion").first().next().addClass("activeNumber");
+									$(".btnPaginacion").first().removeClass("activeNumber");
 									// console.log("el objeto es de la paginacion:",obj);
 									changePage(obj);
-								}
-							});
+								// }
+							// });
 						}
 						// activo.next().css("background-color","red");
 					}
