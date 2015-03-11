@@ -32,14 +32,124 @@
 				$(document).on("click",".imgNav",function(){
 					// direccion 0 izquierda 1 derecha
 					// getNextPage();
-					console.log("entro imgNav");
+					// console.log("entro imgNav");
 					direccion 	= $(this).attr("direccion");
 					page 		= $("#txtPagePaginacion").val();
 					totalPagina = $("#txtPageTotales").val();
-					getNextPage(direccion,page,totalPagina);
+					// getNextPage(direccion,page,totalPagina);
 					// console.log("page",page);
 					// console.log("direccion",direccion);
+					
 
+
+					activo = $(this).parents(".numbers").find(".activeNumber");
+
+
+					if(direccion==0){
+
+						// console.log("soy izquierda");
+						imgNav = activo.prev().attr("id");
+						if(imgNav == "btnPaginacion"){
+							// console.log("la tiene");
+							activo.prev().attr("valor");
+							obj = new Object();
+							obj.pagina 		= activo.prev().attr("valor");
+							obj.displayBy 	= $("#selectDisplay").val();
+							origen 			= $("#txtOrigen").text();
+							if(origen == '0'){
+								obj.filtro 	= origen;
+							}else{
+								obj.filtro 	= origen;
+							}
+						// do it 
+							nullNumberPagination();
+							activo.prev().addClass("activeNumber");
+							activo.removeClass("activeNumber");
+							// console.log("el objeto es de la paginacion:",obj);
+							changePage(obj);
+						}
+
+						if(imgNav=="imgNavLeft"){
+							getNextPage(direccion,page,totalPagina);
+
+							// $(".btnPaginacion").each(function(i,val){
+								// console.log("indice",i);
+								// if(i == 0 ){
+									$(".btnPaginacion").last().addClass("activeNumber");
+									$(".btnPaginacion").last().attr("valor");
+									obj = new Object();
+									obj.pagina 		= $(".btnPaginacion").last().attr("valor");
+									obj.displayBy 	= $("#selectDisplay").val();
+									origen 			= $("#txtOrigen").text();
+									if(origen == '0'){
+										obj.filtro 	= origen;
+									}else{
+										obj.filtro 	= origen;
+									}
+								// do it 
+									nullNumberPagination();
+									$(".btnPaginacion").last().prev().addClass("activeNumber");
+									$(".btnPaginacion").last().removeClass("activeNumber");
+									// console.log("el objeto es de la paginacion:",obj);
+									changePage(obj);
+								// }
+							// });
+						}
+						// activo.prev().css("background-color","red");
+
+					}else if(direccion==1){
+
+						// console.log("soy derecha");
+
+						imgNav = activo.next().attr("id");
+						if(imgNav == "btnPaginacion"){
+							// console.log("la tiene");
+							activo.next().attr("valor");
+							obj = new Object();
+							obj.pagina 		= activo.next().attr("valor");
+							obj.displayBy 	= $("#selectDisplay").val();
+							origen 			= $("#txtOrigen").text();
+							if(origen == '0'){
+								obj.filtro 	= origen;
+							}else{
+								obj.filtro 	= origen;
+							}
+						// do it 
+							nullNumberPagination();
+							activo.next().addClass("activeNumber");
+							activo.removeClass("activeNumber");
+							// console.log("el objeto es de la paginacion:",obj);
+							changePage(obj);
+						}
+
+						if(imgNav == "imgNavRight"){
+							getNextPage(direccion,page,totalPagina);
+
+							// $(".btnPaginacion").each(function(i,val){
+								// console.log("indice",i);
+								// if(i == 0){
+									$(".btnPaginacion").first().addClass("activeNumber");
+									$(".btnPaginacion").first().attr("valor");
+									obj = new Object();
+									obj.pagina 		= $(".btnPaginacion").first().next().attr("valor");
+									obj.displayBy 	= $("#selectDisplay").val();
+									origen 			= $("#txtOrigen").text();
+									if(origen == '0'){
+										obj.filtro 	= origen;
+									}else{
+										obj.filtro 	= origen;
+									}
+								// do it 
+									nullNumberPagination();
+									$(".btnPaginacion").first().next().addClass("activeNumber");
+									$(".btnPaginacion").first().removeClass("activeNumber");
+									// console.log("el objeto es de la paginacion:",obj);
+									changePage(obj);
+								// }
+							// });
+						}
+						// activo.next().css("background-color","red");
+					}
 				});
 			// change
 				$(document).on("change","#selectDisplay",function(){

@@ -39,6 +39,7 @@
 			.aocultar {
 				position: absolute;
 				opacity:0;
+				display: none;
 			}
 		</style>
 	<!-- scripts -->
