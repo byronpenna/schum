@@ -118,7 +118,7 @@
 
 
 		<!-- facebook -->
-								<!-- <div id="fb-root"></div> -->
+								<div id="fb-root"></div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -135,9 +135,7 @@
 
 
 <!-- google + -->
-<script src="https://apis.google.com/js/platform.js" async defer>
-  {lang: 'en'}
-</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 
 <!-- pinterest -->
@@ -264,7 +262,7 @@
 			<!-- facebook -->
 			
 			<?php //echo $url_actual; ?>
-			<div class="fb-like" data-href="<?php echo $url_actual; ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" data-width="300"></div>
+			<div class="fb-like"  data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" data-width="300"></div>
 
 
 
@@ -274,11 +272,11 @@
 
 			<!-- google + -->
 			<!-- <article class="conte-google"> -->
-				<div class="g-plusone" data-href="<?php echo $url_actual; ?>"></div>	
+				<div class="g-plusone"></div>	
 			<!-- </article> -->
 
 			<!-- pinterest -->
-			<a href="<?php echo $url_actual; ?>" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-config="beside" data-pin-height="28" style="padding-right: 62px;margin-left:-3%;"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" style="vertical-align: baseline;" /></a>
+			<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-config="beside" data-pin-height="28" style="padding-right: 62px !important;margin-left:-3%;!important"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" style="vertical-align: baseline !important;" /></a>
 			
 			<!-- linked in -->
 			<script type="IN/Share" data-url="<?php echo $url_actual; ?>" data-counter="right"></script>
